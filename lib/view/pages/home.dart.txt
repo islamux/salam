@@ -1,0 +1,127 @@
+import 'package:flutter/material.dart';
+
+import '../widget/custom_botton.dart';
+
+class Home extends StatelessWidget {
+      HomeControllerImp controllerE = Get.find<HomeControllerImp>();
+
+  // list of buttons 
+  final List<CustomButton> buttons = [
+           // Button 1
+         CustomButton(
+           customText: "خواطر متفرقة حول الدين والحياة",
+           onPressed: () => controllerE.goToElmPre(),
+           icon: const Icon(Icons.menu_book),
+         ),
+         
+         CustomButton(
+           // Button 2
+           customText: " عوامل تفكك وفشل الأسرة والقبيلة  ",
+           onPressed: () => controllerE.goToElm1(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+         CustomButton(
+           // Button 3
+           customText: "  العلم والمعرفة    ",
+           onPressed: () => controllerE.goToElm2(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+         CustomButton(
+           // Button 4
+           customText: "العطاء ليس مقياس لحب الله للعبد",
+           onPressed: () => controllerE.goToElm3(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+         CustomButton(
+           // Button 5
+           customText: " المحبة الإلهية   ",
+           onPressed: () => controllerE.goToElm4(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+         CustomButton(
+           // Button 6
+           customText: "     العدل      ",
+           onPressed: () => controllerE.goToElm5(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+         CustomButton(
+           // Button 7
+           customText: "     الشرك الخفي     ",
+           onPressed: () => controllerE.goToElm6(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+         CustomButton(
+           // Button 8
+           customText: "     التوكل على الله     ",
+           onPressed: () => controllerE.goToElm7(),
+           icon: const Icon(Icons.menu_book),
+         ),
+         
+         // Button 9 
+         CustomButton(
+           customText: "المعية الإلهية",
+           onPressed: () => controllerE.goToElm8(),
+           icon: const Icon(Icons.menu_book),
+         ),
+                 
+         // Button 10
+         CustomButton(
+           customText: "فأما اليتيم فلا تقهر ",
+           onPressed: () => controllerE.goToElm9(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+        // Button 11
+         CustomButton(
+           customText: " والذين جاهدو فينا",
+           onPressed: () => controllerE.goToElm10(),
+           icon: const Icon(Icons.menu_book),
+         ),
+                 
+       // Button 12
+         CustomButton(
+           customText: " الرزق",
+           onPressed: () => controllerE.goToElm11(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+       // Button 12
+         CustomButton(
+           customText: "وإنك لعلى خلق عظيم",
+           onPressed: () => controllerE.goToElm12(),
+           icon: const Icon(Icons.menu_book),
+         ),
+       
+       // Button 13
+         CustomButton(
+           customText: "مأ أصابكم من مصيبة",
+           onPressed: () => controllerE.goToElm13(),
+           icon: const Icon(Icons.menu_book),),
+        
+        // Button 14
+         CustomButton(
+           customText: "الإسلام دين شامل",
+           onPressed: () => controllerE.goToElm13(),
+           icon: const Icon(Icons.menu_book),),
+       ];
+
+   Home({super.key});
+  
+
+
+  @override
+  Widget build(BuildContext context) {
+
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: buttons.length,
+        itemBuilder: ((context, index) => buttons[index])),
+    );
+      
+}}
