@@ -47,12 +47,13 @@ class Elm1 extends StatelessWidget {
             onPressed: () {
               controllerAs.decreaseFontSize();
             },
-            icon: const Icon(Icons.remove),
+            icon: const Icon(Icons.remove), 
           ),
           // Font between + -
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: <Widget>[
+              // testing adding <Widget>
               Text(
                 "الخط",
                 style: TextStyle(color: AppColor.primaryColorGolden),
