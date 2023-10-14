@@ -21,8 +21,8 @@ dependencies:
   share_plus: ^7.1.0
   url_launcher: ^6.1.10
   flutter_launcher_icons: ^0.13.1 # change icons
-  change_app_package_name: ^1.1.0 # remove later
-  
+  rename_app: ^1.0.0 # remove it later 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -39,6 +39,7 @@ flutter:
    #- assets/images/onboarding_one.PNG
    - assets/images/91k.jpg
    - assets/images/athkari5.jpg
+   - assets/icons/peace.png
    #- assets/sounds/click-1.mp3
 
   fonts:
