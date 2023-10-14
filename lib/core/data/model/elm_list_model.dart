@@ -283,7 +283,6 @@ List<ElmModel> elmList9 = [
     ElmModel(elmText: ElmTextDersFourteen.elmTextDersFourteen14),
     ElmModel(elmText: ElmTextDersFourteen.elmTextDersFourteen15),
     ElmModel(elmText: ElmTextDersFourteen.elmTextDersFourteen16),
-    ElmModel(elmText: ElmTextDersFourteen.elmTextDersFourteen17),
   ];
 
 //  TextDersFifteen
