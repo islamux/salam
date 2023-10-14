@@ -243,7 +243,7 @@ List<ElmModel> elmList9 = [
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve15),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve16),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve17),
-    ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve18),
+    //ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve18),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve19),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve20),
   ];
