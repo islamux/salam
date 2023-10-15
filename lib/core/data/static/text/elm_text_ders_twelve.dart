@@ -3,7 +3,6 @@ class ElmTextDersTwelve {
 
 // """;
   static const String elmTextDersTwelve1 = """ 
-الخاطرة الثانية عشر 
 وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 
 

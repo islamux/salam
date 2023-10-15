@@ -1,6 +1,5 @@
 class ElmTextDersEleven {
   static const String elmTextDersEleven1 = """
-الخاطرة الحادية عشرة
 الرزق  
 -----
 """;

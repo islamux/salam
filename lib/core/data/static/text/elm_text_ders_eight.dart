@@ -1,8 +1,7 @@
 class ElmTextDersEight {
   static const String elmTextDersEigtht1 = """
-الخاطرة الثامنة
 المعيه الإلهيه
----------------------
+-----------
 
 """;
 

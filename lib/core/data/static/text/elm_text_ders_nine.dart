@@ -1,6 +1,5 @@
 class ElmTextDersNine {
   static const String elmTextDersNine1 = """
-الخاطرة التاسعة
 فَأَمَّا ٱلۡیَتِیمَ فَلَا تَقۡهَرۡ ۝
 
 ---------------------

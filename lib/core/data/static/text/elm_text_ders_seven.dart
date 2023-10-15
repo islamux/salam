@@ -1,8 +1,7 @@
 class ElmTextDersSeven {
   static const String elmTextDersSeven1 = """
-   الخاطرة السابعة
-(  التوكل على الله  )
----------------------
+  التوكل على الله  
+--------------
 """;
 
   static const String elmTextDersSeven2 = """

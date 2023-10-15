@@ -2,6 +2,7 @@ class ElmTextDersTherteen {
 
   static const String elmTextDersTherteen1 = """ 
 وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠ *
+----
 أي أقل مصيبة
 
 ورد في الحديث الشريف 

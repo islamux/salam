@@ -1,7 +1,7 @@
 class ElmTextDersTen {
   static const String elmTextDersTen1 = """
  والذين جاهدو فينا
----------------------
+---------------
 """;
 
   static const String elmTextDersTen2 = """

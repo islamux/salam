@@ -1,8 +1,7 @@
 class ElmTextDersFour {
   static const String elmTextDersFour1 = """
-الخاطرة الرابعة 
 المحبة الإلهية
----------------------
+-----------
 
 """;
 

@@ -1,8 +1,7 @@
 class ElmTextDersFive {
   static const String elmTextDersFive1 = """
-الخاطرة الخامسة
 "العدل"
----------------------
+-----
 
 """;
 

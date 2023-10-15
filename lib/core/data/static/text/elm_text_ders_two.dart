@@ -1,7 +1,5 @@
 class ElmTextDersTwo {
   static const String elmTextDersTwo1 = """
-الخاطرة الثانية 
------
 [العلم والمعرفة]
  وَلَـٰكِنَّ أَكۡثَرَهُمۡ لَا یَعۡلَمُونَ ۝٣٧ *
 

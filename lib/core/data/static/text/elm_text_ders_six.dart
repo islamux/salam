@@ -1,8 +1,7 @@
 class ElmTextDersSix {
   static const String elmTextDersSix1 = """
-الخاطرة السادسة 
-( الشرك الخفي ) 
----------------------
+ الشرك الخفي
+-----------
 
 """;
 
