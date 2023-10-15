@@ -79,7 +79,7 @@ class ElmTextDersFour {
   """;
 
   static const String elmTextDersFour8 = """
-أجمل ماقيل في حب الله:
+أجمل ماقيل في حب الله
 ---------------------
 
 """;
