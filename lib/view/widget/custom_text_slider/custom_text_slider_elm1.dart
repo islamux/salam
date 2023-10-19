@@ -53,16 +53,15 @@ class CustomTextSliderElm1 extends StatelessWidget {
                               return Text(
                                 elmList[i].elmText ?? '',
                                 // Provide a default value (?? '') in case duaText is null
-                                style: //AppTheme.goldenTheme.textTheme.bodyLarge,
-                                    TextStyle(
+                                style:  TextStyle(
                                   // Problem here is fontsize need to hotreload why?
                                   // I found the solution by wrab Text with GetBuilder to refresh only the
                                   // widgt not all page
                                   fontSize:
-                                      //Get.find<Elm1ControllerImp>().fontSize,
+                                      //Get.find<Elm2ControllerImp>().fontSize,
                                       controllerAs.fontSize,
                                   fontWeight: FontWeight.w300,
-                                  fontFamily: "Amiri",
+                                  fontFamily: "AmiriQ",
                                 ),
                                 textAlign: TextAlign.right,
                               );

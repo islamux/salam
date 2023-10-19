@@ -62,7 +62,7 @@ class CustomTextSliderElm4 extends StatelessWidget {
                                       //Get.find<Elm4ControllerImp>().fontSize,
                                       controllerAs.fontSize,
                                   fontWeight: FontWeight.w300,
-                                  fontFamily: "Amiri",
+                                  fontFamily: "AmiriQ",
                                 ),
                                 textAlign: TextAlign.right,
                               );

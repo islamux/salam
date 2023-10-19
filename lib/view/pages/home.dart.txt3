@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: AppColor.black,
             title: const Text(
-              " خواطر إيمانية",
+              "خواطر إيمانية",
               style: TextStyle(
                 color: AppColor.primaryColorGolden,
                 fontSize: 21,
@@ -79,17 +79,19 @@ class Home extends StatelessWidget {
               ),
 
               // إسحب للإعلى للمزيد 
-                       const  Padding(padding:  EdgeInsets.only(top: 90, right: 120,),
-                       child: Column(
-                        children: [
-                          Icon(
-                            Icons.arrow_upward,
-                            color:AppColor.primaryColorGolden,
-                            size: 36,),
-                            Text(" إسحب للأعلى للمزيد",
-                            style: TextStyle(
-                              color: AppColor.primaryColorGolden,
-                             fontSize: 18,),),],),
+                       const Center( // to make it in the middle of screen
+                         child:   Padding(padding:  EdgeInsets.only(top: 90 ),
+                         child: Column(
+                          children: [
+                            Icon(
+                              Icons.arrow_upward,
+                              color:AppColor.primaryColorGolden,
+                              size: 36,),
+                              Text(" إسحب للأعلى للمزيد",
+                              style: TextStyle(
+                                color: AppColor.primaryColorGolden,
+                               fontSize: 18,),),],),
+                         ),
                        ),
 
               Container(

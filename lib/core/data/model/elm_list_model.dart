@@ -71,7 +71,6 @@ List<ElmModel> elmList2 = [
   ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo16), //
  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo17), //
   ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo18), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo19), //
 ];
 
 // TextDersThree
@@ -88,8 +87,8 @@ List<ElmModel> elmList3 = [
 List<ElmModel> elmList4 = [
   // TextDersFour
   ElmModel(elmText: ElmTextDersFour.elmTextDersFour1), //
-  ElmModel(elmText: ElmTextDersFour.elmTextDersFour2), //
-  ElmModel(elmText: ElmTextDersFour.elmTextDersFour3), //
+  //ElmModel(elmText: ElmTextDersFour.elmTextDersFour2), //
+  //ElmModel(elmText: ElmTextDersFour.elmTextDersFour3), //
   ElmModel(elmText: ElmTextDersFour.elmTextDersFour4), //
  ElmModel(elmText: ElmTextDersFour.elmTextDersFour5), //
   ElmModel(elmText: ElmTextDersFour.elmTextDersFour6), //
@@ -106,8 +105,8 @@ List<ElmModel> elmList4 = [
 // TextDersFive
 List<ElmModel> elmList5 = [
   ElmModel(elmText: ElmTextDersFive.elmTextDersFive1), //
-  ElmModel(elmText: ElmTextDersFive.elmTextDersFive2), //
-  ElmModel(elmText: ElmTextDersFive.elmTextDersFive3), //
+  // ElmModel(elmText: ElmTextDersFive.elmTextDersFive2), //
+  // ElmModel(elmText: ElmTextDersFive.elmTextDersFive3), //
   ElmModel(elmText: ElmTextDersFive.elmTextDersFive4), //
   ElmModel(elmText: ElmTextDersFive.elmTextDersFive5), //
   ElmModel(elmText: ElmTextDersFive.elmTextDersFive6), //
@@ -125,7 +124,7 @@ List<ElmModel> elmList5 = [
 // TextDersSix
 List<ElmModel> elmList6 = [
   ElmModel(elmText: ElmTextDersSix.elmTextDersSix1), //
-  ElmModel(elmText: ElmTextDersSix.elmTextDersSix2), //
+  // ElmModel(elmText: ElmTextDersSix.elmTextDersSix2), //
   ElmModel(elmText: ElmTextDersSix.elmTextDersSix3), //
   ElmModel(elmText: ElmTextDersSix.elmTextDersSix4), //
  ElmModel(elmText: ElmTextDersSix.elmTextDersSix5), //
@@ -137,7 +136,7 @@ List<ElmModel> elmList6 = [
 // TextDersSeven
 List<ElmModel> elmList7 = [
   ElmModel(elmText: ElmTextDersSeven.elmTextDersSeven1), //
-  ElmModel(elmText: ElmTextDersSeven.elmTextDersSeven2), //
+ // ElmModel(elmText: ElmTextDersSeven.elmTextDersSeven2), //
   ElmModel(elmText: ElmTextDersSeven.elmTextDersSeven3), //
  ElmModel(elmText: ElmTextDersSeven.elmTextDersSeven4), //
   ElmModel(elmText: ElmTextDersSeven.elmTextDersSeven5), //
@@ -154,7 +153,7 @@ List<ElmModel> elmList7 = [
   // TextDersEight
 List<ElmModel> elmList8 = [
   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht1), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht2), //
+  // ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht2), //
   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht3), //
   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht4), //
   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht5), //
@@ -167,7 +166,7 @@ ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht8), //
 //TextDersNine
 List<ElmModel> elmList9 = [
   ElmModel(elmText: ElmTextDersNine.elmTextDersNine1),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine2),
+  // ElmModel(elmText: ElmTextDersNine.elmTextDersNine2),
   ElmModel(elmText: ElmTextDersNine.elmTextDersNine3),
   ElmModel(elmText: ElmTextDersNine.elmTextDersNine4),
   ElmModel(elmText: ElmTextDersNine.elmTextDersNine5),
@@ -182,7 +181,7 @@ List<ElmModel> elmList9 = [
    // TextDerseTen
   List<ElmModel> elmList10 = [
     ElmModel(elmText: ElmTextDersTen.elmTextDersTen1),
-    ElmModel(elmText: ElmTextDersTen.elmTextDersTen2),
+    // ElmModel(elmText: ElmTextDersTen.elmTextDersTen2),
     ElmModel(elmText: ElmTextDersTen.elmTextDersTen3),
     ElmModel(elmText: ElmTextDersTen.elmTextDersTen4),
     ElmModel(elmText: ElmTextDersTen.elmTextDersTen5),
@@ -197,7 +196,7 @@ List<ElmModel> elmList9 = [
   // TextDerseEleven
   List<ElmModel> elmList11 = [
     ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven1),
-    ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven2),
+    // ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven2),
     ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven3),
     ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven4),
     ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven5),
@@ -227,7 +226,7 @@ List<ElmModel> elmList9 = [
   // TextDerseTwelve
   List<ElmModel> elmList12 = [
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve1),
-    ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve2),
+    // ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve2),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve3),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve4),
     ElmModel(elmText: ElmTextDersTwelve.elmTextDersTwelve5),

@@ -95,7 +95,7 @@ class AppTheme {
   //static final FontControllerImp fontController = Get.put(FontControllerImp());
   static final FontControllerImp fontController = Get.put(FontControllerImp());
 
-  static final List<String> fontList = ['Amiri', 'Cairo', 'Tajawal'];
+  //static final List<String> fontList = ['Amiri', 'Cairo', 'Kawkab','Tajawal'];
 
   static ThemeData goldenTheme = ThemeData(
     //fontFamily: 'Amiri',
