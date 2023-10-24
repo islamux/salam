@@ -6,7 +6,7 @@ shareApp() {
   print("Add linkUrl fter push app to GooglePlay store !");
   return FlutterShare.share(
     title: 'مشاركة عبر',
-    text: 'تطبيق أذكاري',
+    text: ' تطبيق سلام ',
     linkUrl: 'سيتم عرض العنوان حال رفع التطبيق .. نشكر لكم ثقتكم',
     chooserTitle: ' مشاركة عبر',
   );
