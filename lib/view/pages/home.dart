@@ -26,10 +26,11 @@ class Home extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: AppColor.black,
+            foregroundColor: AppColor.amber,
             title: const Text(
               " خواطر إيمانية",
               style: TextStyle(
-                color: AppColor.primaryColorGolden,
+              //  color: AppColor.primaryColorGolden,
                 fontSize: 21,
               ),
             ),
@@ -50,7 +51,7 @@ class Home extends StatelessWidget {
                 child: const Text(
                   "شارك",
                   style: TextStyle(
-                    color: AppColor.primaryColorGolden,
+                 color: AppColor.primaryColorGolden,
                     fontSize: 22,
                   ),
                 ),

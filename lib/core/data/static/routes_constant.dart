@@ -25,5 +25,6 @@ class AppRoute {
   static const String elm13= "/elm13";
   static const String elm14= "/elm14";
   static const String elm15= "/elm15";
+  static const String elm16= "/elm16";
   static const String aboutUs = "/aboutUs";
 }

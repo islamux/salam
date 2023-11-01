@@ -5,6 +5,7 @@ import 'package:elm/core/data/static/text/elm_text_ders_fourteen.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_nine.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_one.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_pre.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_sixteen.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_ten.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_therteen.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_twelve.dart';
@@ -312,4 +313,11 @@ List<ElmModel> elmList9 = [
   // ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen24), //
   // ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen25), //
   // ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen26), //
+];
+
+//TextDersSixTeen
+List<ElmModel> elmList16 = [
+  ElmModel(elmText: ElmTextDersSixteen.elmTextDersSixteen1),
+  ElmModel(elmText: ElmTextDersSixteen.elmTextDersSixteen2),
+  ElmModel(elmText: ElmTextDersSixteen.elmTextDersSixteen3),
 ];

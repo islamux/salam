@@ -18,6 +18,7 @@ class Elm10 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.black,
+        foregroundColor: AppColor.amber,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -28,9 +29,9 @@ class Elm10 extends StatelessWidget {
             ),
             const Text(
               "الخاطرة 10  ",
-              style: TextStyle(
-                  color: AppColor.primaryColorGolden,
-                  backgroundColor: AppColor.primaryColorBlack2),
+              // style: TextStyle(
+              //     color: AppColor.primaryColorGolden,
+              //     backgroundColor: AppColor.primaryColorBlack2),
             ),
           ],
         ),
@@ -56,7 +57,7 @@ class Elm10 extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-                style: TextStyle(color: AppColor.primaryColorGolden),
+          //      style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),

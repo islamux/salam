@@ -6,6 +6,7 @@ import 'package:elm/view/pages/elm12.dart';
 import 'package:elm/view/pages/elm13.dart';
 import 'package:elm/view/pages/elm14.dart';
 import 'package:elm/view/pages/elm15.dart';
+import 'package:elm/view/pages/elm16.dart';
 import 'package:elm/view/pages/elm2.dart';
 import 'package:elm/view/pages/elm3.dart';
 import 'package:elm/view/pages/elm4.dart';
@@ -37,5 +38,6 @@ List<GetPage<dynamic>> routes = [
   GetPage(name: AppRoute.elm13,page: () => const Elm13()),
   GetPage(name: AppRoute.elm14,page: () => const Elm14()),
   GetPage(name: AppRoute.elm15,page: () => const Elm15()),
+  GetPage(name: AppRoute.elm16,page: () => const Elm16()),
   GetPage(name: AppRoute.home, page: () =>  const Home()),
 ];

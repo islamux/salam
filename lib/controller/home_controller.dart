@@ -18,6 +18,7 @@ void  goToElm12();
 void  goToElm13();
 void  goToElm14();
 void  goToElm15();
+void  goToElm16();
 }
 
 class HomeControllerImp extends HomeController {
@@ -104,6 +105,11 @@ class HomeControllerImp extends HomeController {
   @override
   void goToElm15() {
     Get.toNamed(AppRoute.elm15);
+  }
+  
+  @override
+  void goToElm16() {
+    Get.toNamed(AppRoute.elm16);
   }
   
 

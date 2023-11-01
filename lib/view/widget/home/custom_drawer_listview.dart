@@ -31,12 +31,12 @@ class CustomDrawerListView extends StatelessWidget {
         ),
 
         // change theme , dark,light to test it later
-          ListTile(
-          leading: const Icon(Icons.dark_mode),
-          title: Text("تغيير الثيم", style: AppTheme.goldenTheme.textTheme.titleMedium,),
-          // onTap: () => Get.changeTheme(
-          //   Get.isDarkMode ? ThemeData.light() :ThemeData.dark()),
-          ),
+          // ListTile(
+          // leading: const Icon(Icons.dark_mode),
+          // title: Text("تغيير الثيم", style: AppTheme.goldenTheme.textTheme.titleMedium,),
+          // // onTap: () => Get.changeTheme(
+          // //   Get.isDarkMode ? ThemeData.light() :ThemeData.dark()),
+          // ),
         
 
       ],
