@@ -22,11 +22,7 @@ void  goToElm16();
 }
 
 class HomeControllerImp extends HomeController {
-  // My special athkar
-  List<String> pages =
-      List.generate(210, (index) => 'Page ${index + 1}'); // tesing
 
-  
   @override
   void goToElmPre() {
     Get.toNamed(AppRoute.elmPre);

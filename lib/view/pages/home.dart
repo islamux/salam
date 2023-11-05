@@ -211,6 +211,11 @@ class Home extends StatelessWidget {
                           onPressed: () => controllerE.goToElm15(),
                           icon: const Icon(Icons.menu_book),),
 
+                      // Button 16 
+                       CustomButton(
+                          customText: "(16)  المرأة الصالحة  ",
+                          onPressed: () => controllerE.goToElm16(),
+                          icon: const Icon(Icons.menu_book),),
 
                       ],
                     ),
