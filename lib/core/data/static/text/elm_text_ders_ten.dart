@@ -12,7 +12,7 @@ class ElmTextDersTen {
 
 // """;
 
-   static const String elmTextDersTen3 = """
+  static const String elmTextDersTen3 = """
  وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا 
 سورة العنكبوت 
 
@@ -28,7 +28,7 @@ class ElmTextDersTen {
 ---------------------
 """;
 
-static const String elmTextDersTen5 = """ 
+  static const String elmTextDersTen5 = """ 
 وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِینَ ۝٦٩ 
 سورة العنكبوت 
 
@@ -37,13 +37,13 @@ static const String elmTextDersTen5 = """
 
 """;
 
-static const String elmTextDersTen6 = """
-معيةالله للمحسنين 
+  static const String elmTextDersTen6 = """
+معية الله للمحسنين 
 هذه معيه خاصه، وهذه المعيه الخاصه ثمنها ان تكون محسنآ مع من ؟ مع كل الخلق، بقولك محسن، بعملك محسن، بحرفتك محسن، بوظيفتك محسن، بتجارتك محسن، بصناعتك محسن، بكل شيئ تفعله، في بيتك محسن، مع جيرانك محسن، مع الخلق كلهم محسن معهم.
  
  ---------------------
    """;
-   static const String elmTextDersTen7 = """
+  static const String elmTextDersTen7 = """
 وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِینَ ۝٦٩ 
 سورة العنكبوت 
 
@@ -52,7 +52,7 @@ static const String elmTextDersTen6 = """
 
  """;
 
-   static const String elmTextDersTen8 = """
+  static const String elmTextDersTen8 = """
 :قال تعالى 
  وَقَالَ ٱللَّهُ إِنِّی مَعَكُمۡۖ لَئِنۡ أَقَمۡتُمُ ٱلصَّلَوٰةَ وَءَاتَیۡتُمُ ٱلزَّكَوٰةَ وَءَامَنتُم بِرُسُلِی وَعَزَّرۡتُمُوهُمۡ وَأَقۡرَضۡتُمُ ٱللَّهَ قَرۡضًا حَسَنࣰا 
  سورة المائدة 
@@ -73,7 +73,7 @@ static const String elmTextDersTen6 = """
 ---------------------
   """;
 
-   static const String elmTextDersTen10 = """
+  static const String elmTextDersTen10 = """
 يجب أن تكون محسنا، يجب أن يفتقدك الناس إذا غبت عنهم، إذا دخلت البيت يجب أن يكون عند اولادك عيد، لأنك محسن، فإذا كنت قاسيا عليهم، فإذا كنت بخيلا يتوخى الأولاد أن لا تكون بينهم، فكن محسنآ في عملك، في دائرتك، في متجرك، في مصنعك، في دكانك، في زراعتك، في أي شيء، محسن مع الوالدين، مع الزوجة، مع الأقارب، مع الجيران
 
  وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا 
@@ -81,7 +81,7 @@ static const String elmTextDersTen6 = """
  ---------------------
  """;
 
-   static const String elmTextDersTen11 = """
+  static const String elmTextDersTen11 = """
 بذلوا كل جهدهم، كل طاقتهم، كل علمهم، كل خبرتهم، كل عضلاتهم، كل وقتهم، كل شبابهم فينا، من أجل معرفتنا وطاعتنا والتقرب إلينا.
 
 لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ  
@@ -114,12 +114,11 @@ static const String elmTextDersTen6 = """
 
 //   static const String elmTextDersTen15 = """
 
-
 // ---------------------
 
 //   """;
 
-//    static const String elmTextDersTen16 = """ 
+//    static const String elmTextDersTen16 = """
 
 //  ---------------------
 

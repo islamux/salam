@@ -19,12 +19,13 @@ class AppRoute {
   static const String elm7 = "/elm7";
   static const String elm8 = "/elm8";
   static const String elm9 = "/elm9";
-  static const String elm10= "/elm10";
-  static const String elm11= "/elm11";
-  static const String elm12= "/elm12";
-  static const String elm13= "/elm13";
-  static const String elm14= "/elm14";
-  static const String elm15= "/elm15";
-  static const String elm16= "/elm16";
+  static const String elm10 = "/elm10";
+  static const String elm11 = "/elm11";
+  static const String elm12 = "/elm12";
+  static const String elm13 = "/elm13";
+  static const String elm14 = "/elm14";
+  static const String elm15 = "/elm15";
+  static const String elm16 = "/elm16";
+  static const String elm17 = "/elm17";
   static const String aboutUs = "/aboutUs";
 }

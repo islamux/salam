@@ -4,7 +4,7 @@ import 'package:elm/function/share_app.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawerListView extends StatelessWidget {
-  const CustomDrawerListView({Key? key}) : super(key: key);
+  const CustomDrawerListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,14 +31,12 @@ class CustomDrawerListView extends StatelessWidget {
         ),
 
         // change theme , dark,light to test it later
-          // ListTile(
-          // leading: const Icon(Icons.dark_mode),
-          // title: Text("تغيير الثيم", style: AppTheme.goldenTheme.textTheme.titleMedium,),
-          // // onTap: () => Get.changeTheme(
-          // //   Get.isDarkMode ? ThemeData.light() :ThemeData.dark()),
-          // ),
-        
-
+        // ListTile(
+        // leading: const Icon(Icons.dark_mode),
+        // title: Text("تغيير الثيم", style: AppTheme.goldenTheme.textTheme.titleMedium,),
+        // // onTap: () => Get.changeTheme(
+        // //   Get.isDarkMode ? ThemeData.light() :ThemeData.dark()),
+        // ),
       ],
     );
   }
