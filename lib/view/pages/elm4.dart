@@ -2,6 +2,8 @@ import 'package:elm/controller/elm4_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
+import 'package:elm/function/decrease_font.dart';
+import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/custom_text_slider_elm4.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -45,7 +47,8 @@ class Elm4 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              controllerM.decreaseFontSize();
+              // controllerM.decreaseFontSize();
+              decreaseFont(controllerM);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -56,14 +59,15 @@ class Elm4 extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-          //      style: TextStyle(color: AppColor.primaryColorGolden),
+                //      style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),
 
           IconButton(
               onPressed: () {
-                controllerM.increaseFontSize();
+                // controllerM.increaseFontSize();
+                increaseFont(controllerM);
               },
               icon: const Icon(Icons.add))
         ],

@@ -2,6 +2,8 @@ import 'package:elm/controller/elm14_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
+import 'package:elm/function/decrease_font.dart';
+import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/custom_text_slider_elm14.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,8 +13,7 @@ class Elm14 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm14ControllerImp controllerAs =
-        Get.find<Elm14ControllerImp>();
+    final Elm14ControllerImp controllerAs = Get.find<Elm14ControllerImp>();
     //Elm14ControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
     return Scaffold(
       appBar: AppBar(
@@ -28,9 +29,9 @@ class Elm14 extends StatelessWidget {
             ),
             const Text(
               "الخاطرة 14  ",
-            //  style: TextStyle(
+              //  style: TextStyle(
               //    color: AppColor.primaryColorGolden,
-                //  backgroundColor: AppColor.primaryColorBlack2),
+              //  backgroundColor: AppColor.primaryColorBlack2),
             ),
           ],
         ),
@@ -46,7 +47,8 @@ class Elm14 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              controllerAs.decreaseFontSize();
+              // controllerAs.decreaseFontSize();
+              decreaseFont(controllerAs);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -56,14 +58,15 @@ class Elm14 extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-             //   style: TextStyle(color: AppColor.primaryColorGolden),
+                //   style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),
 
           IconButton(
               onPressed: () {
-                controllerAs.increaseFontSize();
+                // controllerAs.increaseFontSize();
+                increaseFont(controllerAs);
               },
               icon: const Icon(Icons.add))
         ],

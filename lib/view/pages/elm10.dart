@@ -2,6 +2,8 @@ import 'package:elm/controller/elm10_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
+import 'package:elm/function/decrease_font.dart';
+import 'package:elm/function/increase_font.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,8 +14,7 @@ class Elm10 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm10ControllerImp controllerAs =
-        Get.find<Elm10ControllerImp>();
+    final Elm10ControllerImp controllerAs = Get.find<Elm10ControllerImp>();
     //Elm10ControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
     return Scaffold(
       appBar: AppBar(
@@ -47,7 +48,8 @@ class Elm10 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              controllerAs.decreaseFontSize();
+              // controllerAs.decreaseFontSize();
+              decreaseFont(controllerAs);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -57,14 +59,15 @@ class Elm10 extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-          //      style: TextStyle(color: AppColor.primaryColorGolden),
+                //      style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),
 
           IconButton(
               onPressed: () {
-                controllerAs.increaseFontSize();
+                // controllerAs.increaseFontSize();
+                increaseFont(controllerAs);
               },
               icon: const Icon(Icons.add))
         ],
