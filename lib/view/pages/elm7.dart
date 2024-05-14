@@ -2,6 +2,8 @@ import 'package:elm/controller/elm7_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
+import 'package:elm/function/decrease_font.dart';
+import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/custom_text_slider_elm7.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,6 +19,7 @@ class Elm7 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.black,
+        foregroundColor: AppColor.amber,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -27,9 +30,9 @@ class Elm7 extends StatelessWidget {
             ),
             const Text(
               " الخاطرة 7 ",
-              style: TextStyle(
-                  color: AppColor.primaryColorGolden,
-                  backgroundColor: AppColor.primaryColorBlack2),
+              // style: TextStyle(
+              //     color: AppColor.primaryColorGolden,
+              //     backgroundColor: AppColor.primaryColorBlack2),
             ),
           ],
         ),
@@ -44,7 +47,8 @@ class Elm7 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              controllerM.decreaseFontSize();
+              // controllerM.decreaseFontSize();
+              decreaseFont(controllerM);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -55,14 +59,15 @@ class Elm7 extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-                style: TextStyle(color: AppColor.primaryColorGolden),
+                //      style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),
 
           IconButton(
               onPressed: () {
-                controllerM.increaseFontSize();
+                // controllerM.increaseFontSize();
+                increaseFont(controllerM);
               },
               icon: const Icon(Icons.add))
         ],

@@ -17,19 +17,19 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     final HomeControllerImp controllerE = Get.find<HomeControllerImp>();
 
-    return // Wrap Scaffold to change direction of widgets in pageto rtl (arabic)
-        WillPopScope(
-      // Make willPopscop first widget
-      onWillPop: () => alertExitApp(),
+    return PopScope(
+      canPop: true,
+      onPopInvoked: (didPop) => alertExitApp(),
       child: Directionality(
         textDirection: TextDirection.rtl,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: AppColor.black,
+            foregroundColor: AppColor.amber,
             title: const Text(
               " خواطر إيمانية",
               style: TextStyle(
-                color: AppColor.primaryColorGolden,
+                //  color: AppColor.primaryColorGolden,
                 fontSize: 21,
               ),
             ),
@@ -78,149 +78,172 @@ class Home extends StatelessWidget {
                 ),
               ),
 
-              // إسحب للإعلى للمزيد 
-                       const  Padding(padding:  EdgeInsets.only(top: 90, right: 120,),
-                       child: Column(
-                        children: [
-                          Icon(
-                            Icons.arrow_upward,
-                            color:AppColor.primaryColorGolden,
-                            size: 36,),
-                            Text(" إسحب للأعلى للمزيد",
-                            style: TextStyle(
-                              color: AppColor.primaryColorGolden,
-                             fontSize: 18,),),],),
-                       ),
+              // إسحب للإعلى للمزيد
+              const Padding(
+                padding: EdgeInsets.only(
+                  top: 90,
+                  right: 140,
+                ),
+                child: Column(
+                  children: [
+                    Icon(
+                      Icons.arrow_upward,
+                      color: AppColor.primaryColorGolden,
+                      size: 36,
+                    ),
+                    Text(
+                      " إسحب للأعلى للمزيد",
+                      style: TextStyle(
+                        color: AppColor.primaryColorGolden,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
 
               Container(
-                padding:  const EdgeInsets.only(top: 160, bottom: 130),
+                padding: const EdgeInsets.only(top: 160, bottom: 130),
                 child: Center(
                   child: SingleChildScrollView(
-                    scrollDirection: Axis.vertical, // make sure of scroll direction 
+                    scrollDirection:
+                        Axis.vertical, // make sure of scroll direction
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        
                         CustomButton(
                           // Button 1
                           customText: "خواطر متفرقة حول الدين والحياة",
                           onPressed: () => controllerE.goToElmPre(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                        
+
                         CustomButton(
                           // Button 2
                           customText: "(1) عوامل تفكك وفشل الأسرة والقبيلة",
                           onPressed: () => controllerE.goToElm1(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                  
+
                         CustomButton(
                           // Button 3
                           customText: "(2)  العلم والمعرفة    ",
                           onPressed: () => controllerE.goToElm2(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                  
+
                         CustomButton(
                           // Button 4
                           customText: "(3) العطاء ليس مقياس لحب الله للعبد",
                           onPressed: () => controllerE.goToElm3(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                  
+
                         CustomButton(
                           // Button 5
                           customText: " (4) المحبة الإلهية   ",
                           onPressed: () => controllerE.goToElm4(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                  
+
                         CustomButton(
                           // Button 6
                           customText: "  (5)   العدل      ",
                           onPressed: () => controllerE.goToElm5(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                  
+
                         CustomButton(
                           // Button 7
                           customText: "  (6)   الشرك الخفي     ",
                           onPressed: () => controllerE.goToElm6(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                  
+
                         CustomButton(
                           // Button 8
                           customText: "  (7)   التوكل على الله     ",
                           onPressed: () => controllerE.goToElm7(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                        
-                        // Button 9 
+
+                        // Button 9
                         CustomButton(
                           customText: " (8)   المعية الإلهية",
                           onPressed: () => controllerE.goToElm8(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                                
+
                         // Button 10
                         CustomButton(
                           customText: "(9) فأما اليتيم فلا تقهر ",
                           onPressed: () => controllerE.goToElm9(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                      
-                       // Button 11
+
+                        // Button 11
                         CustomButton(
                           customText: " (10) والذين جاهدو فينا",
                           onPressed: () => controllerE.goToElm10(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                                
-                      // Button 12
+
+                        // Button 12
                         CustomButton(
                           customText: " (11)   الرزق",
                           onPressed: () => controllerE.goToElm11(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                      
-                      // Button 12
+
+                        // Button 12
                         CustomButton(
                           customText: "(12) وإنك لعلى خلق عظيم",
                           onPressed: () => controllerE.goToElm12(),
                           icon: const Icon(Icons.menu_book),
                         ),
-                      
-                      // Button 13
+
+                        // Button 13
                         CustomButton(
                           customText: "(13) مأ أصابكم من مصيبة ",
                           onPressed: () => controllerE.goToElm13(),
-                          icon: const Icon(Icons.menu_book),),
-                       
-                       // Button 14
+                          icon: const Icon(Icons.menu_book),
+                        ),
+
+                        // Button 14
                         CustomButton(
                           customText: "(14)  الإسلام دين شامل",
                           onPressed: () => controllerE.goToElm14(),
-                          icon: const Icon(Icons.menu_book),),
-                       
-                       // Button 15
+                          icon: const Icon(Icons.menu_book),
+                        ),
+
+                        // Button 15
                         CustomButton(
                           customText: "(15) العزة لله  ",
                           onPressed: () => controllerE.goToElm15(),
-                          icon: const Icon(Icons.menu_book),),
+                          icon: const Icon(Icons.menu_book),
+                        ),
 
+                        // Button 16
+                        CustomButton(
+                          customText: "(16)  المرأة الصالحة  ",
+                          onPressed: () => controllerE.goToElm16(),
+                          icon: const Icon(Icons.menu_book),
+                        ),
 
+                        // Button 14
+                        CustomButton(
+                          customText: " (17)   الدعاء",
+                          onPressed: () => controllerE.goToElm17(),
+                          icon: const Icon(Icons.menu_book),
+                        ),
                       ],
                     ),
                   ),
-                
                 ),
-                
               ),
             ],
           ),
-          
+
           // Floating button to "Go to the end of page " with hand
           // floatingActionButton:  Row(
           //   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -228,7 +251,7 @@ class Home extends StatelessWidget {
           //     CustomFloatingButton(herotag: 'fHome', onPressed: (){}, text: const Text("اسحب للإسفل"))
           //   ],
           // ),
-         ),
+        ),
       ),
     );
   }

@@ -30,7 +30,7 @@ class Elm extends StatelessWidget {
     // Remove splash screen after after app run
 
     //check if there are images in all application that decrease performance.
-    //debugInvertOversizedImages = true; // i disable it after check images
+    //debugInvertOversizeImages = true; // i disable it after check images
 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,

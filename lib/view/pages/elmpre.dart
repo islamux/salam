@@ -2,6 +2,8 @@ import 'package:elm/controller/elmpre_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
+import 'package:elm/function/decrease_font.dart';
+import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/custom_text_slider_elmpre.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,12 +13,12 @@ class ElmPre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ElmPreControllerImp controllerAs =
-        Get.find<ElmPreControllerImp>();
+    final ElmPreControllerImp controllerAs = Get.find<ElmPreControllerImp>();
     //ElmPreControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.black,
+        foregroundColor: AppColor.amber,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -28,8 +30,9 @@ class ElmPre extends StatelessWidget {
             const Text(
               "  المقدمة  ",
               style: TextStyle(
-                  color: AppColor.primaryColorGolden,
-                  backgroundColor: AppColor.primaryColorBlack2),
+                color: AppColor.primaryColorGolden,
+                //     backgroundColor: AppColor.primaryColorBlack2
+              ),
             ),
           ],
         ),
@@ -45,7 +48,8 @@ class ElmPre extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              controllerAs.decreaseFontSize();
+              // controllerAs.decreaseFontSize();
+              decreaseFont(controllerAs);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -55,14 +59,15 @@ class ElmPre extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-                style: TextStyle(color: AppColor.primaryColorGolden),
+                //    style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),
 
           IconButton(
               onPressed: () {
-                controllerAs.increaseFontSize();
+                // controllerAs.increaseFontSize();
+                increaseFont(controllerAs);
               },
               icon: const Icon(Icons.add))
         ],

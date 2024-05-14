@@ -2,34 +2,32 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:get/get.dart';
 
 abstract class HomeController extends GetxController {
-void goToElmPre();
-void  goToElm1();
-void  goToElm2();
-void  goToElm3();
-void  goToElm4();
-void  goToElm5();
-void  goToElm6();
-void  goToElm7();
-void  goToElm8();
-void  goToElm9();
-void  goToElm10();
-void  goToElm11();
-void  goToElm12();
-void  goToElm13();
-void  goToElm14();
-void  goToElm15();
+  void goToElmPre();
+  void goToElm1();
+  void goToElm2();
+  void goToElm3();
+  void goToElm4();
+  void goToElm5();
+  void goToElm6();
+  void goToElm7();
+  void goToElm8();
+  void goToElm9();
+  void goToElm10();
+  void goToElm11();
+  void goToElm12();
+  void goToElm13();
+  void goToElm14();
+  void goToElm15();
+  void goToElm16();
+  void goToElm17();
 }
 
 class HomeControllerImp extends HomeController {
-  // My special athkar
-  List<String> pages =
-      List.generate(210, (index) => 'Page ${index + 1}'); // tesing
-
-  
   @override
   void goToElmPre() {
     Get.toNamed(AppRoute.elmPre);
   }
+
   @override
   goToElm1() {
     Get.toNamed(AppRoute.elm1);
@@ -69,45 +67,49 @@ class HomeControllerImp extends HomeController {
   goToElm8() {
     Get.toNamed(AppRoute.elm8);
   }
-  
+
   @override
   goToElm9() {
     Get.toNamed(AppRoute.elm9);
-    
   }
-  
+
   @override
   goToElm10() {
     Get.toNamed(AppRoute.elm10);
   }
-  
+
   @override
   void goToElm11() {
     Get.toNamed(AppRoute.elm11);
   }
-  
+
   @override
   void goToElm12() {
     Get.toNamed(AppRoute.elm12);
   }
-  
+
   @override
   void goToElm13() {
     Get.toNamed(AppRoute.elm13);
   }
-  
+
   @override
   void goToElm14() {
     Get.toNamed(AppRoute.elm14);
   }
-  
+
   @override
   void goToElm15() {
     Get.toNamed(AppRoute.elm15);
   }
-  
 
+  @override
+  void goToElm16() {
+    Get.toNamed(AppRoute.elm16);
+  }
 
-  
+  @override
+  void goToElm17() {
+    Get.toNamed(AppRoute.elm17);
+  }
 }
-
