@@ -10,7 +10,9 @@ enable dark mode
 
 change part of text to bold in list model flutter ?
 how to make word in middle of line in model list
-
+اجعل نص 
+اسحب للاعلى للمزيد 
+في المنتصف ليس برقم محدد لكي تناسب جميع الاجهزة 
 -------------------------------
 الرزق
 

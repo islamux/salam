@@ -79,12 +79,13 @@ class Home extends StatelessWidget {
               ),
 
               // إسحب للإعلى للمزيد
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(
-                  top: 90,
-                  right: 140,
+                  // make the space for any screen
+                  top: MediaQuery.of(context).size.height * 0.1,
+                  right: MediaQuery.of(context).size.width * 0.3,
                 ),
-                child: Column(
+                child: const Column(
                   children: [
                     Icon(
                       Icons.arrow_upward,
@@ -92,7 +93,7 @@ class Home extends StatelessWidget {
                       size: 36,
                     ),
                     Text(
-                      " إسحب للأعلى للمزيد",
+                      "إسحب للأعلى للمزيد",
                       style: TextStyle(
                         color: AppColor.primaryColorGolden,
                         fontSize: 18,
