@@ -244,14 +244,6 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
-
-          // Floating button to "Go to the end of page " with hand
-          // floatingActionButton:  Row(
-          //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-          //   children: [
-          //     CustomFloatingButton(herotag: 'fHome', onPressed: (){}, text: const Text("اسحب للإسفل"))
-          //   ],
-          // ),
         ),
       ),
     );
