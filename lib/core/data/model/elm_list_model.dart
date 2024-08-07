@@ -18,6 +18,8 @@ import 'package:elm/core/data/static/text/elm_text_ders_six.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_seven.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_eight.dart';
 
+// elmText // these to avoid errors in all code , remove it later
+
 // TextElmPre
 List<ElmModel> elmListPre = [
   ElmModel(elmText: ElmTextPre.elmTextPre),
@@ -316,8 +318,26 @@ List<ElmModel> elmList15 = [
 
 //TextDersSixTeen
 List<ElmModel> elmList16 = [
-  ElmModel(elmText: ElmTextDersSixteen.elmTextDersSixteen1),
+  // page 1
+  ElmModel(
+      titleOne: ElmTextDersSixteen.titleOne,
+      subtitleOne: ElmTextDersSixteen.subtitleOne1,
+      elmTextOne: ElmTextDersSixteen.elmTextDersSixteenOne1,
+      ayahHadithOne: ElmTextDersSixteen.ayahHadithOne1,
+      elmTextOne2: ElmTextDersSixteen.elmTextDersSixteenOne2,
+      subtitleOne2: ElmTextDersSixteen.subtitleOne2,
+      elmTextOne3: ElmTextDersSixteen.elmTextDersSixteenOne3,
+      ayahHadithOne2: ElmTextDersSixteen.ayahHadithOne2,
+      elmTextOne4: ElmTextDersSixteen.elmTextDersSixteenOne4,
+      ayahHadithOne3: ElmTextDersSixteen.ayahHadithOne3,
+      elmTextOne5: ElmTextDersSixteen.elmTextDersSixteenOne5,
+      ayahHadithOne4: ElmTextDersSixteen.ayahHadithOne4,
+      elmTextOne6: ElmTextDersSixteen.elmTextDersSixteenOne6,
+      ayahHadithOne5: ElmTextDersSixteen.ayahHadithOne5,
+      footerOne: ElmTextDersSixteen.footerOne),
+  // page 2
   ElmModel(elmText: ElmTextDersSixteen.elmTextDersSixteen2),
+  // page 3
   ElmModel(elmText: ElmTextDersSixteen.elmTextDersSixteen3),
 ];
 
