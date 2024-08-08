@@ -87,6 +87,40 @@ class CustomTextSliderElm16 extends StatelessWidget {
                                     TextSpan(text: elmList16[i].footerOne),
 
                                     // Page 2 : titles , subtitles, ayahHadiths, footers
+                                    TextSpan(text: elmList16[i].elmTextTwo1),
+                                    TextSpan(text: elmList16[i].ayahHadithTwo1),
+                                    TextSpan(text: elmList16[i].elmTextTwo2),
+                                    TextSpan(text: elmList16[i].ayahHadithTwo2),
+                                    TextSpan(text: elmList16[i].elmTextTwo3),
+                                    TextSpan(text: elmList16[i].ayahHadithTwo3),
+                                    TextSpan(text: elmList16[i].subtitleTwo1),
+                                    TextSpan(text: elmList16[i].elmTextTwo4),
+                                    TextSpan(text: elmList16[i].ayahHadithTwo4),
+                                    TextSpan(text: elmList16[i].elmTextTwo5),
+                                    TextSpan(text: elmList16[i].footerTwo),
+
+                                    // Page 3 : titles , subtitles, ayahHadiths, footers
+                                    TextSpan(text: elmList16[i].subtitleThree1),
+                                    TextSpan(
+                                        text: elmList16[i].ayahHadithThree1),
+                                    TextSpan(text: elmList16[i].elmTextThree1),
+                                    TextSpan(text: elmList16[i].subtitleThree2),
+                                    TextSpan(text: elmList16[i].elmTextThree2),
+                                    TextSpan(
+                                        text: elmList16[i].ayahHadithThree2),
+                                    TextSpan(text: elmList16[i].subtitleThree3),
+                                    TextSpan(text: elmList16[i].elmTextThree3),
+                                    TextSpan(
+                                        text: elmList16[i].ayahHadithThree3),
+                                    TextSpan(text: elmList16[i].elmTextThree4),
+
+                                    TextSpan(
+                                        text: elmList16[i].ayahHadithThree4),
+                                    TextSpan(text: elmList16[i].elmTextThree5),
+                                    TextSpan(
+                                        text: elmList16[i].ayahHadithThree5),
+                                    TextSpan(text: elmList16[i].elmTextThree6),
+                                    TextSpan(text: elmList16[i].subtitleThree4),
                                   ],
                                 ),
                                 textAlign: TextAlign.right,
