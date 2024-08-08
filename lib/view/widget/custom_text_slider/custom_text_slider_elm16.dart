@@ -2,9 +2,7 @@ import 'package:elm/controller/elm16_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/core/data/static/theme/custom_text_style_footer.dart';
-import 'package:elm/core/data/static/theme/custom_text_style_hadith.dart';
-import 'package:elm/core/data/static/theme/custom_text_style_title.dart';
+import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -66,115 +64,132 @@ class CustomTextSliderElm16 extends StatelessWidget {
                                     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
                                     TextSpan(
                                         text: elmList16[i].titleOne,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(
                                         text: elmList16[i].subtitleOne1,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(text: elmList16[i].elmTextOne1),
                                     TextSpan(
                                       text: elmList16[i].ayahHadithOne,
-                                      style: customTextStyleHadith(),
+                                      style: AppTheme.customTextStyleHadith(),
                                     ),
                                     TextSpan(text: elmList16[i].elmTextOne2),
                                     TextSpan(
                                         text: elmList16[i].subtitleOne2,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(text: elmList16[i].elmTextOne3),
 
                                     TextSpan(
                                         text: elmList16[i].ayahHadithOne2,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextOne4),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithOne3,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextOne5),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithOne4,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextOne6),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithOne5,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(
                                         text: elmList16[i].footerOne,
-                                        style: customTextStyleFooter()),
+                                        style:
+                                            AppTheme.customTextStyleFooter()),
 
                                     // Page 2 : titles , subtitles, ayahHadiths, footers
                                     TextSpan(text: elmList16[i].elmTextTwo1),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithTwo1,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextTwo2),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithTwo2,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextTwo3),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithTwo3,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(
                                         text: elmList16[i].subtitleTwo1,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(text: elmList16[i].elmTextTwo4),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithTwo4,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextTwo5),
                                     TextSpan(
                                         text: elmList16[i].footerTwo,
-                                        style: customTextStyleFooter()),
+                                        style:
+                                            AppTheme.customTextStyleFooter()),
 
                                     // Page 3 : titles , subtitles, ayahHadiths, footers
                                     TextSpan(
                                         text: elmList16[i].subtitleThree1,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree1,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextThree1),
                                     TextSpan(
                                         text: elmList16[i].subtitleThree2,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(text: elmList16[i].elmTextThree2),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree2,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(
                                         text: elmList16[i].subtitleThree3,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(text: elmList16[i].elmTextThree3),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree3,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextThree4),
 
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree4,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextThree5),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree5,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextThree6),
                                     TextSpan(
                                         text: elmList16[i].subtitleThree4,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree6,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextThree7),
                                     TextSpan(
                                         text: elmList16[i].subtitleThree5,
-                                        style: customTextStyleTitle()),
+                                        style: AppTheme.customTextStyleTitle()),
                                     TextSpan(text: elmList16[i].elmTextThree8),
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree7,
-                                        style: customTextStyleHadith()),
+                                        style:
+                                            AppTheme.customTextStyleHadith()),
                                     TextSpan(text: elmList16[i].elmTextThree9),
                                     TextSpan(
                                         text: elmList16[i].footer3,
-                                        style: customTextStyleFooter())
+                                        style: AppTheme.customTextStyleFooter())
                                   ],
                                 ),
                                 textAlign: TextAlign.right,

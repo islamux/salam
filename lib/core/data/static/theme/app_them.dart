@@ -9,6 +9,27 @@ class AppTheme {
 
   //static final List<String> fontList = ['Amiri', 'Cairo', 'Kawkab','Tajawal'];
 
+  static TextStyle customTextStyleFooter() {
+    return const TextStyle(
+      color: AppColor.footer,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
+  static TextStyle customTextStyleHadith() {
+    return const TextStyle(
+      color: AppColor.ayahHadith,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
+  static TextStyle customTextStyleTitle() {
+    return const TextStyle(
+      color: AppColor.title,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
   static ThemeData goldenTheme = ThemeData(
     //fontFamily: 'Amiri',
     textTheme: TextTheme(
