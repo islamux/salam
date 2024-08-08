@@ -321,8 +321,8 @@ List<ElmModel> elmList16 = [
   // page 1
   ElmModel(
       titleOne: ElmTextDersSixteen.titleOne,
-      subtitleOne: ElmTextDersSixteen.subtitleOne1,
-      elmTextOne: ElmTextDersSixteen.elmTextDersSixteenOne1,
+      subtitleOne1: ElmTextDersSixteen.subtitleOne1,
+      elmTextOne1: ElmTextDersSixteen.elmTextDersSixteenOne1,
       ayahHadithOne: ElmTextDersSixteen.ayahHadithOne1,
       elmTextOne2: ElmTextDersSixteen.elmTextDersSixteenOne2,
       subtitleOne2: ElmTextDersSixteen.subtitleOne2,

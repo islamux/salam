@@ -1,6 +1,8 @@
 class ElmModel {
   // Proberties
   final String? elmText; // these to avoid errors in all code , remove it later
+  // make code more clean with titles.1, subtitles.1, elmText.pageOne.1, footers.1
+  // --- pages.page1.titles.1, pages.page1.subtitles.1, pages.page1.ayahHadiths.1, pages.footers.1
 
   // page 1
   final String? titleOne;
