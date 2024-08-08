@@ -156,9 +156,7 @@ class CustomTextSliderElm16 extends StatelessWidget {
                                     TextSpan(
                                         text: elmList16[i].ayahHadithThree5,
                                         style: customTextStyleHadith()),
-                                    TextSpan(
-                                        text: elmList16[i].elmTextThree6,
-                                        style: customTextStyleHadith()),
+                                    TextSpan(text: elmList16[i].elmTextThree6),
                                     TextSpan(
                                         text: elmList16[i].subtitleThree4,
                                         style: customTextStyleTitle()),

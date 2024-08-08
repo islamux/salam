@@ -192,7 +192,8 @@ class ElmTextDersSixteen {
 """;
   static const String subtitleThree4 = """
 
-من ضوابط خروج المرأة  
+من ضوابط خروج المرأة 
+-------------- 
 """;
   static const String ayahHadithThree6 = """
 
