@@ -1,6 +1,7 @@
 import 'package:elm/controller/elm16_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_sixteen.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,8 +11,7 @@ class CustomTextSliderElm16 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm16ControllerImp controller =
-        Get.find<Elm16ControllerImp>();
+    final Elm16ControllerImp controller = Get.find<Elm16ControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<Elm16ControllerImp>(
       builder: (_) {
@@ -50,18 +50,44 @@ class CustomTextSliderElm16 extends StatelessWidget {
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm16ControllerImp>(
                             builder: (controller) {
-                              return Text(
-                                elmList16[i].elmText ?? '',
-                                // Provide a default value (?? '') in case duaText is null
-                                style:  TextStyle(
-                                  // Problem here is fontsize need to hotreload why?
-                                  // I found the solution by wrab Text with GetBuilder to refresh only the
-                                  // widgt not all page
-                                  fontSize:
-                                      //Get.find<Elm2ControllerImp>().fontSize,
-                                      controller.fontSize,
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "AmiriQ",
+                              return
+
+                                  // Rich Text Loop on rich text
+                                  RichText(
+                                text: TextSpan(
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controller.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    // Page 1 : titles, subtitles, texts, ayahHadiths, footer
+                                    TextSpan(
+                                        text: elmList16[i].titleOne,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.bold)),
+                                    TextSpan(text: elmList16[i].subtitleOne1),
+                                    TextSpan(text: elmList16[i].elmTextOne1),
+                                    TextSpan(
+                                      text: elmList16[i].ayahHadithOne,
+                                      style:
+                                          const TextStyle(color: AppColor.tail),
+                                    ),
+                                    TextSpan(text: elmList16[i].elmTextOne2),
+                                    TextSpan(text: elmList16[i].subtitleOne2),
+                                    TextSpan(text: elmList16[i].elmTextOne3),
+
+                                    TextSpan(text: elmList16[i].ayahHadithOne2),
+                                    TextSpan(text: elmList16[i].elmTextOne4),
+                                    TextSpan(text: elmList16[i].ayahHadithOne3),
+                                    TextSpan(text: elmList16[i].elmTextOne5),
+                                    TextSpan(text: elmList16[i].ayahHadithOne4),
+                                    TextSpan(text: elmList16[i].elmTextOne6),
+                                    TextSpan(text: elmList16[i].ayahHadithOne5),
+                                    TextSpan(text: elmList16[i].footerOne),
+
+                                    // Page 2 : titles , subtitles, ayahHadiths, footers
+                                  ],
                                 ),
                                 textAlign: TextAlign.right,
                               );
@@ -74,7 +100,7 @@ class CustomTextSliderElm16 extends StatelessWidget {
                 ),
               ),
             ),
-            
+
             // slider widget
             Positioned(
               bottom: 16,
@@ -98,7 +124,7 @@ class CustomTextSliderElm16 extends StatelessWidget {
                   // Display current page number
                   Text(
                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controller.currentPageIndex+1.toInt()} / ${elmList16.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${elmList16.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )

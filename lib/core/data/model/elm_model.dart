@@ -4,8 +4,8 @@ class ElmModel {
 
   // page 1
   final String? titleOne;
-  final String? subtitleOne;
-  final String? elmTextOne;
+  final String? subtitleOne1;
+  final String? elmTextOne1;
   final String? ayahHadithOne;
   final String? elmTextOne2;
   final String? subtitleOne2;
@@ -94,8 +94,8 @@ class ElmModel {
     this.elmTextThree8,
     this.ayahHadithThree9,
     this.titleOne,
-    this.subtitleOne,
-    this.elmTextOne,
+    this.subtitleOne1,
+    this.elmTextOne1,
     this.ayahHadithOne,
     this.elmTextOne2,
     this.subtitleOne2,
