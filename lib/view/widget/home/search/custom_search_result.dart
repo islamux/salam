@@ -24,7 +24,8 @@ class CustomSearchResultPage extends StatelessWidget {
         body: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Text(
-            elm.elmText!,
+            elm.elmText!, // change later
+            /*** todo */
             style: const TextStyle(fontSize: 16),
           ),
         ),
