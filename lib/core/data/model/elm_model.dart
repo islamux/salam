@@ -1,10 +1,15 @@
-class ElmModel {
-  // Proberties
-  final String? elmText; // these to avoid errors in all code , remove it later
-  // make code more clean with titles.1, subtitles.1, elmText.pageOne.1, footers.1
-  // --- pages.page1.titles.1, pages.page1.subtitles.1, pages.page1.ayahHadiths.1, pages.footers.1
+import 'package:elm/core/data/model/page_content.dart';
 
-  // page 1
+class ElmModel {
+  // Dont Repeat Your Self
+  final PageContent pageOne;
+  final PageContent pageTwo;
+  final PageContent pageThree;
+
+  // these to avoid errors in all code , remove it later
+  final String? elmText;
+
+  // page 1 --> testing on ElmDersSixteen
   final String? titleOne;
   final String? subtitleOne1;
   final String? elmTextOne1;
@@ -61,8 +66,16 @@ class ElmModel {
 
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
-    this.elmText, // these to avoid errors in all code , remove it later
+    required this.pageOne,
+    required this.pageTwo,
+    required this.pageThree,
 
+    // dont repeat your self
+
+    // these to avoid errors in all code , remove it later
+    this.elmText,
+
+    // repeat your self like these
     this.elmTextTwo1,
     this.ayahHadithTwo1,
     this.elmTextTwo2,

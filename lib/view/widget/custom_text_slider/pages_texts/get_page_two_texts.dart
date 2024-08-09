@@ -1,30 +1,31 @@
-import 'package:elm/core/data/model/elm_list_model.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_sixteen.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTowTexts(int i) {
   return [
-    TextSpan(text: elmList16[i].elmTextTwo1),
+    TextSpan(text: ElmTextDersSixteen.pageTwo[i].text),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo1,
+        text: ElmTextDersSixteen.pageTwo[i].ayahHadith,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextTwo2),
+    TextSpan(text: ElmTextDersSixteen.pageTwo[i].text),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo2,
+        text: ElmTextDersSixteen.pageTwo[i].ayahHadith,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextTwo3),
+    TextSpan(text: ElmTextDersSixteen.pageTwo[i].text),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo3,
+        text: ElmTextDersSixteen.pageTwo[i].ayahHadith,
         style: AppTheme.customTextStyleHadith()),
     TextSpan(
-        text: elmList16[i].subtitleTwo1,
+        text: ElmTextDersSixteen.pageTwo[i].subtitle,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextTwo4),
+    TextSpan(text: ElmTextDersSixteen.pageTwo[i].text),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo4,
+        text: ElmTextDersSixteen.pageTwo[i].ayahHadith,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextTwo5),
+    TextSpan(text: ElmTextDersSixteen.pageTwo[i].text),
     TextSpan(
-        text: elmList16[i].footerTwo, style: AppTheme.customTextStyleFooter()),
+        text: ElmTextDersSixteen.pageTwo[i].footer,
+        style: AppTheme.customTextStyleFooter()),
   ];
 }

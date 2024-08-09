@@ -3,7 +3,6 @@
 import 'package:flutter_share/flutter_share.dart';
 
 shareApp() {
-  print("Add linkUrl fter push app to GooglePlay store !");
   return FlutterShare.share(
     title: 'مشاركة عبر',
     text: ' تطبيق سلام ',

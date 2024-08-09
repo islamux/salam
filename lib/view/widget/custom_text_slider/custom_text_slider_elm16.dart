@@ -1,7 +1,7 @@
 import 'package:elm/controller/elm16_controller.dart';
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/function/length_pages.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/get_page_three_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/get_page_two_texts.dart';
@@ -39,7 +39,7 @@ class CustomTextSliderElm16 extends StatelessWidget {
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
                     controller.onPageChanged(index),
-                itemCount: elmList16.length,
+                itemCount: lengthPages(),
                 itemBuilder: (context, i) => Column(
                   children: [
                     // To make text scrollable make insid contatiner and the container inside Expanded
@@ -100,13 +100,13 @@ class CustomTextSliderElm16 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList16.length.toDouble() - 1,
+                      max: lengthPages().toDouble() - 1,
                     ),
                   ),
                   // Display current page number
                   Text(
                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controller.currentPageIndex + 1.toInt()} / ${elmList16.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${lengthPages()}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )
