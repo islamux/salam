@@ -78,13 +78,39 @@ List<ElmModel> elmList2 = [
 ];
 
 // TextDersThree
+// List<ElmModel> elmList3 = [
+//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree1), //
+//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree3), //
+//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree4), //
+//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree5), //
+//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree6), //
+//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree7), //
+// ];
+
+// TextDersThree (new)
 List<ElmModel> elmList3 = [
-  ElmModel(elmText: ElmTextDersThree.elmTextDersThree1), //
-  ElmModel(elmText: ElmTextDersThree.elmTextDersThree3), //
-  ElmModel(elmText: ElmTextDersThree.elmTextDersThree4), //
-  ElmModel(elmText: ElmTextDersThree.elmTextDersThree5), //
-  ElmModel(elmText: ElmTextDersThree.elmTextDersThree6), //
-  ElmModel(elmText: ElmTextDersThree.elmTextDersThree7), //
+  // Page 1
+  ElmModel(
+    titleOne: ElmTextDersThree.titlePageOne,
+    elmTextOne1: ElmTextDersThree.elmTextDersThreePageOne_1,
+    ayahHadithOne: ElmTextDersThree.ayaHadithPageOne_1,
+    elmTextOne2: ElmTextDersThree.elmTextDersThreePageOne_2,
+    ayahHadithOne2: ElmTextDersThree.ayahHadithPageOne_2,
+  ),
+
+  // page 2
+  ElmModel(
+    elmTextTwo1: ElmTextDersThree.elmTextDersThreePageTwo_1,
+    elmTextTwo2: ElmTextDersThree.elmTextDersThreePageTwo_2,
+    elmTextTwo3: ElmTextDersThree.elmTextDersThreePageTwo_3,
+  ),
+
+  // page 3
+  ElmModel(
+    ayahHadithThree1: ElmTextDersThree.ayaHadithPageOne_1,
+    elmTextThree1: ElmTextDersThree.elmTextDersPageThree_1,
+    elmTextThree2: ElmTextDersThree.elmTextDersPageThree_2,
+  ),
 ];
 
 List<ElmModel> elmList4 = [

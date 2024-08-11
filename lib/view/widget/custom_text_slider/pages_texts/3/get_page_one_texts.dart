@@ -1,0 +1,22 @@
+import 'package:elm/core/data/model/elm_list_model.dart';
+import 'package:elm/core/data/static/theme/app_them.dart';
+import 'package:flutter/material.dart';
+
+List<TextSpan> getPageOneTexts(int i) {
+  return [
+    TextSpan(
+      text: elmList3[i].titleOne,
+      style: AppTheme.customTextStyleTitle(),
+    ),
+    TextSpan(text: elmList3[i].elmTextOne1),
+    TextSpan(
+        text: elmList3[i].ayahHadithOne,
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(text: elmList3[i].elmTextOne2),
+    TextSpan(text: elmList3[i].elmTextOne3),
+    TextSpan(
+      text: elmList3[i].ayahHadithOne2,
+      style: AppTheme.customTextStyleHadith(),
+    )
+  ];
+}

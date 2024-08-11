@@ -30,9 +30,6 @@ class Elm3 extends StatelessWidget {
             ),
             const Text(
               "  الخاطرة 3 ",
-              // style: TextStyle(
-              //     color: AppColor.primaryColorGolden,
-              //     backgroundColor: AppColor.primaryColorBlack2),
             ),
           ],
         ),
