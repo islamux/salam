@@ -59,6 +59,32 @@ class ElmModel {
   final String? elmTextThree9;
   final String? footer3;
 
+  // page 4
+  final String? elmTextFour1;
+  final String? ayahHadithFour1;
+
+  // page 5
+  final String? elmTextFive1;
+  final String? titleFive;
+  final String? subtitleFive;
+  final String? ayahHadithFive1;
+  final String? ayahHadithFive2;
+  // page 6
+  final String? elmTextSix1;
+  final String? titleSix;
+  final String? subtitleSix;
+  final String? ayahHadithSix;
+  final String? ayahHadithSix2;
+
+  // page 7
+  final String? elmTextSeven1;
+  final String? elmTextSeven2;
+  final String? elmTextSeven3;
+  final String? titleSeven;
+  final String? subtitleSeven;
+  final String? ayahHadithSeven;
+  final String? ayahHadithSeven2;
+
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
     this.elmText, // these to avoid errors in all code , remove it later
@@ -74,6 +100,8 @@ class ElmModel {
     this.ayahHadithTwo4,
     this.elmTextTwo5,
     this.footerTwo,
+
+    // page 3
     this.subtitleThree1,
     this.ayahHadithThree1,
     this.elmTextThree1,
@@ -112,5 +140,30 @@ class ElmModel {
     this.elmTextThree9,
     this.footerOne,
     this.footer3,
+    // page 4
+    this.elmTextFour1,
+    this.ayahHadithFour1,
+    // page 5
+    this.ayahHadithFive1,
+    this.elmTextFive1,
+    this.subtitleFive,
+    this.titleFive,
+    this.ayahHadithFive2,
+
+    // page 6
+    this.ayahHadithSix,
+    this.elmTextSix1,
+    this.subtitleSix,
+    this.titleSix,
+    this.ayahHadithSix2,
+
+    // page 7
+    this.ayahHadithSeven,
+    this.elmTextSeven1,
+    this.elmTextSeven2,
+    this.elmTextSeven3,
+    this.subtitleSeven,
+    this.titleSeven,
+    this.ayahHadithSeven2,
   });
 }

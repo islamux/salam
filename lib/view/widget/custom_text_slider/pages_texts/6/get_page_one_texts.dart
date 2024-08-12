@@ -5,12 +5,14 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageOneTexts(int i) {
   return [
     TextSpan(
-      text: elmListPre[i].titleOne,
+      text: elmList6[i].titleOne,
       style: AppTheme.customTextStyleTitle(),
     ),
+    TextSpan(text: elmList6[i].elmTextOne1),
+    TextSpan(text: elmList6[i].elmTextOne2),
     TextSpan(
-        text: elmListPre[i].ayahHadithOne,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmListPre[i].elmTextOne1)
+      text: elmList6[i].ayahHadithOne,
+      style: AppTheme.customTextStyleHadith(),
+    ),
   ];
 }

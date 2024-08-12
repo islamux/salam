@@ -1,12 +1,12 @@
 class ElmTextPre {
+  // ---- Page 1
   static const String titleOne = """
 مجموعة خواطر حول الدين والحياة  
 ----------------------------
 """;
 
-  static const String ayahHadith = """
+  static const String ayahHadithOne_1 = """
 وَذَكِّرۡ فَإِنَّ ٱلذِّكۡرَىٰ تَنفَعُ ٱلۡمُؤۡمِنِینَ ۝٥٥ * 
----------------
 الذاريات 55 * 
 """;
 

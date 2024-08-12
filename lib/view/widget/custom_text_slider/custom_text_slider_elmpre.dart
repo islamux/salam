@@ -1,6 +1,7 @@
 import 'package:elm/controller/elmpre_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/pre/get_page_one_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,8 +10,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ElmPreControllerImp controllerAs =
-        Get.find<ElmPreControllerImp>();
+    final ElmPreControllerImp controllerAs = Get.find<ElmPreControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<ElmPreControllerImp>(
       builder: (_) {
@@ -49,19 +49,14 @@ class CustomTextSliderElmPre extends StatelessWidget {
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<ElmPreControllerImp>(
                             builder: (controllerAs) {
-                              return Text(
-                                elmListPre[i].elmText ?? '',
-                                // Provide a default value (?? '') in case duaText is null
-                                style: //AppTheme.goldenTheme.textTheme.bodyLarge,
-                                    TextStyle(
-                                  // Problem here is fontsize need to hotreload why?
-                                  // I found the solution by wrab Text with GetBuilder to refresh only the
-                                  // widgt not all page
-                                  fontSize:
-                                      //Get.find<ElmPreControllerImp>().fontSize,
-                                      controllerAs.fontSize,
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "AmiriQ",
+                              return RichText(
+                                text: TextSpan(
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controllerAs.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [...getPageOneTexts(i)],
                                 ),
                                 textAlign: TextAlign.right,
                               );
@@ -74,8 +69,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                 ),
               ),
             ),
-            // slider here if you want to add 
-          
+            // slider here if you want to add
           ],
         );
       },
