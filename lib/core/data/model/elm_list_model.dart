@@ -22,7 +22,10 @@ import 'package:elm/core/data/static/text/elm_text_ders_eight.dart';
 
 // TextElmPre
 List<ElmModel> elmListPre = [
-  ElmModel(elmText: ElmTextPre.elmTextPre),
+  ElmModel(
+      titleOne: ElmTextPre.titleOne,
+      ayahHadithOne: ElmTextPre.ayahHadith,
+      elmTextOne1: ElmTextPre.elmTextOne_1),
 ];
 
 // TextDersOne
