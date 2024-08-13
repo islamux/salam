@@ -5,9 +5,9 @@ import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_five_
 import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_seven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_six_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/16/get_page_three_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/16/get_page_two_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/6/get_page_four_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_three_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_two_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/10/get_page_four_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
@@ -58,19 +58,20 @@ class CustomTextSliderElm10 extends StatelessWidget {
                             builder: (controllerAs) {
                               return RichText(
                                 text: TextSpan(
-                                    style: TextStyle(
-                                        fontFamily: 'AmiriQ',
-                                        fontSize: controllerAs.fontSize,
-                                        color: Colors.black),
-                                    children: [
-                                      ...getPageOneTexts(i),
-                                      ...getPageTowTexts(i),
-                                      ...getPageThreeTexts(i),
-                                      ...getPageFourTexts(i),
-                                      ...getPageFiveTexts(i),
-                                      ...getPageSixTexts(i),
-                                      ...getPageSevenTexts(i),
-                                    ]),
+                                  style: TextStyle(
+                                      fontFamily: 'AmiriQ',
+                                      fontSize: controllerAs.fontSize,
+                                      color: Colors.black),
+                                  children: [
+                                    ...getPageOneTexts(i),
+                                    ...getPageTwoTexts(i),
+                                    ...getPageThreeTexts(i),
+                                    ...getPageFourTexts(i),
+                                    ...getPageFiveTexts(i),
+                                    ...getPageSixTexts(i),
+                                    ...getPageSevenTexts(i),
+                                  ],
+                                ),
                                 textAlign: TextAlign.right,
                               );
                             },
