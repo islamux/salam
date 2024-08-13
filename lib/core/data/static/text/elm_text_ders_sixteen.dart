@@ -1,7 +1,7 @@
 import 'package:elm/core/data/model/page_content.dart';
 
 class ElmTextDersSixteen {
-  /*------------- page 1 -------*/
+/*------------- page 1 -------*/
   static List<PageContent> pageOne = [
     PageContent(
       title: """
