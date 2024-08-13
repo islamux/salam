@@ -1,7 +1,7 @@
 import 'package:elm/controller/elm16_controller.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_sixteen.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/function/length_pages.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/get_page_three_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/get_page_two_texts.dart';
@@ -39,7 +39,11 @@ class CustomTextSliderElm16 extends StatelessWidget {
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
                     controller.onPageChanged(index),
-                itemCount: lengthPages(),
+                itemCount: [
+                  ElmTextDersSixteen.pageOne,
+                  ElmTextDersSixteen.pageTwo,
+                  ElmTextDersSixteen.pageThree
+                ].map((page) => page.length).reduce((a, b) => a > b ? a : b),
                 itemBuilder: (context, i) => Column(
                   children: [
                     // To make text scrollable make insid contatiner and the container inside Expanded
@@ -66,9 +70,9 @@ class CustomTextSliderElm16 extends StatelessWidget {
                                      * باستخدام ... (spread operator) في children، تستطيع تحويل قائمة TextSpan إلى قائمة InlineSpan.
                                       الدالة getPageOneTexts(i) تم إعادة استخدامها كما هي، بدون الحاجة لتعديلها لأن TextSpan هو جزء من InlineSpan.
                                      */
-                                    ...getPageOneTexts(i),
-                                    ...getPageTowTexts(i),
-                                    ...getPageThreeTexts(i),
+                                    if (i == 0) ...getPageOneTexts(i),
+                                    if (i == 1) ...getPageTowTexts(i),
+                                    if (i == 2) ...getPageThreeTexts(i),
                                   ],
                                 ),
                                 textAlign: TextAlign.right,

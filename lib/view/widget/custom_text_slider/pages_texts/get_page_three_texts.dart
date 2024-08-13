@@ -5,52 +5,105 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageThreeTexts(int i) {
   return [
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].subtitle,
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].subtitle
+            : '',
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].subtitle,
-        style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
         style: AppTheme.customTextStyleHadith()),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].subtitle,
-        style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].subtitle,
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].subtitle
+            : '',
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].subtitle,
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].subtitle
+            : '',
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].ayahHadith,
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageThree[i].text),
     TextSpan(
-        text: ElmTextDersSixteen.pageThree[i].footer,
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].subtitle
+            : '',
+        style: AppTheme.customTextStyleTitle()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].subtitle
+            : '',
+        style: AppTheme.customTextStyleTitle()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageThree.length > i
+            ? ElmTextDersSixteen.pageThree[i].footer
+            : '',
         style: AppTheme.customTextStyleFooter())
   ];
 }

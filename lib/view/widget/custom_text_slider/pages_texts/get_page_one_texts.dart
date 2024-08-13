@@ -6,38 +6,74 @@ List<TextSpan> getPageOneTexts(int i) {
   return [
     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
     TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].title,
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].title
+            : '',
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].subtitle,
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].subtitle
+            : '',
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: ElmTextDersSixteen.pageOne[i].text),
     TextSpan(
-      text: ElmTextDersSixteen.pageOne[i].ayahHadith,
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].text
+            : ''),
+    TextSpan(
+      text: ElmTextDersSixteen.pageOne.length > i
+          ? ElmTextDersSixteen.pageOne[i].ayahHadith
+          : '',
       style: AppTheme.customTextStyleHadith(),
     ),
-    TextSpan(text: ElmTextDersSixteen.pageOne[i].text),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].subtitle,
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].subtitle
+            : '',
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: ElmTextDersSixteen.pageOne[i].text),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageOne[i].text),
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].text
+            : ''),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageOne[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].ayahHadith,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: ElmTextDersSixteen.pageOne[i].text),
-    TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].ayahHadith,
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].ayahHadith
+            : '',
         style: AppTheme.customTextStyleHadith()),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne[i].footer,
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].text
+            : ''),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].ayahHadith
+            : '',
+        style: AppTheme.customTextStyleHadith()),
+    TextSpan(
+        text: ElmTextDersSixteen.pageOne.length > i
+            ? ElmTextDersSixteen.pageOne[i].footer
+            : '',
         style: AppTheme.customTextStyleFooter()),
   ];
 }
