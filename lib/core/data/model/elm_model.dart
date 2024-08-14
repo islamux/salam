@@ -62,6 +62,7 @@ class ElmModel {
   // page 4
   final String? elmTextFour1;
   final String? ayahHadithFour1;
+  final String? ayahHadithFour2;
 
   // page 5
   final String? elmTextFive1;
@@ -84,6 +85,16 @@ class ElmModel {
   final String? subtitleSeven;
   final String? ayahHadithSeven;
   final String? ayahHadithSeven2;
+
+  // page 8
+  final String? elmTextEight1;
+  final String? elmTextEight2;
+  final String? elmTextEight3;
+  final String? subtitleHeight;
+  final String? ayahHadithEight1;
+  final String? ayahHadithEight2;
+  final String? ayahHadithEight3;
+  final String? ayahHadithEight4;
 
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
@@ -140,9 +151,14 @@ class ElmModel {
     this.elmTextThree9,
     this.footerOne,
     this.footer3,
+
     // page 4
     this.elmTextFour1,
     this.ayahHadithFour1,
+    this.ayahHadithFour2,
+    this.ayahHadithEight3,
+    this.ayahHadithEight4,
+
     // page 5
     this.ayahHadithFive1,
     this.elmTextFive1,
@@ -165,5 +181,13 @@ class ElmModel {
     this.subtitleSeven,
     this.titleSeven,
     this.ayahHadithSeven2,
+
+    // page 8
+    this.elmTextEight1,
+    this.elmTextEight2,
+    this.elmTextEight3,
+    this.subtitleHeight,
+    this.ayahHadithEight1,
+    this.ayahHadithEight2,
   });
 }

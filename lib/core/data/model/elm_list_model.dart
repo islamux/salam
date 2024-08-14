@@ -203,16 +203,59 @@ List<ElmModel> elmList7 = [
 ];
 
 // TextDersEight
+// List<ElmModel> elmList8 = [
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht1), //
+//   // ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht2), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht3), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht4), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht5), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht6), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht7), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht8), //
+//   ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht9), //
+// ];
+
+// TexDersEight (new)
 List<ElmModel> elmList8 = [
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht1), //
-  // ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht2), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht3), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht4), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht5), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht6), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht7), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht8), //
-  ElmModel(elmText: ElmTextDersEight.elmTextDersEigtht9), //
+  // 1
+  ElmModel(
+    titleOne: ElmTextDersEight.titleOne,
+    elmTextOne1: ElmTextDersEight.elmTextEightOne_1,
+    ayahHadithOne: ElmTextDersEight.ayahHadithOne_1,
+  ),
+  // 2
+  ElmModel(
+    elmTextTwo1: ElmTextDersEight.elmTextEightTwo_1,
+    ayahHadithTwo1: ElmTextDersEight.ayahHadithTwo_1,
+    elmTextTwo2: ElmTextDersEight.elmTextEightTwo_2,
+  ),
+  // 3
+  ElmModel(
+    elmTextThree1: ElmTextDersEight.elmTextEightThree_1,
+    ayahHadithThree1: ElmTextDersEight.ayahHadithThree_1,
+  ),
+  // 4
+  ElmModel(
+    ayahHadithFour1: ElmTextDersEight.ayhaHadithFour_1,
+    elmTextFour1: ElmTextDersEight.elmTextEightFour_1,
+    ayahHadithFour2: ElmTextDersEight.ayhaHadithFour_2,
+  ),
+
+  // 5
+  ElmModel(
+    elmTextFive1: ElmTextDersEight.elmTextEightFive_1,
+    ayahHadithFive2: ElmTextDersEight.ayhaHadithFive_2,
+  ),
+
+  // 6
+  ElmModel(
+    elmTextEight1: ElmTextDersEight.elmTextDersEightSix_1,
+  ),
+  // 7
+  ElmModel(
+    elmTextEight1: ElmTextDersEight.elmTextDersEigthtSeven_1,
+    elmTextEight2: ElmTextDersEight.elmTextDersEigthtSeven_2,
+  ),
 ];
 
 //TextDersNine
