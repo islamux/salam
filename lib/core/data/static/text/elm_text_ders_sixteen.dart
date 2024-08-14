@@ -218,4 +218,6 @@ class ElmTextDersSixteen {
 \n---------------------\n
 """),
   ];
+  static int getPagesLength() =>
+      pageOne.length + pageTwo.length + pageThree.length;
 }

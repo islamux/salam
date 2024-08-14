@@ -20,6 +20,12 @@
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
+        },
+        {
+            "name": "Flutter (lib/view/widget/custom_text_slider/pages_texts/3/get_page_one_texts.dart)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/view/widget/custom_text_slider/pages_texts/3/get_page_one_texts.dart"
         }
     ]
 }

@@ -104,13 +104,13 @@ class CustomTextSliderElm16 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: lengthPages().toDouble() - 1,
+                      max: ElmTextDersSixteen.getPagesLength().toDouble() - 1,
                     ),
                   ),
                   // Display current page number
                   Text(
                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controller.currentPageIndex + 1.toInt()} / ${lengthPages()}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${ElmTextDersSixteen.getPagesLength()}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )
