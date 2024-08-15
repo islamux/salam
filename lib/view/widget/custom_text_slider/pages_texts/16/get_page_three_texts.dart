@@ -5,51 +5,52 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageThreeTexts(int i) {
   return [
     TextSpan(
-        text: elmList16[i].subtitleThree1,
+        text: elmList16[i].subtitleSixteenThree_1,
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: elmList16[i].ayahHadithThree1,
+        text: elmList16[i].ayhaHadithSixteenThree_1,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextThree1),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_1),
     TextSpan(
-        text: elmList16[i].subtitleThree2,
+        text: elmList16[i].subtitleSixteenThree_2,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextThree2),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_2),
     TextSpan(
-        text: elmList16[i].ayahHadithThree2,
+        text: elmList16[i].ayhaHadithSixteenThree_2,
         style: AppTheme.customTextStyleHadith()),
     TextSpan(
-        text: elmList16[i].subtitleThree3,
+        text: elmList16[i].subtitleSixteenThree_3,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextThree3),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_3),
     TextSpan(
-        text: elmList16[i].ayahHadithThree3,
+        text: elmList16[i].ayhaHadithSixteenThree_3,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextThree4),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_4),
     TextSpan(
-        text: elmList16[i].ayahHadithThree4,
+        text: elmList16[i].ayhaHadithSixteenThree_4,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextThree5),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_5),
     TextSpan(
-        text: elmList16[i].ayahHadithThree5,
+        text: elmList16[i].ayhaHadithSixteenThree_5,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextThree6),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_6),
     TextSpan(
-        text: elmList16[i].subtitleThree4,
+        text: elmList16[i].subtitleSixteenThree_4,
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: elmList16[i].ayahHadithThree6,
+        text: elmList16[i].ayhaHadithSixteenThree_6,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextThree7),
+    TextSpan(text: elmList16[i].subtitleSixteenThree_5),
     TextSpan(
-        text: elmList16[i].subtitleThree5,
+        text: elmList16[i].subtitleSixteenThree_5,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextThree8),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_8),
     TextSpan(
-        text: elmList16[i].ayahHadithThree7,
+        text: elmList16[i].ayhaHadithSixteenThree_7,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextThree9),
+    TextSpan(text: elmList16[i].elmTextSixteenThree_9),
     TextSpan(
-        text: elmList16[i].footer3, style: AppTheme.customTextStyleFooter())
+        text: elmList16[i].footerSixteenThree,
+        style: AppTheme.customTextStyleFooter())
   ];
 }

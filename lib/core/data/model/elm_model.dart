@@ -106,6 +106,8 @@ class ElmModel {
   final String? titleEightOne;
   final String? elmTextEight_1;
   final String? elmTextEightOne_1;
+  final String? elmTextEightTwo_1;
+  final String? ayahHadithEightTwo_1;
   final String? elmTextEightFour_1;
   final String? elmTextEightOne_2;
   final String? elmTextEight_3;

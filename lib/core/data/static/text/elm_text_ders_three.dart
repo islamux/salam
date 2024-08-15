@@ -64,7 +64,6 @@ class ElmTextDersThree {
   static const String elmTextDersPageThree_2 = """
 وأخيراً وليس آخراً عزيزي القارىء إذا أردت أن تعرف من هم الذين يحبهم الله انظر في درسنا القادم
 
----------------------
 
 """;
 }

@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTowTexts(int i) {
   return [
-    TextSpan(text: elmList3[i].elmTextTwo1),
-    TextSpan(text: elmList3[i].elmTextTwo2),
-    TextSpan(text: elmList3[i].ayahHadithTwo1),
-    TextSpan(text: elmList3[i].elmTextTwo3),
+    TextSpan(text: elmList3[i].elmTextThreeTwo_1),
+    TextSpan(text: elmList3[i].elmTextThreeTwo_2),
+    TextSpan(text: elmList3[i].ayahHadithThreeThree_1),
+    TextSpan(text: elmList3[i].elmTextThreeTwo_3),
   ];
 }

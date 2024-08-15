@@ -4,27 +4,28 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTowTexts(int i) {
   return [
-    TextSpan(text: elmList16[i].elmTextTwo1),
+    TextSpan(text: elmList16[i].elmTextSixteenTwo_1),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo1,
+        text: elmList16[i].ayhaHadithSixteenTwo_1,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextTwo2),
+    TextSpan(text: elmList16[i].elmTextSixteenTwo_2),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo2,
+        text: elmList16[i].ayhaHadithSixteenTwo_2,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextTwo3),
+    TextSpan(text: elmList16[i].elmTextSixteenTwo_3),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo3,
+        text: elmList16[i].ayhaHadithSixteenTwo_3,
         style: AppTheme.customTextStyleHadith()),
     TextSpan(
-        text: elmList16[i].subtitleTwo1,
+        text: elmList16[i].subtitleSixteenTwo_1,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextTwo4),
+    TextSpan(text: elmList16[i].elmTextSixteenTwo_4),
     TextSpan(
-        text: elmList16[i].ayahHadithTwo4,
+        text: elmList16[i].ayhaHadithSixteenTwo_4,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextTwo5),
+    TextSpan(text: elmList16[i].elmTextSixteenTwo_5),
     TextSpan(
-        text: elmList16[i].footerTwo, style: AppTheme.customTextStyleFooter()),
+        text: elmList16[i].footerSixteenTwo,
+        style: AppTheme.customTextStyleFooter()),
   ];
 }

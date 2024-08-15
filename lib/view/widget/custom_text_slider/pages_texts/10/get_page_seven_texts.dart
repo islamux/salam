@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageSevenTexts(int i) {
   return [
-    TextSpan(text: elmList10[i].elmTextSeven1),
+    TextSpan(text: elmList10[i].elmTextTenSeven_1),
     TextSpan(
-      text: elmList10[i].ayahHadithSeven,
+      text: elmList10[i].ayahHadithSeven_1,
       style: AppTheme.customTextStyleHadith(),
     ),
-    TextSpan(text: elmList10[i].elmTextSeven2),
+    TextSpan(text: elmList10[i].elmTextTenSeven_2),
     TextSpan(
-      text: elmList10[i].ayahHadithSeven2,
+      text: elmList10[i].ayahHadithSeven_2,
       style: AppTheme.customTextStyleHadith(),
     ),
-    TextSpan(text: elmList10[i].elmTextSeven3),
+    TextSpan(text: elmList10[i].elmTextTenSeven_3),
   ];
 }

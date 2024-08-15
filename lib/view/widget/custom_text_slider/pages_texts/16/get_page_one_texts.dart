@@ -6,36 +6,38 @@ List<TextSpan> getPageOneTexts(int i) {
   return [
     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
     TextSpan(
-        text: elmList16[i].titleOne, style: AppTheme.customTextStyleTitle()),
-    TextSpan(
-        text: elmList16[i].subtitleOne1,
+        text: elmList16[i].titleSixteenOne,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextOne1),
     TextSpan(
-      text: elmList16[i].ayahHadithOne,
+        text: elmList16[i].subtitleSixteenOne_1,
+        style: AppTheme.customTextStyleTitle()),
+    TextSpan(text: elmList16[i].elmTextSixteenOne_1),
+    TextSpan(
+      text: elmList16[i].ayhaHadithSixteenOne_1,
       style: AppTheme.customTextStyleHadith(),
     ),
-    TextSpan(text: elmList16[i].elmTextOne2),
+    TextSpan(text: elmList16[i].elmTextSixteenOne_2),
     TextSpan(
-        text: elmList16[i].subtitleOne2,
+        text: elmList16[i].subtitleSixteenOne_2,
         style: AppTheme.customTextStyleTitle()),
-    TextSpan(text: elmList16[i].elmTextOne3),
+    TextSpan(text: elmList16[i].elmTextSixteenOne_3),
     TextSpan(
-        text: elmList16[i].ayahHadithOne2,
+        text: elmList16[i].ayhaHadithSixteenTwo_1,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextOne4),
+    TextSpan(text: elmList16[i].elmTextSixteenOne_4),
     TextSpan(
-        text: elmList16[i].ayahHadithOne3,
+        text: elmList16[i].ayhaHadithSixteenOne_3,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextOne5),
+    TextSpan(text: elmList16[i].elmTextSixteenOne_5),
     TextSpan(
-        text: elmList16[i].ayahHadithOne4,
+        text: elmList16[i].ayhaHadithSixteenOne_4,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].elmTextOne6),
+    TextSpan(text: elmList16[i].elmTextSixteenOne_6),
     TextSpan(
-        text: elmList16[i].ayahHadithOne5,
+        text: elmList16[i].ayhaHadithSixteenOne_5,
         style: AppTheme.customTextStyleHadith()),
     TextSpan(
-        text: elmList16[i].footerOne, style: AppTheme.customTextStyleFooter()),
+        text: elmList16[i].footerSixteenOne,
+        style: AppTheme.customTextStyleFooter()),
   ];
 }
