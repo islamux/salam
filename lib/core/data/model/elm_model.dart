@@ -72,8 +72,9 @@ class ElmModel {
   final String? ayahHadithFive2;
   // page 6
   final String? elmTextSix1;
+  final String? elmTextSix2;
   final String? titleSix;
-  final String? subtitleSix;
+  final String? subtitleSix_1;
   final String? ayahHadithSix;
   final String? ayahHadithSix2;
 
@@ -87,14 +88,20 @@ class ElmModel {
   final String? ayahHadithSeven2;
 
   // page 8
-  final String? elmTextEight1;
-  final String? elmTextEight2;
-  final String? elmTextEight3;
-  final String? subtitleHeight;
-  final String? ayahHadithEight1;
-  final String? ayahHadithEight2;
-  final String? ayahHadithEight3;
-  final String? ayahHadithEight4;
+  final String? titleEight_1;
+  final String? elmTextEight_1;
+  final String? elmTextEight_2;
+  final String? elmTextEight_3;
+  final String? elmTextEightSix_1;
+  final String? elmTextEightSix_2;
+  final String? subtitleEightSix_1;
+  final String? subtitleEightSix_2;
+  final String? elmTextEightSeven_1;
+  final String? elmTextEightSeven_2;
+  final String? ayahHadithEight_1;
+  final String? ayahHadithEight_2;
+  final String? ayahHadithEight_3;
+  final String? ayahHadithEight_4;
 
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
@@ -156,8 +163,6 @@ class ElmModel {
     this.elmTextFour1,
     this.ayahHadithFour1,
     this.ayahHadithFour2,
-    this.ayahHadithEight3,
-    this.ayahHadithEight4,
 
     // page 5
     this.ayahHadithFive1,
@@ -169,7 +174,8 @@ class ElmModel {
     // page 6
     this.ayahHadithSix,
     this.elmTextSix1,
-    this.subtitleSix,
+    this.elmTextSix2,
+    this.subtitleSix_1,
     this.titleSix,
     this.ayahHadithSix2,
 
@@ -183,11 +189,19 @@ class ElmModel {
     this.ayahHadithSeven2,
 
     // page 8
-    this.elmTextEight1,
-    this.elmTextEight2,
-    this.elmTextEight3,
-    this.subtitleHeight,
-    this.ayahHadithEight1,
-    this.ayahHadithEight2,
+    this.titleEight_1,
+    this.elmTextEight_1,
+    this.elmTextEight_2,
+    this.elmTextEight_3,
+    this.elmTextEightSix_1,
+    this.elmTextEightSix_2,
+    this.subtitleEightSix_1,
+    this.subtitleEightSix_2,
+    this.elmTextEightSeven_1,
+    this.elmTextEightSeven_2,
+    this.ayahHadithEight_1,
+    this.ayahHadithEight_2,
+    this.ayahHadithEight_3,
+    this.ayahHadithEight_4,
   });
 }

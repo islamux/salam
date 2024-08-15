@@ -219,9 +219,9 @@ List<ElmModel> elmList7 = [
 List<ElmModel> elmList8 = [
   // 1
   ElmModel(
-    titleOne: ElmTextDersEight.titleOne,
-    elmTextOne1: ElmTextDersEight.elmTextEightOne_1,
-    ayahHadithOne: ElmTextDersEight.ayahHadithOne_1,
+    titleEight_1: ElmTextDersEight.titleEightOne,
+    elmTextEight_1: ElmTextDersEight.elmTextEightOne_1,
+    ayahHadithEight_1: ElmTextDersEight.ayahHadithOne_1,
   ),
   // 2
   ElmModel(
@@ -244,17 +244,18 @@ List<ElmModel> elmList8 = [
   // 5
   ElmModel(
     elmTextFive1: ElmTextDersEight.elmTextEightFive_1,
-    ayahHadithFive2: ElmTextDersEight.ayhaHadithFive_2,
+    ayahHadithFive2: ElmTextDersEight.ayhaHadithFour_2,
   ),
 
   // 6
   ElmModel(
-    elmTextEight1: ElmTextDersEight.elmTextDersEightSix_1,
+    subtitleEightSix_1: ElmTextDersEight.subtitleEightSix_1,
+    elmTextEightSix_1: ElmTextDersEight.elmTextDersEightSix_1,
   ),
   // 7
   ElmModel(
-    elmTextEight1: ElmTextDersEight.elmTextDersEigthtSeven_1,
-    elmTextEight2: ElmTextDersEight.elmTextDersEigthtSeven_2,
+    elmTextEightSeven_1: ElmTextDersEight.elmTextDersEigthtSeven_1,
+    elmTextEightSeven_2: ElmTextDersEight.elmTextDersEigthtSeven_2,
   ),
 ];
 

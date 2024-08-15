@@ -2,6 +2,13 @@ import 'package:elm/controller/elm8_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_two_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_five_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_four_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_one_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_seven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_six_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/8/get_page_three_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,8 +17,7 @@ class CustomTextSliderElm8 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm8ControllerImp controllerAs =
-        Get.find<Elm8ControllerImp>();
+    final Elm8ControllerImp controllerAs = Get.find<Elm8ControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<Elm8ControllerImp>(
       builder: (_) {
@@ -45,37 +51,39 @@ class CustomTextSliderElm8 extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.only(
                             top: 60, left: 32, right: 32, bottom: 60),
-                        child: SingleChildScrollView(
-                          child:
-                              // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
-                              GetBuilder<Elm8ControllerImp>(
-                            builder: (controllerAs) {
-                              return Text(
-                                elmList8[i].elmText ?? '',
-                                // Provide a default value (?? '') in case duaText is null
-                                style: //AppTheme.goldenTheme.textTheme.bodyLarge,
-                                    TextStyle(
-                                  // Problem here is fontsize need to hotreload why?
-                                  // I found the solution by wrab Text with GetBuilder to refresh only the
-                                  // widgt not all page
-                                  fontSize:
-                                      //Get.find<Elm8ControllerImp>().fontSize,
-                                      controllerAs.fontSize,
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "AmiriQ",
-                                ),
-                                textAlign: TextAlign.right,
-                              );
-                            },
-                          ),
-                        ),
+                        child: SingleChildScrollView(child:
+                            // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
+                            GetBuilder<Elm8ControllerImp>(
+                                builder: (controllerAs) {
+                          return // Rich Text Loop on rich text
+                              RichText(
+                            text: TextSpan(
+                              style: TextStyle(
+                                fontFamily: "AmiriQ",
+                                fontSize: controllerAs.fontSize,
+                                color: Colors.black,
+                              ),
+                              children: [
+                                // 1,2,3,4,5,6,7,8
+                                ...getPageOneTexts(i),
+                                ...getPageTwoTexts(i),
+                                ...getPageThreeTexts(i),
+                                ...getPageFourTexts(i),
+                                ...getPageFiveTexts(i),
+                                ...getPageSixTexts(i),
+                                ...getPageSevenTexts(i),
+                              ],
+                            ),
+                            textAlign: TextAlign.right,
+                          );
+                        })),
                       ),
                     ),
                   ],
                 ),
               ),
             ),
-            
+
             // slider widget
             Positioned(
               bottom: 16,
@@ -99,7 +107,7 @@ class CustomTextSliderElm8 extends StatelessWidget {
                   // Display current page number
                   Text(
                     //'${controllerAs.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controllerAs.currentPageIndex+1.toInt()} / ${elmList8.length}',
+                    '${controllerAs.currentPageIndex + 1.toInt()} / ${elmList8.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )
