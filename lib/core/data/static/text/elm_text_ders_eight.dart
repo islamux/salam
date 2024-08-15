@@ -72,7 +72,7 @@ class ElmTextDersEight {
 رسولنا الكريم وهو مختبئ في الغار ماذا قال لصاحبه
 """;
 
-  static const String ayhaHadithFour_2 = """
+  static const String ayhaHadithFive_2 = """
  لَا تَحۡزَنۡ إِنَّ ٱللَّهَ مَعَنَاۖ 
 التوبة 40 
 

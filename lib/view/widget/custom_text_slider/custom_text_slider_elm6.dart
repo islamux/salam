@@ -2,12 +2,13 @@ import 'package:elm/controller/elm6_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/6/get_page_four_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/6/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/6/get_page_three_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/6/get_page_two_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'pages_texts/6/get_page_four_text.dart';
 
 class CustomTextSliderElm6 extends StatelessWidget {
   const CustomTextSliderElm6({super.key});
@@ -61,9 +62,9 @@ class CustomTextSliderElm6 extends StatelessWidget {
                                         color: Colors.black),
                                     children: [
                                       ...getPageOneTexts(i),
-                                      ...getPageTowTexts(i),
+                                      ...getPageTwoTexts(i),
                                       ...getPageThreeTexts(i),
-                                      ...getPageFourTexts(i)
+                                      ...getPageFourTexts(i),
                                     ]),
                                 textAlign: TextAlign.right,
                               );

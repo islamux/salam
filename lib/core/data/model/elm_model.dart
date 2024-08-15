@@ -4,93 +4,110 @@ class ElmModel {
   // make code more clean with titles.1, subtitles.1, elmText.pageOne.1, footers.1
   // --- pages.page1.titles.1, pages.page1.subtitles.1, pages.page1.ayahHadiths.1, pages.footers.1
 
-  // page 1
-  final String? titleOne;
-  final String? subtitleOne1;
-  final String? elmTextOne1;
-  final String? ayahHadithOne;
-  final String? elmTextOne2;
-  final String? subtitleOne2;
-  final String? elmTextOne3;
-  final String? ayahHadithOne2;
-  final String? elmTextOne4;
-  final String? ayahHadithOne3;
-  final String? elmTextOne5;
-  final String? ayahHadithOne4;
-  final String? elmTextOne6;
-  final String? ayahHadithOne5;
+  // pre
+  final String? titlePreOne;
+  final String? ayahHadithPreOne;
+  final String? elmTextPreOne;
+
+  // Khatira 1
+  final String? titleOneOne;
+  final String? subtitleOne_1;
+  final String? elmTextOne_1;
+  final String? ayahHadithOne_1;
+  final String? elmTextOne_2;
+  final String? subtitleOne_2;
+  final String? elmTextOne_3;
+  final String? ayahHadithOne_2;
+  final String? elmTextOne_4;
+  final String? ayahHadithOne_3;
+  final String? elmTextOne_5;
+  final String? ayahHadithOne_4;
+  final String? elmTextOne_6;
+  final String? ayahHadithOne_5;
   final String? footerOne;
 
-  // page 2
-  final String? elmTextTwo1;
-  final String? ayahHadithTwo1;
-  final String? elmTextTwo2;
-  final String? ayahHadithTwo2;
-  final String? elmTextTwo3;
-  final String? ayahHadithTwo3;
-  final String? subtitleTwo1;
-  final String? elmTextTwo4;
-  final String? ayahHadithTwo4;
-  final String? elmTextTwo5;
-  final String? footerTwo;
-  final String? subtitleThree1;
-  final String? ayahHadithThree1;
-  final String? elmTextThree1;
-  final String? subtitleThree2;
-  final String? elmTextThree2;
-  final String? ayahHadithThree2;
+  // Khatira 2
+  final String? titleTwoOne;
+  final String? elmTextTwo_1;
+  final String? ayahHadithTwo_1;
+  final String? elmTextTwo_2;
+  final String? ayahHadithTwo_2;
+  final String? elmTextTwo_3;
+  final String? ayahHadithTwo_3;
+  final String? subtitleTwo_1;
+  final String? elmTextTwo_4;
+  final String? ayahHadithTwo_4;
+  final String? elmTextTwo_5;
 
-  // page 3
-  final String? subtitleThree3;
-  final String? elmTextThree3;
-  final String? ayahHadithThree3;
-  final String? elmTextThree4;
-  final String? ayahHadithThree4;
-  final String? elmTextThree5;
-  final String? ayahHadithThree5;
-  final String? elmTextThree6;
-  final String? subtitleThree4;
-  final String? ayahHadithThree6;
-  final String? elmTextThree7;
-  final String? subtitleThree5;
-  final String? elmTextThree8;
-  final String? ayahHadithThree9;
-  final String? ayahHadithThree7;
-  final String? elmTextThree9;
+  final String? footerTwo;
+
+  // khatira 3
+  final String? titleThreeOne;
+  final String? subtitleThree_1;
+  final String? ayahHadithThreeOne_1;
+  final String? ayahHadithThreeOne_2;
+  final String? ayahHadithThreeThree_1;
+  final String? ayahHadithThreeThree_2;
+
+  final String? elmTextThreeOne_1;
+  final String? elmTextThreeOne_2;
+  final String? elmTextThreeTwo_1;
+  final String? elmTextThreeTwo_2;
+  final String? elmTextThreeTwo_3;
+  final String? elmTextThreeThree_1;
+  final String? elmTextThreeThree_2;
+
+  final String? subtitleThreeTwo_2;
   final String? footer3;
 
-  // page 4
-  final String? elmTextFour1;
-  final String? ayahHadithFour1;
-  final String? ayahHadithFour2;
+  // khatira 4
+  final String? titleFourOne;
+  final String? elmTextFour_1;
+  final String? ayahHadithFour_1;
+  final String? ayahHadithFour_2;
+  final String? footer4;
 
-  // page 5
-  final String? elmTextFive1;
-  final String? titleFive;
-  final String? subtitleFive;
-  final String? ayahHadithFive1;
-  final String? ayahHadithFive2;
-  // page 6
-  final String? elmTextSix1;
-  final String? elmTextSix2;
-  final String? titleSix;
+  // katira 5
+  final String? elmTextFive_1;
+  final String? titleFiveOne;
+  final String? subtitleFive_1;
+  final String? ayahHadithFive_1;
+  final String? ayahHadithFive_2;
+  final String? footer5;
+
+  // khatira 6
+  final String? titleSixOne;
+  final String? elmTextSixOne_1;
+  final String? elmTextSixOne_2;
+  final String? elmTextSixOne_3;
+  final String? elmTextSixTwo_1;
+  final String? elmTextSixTwo_2;
+  final String? elmTextSixThree_1;
+  final String? ayahHadithSixThree_1;
+  final String? elmTextSixThree_2;
+  final String? elmTextSixFour_1;
   final String? subtitleSix_1;
-  final String? ayahHadithSix;
-  final String? ayahHadithSix2;
+  final String? ayahHadithSix_1;
+  final String? ayahHadithSix_2;
+  final String? ayahHadithSix_3;
+  final String? footer6;
 
-  // page 7
-  final String? elmTextSeven1;
-  final String? elmTextSeven2;
-  final String? elmTextSeven3;
-  final String? titleSeven;
-  final String? subtitleSeven;
-  final String? ayahHadithSeven;
-  final String? ayahHadithSeven2;
+  // khatira 7
+  final String? titleSevenOne;
+  final String? elmTextSeven_1;
+  final String? elmTextSeven_2;
+  final String? elmTextSeven_3;
+  final String? subtitleSeven_1;
+  final String? ayahHadithSeven_1;
+  final String? ayahHadithSeven_2;
+  final String? footer7;
 
-  // page 8
-  final String? titleEight_1;
+  // khatira 8
+  final String? titleEightOne;
   final String? elmTextEight_1;
-  final String? elmTextEight_2;
+  final String? elmTextEightOne_1;
+  final String? elmTextEightFour_1;
+  final String? elmTextEightOne_2;
   final String? elmTextEight_3;
   final String? elmTextEightSix_1;
   final String? elmTextEightSix_2;
@@ -98,100 +115,160 @@ class ElmModel {
   final String? subtitleEightSix_2;
   final String? elmTextEightSeven_1;
   final String? elmTextEightSeven_2;
-  final String? ayahHadithEight_1;
-  final String? ayahHadithEight_2;
+  final String? ayahHadithEightFour_1;
+  final String? ayahHadithEightFour_2;
+
   final String? ayahHadithEight_3;
+  final String? elmTextEightFive_1;
+  final String? elmTextEightFive_2;
+  final String? ayahHadithEightOne_1;
   final String? ayahHadithEight_4;
+  final String? footer8;
+
+  // khatira 9 //
+
+  //khatira 10
+  /*--- 1 ---*/
+  final String? titleTenOne;
+  final String? elmTextTenOne_1;
+  final String? ayahHadithTenOne_1;
+  final String? elmTextTenOne_2;
+  final String? ayahHadithTenOne_2;
+  final String? elmTextTenOne_3;
+  /*-----2----*/
+  final String? ayahHadithTenTwo_1;
+  final String? elmTextTenTwo_1;
+  /*-----3----*/
+  final String? ayahHadithTenThree_1;
+  final String? subtitleTenThree_1;
+  final String? elmTextTenThree_1;
+  final String? ayahHadithTenThree_2;
+  final String? elmTextTenThree_2;
+  /*-----4----*/
+  final String? ayahHadithTenFour_1;
+  final String? elmTextTenFour_1;
+  /*-----5----*/
+  final String? ayahHadithTenFive_1;
+  final String? elmTextTenFive_1;
+  final String? ayahHadithTenFive_2;
+  /*-----6----*/
+  final String? elmTextTenSix_1;
+  final String? ayahHadithTenSix_1;
+  /*-----7----*/
+  final String? elmTextTenSeven_1;
+  final String? ayahHadithTenSeven_1;
+  final String? elmTextTenSeven_2;
+  final String? ayahHadithTenSeven_2;
+  final String? elmTextTenSeven_3;
+
+  // // khatira 11 // khatira 12 // khatria 13 // khatira 14 // khatira 15 // khatria 16 // khatria 17
 
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
-    this.elmText, // these to avoid errors in all code , remove it later
+    this.elmText, // to make app run without errors , to remove after finish all refactor
 
-    this.elmTextTwo1,
-    this.ayahHadithTwo1,
-    this.elmTextTwo2,
-    this.ayahHadithTwo2,
-    this.elmTextTwo3,
-    this.ayahHadithTwo3,
-    this.subtitleTwo1,
-    this.elmTextTwo4,
-    this.ayahHadithTwo4,
-    this.elmTextTwo5,
+    // pre
+    this.titlePreOne,
+    this.ayahHadithPreOne,
+    this.elmTextPreOne,
+
+    // 1
+    this.titleOneOne,
+    this.subtitleOne_1,
+    this.elmTextOne_1,
+    this.ayahHadithOne_1,
+    this.elmTextOne_2,
+    this.subtitleOne_2,
+    this.elmTextOne_3,
+    this.ayahHadithOne_2,
+    this.elmTextOne_4,
+    this.ayahHadithOne_3,
+    this.elmTextOne_5,
+    this.ayahHadithOne_4,
+    this.elmTextOne_6,
+    this.ayahHadithOne_5,
+    this.footerOne,
+
+    // 2
+    this.titleTwoOne,
+    this.elmTextTwo_1,
+    this.ayahHadithTwo_1,
+    this.elmTextTwo_2,
+    this.ayahHadithTwo_2,
+    this.elmTextTwo_3,
+    this.ayahHadithTwo_3,
+    this.subtitleTwo_1,
+    this.elmTextTwo_4,
+    this.ayahHadithTwo_4,
+    this.elmTextTwo_5,
+    this.subtitleThree_1,
+    this.ayahHadithThreeOne_1,
+    this.ayahHadithThreeOne_2,
     this.footerTwo,
 
-    // page 3
-    this.subtitleThree1,
-    this.ayahHadithThree1,
-    this.elmTextThree1,
-    this.subtitleThree2,
-    this.elmTextThree2,
-    this.ayahHadithThree2,
-    this.subtitleThree3,
-    this.elmTextThree3,
-    this.ayahHadithThree3,
-    this.elmTextThree4,
-    this.ayahHadithThree4,
-    this.elmTextThree5,
-    this.ayahHadithThree5,
-    this.elmTextThree6,
-    this.subtitleThree4,
-    this.ayahHadithThree6,
-    this.elmTextThree7,
-    this.ayahHadithThree7,
-    this.subtitleThree5,
-    this.elmTextThree8,
-    this.ayahHadithThree9,
-    this.titleOne,
-    this.subtitleOne1,
-    this.elmTextOne1,
-    this.ayahHadithOne,
-    this.elmTextOne2,
-    this.subtitleOne2,
-    this.elmTextOne3,
-    this.ayahHadithOne2,
-    this.elmTextOne4,
-    this.ayahHadithOne3,
-    this.elmTextOne5,
-    this.ayahHadithOne4,
-    this.elmTextOne6,
-    this.ayahHadithOne5,
-    this.elmTextThree9,
-    this.footerOne,
+    // 3
+    this.titleThreeOne,
+    this.elmTextThreeOne_1,
+    this.elmTextThreeOne_2,
+    this.subtitleThreeTwo_2,
+    this.elmTextThreeTwo_1,
+    this.elmTextThreeTwo_2,
+    this.elmTextThreeTwo_3,
+    this.elmTextThreeThree_1,
+    this.elmTextThreeThree_2,
+    this.ayahHadithThreeThree_1,
+    this.ayahHadithThreeThree_2,
     this.footer3,
 
-    // page 4
-    this.elmTextFour1,
-    this.ayahHadithFour1,
-    this.ayahHadithFour2,
+    // 4
+    this.ayahHadithEightFour_1,
+    this.ayahHadithEightFour_2,
+    this.titleFourOne,
+    this.elmTextFour_1,
+    this.ayahHadithFour_1,
+    this.ayahHadithFour_2,
+    this.footer4,
 
-    // page 5
-    this.ayahHadithFive1,
-    this.elmTextFive1,
-    this.subtitleFive,
-    this.titleFive,
-    this.ayahHadithFive2,
+    // 5
+    this.titleFiveOne,
+    this.elmTextFive_1,
+    this.subtitleFive_1,
+    this.ayahHadithFive_1,
+    this.ayahHadithFive_2,
+    this.footer5,
 
-    // page 6
-    this.ayahHadithSix,
-    this.elmTextSix1,
-    this.elmTextSix2,
+    // 6
+    this.titleSixOne,
+    this.elmTextSixOne_3,
+    this.elmTextSixOne_1,
+    this.elmTextSixOne_2,
+    this.elmTextSixTwo_1,
+    this.elmTextSixTwo_2,
+    this.elmTextSixThree_1,
+    this.elmTextSixThree_2,
+    this.elmTextSixFour_1,
     this.subtitleSix_1,
-    this.titleSix,
-    this.ayahHadithSix2,
+    this.ayahHadithSix_1,
+    this.ayahHadithSix_2,
+    this.ayahHadithSix_3,
+    this.ayahHadithSixThree_1,
+    this.footer6,
 
-    // page 7
-    this.ayahHadithSeven,
-    this.elmTextSeven1,
-    this.elmTextSeven2,
-    this.elmTextSeven3,
-    this.subtitleSeven,
-    this.titleSeven,
-    this.ayahHadithSeven2,
+    // 7
+    this.titleSevenOne,
+    this.elmTextSeven_1,
+    this.elmTextSeven_2,
+    this.elmTextSeven_3,
+    this.subtitleSeven_1,
+    this.ayahHadithSeven_1,
+    this.ayahHadithSeven_2,
+    this.footer7,
 
-    // page 8
-    this.titleEight_1,
+    // 8
+    this.elmTextEightOne_1,
+    this.elmTextEightFour_1,
+    this.titleEightOne,
     this.elmTextEight_1,
-    this.elmTextEight_2,
     this.elmTextEight_3,
     this.elmTextEightSix_1,
     this.elmTextEightSix_2,
@@ -199,9 +276,39 @@ class ElmModel {
     this.subtitleEightSix_2,
     this.elmTextEightSeven_1,
     this.elmTextEightSeven_2,
-    this.ayahHadithEight_1,
-    this.ayahHadithEight_2,
     this.ayahHadithEight_3,
     this.ayahHadithEight_4,
+    this.elmTextEightOne_2,
+    this.ayahHadithEightOne_1,
+    this.elmTextEightFive_1,
+    this.elmTextEightFive_2,
+    this.footer8,
+
+    // khatira 10
+    this.titleTenOne,
+    this.elmTextTenOne_1,
+    this.ayahHadithTenOne_1,
+    this.elmTextTenOne_2,
+    this.ayahHadithTenOne_2,
+    this.elmTextTenOne_3,
+    this.ayahHadithTenTwo_1,
+    this.elmTextTenTwo_1,
+    this.ayahHadithTenThree_1,
+    this.subtitleTenThree_1,
+    this.elmTextTenThree_1,
+    this.ayahHadithTenThree_2,
+    this.elmTextTenThree_2,
+    this.ayahHadithTenFour_1,
+    this.elmTextTenFour_1,
+    this.ayahHadithTenFive_1,
+    this.elmTextTenFive_1,
+    this.ayahHadithTenFive_2,
+    this.elmTextTenSix_1,
+    this.ayahHadithTenSix_1,
+    this.elmTextTenSeven_1,
+    this.ayahHadithTenSeven_1,
+    this.elmTextTenSeven_2,
+    this.ayahHadithTenSeven_2,
+    this.elmTextTenSeven_3,
   });
 }
