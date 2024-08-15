@@ -463,21 +463,21 @@ List<ElmModel> elmList15 = [
 List<ElmModel> elmList16 = [
   // page 1
   ElmModel(
-      titleOne: ElmTextDersSixteen.titleOne,
-      subtitleOne1: ElmTextDersSixteen.subtitleOne1,
-      elmTextOne1: ElmTextDersSixteen.elmTextDersSixteenOne1,
-      ayahHadithOne: ElmTextDersSixteen.ayahHadithOne1,
-      elmTextOne2: ElmTextDersSixteen.elmTextDersSixteenOne2,
-      subtitleOne2: ElmTextDersSixteen.subtitleOne2,
-      elmTextOne3: ElmTextDersSixteen.elmTextDersSixteenOne3,
-      ayahHadithOne2: ElmTextDersSixteen.ayahHadithOne2,
-      elmTextOne4: ElmTextDersSixteen.elmTextDersSixteenOne4,
-      ayahHadithOne3: ElmTextDersSixteen.ayahHadithOne3,
-      elmTextOne5: ElmTextDersSixteen.elmTextDersSixteenOne5,
-      ayahHadithOne4: ElmTextDersSixteen.ayahHadithOne4,
-      elmTextOne6: ElmTextDersSixteen.elmTextDersSixteenOne6,
-      ayahHadithOne5: ElmTextDersSixteen.ayahHadithOne5,
-      footerOne: ElmTextDersSixteen.footerOne),
+      titleSixteenOne: ElmTextDersSixteen.titleOne,
+      subtitleSixteenOne_1: ElmTextDersSixteen.subtitleOne1,
+      elmTextSixteenOne_1: ElmTextDersSixteen.elmTextDersSixteenOne1,
+      ayhaHadithSixteenOne_1: ElmTextDersSixteen.ayahHadithOne1,
+      elmTextSixteenOne_2: ElmTextDersSixteen.elmTextDersSixteenOne2,
+      subtitleSixteenOne_2: ElmTextDersSixteen.subtitleOne2,
+      elmTextSixteenOne_3: ElmTextDersSixteen.elmTextDersSixteenOne3,
+      ayhaHadithSixteenOne_2: ElmTextDersSixteen.ayahHadithOne2,
+      elmTextSixteenOne_4: ElmTextDersSixteen.elmTextDersSixteenOne4,
+      ayhaHadithSixteenOne_3: ElmTextDersSixteen.ayahHadithOne3,
+      elmTextSixteenOne_5: ElmTextDersSixteen.elmTextDersSixteenOne5,
+      ayhaHadithSixteenOne_4: ElmTextDersSixteen.ayahHadithOne4,
+      elmTextSixteenOne_6: ElmTextDersSixteen.elmTextDersSixteenOne6,
+      ayhaHadithSixteenOne_5: ElmTextDersSixteen.ayahHadithOne5,
+      footerSixteenOne: ElmTextDersSixteen.footerOne),
 
   // page 2
   ElmModel(

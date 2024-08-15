@@ -161,7 +161,60 @@ class ElmModel {
   final String? ayahHadithTenSeven_2;
   final String? elmTextTenSeven_3;
 
-  // // khatira 11 // khatira 12 // khatria 13 // khatira 14 // khatira 15 // khatria 16 // khatria 17
+  // // khatira 11 // khatira 12 // khatria 13 // khatira 14 // khatira 15
+  // khatria 16
+  /*-----1---*/
+  final String? titleSixteenOne;
+  final String? subtitleSixteenOne_1;
+  final String? elmTextSixteenOne_1;
+  final String? ayhaHadithSixteenOne_1;
+  final String? elmTextSixteenOne_2;
+  final String? subtitleSixteenOne_2;
+  final String? elmTextSixteenOne_3;
+  final String? ayhaHadithSixteenOne_2;
+  final String? elmTextSixteenOne_4;
+  final String? ayhaHadithSixteenOne_3;
+  final String? elmTextSixteenOne_5;
+  final String? ayhaHadithSixteenOne_4;
+  final String? elmTextSixteenOne_6;
+  final String? ayhaHadithSixteenOne_5;
+  final String? footerSixteenOne;
+  /*----2---*/
+  final String? elmTextSixteenTwo_1;
+  final String? ayhaHadithSixteenTwo_1;
+  final String? elmTextSixteenTwo_2;
+  final String? ayhaHadithSixteenTwo_2;
+  final String? elmTextSixteenTwo_3;
+  final String? ayhaHadithSixteenTwo_3;
+  final String? subtitleSixteenTwo_1;
+  final String? elmTextSixteenTwo_4;
+  final String? ayhaHadithSixteenTwo_4;
+  final String? elmTextSixteenTwo_5;
+  final String? footerSixteenTwo;
+  /*----3---*/
+  final String? subtitleSixteenThree_1;
+  final String? ayhaHadithSixteenThree_1;
+  final String? elmTextSixteenThree_1;
+  final String? subtitleSixteenThree_2;
+  final String? elmTextSixteenThree_2;
+  final String? ayhaHadithSixteenThree_2;
+  final String? subtitleSixteenThree_3;
+  final String? elmTextSixteenThree_3;
+  final String? ayhaHadithSixteenThree_3;
+  final String? elmTextSixteenThree_4;
+  final String? ayhaHadithSixteenThree_4;
+  final String? elmTextSixteenThree_5;
+  final String? ayhaHadithSixteenThree_5;
+  final String? elmTextSixteenThree_6;
+  final String? subtitleSixteenThree_4;
+  final String? ayhaHadithSixteenThree_6;
+  final String? elmTextSixteenThree_7;
+  final String? subtitleSixteenThree_5;
+  final String? elmTextSixteenThree_8;
+  final String? ayhaHadithSixteenThree_7;
+  final String? elmTextSixteenThree_9;
+  final String? footerSixteenThree;
+  // // khatria 17
 
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
@@ -310,5 +363,55 @@ class ElmModel {
     this.elmTextTenSeven_2,
     this.ayahHadithTenSeven_2,
     this.elmTextTenSeven_3,
+
+    // khatira 16
+    this.titleSixteenOne,
+    this.subtitleSixteenOne_1,
+    this.elmTextSixteenOne_1,
+    this.ayhaHadithSixteenOne_1,
+    this.elmTextSixteenOne_2,
+    this.subtitleSixteenOne_2,
+    this.elmTextSixteenOne_3,
+    this.ayhaHadithSixteenOne_2,
+    this.elmTextSixteenOne_4,
+    this.ayhaHadithSixteenOne_3,
+    this.elmTextSixteenOne_5,
+    this.ayhaHadithSixteenOne_4,
+    this.elmTextSixteenOne_6,
+    this.ayhaHadithSixteenOne_5,
+    this.footerSixteenOne,
+    this.elmTextSixteenTwo_1,
+    this.ayhaHadithSixteenTwo_1,
+    this.elmTextSixteenTwo_2,
+    this.ayhaHadithSixteenTwo_2,
+    this.elmTextSixteenTwo_3,
+    this.ayhaHadithSixteenTwo_3,
+    this.subtitleSixteenTwo_1,
+    this.elmTextSixteenTwo_4,
+    this.ayhaHadithSixteenTwo_4,
+    this.elmTextSixteenTwo_5,
+    this.footerSixteenTwo,
+    this.subtitleSixteenThree_1,
+    this.ayhaHadithSixteenThree_1,
+    this.elmTextSixteenThree_1,
+    this.subtitleSixteenThree_2,
+    this.elmTextSixteenThree_2,
+    this.ayhaHadithSixteenThree_2,
+    this.subtitleSixteenThree_3,
+    this.elmTextSixteenThree_3,
+    this.ayhaHadithSixteenThree_3,
+    this.elmTextSixteenThree_4,
+    this.ayhaHadithSixteenThree_4,
+    this.elmTextSixteenThree_5,
+    this.ayhaHadithSixteenThree_5,
+    this.elmTextSixteenThree_6,
+    this.subtitleSixteenThree_4,
+    this.ayhaHadithSixteenThree_6,
+    this.elmTextSixteenThree_7,
+    this.subtitleSixteenThree_5,
+    this.elmTextSixteenThree_8,
+    this.ayhaHadithSixteenThree_7,
+    this.elmTextSixteenThree_9,
+    this.footerSixteenThree,
   });
 }
