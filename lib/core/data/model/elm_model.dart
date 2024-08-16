@@ -103,29 +103,37 @@ class ElmModel {
   final String? footer7;
 
   // khatira 8
+  //---- 1 ---/
   final String? titleEightOne;
+  final String? elmTextEightOne_2;
+  final String? ayahHadithEightOne_1;
   final String? elmTextEight_1;
   final String? elmTextEightOne_1;
-  final String? elmTextEightTwo_1;
+  //--- 2 ---/
   final String? ayahHadithEightTwo_1;
+  final String? elmTextEightTwo_2;
+  final String? elmTextEightTwo_1;
+  //-- 4 ---/
+  final String? ayahHadithEightFour_1;
   final String? elmTextEightFour_1;
-  final String? elmTextEightOne_2;
+  final String? ayahHadithEightFour_2;
+  // -- 3 --/
+  final String? ayahHadithEightThree_1;
+  final String? elmTextEightThree_1;
   final String? elmTextEight_3;
+  // -- 6 -- /
   final String? elmTextEightSix_1;
   final String? elmTextEightSix_2;
   final String? subtitleEightSix_1;
   final String? subtitleEightSix_2;
+  // --- 7 -- /
   final String? elmTextEightSeven_1;
+  final String? footerEightSeven_1;
   final String? elmTextEightSeven_2;
-  final String? ayahHadithEightFour_1;
-  final String? ayahHadithEightFour_2;
-
-  final String? ayahHadithEight_3;
+  // --- 5 -- /
+  final String? ayahHadithEightFive_1;
   final String? elmTextEightFive_1;
   final String? elmTextEightFive_2;
-  final String? ayahHadithEightOne_1;
-  final String? ayahHadithEight_4;
-  final String? footer8;
 
   // khatira 9 //
 
@@ -321,7 +329,10 @@ class ElmModel {
 
     // 8
     this.elmTextEightOne_1,
+    this.elmTextEightTwo_1,
     this.elmTextEightFour_1,
+    this.ayahHadithEightOne_1,
+    this.ayahHadithEightTwo_1,
     this.titleEightOne,
     this.elmTextEight_1,
     this.elmTextEight_3,
@@ -331,13 +342,14 @@ class ElmModel {
     this.subtitleEightSix_2,
     this.elmTextEightSeven_1,
     this.elmTextEightSeven_2,
-    this.ayahHadithEight_3,
-    this.ayahHadithEight_4,
+    this.elmTextEightThree_1,
     this.elmTextEightOne_2,
-    this.ayahHadithEightOne_1,
     this.elmTextEightFive_1,
     this.elmTextEightFive_2,
-    this.footer8,
+    this.elmTextEightTwo_2,
+    this.ayahHadithEightThree_1,
+    this.footerEightSeven_1,
+    this.ayahHadithEightFive_1,
 
     // khatira 10
     this.titleTenOne,
@@ -367,6 +379,7 @@ class ElmModel {
     this.elmTextTenSeven_3,
 
     // khatira 16
+    // --- 1 --- /
     this.titleSixteenOne,
     this.subtitleSixteenOne_1,
     this.elmTextSixteenOne_1,
@@ -382,6 +395,7 @@ class ElmModel {
     this.elmTextSixteenOne_6,
     this.ayhaHadithSixteenOne_5,
     this.footerSixteenOne,
+    //-- 2 -- /
     this.elmTextSixteenTwo_1,
     this.ayhaHadithSixteenTwo_1,
     this.elmTextSixteenTwo_2,
@@ -393,6 +407,7 @@ class ElmModel {
     this.ayhaHadithSixteenTwo_4,
     this.elmTextSixteenTwo_5,
     this.footerSixteenTwo,
+    //-- 3 --/
     this.subtitleSixteenThree_1,
     this.ayhaHadithSixteenThree_1,
     this.elmTextSixteenThree_1,

@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTwoTexts(int i) {
   return [
-    TextSpan(text: elmList8[i].elmTextEight),
+    TextSpan(text: elmList8[i].elmTextTwo_1),
     TextSpan(
-        text: elmList8[i].ayahHadithTwo1,
+        text: elmList8[i].ayahHadithEightTwo_1,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList8[i].elmTextTwo2),
+    TextSpan(text: elmList8[i].elmTextTwo_2),
   ];
 }

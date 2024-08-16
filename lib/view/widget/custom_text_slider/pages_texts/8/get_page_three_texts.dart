@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageThreeTexts(int i) {
   return [
-    TextSpan(text: elmList8[i].elmTextEight_3),
+    TextSpan(text: elmList8[i].elmTextEightThree_1),
     TextSpan(
-        text: elmList8[i].ayahHadithEight_1,
+        text: elmList8[i].ayahHadithEightThree_1,
         style: AppTheme.customTextStyleHadith()),
   ];
 }
