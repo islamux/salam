@@ -1,7 +1,5 @@
 import 'package:elm/controller/elm16_controller.dart';
-import 'package:elm/core/data/model/page_content.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_sixteen.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
 import 'package:elm/function/decrease_font.dart';
@@ -17,9 +15,6 @@ class Elm16 extends StatelessWidget {
   Widget build(BuildContext context) {
     final Elm16ControllerImp controllerAs = Get.find<Elm16ControllerImp>();
     //Elm16ControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
-    // Debug before rendering
-    List<PageContent> pageContents = ElmTextDersSixteen.pageOne;
-    debugPageContents(pageContents);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.black,
@@ -91,23 +86,5 @@ class Elm16 extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-void debugPageContents(List<PageContent> pageContents) {
-  for (int i = 0; i < pageContents.length; i++) {
-    final content = pageContents[i];
-    if (content.title == null || content.title!.isEmpty) {
-      print('Page $i has an empty or null title');
-    }
-    if (content.subtitle == null || content.subtitle!.isEmpty) {
-      print('Page $i has an empty or null subtitle');
-    }
-    if (content.text == null || content.text!.isEmpty) {
-      print('Page $i has empty or null texts');
-    }
-    if (content.ayahHadith == null || content.ayahHadith!.isEmpty) {
-      print('Page $i has empty or null Ayah or Hadith');
-    }
   }
 }
