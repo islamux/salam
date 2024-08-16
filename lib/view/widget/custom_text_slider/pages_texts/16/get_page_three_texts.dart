@@ -40,7 +40,6 @@ List<TextSpan> getPageThreeTexts(int i) {
     TextSpan(
         text: elmList16[i].ayhaHadithSixteenThree_6,
         style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList16[i].subtitleSixteenThree_5),
     TextSpan(
         text: elmList16[i].subtitleSixteenThree_5,
         style: AppTheme.customTextStyleTitle()),

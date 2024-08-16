@@ -13,6 +13,8 @@ List<TextSpan> getPageOneTexts(int i) {
         text: elmList3[i].ayahHadithThreeOne_1,
         style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList3[i].elmTextThreeOne_2),
-    TextSpan(text: elmList3[i].ayahHadithThreeOne_2),
+    TextSpan(
+        text: elmList3[i].ayahHadithThreeOne_2,
+        style: AppTheme.customTextStyleHadith()),
   ];
 }

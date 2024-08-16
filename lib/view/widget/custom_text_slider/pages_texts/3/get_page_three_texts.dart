@@ -8,6 +8,6 @@ List<TextSpan> getPageThreeTexts(int i) {
         text: elmList3[i].ayahHadithThreeThree_1,
         style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList3[i].elmTextThreeThree_1),
-    TextSpan(text: elmList3[i].elmTextThreeThree_2)
+    TextSpan(text: elmList3[i].elmTextThreeThree_2),
   ];
 }

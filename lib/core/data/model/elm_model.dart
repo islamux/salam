@@ -38,7 +38,6 @@ class ElmModel {
   final String? elmTextTwo_4;
   final String? ayahHadithTwo_4;
   final String? elmTextTwo_5;
-
   final String? footerTwo;
 
   // khatira 3
@@ -46,20 +45,18 @@ class ElmModel {
   final String? subtitleThree_1;
   final String? ayahHadithThreeOne_1;
   final String? ayahHadithThreeOne_2;
-  final String? ayahHadithThreeThree_1;
-  final String? ayahHadithThreeThree_2;
-
   final String? elmTextThreeOne_1;
   final String? elmTextThreeOne_2;
+  //---2 ---/
   final String? elmTextThreeTwo_1;
   final String? elmTextThreeTwo_2;
+  final String? subtitleThreeTwo_2;
   final String? elmTextThreeTwo_3;
+  //---3---/
+  final String? ayahHadithThreeThree_1;
   final String? elmTextThreeThree_1;
   final String? elmTextThreeThree_2;
-
-  final String? subtitleThreeTwo_2;
   final String? footer3;
-
   // khatira 4
   final String? titleFourOne;
   final String? elmTextFour_1;
@@ -264,26 +261,28 @@ class ElmModel {
     this.elmTextTwo_4,
     this.ayahHadithTwo_4,
     this.elmTextTwo_5,
-    this.subtitleThree_1,
-    this.ayahHadithThreeOne_1,
-    this.ayahHadithThreeOne_2,
     this.footerTwo,
 
-    // 3
+    // khatira 3
+    // -- 1 --
     this.titleThreeOne,
-    this.elmTextThreeOne_1,
+    this.subtitleThree_1,
     this.elmTextThreeOne_2,
-    this.subtitleThreeTwo_2,
+    this.elmTextThreeOne_1,
+    this.ayahHadithThreeOne_1,
+    this.ayahHadithThreeOne_2,
+    //-- 2 --
     this.elmTextThreeTwo_1,
     this.elmTextThreeTwo_2,
     this.elmTextThreeTwo_3,
+    this.subtitleThreeTwo_2,
+    //-- 3
     this.elmTextThreeThree_1,
-    this.elmTextThreeThree_2,
     this.ayahHadithThreeThree_1,
-    this.ayahHadithThreeThree_2,
+    this.elmTextThreeThree_2,
     this.footer3,
 
-    // 4
+    // khatira 4
     this.ayahHadithEightFour_1,
     this.ayahHadithEightFour_2,
     this.titleFourOne,

@@ -81,39 +81,29 @@ List<ElmModel> elmList2 = [
   ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo18), //
 ];
 
-// TextDersThree
-// List<ElmModel> elmList3 = [
-//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree1), //
-//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree3), //
-//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree4), //
-//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree5), //
-//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree6), //
-//   ElmModel(elmText: ElmTextDersThree.elmTextDersThree7), //
-// ];
-
 // TextDersThree (new)
 List<ElmModel> elmList3 = [
   // Page 1
   ElmModel(
-    titleThreeOne: ElmTextDersThree.titlePageOne,
-    elmTextThreeOne_1: ElmTextDersThree.elmTextDersThreePageOne_1,
-    ayahHadithThreeOne_1: ElmTextDersThree.ayaHadithPageOne_1,
-    elmTextThreeOne_2: ElmTextDersThree.elmTextDersThreePageOne_2,
-    ayahHadithThreeOne_2: ElmTextDersThree.ayahHadithPageOne_2,
+    titleThreeOne: ElmTextDersThree.titleThreeeOne,
+    elmTextThreeOne_1: ElmTextDersThree.elmTexThreeOne_1,
+    ayahHadithThreeOne_1: ElmTextDersThree.ayaHadithThreeOne_1,
+    elmTextThreeOne_2: ElmTextDersThree.elmTextThreeOne_2,
+    ayahHadithThreeOne_2: ElmTextDersThree.ayahHadithThreeOne_2,
   ),
 
   // page 2
   ElmModel(
-    elmTextThreeTwo_1: ElmTextDersThree.elmTextDersThreePageTwo_1,
-    elmTextThreeTwo_2: ElmTextDersThree.elmTextDersThreePageTwo_2,
-    elmTextThreeTwo_3: ElmTextDersThree.elmTextDersThreePageTwo_3,
+    elmTextThreeTwo_1: ElmTextDersThree.elmTextThreeTwo_1,
+    elmTextThreeTwo_2: ElmTextDersThree.elmTextThreeTwo_2,
+    elmTextThreeTwo_3: ElmTextDersThree.elmTextThreeTwo_3,
   ),
 
   // page 3
   ElmModel(
-    ayahHadithThreeThree_1: ElmTextDersThree.ayaHadithPageOne_1,
-    elmTextThreeThree_1: ElmTextDersThree.elmTextDersPageThree_1,
-    elmTextThreeThree_2: ElmTextDersThree.elmTextDersPageThree_2,
+    ayahHadithThreeThree_1: ElmTextDersThree.ayahHadithThreeThree_1,
+    elmTextThreeThree_1: ElmTextDersThree.elmTextThreeThree_1,
+    elmTextThreeThree_2: ElmTextDersThree.elmTextThreeThree_2,
   ),
 ];
 
