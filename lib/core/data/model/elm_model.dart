@@ -57,12 +57,36 @@ class ElmModel {
   final String? elmTextThreeThree_1;
   final String? elmTextThreeThree_2;
   final String? footer3;
+
   // khatira 4
+  // -- 1
   final String? titleFourOne;
-  final String? elmTextFour_1;
-  final String? ayahHadithFour_1;
-  final String? ayahHadithFour_2;
-  final String? footer4;
+  final String? elmTextFourOne_1;
+  final String? ayahHadithFourOne_1;
+  // -- 2
+  final String? elmTextFourTwo_1;
+  // -- 3
+  final String? elmTextFourThree_1;
+  // -- 4
+  final String? elmTextFourFour_1;
+  // -- 5
+  final String? elmTextFourFive_1;
+  // -- 6
+  final String? subtitleFourSix_1;
+  final String? elmTextFourSix_1;
+  // -- 7
+  final String? elmTextFourSeven_1;
+  // -- 8
+  final String? elmTextFourEight_1;
+  final String? ayahHadithFourEight_1;
+  final String? elmTextFourEight_2;
+  // -- 9
+  final String? elmTextFourNine_1;
+  final String? ayahHadithFourNine_1;
+  // -- 10
+  final String? elmTextFourTen_1;
+  final String? ayahHadithFourTen_1;
+  final String? footerFourFive;
 
   // katira 5
   final String? elmTextFive_1;
@@ -286,10 +310,7 @@ class ElmModel {
     this.ayahHadithEightFour_1,
     this.ayahHadithEightFour_2,
     this.titleFourOne,
-    this.elmTextFour_1,
-    this.ayahHadithFour_1,
-    this.ayahHadithFour_2,
-    this.footer4,
+    this.footerFourFive,
 
     // khatira 5
     this.titleFiveOne,
@@ -375,7 +396,22 @@ class ElmModel {
     this.elmTextTenSeven_2,
     this.ayahHadithTenSeven_2,
     this.elmTextTenSeven_3,
-
+    this.elmTextFourOne_1,
+    this.ayahHadithFourOne_1,
+    this.elmTextFourTwo_1,
+    this.elmTextFourThree_1,
+    this.elmTextFourFour_1,
+    this.elmTextFourFive_1,
+    this.subtitleFourSix_1,
+    this.elmTextFourSix_1,
+    this.elmTextFourSeven_1,
+    this.elmTextFourEight_1,
+    this.ayahHadithFourEight_1,
+    this.elmTextFourEight_2,
+    this.elmTextFourNine_1,
+    this.ayahHadithFourNine_1,
+    this.elmTextFourTen_1,
+    this.ayahHadithFourTen_1,
     // khatira 16
     // --- 1 --- /
     this.titleSixteenOne,
