@@ -227,12 +227,12 @@ class ElmModel {
   ElmModel({
     this.elmText, // to make app run without errors , to remove after finish all refactor
 
-    // pre
+    // khatira pre
     this.titlePreOne,
     this.ayahHadithPreOne,
     this.elmTextPreOne,
 
-    // 1
+    // khatira 1
     this.titleOneOne,
     this.subtitleOne_1,
     this.elmTextOne_1,
@@ -249,7 +249,7 @@ class ElmModel {
     this.ayahHadithOne_5,
     this.footerOne,
 
-    // 2
+    // khatira 2
     this.titleTwoOne,
     this.elmTextTwo_1,
     this.ayahHadithTwo_1,
@@ -291,7 +291,7 @@ class ElmModel {
     this.ayahHadithFour_2,
     this.footer4,
 
-    // 5
+    // khatira 5
     this.titleFiveOne,
     this.elmTextFive_1,
     this.subtitleFive_1,
@@ -299,7 +299,7 @@ class ElmModel {
     this.ayahHadithFive_2,
     this.footer5,
 
-    // 6
+    // khatria 6
     this.titleSixOne,
     this.elmTextSixOne_3,
     this.elmTextSixOne_1,
@@ -316,7 +316,7 @@ class ElmModel {
     this.ayahHadithSixThree_1,
     this.footer6,
 
-    // 7
+    // khatira 7
     this.titleSevenOne,
     this.elmTextSeven_1,
     this.elmTextSeven_2,
@@ -326,7 +326,7 @@ class ElmModel {
     this.ayahHadithSeven_2,
     this.footer7,
 
-    // 8
+    // khatira 8
     this.elmTextEightOne_1,
     this.elmTextEightTwo_1,
     this.elmTextEightFour_1,
