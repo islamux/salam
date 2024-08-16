@@ -73,21 +73,21 @@ class ElmModel {
   final String? footer5;
 
   // khatira 6
+  //--- 1
   final String? titleSixOne;
   final String? elmTextSixOne_1;
   final String? elmTextSixOne_2;
-  final String? elmTextSixOne_3;
+  final String? ayahHadithSixOne_1;
+  // --- 2
+  final String? subtitleSixTwo_1;
   final String? elmTextSixTwo_1;
-  final String? elmTextSixTwo_2;
+  final String? ayahHadithSixTwo_1;
+  //--- 3
   final String? elmTextSixThree_1;
   final String? ayahHadithSixThree_1;
   final String? elmTextSixThree_2;
+  // --- 4
   final String? elmTextSixFour_1;
-  final String? subtitleSix_1;
-  final String? ayahHadithSix_1;
-  final String? ayahHadithSix_2;
-  final String? ayahHadithSix_3;
-  final String? footer6;
 
   // khatira 7
   final String? titleSevenOne;
@@ -300,22 +300,21 @@ class ElmModel {
     this.footer5,
 
     // khatria 6
+    // -- 1
     this.titleSixOne,
-    this.elmTextSixOne_3,
     this.elmTextSixOne_1,
     this.elmTextSixOne_2,
+    this.ayahHadithSixOne_1,
+    // -- 2
+    this.subtitleSixTwo_1,
     this.elmTextSixTwo_1,
-    this.elmTextSixTwo_2,
+    this.ayahHadithSixTwo_1,
+    // -- 3
     this.elmTextSixThree_1,
     this.elmTextSixThree_2,
-    this.elmTextSixFour_1,
-    this.subtitleSix_1,
-    this.ayahHadithSix_1,
-    this.ayahHadithSix_2,
-    this.ayahHadithSix_3,
     this.ayahHadithSixThree_1,
-    this.footer6,
-
+    // -- 4
+    this.elmTextSixFour_1,
     // khatira 7
     this.titleSevenOne,
     this.elmTextSeven_1,

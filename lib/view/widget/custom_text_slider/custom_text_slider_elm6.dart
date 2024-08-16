@@ -15,7 +15,7 @@ class CustomTextSliderElm6 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm6ControllerImp controllerAs = Get.find<Elm6ControllerImp>();
+    final Elm6ControllerImp controller = Get.find<Elm6ControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<Elm6ControllerImp>(
       builder: (_) {
@@ -37,10 +37,10 @@ class CustomTextSliderElm6 extends StatelessWidget {
               child: PageView.builder(
                 reverse: true,
                 // to enable move through pages slider() using pageController
-                controller: controllerAs.pageControllerAssma,
+                controller: controller.pageControllerAssma,
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
-                    controllerAs.onPageChanged(index),
+                    controller.onPageChanged(index),
                 itemCount: elmList6.length,
                 itemBuilder: (context, i) => Column(
                   children: [
@@ -53,19 +53,27 @@ class CustomTextSliderElm6 extends StatelessWidget {
                           child:
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm6ControllerImp>(
-                            builder: (controllerAs) {
-                              return RichText(
+                            builder: (controller) {
+                              return
+                                  // Rich Text Loop on rich text
+                                  RichText(
                                 text: TextSpan(
-                                    style: TextStyle(
-                                        fontFamily: 'AmiriQ',
-                                        fontSize: controllerAs.fontSize,
-                                        color: Colors.black),
-                                    children: [
-                                      ...getPageOneTexts(i),
-                                      ...getPageTwoTexts(i),
-                                      ...getPageThreeTexts(i),
-                                      ...getPageFourTexts(i),
-                                    ]),
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controller.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    /**
+                                     * باستخدام ... (spread operator) في children، تستطيع تحويل قائمة TextSpan إلى قائمة InlineSpan.
+                                      الدالة getPageOneTexts(i) تم إعادة استخدامها كما هي، بدون الحاجة لتعديلها لأن TextSpan هو جزء من InlineSpan.
+                                     */
+                                    ...getPageOneTexts(i),
+                                    ...getPageTwoTexts(i),
+                                    ...getPageThreeTexts(i),
+                                    ...getPageFourTexts(i),
+                                  ],
+                                ),
                                 textAlign: TextAlign.right,
                               );
                             },
@@ -90,9 +98,9 @@ class CustomTextSliderElm6 extends StatelessWidget {
                     child: Slider(
                       activeColor: AppColor.black,
                       inactiveColor: AppColor.grey,
-                      value: controllerAs.currentPageIndex.toDouble(),
+                      value: controller.currentPageIndex.toDouble(),
                       onChanged: (double value) {
-                        controllerAs.goToPage(value.toInt());
+                        controller.goToPage(value.toInt());
                       },
                       min: 0,
                       max: elmList6.length.toDouble() - 1,
@@ -100,8 +108,8 @@ class CustomTextSliderElm6 extends StatelessWidget {
                   ),
                   // Display current page number
                   Text(
-                    //'${controllerAs.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controllerAs.currentPageIndex + 1.toInt()} / ${elmList6.length}',
+                    //'${controller.currentPageCounter + 1} / ${elm1List.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${elmList6.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )
