@@ -1,4 +1,4 @@
-import 'package:elm/core/data/model/page_content.dart';
+import 'package:elm/core/data/model/kahtira_page_content.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +13,7 @@ abstract class Elm16Controller extends GetxController {
 //  String getShareText(int index);
   void increamentPageController();
   void goToPage(int pageIndex); // for slider()
-  void debugPageContents(List<PageContent> pageContents);
+  void debugPageContents(List<KhatriaPageContent> pageContents);
 }
 
 class Elm16ControllerImp extends Elm16Controller {
@@ -99,11 +99,16 @@ class Elm16ControllerImp extends Elm16Controller {
   }
 
   @override
-  void debugPageContents(List<PageContent> pageContents) {
+  void debugPageContents(List<KhatriaPageContent> pageContents) {
     for (var i = 0; i < pageContents.length; i++) {
       var content = pageContents[i];
       print(
           "Page $i: Title: ${content.title}, Subtitle: ${content.subtitle}, Text: ${content.text}, Ayah/Hadith: ${content.ayahHadith}");
     }
   }
+
+  @override
+  void onInit() {
+    super.onInit();
+  } // يمكن تحميل بيانات من API أو ملف JSON هنا
 }

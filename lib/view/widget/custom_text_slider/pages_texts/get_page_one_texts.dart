@@ -6,22 +6,22 @@ List<TextSpan> getPageOneTexts(int i) {
   return [
     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
     TextSpan(
-        text: ElmTextDersSixteen.pageOne.length > i
-            ? ElmTextDersSixteen.pageOne[i].title
+        text: ElmTextDersSixteen.khatiraModel.pages.length > i
+            ? ElmTextDersSixteen.khatiraModel.pages[i].title
             : '',
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne.length > i
-            ? ElmTextDersSixteen.pageOne[i].subtitle
+        text: ElmTextDersSixteen.khatiraModel.pages.length > i
+            ? ElmTextDersSixteen.khatiraModel.pages[i].subtitle
             : '',
         style: AppTheme.customTextStyleTitle()),
     TextSpan(
-        text: ElmTextDersSixteen.pageOne.length > i
-            ? ElmTextDersSixteen.pageOne[i].text
+        text: ElmTextDersSixteen.khatiraModel.pages.length > i
+            ? ElmTextDersSixteen.khatiraModel.pages[i].text
             : ''),
     TextSpan(
-      text: ElmTextDersSixteen.pageOne.length > i
-          ? ElmTextDersSixteen.pageOne[i].ayahHadith
+      text: ElmTextDersSixteen.khatiraModel.pages.length > i
+          ? ElmTextDersSixteen.khatiraModel.pages[i].ayahHadith
           : '',
       style: AppTheme.customTextStyleHadith(),
     ),
