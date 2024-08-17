@@ -251,11 +251,55 @@ class ElmModel {
   //--- 1
   final String? elmTextSeventeenOne_1;
   final String? ayahHadithSeventeenOne_1;
+  final String? elmTextSeventeenOne_2;
+  final String? elmTextSeventeenOne_3;
+  final String? ayahHadithSeventeenOne_2;
 
+  // -- 2
+  final String? subtitleSeventtenTwo_1;
+  final String? elmTextSeventeenTwo_1;
+  final String? elmTextSeventeenTwo_2;
+  final String? ayahHadithSeventeenTwo_1;
+  final String? ayahHadithSeventeenTwo_3;
+  // -- 3
+  final String? ayahHadithSeventeenThree_1;
+  final String? subtitleSeventeenThree_1;
+  final String? elmTextSeventeenThree_1;
+  final String? ayahHadithSeventeenThree_2;
+  final String? elmTextSeventeenThree_2;
+  // -- 4
+  final String? elmTextSeventeenFour_1;
+  final String? ayahHadithSeventeenFour_1;
+  final String? elmTextSeventeenFour_2;
+  // -- 5
+  final String? elmTextSeventeenFive_1;
+  final String? elmTextSeventeenFive_2;
+  // -- 6
+  final String? elmTextSeventeenSix_1;
+  final String? elmTextSeventeenSix_2;
+  final String? ayahHadithSeventeenSix_1;
+  final String? elmTextSeventeenSix_3;
+  // -- 7
+  final String? elmTextSeventeenSeven_1;
+  final String? ayahHadithSeventeenSeven_1;
+  final String? elmTextSeventeenSeven_2;
+  final String? ayahHadithSeventeenSeven_2;
+  final String? elmTextSeventeenSeven_3;
+  final String? ayahHadithSeventeenSeven_3;
+  // -- 8
+  final String? elmTextSeventeenEight_1;
+  final String? footerSeventeenEight;
+  final String? subtitleSeventeenNine_1;
+  final String? elmTextSeventeenNine_1;
+  final String? ayahHadithSeventeenNine_1;
+  final String? elmTextSeventeenNine_2;
+  final String? elmTextSeventeenTen_1;
+  final String? ayahHadithSeventeenTen_1;
+  final String? ayahHadithSeventeenEleven_1;
+  final String? elmTextSeventeenEleven_1;
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
     this.elmText, // to make app run without errors , to remove after finish all refactor
-
     // khatira pre
     this.titlePreOne,
     this.ayahHadithPreOne,
@@ -470,9 +514,66 @@ class ElmModel {
     this.ayhaHadithSixteenThree_7,
     this.elmTextSixteenThree_9,
     this.footerSixteenThree,
+
     // Khatir 17
     // -- 1
-    this.elmTextSeventeenOne_1,
+    this.ayahHadithSeventeenOne_2,
     this.ayahHadithSeventeenOne_1,
+    this.elmTextSeventeenOne_1,
+    this.elmTextSeventeenOne_2,
+    this.elmTextSeventeenOne_3,
+
+    // -- 2
+    this.subtitleSeventtenTwo_1,
+    this.elmTextSeventeenTwo_1,
+    this.ayahHadithSeventeenTwo_1,
+    this.elmTextSeventeenTwo_2,
+    this.ayahHadithSeventeenTwo_3,
+
+    // -- 3
+    this.subtitleSeventeenThree_1,
+    this.ayahHadithSeventeenThree_1,
+    this.elmTextSeventeenThree_1,
+    this.ayahHadithSeventeenThree_2,
+    this.elmTextSeventeenThree_2,
+
+    // -- 4
+    this.elmTextSeventeenFour_1,
+    this.ayahHadithSeventeenFour_1,
+    this.elmTextSeventeenFour_2,
+
+    // -- 5
+    this.elmTextSeventeenFive_1,
+    this.elmTextSeventeenFive_2,
+
+    // -- 6
+    this.elmTextSeventeenSix_1,
+    this.elmTextSeventeenSix_2,
+    this.ayahHadithSeventeenSix_1,
+    this.elmTextSeventeenSix_3,
+
+    // -- 7
+    this.elmTextSeventeenSeven_1,
+    this.ayahHadithSeventeenSeven_1,
+    this.elmTextSeventeenSeven_2,
+    this.ayahHadithSeventeenSeven_2,
+    this.elmTextSeventeenSeven_3,
+    this.ayahHadithSeventeenSeven_3,
+
+    // -- 8
+    this.elmTextSeventeenEight_1,
+    this.footerSeventeenEight,
+
+    // -- 9
+    this.subtitleSeventeenNine_1,
+    this.elmTextSeventeenNine_1,
+    this.ayahHadithSeventeenNine_1,
+    this.elmTextSeventeenNine_2,
+
+    // -- 10
+    this.elmTextSeventeenTen_1,
+    this.ayahHadithSeventeenTen_1,
+    this.ayahHadithSeventeenEleven_1,
+    this.elmTextSeventeenEleven_1,
   });
 }
