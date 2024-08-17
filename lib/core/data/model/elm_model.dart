@@ -246,7 +246,11 @@ class ElmModel {
   final String? ayhaHadithSixteenThree_7;
   final String? elmTextSixteenThree_9;
   final String? footerSixteenThree;
+
   // // khatria 17
+  //--- 1
+  final String? elmTextSeventeenOne_1;
+  final String? ayahHadithSeventeenOne_1;
 
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
@@ -466,5 +470,9 @@ class ElmModel {
     this.ayhaHadithSixteenThree_7,
     this.elmTextSixteenThree_9,
     this.footerSixteenThree,
+    // Khatir 17
+    // -- 1
+    this.elmTextSeventeenOne_1,
+    this.ayahHadithSeventeenOne_1,
   });
 }
