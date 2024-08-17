@@ -123,6 +123,7 @@ List<ElmModel> elmList4 = [
   // page 5
   ElmModel(
       elmTextFourFive_1: ElmTextDersFour.elmTextFourFive_1,
+      ayhaHadithFourFive_1: ElmTextDersFour.ayahHadithFourFive_1,
       footerFourFive: ElmTextDersFour.footerFourFive),
   // page 6
   ElmModel(

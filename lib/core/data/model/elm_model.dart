@@ -71,6 +71,8 @@ class ElmModel {
   final String? elmTextFourFour_1;
   // -- 5
   final String? elmTextFourFive_1;
+  final String? ayhaHadithFourFive_1;
+  final String? footerFourFive;
   // -- 6
   final String? subtitleFourSix_1;
   final String? elmTextFourSix_1;
@@ -86,7 +88,6 @@ class ElmModel {
   // -- 10
   final String? elmTextFourTen_1;
   final String? ayahHadithFourTen_1;
-  final String? footerFourFive;
 
   // katira 5
   final String? elmTextFive_1;
@@ -309,6 +310,7 @@ class ElmModel {
     // khatira 4
     this.ayahHadithEightFour_1,
     this.ayahHadithEightFour_2,
+    this.ayhaHadithFourFive_1,
     this.titleFourOne,
     this.footerFourFive,
 
