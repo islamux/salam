@@ -1,10 +1,10 @@
-class KhatriaPageContent {
+class KhatiraPageContent {
   final String? title;
   final String? subtitle;
   final String? ayahHadith;
   final String? text;
   final String? footer;
-  KhatriaPageContent({
+  KhatiraPageContent({
     this.title,
     this.subtitle,
     this.ayahHadith,

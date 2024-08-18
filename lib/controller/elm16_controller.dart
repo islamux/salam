@@ -13,7 +13,7 @@ abstract class Elm16Controller extends GetxController {
 //  String getShareText(int index);
   void increamentPageController();
   void goToPage(int pageIndex); // for slider()
-  void debugPageContents(List<KhatriaPageContent> pageContents);
+  void debugPageContents(List<KhatiraPageContent> pageContents);
 }
 
 class Elm16ControllerImp extends Elm16Controller {
@@ -99,16 +99,11 @@ class Elm16ControllerImp extends Elm16Controller {
   }
 
   @override
-  void debugPageContents(List<KhatriaPageContent> pageContents) {
+  void debugPageContents(List<KhatiraPageContent> pageContents) {
     for (var i = 0; i < pageContents.length; i++) {
       var content = pageContents[i];
       print(
           "Page $i: Title: ${content.title}, Subtitle: ${content.subtitle}, Text: ${content.text}, Ayah/Hadith: ${content.ayahHadith}");
     }
   }
-
-  @override
-  void onInit() {
-    super.onInit();
-  } // يمكن تحميل بيانات من API أو ملف JSON هنا
 }
