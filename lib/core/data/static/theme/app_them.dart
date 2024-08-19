@@ -8,23 +8,41 @@ class AppTheme {
   static final FontControllerImp fontController = Get.put(FontControllerImp());
 
   //static final List<String> fontList = ['Amiri', 'Cairo', 'Kawkab','Tajawal'];
+  static TextStyle customTextStyleText() {
+    return const TextStyle(
+      fontFamily: 'AmiriQ',
+      color: AppColor.black,
+      fontSize: 18,
+    );
+  }
 
   static TextStyle customTextStyleFooter() {
     return const TextStyle(
       color: AppColor.footer,
+      fontSize: 18,
       fontWeight: FontWeight.bold,
     );
   }
 
   static TextStyle customTextStyleHadith() {
     return const TextStyle(
+      fontSize: 18,
       color: AppColor.ayahHadith,
       fontWeight: FontWeight.bold,
     );
   }
 
+  static TextStyle customTextStyleSubtitle() {
+    return const TextStyle(
+        fontSize: 18,
+        color: AppColor.title,
+        fontWeight: FontWeight.bold,
+        fontStyle: FontStyle.italic);
+  }
+
   static TextStyle customTextStyleTitle() {
     return const TextStyle(
+      fontSize: 18,
       color: AppColor.title,
       fontWeight: FontWeight.bold,
     );
