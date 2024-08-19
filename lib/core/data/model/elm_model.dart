@@ -10,7 +10,24 @@ class ElmModel {
   final String? elmTextPreOne;
 
   // Khatira 1
+  // -- 1
   final String? titleOneOne;
+  final String? elmTextOneOne_1;
+  final String? elmTextOneOne_2;
+  final String? elmTextOneOne_3;
+  // -- 2
+  final String? ayahHadithOneTwo_1;
+  final String? elmTextOneTwo_1;
+  // -- 3
+  final String? ayahHadithOneThree_1;
+  final String? elmTextOneThree_1;
+  final String? ayahHadithOneThree_2;
+  // -- 4
+  final String? elmTextOneFour_1;
+  final String? ayahHadithOneFour_3;
+  final String? elmTextOneSix_1;
+
+  //
   final String? subtitleOne_1;
   final String? elmTextOne_1;
   final String? ayahHadithOne_1;

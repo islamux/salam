@@ -31,15 +31,15 @@ List<ElmModel> elmListPre = [
 
 // TextDersOne
 List<ElmModel> elmList = [
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne1), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne2), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne3), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne4), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne5), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne6), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne7), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne8), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne9), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_1), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_2), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_3), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_4), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_5), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_6), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_7), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_8), //
+  ElmModel(elmText: ElmTextDersOne.elmTextOne_9), //
   ElmModel(elmText: ElmTextDersOne.elmTextDersOne10), //
   ElmModel(elmText: ElmTextDersOne.elmTextDersOne11), //
   ElmModel(elmText: ElmTextDersOne.elmTextDersOne12), //
