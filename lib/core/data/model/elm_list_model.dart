@@ -286,48 +286,48 @@ List<ElmModel> elmList9 = [
 List<ElmModel> elmList10 = [
   // 1
   ElmModel(
-    titleTenOne: ElmTextDersTen.titleOne,
-    elmTextOne_1: ElmTextDersTen.elmTextDersTenOne_1,
-    ayahHadithTenOne_1: ElmTextDersTen.ayahHadithOne_1,
-    elmTextOne_2: ElmTextDersTen.elmTextDersTenOne_2,
-    ayahHadithTenOne_2: ElmTextDersTen.ayahHadithOne_2,
-    elmTextOne_3: ElmTextDersTen.elmTextDersTenOne_3,
+    titleTenOne: ElmTextDersTen.titleTenOne,
+    elmTextOne_1: ElmTextDersTen.elmTexTenOne_1,
+    ayahHadithTenOne_1: ElmTextDersTen.ayahHadithTenOne_1,
+    elmTextOne_2: ElmTextDersTen.elmTextTenOne_2,
+    ayahHadithTenOne_2: ElmTextDersTen.ayahHadithTenOne_2,
+    elmTextOne_3: ElmTextDersTen.elmTextTenOne_3,
   ),
   // 2
   ElmModel(
-    ayahHadithTenTwo_1: ElmTextDersTen.ayahHadithOne_1,
-    elmTextTenTwo_1: ElmTextDersTen.elmTextDersTenTwo_1,
+    ayahHadithTenTwo_1: ElmTextDersTen.ayahHadithTenOne_1,
+    elmTextTenTwo_1: ElmTextDersTen.elmTextTenTwo_1,
   ),
   // 3
   ElmModel(
-      ayahHadithTenThree_1: ElmTextDersTen.ayahHadithThree_1,
-      subtitleTenThree_1: ElmTextDersTen.subtitleThree_1,
-      elmTextTenThree_1: ElmTextDersTen.elmTextDersTenThree_1,
-      ayahHadithTenThree_2: ElmTextDersTen.ayahHadithThree_2,
-      elmTextTenThree_2: ElmTextDersTen.elmTextDersTenThree_2),
+      ayahHadithTenThree_1: ElmTextDersTen.ayahHadithTenThree_1,
+      subtitleTenThree_1: ElmTextDersTen.subtitleTenThree_1,
+      elmTextTenThree_1: ElmTextDersTen.elmTextTenThree_1,
+      ayahHadithTenThree_2: ElmTextDersTen.ayahHadithTenThree_2,
+      elmTextTenThree_2: ElmTextDersTen.elmTextTenThree_2),
   // 4
   ElmModel(
-    ayahHadithTenFour_1: ElmTextDersTen.ayahHadithFour_1,
-    elmTextTenFour_1: ElmTextDersTen.elmTextDersTenFour_1,
+    ayahHadithTenFour_1: ElmTextDersTen.ayahHadithTenFour_1,
+    elmTextTenFour_1: ElmTextDersTen.elmTextTenFour_1,
   ),
   // 5
   ElmModel(
-    ayahHadithTenFive_1: ElmTextDersTen.ayahHadithFive_1,
-    elmTextTenFive_1: ElmTextDersTen.elmTextDersTenFive_1,
-    ayahHadithTenFive_2: ElmTextDersTen.ayahHadithFive_2,
+    ayahHadithTenFive_1: ElmTextDersTen.ayahHadithTenFive_1,
+    elmTextTenFive_1: ElmTextDersTen.elmTextTenFive_1,
+    ayahHadithTenFive_2: ElmTextDersTen.ayahHadithTenFive_2,
   ),
   // 6
   ElmModel(
-    elmTextTenSix_1: ElmTextDersTen.elmTextDersTenSix_1,
-    ayahHadithTenSix_1: ElmTextDersTen.ayahHadithSix_1,
+    elmTextTenSix_1: ElmTextDersTen.elmTextTenSix_1,
+    ayahHadithTenSix_1: ElmTextDersTen.ayahHadithTenSix_1,
   ),
   // 7
   ElmModel(
-    elmTextTenSeven_1: ElmTextDersTen.elmTextDersTenSeven_1,
-    ayahHadithTenSeven_1: ElmTextDersTen.ayahHadithSeven_1,
-    elmTextTenSeven_2: ElmTextDersTen.elmTextDersTenSeven_2,
-    ayahHadithTenSeven_2: ElmTextDersTen.ayahHadithSeven_2,
-    elmTextTenSeven_3: ElmTextDersTen.elmTextDersTenSeven_3,
+    elmTextTenSeven_1: ElmTextDersTen.elmTextTenSeven_1,
+    ayahHadithTenSeven_1: ElmTextDersTen.ayahHadithTenSeven_1,
+    elmTextTenSeven_2: ElmTextDersTen.elmTextTenSeven_2,
+    ayahHadithTenSeven_2: ElmTextDersTen.ayahHadithTenSeven_2,
+    elmTextTenSeven_3: ElmTextDersTen.elmTextTenSeven_3,
   )
 ];
 
@@ -527,7 +527,7 @@ List<ElmModel> elmList17 = [
   ElmModel(
     ayahHadithSeventeenTwo_1: ElmTextDersSeventeen.ayahHadithSeventeenTwo_1,
     elmTextSeventeenTwo_1: ElmTextDersSeventeen.elmTextSeventeenTwo_1,
-    ayahHadithSeventeenTwo_3: ElmTextDersSeventeen.ayahHadithSeventeenTwo_3,
+    ayahHadithSeventeenTwo_2: ElmTextDersSeventeen.ayahHadithSeventeenTwo_2,
     subtitleSeventtenTwo_1: ElmTextDersSeventeen.subtitleSeventtenTwo_1,
     elmTextSeventeenTwo_2: ElmTextDersSeventeen.elmTextSeventeenTwo_2,
   ),

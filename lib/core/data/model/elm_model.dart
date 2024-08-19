@@ -260,7 +260,7 @@ class ElmModel {
   final String? elmTextSeventeenTwo_1;
   final String? elmTextSeventeenTwo_2;
   final String? ayahHadithSeventeenTwo_1;
-  final String? ayahHadithSeventeenTwo_3;
+  final String? ayahHadithSeventeenTwo_2;
   // -- 3
   final String? ayahHadithSeventeenThree_1;
   final String? subtitleSeventeenThree_1;
@@ -289,14 +289,18 @@ class ElmModel {
   // -- 8
   final String? elmTextSeventeenEight_1;
   final String? footerSeventeenEight;
+  // -- 9
   final String? subtitleSeventeenNine_1;
   final String? elmTextSeventeenNine_1;
   final String? ayahHadithSeventeenNine_1;
   final String? elmTextSeventeenNine_2;
+  // -- 10
   final String? elmTextSeventeenTen_1;
   final String? ayahHadithSeventeenTen_1;
+  // -- 11
   final String? ayahHadithSeventeenEleven_1;
   final String? elmTextSeventeenEleven_1;
+
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
     this.elmText, // to make app run without errors , to remove after finish all refactor
@@ -528,7 +532,7 @@ class ElmModel {
     this.elmTextSeventeenTwo_1,
     this.ayahHadithSeventeenTwo_1,
     this.elmTextSeventeenTwo_2,
-    this.ayahHadithSeventeenTwo_3,
+    this.ayahHadithSeventeenTwo_2,
 
     // -- 3
     this.subtitleSeventeenThree_1,

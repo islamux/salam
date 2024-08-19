@@ -42,7 +42,7 @@ class ElmTextDersSeventeen {
 
   """;
 
-  static const String ayahHadithSeventeenTwo_3 = """
+  static const String ayahHadithSeventeenTwo_2 = """
   
   ( فَٱسۡتَقِیمَا ) 
 
