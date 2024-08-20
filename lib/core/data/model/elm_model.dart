@@ -24,10 +24,70 @@ class ElmModel {
   final String? ayahHadithOneThree_2;
   // -- 4
   final String? elmTextOneFour_1;
+  final String? elmTextOneFour_2;
   final String? ayahHadithOneFour_3;
-  final String? elmTextOneSix_1;
+  // -- 5
+  final String? elmTextOneFive_1;
+  final String? ayahHadithOneFive_1;
+  final String? elmTextOneFive_2;
+  final String? ayahHadithOneFive_2;
+  // -- 6
+  final String? ayahHadithOneSix_1;
+  final String? footerOneSix;
+  // -- 7
+  final String? elmTextOneSeven_1;
+  final String? ayahHadithOneSeven_1;
+  final String? elmTextOneSeven_2;
+  // -- 8
+  final String? elmTextOneEight_1;
+  final String? ayahHadithOneEight_1;
+  final String? elmTextOneEight_2;
+  // -- 9
+  final String? elmTextOneNine_1;
+  final String? ayahHadithOneNine_1;
+  final String? elmTextOneNine_2;
+  // -- 10
+  final String? elmTextOneTen_1;
+  final String? ayahHadithOneTen_1;
+  final String? footerOneTen;
+  // -- 11
+  final String? elmTextOneEleven_1;
+  final String? ayahHadithOneEleven_1;
+  // -- 12
+  final String? elmTextOneTwelve_1;
+  final String? ayahHadithOneTwelve_1;
+  final String? elmTextOneTwelve_2;
+  final String? ayahHadithOneTwelve_2;
+  //-- 13
+  final String? titleOneTherteen;
+  final String? elmTextOneTherteen_2;
+  // -- 14
+  final String? elmTextOneFourteen_1;
+  final String? elmTextOneFourteen_2;
+  final String? footerOneFourteen;
+  // -- 15
+  final String? elmTextOneFifteen_1;
+  final String? elmTextOneFifteen_2;
+  // -- 16
+  final String? elmTextOneSixteen_1;
+  final String? footerOneSixteen;
+  // -- 17
+  final String? elmTextOneSeventeen_1;
+  final String? ayahHadithOneSeventeen_1;
+  // -- 18
+  final String? elmTextOneEighteen_1;
+  final String? ayahHadithOneEighteen_1;
+  final String? elmTextOneEighteen_2;
+  final String? ayahHadithOneEighteen_2;
+  final String? elmTextOneEighteen_4;
+  // -- 19
+  final String? elmTextOneNinteen_5;
+  // -- 20
+  final String? subtitleOneTwenty;
+  // -- 21
+  final String? elmTextOneTwenty_1;
 
-  //
+  // ---
   final String? subtitleOne_1;
   final String? elmTextOne_1;
   final String? ayahHadithOne_1;
@@ -325,8 +385,6 @@ class ElmModel {
     this.titlePreOne,
     this.ayahHadithPreOne,
     this.elmTextPreOne,
-
-    // khatira 1
     this.titleOneOne,
     this.subtitleOne_1,
     this.elmTextOne_1,
@@ -342,6 +400,81 @@ class ElmModel {
     this.elmTextOne_6,
     this.ayahHadithOne_5,
     this.footerOne,
+    // Khatira One
+    // -- 1
+    this.elmTextOneOne_1,
+    this.elmTextOneOne_2,
+    this.elmTextOneOne_3,
+    // -- 2
+    this.ayahHadithOneTwo_1,
+    this.elmTextOneTwo_1,
+    // --3
+    this.ayahHadithOneThree_1,
+    this.elmTextOneThree_1,
+    this.ayahHadithOneThree_2,
+    // -- 4
+    this.elmTextOneFour_1,
+    this.elmTextOneFour_2,
+    this.ayahHadithOneFour_3,
+    // -- 5
+    this.elmTextOneFive_1,
+    this.ayahHadithOneFive_1,
+    this.elmTextOneFive_2,
+    this.ayahHadithOneFive_2,
+    // -- 6
+    this.ayahHadithOneSix_1,
+    this.footerOneSix,
+    // -- 7
+    this.elmTextOneSeven_1,
+    this.ayahHadithOneSeven_1,
+    this.elmTextOneSeven_2,
+    // -- 8
+    this.elmTextOneEight_1,
+    this.ayahHadithOneEight_1,
+    this.elmTextOneEight_2,
+    // -- 9
+    this.elmTextOneNine_1,
+    this.ayahHadithOneNine_1,
+    this.elmTextOneNine_2,
+    // -- 10
+    this.elmTextOneTen_1,
+    this.ayahHadithOneTen_1,
+    this.footerOneTen,
+    // -- 11
+    this.elmTextOneEleven_1,
+    this.ayahHadithOneEleven_1,
+    // -- 12
+    this.elmTextOneTwelve_1,
+    this.ayahHadithOneTwelve_1,
+    this.elmTextOneTwelve_2,
+    this.ayahHadithOneTwelve_2,
+    // -- 13
+    this.titleOneTherteen,
+    this.elmTextOneTherteen_2,
+    // -- 14
+    this.elmTextOneFourteen_1,
+    this.elmTextOneFourteen_2,
+    this.footerOneFourteen,
+    // -- 15
+    this.elmTextOneFifteen_1,
+    this.elmTextOneFifteen_2,
+    // -- 16
+    this.elmTextOneSixteen_1,
+    this.footerOneSixteen,
+    // -- 17
+    this.elmTextOneSeventeen_1,
+    this.ayahHadithOneSeventeen_1,
+    // -- 18
+    this.elmTextOneEighteen_1,
+    this.ayahHadithOneEighteen_1,
+    this.elmTextOneEighteen_2,
+    this.ayahHadithOneEighteen_2,
+    this.elmTextOneEighteen_4,
+    // -- 19
+    this.elmTextOneNinteen_5,
+    //--  20
+    this.subtitleOneTwenty,
+    this.elmTextOneTwenty_1,
 
     // khatira 2
     this.titleTwoOne,

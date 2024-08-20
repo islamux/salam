@@ -242,7 +242,7 @@ class ElmTextDersOne {
   """;
 
   // page 13
-  static const String footerOneTherteen = """
+  static const String titleOneTherteen = """
           (15)
   قلة الاحترام، الصغير لايحترم الكبير
 ---------------------
@@ -322,7 +322,7 @@ class ElmTextDersOne {
 """;
 
 // page 18
-  static const String elmTextOneEighteen_2 = """
+  static const String elmTextOneEighteen_1 = """
           (23)
 التسويف وعدم استغلال الوقت الاستغلال الصحيح تجاهلوا بأن أثمن شيء في حياة الإنسان هو الوقت [العمر] الله سبحانه وتعالى اقسم بمطلق الزمن
 

@@ -31,32 +31,123 @@ List<ElmModel> elmListPre = [
 
 // TextDersOne
 List<ElmModel> elmList = [
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_1), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_2), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_3), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_4), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_5), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_6), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_7), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_8), //
-  ElmModel(elmText: ElmTextDersOne.elmTextOne_9), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne10), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne11), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne12), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne13), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne14), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne15), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne16), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne17), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne18), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne19), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne20), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne21), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne22), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne23), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne24), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne25), //
-  ElmModel(elmText: ElmTextDersOne.elmTextDersOne26), //
+  // 1
+  ElmModel(
+    elmTextOneOne_1: ElmTextDersOne.elmTextOneOne_1,
+    elmTextOneOne_2: ElmTextDersOne.elmTextOneOne_2,
+    elmTextOneOne_3: ElmTextDersOne.elmTextOneOne_3,
+  ),
+  // 2
+  ElmModel(
+    ayahHadithOneTwo_1: ElmTextDersOne.ayahHadithOneTwo_1,
+    elmTextOneTwo_1: ElmTextDersOne.elmTextOneTwo_1,
+  ),
+  // 3
+  ElmModel(
+    ayahHadithOneThree_1: ElmTextDersOne.ayahHaditheOneThree_1,
+    elmTextOneThree_1: ElmTextDersOne.elmTextOneThree_1,
+    ayahHadithOneThree_2: ElmTextDersOne.ayahHadithOneThree_2,
+  ),
+  // 4
+  ElmModel(
+    elmTextOneFour_1: ElmTextDersOne.elmTextOneFour_1,
+    elmTextOneFour_2: ElmTextDersOne.elmTextOneFour_2,
+    ayahHadithOneFour_3: ElmTextDersOne.ayahHadithOneFour_3,
+  ),
+  // 5
+  ElmModel(
+    elmTextOneFive_1: ElmTextDersOne.elmTextOneFive_1,
+    ayahHadithOneFive_1: ElmTextDersOne.ayahHadithOneFive_1,
+    elmTextOneFive_2: ElmTextDersOne.elmTextOneFive_2,
+    ayahHadithOneFive_2: ElmTextDersOne.ayahHadithOneFive_2,
+  ),
+  // 6
+  ElmModel(
+    ayahHadithOneSix_1: ElmTextDersOne.ayahHadithOneSix_1,
+    footerOneSix: ElmTextDersOne.footerOneSix,
+  ),
+  // 7
+  ElmModel(
+    elmTextOneSeven_1: ElmTextDersOne.elmTextOneSeven_1,
+    ayahHadithOneSeven_1: ElmTextDersOne.ayahHadithOneSeven_1,
+    elmTextOneSeven_2: ElmTextDersOne.elmTextOneSeven_2,
+  ),
+  // 8
+  ElmModel(
+    elmTextOneEight_1: ElmTextDersOne.elmTextOneEight_1,
+    ayahHadithOneEight_1: ElmTextDersOne.ayahHadithOneEight_1,
+    elmTextOneEight_2: ElmTextDersOne.elmTextOneEight_2,
+  ),
+  // 9
+  ElmModel(
+    elmTextOneNine_1: ElmTextDersOne.elmTextOneNine_1,
+    ayahHadithOneNine_1: ElmTextDersOne.ayahHadithOneNine_1,
+    elmTextOneNine_2: ElmTextDersOne.elmTextOneNine_2,
+  ),
+  // 10
+  ElmModel(
+    elmTextOneTen_1: ElmTextDersOne.elmTextOneTen_1,
+    ayahHadithOneTen_1: ElmTextDersOne.ayahHadithOneTen_1,
+    footerOneTen: ElmTextDersOne.footerOneTen,
+  ),
+  // 11
+  ElmModel(
+    elmTextOneEleven_1: ElmTextDersOne.elmTextOneEleven_1,
+    ayahHadithOneEleven_1: ElmTextDersOne.ayahHadithOneEleven_1,
+  ),
+  // 12
+  ElmModel(
+    elmTextOneTwelve_1: ElmTextDersOne.elmTextOneTwelve_1,
+    ayahHadithOneTwelve_1: ElmTextDersOne.ayahHadithOneTwelve_1,
+    elmTextOneTwelve_2: ElmTextDersOne.elmTextOneTwelve_2,
+    ayahHadithOneTwelve_2: ElmTextDersOne.ayahHadithOneTwelve_2,
+  ),
+  // 13
+  ElmModel(
+    titleOneTherteen: ElmTextDersOne.titleOneTherteen,
+    elmTextOneTherteen_2: ElmTextDersOne.elmTextOneTherteen_2,
+  ),
+  // 14
+  ElmModel(
+    elmTextOneFourteen_1: ElmTextDersOne.elmTextOneFourteen_1,
+    elmTextOneFourteen_2: ElmTextDersOne.elmTextOneFourteen_2,
+    footerOneFourteen: ElmTextDersOne.footerOneFourteen,
+  ),
+  // 15
+  ElmModel(
+    elmTextOneFifteen_1: ElmTextDersOne.elmTextOneFifteen_1,
+    elmTextOneFifteen_2: ElmTextDersOne.elmTextOneFifteen_2,
+  ),
+  // 16
+  ElmModel(
+    elmTextOneSixteen_1: ElmTextDersOne.elmTextOneSixteen_1,
+    footerOneSixteen: ElmTextDersOne.footerOneSixteen,
+  ),
+  // 17
+  ElmModel(
+    elmTextOneSeventeen_1: ElmTextDersOne.elmTextOneSeventeen_1,
+    ayahHadithOneSeventeen_1: ElmTextDersOne.ayahHadithOneSeventeen_1,
+  ),
+  // 18
+  ElmModel(
+    elmTextOneEighteen_1: ElmTextDersOne.elmTextOneEighteen_1,
+    ayahHadithOneEighteen_1: ElmTextDersOne.ayahHadithOneEighteen_1,
+    elmTextOneEighteen_2: ElmTextDersOne.elmTextOneFifteen_2,
+    ayahHadithOneEighteen_2: ElmTextDersOne.ayahHadithOneEighteen_2,
+    elmTextOneEighteen_4: ElmTextDersOne.elmTextOneEighteen_4,
+  ),
+  // 19
+  ElmModel(
+    elmTextOneNinteen_5: ElmTextDersOne.elmTextOneNinteen_5,
+  ),
+  // 20
+  ElmModel(
+    subtitleOneTwenty: ElmTextDersOne.subtitleOneTwenty,
+  ),
+  ElmModel(
+    elmTextOneTwenty_1: ElmTextDersOne.elmTextOneTwenty_1,
+  )
+// ----
 ];
 
 // TextDersTwo
