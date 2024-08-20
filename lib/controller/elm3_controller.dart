@@ -1,20 +1,21 @@
+import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-abstract class Elm16Controller extends GetxController {
+abstract class Elm3Controller extends GetxController {
   void goToHome(); // مؤقتا
   void increaseFontSize();
   void decreaseFontSize();
   void resetCounter();
   void onPageChanged(int index);
-//  String getShareText(int index);
+  String getShareText(int index);
   void increamentPageController();
   void goToPage(int pageIndex); // for slider()
 }
 
-class Elm16ControllerImp extends Elm16Controller {
+class Elm3ControllerImp extends Elm3Controller {
   final PageController pageControllerAssma = PageController();
   // Proberties
   double fontSize = 21.0;
@@ -54,10 +55,10 @@ class Elm16ControllerImp extends Elm16Controller {
     resetCounter();
   }
 
-  // @override
-  // String getShareText(int index) {
-  //   return elmList[index].elmText ?? '';
-  // }
+  @override
+  String getShareText(int index) {
+    return elmList3[index].elmText ?? '';
+  }
 
   @override
   void increamentPageController() {
@@ -75,7 +76,7 @@ class Elm16ControllerImp extends Elm16Controller {
       } else {
         Get.snackbar(
           'الحمدلله',
-          ' انتهيت من القراءة',
+          '! أنهيت  قراءة أسماء الله الحسنى',
           colorText: AppColor.black,
           backgroundColor: AppColor.transparent,
           duration: const Duration(seconds: 5),

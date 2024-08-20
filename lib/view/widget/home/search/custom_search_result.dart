@@ -3,7 +3,7 @@ import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 
 class CustomSearchResultPage extends StatelessWidget {
-  final KhatiraModel elm;
+  final KhatiraPageContent elm;
 
   const CustomSearchResultPage({super.key, required this.elm});
 
@@ -24,7 +24,7 @@ class CustomSearchResultPage extends StatelessWidget {
         body: SingleChildScrollView(
           padding: const EdgeInsets.all(16),
           child: Text(
-            elm.elmText!, // change later
+            elm.content as String, // change later
             /*** todo */
             style: const TextStyle(fontSize: 16),
           ),
