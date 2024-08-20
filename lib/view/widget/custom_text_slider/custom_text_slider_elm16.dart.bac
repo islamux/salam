@@ -278,13 +278,10 @@
 //     );
 //   }
 // }
-
 import 'package:elm/controller/elm16_controller.dart';
 import 'package:elm/core/data/model/kahtira_page_content.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_sixteen.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -326,50 +323,11 @@ class CustomTextSliderElm16 extends StatelessWidget {
                           child: SingleChildScrollView(
                             child: RichText(
                               text: TextSpan(
-                                children: [
-                                  if (page.title != null)
-                                    TextSpan(
-                                      text: '${page.title!}\n\n',
-                                      style: AppTheme.customTextStyleTitle(),
-                                    ),
-                                  if (page.subtitle != null)
-                                    TextSpan(
-                                      text: '${page.subtitle!}\n\n',
-                                      style: const TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  if (page.text != null)
-                                    TextSpan(
-                                      text: '${page.text!}\n\n',
-                                      style: const TextStyle(
-                                        fontSize: 18,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  if (page.ayahHadith != null)
-                                    TextSpan(
-                                      text: '${page.ayahHadith!}\n\n',
-                                      style: const TextStyle(
-                                        fontSize: 18,
-                                        fontStyle: FontStyle.italic,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                  if (page.footer != null)
-                                    TextSpan(
-                                      text: page.footer!,
-                                      style: const TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                ],
+                                children: page.content
+                              ),textAlign: TextAlign.right,
                               ),
-                              textAlign: TextAlign.right,
                             ),
+                            
                           ),
                         ),
                       ),

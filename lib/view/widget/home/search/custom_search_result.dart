@@ -1,4 +1,4 @@
-import 'package:elm/core/data/model/khatira_model.dart';
+import 'package:elm/core/data/model/khatira_page_content.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 
