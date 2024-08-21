@@ -2,6 +2,26 @@ import 'package:elm/controller/elm1_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_eight_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_eighteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_eleven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_fifteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_five_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_four_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_fourteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_nine_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_nineteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_one_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_seven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_seventeen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_six_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_sixteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_ten_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_therteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_three_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_twelve_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_twenty_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_two_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,8 +30,7 @@ class CustomTextSliderElm1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm1ControllerImp controllerAs =
-        Get.find<Elm1ControllerImp>();
+    final Elm1ControllerImp controller = Get.find<Elm1ControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<Elm1ControllerImp>(
       builder: (_) {
@@ -33,10 +52,10 @@ class CustomTextSliderElm1 extends StatelessWidget {
               child: PageView.builder(
                 reverse: true,
                 // to enable move through pages slider() using pageController
-                controller: controllerAs.pageControllerAssma,
+                controller: controller.pageControllerAssma,
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
-                    controllerAs.onPageChanged(index),
+                    controller.onPageChanged(index),
                 itemCount: elmList.length,
                 itemBuilder: (context, i) => Column(
                   children: [
@@ -49,19 +68,39 @@ class CustomTextSliderElm1 extends StatelessWidget {
                           child:
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm1ControllerImp>(
-                            builder: (controllerAs) {
-                              return Text(
-                                elmList[i].elmText ?? '',
-                                // Provide a default value (?? '') in case duaText is null
-                                style:  TextStyle(
-                                  // Problem here is fontsize need to hotreload why?
-                                  // I found the solution by wrab Text with GetBuilder to refresh only the
-                                  // widgt not all page
-                                  fontSize:
-                                      //Get.find<Elm2ControllerImp>().fontSize,
-                                      controllerAs.fontSize,
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "AmiriQ",
+                            builder: (controller) {
+                              return
+                                  // Rich Text Loop on rich text
+                                  RichText(
+                                text: TextSpan(
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controller.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    //  page 1 , page 2 , page 3
+                                    ...getPageOneTexts(i),
+                                    ...getPageTwoTexts(i),
+                                    ...getPageThreeTexts(i),
+                                    ...getPageFourTexts(i),
+                                    ...getPageFiveTexts(i),
+                                    ...getPageSixTexts(i),
+                                    ...getPageSevenTexts(i),
+                                    ...getPageEightTexts(i),
+                                    ...getPageNineTexts(i),
+                                    ...getPageTenTexts(i),
+                                    ...getPageElevenTexts(i),
+                                    ...getPageTwelveTexts(i),
+                                    ...getPageTherteenTexts(i),
+                                    ...getPageFourteenTexts(i),
+                                    ...getPageFifteenTexts(i),
+                                    ...getPageSixteenTexts(i),
+                                    ...getPageSevnteenTexts(i),
+                                    ...getPageEighteenTexts(i),
+                                    ...getPageNineteenTexts(i),
+                                    ...getPageTwentyTexts(i),
+                                  ],
                                 ),
                                 textAlign: TextAlign.right,
                               );
@@ -74,7 +113,7 @@ class CustomTextSliderElm1 extends StatelessWidget {
                 ),
               ),
             ),
-            
+
             // slider widget
             Positioned(
               bottom: 16,
@@ -87,9 +126,9 @@ class CustomTextSliderElm1 extends StatelessWidget {
                     child: Slider(
                       activeColor: AppColor.black,
                       inactiveColor: AppColor.grey,
-                      value: controllerAs.currentPageIndex.toDouble(),
+                      value: controller.currentPageIndex.toDouble(),
                       onChanged: (double value) {
-                        controllerAs.goToPage(value.toInt());
+                        controller.goToPage(value.toInt());
                       },
                       min: 0,
                       max: elmList.length.toDouble() - 1,
@@ -97,8 +136,8 @@ class CustomTextSliderElm1 extends StatelessWidget {
                   ),
                   // Display current page number
                   Text(
-                    //'${controllerAs.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controllerAs.currentPageIndex+1.toInt()} / ${elmList.length}',
+                    //'${controller.currentPageCounter + 1} / ${elm1List.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${elmList.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )

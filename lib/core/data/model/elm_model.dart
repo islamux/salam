@@ -60,7 +60,8 @@ class ElmModel {
   final String? ayahHadithOneTwelve_2;
   //-- 13
   final String? titleOneTherteen;
-  final String? elmTextOneTherteen_2;
+  final String? elmTextOneTherteen_1;
+  final String? ayahHadithOneTherteen_1;
   // -- 14
   final String? elmTextOneFourteen_1;
   final String? elmTextOneFourteen_2;
@@ -79,12 +80,11 @@ class ElmModel {
   final String? ayahHadithOneEighteen_1;
   final String? elmTextOneEighteen_2;
   final String? ayahHadithOneEighteen_2;
-  final String? elmTextOneEighteen_4;
+  final String? elmTextOneEighteen_3;
   // -- 19
-  final String? elmTextOneNinteen_5;
+  final String? elmTextOneNinteen_1;
   // -- 20
   final String? subtitleOneTwenty;
-  // -- 21
   final String? elmTextOneTwenty_1;
 
   // ---
@@ -450,7 +450,8 @@ class ElmModel {
     this.ayahHadithOneTwelve_2,
     // -- 13
     this.titleOneTherteen,
-    this.elmTextOneTherteen_2,
+    this.elmTextOneTherteen_1,
+    this.ayahHadithOneTherteen_1,
     // -- 14
     this.elmTextOneFourteen_1,
     this.elmTextOneFourteen_2,
@@ -469,14 +470,14 @@ class ElmModel {
     this.ayahHadithOneEighteen_1,
     this.elmTextOneEighteen_2,
     this.ayahHadithOneEighteen_2,
-    this.elmTextOneEighteen_4,
+    this.elmTextOneEighteen_3,
     // -- 19
-    this.elmTextOneNinteen_5,
-    //--  20
+    this.elmTextOneNinteen_1,
+    // -- 20
     this.subtitleOneTwenty,
     this.elmTextOneTwenty_1,
 
-    // khatira 2
+    ////////
     this.titleTwoOne,
     this.elmTextTwo_1,
     this.ayahHadithTwo_1,
@@ -489,58 +490,56 @@ class ElmModel {
     this.ayahHadithTwo_4,
     this.elmTextTwo_5,
     this.footerTwo,
-
-    // khatira 3
-    // -- 1 --
     this.titleThreeOne,
     this.subtitleThree_1,
-    this.elmTextThreeOne_2,
-    this.elmTextThreeOne_1,
     this.ayahHadithThreeOne_1,
     this.ayahHadithThreeOne_2,
-    //-- 2 --
+    this.elmTextThreeOne_1,
+    this.elmTextThreeOne_2,
     this.elmTextThreeTwo_1,
     this.elmTextThreeTwo_2,
-    this.elmTextThreeTwo_3,
     this.subtitleThreeTwo_2,
-    //-- 3
-    this.elmTextThreeThree_1,
+    this.elmTextThreeTwo_3,
     this.ayahHadithThreeThree_1,
+    this.elmTextThreeThree_1,
     this.elmTextThreeThree_2,
     this.footer3,
-
-    // khatira 4
-    this.ayahHadithEightFour_1,
-    this.ayahHadithEightFour_2,
-    this.ayhaHadithFourFive_1,
     this.titleFourOne,
+    this.elmTextFourOne_1,
+    this.ayahHadithFourOne_1,
+    this.elmTextFourTwo_1,
+    this.elmTextFourThree_1,
+    this.elmTextFourFour_1,
+    this.elmTextFourFive_1,
+    this.ayhaHadithFourFive_1,
     this.footerFourFive,
-
-    // khatira 5
-    this.titleFiveOne,
+    this.subtitleFourSix_1,
+    this.elmTextFourSix_1,
+    this.elmTextFourSeven_1,
+    this.elmTextFourEight_1,
+    this.ayahHadithFourEight_1,
+    this.elmTextFourEight_2,
+    this.elmTextFourNine_1,
+    this.ayahHadithFourNine_1,
+    this.elmTextFourTen_1,
+    this.ayahHadithFourTen_1,
     this.elmTextFive_1,
+    this.titleFiveOne,
     this.subtitleFive_1,
     this.ayahHadithFive_1,
     this.ayahHadithFive_2,
     this.footer5,
-
-    // khatria 6
-    // -- 1
     this.titleSixOne,
     this.elmTextSixOne_1,
     this.elmTextSixOne_2,
     this.ayahHadithSixOne_1,
-    // -- 2
     this.subtitleSixTwo_1,
     this.elmTextSixTwo_1,
     this.ayahHadithSixTwo_1,
-    // -- 3
     this.elmTextSixThree_1,
-    this.elmTextSixThree_2,
     this.ayahHadithSixThree_1,
-    // -- 4
+    this.elmTextSixThree_2,
     this.elmTextSixFour_1,
-    // khatira 7
     this.titleSevenOne,
     this.elmTextSeven_1,
     this.elmTextSeven_2,
@@ -549,32 +548,30 @@ class ElmModel {
     this.ayahHadithSeven_1,
     this.ayahHadithSeven_2,
     this.footer7,
-
-    // khatira 8
-    this.elmTextEightOne_1,
-    this.elmTextEightTwo_1,
-    this.elmTextEightFour_1,
-    this.ayahHadithEightOne_1,
-    this.ayahHadithEightTwo_1,
     this.titleEightOne,
+    this.elmTextEightOne_2,
+    this.ayahHadithEightOne_1,
     this.elmTextEight_1,
+    this.elmTextEightOne_1,
+    this.ayahHadithEightTwo_1,
+    this.elmTextEightTwo_2,
+    this.elmTextEightTwo_1,
+    this.ayahHadithEightFour_1,
+    this.elmTextEightFour_1,
+    this.ayahHadithEightFour_2,
+    this.ayahHadithEightThree_1,
+    this.elmTextEightThree_1,
     this.elmTextEight_3,
     this.elmTextEightSix_1,
     this.elmTextEightSix_2,
     this.subtitleEightSix_1,
     this.subtitleEightSix_2,
     this.elmTextEightSeven_1,
+    this.footerEightSeven_1,
     this.elmTextEightSeven_2,
-    this.elmTextEightThree_1,
-    this.elmTextEightOne_2,
+    this.ayahHadithEightFive_1,
     this.elmTextEightFive_1,
     this.elmTextEightFive_2,
-    this.elmTextEightTwo_2,
-    this.ayahHadithEightThree_1,
-    this.footerEightSeven_1,
-    this.ayahHadithEightFive_1,
-
-    // khatira 10
     this.titleTenOne,
     this.elmTextTenOne_1,
     this.ayahHadithTenOne_1,
@@ -600,24 +597,6 @@ class ElmModel {
     this.elmTextTenSeven_2,
     this.ayahHadithTenSeven_2,
     this.elmTextTenSeven_3,
-    this.elmTextFourOne_1,
-    this.ayahHadithFourOne_1,
-    this.elmTextFourTwo_1,
-    this.elmTextFourThree_1,
-    this.elmTextFourFour_1,
-    this.elmTextFourFive_1,
-    this.subtitleFourSix_1,
-    this.elmTextFourSix_1,
-    this.elmTextFourSeven_1,
-    this.elmTextFourEight_1,
-    this.ayahHadithFourEight_1,
-    this.elmTextFourEight_2,
-    this.elmTextFourNine_1,
-    this.ayahHadithFourNine_1,
-    this.elmTextFourTen_1,
-    this.ayahHadithFourTen_1,
-    // khatira 16
-    // --- 1 --- /
     this.titleSixteenOne,
     this.subtitleSixteenOne_1,
     this.elmTextSixteenOne_1,
@@ -633,7 +612,6 @@ class ElmModel {
     this.elmTextSixteenOne_6,
     this.ayhaHadithSixteenOne_5,
     this.footerSixteenOne,
-    //-- 2 -- /
     this.elmTextSixteenTwo_1,
     this.ayhaHadithSixteenTwo_1,
     this.elmTextSixteenTwo_2,
@@ -645,7 +623,6 @@ class ElmModel {
     this.ayhaHadithSixteenTwo_4,
     this.elmTextSixteenTwo_5,
     this.footerSixteenTwo,
-    //-- 3 --/
     this.subtitleSixteenThree_1,
     this.ayhaHadithSixteenThree_1,
     this.elmTextSixteenThree_1,
@@ -668,66 +645,300 @@ class ElmModel {
     this.ayhaHadithSixteenThree_7,
     this.elmTextSixteenThree_9,
     this.footerSixteenThree,
-
-    // Khatir 17
-    // -- 1
-    this.ayahHadithSeventeenOne_2,
-    this.ayahHadithSeventeenOne_1,
     this.elmTextSeventeenOne_1,
+    this.ayahHadithSeventeenOne_1,
     this.elmTextSeventeenOne_2,
     this.elmTextSeventeenOne_3,
-
-    // -- 2
+    this.ayahHadithSeventeenOne_2,
     this.subtitleSeventtenTwo_1,
     this.elmTextSeventeenTwo_1,
-    this.ayahHadithSeventeenTwo_1,
     this.elmTextSeventeenTwo_2,
+    this.ayahHadithSeventeenTwo_1,
     this.ayahHadithSeventeenTwo_2,
-
-    // -- 3
-    this.subtitleSeventeenThree_1,
     this.ayahHadithSeventeenThree_1,
+    this.subtitleSeventeenThree_1,
     this.elmTextSeventeenThree_1,
     this.ayahHadithSeventeenThree_2,
     this.elmTextSeventeenThree_2,
-
-    // -- 4
     this.elmTextSeventeenFour_1,
     this.ayahHadithSeventeenFour_1,
     this.elmTextSeventeenFour_2,
-
-    // -- 5
     this.elmTextSeventeenFive_1,
     this.elmTextSeventeenFive_2,
-
-    // -- 6
     this.elmTextSeventeenSix_1,
     this.elmTextSeventeenSix_2,
     this.ayahHadithSeventeenSix_1,
     this.elmTextSeventeenSix_3,
-
-    // -- 7
     this.elmTextSeventeenSeven_1,
     this.ayahHadithSeventeenSeven_1,
     this.elmTextSeventeenSeven_2,
     this.ayahHadithSeventeenSeven_2,
     this.elmTextSeventeenSeven_3,
     this.ayahHadithSeventeenSeven_3,
-
-    // -- 8
     this.elmTextSeventeenEight_1,
     this.footerSeventeenEight,
-
-    // -- 9
     this.subtitleSeventeenNine_1,
     this.elmTextSeventeenNine_1,
     this.ayahHadithSeventeenNine_1,
     this.elmTextSeventeenNine_2,
-
-    // -- 10
     this.elmTextSeventeenTen_1,
     this.ayahHadithSeventeenTen_1,
     this.ayahHadithSeventeenEleven_1,
     this.elmTextSeventeenEleven_1,
+    //--  20
+
+    // khatira 2
+    // this.titleTwoOne,
+    // this.elmTextTwo_1,
+    // this.ayahHadithTwo_1,
+    // this.elmTextTwo_2,
+    // this.ayahHadithTwo_2,
+    // this.elmTextTwo_3,
+    // this.ayahHadithTwo_3,
+    // this.subtitleTwo_1,
+    // this.elmTextTwo_4,
+    // this.ayahHadithTwo_4,
+    // this.elmTextTwo_5,
+    // this.footerTwo,
+
+    // // khatira 3
+    // -- 1 --
+    // this.titleThreeOne,
+    // this.subtitleThree_1,
+    // this.elmTextThreeOne_2,
+    // this.elmTextThreeOne_1,
+    // this.ayahHadithThreeOne_1,
+    // this.ayahHadithThreeOne_2,
+    // //-- 2 --
+    // this.elmTextThreeTwo_1,
+    // this.elmTextThreeTwo_2,
+    // this.elmTextThreeTwo_3,
+    // this.subtitleThreeTwo_2,
+    // //-- 3
+    // this.elmTextThreeThree_1,
+    // this.ayahHadithThreeThree_1,
+    // this.elmTextThreeThree_2,
+    // this.footer3,
+
+    // khatira 4
+    // this.ayahHadithEightFour_1,
+    // this.ayahHadithEightFour_2,
+    // this.ayhaHadithFourFive_1,
+    // this.titleFourOne,
+    // this.footerFourFive,
+
+    // khatira 5
+    // this.titleFiveOne,
+    // this.elmTextFive_1,
+    // this.subtitleFive_1,
+    // this.ayahHadithFive_1,
+    // this.ayahHadithFive_2,
+    // this.footer5,
+
+    // khatria 6
+    // -- 1
+    // this.titleSixOne,
+    // this.elmTextSixOne_1,
+    // this.elmTextSixOne_2,
+    // this.ayahHadithSixOne_1,
+    // // -- 2
+    // this.subtitleSixTwo_1,
+    // this.elmTextSixTwo_1,
+    // this.ayahHadithSixTwo_1,
+    // // -- 3
+    // this.elmTextSixThree_1,
+    // this.elmTextSixThree_2,
+    // this.ayahHadithSixThree_1,
+    // // -- 4
+    // this.elmTextSixFour_1,
+    // // khatira 7
+    // this.titleSevenOne,
+    // this.elmTextSeven_1,
+    // this.elmTextSeven_2,
+    // this.elmTextSeven_3,
+    // this.subtitleSeven_1,
+    // this.ayahHadithSeven_1,
+    // this.ayahHadithSeven_2,
+    // this.footer7,
+
+    // // khatira 8
+    // this.elmTextEightOne_1,
+    // this.elmTextEightTwo_1,
+    // this.elmTextEightFour_1,
+    // this.ayahHadithEightOne_1,
+    // this.ayahHadithEightTwo_1,
+    // this.titleEightOne,
+    // this.elmTextEight_1,
+    // this.elmTextEight_3,
+    // this.elmTextEightSix_1,
+    // this.elmTextEightSix_2,
+    // this.subtitleEightSix_1,
+    // this.subtitleEightSix_2,
+    // this.elmTextEightSeven_1,
+    // this.elmTextEightSeven_2,
+    // this.elmTextEightThree_1,
+    // this.elmTextEightOne_2,
+    // this.elmTextEightFive_1,
+    // this.elmTextEightFive_2,
+    // this.elmTextEightTwo_2,
+    // this.ayahHadithEightThree_1,
+    // this.footerEightSeven_1,
+    // this.ayahHadithEightFive_1,
+
+    // // khatira 10
+    // this.titleTenOne,
+    // this.elmTextTenOne_1,
+    // this.ayahHadithTenOne_1,
+    // this.elmTextTenOne_2,
+    // this.ayahHadithTenOne_2,
+    // this.elmTextTenOne_3,
+    // this.ayahHadithTenTwo_1,
+    // this.elmTextTenTwo_1,
+    // this.ayahHadithTenThree_1,
+    // this.subtitleTenThree_1,
+    // this.elmTextTenThree_1,
+    // this.ayahHadithTenThree_2,
+    // this.elmTextTenThree_2,
+    // this.ayahHadithTenFour_1,
+    // this.elmTextTenFour_1,
+    // this.ayahHadithTenFive_1,
+    // this.elmTextTenFive_1,
+    // this.ayahHadithTenFive_2,
+    // this.elmTextTenSix_1,
+    // this.ayahHadithTenSix_1,
+    // this.elmTextTenSeven_1,
+    // this.ayahHadithTenSeven_1,
+    // this.elmTextTenSeven_2,
+    // this.ayahHadithTenSeven_2,
+    // this.elmTextTenSeven_3,
+    // this.elmTextFourOne_1,
+    // this.ayahHadithFourOne_1,
+    // this.elmTextFourTwo_1,
+    // this.elmTextFourThree_1,
+    // this.elmTextFourFour_1,
+    // this.elmTextFourFive_1,
+    // this.subtitleFourSix_1,
+    // this.elmTextFourSix_1,
+    // this.elmTextFourSeven_1,
+    // this.elmTextFourEight_1,
+    // this.ayahHadithFourEight_1,
+    // this.elmTextFourEight_2,
+    // this.elmTextFourNine_1,
+    // this.ayahHadithFourNine_1,
+    // this.elmTextFourTen_1,
+    // this.ayahHadithFourTen_1,
+    // // khatira 16
+    // // --- 1 --- /
+    // this.titleSixteenOne,
+    // this.subtitleSixteenOne_1,
+    // this.elmTextSixteenOne_1,
+    // this.ayhaHadithSixteenOne_1,
+    // this.elmTextSixteenOne_2,
+    // this.subtitleSixteenOne_2,
+    // this.elmTextSixteenOne_3,
+    // this.ayhaHadithSixteenOne_2,
+    // this.elmTextSixteenOne_4,
+    // this.ayhaHadithSixteenOne_3,
+    // this.elmTextSixteenOne_5,
+    // this.ayhaHadithSixteenOne_4,
+    // this.elmTextSixteenOne_6,
+    // this.ayhaHadithSixteenOne_5,
+    // this.footerSixteenOne,
+    // //-- 2 -- /
+    // this.elmTextSixteenTwo_1,
+    // this.ayhaHadithSixteenTwo_1,
+    // this.elmTextSixteenTwo_2,
+    // this.ayhaHadithSixteenTwo_2,
+    // this.elmTextSixteenTwo_3,
+    // this.ayhaHadithSixteenTwo_3,
+    // this.subtitleSixteenTwo_1,
+    // this.elmTextSixteenTwo_4,
+    // this.ayhaHadithSixteenTwo_4,
+    // this.elmTextSixteenTwo_5,
+    // this.footerSixteenTwo,
+    // //-- 3 --/
+    // this.subtitleSixteenThree_1,
+    // this.ayhaHadithSixteenThree_1,
+    // this.elmTextSixteenThree_1,
+    // this.subtitleSixteenThree_2,
+    // this.elmTextSixteenThree_2,
+    // this.ayhaHadithSixteenThree_2,
+    // this.subtitleSixteenThree_3,
+    // this.elmTextSixteenThree_3,
+    // this.ayhaHadithSixteenThree_3,
+    // this.elmTextSixteenThree_4,
+    // this.ayhaHadithSixteenThree_4,
+    // this.elmTextSixteenThree_5,
+    // this.ayhaHadithSixteenThree_5,
+    // this.elmTextSixteenThree_6,
+    // this.subtitleSixteenThree_4,
+    // this.ayhaHadithSixteenThree_6,
+    // this.elmTextSixteenThree_7,
+    // this.subtitleSixteenThree_5,
+    // this.elmTextSixteenThree_8,
+    // this.ayhaHadithSixteenThree_7,
+    // this.elmTextSixteenThree_9,
+    // this.footerSixteenThree,
+
+    // // Khatir 17
+    // // -- 1
+    // this.ayahHadithSeventeenOne_2,
+    // this.ayahHadithSeventeenOne_1,
+    // this.elmTextSeventeenOne_1,
+    // this.elmTextSeventeenOne_2,
+    // this.elmTextSeventeenOne_3,
+
+    // // -- 2
+    // this.subtitleSeventtenTwo_1,
+    // this.elmTextSeventeenTwo_1,
+    // this.ayahHadithSeventeenTwo_1,
+    // this.elmTextSeventeenTwo_2,
+    // this.ayahHadithSeventeenTwo_2,
+
+    // // -- 3
+    // this.subtitleSeventeenThree_1,
+    // this.ayahHadithSeventeenThree_1,
+    // this.elmTextSeventeenThree_1,
+    // this.ayahHadithSeventeenThree_2,
+    // this.elmTextSeventeenThree_2,
+
+    // // -- 4
+    // this.elmTextSeventeenFour_1,
+    // this.ayahHadithSeventeenFour_1,
+    // this.elmTextSeventeenFour_2,
+
+    // // -- 5
+    // this.elmTextSeventeenFive_1,
+    // this.elmTextSeventeenFive_2,
+
+    // // -- 6
+    // this.elmTextSeventeenSix_1,
+    // this.elmTextSeventeenSix_2,
+    // this.ayahHadithSeventeenSix_1,
+    // this.elmTextSeventeenSix_3,
+
+    // // -- 7
+    // this.elmTextSeventeenSeven_1,
+    // this.ayahHadithSeventeenSeven_1,
+    // this.elmTextSeventeenSeven_2,
+    // this.ayahHadithSeventeenSeven_2,
+    // this.elmTextSeventeenSeven_3,
+    // this.ayahHadithSeventeenSeven_3,
+
+    // // -- 8
+    // this.elmTextSeventeenEight_1,
+    // this.footerSeventeenEight,
+
+    // // -- 9
+    // this.subtitleSeventeenNine_1,
+    // this.elmTextSeventeenNine_1,
+    // this.ayahHadithSeventeenNine_1,
+    // this.elmTextSeventeenNine_2,
+
+    // // -- 10
+    // this.elmTextSeventeenTen_1,
+    // this.ayahHadithSeventeenTen_1,
+    // this.ayahHadithSeventeenEleven_1,
+    // this.elmTextSeventeenEleven_1,
   });
 }

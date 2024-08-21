@@ -33,6 +33,7 @@ List<ElmModel> elmListPre = [
 List<ElmModel> elmList = [
   // 1
   ElmModel(
+    titleOneOne: ElmTextDersOne.titleOneOne,
     elmTextOneOne_1: ElmTextDersOne.elmTextOneOne_1,
     elmTextOneOne_2: ElmTextDersOne.elmTextOneOne_2,
     elmTextOneOne_3: ElmTextDersOne.elmTextOneOne_3,
@@ -105,7 +106,8 @@ List<ElmModel> elmList = [
   // 13
   ElmModel(
     titleOneTherteen: ElmTextDersOne.titleOneTherteen,
-    elmTextOneTherteen_2: ElmTextDersOne.elmTextOneTherteen_2,
+    elmTextOneTherteen_1: ElmTextDersOne.elmTextOneTherteen_1,
+    ayahHadithOneTherteen_1: ElmTextDersOne.ayahHadithOneTherteen_1,
   ),
   // 14
   ElmModel(
@@ -134,19 +136,17 @@ List<ElmModel> elmList = [
     ayahHadithOneEighteen_1: ElmTextDersOne.ayahHadithOneEighteen_1,
     elmTextOneEighteen_2: ElmTextDersOne.elmTextOneFifteen_2,
     ayahHadithOneEighteen_2: ElmTextDersOne.ayahHadithOneEighteen_2,
-    elmTextOneEighteen_4: ElmTextDersOne.elmTextOneEighteen_4,
+    elmTextOneEighteen_3: ElmTextDersOne.elmTextOneEighteen_3,
   ),
   // 19
   ElmModel(
-    elmTextOneNinteen_5: ElmTextDersOne.elmTextOneNinteen_5,
+    elmTextOneNinteen_1: ElmTextDersOne.elmTextOneNinteen_1,
   ),
   // 20
   ElmModel(
-    subtitleOneTwenty: ElmTextDersOne.subtitleOneTwenty,
-  ),
-  ElmModel(
-    elmTextOneTwenty_1: ElmTextDersOne.elmTextOneTwenty_1,
-  )
+      subtitleOneTwenty: ElmTextDersOne.subtitleOneTwenty,
+      elmTextOneTwenty_1: ElmTextDersOne.elmTextOneTwenty_1),
+  ElmModel(),
 // ----
 ];
 

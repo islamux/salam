@@ -249,13 +249,13 @@ class ElmTextDersOne {
  
   """;
 
-  static const String elmTextOneTherteen_2 = """
+  static const String elmTextOneTherteen_1 = """
           (16)
 تدخل الأبناء والصغار بخلافات الآباء وعدم احترام مجالس الكبار وعدم توقير كبار السن 
 
   """;
 
-  static const String ayahHadithOneTherteen_3 = """
+  static const String ayahHadithOneTherteen_1 = """
 قال تعالى 
  إِنَّ مِنۡ أَزۡوَ ٰجِكُمۡ وَأَوۡلَـٰدِكُمۡ عَدُوࣰّا لَّكُمۡ فَٱحۡذَرُوهُمۡۚ 
 التغابن 14 
@@ -334,7 +334,7 @@ class ElmTextDersOne {
 العصر 
 
   """;
-  static const String elmTextOneEighteen_3 = """
+  static const String elmTextOneEighteen_2 = """
 وأقسم أيضاً بعمر النبي 
 """;
 
@@ -343,17 +343,17 @@ class ElmTextDersOne {
 الحجر 78 
 
   """;
-  static const String elmTextOneEighteen_4 = """
+  static const String elmTextOneEighteen_3 = """
 العمر الثمين الذي قضّاه كله لله والعظيم لايقسم إلا بعظيم والبعض أشغلوا أنفسهم بقضايا وأمور ليس لها أي فائدة ونسوا أن أخطر قضية في حياة الإنسان [الموت]
 
 """;
 
 // page 19
-  static const String elmTextOneNinteen_5 = """
+  static const String elmTextOneNinteen_1 = """
 وفي الأخير لا للتعميم لأن التعميم من العمى[عمى البصيرة] وإنما نقول نعم للتبعيض وكل هذه العوامل التي ذكرناها أنفاً لاتنطبق على الجميع وإنما تنطبق على البعض وكل من يرى في نفسه شيء من هذا سيجد نفسه بين السطور
 
 """;
-
+// 20
   static const String subtitleOneTwenty = """
 وقفه 
 ----
