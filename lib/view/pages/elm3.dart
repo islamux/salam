@@ -1,3 +1,6 @@
+//
+// ملف Elm3
+
 import 'package:elm/controller/elm3_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -13,7 +16,6 @@ class Elm3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //ElmPageControllerImp controllerM = Get.put(AthkarMassaControllerImp());
     final controllerM = Get.find<Elm3ControllerImp>();
 
     return Scaffold(
@@ -24,7 +26,6 @@ class Elm3 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconButton(
-              // share content by pass controlle as a parameter of current page
               onPressed: () => customShareContent(controllerM),
               icon: const Icon(Icons.share),
             ),
@@ -36,7 +37,6 @@ class Elm3 extends StatelessWidget {
         centerTitle: true,
         leading: GestureDetector(
           onTap: () {
-            //controllerM.resetCounter();
             Get.toNamed(AppRoute.home);
           },
           child: const Icon(Icons.arrow_back),
@@ -44,26 +44,20 @@ class Elm3 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              // controllerM.decreaseFontSize();
               decreaseFont(controllerM);
             },
             icon: const Icon(Icons.remove),
           ),
-
-          // Font between + -
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "الخط",
-                //   style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),
-
           IconButton(
               onPressed: () {
-                // controllerM.increaseFontSize();
                 increaseFont(controllerM);
               },
               icon: const Icon(Icons.add))
@@ -72,7 +66,6 @@ class Elm3 extends StatelessWidget {
       body: SafeArea(
         child: GestureDetector(
             onTap: () {
-              // test adding sound when tap
               Feedback.forTap(context);
             },
             child: const CustomTextSliderElm3()),

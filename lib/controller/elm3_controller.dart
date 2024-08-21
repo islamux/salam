@@ -1,5 +1,5 @@
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_three.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,6 +17,7 @@ abstract class Elm3Controller extends GetxController {
 
 class Elm3ControllerImp extends Elm3Controller {
   final PageController pageControllerAssma = PageController();
+  final ElmTextDersThree content = ElmTextDersThree.pages[i].content;
   // Proberties
   double fontSize = 21.0;
   int currentPageIndex = 0;
@@ -57,7 +58,9 @@ class Elm3ControllerImp extends Elm3Controller {
 
   @override
   String getShareText(int index) {
-    return elmList3[index].elmText ?? '';
+    final ElmTextDersThree content = ElmTextDersThree.pages[index].content;
+
+    return [index].elmText ?? '';
   }
 
   @override
