@@ -343,30 +343,31 @@ List<ElmModel> elmList8 = [
   ),
 ];
 
-// //TextDersNine
-// List<ElmModel> elmList9 = [
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine1),
-//   // ElmModel(elmText: ElmTextDersNine.elmTextDersNine2),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine3),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine4),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine5),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine6),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine7),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine8),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine9),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine10),
-//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine11),
-// ];
+
 // Text Ders Nin3
 List<ElmModel> elmList9 = [
   // 1
+  ElmModel(),
   // 2
+  ElmModel(),
   // 3
+  ElmModel(),
   // 4
+  ElmModel(),
   // 5
+  ElmModel(),
   // 6
+  ElmModel(),
   // 7
+  ElmModel(),
   // 8
+  ElmModel(),
+  // 9
+  ElmModel(),
+
+
+
+
 ];
 // 10
 List<ElmModel> elmList10 = [
@@ -548,7 +549,8 @@ List<ElmModel> elmList16 = [
       elmTextSixteenOne_2: ElmTextDersSixteen.elmTextDersSixteenOne_2,
       subtitleSixteenOne_2: ElmTextDersSixteen.subtitleSixteenOne_2,
       elmTextSixteenOne_3: ElmTextDersSixteen.elmTextDersSixteenOne_3,
-      ayhaHadithSixteenOne_2: ElmTextDersSixteen.ayahHadithSixteenOne_2,
+      ayhaHadithSixteenOne_2: Ethis.ayahHadithNineOne_1, this.elmTextNineOne_1, this.ayahHadithNineOne_2, this.elmTextNineTwo_1, this.ayahHadithNineTwo_1, this.elmTextNineThree_1, this.ayahHadithNineThree_1, this.elmTextNineFour_1, this.ayahHadithNineFour_1, this.elmTextNineFive_1, this.ayahHadithNineFive_1, this.elmTextNineFive_2, this.elmTextNineSix_1, this.ayahHadithNineSix_1, this.elmTextNineSix_2, this.ayahHadithNineSix_2, this.elmTextNineSix_3, this.elmTextNineSeven_1, this.ayahHadithNineSeven_1, this.elmTextNineSeven_2, this.elmTextNineEight_1, this.ayahHadithNineEight_1, this.elmTextNineEight_2, this.titleNineNine, this.elmTextNineNine_1, this.ayahHadithNineNine_1, this.elmTextNineNine_2, this.ayahHadithNineNine_2, this.elmTextNineNine_3, this.footerNineNine, this.titleNineTen_1, this.elmTextNineTen_1, this.ayahHadithNineTen_2, this.elmTextNineTen_2, this.ayahHadithNineTen_3, {
+    this.elmText,lmTextDersSixteen.ayahHadithSixteenOne_2,
       elmTextSixteenOne_4: ElmTextDersSixteen.elmTextDersSixteenOne_3,
       ayhaHadithSixteenOne_3: ElmTextDersSixteen.ayahHadithSixteenOne_3,
       elmTextSixteenOne_5: ElmTextDersSixteen.elmTextDersSixteenOne_5,
