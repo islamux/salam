@@ -234,7 +234,52 @@ class ElmModel {
   final String? elmTextEightFive_1;
   final String? elmTextEightFive_2;
 
-  // khatira 9 //
+  // khatira 9
+  // -- 1
+  final String? ayahHadithNineOne_1;
+  final String? elmTextNineOne_1;
+  final String? ayahHadithNineOne_2;
+  // -- 2
+  final String? elmTextNineTwo_1;
+  final String? ayahHadithNineTwo_1;
+  // -- 3
+  final String? elmTextNineThree_1;
+  final String? ayahHadithNineThree_1;
+  // -- 4
+  final String? elmTextNineFour_1;
+  final String? ayahHadithNineFour_1;
+  // -- 5
+  final String? elmTextNineFive_1;
+  final String? ayahHadithNineFive_1;
+  final String? elmTextNineFive_2;
+  // -- 6
+  final String? elmTextNineSix_1;
+  final String? ayahHadithNineSix_1;
+  final String? elmTextNineSix_2;
+  final String? ayahHadithNineSix_2;
+  final String? elmTextNineSix_3;
+  // -- 7
+  final String? elmTextNineSeven_1;
+  final String? ayahHadithNineSeven_1;
+  final String? elmTextNineSeven_2;
+  // -- 8
+  final String? elmTextNineEight_1;
+  final String? ayahHadithNineEight_1;
+  final String? elmTextNineEight_2;
+  // -- 9
+  final String? titleNineNine;
+  final String? elmTextNineNine_1;
+  final String? ayahHadithNineNine_1;
+  final String? elmTextNineNine_2;
+  final String? ayahHadithNineNine_2;
+  final String? elmTextNineNine_3;
+  final String? footerNineNine;
+  // -- 10
+  final String? titleNineTen_1;
+  final String? elmTextNineTen_1;
+  final String? ayahHadithNineTen_2;
+  final String? elmTextNineTen_2;
+  final String? ayahHadithNineTen_3;
 
   //khatira 10
   /*--- 1 ---*/

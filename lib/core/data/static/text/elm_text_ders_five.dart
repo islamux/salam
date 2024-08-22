@@ -12,13 +12,6 @@ class ElmTextDersFive {
 لمعرفة القصة الكاملة لأسباب نزول هذه الاية يمكن العودة لتفسير القراءن الكريم للدكتور محمد راتب النابلسي 
 """;
 
-//   static const String elmTextDersFive2 = """
-// """;
-
-//   static const String elmTextDersFive3 = """
-// ---------------------
-
-//   """;
   static const String elmTextDersFive4 = """
 قال تعالى 
 وَقُلۡ جَاۤءَ ٱلۡحَقُّ وَزَهَقَ ٱلۡبَـٰطِلُۚ إِنَّ ٱلۡبَـٰطِلَ كَانَ زَهُوقࣰا ۝٨١

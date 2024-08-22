@@ -202,11 +202,14 @@ List<ElmModel> elmList3 = [
 List<ElmModel> elmList4 = [
   // page 1
   ElmModel(
-      titleFourOne: ElmTextDersFour.titleFourOne,
-      elmTextFourOne_1: ElmTextDersFour.elmTextFourOne_1,
-      ayahHadithFourOne_1: ElmTextDersFour.ayahHadithFourOne_1),
+    titleFourOne: ElmTextDersFour.titleFourOne,
+    elmTextFourOne_1: ElmTextDersFour.elmTextFourOne_1,
+    ayahHadithFourOne_1: ElmTextDersFour.ayahHadithFourOne_1,
+  ),
   // page 2
-  ElmModel(elmTextFourTwo_1: ElmTextDersFour.elmTextFourTwo_1),
+  ElmModel(
+    elmTextFourTwo_1: ElmTextDersFour.elmTextFourTwo_1,
+  ),
   // page 3
   ElmModel(elmTextFourThree_1: ElmTextDersFour.elmTextFourThree_1),
   // page 4
@@ -234,24 +237,6 @@ List<ElmModel> elmList4 = [
   // page 10
   ElmModel(ayahHadithFourTen_1: ElmTextDersFour.ayahHadithFourTen_1),
 ];
-
-// TextDersFour
-// List<ElmModel> elmList4 = [
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour1), //
-//   //ElmModel(elmText: ElmTextDersFour.elmTextDersFour2), //
-//   //ElmModel(elmText: ElmTextDersFour.elmTextDersFour3), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour4), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour5), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour6), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour7), //
-// //  ElmModel(elmText: ElmTextDersFour.elmTextDersFour8), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour9), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour10), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour11), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour12), //
-// //  ElmModel(elmText: ElmTextDersFour.elmTextDersFour13), //
-//   ElmModel(elmText: ElmTextDersFour.elmTextDersFour14), //
-// ];
 
 // TextDersFive
 List<ElmModel> elmList5 = [
@@ -358,21 +343,31 @@ List<ElmModel> elmList8 = [
   ),
 ];
 
-//TextDersNine
+// //TextDersNine
+// List<ElmModel> elmList9 = [
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine1),
+//   // ElmModel(elmText: ElmTextDersNine.elmTextDersNine2),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine3),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine4),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine5),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine6),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine7),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine8),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine9),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine10),
+//   ElmModel(elmText: ElmTextDersNine.elmTextDersNine11),
+// ];
+// Text Ders Nin3
 List<ElmModel> elmList9 = [
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine1),
-  // ElmModel(elmText: ElmTextDersNine.elmTextDersNine2),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine3),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine4),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine5),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine6),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine7),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine8),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine9),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine10),
-  ElmModel(elmText: ElmTextDersNine.elmTextDersNine11),
+  // 1
+  // 2
+  // 3
+  // 4
+  // 5
+  // 6
+  // 7
+  // 8
 ];
-
 // 10
 List<ElmModel> elmList10 = [
   // 1
