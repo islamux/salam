@@ -50,23 +50,18 @@ class CustomTextSliderElm13 extends StatelessWidget {
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm13ControllerImp>(
                             builder: (controllerAs) {
-                              return Text(
-                                elmList13[i].elmText ?? '',
-                                // Provide a default value (?? '') in case duaText is null
-                                style: //AppTheme.goldenTheme.textTheme.bodyLarge,
-                                    TextStyle(
-                                  // Problem here is fontsize need to hotreload why?
-                                  // I found the solution by wrab Text with GetBuilder to refresh only the
-                                  // widgt not all page
-                                  fontSize:
-                                      //Get.find<Elm13ControllerImp>().fontSize,
-                                      controllerAs.fontSize,
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "AmiriQ",
-                                ),
-                                textAlign: TextAlign.right,
-                              );
+                              return   RichText(
+                                text: TextSpan(
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controllerAs.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    ...get
+                                  ],),textAlign: TextAlign.right,
                             },
+                            
                           ),
                         ),
                       ),

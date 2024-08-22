@@ -8,6 +8,6 @@ List<TextSpan> getPageOneTexts(int i) {
         text: elmList8[i].titleEightOne,
         style: AppTheme.customTextStyleTitle()),
     TextSpan(text: elmList8[i].elmTextEightOne_1),
-    TextSpan(text: elmList8[i].ayahHadithOne_1),
+    TextSpan(text: elmList8[i].ayahHadithEightOne_1),
   ];
 }
