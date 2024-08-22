@@ -87,22 +87,6 @@ class ElmModel {
   final String? subtitleOneTwenty;
   final String? elmTextOneTwenty_1;
 
-  // ---
-  final String? subtitleOne_1;
-  final String? elmTextOne_1;
-  final String? ayahHadithOne_1;
-  final String? elmTextOne_2;
-  final String? subtitleOne_2;
-  final String? elmTextOne_3;
-  final String? ayahHadithOne_2;
-  final String? elmTextOne_4;
-  final String? ayahHadithOne_3;
-  final String? elmTextOne_5;
-  final String? ayahHadithOne_4;
-  final String? elmTextOne_6;
-  final String? ayahHadithOne_5;
-  final String? footerOne;
-
   // Khatira 2
   final String? titleTwoOne;
   final String? elmTextTwo_1;
@@ -431,20 +415,6 @@ class ElmModel {
     this.ayahHadithPreOne,
     this.elmTextPreOne,
     this.titleOneOne,
-    this.subtitleOne_1,
-    this.elmTextOne_1,
-    this.ayahHadithOne_1,
-    this.elmTextOne_2,
-    this.subtitleOne_2,
-    this.elmTextOne_3,
-    this.ayahHadithOne_2,
-    this.elmTextOne_4,
-    this.ayahHadithOne_3,
-    this.elmTextOne_5,
-    this.ayahHadithOne_4,
-    this.elmTextOne_6,
-    this.ayahHadithOne_5,
-    this.footerOne,
     // Khatira One
     // -- 1
     this.elmTextOneOne_1,

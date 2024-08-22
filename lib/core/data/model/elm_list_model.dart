@@ -152,24 +152,19 @@ List<ElmModel> elmList = [
 
 // TextDersTwo
 List<ElmModel> elmList2 = [
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo1), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo2), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo3), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo4), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo5), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo6), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo7), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo8), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo9), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo10), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo11), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo12), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo13), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo14), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo15), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo16), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo17), //
-  ElmModel(elmText: ElmTextDersTwo.elmTextDersTwo18), //
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
+  ElmModel(),
 ];
 
 // TextDersThree (new)
