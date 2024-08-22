@@ -343,33 +343,76 @@ List<ElmModel> elmList8 = [
   ),
 ];
 
-
 // Text Ders Nin3
 List<ElmModel> elmList9 = [
   // 1
-  ElmModel(),
+  ElmModel(
+    ayahHadithNineOne_1: ElmTextDersNine.ayahHadithNineOne_1,
+    elmTextNineOne_1: ElmTextDersNine.elmTextNineOne_1,
+    ayahHadithNineOne_2: ElmTextDersNine.ayahHadithNineOne_2,
+  ),
   // 2
-  ElmModel(),
+  ElmModel(
+    elmTextNineTwo_1: ElmTextDersNine.elmTextNineTwo_1,
+    ayahHadithNineTwo_1: ElmTextDersNine.ayahHadithNineTwo_1,
+  ),
   // 3
-  ElmModel(),
+  ElmModel(
+    elmTextNineThree_1: ElmTextDersNine.elmTextNineThree_1,
+    ayahHadithNineThree_1: ElmTextDersNine.ayahHadithNineThree_1,
+  ),
   // 4
-  ElmModel(),
+  ElmModel(
+    elmTextNineFour_1: ElmTextDersNine.elmTextNineFour_1,
+    ayahHadithNineFour_1: ElmTextDersNine.ayahHadithNineFour_1,
+  ),
   // 5
-  ElmModel(),
+  ElmModel(
+    elmTextNineFive_1: ElmTextDersNine.elmTextNineFive_1,
+    ayahHadithNineFive_1: ElmTextDersNine.ayahHadithNineFive_1,
+    elmTextNineFive_2: ElmTextDersNine.elmTextNineFive_2,
+  ),
   // 6
-  ElmModel(),
+  ElmModel(
+    elmTextNineSix_1: ElmTextDersNine.elmTextNineSix_1,
+    ayahHadithNineSix_1: ElmTextDersNine.ayahHadithNineSix_1,
+    elmTextNineSix_2: ElmTextDersNine.elmTextNineSix_2,
+    ayahHadithNineSix_2: ElmTextDersNine.ayahHadithNineSix_2,
+    elmTextNineSix_3: ElmTextDersNine.elmTextNineSix_3,
+  ),
   // 7
-  ElmModel(),
+  ElmModel(
+    elmTextNineSeven_1: ElmTextDersNine.elmTextNineSeven_1,
+    ayahHadithNineSeven_1: ElmTextDersNine.ayahHadithNineSeven_1,
+    elmTextNineSeven_2: ElmTextDersNine.elmTextNineSeven_2,
+  ),
   // 8
-  ElmModel(),
+  ElmModel(
+    elmTextNineEight_1: ElmTextDersNine.elmTextNineEight_1,
+    ayahHadithNineEight_1: ElmTextDersNine.ayahHadithNineEight_1,
+    elmTextNineEight_2: ElmTextDersNine.elmTextNineEight_2,
+  ),
   // 9
-  ElmModel(),
-
-
-
-
+  ElmModel(
+    titleNineNine: ElmTextDersNine.titleNineNine,
+    elmTextNineNine_1: ElmTextDersNine.elmTextNineNine_1,
+    ayahHadithNineNine_1: ElmTextDersNine.ayahHadithNineNine_1,
+    elmTextNineNine_2: ElmTextDersNine.elmTextNineNine_2,
+    ayahHadithNineNine_2: ElmTextDersNine.ayahHadithNineNine_2,
+    elmTextNineNine_3: ElmTextDersNine.elmTextNineNine_3,
+    footerNineNine: ElmTextDersNine.footerNineNine,
+  ),
+  // 10
+  ElmModel(
+    titleNineTen_1: ElmTextDersNine.titleNineTen_1,
+    elmTextNineTen_1: ElmTextDersNine.elmTextNineTen_1,
+    ayahHadithNineTen_2: ElmTextDersNine.ayahHadithNineTen_2,
+    elmTextNineTen_2: ElmTextDersNine.elmTextNineTen_2,
+    ayahHadithNineTen_3: ElmTextDersNine.ayahHadithNineTen_3,
+  ),
 ];
-// 10
+
+// khatira 10
 List<ElmModel> elmList10 = [
   // 1
   ElmModel(
@@ -542,22 +585,21 @@ List<ElmModel> elmList15 = [
 List<ElmModel> elmList16 = [
   // page 1
   ElmModel(
-      titleSixteenOne: ElmTextDersSixteen.titleSixteenOne,
-      subtitleSixteenOne_1: ElmTextDersSixteen.subtitleSixteenOne_1,
-      elmTextSixteenOne_1: ElmTextDersSixteen.elmTextDersSixteenOne_1,
-      ayhaHadithSixteenOne_1: ElmTextDersSixteen.ayahHadithSixteenOne_1,
-      elmTextSixteenOne_2: ElmTextDersSixteen.elmTextDersSixteenOne_2,
-      subtitleSixteenOne_2: ElmTextDersSixteen.subtitleSixteenOne_2,
-      elmTextSixteenOne_3: ElmTextDersSixteen.elmTextDersSixteenOne_3,
-      ayhaHadithSixteenOne_2: Ethis.ayahHadithNineOne_1, this.elmTextNineOne_1, this.ayahHadithNineOne_2, this.elmTextNineTwo_1, this.ayahHadithNineTwo_1, this.elmTextNineThree_1, this.ayahHadithNineThree_1, this.elmTextNineFour_1, this.ayahHadithNineFour_1, this.elmTextNineFive_1, this.ayahHadithNineFive_1, this.elmTextNineFive_2, this.elmTextNineSix_1, this.ayahHadithNineSix_1, this.elmTextNineSix_2, this.ayahHadithNineSix_2, this.elmTextNineSix_3, this.elmTextNineSeven_1, this.ayahHadithNineSeven_1, this.elmTextNineSeven_2, this.elmTextNineEight_1, this.ayahHadithNineEight_1, this.elmTextNineEight_2, this.titleNineNine, this.elmTextNineNine_1, this.ayahHadithNineNine_1, this.elmTextNineNine_2, this.ayahHadithNineNine_2, this.elmTextNineNine_3, this.footerNineNine, this.titleNineTen_1, this.elmTextNineTen_1, this.ayahHadithNineTen_2, this.elmTextNineTen_2, this.ayahHadithNineTen_3, {
-    this.elmText,lmTextDersSixteen.ayahHadithSixteenOne_2,
-      elmTextSixteenOne_4: ElmTextDersSixteen.elmTextDersSixteenOne_3,
-      ayhaHadithSixteenOne_3: ElmTextDersSixteen.ayahHadithSixteenOne_3,
-      elmTextSixteenOne_5: ElmTextDersSixteen.elmTextDersSixteenOne_5,
-      ayhaHadithSixteenOne_4: ElmTextDersSixteen.ayahHadithSixteenOne_4,
-      elmTextSixteenOne_6: ElmTextDersSixteen.elmTextDersSixteenOne_6,
-      ayhaHadithSixteenOne_5: ElmTextDersSixteen.ayahHadithSixteenOne_5,
-      footerSixteenOne: ElmTextDersSixteen.footerSixteenOne),
+    titleSixteenOne: ElmTextDersSixteen.titleSixteenOne,
+    subtitleSixteenOne_1: ElmTextDersSixteen.subtitleSixteenOne_1,
+    elmTextSixteenOne_1: ElmTextDersSixteen.elmTextDersSixteenOne_1,
+    ayhaHadithSixteenOne_1: ElmTextDersSixteen.ayahHadithSixteenOne_1,
+    elmTextSixteenOne_2: ElmTextDersSixteen.elmTextDersSixteenOne_2,
+    subtitleSixteenOne_2: ElmTextDersSixteen.subtitleSixteenOne_2,
+    elmTextSixteenOne_3: ElmTextDersSixteen.elmTextDersSixteenOne_3,
+    elmTextSixteenOne_4: ElmTextDersSixteen.elmTextDersSixteenOne_3,
+    ayhaHadithSixteenOne_3: ElmTextDersSixteen.ayahHadithSixteenOne_3,
+    elmTextSixteenOne_5: ElmTextDersSixteen.elmTextDersSixteenOne_5,
+    ayhaHadithSixteenOne_4: ElmTextDersSixteen.ayahHadithSixteenOne_4,
+    elmTextSixteenOne_6: ElmTextDersSixteen.elmTextDersSixteenOne_6,
+    ayhaHadithSixteenOne_5: ElmTextDersSixteen.ayahHadithSixteenOne_5,
+    footerSixteenOne: ElmTextDersSixteen.footerSixteenOne,
+  ),
 
   // page 2
   ElmModel(
