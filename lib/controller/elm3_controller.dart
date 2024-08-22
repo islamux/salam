@@ -17,6 +17,7 @@ abstract class Elm3Controller extends GetxController {
 
 class Elm3ControllerImp extends Elm3Controller {
   final PageController pageControllerAssma = PageController();
+  final ElmTextDersThree content = ElmTextDersThree.pages[i].content;
   // Proberties
   double fontSize = 21.0;
   int currentPageIndex = 0;
@@ -57,6 +58,8 @@ class Elm3ControllerImp extends Elm3Controller {
 
   @override
   String getShareText(int index) {
+    final ElmTextDersThree content = ElmTextDersThree.pages[index].content;
+
     return [index].elmText ?? '';
   }
 
