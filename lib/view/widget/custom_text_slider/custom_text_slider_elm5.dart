@@ -2,16 +2,29 @@ import 'package:elm/controller/elm5_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_ten_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_eight_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_eleven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_five_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_four_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_nine_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_seven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_six_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_therteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_twelve_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/5/get_page_one_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'pages_texts/1/get_page_three_texts.dart';
+import 'pages_texts/5/get_page_two_texts.dart';
 
 class CustomTextSliderElm5 extends StatelessWidget {
   const CustomTextSliderElm5({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final Elm5ControllerImp controllerAs =
-        Get.find<Elm5ControllerImp>();
+    final Elm5ControllerImp controller = Get.find<Elm5ControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<Elm5ControllerImp>(
       builder: (_) {
@@ -33,10 +46,10 @@ class CustomTextSliderElm5 extends StatelessWidget {
               child: PageView.builder(
                 reverse: true,
                 // to enable move through pages slider() using pageController
-                controller: controllerAs.pageControllerAssma,
+                controller: controller.pageControllerAssma,
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
-                    controllerAs.onPageChanged(index),
+                    controller.onPageChanged(index),
                 itemCount: elmList5.length,
                 itemBuilder: (context, i) => Column(
                   children: [
@@ -49,20 +62,31 @@ class CustomTextSliderElm5 extends StatelessWidget {
                           child:
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm5ControllerImp>(
-                            builder: (controllerAs) {
-                              return Text(
-                                elmList5[i].elmText ?? '',
-                                // Provide a default value (?? '') in case duaText is null
-                                style: //AppTheme.goldenTheme.textTheme.bodyLarge,
-                                    TextStyle(
-                                  // Problem here is fontsize need to hotreload why?
-                                  // I found the solution by wrab Text with GetBuilder to refresh only the
-                                  // widgt not all page
-                                  fontSize:
-                                      //Get.find<Elm5ControllerImp>().fontSize,
-                                      controllerAs.fontSize,
-                                  fontWeight: FontWeight.w300,
-                                  fontFamily: "AmiriQ",
+                            builder: (controller) {
+                              return // Rich Text Loop on rich text
+                                  RichText(
+                                text: TextSpan(
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controller.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    //  page 1 , page 2 , page 3
+                                    ...getPageOneTexts(i),
+                                    ...getPageTwoTexts(i),
+                                    ...getPageThreeTexts(i),
+                                    ...getPageFourTexts(i),
+                                    ...getPageFiveTexts(i),
+                                    ...getPageSixTexts(i),
+                                    ...getPageSevenTexts(i),
+                                    ...getPageEightTexts(i),
+                                    ...getPageNineTexts(i),
+                                    ...getPageTentTexts(i),
+                                    ...getPageElevenTexts(i),
+                                    ...getPageTwelveTexts(i),
+                                    ...getPageTherteenTexts(i),
+                                  ],
                                 ),
                                 textAlign: TextAlign.right,
                               );
@@ -75,7 +99,7 @@ class CustomTextSliderElm5 extends StatelessWidget {
                 ),
               ),
             ),
-            
+
             // slider widget
             Positioned(
               bottom: 16,
@@ -88,9 +112,9 @@ class CustomTextSliderElm5 extends StatelessWidget {
                     child: Slider(
                       activeColor: AppColor.black,
                       inactiveColor: AppColor.grey,
-                      value: controllerAs.currentPageIndex.toDouble(),
+                      value: controller.currentPageIndex.toDouble(),
                       onChanged: (double value) {
-                        controllerAs.goToPage(value.toInt());
+                        controller.goToPage(value.toInt());
                       },
                       min: 0,
                       max: elmList5.length.toDouble() - 1,
@@ -98,8 +122,8 @@ class CustomTextSliderElm5 extends StatelessWidget {
                   ),
                   // Display current page number
                   Text(
-                    //'${controllerAs.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controllerAs.currentPageIndex+1.toInt()} / ${elmList5.length}',
+                    //'${controller.currentPageCounter + 1} / ${elm1List.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${elmList5.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )

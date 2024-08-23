@@ -220,9 +220,9 @@ List<ElmModel> elmList2 = [
   ),
   // 13
   ElmModel(
-    titelTwoTherteen: ElmTextDersTwo.titelTwoTherteen,
-    ayhaHadithTowTherteen_1: ElmTextDersTwo.ayhaHadithTowTherteen_1,
     elmTextTwoTherteen_1: ElmTextDersTwo.elmTextTwoTherteen_1,
+    ayhaHadithTowTherteen_1: ElmTextDersTwo.ayhaHadithTowTherteen_1,
+    elmTextTwoTherteen_2: ElmTextDersTwo.elmTextTwoTherteen_2,
   ),
 ];
 

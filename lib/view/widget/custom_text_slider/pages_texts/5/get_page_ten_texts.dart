@@ -5,9 +5,13 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageTentTexts(int i) {
   return [
     TextSpan(text: elmList5[i].elmTexteFiveTen_1),
-    TextSpan(text: elmList5[i].ayahHadithFiveTen_1),
+    TextSpan(
+        text: elmList5[i].ayahHadithFiveTen_1,
+        style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList5[i].elmTexteFiveTen_2),
-    TextSpan(text: elmList5[i].ayahHadithFiveTen_2),
+    TextSpan(
+        text: elmList5[i].ayahHadithFiveTen_2,
+        style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList5[i].elmTexteFiveTen_3),
   ];
 }

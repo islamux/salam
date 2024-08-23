@@ -4,9 +4,14 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageOneTexts(int i) {
   return [
-    TextSpan(text: elmList5[i].titleFiveOne),
-    TextSpan(text: elmList5[i].ayahHadithFiveOne_1),
+    TextSpan(
+        text: elmList5[i].titleFiveOne, style: AppTheme.customTextStyleTitle()),
+    TextSpan(
+        text: elmList5[i].ayahHadithFiveOne_1,
+        style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList5[i].elmTextFiveOne_1),
-    TextSpan(text: elmList5[i].footerFiveOne),
+    TextSpan(
+        text: elmList5[i].footerFiveOne,
+        style: AppTheme.customTextStyleFooter()),
   ];
 }

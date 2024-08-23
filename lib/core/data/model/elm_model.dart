@@ -91,37 +91,49 @@ class ElmModel {
   final String? titleTwoOne;
   final String? ayahHadithTwoOne_1;
   final String? elmTextTwoOne_1;
+  // 2
   final String? ayahHadithTwoOne_2;
   final String? elmTextTwoOne_2;
   final String? ayahHadithTwoTwo_1;
   final String? elmTextTwoTwo_1;
+  // 3
   final String? elmTextTwoThree_1;
   final String? ayahHadithTwoThree_1;
   final String? elmTextTwoThree_2;
+  // 4
   final String? elmTextsTwoFour_1;
   final String? elmTextTwoFour_2;
   final String? elmTextTwoFour_3;
   final String? ayahHadithTwoFour_2;
+  // 5
   final String? elmTextTwoFive_1;
   final String? footerTwoFive;
+  // 6
   final String? elmTextTwoSix_1;
   final String? elmTextTowSix_2;
+  // 7
   final String? elmTextTwoSeven_1;
   final String? ayahHadithTwoSeven_1;
+  // 8
   final String? elmTextTwoEight_1;
   final String? ayahHadithTwoEight_1;
   final String? footerTwoEight;
+  // 9
   final String? elmTextTwoNine_1;
   final String? elmTextTwoNine_2;
+  // 10
   final String? elmTextTwoTen_1;
   final String? ayhaHadithTwoTen_1;
   final String? elmTextTwoTen_2;
+  // 11
   final String? ayhaHadithTowEleven_1;
   final String? elmTextTwoEleven_1;
+  // 12
   final String? elmTextTwoTwelve_1;
-  final String? titelTwoTherteen;
-  final String? ayhaHadithTowTherteen_1;
+  // 13
   final String? elmTextTwoTherteen_1;
+  final String? ayhaHadithTowTherteen_1;
+  final String? elmTextTwoTherteen_2;
 
   // khatira 3
   final String? titleThreeOne;
@@ -641,9 +653,9 @@ class ElmModel {
     // 12
     this.elmTextTwoTwelve_1,
     // 13
-    this.titelTwoTherteen,
-    this.ayhaHadithTowTherteen_1,
     this.elmTextTwoTherteen_1,
+    this.ayhaHadithTowTherteen_1,
+    this.elmTextTwoTherteen_2,
 
     // // khatira 3
     // -- 1 --
