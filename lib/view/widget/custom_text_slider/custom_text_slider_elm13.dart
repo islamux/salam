@@ -2,6 +2,7 @@ import 'package:elm/controller/elm13_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_one_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,8 +11,7 @@ class CustomTextSliderElm13 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm13ControllerImp controllerAs =
-        Get.find<Elm13ControllerImp>();
+    final Elm13ControllerImp controllerAs = Get.find<Elm13ControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<Elm13ControllerImp>(
       builder: (_) {
@@ -50,18 +50,17 @@ class CustomTextSliderElm13 extends StatelessWidget {
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm13ControllerImp>(
                             builder: (controllerAs) {
-                              return   RichText(
-                                text: TextSpan(
-                                  style: TextStyle(
-                                    fontFamily: "AmiriQ",
-                                    fontSize: controllerAs.fontSize,
-                                    color: Colors.black,
+                              return RichText(
+                                  text: TextSpan(
+                                    style: TextStyle(
+                                      fontFamily: "AmiriQ",
+                                      fontSize: controllerAs.fontSize,
+                                      color: Colors.black,
+                                    ),
+                                    children: [],
                                   ),
-                                  children: [
-                                    ...get
-                                  ],),textAlign: TextAlign.right,
+                                  textAlign: TextAlign.right);
                             },
-                            
                           ),
                         ),
                       ),
@@ -70,7 +69,7 @@ class CustomTextSliderElm13 extends StatelessWidget {
                 ),
               ),
             ),
-            
+
             // slider widget
             Positioned(
               bottom: 16,
@@ -94,8 +93,8 @@ class CustomTextSliderElm13 extends StatelessWidget {
                   // Display current page number
                   Text(
                     //'${controllerAs.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controllerAs.currentPageIndex+1.toInt()} / ${elmList13.length}',
-                    // to make page start with 1 
+                    '${controllerAs.currentPageIndex + 1.toInt()} / ${elmList13.length}',
+                    // to make page start with 1
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )

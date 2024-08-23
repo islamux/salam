@@ -173,12 +173,49 @@ class ElmModel {
   final String? ayahHadithFourTen_1;
 
   // katira 5
-  final String? elmTextFive_1;
+  // page on1
   final String? titleFiveOne;
-  final String? subtitleFive_1;
-  final String? ayahHadithFive_1;
-  final String? ayahHadithFive_2;
-  final String? footer5;
+  final String? ayahHadithFiveOne_1;
+  final String? elmTextFiveOne_1;
+  final String? footerFiveOne;
+  // page 2
+  final String? ayahHadithFiveTwo_1;
+  final String? elmTextFiveTwo_1;
+  final String? ayahHadithFiveTwo_2;
+  // page 3
+  final String? elmTextFiveThree_1;
+  final String? ayahHadithFiveThree_1;
+  final String? elmTextFiveThree_2;
+  // page 4
+  final String? elmTextFiveFour_1;
+  // page 5
+  final String? elmTextsFiveFive_1;
+  final String? ayahHadithFiveFive_1;
+  final String? elmTextsFiveFive_2;
+  // page 6
+  final String? elmTextFiveSix_1;
+  final String? elmTextFiveSeven_1;
+  // page 8
+  final String? elmTextFiveEight_1;
+  // page 9
+  final String? elmTextFiveNine_1;
+  final String? ayahHadithFiveNine_1;
+  // page 10
+  final String? elmTexteFiveTen_1;
+  final String? ayahHadithFiveTen_1;
+  final String? elmTexteFiveTen_2;
+  final String? ayahHadithFiveTen_2;
+  final String? elmTexteFiveTen_3;
+  // page 11
+  final String? elmTextFiveEleven_1;
+  // page 12
+  final String? elmTextFiveTwelve_1;
+  // page 13
+  final String? titleFiveTherteen;
+  final String? ayahHadithFiveTherteen_1;
+  final String? elmTextFiveTherteen_1;
+  final String? ayahHadithFiveTherteen_2;
+  final String? elmTextFiveTherteen_2;
 
   // khatira 6
   //--- 1
@@ -514,41 +551,100 @@ class ElmModel {
     this.subtitleOneTwenty,
     this.elmTextOneTwenty_1,
 
-    // // khatira 2
+    // // khatira 5
+    // 1
+    this.titleFiveOne,
+    this.ayahHadithFiveOne_1,
+    this.elmTextFiveOne_1,
+    this.footerFiveOne,
+    // 2
+    this.ayahHadithFiveTwo_1,
+    this.elmTextFiveTwo_1,
+    this.ayahHadithFiveTwo_2,
+    // 3
+    this.elmTextFiveThree_1,
+    this.ayahHadithFiveThree_1,
+    this.elmTextFiveThree_2,
+    // 4
+    this.elmTextFiveFour_1,
+    this.elmTextsFiveFive_1,
+    this.ayahHadithFiveFive_1,
+    this.elmTextsFiveFive_2,
+    // 5
+    this.elmTextFiveSix_1,
+    // 7
+    this.elmTextFiveSeven_1,
+    // 8
+    this.elmTextFiveEight_1,
+    // 9
+    this.elmTextFiveNine_1,
+    this.ayahHadithFiveNine_1,
+    // 10
+    this.elmTexteFiveTen_1,
+    this.ayahHadithFiveTen_1,
+    this.elmTexteFiveTen_2,
+    this.ayahHadithFiveTen_2,
+    this.elmTexteFiveTen_3,
+    // 11
+    this.elmTextFiveEleven_1,
+    // 12
+    this.elmTextFiveTwelve_1,
+    // 13
+    this.titleFiveTherteen,
+    this.ayahHadithFiveTherteen_1,
+    this.elmTextFiveTherteen_1,
+    this.ayahHadithFiveTherteen_2,
+    this.elmTextFiveTherteen_2,
+
+    // khatira 2
+    // 1
     this.titleTwoOne,
     this.ayahHadithTwoOne_1,
     this.elmTextTwoOne_1,
     this.ayahHadithTwoOne_2,
     this.elmTextTwoOne_2,
+    // 2
     this.ayahHadithTwoTwo_1,
     this.elmTextTwoTwo_1,
+    // 3
     this.elmTextTwoThree_1,
     this.ayahHadithTwoThree_1,
     this.elmTextTwoThree_2,
+    // 4
     this.elmTextsTwoFour_1,
     this.elmTextTwoFour_2,
     this.elmTextTwoFour_3,
     this.ayahHadithTwoFour_2,
+    // 5
     this.elmTextTwoFive_1,
     this.footerTwoFive,
+    // 6
     this.elmTextTwoSix_1,
     this.elmTextTowSix_2,
+    // 7
     this.elmTextTwoSeven_1,
     this.ayahHadithTwoSeven_1,
+    // 8
     this.elmTextTwoEight_1,
     this.ayahHadithTwoEight_1,
     this.footerTwoEight,
+    // 9
     this.elmTextTwoNine_1,
     this.elmTextTwoNine_2,
+    // 10
     this.elmTextTwoTen_1,
     this.ayhaHadithTwoTen_1,
     this.elmTextTwoTen_2,
+    // 11
     this.ayhaHadithTowEleven_1,
     this.elmTextTwoEleven_1,
+    // 12
     this.elmTextTwoTwelve_1,
+    // 13
     this.titelTwoTherteen,
     this.ayhaHadithTowTherteen_1,
     this.elmTextTwoTherteen_1,
+
     // // khatira 3
     // -- 1 --
     this.titleThreeOne,
@@ -592,12 +688,6 @@ class ElmModel {
     this.ayahHadithFourTen_1,
 
     // khatira 5
-    this.titleFiveOne,
-    this.elmTextFive_1,
-    this.subtitleFive_1,
-    this.ayahHadithFive_1,
-    this.ayahHadithFive_2,
-    this.footer5,
 
     // khatria 6
     // -- 1
