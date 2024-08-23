@@ -131,9 +131,9 @@ class ElmModel {
   // 12
   final String? elmTextTwoTwelve_1;
   // 13
-  final String? elmTextTwoTherteen_1;
+  final String? footerTwoTherteen;
   final String? ayhaHadithTowTherteen_1;
-  final String? elmTextTwoTherteen_2;
+  final String? elmTextTwoTherteen_1;
 
   // khatira 3
   final String? titleThreeOne;
@@ -370,7 +370,72 @@ class ElmModel {
   final String? ayahHadithTenSeven_2;
   final String? elmTextTenSeven_3;
 
-  // // khatira 11 // khatira 12 // khatria 13 // khatira 14 // khatira 15
+  // // khatira 11 // khatira 12 //
+  //khatria 13
+  final String? titlleTherteenOne;
+  final String? ayahHadithTherteenOne_1;
+  final String? elmTextTherteenOne_1;
+  final String? ayahHadithTherteenOne_2;
+  final String? elmTextTherteenOne_2;
+  final String? ayahHadithTherteenOne_3;
+  final String? elmTextTherteenOne_3;
+  final String? footerTherteen;
+  final String? elmTextTherteenTwo_1;
+  final String? ayahHadithTherteenTwo_1;
+  final String? elmTextTherteenTwo_2;
+  final String? ayahHadithTherteenTwo_2;
+  final String? elmTextTherteenTwo_3;
+  final String? ayahHadithTherteenThree_1;
+  final String? elmTextTherteenThree_2;
+  final String? ayahHadithTherteenThree_2;
+  final String? elmTextTherteenThree_3;
+  final String? ayahHadithTherteenThree_3;
+  final String? elmTextTherteenThree_4;
+  final String? elmTextTherteenFour_1;
+  final String? ayahHadithTherteenFour_1;
+  final String? elmTextTherteenFour_2;
+  final String? ayahHadithTherteenFour_2;
+  final String? elmTextTherteenFour_3;
+  final String? ayahHadithTherteenFour_3;
+  final String? elmTextTherteenFour_4;
+  final String? elmTextTherteenFive_1;
+  final String? ayahHadithTherteenFive_1;
+  final String? elmTextTherteenFive_2;
+  final String? ayahHadithTherteenFive_2;
+  final String? elmTextTherteenFive_3;
+  final String? ayahHadithTherteenFive_3;
+  final String? elmTextTherteenFive_4;
+  final String? ayahHadithTherteenFive_4;
+  final String? elmTextTherteenSix_1;
+  final String? ayahHadithTherteenSix_1;
+  final String? elmTextTherteenSix_2;
+  final String? ayahHadithTherteenSix_2;
+  final String? elmTextTherteenSix_3;
+  final String? ayahHadithTherteenSix_3;
+  final String? elmTextTherteenSix_4;
+  final String? elmTextTherteenSeven_1;
+  final String? ayahHadithTherteenSeven_1;
+  final String? elmTextTherteenSeven_2;
+  final String? footerTherteenSeven;
+  final String? ayahHadithTherteenEight_1;
+  final String? elmTextTherteenEight_1;
+  final String? ayahHadithTherteenEight_2;
+  final String? footerTherteenEight;
+  final String? elmTextTherteenNine_1;
+  final String? elmTextTherteenTen_1;
+  final String? ayahHadithTherteenTen_1;
+  final String? elmTextTherteenTen_2;
+  final String? ayahHadithTherteenTen_2;
+  final String? elmTextTherteenTen_3;
+  final String? elmTextTherteenEleven_1;
+  final String? titleTherteenTwelve_1;
+  final String? elmTextTherteenTwelve_1;
+  final String? ayahHadithTherteenTwelve_1;
+  final String? elmTextTherteenTwelve_2;
+  final String? ayahHadithTherteenTwelve_2;
+  final String? elmTextTherteenTherteen_1;
+
+  // // khatira 14 // khatira 15
   // khatria 16
   /*-----1---*/
   final String? titleSixteenOne;
@@ -653,9 +718,9 @@ class ElmModel {
     // 12
     this.elmTextTwoTwelve_1,
     // 13
-    this.elmTextTwoTherteen_1,
+    this.footerTwoTherteen,
     this.ayhaHadithTowTherteen_1,
-    this.elmTextTwoTherteen_2,
+    this.elmTextTwoTherteen_1,
 
     // // khatira 3
     // -- 1 --
@@ -814,6 +879,69 @@ class ElmModel {
     this.elmTextTenSeven_2,
     this.ayahHadithTenSeven_2,
     this.elmTextTenSeven_3,
+    // khatira 13
+    this.titlleTherteenOne,
+    this.ayahHadithTherteenOne_1,
+    this.elmTextTherteenOne_1,
+    this.ayahHadithTherteenOne_2,
+    this.elmTextTherteenOne_2,
+    this.ayahHadithTherteenOne_3,
+    this.elmTextTherteenOne_3,
+    this.footerTherteen,
+    this.elmTextTherteenTwo_1,
+    this.ayahHadithTherteenTwo_1,
+    this.elmTextTherteenTwo_2,
+    this.ayahHadithTherteenTwo_2,
+    this.elmTextTherteenTwo_3,
+    this.ayahHadithTherteenThree_1,
+    this.elmTextTherteenThree_2,
+    this.ayahHadithTherteenThree_2,
+    this.elmTextTherteenThree_3,
+    this.ayahHadithTherteenThree_3,
+    this.elmTextTherteenThree_4,
+    this.elmTextTherteenFour_1,
+    this.ayahHadithTherteenFour_1,
+    this.elmTextTherteenFour_2,
+    this.ayahHadithTherteenFour_2,
+    this.elmTextTherteenFour_3,
+    this.ayahHadithTherteenFour_3,
+    this.elmTextTherteenFour_4,
+    this.elmTextTherteenFive_1,
+    this.ayahHadithTherteenFive_1,
+    this.elmTextTherteenFive_2,
+    this.ayahHadithTherteenFive_2,
+    this.elmTextTherteenFive_3,
+    this.ayahHadithTherteenFive_3,
+    this.elmTextTherteenFive_4,
+    this.ayahHadithTherteenFive_4,
+    this.elmTextTherteenSix_1,
+    this.ayahHadithTherteenSix_1,
+    this.elmTextTherteenSix_2,
+    this.ayahHadithTherteenSix_2,
+    this.elmTextTherteenSix_3,
+    this.ayahHadithTherteenSix_3,
+    this.elmTextTherteenSix_4,
+    this.elmTextTherteenSeven_1,
+    this.ayahHadithTherteenSeven_1,
+    this.elmTextTherteenSeven_2,
+    this.footerTherteenSeven,
+    this.ayahHadithTherteenEight_1,
+    this.elmTextTherteenEight_1,
+    this.ayahHadithTherteenEight_2,
+    this.footerTherteenEight,
+    this.elmTextTherteenNine_1,
+    this.elmTextTherteenTen_1,
+    this.ayahHadithTherteenTen_1,
+    this.elmTextTherteenTen_2,
+    this.ayahHadithTherteenTen_2,
+    this.elmTextTherteenTen_3,
+    this.elmTextTherteenEleven_1,
+    this.titleTherteenTwelve_1,
+    this.elmTextTherteenTwelve_1,
+    this.ayahHadithTherteenTwelve_1,
+    this.elmTextTherteenTwelve_2,
+    this.ayahHadithTherteenTwelve_2,
+    this.elmTextTherteenTherteen_1,
 
     // // khatira 16
     // --- 1 --- /

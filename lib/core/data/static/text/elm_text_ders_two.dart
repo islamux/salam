@@ -176,7 +176,7 @@ class ElmTextDersTwo {
 """;
 
 // page 13
-  static const String elmTextTwoTherteen_1 = """
+  static const String footerTwoTherteen = """
 وقفه
 ----- 
 """;
@@ -186,7 +186,7 @@ class ElmTextDersTwo {
 وَمَا قَدَرُوا۟ ٱللَّهَ حَقَّ قَدۡرِهِۦ
 
 """;
-  static const String elmTextTwoTherteen_2 = """
+  static const String elmTextTwoTherteen_1 = """
 أي ماعظموه حق تعظيمه، ما عرفوه حق معرفته، كل اخطائهم، وكل شركهم، وكل إنحرافهم، وكل معاصيهم بسبب نقص معرفتهم
 
 حقيقة تقول: نقص المعرفه يقابله إنحراف السلوك، ما من سلوك منحرف، ما من إنسان وقع في مخالفات، ما من إنسان قصر في أداء واجب، ما من إنسان وقع فيما حرم الله إلا بسبب نقص معرفته، فهناك علاقة طردية بين العلم وبين السلوك
