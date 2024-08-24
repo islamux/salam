@@ -1,5 +1,4 @@
 import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_three.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,14 +9,13 @@ abstract class Elm3Controller extends GetxController {
   void decreaseFontSize();
   void resetCounter();
   void onPageChanged(int index);
-  String getShareText(int index);
+//  String getShareText(int index);
   void increamentPageController();
   void goToPage(int pageIndex); // for slider()
 }
 
 class Elm3ControllerImp extends Elm3Controller {
   final PageController pageControllerAssma = PageController();
-  final ElmTextDersThree content = ElmTextDersThree.pages[i].content;
   // Proberties
   double fontSize = 21.0;
   int currentPageIndex = 0;
@@ -56,12 +54,12 @@ class Elm3ControllerImp extends Elm3Controller {
     resetCounter();
   }
 
-  @override
-  String getShareText(int index) {
-    final ElmTextDersThree content = ElmTextDersThree.pages[index].content;
+  // @override
+  // String getShareText(int index) {
+  //   final List<InlineSpan> content = ElmTextDersThree.pages[index].content;
 
-    return [index].elmText ?? '';
-  }
+  //   return [index].elmText ?? '';
+  // }
 
   @override
   void increamentPageController() {
