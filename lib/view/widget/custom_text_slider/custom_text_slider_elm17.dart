@@ -2,19 +2,19 @@ import 'package:elm/controller/elm17_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_one_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_three_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_two_texts.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_eight_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_eleven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_five_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_four_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_nine_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_seven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_six_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_ten_texts.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_three_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/pages_texts/17/get_page_two_texts.dart';
 
 class CustomTextSliderElm17 extends StatelessWidget {
   const CustomTextSliderElm17({super.key});
@@ -43,7 +43,7 @@ class CustomTextSliderElm17 extends StatelessWidget {
               child: PageView.builder(
                 reverse: true,
                 // to enable move through pages slider() using pageController
-                controller: controller.pageControllerAssma,
+                controller: controller.pageController,
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
                     controller.onPageChanged(index),
@@ -60,8 +60,7 @@ class CustomTextSliderElm17 extends StatelessWidget {
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
                               GetBuilder<Elm17ControllerImp>(
                             builder: (controller) {
-                              return
-                                  // Rich Text Loop on rich text
+                              return // Rich Text Loop on rich text
                                   RichText(
                                 text: TextSpan(
                                   style: TextStyle(
@@ -69,11 +68,9 @@ class CustomTextSliderElm17 extends StatelessWidget {
                                     fontSize: controller.fontSize,
                                     color: Colors.black,
                                   ),
-                                  children: [
-                                    /**
-                                     * باستخدام ... (spread operator) في children، تستطيع تحويل قائمة TextSpan إلى قائمة InlineSpan.
-                                      الدالة getPageOneTexts(i) تم إعادة استخدامها كما هي، بدون الحاجة لتعديلها لأن TextSpan هو جزء من InlineSpan.
-                                     */
+                                  children:
+                                      //  page 1 , page 2 , page 3
+                                      [
                                     ...getPageOneTexts(i),
                                     ...getPageTwoTexts(i),
                                     ...getPageThreeTexts(i),

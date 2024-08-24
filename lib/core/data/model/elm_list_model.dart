@@ -849,7 +849,6 @@ List<ElmModel> elmList17 = [
     ayahHadithSeventeenOne_2: ElmTextDersSeventeen.ayahHadithSeventeenOne_2,
     elmTextSeventeenOne_3: ElmTextDersSeventeen.elmTextSeventeenOne_3,
   ),
-
   // page 2
   ElmModel(
     ayahHadithSeventeenTwo_1: ElmTextDersSeventeen.ayahHadithSeventeenTwo_1,
@@ -858,7 +857,6 @@ List<ElmModel> elmList17 = [
     subtitleSeventtenTwo_1: ElmTextDersSeventeen.subtitleSeventtenTwo_1,
     elmTextSeventeenTwo_2: ElmTextDersSeventeen.elmTextSeventeenTwo_2,
   ),
-
   // page 3
   ElmModel(
     ayahHadithSeventeenThree_1: ElmTextDersSeventeen.ayahHadithSeventeenThree_1,
@@ -866,20 +864,17 @@ List<ElmModel> elmList17 = [
     elmTextSeventeenThree_1: ElmTextDersSeventeen.elmTextSeventeenThree_1,
     elmTextSeventeenThree_2: ElmTextDersSeventeen.elmTextSeventeenThree_2,
   ),
-
   // page 4
   ElmModel(
     elmTextSeventeenFour_1: ElmTextDersSeventeen.elmTextSeventeenFour_1,
     ayahHadithSeventeenFour_1: ElmTextDersSeventeen.ayahHadithSeventeenFour_1,
     elmTextSeventeenFour_2: ElmTextDersSeventeen.elmTextSeventeenFour_2,
   ),
-
   // page 5
   ElmModel(
     elmTextSeventeenFive_1: ElmTextDersSeventeen.elmTextSeventeenFive_1,
     elmTextSeventeenFive_2: ElmTextDersSeventeen.elmTextSeventeenFive_2,
   ),
-
   // page 6
   ElmModel(
     elmTextSeventeenSix_1: ElmTextDersSeventeen.elmTextSeventeenSix_1,
@@ -913,7 +908,6 @@ List<ElmModel> elmList17 = [
     elmTextSeventeenTen_1: ElmTextDersSeventeen.elmTextSeventeenTen_1,
     ayahHadithSeventeenTen_1: ElmTextDersSeventeen.ayahHadithSeventeenTen_1,
   ),
-
   // page 11
   ElmModel(
     ayahHadithSeventeenEleven_1:
