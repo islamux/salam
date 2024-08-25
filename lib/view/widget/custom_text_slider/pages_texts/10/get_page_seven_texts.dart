@@ -7,6 +7,6 @@ List<TextSpan> getPageSevenTexts(int i) {
     TextSpan(text: elmList10[i].ayahHadithTenSeven_1),
     TextSpan(text: elmList10[i].elmTextTenSeven_2),
     TextSpan(text: elmList10[i].ayahHadithTenSeven_2),
-    TextSpan(text: elmList10[i].elmTextSeven_3),
+    TextSpan(text: elmList10[i].elmTextTenSeven_3),
   ];
 }

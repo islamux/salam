@@ -16,7 +16,7 @@ abstract class Elm7Controller extends GetxController {
 }
 
 class Elm7ControllerImp extends Elm7Controller {
-  final PageController pageControllerAssma = PageController();
+  final PageController pageController = PageController();
   // Proberties
   double fontSize = 21.0;
   int currentPageIndex = 0;
@@ -70,7 +70,7 @@ class Elm7ControllerImp extends Elm7Controller {
       if (currentPageIndex < maxPageCounters.length) {
         currentPageCounter = 0;
 
-        pageControllerAssma.nextPage(
+        pageController.nextPage(
             duration: const Duration(microseconds: 500),
             curve: Curves.easeInOut);
       } else {
@@ -90,7 +90,7 @@ class Elm7ControllerImp extends Elm7Controller {
 
   @override
   void goToPage(int pageIndex) {
-    pageControllerAssma.animateToPage(
+    pageController.animateToPage(
       pageIndex,
       duration: const Duration(microseconds: 300),
       curve: Curves.easeInOut,
