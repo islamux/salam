@@ -12,9 +12,10 @@ class CustomTextSliderElm3 extends StatelessWidget {
   Widget build(BuildContext context) {
     final Elm3ControllerImp controller = Get.find<Elm3ControllerImp>();
 
-    // Split the text into pages based on character count
-    final List<List<InlineSpan>> paginatedText = _splitTextIntoEqualPages(
+    // Split the text into pages based on the screen size
+    final List<List<InlineSpan>> paginatedText = _splitTextIntoPages(
       ElmTextDersThree.pages.map((page) => page.content).toList(),
+      context,
     );
 
     return GetBuilder<Elm3ControllerImp>(
@@ -103,22 +104,39 @@ class CustomTextSliderElm3 extends StatelessWidget {
     );
   }
 
-  // Function to split text into equal pages based on character count
-  List<List<InlineSpan>> _splitTextIntoEqualPages(
-      List<List<InlineSpan>> textContent) {
-    final List<InlineSpan> flattenedText =
-        textContent.expand((e) => e).toList();
-    final int charsPerPage =
-        (flattenedText.length / 2).ceil(); // Adjust as needed
-
+  // Function to split text into pages
+  List<List<InlineSpan>> _splitTextIntoPages(
+      List<List<InlineSpan>> textContent, BuildContext context) {
+    final textPainter = TextPainter(
+      textDirection: TextDirection.rtl,
+      textAlign: TextAlign.right,
+    );
     final List<List<InlineSpan>> pages = [];
+    final double pageHeight =
+        MediaQuery.of(context).size.height - 120; // Adjust height for padding
+    final double pageSize = pageHeight * 0.8; // ضبط حجم الصفحة
 
-    for (int i = 0; i < flattenedText.length; i += charsPerPage) {
-      pages.add(flattenedText.sublist(
-          i,
-          (i + charsPerPage) > flattenedText.length
-              ? flattenedText.length
-              : i + charsPerPage));
+    List<InlineSpan> currentPage = [];
+    double currentPageHeight = 0;
+
+    for (var pageContent in textContent) {
+      for (var span in pageContent) {
+        currentPage.add(span);
+        textPainter.text = TextSpan(children: currentPage);
+        textPainter.layout(maxWidth: MediaQuery.of(context).size.width - 64);
+
+        if (currentPageHeight + textPainter.height > pageSize) {
+          pages.add(List.from(currentPage)..removeLast());
+          currentPage = [span];
+          currentPageHeight = textPainter.height;
+        } else {
+          currentPageHeight += textPainter.height;
+        }
+      }
+    }
+
+    if (currentPage.isNotEmpty) {
+      pages.add(currentPage);
     }
 
     return pages;

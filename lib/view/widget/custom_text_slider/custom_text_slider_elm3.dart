@@ -12,8 +12,8 @@ class CustomTextSliderElm3 extends StatelessWidget {
   Widget build(BuildContext context) {
     final Elm3ControllerImp controller = Get.find<Elm3ControllerImp>();
 
-    // Split the text into pages based on screen size
-    final List<List<InlineSpan>> paginatedText = _paginateText(
+    // Split the text into pages based on the screen size
+    final List<List<InlineSpan>> paginatedText = _splitTextIntoPages(
       ElmTextDersThree.pages.map((page) => page.content).toList(),
       context,
     );
@@ -46,16 +46,22 @@ class CustomTextSliderElm3 extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.symmetric(
                               vertical: 60, horizontal: 32),
-                          child: RichText(
-                            text: TextSpan(
-                              style: TextStyle(
-                                fontFamily: "AmiriQ",
-                                fontSize: controller.fontSize,
-                                color: Colors.black,
-                              ),
-                              children: paginatedText[i],
+                          child: SingleChildScrollView(
+                            child: GetBuilder<Elm3ControllerImp>(
+                              builder: (controller) {
+                                return RichText(
+                                  text: TextSpan(
+                                    style: TextStyle(
+                                      fontFamily: "AmiriQ",
+                                      fontSize: controller.fontSize,
+                                      color: Colors.black,
+                                    ),
+                                    children: paginatedText[i],
+                                  ),
+                                  textAlign: TextAlign.right,
+                                );
+                              },
                             ),
-                            textAlign: TextAlign.right,
                           ),
                         ),
                       ),
@@ -98,42 +104,47 @@ class CustomTextSliderElm3 extends StatelessWidget {
     );
   }
 
-  // Function to split text into pages based on screen size
-  List<List<InlineSpan>> _paginateText(
+  // Function to split text into pages
+  List<List<InlineSpan>> _splitTextIntoPages(
       List<List<InlineSpan>> textContent, BuildContext context) {
     final textPainter = TextPainter(
       textDirection: TextDirection.rtl,
       textAlign: TextAlign.right,
-      maxLines: null, // To handle multi-line text
     );
     final List<List<InlineSpan>> pages = [];
     final double pageHeight =
-        MediaQuery.of(context).size.height - 120; // Adjust for padding
-    final double maxWidth =
-        MediaQuery.of(context).size.width - 64; // Adjust for padding
+        MediaQuery.of(context).size.height - 120; // Adjust height for padding
+
+    List<InlineSpan> currentPage = [];
+    double currentPageHeight = 0;
+    double averageHeight = 0;
+    int spanCount = 0;
 
     for (var pageContent in textContent) {
-      List<InlineSpan> currentSpan = [];
-      double currentHeight = 0;
-
       for (var span in pageContent) {
-        currentSpan.add(span);
-        textPainter.text = TextSpan(children: currentSpan);
-        textPainter.layout(maxWidth: maxWidth);
+        currentPage.add(span);
+        textPainter.text = TextSpan(children: currentPage);
+        textPainter.layout(maxWidth: MediaQuery.of(context).size.width - 64);
 
-        if (currentHeight + textPainter.height > pageHeight) {
-          // Split the content into pages if it exceeds the page height
-          pages.add(List.from(currentSpan)..removeLast());
-          currentSpan = [span];
-          currentHeight = textPainter.height;
+        if (spanCount < 10) {
+          // حساب متوسط ارتفاع النص في الصفحة الأولى
+          averageHeight += textPainter.height;
+          spanCount++;
+        }
+
+        if (currentPageHeight + textPainter.height >
+            (averageHeight / spanCount) * 5) {
+          pages.add(List.from(currentPage)..removeLast());
+          currentPage = [span];
+          currentPageHeight = textPainter.height;
         } else {
-          currentHeight += textPainter.height;
+          currentPageHeight += textPainter.height;
         }
       }
+    }
 
-      if (currentSpan.isNotEmpty) {
-        pages.add(currentSpan);
-      }
+    if (currentPage.isNotEmpty) {
+      pages.add(currentPage);
     }
 
     return pages;
