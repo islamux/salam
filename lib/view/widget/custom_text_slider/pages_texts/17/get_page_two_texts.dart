@@ -9,6 +9,8 @@ List<TextSpan> getPageTwoTexts(int i) {
       style: AppTheme.customTextStyleHadith(),
     ),
     TextSpan(text: elmList10[i].elmTextSeventeenTwo_1),
-    TextSpan(text: elmList10[i].ayahHadithSeventeenTwo_2),
+    TextSpan(
+        text: elmList10[i].ayahHadithSeventeenTwo_2,
+        style: AppTheme.customTextStyleHadith()),
   ];
 }

@@ -8,9 +8,13 @@ List<TextSpan> getPageThreeTexts(int i) {
       text: elmList17[i].ayahHadithSeventeenThree_1,
       style: AppTheme.customTextStyleHadith(),
     ),
-    TextSpan(text: elmList17[i].subtitleSixteenThree_1),
+    TextSpan(
+        text: elmList17[i].subtitleSixteenThree_1,
+        style: AppTheme.customTextStyleTitle()),
     TextSpan(text: elmList17[i].elmTextSeventeenThree_1),
-    TextSpan(text: elmList17[i].ayahHadithSeventeenThree_2),
+    TextSpan(
+        text: elmList17[i].ayahHadithSeventeenThree_2,
+        style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList17[i].elmTextSeventeenThree_2),
   ];
 }

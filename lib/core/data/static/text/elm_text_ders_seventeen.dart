@@ -120,7 +120,7 @@ class ElmTextDersSeventeen {
   static const String elmTextSeventeenSix_2 = """
 وفي الحديث
 """;
-  static const ayahHadithSeventeenSix_1 = """;
+  static const ayahHadithSeventeenSix_1 = """
 ( الدعاء يرد القدر ) 
 ( لا يرد القضاء إلا الدعاء ) 
 
@@ -139,7 +139,7 @@ class ElmTextDersSeventeen {
 لذلك يقول الله عز وجل 
 """;
 
-  static const ayahHadithSeventeenSeven_1 = """;
+  static const ayahHadithSeventeenSeven_1 = """
 
  قُلْ مَا يَعْبَأُ بِكُمْ رَبِّي لَوْلَا دُعَاؤُكُمْ ۖ     
 [ سورة الفرقان: 77]
@@ -148,7 +148,7 @@ class ElmTextDersSeventeen {
   static const String elmTextSeventeenSeven_2 = """
 لكن هناك تمهيد لابد منه ، أراد الله عز وجل لحكمة بالغة بالغة ، بالغة أن يكون الإنسان ضعيفا
 """;
-  static const ayahHadithSeventeenSeven_2 = """;
+  static const ayahHadithSeventeenSeven_2 = """
 
  ( وَخُلِقَ الْإِنْسَانُ ضَعِيفًا )
 
@@ -159,7 +159,7 @@ class ElmTextDersSeventeen {
 والإنسان كما قال تعالى 
 """;
 
-  static const ayahHadithSeventeenSeven_3 = """;
+  static const ayahHadithSeventeenSeven_3 = """
 
 إِنَّ الْإِنْسَانَ خُلِقَ هَلُوعًا (19) إِذَا مَسَّهُ الشَّرُّ جَزُوعًا (20) وَإِذَا مَسَّهُ الْخَيْرُ مَنُوعًا (21) إِلَّا الْمُصَلِّينَ
 المعارج: 22
