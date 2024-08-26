@@ -166,7 +166,7 @@ class ElmTextDersEleven {
 """;
 
 // page 12
-  static const String footerElevenTweleve_1 = """
+  static const String titleElevenTweleve_1 = """
 وقفة  
 -----
 """;
