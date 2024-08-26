@@ -1,5 +1,4 @@
 import 'package:elm/core/data/model/elm_model.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_eleven.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_fifteen.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_fourteen.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_nine.dart';
@@ -630,29 +629,7 @@ List<ElmModel> elmList10 = [
 ];
 
 // TextDerseEleven
-List<ElmModel> elmList11 = [
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven1),
-  // ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven2),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven3),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven4),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven5),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven6),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven7),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven8),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven9),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven10),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven11),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven12),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven13),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven14),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven15),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven16),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven17),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven18),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDerseEleven19),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven20),
-  ElmModel(elmText: ElmTextDersEleven.elmTextDersEleven21),
-];
+List<ElmModel> elmList11 = [];
 
 // TextDerseTwelve
 List<ElmModel> elmList12 = [
