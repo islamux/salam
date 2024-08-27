@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageOneTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
-  TextStyle footer = AppTheme.customTextStyleFooter();
   TextStyle title = AppTheme.customTextStyleTitle();
 
   return [
