@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageSixTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
-  TextStyle footer = AppTheme.customTextStyleFooter();
-  TextStyle title = AppTheme.customTextStyleTitle();
 
   return [
     TextSpan(text: elmList11[i].ayahHadithElevenSix_1, style: ayah),

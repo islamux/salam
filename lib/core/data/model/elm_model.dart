@@ -477,7 +477,7 @@ class ElmModel {
   // 20
   final String? elmTexElevenTwenty_1;
 
-  //// khatira 12 //
+  // khatira 12
   //khatria 13
   final String? titlleTherteenOne;
   final String? ayahHadithTherteenOne_1;
