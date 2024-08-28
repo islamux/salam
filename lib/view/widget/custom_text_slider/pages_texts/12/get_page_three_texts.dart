@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageThreeTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
-  TextStyle title = AppTheme.customTextStyleTitle();
-  TextStyle footer = AppTheme.customTextStyleFooter();
 
   return [
     TextSpan(text: elmList12[i].elmTextTwelveThree_1, style: ayah),

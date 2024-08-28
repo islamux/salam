@@ -504,8 +504,11 @@ class ElmModel {
   final String? elmTextTwelveSeven_1;
   final String? ayahHadithTwelveSeven_1;
   final String? foooterTwelveSeven;
+  // 8
   final String? titleTwelveEight;
   final String? ayahHadithTwelveEight_1;
+  final String? footerTwelveEight;
+
   final String? elmTextTwelveNine_1;
   final String? elmTextTwelveTen_1;
   final String? ayahHadithTwelveEleven_1;
@@ -1158,9 +1161,12 @@ class ElmModel {
     this.elmTextTwelveSeven_1,
     this.ayahHadithTwelveSeven_1,
     this.foooterTwelveSeven,
+    // 8
     this.titleTwelveEight,
     this.ayahHadithTwelveEight_2,
+    this.footerTwelveEight,
     this.ayahHadithTwelveEight_1,
+    // 9
     this.elmTextTwelveNine_1,
     this.elmTextTwelveTen_1,
     this.elmTextTwelveEleven_1,

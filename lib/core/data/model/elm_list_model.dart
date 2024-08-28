@@ -806,6 +806,7 @@ List<ElmModel> elmList12 = [
   ElmModel(
     titleTwelveEight: ElmTextDersTwelve.titleTwelveEight,
     ayahHadithTwelveEight_1: ElmTextDersTwelve.ayahHadithTwelveEight_1,
+    footerTwelveEight: ElmTextDersTwelve.ayahHadithTwelveEight_1,
   ),
   // 9
   ElmModel(
@@ -845,10 +846,10 @@ List<ElmModel> elmList12 = [
     ayahHadithTwelveFifteen_2: ElmTextDersTwelve.ayahHadithTwelveFifteen_2,
     elmTextTwelveFifteen_3: ElmTextDersTwelve.elmTextTwelveFifteen_3,
     footerTwelveFifteen: ElmTextDersTwelve.footerTwelveFifteen,
-    titleTwelveSixteen: ElmTextDersTwelve.titleTwelveSixteen,
   ),
   // 16
   ElmModel(
+    titleTwelveSixteen: ElmTextDersTwelve.titleTwelveSeventeen,
     ayahHadithTwelveSixteen_1: ElmTextDersTwelve.ayahHadithTwelveSixteen_1,
     elmTextTwelveSixteen_1: ElmTextDersTwelve.elmTextTwelveSixteen_1,
     ayahHadithTwelveSixteen_2: ElmTextDersTwelve.ayahHadithTwelveSixteen_2,
