@@ -144,7 +144,6 @@ class ElmTextDersTwelve {
 """;
 
 // page 8
-  static const String elmTextTwelveEight_1 = """""";
   static const String titleTwelveEight = """
 :جوده عليه السلام *
 ----------------
@@ -183,7 +182,7 @@ class ElmTextDersTwelve {
 نحن الآن بحاجة إلى خلق عظيم ، لا إلى معلومات كثيرة وسلوك منحرف لا....فهذا الخلق هو الذي ينفعنا عند الله ، هو اللذي يكون سببآ لاستحقاقنا النصر من الله عز وجل
 """;
 
-  static const String ayahHadithTwelveEight_2 = """
+  static const String ayahHadithTwelveEleven_1 = """
 
      وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤ * 
 القلم 4 * 
