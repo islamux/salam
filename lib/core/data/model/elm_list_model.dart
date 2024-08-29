@@ -806,7 +806,7 @@ List<ElmModel> elmList12 = [
   ElmModel(
     titleTwelveEight: ElmTextDersTwelve.titleTwelveEight,
     ayahHadithTwelveEight_1: ElmTextDersTwelve.ayahHadithTwelveEight_1,
-    footerTwelveEight: ElmTextDersTwelve.ayahHadithTwelveEight_1,
+    footerTwelveEight: ElmTextDersTwelve.footerTwelveEight,
   ),
   // 9
   ElmModel(
@@ -827,9 +827,9 @@ List<ElmModel> elmList12 = [
   ),
   // 13
   ElmModel(
-    elmTextTwelveTherteen_1: ElmTextDersTwelve.elmTextTwelveTherteen_1,
-    elmTextTwelveTherteen_2: ElmTextDersTwelve.elmTextTwelveTherteen_2,
-  ),
+      elmTextTwelveTherteen_1: ElmTextDersTwelve.elmTextTwelveTherteen_1,
+      ayahHadithTwelveTherteen_1: ElmTextDersTwelve.ayahHadithTwelveTherteen_1,
+      elmTextTwelveTherteen_2: ElmTextDersTwelve.elmTextTwelveTherteen_2),
   // 14
   ElmModel(
     titleTwelveFourteen: ElmTextDersTwelve.titleTwelveFourteen,
@@ -862,19 +862,19 @@ List<ElmModel> elmList12 = [
   // 17
   ElmModel(
     titleTwelveSeventeen: ElmTextDersTwelve.titleTwelveSeventeen,
+    elmTwelveSeventeen_1: ElmTextDersTwelve.elmTwelveSeventeen_1,
+    ayahHadithTwelveSeventeen_1: ElmTextDersTwelve.ayahHadithTwelveSeventeen_1,
+    elmTwelveSeventeen_2: ElmTextDersTwelve.elmTwelveSeventeen_2,
+    ayahHadithTwelveSeventeen_2: ElmTextDersTwelve.ayahHadithTwelveSeventeen_2,
+    elmTwelveSeventeen_3: ElmTextDersTwelve.elmTwelveSeventeen_3,
+    ayahHadithTwelveSeventeen_3: ElmTextDersTwelve.ayahHadithTwelveSeventeen_3,
   ),
   // 18
   ElmModel(
-    elmTwelveEightteen_1: ElmTextDersTwelve.elmTwelveEightteen_1,
-    ayahHadithTwelveEighteen_1: ElmTextDersTwelve.ayahHadithTwelveEighteen_1,
-    elmTwelveEighteen_2: ElmTextDersTwelve.elmTwelveEighteen_2,
-    ayahHadithTwelveEighteen_2: ElmTextDersTwelve.ayahHadithTwelveEighteen_2,
-    elmTwelveEighteen_3: ElmTextDersTwelve.elmTwelveEighteen_3,
-    ayahHadithTwelveEighteen_3: ElmTextDersTwelve.ayahHadithTwelveEighteen_3,
-    elmTwelveEighteen_4: ElmTextDersTwelve.elmTwelveEighteen_4,
-    elmTextTwelveEighteen_1: ElmTextDersTwelve.elmTwelveEighteen_4,
-    ayahHadithTwelveEighteen_4: ElmTextDersTwelve.ayahHadithTwelveEighteen_4,
+    elmTwelveEighteen_1: ElmTextDersTwelve.elmTwelveEighteen_1,
     elmTextTwelveEighteen_2: ElmTextDersTwelve.elmTextTwelveEighteen_2,
+    ayahHadithTwelveEighteen_1: ElmTextDersTwelve.ayahHadithTwelveEighteen_1,
+    elmTextTwelveEighteen_3: ElmTextDersTwelve.elmTextTwelveEighteen_3,
   ),
 ];
 

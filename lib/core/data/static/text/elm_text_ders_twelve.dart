@@ -201,7 +201,10 @@ class ElmTextDersTwelve {
 // page 13
   static const String elmTextTwelveTherteen_1 = """
 
-قرائة السيره فرض عين: إقرأوا سيرة النبي أيها الأخوة ، اقرؤها لأن قرائتها فرض عين ، هل تصدقون ذلك؟؟ إن قرائة سيرة النبي فرض عين ، طالبوني بالدليل إن شئتم ، الدليل: أن هناك قاعدة فقهية تقول: ما لا يتم الفرض إلا به فهو فرض ، فالصلاة فرض ، والوضؤ فرض ، لأن الصلاة لاتتم إلا به ، وما لا تتم السنة إلا به فهو سنة ، لكن الله جل جلاله حينما أمرنا قال: * لَّقَدۡ كَانَ لَكُمۡ فِی رَسُولِ ٱللَّهِ أُسۡوَةٌ حَسَنَةࣱ 
+قرائة السيره فرض عين: إقرأوا سيرة النبي أيها الأخوة ، اقرؤها لأن قرائتها فرض عين ، هل تصدقون ذلك؟؟ إن قرائة سيرة النبي فرض عين ، طالبوني بالدليل إن شئتم ، الدليل: أن هناك قاعدة فقهية تقول: ما لا يتم الفرض إلا به فهو فرض ، فالصلاة فرض ، والوضؤ فرض ، لأن الصلاة لاتتم إلا به ، وما لا تتم السنة إلا به فهو سنة ، لكن الله جل جلاله حينما أمرنا
+""";
+  static const String ayahHadithTwelveTherteen_1 = """
+ قال: * لَّقَدۡ كَانَ لَكُمۡ فِی رَسُولِ ٱللَّهِ أُسۡوَةٌ حَسَنَةࣱ 
 الأحزاب 21 
 """;
 
@@ -216,6 +219,7 @@ class ElmTextDersTwelve {
 ------------------""";
 
   static const String ayahHadithTwelveFourteen_1 = """
+
 قال عليه الصلاة والسلام
     (( لا تحمرو الوجوه)) *
 """;
@@ -228,8 +232,10 @@ class ElmTextDersTwelve {
 """;
   static const String footerTwelveFourteen = """
 ---------------------
- أورده البعض بمعنى لا تُخجِلوا الناس بالمواجهة ولذلك كان النبي صلى الله عليه وسلم يقول
-{ما بال أقوام} ولم نقف على تخريجه من مصدر معتمد  
+ أورده البعض بمعنى لا تُخجِلوا الناس بالمواجهة 
+ ولذلك كان النبي صلى الله عليه وسلم يقول
+{ما بال أقوام}
+ ولم نقف على تخريجه من مصدر معتمد  
   موقع ليتفقهوا في الدين *
 
 
@@ -310,46 +316,46 @@ class ElmTextDersTwelve {
 وقفة 
 ----
 """;
-// page 18
-  static const String elmTwelveEightteen_1 = """
+  static const String elmTwelveSeventeen_1 = """
 تطبيق سنة رسول الله صل الله عليه وسلم تجعلنا في مأمن من عذاب الله تعالى 
 """;
-  static const String ayahHadithTwelveEighteen_1 = """
+  static const String ayahHadithTwelveSeventeen_1 = """
 
  وَمَا كَانَ ٱللَّهُ لِیُعَذِّبَهُمۡ وَأَنتَ فِیهِمۡۚ 
 الأنفال 33 
 
 """;
-  static const String elmTwelveEighteen_2 = """
+  static const String elmTwelveSeventeen_2 = """
 من أدق معاني هذه ألأية، يامحمد مادامت سنتك مطبقه في حياتهم ، هم في مأمن من عذاب الله ، أي مستحيل ، وألف ألف ألف مستحيل أن نعذب ونحن نطبق سنة رسول الله 
 """;
-  static const String ayahHadithTwelveEighteen_2 = """
+  static const String ayahHadithTwelveSeventeen_2 = """
  وَمَا كَانَ ٱللَّهُ لِیُعَذِّبَهُمۡ 
 """;
-  static const String elmTwelveEighteen_3 = """
+  static const String elmTwelveSeventeen_3 = """
 هذه "وماكان الله" أشد انواع النفي في اللغة ، هذا اسمه نفي الشأن ، قُل لواحد: هل أنت جائع؟ يقول لك : لأ ، قل له أنت سارق ؟ هذا وضع ثان ، ليس معقولآ أن يقول لك: لا ، يقول لك: ما كان لي أن أسرق ، بعض النحاة عدوا أكثر من عشرين فعلآ ينفى بهذه الصيغة ، لا أسرق ، ولا أرغب ، ولا أتمنى ، ولا أقبل ، ولا أبارك ، ولا أرضى ، ولا أدعم ، مستحيل! ماكان لي أن أسرق ، هذا أشد أنواع النفي ، والله عز وجل يقول
 """;
-  static const String ayahHadithTwelveEighteen_3 = """
+  static const String ayahHadithTwelveSeventeen_3 = """
 
 وما كَانَ ٱللَّهُ لِیُعَذِّبَهُمۡ 
 
 """;
-  static const String elmTwelveEighteen_4 = """
+// page 18
+  static const String elmTwelveEighteen_1 = """
 اي مستحيل والف الف مستحيل أن يعذب المسلمون ومنهج النبي مطبق في حياتهم
   """;
 
-  static const String elmTextTwelveEighteen_1 = """
+  static const String elmTextTwelveEighteen_2 = """
  يوجد مساجد ؟ نعم ، صلوات ؟ نعم ، اذان ؟ نعم ، حج ؟ نعم 
 أما التعامل اليومي ، ياترى في الأسواق هل منهج الله عز وجل مطبق ؟ هل هناك أيمان كاذبه ؟ هل هناك بضاعة محرمة ؟ هل هناك معاص وآثام ؟ هل هناك مواد محرمة ؟ هل هناك طريقة محرمة أو ربا ؟
 """;
 
-  static const String ayahHadithTwelveEighteen_4 = """
+  static const String ayahHadithTwelveEighteen_1 = """
 
  وَمَا كَانَ ٱللَّهُ لِیُعَذِّبَهُمۡ وَأَنتَ فِیهِمۡۚ  
 الأنفال 33 
 
 """;
-  static const String elmTextTwelveEighteen_2 = """
+  static const String elmTextTwelveEighteen_3 = """
 لو انهم طبقو منهج رسول الله مستحيل أن يُعذبو
 
 لايمكن أن نُعذب ومنهج النبي مطبق في حياتنا ، في التفاصيل ، في البيع ، في الشراء ، في الحفلات ، في الفرح ، في الترح ، في السفر ، في الحضر ، في الإقامة ، في الدراسة ، في المعالجة ، في الطب ، في الولائم

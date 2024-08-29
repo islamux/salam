@@ -93,6 +93,7 @@ class CustomTextSliderElm12 extends StatelessWidget {
                                     ...getPageFourteenTexts(i),
                                     ...getPageFifteenTexts(i),
                                     ...getPageSixteenTexts(i),
+                                    ...getPageSeventeenTexts(i),
                                     ...getPageEighteenTexts(i),
                                   ],
                                 ),
