@@ -148,7 +148,6 @@ class ElmTextDersFourteen {
   static const String ayahHadithFourteenSeven_2 = """
  يَا أَيُّهَا الَّذِينَ آمَنُوا آمِنُوا بِاللَّهِ وَرَسُولِهِ
 """;
-  static const String elmTextFourteenSeven_2 = """ """;
 
   static const String subtitleFourteenSeven_1 = """
 الايمان درجات
@@ -159,7 +158,9 @@ class ElmTextDersFourteen {
 """;
   static const String ayahHadithFourteenSeven_3 = """
  يَا أَيُّهَا الَّذِينَ آمَنُوا آمِنُوا
-"";
+""";
+
+  static const String elmTextFourteenSeven_4 = """
 يعني أنت مؤمن ، ولكن إيمانك لا يكفي ، لا بد من أن تجدد إيمانك 
 الايمان درجات كثيرة جداً ، لكن أهم شيئ أنه إذا كنت في درجة لا يقودك إيمانك إلى طاعة الله ينبغي أن تُشمر وتجدد إيمانك ، لا ينبغي أن تقر عينك إلا بإيمان مؤداه الاستقامه على أمر الله
 

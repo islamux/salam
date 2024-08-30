@@ -990,7 +990,6 @@ List<ElmModel> elmList14 = [
   ElmModel(
     titleFourteenOne: ElmTextDersFourteen.titleFourteenOne,
     elmTextFourteenOne_1: ElmTextDersFourteen.elmTextFourteenOne_1,
-    elmTextFourteen_1: ElmTextDersFourteen.elmTextFourteen_1,
   ),
   // page 2
   ElmModel(
@@ -1008,10 +1007,10 @@ List<ElmModel> elmList14 = [
   ),
   // page 4
   ElmModel(
-    elmTextFourteenFour_1: ElmTextDersFourteen.elmTextFourteenFour_1,
-    ayahHadithFourteenFour_1: ElmTextDersFourteen.ayahHadithFourteenFour_1,
-    elmTextFourteenFour_2: ElmTextDersFourteen.ayahHadithFourteenFour_2,
-  ),
+      elmTextFourteenFour_1: ElmTextDersFourteen.elmTextFourteenFour_1,
+      ayahHadithFourteenFour_1: ElmTextDersFourteen.ayahHadithFourteenFour_1,
+      elmTextFourteenFour_2: ElmTextDersFourteen.elmTextFourteenFour_2,
+      ayahHadithFourteenFour_2: ElmTextDersFourteen.ayahHadithFourteenFour_2),
   // page 5
   ElmModel(
     elmTextFourteenFive_1: ElmTextDersFourteen.elmTextFourteenFive_1,
@@ -1034,11 +1033,11 @@ List<ElmModel> elmList14 = [
   // page 7
   ElmModel(
     ayahHadithFourteenSeven_2: ElmTextDersFourteen.ayahHadithFourteenSeven_2,
-    elmTextFourteenSeven_2: ElmTextDersFourteen.elmTextFourteenSeven_2,
     subtitleFourteenSeven_1: ElmTextDersFourteen.subtitleFourteenSeven_1,
     elmTextFourteenSeven_3: ElmTextDersFourteen.elmTextFourteenSeven_3,
     ayahHadithFourteenSeven_3: ElmTextDersFourteen.ayahHadithFourteenSeven_3,
     ayahHadithFourteenSeven_1: ElmTextDersFourteen.ayahHadithFourteenSeven_1,
+    elmTextFourteenSeven_4: ElmTextDersFourteen.elmTextFourteenSeven_4,
   ),
   // page 8
   ElmModel(
@@ -1102,23 +1101,100 @@ List<ElmModel> elmList14 = [
 
 //  TextDersFifteen
 List<ElmModel> elmList15 = [
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen1), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen2), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen3), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen4), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen5), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen6), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen7), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen8), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen9), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen10), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen11), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen12), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen13), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen14), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen15), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen16), //
-  ElmModel(elmText: ElmTextDersFifteen.elmTextDersFifteen17), //
+  // page 1
+  ElmModel(
+    titleFifteenOne: ElmTextDersFifteen.titleFifteenOne,
+    ayahHadithFifteenOne_1: ElmTextDersFifteen.ayahHadithFifteenOne_1,
+    elmTextFifteenOne_1: ElmTextDersFifteen.elmTextFifteenOne_1,
+  ), //
+  // page 2
+  ElmModel(
+    elmTextFifteenTwo_1: ElmTextDersFifteen.elmTextFifteenTwo_1,
+    ayahHadithFifteenTwo_1: ElmTextDersFifteen.ayahHadithFifteenTwo_1,
+    footerFifteenTwo: ElmTextDersFifteen.footerFifteenTwo,
+  ), //
+  // page 3
+  ElmModel(
+    elmTextFifteenThree_1: ElmTextDersFifteen.elmTextFifteenThree_1,
+    ayahHadithFifteenThree_1: ElmTextDersFifteen.ayahHadithFifteenThree_1,
+    elmTextFifteenThree_2: ElmTextDersFifteen.elmTextFifteenThree_2,
+  ), //
+  // page 4
+  ElmModel(
+    ayahHadithFifteenFour_1: ElmTextDersFifteen.ayahHadithFifteenFour_1,
+    elmTextFifteenFour_1: ElmTextDersFifteen.elmTextFifteenFour_1,
+    ayahHadithFifteenFour_2: ElmTextDersFifteen.ayahHadithFifteenFour_2,
+  ), //
+  // page 5
+  ElmModel(
+    elmTextFifteenFive_1: ElmTextDersFifteen.elmTextFifteenFive_1,
+    ayahHadithFifteenFive_1: ElmTextDersFifteen.elmTextFifteenFive_1,
+  ), //
+  // page 6
+  ElmModel(
+    elmTextFifteenSix_1: ElmTextDersFifteen.elmTextFifteenSix_1,
+    ayahHadithFifteenSix_1: ElmTextDersFifteen.ayahHadithFifteenSix_1,
+    footerFifteenSix: ElmTextDersFifteen.footerFifteenSix,
+  ), //
+  // page 7
+  ElmModel(
+    elmTextFifteenSeven_1: ElmTextDersFifteen.elmTextFifteenSeven_1,
+  ), //
+  // page 8
+  ElmModel(
+    elmTextFifteenEight_1: ElmTextDersFifteen.elmTextFifteenEight_1,
+    ayahHadithFifteenEight_1: ElmTextDersFifteen.ayahHadithFifteenEight_1,
+    elmTextFifteenEight_2: ElmTextDersFifteen.elmTextFifteenEight_2,
+  ), //
+  // page 9
+  ElmModel(
+    elmTextFifteenNine_1: ElmTextDersFifteen.elmTextFifteenNine_1,
+  ), //
+  // page 10
+  ElmModel(
+    ayahHadithFifteenTen_1: ElmTextDersFifteen.ayahHadithFifteenTen_1,
+    elmTextFifteenTen_1: ElmTextDersFifteen.elmTextFifteenTen_1,
+  ), //
+  // page 11
+  ElmModel(
+    elmTextFifteenEleven_1: ElmTextDersFifteen.elmTextFifteenEleven_1,
+    ayahHadithFifteenEleven_1: ElmTextDersFifteen.ayahHadithFifteenEleven_1,
+  ), //
+  // page 12
+  ElmModel(
+    elmTextFifteenTwelve_1: ElmTextDersFifteen.elmTextFifteenTwelve_1,
+  ), //
+  // page 13
+  ElmModel(
+    elmTextFifteenTherteen_1: ElmTextDersFifteen.elmTextFifteenTherteen_1,
+  ), //
+  // page 14
+  ElmModel(
+    ayahHadithFifteenFourteen_1: ElmTextDersFifteen.ayahHadithFifteenFourteen_1,
+    elmTextFifteenFourteen_1: ElmTextDersFifteen.elmTextFifteenFourteen_1,
+  ), //
+  // page 15
+  ElmModel(
+    ayahHadithFifteenFifteen_1: ElmTextDersFifteen.ayahHadithFifteenFifteen_1,
+    elmTextFifteenFifteen_1: ElmTextDersFifteen.elmTextFifteenFifteen_1,
+    ayahHadithFifteenFifteen_2: ElmTextDersFifteen.ayahHadithFifteenFifteen_2,
+    elmTextFifteenFifteen_2: ElmTextDersFifteen.elmTextFifteenFifteen_2,
+  ), //
+  // page 16
+  ElmModel(
+    ayahHadithFifteenSixteen_1: ElmTextDersFifteen.ayahHadithFifteenSixteen_1,
+    elmtTextFifteenSixteen_2: ElmTextDersFifteen.elmtTextFifteenSixteen_2,
+    ayahHadithFifteenSixteen_2: ElmTextDersFifteen.ayahHadithFifteenSixteen_2,
+    elmtTextFifteenSixteen_3: ElmTextDersFifteen.elmtTextFifteenSixteen_3,
+    ayahHadithFifteenSixteen_3: ElmTextDersFifteen.ayahHadithFifteenSixteen_3,
+    elmtTextFifteenSixteen_4: ElmTextDersFifteen.elmtTextFifteenSixteen_4,
+  ), //
+  // page 17
+  ElmModel(
+    ayahHadithFifteenSeventeen_1:
+        ElmTextDersFifteen.ayahHadithFifteenSeventeen_1,
+    elmTextFifteenSeventeen_1: ElmTextDersFifteen.elmTextFifteenSeventeen_1,
+  ), //
 ];
 
 //TextDersSixTeen
