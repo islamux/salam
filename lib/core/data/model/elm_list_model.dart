@@ -1128,7 +1128,7 @@ List<ElmModel> elmList15 = [
   // page 5
   ElmModel(
     elmTextFifteenFive_1: ElmTextDersFifteen.elmTextFifteenFive_1,
-    ayahHadithFifteenFive_1: ElmTextDersFifteen.elmTextFifteenFive_1,
+    ayahHadithFifteenFive_1: ElmTextDersFifteen.ayahHadithFifteenFive_1,
   ), //
   // page 6
   ElmModel(

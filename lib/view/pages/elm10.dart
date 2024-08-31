@@ -7,7 +7,7 @@ import 'package:elm/function/increase_font.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../widget/custom_text_slider/custom_text_slider_elm10.dart';
+import '../widget/custom_text_slider/sliders/custom_text_slider_elm10.dart';
 
 class Elm10 extends StatelessWidget {
   const Elm10({super.key});

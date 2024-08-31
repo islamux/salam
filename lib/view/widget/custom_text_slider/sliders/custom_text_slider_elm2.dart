@@ -1,38 +1,32 @@
-import 'package:elm/controller/elm1_controller.dart';
+import 'package:elm/controller/elm2_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_eight_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_eighteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_eleven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_fifteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_five_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_four_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_fourteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_nine_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_nineteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_one_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_seven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_seventeen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_six_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_sixteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_ten_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_therteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_three_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_twelve_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_twenty_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/1/get_page_two_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_eleven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_therteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_twelve_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class CustomTextSliderElm1 extends StatelessWidget {
-  const CustomTextSliderElm1({super.key});
+import '../get_pages_texts/2/get_page_eight_texts.dart';
+import '../get_pages_texts/2/get_page_five_texts.dart';
+import '../get_pages_texts/2/get_page_four_texts.dart';
+import '../get_pages_texts/2/get_page_nine_texts.dart';
+import '../get_pages_texts/2/get_page_one_texts.dart';
+import '../get_pages_texts/2/get_page_seven_texts.dart';
+import '../get_pages_texts/2/get_page_six_texts.dart';
+import '../get_pages_texts/2/get_page_ten_texts.dart';
+import '../get_pages_texts/2/get_page_three_texts.dart';
+import '../get_pages_texts/2/get_page_two_text.dart';
+
+class CustomTextSliderElm2 extends StatelessWidget {
+  const CustomTextSliderElm2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final Elm1ControllerImp controller = Get.find<Elm1ControllerImp>();
+    final Elm2ControllerImp controller = Get.find<Elm2ControllerImp>();
     // to enable refresh ui (slider() moving)
-    return GetBuilder<Elm1ControllerImp>(
+    return GetBuilder<Elm2ControllerImp>(
       builder: (_) {
         return Stack(
           children: [
@@ -56,7 +50,7 @@ class CustomTextSliderElm1 extends StatelessWidget {
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
                     controller.onPageChanged(index),
-                itemCount: elmList.length,
+                itemCount: elmList2.length,
                 itemBuilder: (context, i) => Column(
                   children: [
                     // To make text scrollable make insid contatiner and the container inside Expanded
@@ -67,11 +61,9 @@ class CustomTextSliderElm1 extends StatelessWidget {
                         child: SingleChildScrollView(
                           child:
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
-                              GetBuilder<Elm1ControllerImp>(
+                              GetBuilder<Elm2ControllerImp>(
                             builder: (controller) {
-                              return
-                                  // Rich Text Loop on rich text
-                                  RichText(
+                              return RichText(
                                 text: TextSpan(
                                   style: TextStyle(
                                     fontFamily: "AmiriQ",
@@ -92,14 +84,7 @@ class CustomTextSliderElm1 extends StatelessWidget {
                                     ...getPageTenTexts(i),
                                     ...getPageElevenTexts(i),
                                     ...getPageTwelveTexts(i),
-                                    ...getPageTherteenTexts(i),
-                                    ...getPageFourteenTexts(i),
-                                    ...getPageFifteenTexts(i),
-                                    ...getPageSixteenTexts(i),
-                                    ...getPageSevnteenTexts(i),
-                                    ...getPageEighteenTexts(i),
-                                    ...getPageNineteenTexts(i),
-                                    ...getPageTwentyTexts(i),
+                                    ...getPageTherteenTexts(i)
                                   ],
                                 ),
                                 textAlign: TextAlign.right,
@@ -131,13 +116,13 @@ class CustomTextSliderElm1 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList.length.toDouble() - 1,
+                      max: elmList2.length.toDouble() - 1,
                     ),
                   ),
                   // Display current page number
                   Text(
                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controller.currentPageIndex + 1.toInt()} / ${elmList.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${elmList2.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )

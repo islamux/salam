@@ -1,29 +1,21 @@
-import 'package:elm/controller/elm7_controller.dart';
+import 'package:elm/controller/elm16_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/16/get_page_one_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/16/get_page_three_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/16/get_page_two_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_eight_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_eleven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_five_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_four_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_nine_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_one_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_seven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_six_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_ten_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_three_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/pages_texts/7/get_page_two_texts.dart';
 
-class CustomTextSliderElm7 extends StatelessWidget {
-  const CustomTextSliderElm7({super.key});
+class CustomTextSliderElm16 extends StatelessWidget {
+  const CustomTextSliderElm16({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final Elm7ControllerImp controller = Get.find<Elm7ControllerImp>();
+    final Elm16ControllerImp controller = Get.find<Elm16ControllerImp>();
     // to enable refresh ui (slider() moving)
-    return GetBuilder<Elm7ControllerImp>(
+    return GetBuilder<Elm16ControllerImp>(
       builder: (_) {
         return Stack(
           children: [
@@ -43,11 +35,11 @@ class CustomTextSliderElm7 extends StatelessWidget {
               child: PageView.builder(
                 reverse: true,
                 // to enable move through pages slider() using pageController
-                controller: controller.pageController,
+                controller: controller.pageControllerAssma,
                 onPageChanged: (index) =>
                     // How to pass index. ==> onPageChanged(index)
                     controller.onPageChanged(index),
-                itemCount: elmList7.length,
+                itemCount: elmList16.length,
                 itemBuilder: (context, i) => Column(
                   children: [
                     // To make text scrollable make insid contatiner and the container inside Expanded
@@ -58,30 +50,27 @@ class CustomTextSliderElm7 extends StatelessWidget {
                         child: SingleChildScrollView(
                           child:
                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
-                              GetBuilder<Elm7ControllerImp>(
+                              GetBuilder<Elm16ControllerImp>(
                             builder: (controller) {
-                              return // Rich Text Loop on rich text
+                              return
+                                  // Rich Text Loop on rich text
                                   RichText(
                                 text: TextSpan(
-                                    style: TextStyle(
-                                      fontFamily: "AmiriQ",
-                                      fontSize: controller.fontSize,
-                                      color: Colors.black,
-                                    ),
-                                    children: [
-                                      //  page 1 , page 2 , page 3
-                                      ...getPageOneTexts(i),
-                                      ...getPageTwoTexts(i),
-                                      ...getPageThreeTexts(i),
-                                      ...getPageFourTexts(i),
-                                      ...getPageFiveTexts(i),
-                                      ...getPageSixTexts(i),
-                                      ...getPageSevenTexts(i),
-                                      ...getPageEightTexts(i),
-                                      ...getPageNineTexts(i),
-                                      ...getPageTenTexts(i),
-                                      ...getPageElevenTexts(i),
-                                    ]),
+                                  style: TextStyle(
+                                    fontFamily: "AmiriQ",
+                                    fontSize: controller.fontSize,
+                                    color: Colors.black,
+                                  ),
+                                  children: [
+                                    /**
+                                     * باستخدام ... (spread operator) في children، تستطيع تحويل قائمة TextSpan إلى قائمة InlineSpan.
+                                      الدالة getPageOneTexts(i) تم إعادة استخدامها كما هي، بدون الحاجة لتعديلها لأن TextSpan هو جزء من InlineSpan.
+                                     */
+                                    ...getPageOneTexts(i),
+                                    ...getPageTowTexts(i),
+                                    ...getPageThreeTexts(i),
+                                  ],
+                                ),
                                 textAlign: TextAlign.right,
                               );
                             },
@@ -111,13 +100,13 @@ class CustomTextSliderElm7 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList7.length.toDouble() - 1,
+                      max: elmList16.length.toDouble() - 1,
                     ),
                   ),
                   // Display current page number
                   Text(
                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controller.currentPageIndex + 1.toInt()} / ${elmList7.length}',
+                    '${controller.currentPageIndex + 1.toInt()} / ${elmList16.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   )
