@@ -2,26 +2,17 @@ import 'package:elm/controller/elm1_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_eight_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_eighteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_eleven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_fifteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_five_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_four_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_fourteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_nine_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_nineteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_one_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_seven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_seventeen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_six_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_sixteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_ten_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_therteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_three_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_twelve_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_twenty_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_two_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_eight_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_eleven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_five_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_four_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_nine_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_one_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_seven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_six_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_ten_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_three_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_two_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -91,15 +82,6 @@ class CustomTextSliderElm1 extends StatelessWidget {
                                     ...getPageNineTexts(i),
                                     ...getPageTenTexts(i),
                                     ...getPageElevenTexts(i),
-                                    ...getPageTwelveTexts(i),
-                                    ...getPageTherteenTexts(i),
-                                    ...getPageFourteenTexts(i),
-                                    ...getPageFifteenTexts(i),
-                                    ...getPageSixteenTexts(i),
-                                    ...getPageSevnteenTexts(i),
-                                    ...getPageEighteenTexts(i),
-                                    ...getPageNineteenTexts(i),
-                                    ...getPageTwentyTexts(i),
                                   ],
                                 ),
                                 textAlign: TextAlign.right,

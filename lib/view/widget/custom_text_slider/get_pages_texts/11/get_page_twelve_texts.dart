@@ -6,6 +6,6 @@ List<TextSpan> getPageTwelveTexts(int i) {
   TextStyle title = AppTheme.customTextStyleTitle();
   return [
     TextSpan(text: elmList11[i].titleElevenTweleve_1, style: title),
-    TextSpan(text: elmList11[i].elmTextOneTwelve_1),
+    TextSpan(text: elmList11[i].elmTextElevenTwelve_1),
   ];
 }

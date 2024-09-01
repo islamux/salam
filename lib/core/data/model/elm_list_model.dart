@@ -943,6 +943,7 @@ List<ElmModel> elmList13 = [
   ElmModel(
     elmTextTherteenSeven_1: ElmTextDersTherteen.elmTextTherteenSeven_1,
     ayahHadithTherteenSeven_1: ElmTextDersTherteen.ayahHadithTherteenSeven_1,
+    ayahHadithTherteenSeven_2: ElmTextDersTherteen.ayahHadithTherteenSeven_2,
     elmTextTherteenSeven_2: ElmTextDersTherteen.elmTextTherteenSeven_2,
     footerTherteenSeven: ElmTextDersTherteen.footerTherteenSeven,
   ),

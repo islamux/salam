@@ -16,7 +16,7 @@ abstract class Elm17Controller extends GetxController {
 }
 
 class Elm17ControllerImp extends Elm17Controller {
-  final PageController pageController = PageController();
+  final PageController pageControllerAssma = PageController();
   // Proberties
   double fontSize = 21.0;
   int currentPageIndex = 0;
@@ -57,7 +57,7 @@ class Elm17ControllerImp extends Elm17Controller {
 
   @override
   String getShareText(int index) {
-    return elmList[index].elmText ?? '';
+    return elmList3[index].elmText ?? '';
   }
 
   @override
@@ -70,13 +70,13 @@ class Elm17ControllerImp extends Elm17Controller {
       if (currentPageIndex < maxPageCounters.length) {
         currentPageCounter = 0;
 
-        pageController.nextPage(
+        pageControllerAssma.nextPage(
             duration: const Duration(microseconds: 500),
             curve: Curves.easeInOut);
       } else {
         Get.snackbar(
           'الحمدلله',
-          ' انتهيت من القراءة',
+          '! أنهيت  قراءة أسماء الله الحسنى',
           colorText: AppColor.black,
           backgroundColor: AppColor.transparent,
           duration: const Duration(seconds: 5),
@@ -90,7 +90,7 @@ class Elm17ControllerImp extends Elm17Controller {
 
   @override
   void goToPage(int pageIndex) {
-    pageController.animateToPage(
+    pageControllerAssma.animateToPage(
       pageIndex,
       duration: const Duration(microseconds: 300),
       curve: Curves.easeInOut,

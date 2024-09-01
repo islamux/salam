@@ -230,7 +230,11 @@ class ElmTextDersTherteen {
 كلما كبر عقل الإنسان يزداد خوفه من الله ، فيضبط لسانه ، ويضبط سمعه ، وبصره ، وبيته  وعمله ، فلا كذب ، ولا غش ، وكلما كبر العقل تزداد المحبة لله عز وجل
 
 ارجحكم عقلاً اشدكم حباً لله عز وجل
+""";
+
+  static const String ayahHadithTherteenSeven_2 = """
 رأس الحكمة مخافة الله تعالى *
+
 """;
 
   static const String footerTherteenSeven = """
