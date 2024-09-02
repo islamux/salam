@@ -283,6 +283,7 @@ class ElmModel {
   final String? elmTextSevenEleven_2;
   final String? ayahHadithSevenEleven_2;
   final String? elmTextSevenEleven_3;
+
   // khatira 8
   //---- 1 ---/
   final String? titleEightOne;
@@ -571,18 +572,22 @@ class ElmModel {
   final String? elmTextTherteenOne_2;
   final String? ayahHadithTherteenOne_3;
   final String? elmTextTherteenOne_3;
+  //
   final String? footerTherteen;
+  // 2
   final String? elmTextTherteenTwo_1;
   final String? ayahHadithTherteenTwo_1;
   final String? elmTextTherteenTwo_2;
   final String? ayahHadithTherteenTwo_2;
   final String? elmTextTherteenTwo_3;
+  // 3
   final String? ayahHadithTherteenThree_1;
   final String? elmTextTherteenThree_2;
   final String? ayahHadithTherteenThree_2;
   final String? elmTextTherteenThree_3;
   final String? ayahHadithTherteenThree_3;
   final String? elmTextTherteenThree_4;
+  // 4
   final String? elmTextTherteenFour_1;
   final String? ayahHadithTherteenFour_1;
   final String? elmTextTherteenFour_2;
@@ -590,6 +595,7 @@ class ElmModel {
   final String? elmTextTherteenFour_3;
   final String? ayahHadithTherteenFour_3;
   final String? elmTextTherteenFour_4;
+  // 5
   final String? elmTextTherteenFive_1;
   final String? ayahHadithTherteenFive_1;
   final String? elmTextTherteenFive_2;
@@ -598,6 +604,7 @@ class ElmModel {
   final String? ayahHadithTherteenFive_3;
   final String? elmTextTherteenFive_4;
   final String? ayahHadithTherteenFive_4;
+  // 6
   final String? elmTextTherteenSix_1;
   final String? ayahHadithTherteenSix_1;
   final String? elmTextTherteenSix_2;
@@ -618,25 +625,31 @@ class ElmModel {
   final String? footerTherteenEight;
   // 9
   final String? elmTextTherteenNine_1;
+  // 10
   final String? elmTextTherteenTen_1;
   final String? ayahHadithTherteenTen_1;
   final String? elmTextTherteenTen_2;
   final String? ayahHadithTherteenTen_2;
   final String? elmTextTherteenTen_3;
+  // 11
   final String? elmTextTherteenEleven_1;
+  // 12
   final String? titleTherteenTwelve_1;
   final String? elmTextTherteenTwelve_1;
   final String? ayahHadithTherteenTwelve_1;
   final String? elmTextTherteenTwelve_2;
   final String? ayahHadithTherteenTwelve_2;
+  // 13
   final String? elmTextTherteenTherteen_1;
 
   // khatira 14
   final String? titleFourteenOne;
   final String? elmTextFourteenOne_1;
+  // 2
   final String? elmTextFourteenTwo_1;
   final String? ayahHadithFourteenTwo_1;
   final String? elmTextFourteenTwo_2;
+  // 3
   final String? subtitleFourteenThree_1;
   final String? ayahHadithFourteenThree_1;
   final String? elmTextFourteenThree_1;
@@ -647,9 +660,10 @@ class ElmModel {
   final String? ayahHadithFourteenFour_1;
   final String? elmTextFourteenFour_2;
   final String? ayahHadithFourteenFour_2;
-
+  // 5
   final String? elmTextFourteenFive_1;
   final String? ayahHadithFourteenFive_1;
+  // 6
   final String? elmTextFourteenSix_1;
   final String? ayahHadithFourteenSix_2;
   final String? elmTextFourteenSix_2;
@@ -676,6 +690,7 @@ class ElmModel {
   final String? titleFourteenNine_1;
   final String? ayahHadithFourteenNine_1;
   final String? elmTextFourteenNine_2;
+  // 10
   final String? ayahHadithFourteenTen_1;
   final String? elmTextFourteenTen_1;
   final String? ayahHadithFourteenTen_2;
@@ -684,61 +699,84 @@ class ElmModel {
   final String? elmTextFourteenTen_3;
   final String? ayahHadithFourteenTen_4;
   final String? elmTextFourteenTen_4;
+  // 11
   final String? ayahHadithFourteenEleven_1;
   final String? elmTextFourteenEleven_1;
+  // 12
   final String? titleFourteenTwelve_1;
   final String? elmTextFourteenTwelve_1;
+  // 13
   final String? elmTextFourteenTherteen_1;
+  // 14
   final String? ayahHadithFourteenFourteen_1;
+  // 15
   final String? elmTextFourteenFourteen_1;
   final String? ayahHadithFourteenFifteen_1;
   final String? elmTextFourteenFifteen_1;
   final String? ayahHadithFourteenFifteen_2;
   final String? elmTextFourteenFifteen_2;
+  // 16
   final String? ayahHadithFourteenSixteen_1;
   final String? elmTextFourteenSixteen_1;
 
   // khatira 15
+  // 1
   final String? titleFifteenOne;
   final String? ayahHadithFifteenOne_1;
   final String? elmTextFifteenOne_1;
+  // 2
   final String? elmTextFifteenTwo_1;
   final String? ayahHadithFifteenTwo_1;
   final String? footerFifteenTwo;
+  // 3
   final String? elmTextFifteenThree_1;
   final String? ayahHadithFifteenThree_1;
   final String? elmTextFifteenThree_2;
+  // 4
   final String? ayahHadithFifteenFour_1;
   final String? elmTextFifteenFour_1;
   final String? ayahHadithFifteenFour_2;
+  // 5
   final String? elmTextFifteenFive_1;
   final String? ayahHadithFifteenFive_1;
+  // 6
   final String? elmTextFifteenSix_1;
   final String? ayahHadithFifteenSix_1;
   final String? footerFifteenSix;
+  // 7
   final String? elmTextFifteenSeven_1;
+  // 8
   final String? elmTextFifteenEight_1;
   final String? ayahHadithFifteenEight_1;
   final String? elmTextFifteenEight_2;
+  // 9
   final String? elmTextFifteenNine_1;
+  // 10
   final String? ayahHadithFifteenTen_1;
   final String? elmTextFifteenTen_1;
+  // 11
   final String? elmTextFifteenEleven_1;
   final String? ayahHadithFifteenEleven_1;
+  // 12
   final String? elmTextFifteenTwelve_1;
+  // 13
   final String? elmTextFifteenTherteen_1;
+  // 14
   final String? ayahHadithFifteenFourteen_1;
   final String? elmTextFifteenFourteen_1;
+  // 15
   final String? ayahHadithFifteenFifteen_1;
   final String? elmTextFifteenFifteen_1;
   final String? ayahHadithFifteenFifteen_2;
   final String? elmTextFifteenFifteen_2;
+  // 16
   final String? ayahHadithFifteenSixteen_1;
   final String? elmtTextFifteenSixteen_2;
   final String? ayahHadithFifteenSixteen_2;
   final String? elmtTextFifteenSixteen_3;
   final String? ayahHadithFifteenSixteen_3;
   final String? elmtTextFifteenSixteen_4;
+  // 17
   final String? ayahHadithFifteenSeventeen_1;
   final String? elmTextFifteenSeventeen_1;
 
@@ -933,51 +971,6 @@ class ElmModel {
     this.subtitleOneTwenty,
     this.elmTextOneTwenty_1,
 
-    // // khatira 5
-    // 1
-    this.titleFiveOne,
-    this.ayahHadithFiveOne_1,
-    this.elmTextFiveOne_1,
-    this.footerFiveOne,
-    // 2
-    this.ayahHadithFiveTwo_1,
-    this.elmTextFiveTwo_1,
-    this.ayahHadithFiveTwo_2,
-    // 3
-    this.elmTextFiveThree_1,
-    this.ayahHadithFiveThree_1,
-    this.elmTextFiveThree_2,
-    // 4
-    this.elmTextFiveFour_1,
-    this.elmTextsFiveFive_1,
-    this.ayahHadithFiveFive_1,
-    this.elmTextsFiveFive_2,
-    // 5
-    this.elmTextFiveSix_1,
-    // 7
-    this.elmTextFiveSeven_1,
-    // 8
-    this.elmTextFiveEight_1,
-    // 9
-    this.elmTextFiveNine_1,
-    this.ayahHadithFiveNine_1,
-    // 10
-    this.elmTexteFiveTen_1,
-    this.ayahHadithFiveTen_1,
-    this.elmTexteFiveTen_2,
-    this.ayahHadithFiveTen_2,
-    this.elmTexteFiveTen_3,
-    // 11
-    this.elmTextFiveEleven_1,
-    // 12
-    this.elmTextFiveTwelve_1,
-    // 13
-    this.titleFiveTherteen,
-    this.ayahHadithFiveTherteen_1,
-    this.elmTextFiveTherteen_1,
-    this.ayahHadithFiveTherteen_2,
-    this.elmTextFiveTherteen_2,
-
     // khatira 2
     // 1
     this.titleTwoOne,
@@ -1045,29 +1038,82 @@ class ElmModel {
     this.elmTextThreeThree_2,
 
     // khatira 4
-    this.ayahHadithEightFour_1,
-    this.ayahHadithEightFour_2,
-    this.ayhaHadithFourFive_1,
     this.titleFourOne,
-    this.footerFourFive,
+    // 4
+    this.ayhaHadithFourFive_1,
+    // 5
     this.elmTextFourOne_1,
     this.ayahHadithFourOne_1,
+    // 2
     this.elmTextFourTwo_1,
+    // 3
     this.elmTextFourThree_1,
+    // 4
     this.elmTextFourFour_1,
+    // 5
     this.elmTextFourFive_1,
+    this.footerFourFive,
+    // 6
     this.subtitleFourSix_1,
     this.elmTextFourSix_1,
+    // 7
     this.elmTextFourSeven_1,
+    // 8
     this.elmTextFourEight_1,
     this.ayahHadithFourEight_1,
     this.elmTextFourEight_2,
+    // 9
     this.elmTextFourNine_1,
     this.ayahHadithFourNine_1,
+    // 10
     this.elmTextFourTen_1,
     this.ayahHadithFourTen_1,
 
     // khatira 5
+    // 1
+    this.titleFiveOne,
+    this.ayahHadithFiveOne_1,
+    this.elmTextFiveOne_1,
+    this.footerFiveOne,
+    // 2
+    this.ayahHadithFiveTwo_1,
+    this.elmTextFiveTwo_1,
+    this.ayahHadithFiveTwo_2,
+    // 3
+    this.elmTextFiveThree_1,
+    this.ayahHadithFiveThree_1,
+    this.elmTextFiveThree_2,
+    // 4
+    this.elmTextFiveFour_1,
+    // 5
+    this.elmTextsFiveFive_1,
+    this.ayahHadithFiveFive_1,
+    this.elmTextsFiveFive_2,
+    // 6
+    this.elmTextFiveSix_1,
+    // 7
+    this.elmTextFiveSeven_1,
+    // 8
+    this.elmTextFiveEight_1,
+    // 9
+    this.elmTextFiveNine_1,
+    this.ayahHadithFiveNine_1,
+    // 10
+    this.elmTexteFiveTen_1,
+    this.ayahHadithFiveTen_1,
+    this.elmTexteFiveTen_2,
+    this.ayahHadithFiveTen_2,
+    this.elmTexteFiveTen_3,
+    // 11
+    this.elmTextFiveEleven_1,
+    // 12
+    this.elmTextFiveTwelve_1,
+    // 13
+    this.titleFiveTherteen,
+    this.ayahHadithFiveTherteen_1,
+    this.elmTextFiveTherteen_1,
+    this.ayahHadithFiveTherteen_2,
+    this.elmTextFiveTherteen_2,
 
     // khatria 6
     // -- 1
@@ -1086,83 +1132,112 @@ class ElmModel {
     // -- 4
     this.elmTextSixFour_1,
 
-    // // khatira 7
+    // khatira 7
     this.titleSevenOne,
     this.elmTextSevenOne_1,
+    // 2
     this.elmTextSevenTwo_1,
     this.ayahHadithSevenTwo_1,
+    // 3
     this.elmTextSevenThree_1,
+    // 4
     this.elmTextSevenFour_1,
+    // 5
     this.elmTextSevenFive_1,
     this.ayahHadithSevenFive_1,
+    // 6
     this.ayahHadithSevenSix_1,
     this.elmTextSevenSix_1,
+    // 7
     this.elmTextSevenSeven_1,
+    // 8
     this.elmTextSevenEight_1,
     this.ayahHadithSevenEight_1,
     this.elmTextSevenEight_2,
+    // 9
     this.ayahHadithSevenNine_1,
     this.footerSevenNine,
+    // 10
     this.titleSevenTen,
     this.ayahHadithSevenTen_1,
     this.elmTextSevenTen_1,
     this.ayahHadithSevenTen_2,
     this.elmTextSevenTen_2,
     this.ayahHadithSevenTen_3,
+    // 11
     this.elmTextSevenEleven_1,
     this.ayahHadithSevenEleven_1,
     this.elmTextSevenEleven_2,
     this.ayahHadithSevenEleven_2,
     this.elmTextSevenEleven_3,
 
-    // // khatira 8
+    // khatira 8
+    // 1
     this.elmTextEightOne_1,
-    this.elmTextEightTwo_1,
-    this.elmTextEightFour_1,
-    this.ayahHadithEightOne_1,
-    this.ayahHadithEightTwo_1,
     this.titleEightOne,
-    this.elmTextEight_1,
-    this.elmTextEight_3,
+    this.ayahHadithEightOne_1,
+    this.elmTextEightOne_2,
+    // 2
+    this.elmTextEightTwo_1,
+    this.ayahHadithEightTwo_1,
+    this.elmTextEightTwo_2,
+    // 3
+    this.ayahHadithEightThree_1,
+    this.elmTextEightThree_1,
+    // 4
+    this.ayahHadithEightFour_1,
+    this.ayahHadithEightFour_2,
+    this.elmTextEightFour_1,
+    // 5
+    this.elmTextEightFive_1,
+    this.elmTextEightFive_2,
+    this.ayahHadithEightFive_1,
+    // 6
     this.elmTextEightSix_1,
     this.elmTextEightSix_2,
     this.subtitleEightSix_1,
     this.subtitleEightSix_2,
+    // 7
     this.elmTextEightSeven_1,
     this.elmTextEightSeven_2,
-    this.elmTextEightThree_1,
-    this.elmTextEightOne_2,
-    this.elmTextEightFive_1,
-    this.elmTextEightFive_2,
-    this.elmTextEightTwo_2,
-    this.ayahHadithEightThree_1,
     this.footerEightSeven_1,
-    this.ayahHadithEightFive_1,
+    // 8
+    this.elmTextEight_1,
+    this.elmTextEight_3,
 
     // khatira 9
+    // 1
     this.ayahHadithNineOne_1,
     this.elmTextNineOne_1,
     this.ayahHadithNineOne_2,
+    // 2
     this.elmTextNineTwo_1,
     this.ayahHadithNineTwo_1,
+    // 3
     this.elmTextNineThree_1,
     this.ayahHadithNineThree_1,
+    // 4
     this.elmTextNineFour_1,
     this.ayahHadithNineFour_1,
+    // 5
     this.elmTextNineFive_1,
     this.ayahHadithNineFive_1,
     this.elmTextNineFive_2,
+    // 6
     this.elmTextNineSix_1,
     this.ayahHadithNineSix_1,
     this.elmTextNineSix_2,
     this.ayahHadithNineSix_2,
     this.elmTextNineSix_3,
+    // 7
     this.elmTextNineSeven_1,
     this.ayahHadithNineSeven_1,
     this.elmTextNineSeven_2,
+    // 8
     this.elmTextNineEight_1,
     this.ayahHadithNineEight_1,
     this.elmTextNineEight_2,
+    // 9
     this.titleNineNine,
     this.elmTextNineNine_1,
     this.ayahHadithNineNine_1,
@@ -1170,6 +1245,7 @@ class ElmModel {
     this.ayahHadithNineNine_2,
     this.elmTextNineNine_3,
     this.footerNineNine,
+    // 10
     this.titleNineTen_1,
     this.elmTextNineTen_1,
     this.ayahHadithNineTen_2,
@@ -1183,20 +1259,26 @@ class ElmModel {
     this.elmTextTenOne_2,
     this.ayahHadithTenOne_2,
     this.elmTextTenOne_3,
+    // 2
     this.ayahHadithTenTwo_1,
     this.elmTextTenTwo_1,
+    // 3
     this.ayahHadithTenThree_1,
     this.subtitleTenThree_1,
     this.elmTextTenThree_1,
     this.ayahHadithTenThree_2,
     this.elmTextTenThree_2,
+    // 4
     this.ayahHadithTenFour_1,
     this.elmTextTenFour_1,
+    // 5
     this.ayahHadithTenFive_1,
     this.elmTextTenFive_1,
     this.ayahHadithTenFive_2,
+    // 6
     this.elmTextTenSix_1,
     this.ayahHadithTenSix_1,
+    // 7
     this.elmTextTenSeven_1,
     this.ayahHadithTenSeven_1,
     this.elmTextTenSeven_2,
@@ -1204,86 +1286,113 @@ class ElmModel {
     this.elmTextTenSeven_3,
 
     // khatira 11
+    // 1
     this.titleElevenOne,
     this.elmTextElevenOne_1,
     this.ayahHadithElevenOne_1,
     this.elmTextElevenOne_2,
+    // 2
     this.elmTextElevenTwo_1,
     this.ayahHadithElevenTwo_1,
+    // 3
     this.elmTextElevenThree_1,
     this.ayahHadithElevenThree_1,
     this.elmTextElevenThree_2,
+    // 4
     this.elmTextElevenFour_1,
+    // 5
     this.elmTextElevenFive_1,
+    // 6
     this.ayahHadithElevenSix_1,
     this.elmTextElevenSix_1,
     this.elmTextElevenSeven_1,
+    // 8
     this.ayahHadithElevenEight_1,
     this.elmTextElevenEight_1,
+    // 9
     this.ayahHadithElevenNine_1,
     this.elmTextElevenNine_1,
+    // 10
     this.elmTextElevenTen_1,
+    // 11
     this.elmTextElevenEleven_1,
     this.ayahHadithElevenEleven_1,
     this.elmTextElevenEleven_2,
     this.ayahHadithElevenEleven_2,
     this.elmTextElevenEleven_3,
     this.footerElevenEleven,
+    // 12
     this.titleElevenTweleve_1,
     this.elmTextElevenTwelve_1,
+    // 13
     this.elmTextElevenTherteen_1,
     this.ayahHadithElevenTherteen_1,
     this.elmTextElevenTherteen_2,
     this.ayahHadithElevenTherteen_2,
     this.elmTextElevenTherteen_3,
     this.ayahHadithElevenTherteen_3,
+    // 14
     this.elmTextElevenFourteen_1,
     this.ayahHadithElevenFourteen_1,
     this.elmTextElevenFourteen_2,
     this.ayahHadithElevenFourteen_2,
     this.elmTextElevenFourteen_3,
+    // 15
     this.elmTextElevenFifteen_1,
     this.ayahHadithElevenFifteen_1,
     this.elmTextElevenFifteen_2,
     this.ayahHadithElevenFifteen_2,
     this.elmTextElevenFifteen_3,
     this.footerElevenFifteen_3,
-    this.elmTextElevenSixteen_1,
+    // 16
     this.ayahHadithElevenSixteen_1,
+    this.elmTextElevenSixteen_1,
     this.elmTextElevenSixteen_2,
     this.ayahHadithElevenSixteen_3,
     this.elmTextElevenSixteen_3,
     this.footerElevenSixteen,
+    // 17
     this.elmTextElevenSeventeen_1,
+    // 18
     this.titleElevenEighteen_1,
     this.ayahHadithElevenEighteen_1,
     this.elmTextElevenEighteen_1,
+    // 19
     this.elmTextElevenNinteen,
+    // 20
     this.elmTexElevenTwenty_1,
+
     // khatira 12
+    // 1
     this.ayahHadithTwelveOne_1,
     this.elmtextTwelveOne_1,
+    // 2
     this.elmTextTwelveTwo_1,
+    // 3
     this.elmTextTwelveThree_1,
     this.ayahHadithTwelveThree_1,
     this.elmTextTwelveThree_2,
     this.ayahHadithTwelveThree_2,
     this.elmTextTwelveThree_3,
+    // 4
     this.ayahHadithTwelveFour_1,
     this.elmTextTwelveFour_1,
     this.ayahHadithTwelveFour_2,
     this.elmTextTwelveFour_2,
+    // 5
     this.titleTwelveFive_1,
     this.elmTextTwelveFive_1,
     this.ayahHadithTwelveFive_2,
     this.elmTextTwelveFive_3,
     this.ayahHadithTwelveFive_3,
     this.footerTwelveFive,
+    // 6
     this.elmTextTwelveSix_1,
     this.ayahHadithTwelveSix_1,
     this.elmTextTwelveSix_2,
     this.ayahHadithTwelveSix_2,
     this.foooterTwelveSix,
+    // 7
     this.elmTextTwelveSeven_1,
     this.ayahHadithTwelveSeven_1,
     this.foooterTwelveSeven,
@@ -1293,24 +1402,30 @@ class ElmModel {
     this.ayahHadithTwelveEight_1,
     // 9
     this.elmTextTwelveNine_1,
+    // 10
     this.elmTextTwelveTen_1,
+    // 11
     this.elmTextTwelveEleven_1,
     this.ayahHadithTwelveEleven_1,
+    // 12
     this.elmTextTwelveTwelve_1,
     this.ayahHadithTwelveTherteen_1,
     this.elmTextTwelveTherteen_1,
     this.elmTextTwelveTherteen_2,
+    // 14
     this.titleTwelveFourteen,
     this.ayahHadithTwelveFourteen_1,
     this.elmTextTwelveFourteen_1,
     this.ayahHadithTwelveFourteen_2,
     this.footerTwelveFourteen,
+    // 15
     this.elmTextTwelveFifteen_1,
     this.ayahHadithTwelveFifteen_1,
     this.elmTextTwelveFifteen_2,
     this.ayahHadithTwelveFifteen_2,
     this.elmTextTwelveFifteen_3,
     this.footerTwelveFifteen,
+    // 17
     this.titleTwelveSixteen,
     this.ayahHadithTwelveSixteen_1,
     this.elmTextTwelveSixteen_1,
@@ -1320,14 +1435,16 @@ class ElmModel {
     this.ayahHadithTwelveSixteen_4,
     this.elmTextTwelveSixteen_3,
     this.footerTwelveSixteen,
+    // 17
     this.titleTwelveSeventeen,
-    this.ayahHadithTwelveEighteen_1,
     this.elmTwelveSeventeen_1,
     this.ayahHadithTwelveSeventeen_1,
     this.elmTwelveSeventeen_2,
     this.ayahHadithTwelveSeventeen_2,
     this.elmTwelveSeventeen_3,
     this.ayahHadithTwelveSeventeen_3,
+    // 18
+    this.ayahHadithTwelveEighteen_1,
     this.elmTwelveEighteen_1,
     this.elmTextTwelveEighteen_3,
     this.elmTextTwelveEighteen_2,
@@ -1340,18 +1457,21 @@ class ElmModel {
     this.elmTextTherteenOne_2,
     this.ayahHadithTherteenOne_3,
     this.elmTextTherteenOne_3,
+    // 2
     this.footerTherteen,
     this.elmTextTherteenTwo_1,
     this.ayahHadithTherteenTwo_1,
     this.elmTextTherteenTwo_2,
     this.ayahHadithTherteenTwo_2,
     this.elmTextTherteenTwo_3,
+    // 3
     this.ayahHadithTherteenThree_1,
     this.elmTextTherteenThree_2,
     this.ayahHadithTherteenThree_2,
     this.elmTextTherteenThree_3,
     this.ayahHadithTherteenThree_3,
     this.elmTextTherteenThree_4,
+    // 4
     this.elmTextTherteenFour_1,
     this.ayahHadithTherteenFour_1,
     this.elmTextTherteenFour_2,
@@ -1359,6 +1479,7 @@ class ElmModel {
     this.elmTextTherteenFour_3,
     this.ayahHadithTherteenFour_3,
     this.elmTextTherteenFour_4,
+    // 5
     this.elmTextTherteenFive_1,
     this.ayahHadithTherteenFive_1,
     this.elmTextTherteenFive_2,
@@ -1367,6 +1488,7 @@ class ElmModel {
     this.ayahHadithTherteenFive_3,
     this.elmTextTherteenFive_4,
     this.ayahHadithTherteenFive_4,
+    // 6
     this.elmTextTherteenSix_1,
     this.ayahHadithTherteenSix_1,
     this.elmTextTherteenSix_2,
@@ -1374,46 +1496,58 @@ class ElmModel {
     this.elmTextTherteenSix_3,
     this.ayahHadithTherteenSix_3,
     this.elmTextTherteenSix_4,
+    // 7
     this.elmTextTherteenSeven_1,
     this.ayahHadithTherteenSeven_1,
     this.ayahHadithTherteenSeven_2,
     this.elmTextTherteenSeven_2,
     this.footerTherteenSeven,
+    // 8
     this.ayahHadithTherteenEight_1,
     this.elmTextTherteenEight_1,
     this.ayahHadithTherteenEight_2,
     this.footerTherteenEight,
+    // 9
     this.elmTextTherteenNine_1,
+    // 10
     this.elmTextTherteenTen_1,
     this.ayahHadithTherteenTen_1,
     this.elmTextTherteenTen_2,
     this.ayahHadithTherteenTen_2,
     this.elmTextTherteenTen_3,
+    // 11
     this.elmTextTherteenEleven_1,
+    // 12
     this.titleTherteenTwelve_1,
     this.elmTextTherteenTwelve_1,
     this.ayahHadithTherteenTwelve_1,
     this.elmTextTherteenTwelve_2,
     this.ayahHadithTherteenTwelve_2,
+    // 13
     this.elmTextTherteenTherteen_1,
 
     // khatira 14
     this.titleFourteenOne,
     this.elmTextFourteenOne_1,
+    // 2
     this.elmTextFourteenTwo_1,
     this.ayahHadithFourteenTwo_1,
     this.elmTextFourteenTwo_2,
+    // 3
     this.subtitleFourteenThree_1,
     this.ayahHadithFourteenThree_1,
     this.elmTextFourteenThree_1,
     this.ayahHadithFourteenThree_2,
     this.elmTextFourteenThree_2,
+    // 4
     this.elmTextFourteenFour_1,
     this.ayahHadithFourteenFour_1,
     this.elmTextFourteenFour_2,
     this.ayahHadithFourteenFour_2,
+    // 5
     this.elmTextFourteenFive_1,
     this.ayahHadithFourteenFive_1,
+    // 6
     this.elmTextFourteenSix_1,
     this.ayahHadithFourteenSix_2,
     this.elmTextFourteenSix_2,
@@ -1432,12 +1566,15 @@ class ElmModel {
     this.elmTextFourteenSeven_3,
     this.ayahHadithFourteenSeven_3,
     this.elmTextFourteenSeven_4,
+    // 8
     this.elmTextFourteenEight_1,
     this.ayahHadithFourteenEight_1,
     this.elmTextFourteenEight_2,
+    // 9
     this.titleFourteenNine_1,
     this.ayahHadithFourteenNine_1,
     this.elmTextFourteenNine_2,
+    // 10
     this.ayahHadithFourteenTen_1,
     this.elmTextFourteenTen_1,
     this.ayahHadithFourteenTen_2,
@@ -1446,60 +1583,84 @@ class ElmModel {
     this.elmTextFourteenTen_3,
     this.ayahHadithFourteenTen_4,
     this.elmTextFourteenTen_4,
+    // 11
     this.ayahHadithFourteenEleven_1,
     this.elmTextFourteenEleven_1,
+    // 12
     this.titleFourteenTwelve_1,
     this.elmTextFourteenTwelve_1,
+    // 13
     this.elmTextFourteenTherteen_1,
+    // 14
     this.ayahHadithFourteenFourteen_1,
     this.elmTextFourteenFourteen_1,
+    // 15
     this.ayahHadithFourteenFifteen_1,
     this.elmTextFourteenFifteen_1,
     this.ayahHadithFourteenFifteen_2,
     this.elmTextFourteenFifteen_2,
+    // 16
     this.ayahHadithFourteenSixteen_1,
     this.elmTextFourteenSixteen_1,
+
     // Khatira 15
+    // 1
     this.titleFifteenOne,
     this.ayahHadithFifteenOne_1,
     this.elmTextFifteenOne_1,
+    // 2
     this.elmTextFifteenTwo_1,
     this.ayahHadithFifteenTwo_1,
     this.footerFifteenTwo,
+    // 3
     this.elmTextFifteenThree_1,
     this.ayahHadithFifteenThree_1,
     this.elmTextFifteenThree_2,
+    // 4
     this.ayahHadithFifteenFour_1,
     this.elmTextFifteenFour_1,
     this.ayahHadithFifteenFour_2,
+    // 5
     this.elmTextFifteenFive_1,
     this.ayahHadithFifteenFive_1,
+    // 6
     this.elmTextFifteenSix_1,
     this.ayahHadithFifteenSix_1,
     this.footerFifteenSix,
+    // 7
     this.elmTextFifteenSeven_1,
+    // 8
     this.elmTextFifteenEight_1,
     this.ayahHadithFifteenEight_1,
     this.elmTextFifteenEight_2,
+    // 9
     this.elmTextFifteenNine_1,
+    // 10
     this.ayahHadithFifteenTen_1,
     this.elmTextFifteenTen_1,
+    // 11
     this.elmTextFifteenEleven_1,
     this.ayahHadithFifteenEleven_1,
+    // 12
     this.elmTextFifteenTwelve_1,
+    // 13
     this.elmTextFifteenTherteen_1,
+    // 14
     this.ayahHadithFifteenFourteen_1,
     this.elmTextFifteenFourteen_1,
-    this.ayahHadithFifteenFifteen_1,
+    // 15
     this.elmTextFifteenFifteen_1,
+    this.ayahHadithFifteenFifteen_1,
     this.ayahHadithFifteenFifteen_2,
     this.elmTextFifteenFifteen_2,
+    // 16
     this.ayahHadithFifteenSixteen_1,
     this.elmtTextFifteenSixteen_2,
     this.ayahHadithFifteenSixteen_2,
     this.elmtTextFifteenSixteen_3,
     this.ayahHadithFifteenSixteen_3,
     this.elmtTextFifteenSixteen_4,
+    // 17
     this.ayahHadithFifteenSeventeen_1,
     this.elmTextFifteenSeventeen_1,
 
