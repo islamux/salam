@@ -71,8 +71,8 @@ class CustomTextSliderElm17 extends StatelessWidget {
                                   ),
                                   children: [
                                     //  page 1 , page 2 , page 3
-                                    //...getPageOneTexts(i),
-                                    //...getPageTwoTexts(i),
+                                    ...getPageOneTexts(i),
+                                    ...getPageTwoTexts(i),
                                     ...getPageThreeTexts(i),
                                     ...getPageFourTexts(i),
                                     ...getPageFiveTexts(i),
