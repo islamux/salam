@@ -4,7 +4,7 @@ import 'package:elm/function/remove_search_diacritics.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'custom_search_result.dart';
+import 'custom_search_result.dart.txt';
 
 class DataSearch extends SearchDelegate {
   final List<ElmModel> elm = [

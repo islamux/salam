@@ -8,7 +8,6 @@ import 'package:get/get.dart';
 
 import '../../function/share_app.dart';
 import '../widget/custom_botton.dart';
-import '../widget/home/search/custom_data_search.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -39,7 +38,7 @@ class Home extends StatelessWidget {
             actions: [
               IconButton(
                 onPressed: () {
-                  showSearch(context: context, delegate: DataSearch());
+                  //     showSearch(context: context, delegate: ());  // disabele it until fix it later
                 },
                 icon: const Icon(Icons.search),
               ),

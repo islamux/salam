@@ -1,4 +1,3 @@
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +9,7 @@ abstract class Elm5Controller extends GetxController {
   void decreaseFontSize();
   void resetCounter();
   void onPageChanged(int index);
-  String getShareText(int index);
+//  String getShareText(int index);
   void increamentPageController();
   void goToPage(int pageIndex); // for slider()
 }
@@ -55,10 +54,10 @@ class Elm5ControllerImp extends Elm5Controller {
     resetCounter();
   }
 
-  @override
-  String getShareText(int index) {
-    return elmList5[index].elmText ?? '';
-  }
+  // @override
+  // String getShareText(int index) {
+  //   return elmList5[index].elmText ?? '';
+  // }
 
   @override
   void increamentPageController() {
