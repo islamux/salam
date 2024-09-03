@@ -154,11 +154,11 @@ List<ElmModel> elmList = [
 List<ElmModel> elmList2 = [
   // 1
   ElmModel(
-    titleTwoOne: ElmTextDersTwo.titleTwoOne,
-    ayahHadithTwoOne_1: ElmTextDersTwo.ayahHadithTwoOne_1,
-    elmTextTwoOne_1: ElmTextDersTwo.elmTextTwoOne_1,
-    ayahHadithTwoOne_2: ElmTextDersTwo.ayahHadithTwoOne_2,
-  ),
+      titleTwoOne: ElmTextDersTwo.titleTwoOne,
+      ayahHadithTwoOne_1: ElmTextDersTwo.ayahHadithTwoOne_1,
+      elmTextTwoOne_1: ElmTextDersTwo.elmTextTwoOne_1,
+      ayahHadithTwoOne_2: ElmTextDersTwo.ayahHadithTwoOne_2,
+      elmTextTwoOne_2: ElmTextDersTwo.elmTextTwoOne_2),
   // 2
   ElmModel(
     ayahHadithTwoTwo_1: ElmTextDersTwo.ayahHadithTwoTwo_1,
@@ -266,9 +266,13 @@ List<ElmModel> elmList4 = [
     elmTextFourTwo_1: ElmTextDersFour.elmTextFourTwo_1,
   ),
   // page 3
-  ElmModel(elmTextFourThree_1: ElmTextDersFour.elmTextFourThree_1),
+  ElmModel(
+    elmTextFourThree_1: ElmTextDersFour.elmTextFourThree_1,
+  ),
   // page 4
-  ElmModel(elmTextFourFour_1: ElmTextDersFour.elmTextFourFour_1),
+  ElmModel(
+    elmTextFourFour_1: ElmTextDersFour.elmTextFourFour_1,
+  ),
   // page 5
   ElmModel(
       elmTextFourFive_1: ElmTextDersFour.elmTextFourFive_1,
@@ -279,7 +283,9 @@ List<ElmModel> elmList4 = [
       subtitleFourSix_1: ElmTextDersFour.subtitleFourSix_1,
       elmTextFourSix_1: ElmTextDersFour.elmTextFourSix_1),
   // page 7
-  ElmModel(elmTextFourSeven_1: ElmTextDersFour.elmTextFourSeven_1),
+  ElmModel(
+    elmTextFourSeven_1: ElmTextDersFour.elmTextFourSeven_1,
+  ),
   // page 8
   ElmModel(
       elmTextFourEight_1: ElmTextDersFour.elmTextFourEight_1,
