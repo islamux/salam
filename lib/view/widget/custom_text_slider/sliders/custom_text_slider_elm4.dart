@@ -2,9 +2,11 @@ import 'package:elm/controller/elm4_controller.dart';
 import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_seven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_eight_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_nine_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_ten_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_five_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_four_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_one_texts.dart';
@@ -75,7 +77,8 @@ class CustomTextSliderElm4 extends StatelessWidget {
                                     ...getPageSixTexts(i),
                                     ...getPageSevenTexts(i),
                                     ...getPageEightTexts(i),
-                                    ...getPageNineTexts(i)
+                                    ...getPageNineTexts(i),
+                                    ...getPageTenTexts(i)
                                   ],
                                 ),
                                 textAlign: TextAlign.right,

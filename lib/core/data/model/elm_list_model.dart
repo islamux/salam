@@ -290,7 +290,9 @@ List<ElmModel> elmList4 = [
       elmTextFourNine_1: ElmTextDersFour.elmTextFourNine_1,
       ayahHadithFourNine_1: ElmTextDersFour.ayahHadithFourNine_1),
   // page 10
-  ElmModel(ayahHadithFourTen_1: ElmTextDersFour.ayahHadithFourTen_1),
+  ElmModel(
+      elmTextFourTen_1: ElmTextDersFour.elmTextFourTen_1,
+      ayahHadithFourTen_1: ElmTextDersFour.ayahHadithFourTen_1),
 ];
 
 // TextDersFive
