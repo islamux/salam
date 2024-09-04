@@ -4,88 +4,97 @@ class ElmModel {
   // make code more clean with titles.1, subtitles.1, elmText.pageOne.1, footers.1
   // --- pages.page1.titles.1, pages.page1.subtitles.1, pages.page1.ayahHadiths.1, pages.footers.1
 
-  // pre
-  final String? titlePreOne;
-  final String? ayahHadithPreOne;
-  final String? elmTextPreOne;
+  // model under testing for pre page
+  // Content of every page
+  final String? title;
+  final String? subtitle;
+  final String? subtitle2;
+  final String? subtitle3;
+  final String? text;
+  final String? text2;
+  final String? text3;
+  final String? ayah;
+  final String? ayah2;
+  final String? ayah3;
+  final String? footer;
 
-  // Khatira 1
-  // -- 1
-  final String? titleOneOne;
-  final String? elmTextOneOne_1;
-  final String? elmTextOneOne_2;
-  final String? elmTextOneOne_3;
-  // -- 2
-  final String? ayahHadithOneTwo_1;
-  final String? elmTextOneTwo_1;
-  // -- 3
-  final String? ayahHadithOneThree_1;
-  final String? elmTextOneThree_1;
-  final String? ayahHadithOneThree_2;
-  // -- 4
-  final String? elmTextOneFour_1;
-  final String? elmTextOneFour_2;
-  final String? ayahHadithOneFour_3;
-  // -- 5
-  final String? elmTextOneFive_1;
-  final String? ayahHadithOneFive_1;
-  final String? elmTextOneFive_2;
-  final String? ayahHadithOneFive_2;
-  // -- 6
-  final String? ayahHadithOneSix_1;
-  final String? footerOneSix;
-  // -- 7
-  final String? elmTextOneSeven_1;
-  final String? ayahHadithOneSeven_1;
-  final String? elmTextOneSeven_2;
-  // -- 8
-  final String? elmTextOneEight_1;
-  final String? ayahHadithOneEight_1;
-  final String? elmTextOneEight_2;
-  // -- 9
-  final String? elmTextOneNine_1;
-  final String? ayahHadithOneNine_1;
-  final String? elmTextOneNine_2;
-  // -- 10
-  final String? elmTextOneTen_1;
-  final String? ayahHadithOneTen_1;
-  final String? footerOneTen;
-  // -- 11
-  final String? elmTextOneEleven_1;
-  final String? ayahHadithOneEleven_1;
-  // -- 12
-  final String? elmTextOneTwelve_1;
-  final String? ayahHadithOneTwelve_1;
-  final String? elmTextOneTwelve_2;
-  final String? ayahHadithOneTwelve_2;
-  //-- 13
-  final String? titleOneTherteen;
-  final String? elmTextOneTherteen_1;
-  final String? ayahHadithOneTherteen_1;
-  // -- 14
-  final String? elmTextOneFourteen_1;
-  final String? elmTextOneFourteen_2;
-  final String? footerOneFourteen;
-  // -- 15
-  final String? elmTextOneFifteen_1;
-  final String? elmTextOneFifteen_2;
-  // -- 16
-  final String? elmTextOneSixteen_1;
-  final String? footerOneSixteen;
-  // -- 17
-  final String? elmTextOneSeventeen_1;
-  final String? ayahHadithOneSeventeen_1;
-  // -- 18
-  final String? elmTextOneEighteen_1;
-  final String? ayahHadithOneEighteen_1;
-  final String? elmTextOneEighteen_2;
-  final String? ayahHadithOneEighteen_2;
-  final String? elmTextOneEighteen_3;
-  // -- 19
-  final String? elmTextOneNinteen_1;
-  // -- 20
-  final String? subtitleOneTwenty;
-  final String? elmTextOneTwenty_1;
+  // // Khatira 1
+  // // -- 1
+  // final String? titleOneOne;
+  // final String? elmTextOneOne_1;
+  // final String? elmTextOneOne_2;
+  // final String? elmTextOneOne_3;
+  // // -- 2
+  // final String? ayahHadithOneTwo_1;
+  // final String? elmTextOneTwo_1;
+  // // -- 3
+  // final String? ayahHadithOneThree_1;
+  // final String? elmTextOneThree_1;
+  // final String? ayahHadithOneThree_2;
+  // // -- 4
+  // final String? elmTextOneFour_1;
+  // final String? elmTextOneFour_2;
+  // final String? ayahHadithOneFour_3;
+  // // -- 5
+  // final String? elmTextOneFive_1;
+  // final String? ayahHadithOneFive_1;
+  // final String? elmTextOneFive_2;
+  // final String? ayahHadithOneFive_2;
+  // // -- 6
+  // final String? ayahHadithOneSix_1;
+  // final String? footerOneSix;
+  // // -- 7
+  // final String? elmTextOneSeven_1;
+  // final String? ayahHadithOneSeven_1;
+  // final String? elmTextOneSeven_2;
+  // // -- 8
+  // final String? elmTextOneEight_1;
+  // final String? ayahHadithOneEight_1;
+  // final String? elmTextOneEight_2;
+  // // -- 9
+  // final String? elmTextOneNine_1;
+  // final String? ayahHadithOneNine_1;
+  // final String? elmTextOneNine_2;
+  // // -- 10
+  // final String? elmTextOneTen_1;
+  // final String? ayahHadithOneTen_1;
+  // final String? footerOneTen;
+  // // -- 11
+  // final String? elmTextOneEleven_1;
+  // final String? ayahHadithOneEleven_1;
+  // // -- 12
+  // final String? elmTextOneTwelve_1;
+  // final String? ayahHadithOneTwelve_1;
+  // final String? elmTextOneTwelve_2;
+  // final String? ayahHadithOneTwelve_2;
+  // //-- 13
+  // final String? titleOneTherteen;
+  // final String? elmTextOneTherteen_1;
+  // final String? ayahHadithOneTherteen_1;
+  // // -- 14
+  // final String? elmTextOneFourteen_1;
+  // final String? elmTextOneFourteen_2;
+  // final String? footerOneFourteen;
+  // // -- 15
+  // final String? elmTextOneFifteen_1;
+  // final String? elmTextOneFifteen_2;
+  // // -- 16
+  // final String? elmTextOneSixteen_1;
+  // final String? footerOneSixteen;
+  // // -- 17
+  // final String? elmTextOneSeventeen_1;
+  // final String? ayahHadithOneSeventeen_1;
+  // // -- 18
+  // final String? elmTextOneEighteen_1;
+  // final String? ayahHadithOneEighteen_1;
+  // final String? elmTextOneEighteen_2;
+  // final String? ayahHadithOneEighteen_2;
+  // final String? elmTextOneEighteen_3;
+  // // -- 19
+  // final String? elmTextOneNinteen_1;
+  // // -- 20
+  // final String? subtitleOneTwenty;
+  // final String? elmTextOneTwenty_1;
 
   // Khatira 2
   final String? titleTwoOne;
@@ -136,20 +145,20 @@ class ElmModel {
   final String? elmTextTwoTherteen_1;
 
   // khatira 3
-  final String? titleThreeOne;
-  final String? ayahHadithThreeOne_1;
-  final String? ayahHadithThreeOne_2;
-  final String? elmTextThreeOne_1;
-  final String? elmTextThreeOne_2;
+  // final String? titleThreeOne;
+  // final String? ayahHadithThreeOne_1;
+  // final String? ayahHadithThreeOne_2;
+  // final String? elmTextThreeOne_1;
+  // final String? elmTextThreeOne_2;
   //---2 ---/
-  final String? elmTextThreeTwo_1;
-  final String? elmTextThreeTwo_2;
-  final String? ayahHadithThreeTwo_1;
-  final String? elmTextThreeTwo_3;
-  //---3---/
-  final String? ayahHadithThreeThree_1;
-  final String? elmTextThreeThree_1;
-  final String? elmTextThreeThree_2;
+  // final String? elmTextThreeTwo_1;
+  // final String? elmTextThreeTwo_2;
+  // final String? ayahHadithThreeTwo_1;
+  // final String? elmTextThreeTwo_3;
+  // //---3---/
+  // final String? ayahHadithThreeThree_1;
+  // final String? elmTextThreeThree_1;
+  // final String? elmTextThreeThree_2;
 
   // khatira 4
   // -- 1
@@ -286,36 +295,36 @@ class ElmModel {
 
   // khatira 8
   //---- 1 ---/
-  final String? titleEightOne;
-  final String? elmTextEightOne_2;
-  final String? ayahHadithEightOne_1;
-  final String? elmTextEight_1;
-  final String? elmTextEightOne_1;
-  //--- 2 ---/
-  final String? ayahHadithEightTwo_1;
-  final String? elmTextEightTwo_2;
-  final String? elmTextEightTwo_1;
-  //-- 4 ---/
-  final String? ayahHadithEightFour_1;
-  final String? elmTextEightFour_1;
-  final String? ayahHadithEightFour_2;
-  // -- 3 --/
-  final String? ayahHadithEightThree_1;
-  final String? elmTextEightThree_1;
-  final String? elmTextEight_3;
-  // -- 6 -- /
-  final String? elmTextEightSix_1;
-  final String? elmTextEightSix_2;
-  final String? subtitleEightSix_1;
-  final String? subtitleEightSix_2;
-  // --- 7 -- /
-  final String? elmTextEightSeven_1;
-  final String? footerEightSeven_1;
-  final String? elmTextEightSeven_2;
-  // --- 5 -- /
-  final String? ayahHadithEightFive_1;
-  final String? elmTextEightFive_1;
-  final String? elmTextEightFive_2;
+  // final String? titleEightOne;
+  // final String? elmTextEightOne_2;
+  // final String? ayahHadithEightOne_1;
+  // final String? elmTextEight_1;
+  // final String? elmTextEightOne_1;
+  // //--- 2 ---/
+  // final String? ayahHadithEightTwo_1;
+  // final String? elmTextEightTwo_2;
+  // final String? elmTextEightTwo_1;
+  // //-- 4 ---/
+  // final String? ayahHadithEightFour_1;
+  // final String? elmTextEightFour_1;
+  // final String? ayahHadithEightFour_2;
+  // // -- 3 --/
+  // final String? ayahHadithEightThree_1;
+  // final String? elmTextEightThree_1;
+  // final String? elmTextEight_3;
+  // // -- 6 -- /
+  // final String? elmTextEightSix_1;
+  // final String? elmTextEightSix_2;
+  // final String? subtitleEightSix_1;
+  // final String? subtitleEightSix_2;
+  // // --- 7 -- /
+  // final String? elmTextEightSeven_1;
+  // final String? footerEightSeven_1;
+  // final String? elmTextEightSeven_2;
+  // // --- 5 -- /
+  // final String? ayahHadithEightFive_1;
+  // final String? elmTextEightFive_1;
+  // final String? elmTextEightFive_2;
 
   // khatira 9
   // -- 1
@@ -889,87 +898,100 @@ class ElmModel {
   // Constructor (named to make allow rearange them like i want)
   ElmModel({
     //this.elmText, // to make app run without errors , to remove after finish all refactor
-    // khatira pre
-    this.titlePreOne,
-    this.ayahHadithPreOne,
-    this.elmTextPreOne,
-    this.titleOneOne,
+    // model under testing
+    this.title,
+    this.subtitle,
+    this.subtitle2,
+    this.subtitle3,
+    this.text,
+    this.text2,
+    this.text3,
+    this.ayah,
+    this.ayah2,
+    this.ayah3,
+    this.footer,
+//-------------------------//
+    // // khatira pre
+    // this.titlePreOne,
+    // this.ayahHadithPreOne,
+    // this.elmTextPreOne,
+    // this.titleOneOne,
     // Khatira One
     // -- 1
-    this.elmTextOneOne_1,
-    this.elmTextOneOne_2,
-    this.elmTextOneOne_3,
-    // -- 2
-    this.ayahHadithOneTwo_1,
-    this.elmTextOneTwo_1,
-    // --3
-    this.ayahHadithOneThree_1,
-    this.elmTextOneThree_1,
-    this.ayahHadithOneThree_2,
-    // -- 4
-    this.elmTextOneFour_1,
-    this.elmTextOneFour_2,
-    this.ayahHadithOneFour_3,
-    // -- 5
-    this.elmTextOneFive_1,
-    this.ayahHadithOneFive_1,
-    this.elmTextOneFive_2,
-    this.ayahHadithOneFive_2,
-    // -- 6
-    this.ayahHadithOneSix_1,
-    this.footerOneSix,
-    // -- 7
-    this.elmTextOneSeven_1,
-    this.ayahHadithOneSeven_1,
-    this.elmTextOneSeven_2,
-    // -- 8
-    this.elmTextOneEight_1,
-    this.ayahHadithOneEight_1,
-    this.elmTextOneEight_2,
-    // -- 9
-    this.elmTextOneNine_1,
-    this.ayahHadithOneNine_1,
-    this.elmTextOneNine_2,
-    // -- 10
-    this.elmTextOneTen_1,
-    this.ayahHadithOneTen_1,
-    this.footerOneTen,
-    // -- 11
-    this.elmTextOneEleven_1,
-    this.ayahHadithOneEleven_1,
-    // -- 12
-    this.elmTextOneTwelve_1,
-    this.ayahHadithOneTwelve_1,
-    this.elmTextOneTwelve_2,
-    this.ayahHadithOneTwelve_2,
-    // -- 13
-    this.titleOneTherteen,
-    this.elmTextOneTherteen_1,
-    this.ayahHadithOneTherteen_1,
-    // -- 14
-    this.elmTextOneFourteen_1,
-    this.elmTextOneFourteen_2,
-    this.footerOneFourteen,
-    // -- 15
-    this.elmTextOneFifteen_1,
-    this.elmTextOneFifteen_2,
-    // -- 16
-    this.elmTextOneSixteen_1,
-    this.footerOneSixteen,
-    // -- 17
-    this.elmTextOneSeventeen_1,
-    this.ayahHadithOneSeventeen_1,
-    // -- 18
-    this.elmTextOneEighteen_1,
-    this.ayahHadithOneEighteen_1,
-    this.elmTextOneEighteen_2,
-    this.ayahHadithOneEighteen_2,
-    this.elmTextOneEighteen_3,
-    // -- 19
-    this.elmTextOneNinteen_1,
-    // -- 20
-    this.subtitleOneTwenty,
-    this.elmTextOneTwenty_1,
+    // this.elmTextOneOne_1,
+    // this.elmTextOneOne_2,
+    // this.elmTextOneOne_3,
+    // // -- 2
+    // this.ayahHadithOneTwo_1,
+    // this.elmTextOneTwo_1,
+    // // --3
+    // this.ayahHadithOneThree_1,
+    // this.elmTextOneThree_1,
+    // this.ayahHadithOneThree_2,
+    // // -- 4
+    // this.elmTextOneFour_1,
+    // this.elmTextOneFour_2,
+    // this.ayahHadithOneFour_3,
+    // // -- 5
+    // this.elmTextOneFive_1,
+    // this.ayahHadithOneFive_1,
+    // this.elmTextOneFive_2,
+    // this.ayahHadithOneFive_2,
+    // // -- 6
+    // this.ayahHadithOneSix_1,
+    // this.footerOneSix,
+    // // -- 7
+    // this.elmTextOneSeven_1,
+    // this.ayahHadithOneSeven_1,
+    // this.elmTextOneSeven_2,
+    // // -- 8
+    // this.elmTextOneEight_1,
+    // this.ayahHadithOneEight_1,
+    // this.elmTextOneEight_2,
+    // // -- 9
+    // this.elmTextOneNine_1,
+    // this.ayahHadithOneNine_1,
+    // this.elmTextOneNine_2,
+    // // -- 10
+    // this.elmTextOneTen_1,
+    // this.ayahHadithOneTen_1,
+    // this.footerOneTen,
+    // // -- 11
+    // this.elmTextOneEleven_1,
+    // this.ayahHadithOneEleven_1,
+    // // -- 12
+    // this.elmTextOneTwelve_1,
+    // this.ayahHadithOneTwelve_1,
+    // this.elmTextOneTwelve_2,
+    // this.ayahHadithOneTwelve_2,
+    // // -- 13
+    // this.titleOneTherteen,
+    // this.elmTextOneTherteen_1,
+    // this.ayahHadithOneTherteen_1,
+    // // -- 14
+    // this.elmTextOneFourteen_1,
+    // this.elmTextOneFourteen_2,
+    // this.footerOneFourteen,
+    // // -- 15
+    // this.elmTextOneFifteen_1,
+    // this.elmTextOneFifteen_2,
+    // // -- 16
+    // this.elmTextOneSixteen_1,
+    // this.footerOneSixteen,
+    // // -- 17
+    // this.elmTextOneSeventeen_1,
+    // this.ayahHadithOneSeventeen_1,
+    // // -- 18
+    // this.elmTextOneEighteen_1,
+    // this.ayahHadithOneEighteen_1,
+    // this.elmTextOneEighteen_2,
+    // this.ayahHadithOneEighteen_2,
+    // this.elmTextOneEighteen_3,
+    // // -- 19
+    // this.elmTextOneNinteen_1,
+    // // -- 20
+    // this.subtitleOneTwenty,
+    // this.elmTextOneTwenty_1,
 
     // khatira 2
     // 1
@@ -1022,20 +1044,20 @@ class ElmModel {
 
     // // khatira 3
     // -- 1 --
-    this.titleThreeOne,
-    this.elmTextThreeOne_2,
-    this.elmTextThreeOne_1,
-    this.ayahHadithThreeOne_1,
-    this.ayahHadithThreeOne_2,
+    // this.titleThreeOne,
+    // this.elmTextThreeOne_2,
+    // this.elmTextThreeOne_1,
+    // this.ayahHadithThreeOne_1,
+    // this.ayahHadithThreeOne_2,
     //-- 2 --
-    this.elmTextThreeTwo_1,
-    this.elmTextThreeTwo_2,
-    this.elmTextThreeTwo_3,
-    this.ayahHadithThreeTwo_1,
-    //-- 3
-    this.elmTextThreeThree_1,
-    this.ayahHadithThreeThree_1,
-    this.elmTextThreeThree_2,
+    // this.elmTextThreeTwo_1,
+    // this.elmTextThreeTwo_2,
+    // this.elmTextThreeTwo_3,
+    // this.ayahHadithThreeTwo_1,
+    // //-- 3
+    // this.elmTextThreeThree_1,
+    // this.ayahHadithThreeThree_1,
+    // this.elmTextThreeThree_2,
 
     // khatira 4
     this.titleFourOne,
@@ -1173,37 +1195,37 @@ class ElmModel {
 
     // khatira 8
     // 1
-    this.elmTextEightOne_1,
-    this.titleEightOne,
-    this.ayahHadithEightOne_1,
-    this.elmTextEightOne_2,
-    // 2
-    this.elmTextEightTwo_1,
-    this.ayahHadithEightTwo_1,
-    this.elmTextEightTwo_2,
-    // 3
-    this.ayahHadithEightThree_1,
-    this.elmTextEightThree_1,
-    // 4
-    this.ayahHadithEightFour_1,
-    this.ayahHadithEightFour_2,
-    this.elmTextEightFour_1,
-    // 5
-    this.elmTextEightFive_1,
-    this.elmTextEightFive_2,
-    this.ayahHadithEightFive_1,
-    // 6
-    this.elmTextEightSix_1,
-    this.elmTextEightSix_2,
-    this.subtitleEightSix_1,
-    this.subtitleEightSix_2,
-    // 7
-    this.elmTextEightSeven_1,
-    this.elmTextEightSeven_2,
-    this.footerEightSeven_1,
-    // 8
-    this.elmTextEight_1,
-    this.elmTextEight_3,
+    // this.elmTextEightOne_1,
+    // this.titleEightOne,
+    // this.ayahHadithEightOne_1,
+    // this.elmTextEightOne_2,
+    // // 2
+    // this.elmTextEightTwo_1,
+    // this.ayahHadithEightTwo_1,
+    // this.elmTextEightTwo_2,
+    // // 3
+    // this.ayahHadithEightThree_1,
+    // this.elmTextEightThree_1,
+    // // 4
+    // this.ayahHadithEightFour_1,
+    // this.ayahHadithEightFour_2,
+    // this.elmTextEightFour_1,
+    // // 5
+    // this.elmTextEightFive_1,
+    // this.elmTextEightFive_2,
+    // this.ayahHadithEightFive_1,
+    // // 6
+    // this.elmTextEightSix_1,
+    // this.elmTextEightSix_2,
+    // this.subtitleEightSix_1,
+    // this.subtitleEightSix_2,
+    // // 7
+    // this.elmTextEightSeven_1,
+    // this.elmTextEightSeven_2,
+    // this.footerEightSeven_1,
+    // // 8
+    // this.elmTextEight_1,
+    // this.elmTextEight_3,
 
     // khatira 9
     // 1

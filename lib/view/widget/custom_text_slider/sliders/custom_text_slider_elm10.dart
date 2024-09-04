@@ -1,4 +1,5 @@
 import 'package:elm/controller/elm10_controller.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_10.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_five_texts.dart';
