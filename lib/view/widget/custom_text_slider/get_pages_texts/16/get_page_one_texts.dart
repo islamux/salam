@@ -3,6 +3,9 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageOneTexts(int i) {
+  TextStyle ayah = AppTheme.customTextStyleHadith();
+  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle footer = AppTheme.customTextStyleFooter();
   return [
     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
     TextSpan(

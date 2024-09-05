@@ -8,9 +8,9 @@ List<TextSpan> getPageElevenTexts(int i) {
   TextStyle footer = AppTheme.customTextStyleFooter();
 
   return [
-    TextSpan(text: elmList11[i].elmTextSevenEleven_1),
-    TextSpan(text: elmList11[i].ayahHadithElevenEleven_2, style: ayah),
-    TextSpan(text: elmList11[i].elmTextElevenEleven_3),
-    TextSpan(text: elmList11[i].footerElevenEleven, style: footer),
+    TextSpan(text: elmList11[i].text),
+    TextSpan(text: elmList11[i].ayah, style: ayah),
+    TextSpan(text: elmList11[i].text),
+    TextSpan(text: elmList11[i].footer, style: footer),
   ];
 }

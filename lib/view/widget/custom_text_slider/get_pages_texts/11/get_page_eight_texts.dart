@@ -7,6 +7,6 @@ List<TextSpan> getPageEightTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
 
   return [
-    TextSpan(text: elmList11[i].ayahHadithElevenEight_1, style: ayah),
+    TextSpan(text: elmList11[i].ayah, style: ayah),
   ];
 }

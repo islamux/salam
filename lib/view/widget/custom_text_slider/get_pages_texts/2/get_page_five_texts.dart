@@ -4,10 +4,11 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageFiveTexts(int i) {
+  TextStyle ayah = AppTheme.customTextStyleHadith();
+  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle footer = AppTheme.customTextStyleFooter();
   return [
-    TextSpan(text: elmList2[i].elmTextTwoFive_1),
-    TextSpan(
-        text: elmList2[i].footerTwoFive,
-        style: AppTheme.customTextStyleFooter()),
+    TextSpan(text: elmList2[i].text),
+    TextSpan(text: elmList2[i].footer, style: footer),
   ];
 }

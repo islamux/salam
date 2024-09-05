@@ -8,8 +8,8 @@ List<TextSpan> getPageSevenTexts(int i) {
   TextStyle footer = AppTheme.customTextStyleFooter();
 
   return [
-    TextSpan(text: elmList12[i].elmTextTwelveSeven_1),
-    TextSpan(text: elmList12[i].ayahHadithTwelveSeven_1, style: ayah),
-    TextSpan(text: elmList12[i].foooterTwelveSeven, style: footer),
+    TextSpan(text: elmList12[i].text),
+    TextSpan(text: elmList12[i].ayah, style: ayah),
+    TextSpan(text: elmList12[i].footer, style: footer),
   ];
 }

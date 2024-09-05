@@ -23,6 +23,14 @@ class AppTheme {
     );
   }
 
+  static TextStyle customTextStyleSubtitle() {
+    return const TextStyle(
+      color: AppColor.subtitle,
+      fontSize: 16,
+      fontWeight: FontWeight.normal,
+    );
+  }
+
   static TextStyle customTextStyleTitle() {
     return const TextStyle(
       color: AppColor.title,

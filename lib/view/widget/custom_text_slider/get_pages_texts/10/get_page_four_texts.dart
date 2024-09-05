@@ -5,11 +5,13 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageFourTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
+  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle footer = AppTheme.customTextStyleFooter();
   return [
-    TextSpan(text: elmList10[i].ayahHadithTenFour_1, style: ayah),
-    TextSpan(text: elmList10[i].elmTextTenFour_1),
-    TextSpan(text: elmList10[i].ayahHadithTenFive_1, style: ayah),
-    TextSpan(text: elmList10[i].elmTextTenFive_1),
-    TextSpan(text: elmList10[i].ayahHadithTenFive_2, style: ayah),
+    TextSpan(text: elmList10[i].ayah, style: ayah),
+    TextSpan(text: elmList10[i].text),
+    TextSpan(text: elmList10[i].ayah2, style: ayah),
+    TextSpan(text: elmList10[i].text2),
+    TextSpan(text: elmList10[i].ayah3, style: ayah),
   ];
 }

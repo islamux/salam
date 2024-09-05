@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageSixTexts(int i) {
   return [
-    TextSpan(text: elmList2[i].elmTextTwoSix_1),
-    TextSpan(text: elmList2[i].elmTextTowSix_2),
+    TextSpan(text: elmList2[i].text),
+    TextSpan(text: elmList2[i].text),
   ];
 }

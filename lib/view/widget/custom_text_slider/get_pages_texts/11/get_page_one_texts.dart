@@ -8,9 +8,9 @@ List<TextSpan> getPageOneTexts(int i) {
   TextStyle title = AppTheme.customTextStyleTitle();
 
   return [
-    TextSpan(text: elmList11[i].titleElevenOne, style: title),
-    TextSpan(text: elmList11[i].elmTextElevenOne_1),
-    TextSpan(text: elmList11[i].ayahHadithElevenOne_1, style: ayah),
-    TextSpan(text: elmList11[i].elmTextElevenOne_2),
+    TextSpan(text: elmList11[i].title, style: title),
+    TextSpan(text: elmList11[i].text),
+    TextSpan(text: elmList11[i].ayah, style: ayah),
+    TextSpan(text: elmList11[i].text2),
   ];
 }

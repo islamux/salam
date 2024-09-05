@@ -7,8 +7,8 @@ List<TextSpan> getPageThreeTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
 
   return [
-    TextSpan(text: elmList11[i].elmTextElevenThree_1),
-    TextSpan(text: elmList11[i].ayahHadithElevenEight_1, style: ayah),
-    TextSpan(text: elmList11[i].elmTextElevenThree_2),
+    TextSpan(text: elmList11[i].text),
+    TextSpan(text: elmList11[i].ayah, style: ayah),
+    TextSpan(text: elmList11[i].text2),
   ];
 }

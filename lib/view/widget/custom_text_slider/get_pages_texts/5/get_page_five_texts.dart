@@ -5,10 +5,8 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageFiveTexts(int i) {
   return [
-    TextSpan(text: elmList5[i].elmTextsFiveFive_1),
-    TextSpan(
-        text: elmList5[i].ayahHadithFiveFive_1,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList5[i].elmTextsFiveFive_2),
+    TextSpan(text: elmList5[i].text),
+    TextSpan(text: elmList5[i].ayah, style: AppTheme.customTextStyleHadith()),
+    TextSpan(text: elmList5[i].text),
   ];
 }

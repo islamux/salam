@@ -4,16 +4,13 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageOneTexts(int i) {
+  TextStyle ayah = AppTheme.customTextStyleHadith();
+  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle footer = AppTheme.customTextStyleFooter();
   return [
-    TextSpan(
-      text: elmList6[i].titleSixOne,
-      style: AppTheme.customTextStyleTitle(),
-    ),
-    TextSpan(text: elmList6[i].elmTextSixOne_1),
-    TextSpan(text: elmList6[i].elmTextSixOne_2),
-    TextSpan(
-      text: elmList6[i].ayhaHadithSixteenOne_1,
-      style: AppTheme.customTextStyleHadith(),
-    ),
+    TextSpan(text: elmList6[i].title, style: title),
+    TextSpan(text: elmList6[i].text),
+    TextSpan(text: elmList6[i].text),
+    TextSpan(text: elmList6[i].ayah, style: ayah),
   ];
 }

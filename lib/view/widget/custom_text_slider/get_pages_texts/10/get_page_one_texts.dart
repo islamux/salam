@@ -7,11 +7,11 @@ List<TextSpan> getPageOneTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   TextStyle title = AppTheme.customTextStyleTitle();
   return [
-    TextSpan(text: elmList10[i].titleTenOne, style: title),
-    TextSpan(text: elmList10[i].elmTextTenOne_1),
-    TextSpan(text: elmList10[i].ayahHadithTenOne_1, style: ayah),
-    TextSpan(text: elmList10[i].elmTextTenOne_2),
-    TextSpan(text: elmList10[i].ayahHadithTenOne_2, style: ayah),
-    TextSpan(text: elmList10[i].elmTextTenOne_3),
+    TextSpan(text: elmList10[i].title, style: title),
+    TextSpan(text: elmList10[i].text),
+    TextSpan(text: elmList10[i].ayah, style: ayah),
+    TextSpan(text: elmList10[i].text),
+    TextSpan(text: elmList10[i].ayah, style: ayah),
+    TextSpan(text: elmList10[i].ayah),
   ];
 }

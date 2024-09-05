@@ -7,9 +7,9 @@ List<TextSpan> getPageFourTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
 
   return [
-    TextSpan(text: elmList12[i].ayahHadithTwelveFour_1, style: ayah),
-    TextSpan(text: elmList12[i].elmTextTwelveFour_1),
-    TextSpan(text: elmList12[i].ayahHadithTwelveFour_2, style: ayah),
-    TextSpan(text: elmList12[i].elmTextTwelveFour_2),
+    TextSpan(text: elmList12[i].ayah, style: ayah),
+    TextSpan(text: elmList12[i].text),
+    TextSpan(text: elmList12[i].ayah, style: ayah),
+    TextSpan(text: elmList12[i].text2),
   ];
 }

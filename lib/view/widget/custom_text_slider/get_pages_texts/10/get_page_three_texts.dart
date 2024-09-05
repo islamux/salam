@@ -7,10 +7,10 @@ List<TextSpan> getPageThreeTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   TextStyle title = AppTheme.customTextStyleTitle();
   return [
-    TextSpan(text: elmList10[i].ayahHadithTenThree_1, style: ayah),
-    TextSpan(text: elmList10[i].subtitleTenThree_1, style: title),
-    TextSpan(text: elmList10[i].elmTextTenThree_1),
-    TextSpan(text: elmList10[i].ayahHadithTenThree_2, style: ayah),
-    TextSpan(text: elmList10[i].elmTextTenThree_2),
+    TextSpan(text: elmList10[i].ayah, style: ayah),
+    TextSpan(text: elmList10[i].subtitle, style: title),
+    TextSpan(text: elmList10[i].text),
+    TextSpan(text: elmList10[i].ayah, style: ayah),
+    TextSpan(text: elmList10[i].text),
   ];
 }

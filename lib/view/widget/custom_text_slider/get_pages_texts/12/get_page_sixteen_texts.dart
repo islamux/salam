@@ -9,12 +9,12 @@ List<TextSpan> getPageSixteenTexts(int i) {
   TextStyle footer = AppTheme.customTextStyleFooter();
 
   return [
-    TextSpan(text: elmList12[i].titleTwelveSixteen, style: title),
-    TextSpan(text: elmList12[i].ayahHadithTwelveSixteen_1, style: ayah),
-    TextSpan(text: elmList12[i].elmTextTwelveSixteen_1),
-    TextSpan(text: elmList12[i].ayahHadithTwelveSixteen_2, style: ayah),
-    TextSpan(text: elmList12[i].ayahHadithTwelveSixteen_3, style: ayah),
-    TextSpan(text: elmList12[i].elmTextTwelveSixteen_3),
-    TextSpan(text: elmList12[i].footerTwelveSixteen, style: footer),
+    TextSpan(text: elmList12[i].title, style: title),
+    TextSpan(text: elmList12[i].ayah, style: ayah),
+    TextSpan(text: elmList12[i].text),
+    TextSpan(text: elmList12[i].ayah2, style: ayah),
+    TextSpan(text: elmList12[i].ayah3, style: ayah),
+    TextSpan(text: elmList12[i].text2),
+    TextSpan(text: elmList12[i].footer, style: footer),
   ];
 }

@@ -7,8 +7,8 @@ List<TextSpan> getPageEigteenTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   TextStyle title = AppTheme.customTextStyleTitle();
   return [
-    TextSpan(text: elmList11[i].titleElevenEighteen_1, style: title),
-    TextSpan(text: elmList11[i].ayahHadithElevenEighteen_1, style: ayah),
-    TextSpan(text: elmList11[i].elmTextElevenEighteen_1),
+    TextSpan(text: elmList11[i].title, style: title),
+    TextSpan(text: elmList11[i].ayah, style: ayah),
+    TextSpan(text: elmList11[i].text),
   ];
 }

@@ -5,47 +5,47 @@ import 'package:elm/core/data/static/text/elm_text_ders_ten.dart';
 List<ElmModel> elmList10 = [
   // 1
   ElmModel(
-    titleTenOne: ElmTextDersTen.titleTenOne,
-    elmTextTenOne_1: ElmTextDersTen.elmTexTenOne_1,
-    ayahHadithTenOne_1: ElmTextDersTen.ayahHadithTenOne_1,
-    elmTextTenOne_2: ElmTextDersTen.elmTextTenOne_2,
-    ayahHadithTenOne_2: ElmTextDersTen.ayahHadithTenOne_2,
-    elmTextTenOne_3: ElmTextDersTen.elmTextTenOne_3,
+    title: ElmTextDersTen.titleTenOne,
+    text: ElmTextDersTen.elmTexTenOne_1,
+    ayah: ElmTextDersTen.ayahHadithTenOne_1,
+    text2: ElmTextDersTen.elmTextTenOne_2,
+    ayah2: ElmTextDersTen.ayahHadithTenOne_2,
+    text3: ElmTextDersTen.elmTextTenOne_3,
   ),
   // 2
   ElmModel(
-    ayahHadithTenTwo_1: ElmTextDersTen.ayahHadithTenOne_1,
-    elmTextTenTwo_1: ElmTextDersTen.elmTextTenTwo_1,
+    ayah: ElmTextDersTen.ayahHadithTenOne_1,
+    text: ElmTextDersTen.elmTextTenTwo_1,
   ),
   // 3
   ElmModel(
-      ayahHadithTenThree_1: ElmTextDersTen.ayahHadithTenThree_1,
-      subtitleTenThree_1: ElmTextDersTen.subtitleTenThree_1,
-      elmTextTenThree_1: ElmTextDersTen.elmTextTenThree_1,
-      ayahHadithTenThree_2: ElmTextDersTen.ayahHadithTenThree_2,
-      elmTextTenThree_2: ElmTextDersTen.elmTextTenThree_2),
+      ayah: ElmTextDersTen.ayahHadithTenThree_1,
+      subtitle: ElmTextDersTen.subtitleTenThree_1,
+      text: ElmTextDersTen.elmTextTenThree_1,
+      ayah2: ElmTextDersTen.ayahHadithTenThree_2,
+      text2: ElmTextDersTen.elmTextTenThree_2),
   // 4
   ElmModel(
-    ayahHadithTenFour_1: ElmTextDersTen.ayahHadithTenFour_1,
-    elmTextTenFour_1: ElmTextDersTen.elmTextTenFour_1,
+    ayah: ElmTextDersTen.ayahHadithTenFour_1,
+    text: ElmTextDersTen.elmTextTenFour_1,
   ),
   // 5
   ElmModel(
-    ayahHadithTenFive_1: ElmTextDersTen.ayahHadithTenFive_1,
-    elmTextTenFive_1: ElmTextDersTen.elmTextTenFive_1,
-    ayahHadithTenFive_2: ElmTextDersTen.ayahHadithTenFive_2,
+    ayah: ElmTextDersTen.ayahHadithTenFive_1,
+    text: ElmTextDersTen.elmTextTenFive_1,
+    ayah2: ElmTextDersTen.ayahHadithTenFive_2,
   ),
   // 6
   ElmModel(
-    elmTextTenSix_1: ElmTextDersTen.elmTextTenSix_1,
-    ayahHadithTenSix_1: ElmTextDersTen.ayahHadithTenSix_1,
+    text: ElmTextDersTen.elmTextTenSix_1,
+    ayah: ElmTextDersTen.ayahHadithTenSix_1,
   ),
   // 7
   ElmModel(
-    elmTextTenSeven_1: ElmTextDersTen.elmTextTenSeven_1,
-    ayahHadithTenSeven_1: ElmTextDersTen.ayahHadithTenSeven_1,
-    elmTextTenSeven_2: ElmTextDersTen.elmTextTenSeven_2,
-    ayahHadithTenSeven_2: ElmTextDersTen.ayahHadithTenSeven_2,
-    elmTextTenSeven_3: ElmTextDersTen.elmTextTenSeven_3,
+    text: ElmTextDersTen.elmTextTenSeven_1,
+    ayah: ElmTextDersTen.ayahHadithTenSeven_1,
+    text2: ElmTextDersTen.elmTextTenSeven_2,
+    ayah2: ElmTextDersTen.ayahHadithTenSeven_2,
+    text3: ElmTextDersTen.elmTextTenSeven_3,
   )
 ];

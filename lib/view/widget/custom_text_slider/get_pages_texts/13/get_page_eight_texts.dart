@@ -4,16 +4,13 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageEightTexts(int i) {
+  TextStyle ayah = AppTheme.customTextStyleHadith();
+  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle footer = AppTheme.customTextStyleFooter();
   return [
-    TextSpan(
-        text: elmList13[i].ayahHadithTherteenEight_1,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(text: elmList13[i].elmTextTherteenEight_1),
-    TextSpan(
-        text: elmList13[i].ayahHadithTherteenEight_2,
-        style: AppTheme.customTextStyleHadith()),
-    TextSpan(
-        text: elmList13[i].footerTherteenEight,
-        style: AppTheme.customTextStyleFooter()),
+    TextSpan(text: elmList13[i].ayah, style: ayah),
+    TextSpan(text: elmList13[i].text),
+    TextSpan(text: elmList13[i].ayah2, style: ayah),
+    TextSpan(text: elmList13[i].footer, style: footer),
   ];
 }

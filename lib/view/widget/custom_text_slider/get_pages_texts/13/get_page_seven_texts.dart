@@ -7,10 +7,10 @@ List<TextSpan> getPageSevenTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   TextStyle footer = AppTheme.customTextStyleFooter();
   return [
-    TextSpan(text: elmList13[i].elmTextTherteenSeven_1),
-    TextSpan(text: elmList13[i].ayahHadithTherteenSeven_1, style: ayah),
-    TextSpan(text: elmList13[i].elmTextTherteenSeven_2),
-    TextSpan(text: elmList13[i].ayahHadithTherteenSeven_2, style: ayah),
-    TextSpan(text: elmList13[i].footerTherteenSeven, style: footer)
+    TextSpan(text: elmList13[i].text),
+    TextSpan(text: elmList13[i].ayah, style: ayah),
+    TextSpan(text: elmList13[i].text2),
+    TextSpan(text: elmList13[i].ayah2, style: ayah),
+    TextSpan(text: elmList13[i].footer, style: footer)
   ];
 }

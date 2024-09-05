@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class AppColor {
   static const title = Colors.black;
-  static const subtitle = Colors.black;
+  static const subtitle = Color.fromRGBO(128, 128, 128, 1);
   static const ayahHadith = Color.fromARGB(255, 96, 51, 180);
-  static const footer = Colors.grey;
+  static const footer = Color.fromRGBO(158, 158, 158, 1);
 
   static const floatingColor2 = Color.fromRGBO(240, 236, 225, 0);
   //static const flotingColor = #F2F3E1;

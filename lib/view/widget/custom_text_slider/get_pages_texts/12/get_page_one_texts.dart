@@ -8,7 +8,7 @@ List<TextSpan> getPageOneTexts(int i) {
 
   return [
     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
-    TextSpan(text: elmList12[i].ayahHadithTwelveOne_1, style: ayah),
-    TextSpan(text: elmList12[i].elmtextTwelveOne_1),
+    TextSpan(text: elmList12[i].ayah, style: ayah),
+    TextSpan(text: elmList12[i].text),
   ];
 }

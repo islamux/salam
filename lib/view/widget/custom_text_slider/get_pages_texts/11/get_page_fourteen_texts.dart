@@ -7,10 +7,10 @@ List<TextSpan> getPageFourteenTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
 
   return [
-    TextSpan(text: elmList11[i].elmTextElevenFourteen_1),
-    TextSpan(text: elmList11[i].ayahHadithElevenFourteen_1, style: ayah),
-    TextSpan(text: elmList11[i].elmTextElevenFourteen_2),
-    TextSpan(text: elmList11[i].ayahHadithElevenFourteen_2, style: ayah),
-    TextSpan(text: elmList11[i].elmTextElevenFourteen_3),
+    TextSpan(text: elmList11[i].text),
+    TextSpan(text: elmList11[i].ayah, style: ayah),
+    TextSpan(text: elmList11[i].text2),
+    TextSpan(text: elmList11[i].ayah2, style: ayah),
+    TextSpan(text: elmList11[i].text3),
   ];
 }
