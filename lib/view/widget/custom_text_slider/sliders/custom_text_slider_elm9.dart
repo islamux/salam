@@ -2,7 +2,6 @@ import 'package:elm/controller/elm9_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_9.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/9/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/9/get_page_two_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/9/get_page_three_texts.dart';

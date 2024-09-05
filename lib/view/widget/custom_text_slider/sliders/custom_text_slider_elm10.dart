@@ -11,7 +11,6 @@ import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_t
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/17/get_page_four_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:elm/core/data/model/elm_list_model.dart';
 
 class CustomTextSliderElm10 extends StatelessWidget {
   const CustomTextSliderElm10({super.key});

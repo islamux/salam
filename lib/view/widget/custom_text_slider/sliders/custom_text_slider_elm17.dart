@@ -1,5 +1,4 @@
 import 'package:elm/controller/elm17_controller.dart';
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_17.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -92,7 +91,7 @@ class CustomTextSliderElm17 extends StatelessWidget {
                                   break;
                                 // Add more cases if needed
                                 default:
-                                  textSpans.add(TextSpan(text: ''));
+                                  textSpans.add(const TextSpan(text: ''));
                               }
 
                               return RichText(

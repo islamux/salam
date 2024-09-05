@@ -66,9 +66,6 @@ class CustomTextSliderElm8 extends StatelessWidget {
                     case 6:
                       pageTexts = getPageSevenTexts(i);
                       break;
-                    case 7:
-                      pageTexts = getPageEightTexts(i);
-                      break;
                     default:
                       pageTexts = [];
                   }

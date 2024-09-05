@@ -1,5 +1,4 @@
 import 'package:elm/controller/elm7_controller.dart';
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_7.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';

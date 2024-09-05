@@ -1,5 +1,4 @@
 import 'package:elm/controller/elm16_controller.dart';
-import 'package:elm/core/data/model/elm_list_model.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_16.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -53,14 +52,14 @@ class CustomTextSliderElm16 extends StatelessWidget {
                                   textSpans.addAll(getPageOneTexts(i));
                                   break;
                                 case 1:
-                                  textSpans.addAll(getPageTwoTexts(i));
+                                  textSpans.addAll(getPageTowTexts(i));
                                   break;
                                 case 2:
                                   textSpans.addAll(getPageThreeTexts(i));
                                   break;
                                 // Add more cases if needed
                                 default:
-                                  textSpans.add(TextSpan(text: ''));
+                                  textSpans.add(const TextSpan(text: ''));
                               }
 
                               return RichText(

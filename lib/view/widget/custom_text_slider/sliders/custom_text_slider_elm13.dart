@@ -2,6 +2,7 @@ import 'package:elm/controller/elm13_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_13.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/13/get_page_therteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/13/get_page_eight_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/13/get_page_eleven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/13/get_page_five_texts.dart';
@@ -94,11 +95,11 @@ class CustomTextSliderElm13 extends StatelessWidget {
                                   textSpans.addAll(getPageTwelveTexts(i));
                                   break;
                                 case 12:
-                                  textSpans.addAll(getPageThirteenTexts(i));
+                                  textSpans.addAll(getPageeTherteenTexts(i));
                                   break;
                                 // Add more cases as needed
                                 default:
-                                  textSpans.add(TextSpan(text: ''));
+                                  textSpans.add(const TextSpan(text: ''));
                               }
 
                               return RichText(
