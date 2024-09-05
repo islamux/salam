@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageFifteenTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   return [
-    TextSpan(text: elmList14[i].ayahHadithFourteenFifteen_1, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenFifteen_1),
-    TextSpan(text: elmList14[i].ayahHadithFourteenFifteen_2, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenFifteen_2),
+    TextSpan(text: elmList14[i].ayah, style: ayah),
+    TextSpan(text: elmList14[i].text),
+    TextSpan(text: elmList14[i].ayah2, style: ayah),
+    TextSpan(text: elmList14[i].text2),
   ];
 }

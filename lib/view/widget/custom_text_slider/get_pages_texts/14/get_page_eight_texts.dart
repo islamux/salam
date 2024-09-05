@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageEightTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   return [
-    TextSpan(text: elmList14[i].elmTextFourteenEight_1),
-    TextSpan(text: elmList14[i].ayahHadithFourteenEight_1, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenEight_2),
+    TextSpan(text: elmList14[i].text),
+    TextSpan(text: elmList14[i].ayah, style: ayah),
+    TextSpan(text: elmList14[i].text2),
   ];
 }

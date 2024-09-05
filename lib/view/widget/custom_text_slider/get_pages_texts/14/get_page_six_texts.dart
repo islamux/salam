@@ -6,16 +6,16 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageSixTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   return [
-    TextSpan(text: elmList14[i].elmTextFourteenSix_1),
-    TextSpan(text: elmList14[i].ayahHadithFourteenSix_2, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenSix_2),
-    TextSpan(text: elmList14[i].ayahHadithFourteenSix_3, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenSix_3),
-    TextSpan(text: elmList14[i].ayahHadithFourteenSix_4, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenSix_4),
-    TextSpan(text: elmList14[i].ayahHadithFourteenSix_5, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenSix_5),
-    TextSpan(text: elmList14[i].ayahHadithFourteenSix_6, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenSix_7),
+    TextSpan(text: elmList14[i].text),
+    TextSpan(text: elmList14[i].ayah, style: ayah),
+    TextSpan(text: elmList14[i].text2),
+    TextSpan(text: elmList14[i].ayah2, style: ayah),
+    TextSpan(text: elmList14[i].text3),
+    TextSpan(text: elmList14[i].ayah3, style: ayah),
+    TextSpan(text: elmList14[i].text4),
+    TextSpan(text: elmList14[i].ayah4, style: ayah),
+    TextSpan(text: elmList14[i].text5),
+    TextSpan(text: elmList14[i].ayah5, style: ayah),
+    TextSpan(text: elmList14[i].text6),
   ];
 }

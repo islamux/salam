@@ -4,13 +4,13 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageThreeTexts(int i) {
-  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle subtitle = AppTheme.customTextStyleSubtitle();
   TextStyle ayah = AppTheme.customTextStyleHadith();
   return [
-    TextSpan(text: elmList14[i].subtitleFourteenThree_1, style: title),
-    TextSpan(text: elmList14[i].ayahHadithFourteenThree_1, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenThree_1),
-    TextSpan(text: elmList14[i].ayahHadithFourteenThree_2, style: ayah),
-    TextSpan(text: elmList14[i].elmTextFourteenThree_2),
+    TextSpan(text: elmList14[i].subtitle, style: subtitle),
+    TextSpan(text: elmList14[i].ayah, style: ayah),
+    TextSpan(text: elmList14[i].text),
+    TextSpan(text: elmList14[i].ayah2, style: ayah),
+    TextSpan(text: elmList14[i].text2),
   ];
 }

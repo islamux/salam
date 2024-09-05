@@ -30,12 +30,12 @@ class CustomTextSliderElm12 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Elm12ControllerImp controller = Get.find<Elm12ControllerImp>();
-    // to enable refresh ui (slider() moving)
+
     return GetBuilder<Elm12ControllerImp>(
       builder: (_) {
         return Stack(
           children: [
-            // 1 in stack
+            // Background image
             Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -44,73 +44,109 @@ class CustomTextSliderElm12 extends StatelessWidget {
                 ),
               ),
             ),
-            // 2 in stack
+
+            // PageView
             SizedBox(
-              // to fix auto size of hight of text
               height: MediaQuery.of(context).size.height,
               child: PageView.builder(
                 reverse: true,
-                // to enable move through pages slider() using pageController
                 controller: controller.pageControllerAssma,
-                onPageChanged: (index) =>
-                    // How to pass index. ==> onPageChanged(index)
-                    controller.onPageChanged(index),
+                onPageChanged: (index) => controller.onPageChanged(index),
                 itemCount: elmList12.length,
-                itemBuilder: (context, i) => Column(
-                  children: [
-                    // To make text scrollable make insid contatiner and the container inside Expanded
-                    Expanded(
-                      child: Container(
-                        padding: const EdgeInsets.only(
-                            top: 60, left: 32, right: 32, bottom: 60),
-                        child: SingleChildScrollView(
-                          child:
-                              // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
-                              GetBuilder<Elm12ControllerImp>(
-                            builder: (controller) {
-                              return // Rich Text Loop on rich text
-                                  RichText(
-                                text: TextSpan(
-                                  style: TextStyle(
-                                    fontFamily: "AmiriQ",
-                                    fontSize: controller.fontSize,
-                                    color: Colors.black,
+                itemBuilder: (context, i) {
+                  // Determine which page content to display
+                  List<TextSpan> pageTexts;
+                  switch (i) {
+                    case 0:
+                      pageTexts = getPageOneTexts(i);
+                      break;
+                    case 1:
+                      pageTexts = getPageTwoTexts(i);
+                      break;
+                    case 2:
+                      pageTexts = getPageThreeTexts(i);
+                      break;
+                    case 3:
+                      pageTexts = getPageFourTexts(i);
+                      break;
+                    case 4:
+                      pageTexts = getPageFiveTexts(i);
+                      break;
+                    case 5:
+                      pageTexts = getPageSixTexts(i);
+                      break;
+                    case 6:
+                      pageTexts = getPageSevenTexts(i);
+                      break;
+                    case 7:
+                      pageTexts = getPageEightTexts(i);
+                      break;
+                    case 8:
+                      pageTexts = getPageNineTexts(i);
+                      break;
+                    case 9:
+                      pageTexts = getPageTenTexts(i);
+                      break;
+                    case 10:
+                      pageTexts = getPageElevenTexts(i);
+                      break;
+                    case 11:
+                      pageTexts = getPageTwelveTexts(i);
+                      break;
+                    case 12:
+                      pageTexts = getPageTherteenTexts(i);
+                      break;
+                    case 13:
+                      pageTexts = getPageFourteenTexts(i);
+                      break;
+                    case 14:
+                      pageTexts = getPageFifteenTexts(i);
+                      break;
+                    case 15:
+                      pageTexts = getPageSixteenTexts(i);
+                      break;
+                    case 16:
+                      pageTexts = getPageSeventeenTexts(i);
+                      break;
+                    case 17:
+                      pageTexts = getPageEighteenTexts(i);
+                      break;
+                    default:
+                      pageTexts = [];
+                  }
+
+                  return Column(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          padding: const EdgeInsets.only(
+                              top: 60, left: 32, right: 32, bottom: 60),
+                          child: SingleChildScrollView(
+                            child: GetBuilder<Elm12ControllerImp>(
+                              builder: (controller) {
+                                return RichText(
+                                  text: TextSpan(
+                                    style: TextStyle(
+                                      fontFamily: "AmiriQ",
+                                      fontSize: controller.fontSize,
+                                      color: Colors.black,
+                                    ),
+                                    children: pageTexts,
                                   ),
-                                  children: [
-                                    //  page 1 , page 2 , page 3
-                                    ...getPageOneTexts(i),
-                                    ...getPageTwoTexts(i),
-                                    ...getPageThreeTexts(i),
-                                    ...getPageFourTexts(i),
-                                    ...getPageFiveTexts(i),
-                                    ...getPageSixTexts(i),
-                                    ...getPageSevenTexts(i),
-                                    ...getPageEightTexts(i),
-                                    ...getPageNineTexts(i),
-                                    ...getPageTenTexts(i),
-                                    ...getPageElevenTexts(i),
-                                    ...getPageTwelveTexts(i),
-                                    ...getPageTherteenTexts(i),
-                                    ...getPageFourteenTexts(i),
-                                    ...getPageFifteenTexts(i),
-                                    ...getPageSixteenTexts(i),
-                                    ...getPageSeventeenTexts(i),
-                                    ...getPageEighteenTexts(i),
-                                  ],
-                                ),
-                                textAlign: TextAlign.right,
-                              );
-                            },
+                                  textAlign: TextAlign.right,
+                                );
+                              },
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
+                    ],
+                  );
+                },
               ),
             ),
 
-            // slider widget
+            // Slider widget
             Positioned(
               bottom: 16,
               left: 0,
@@ -132,17 +168,141 @@ class CustomTextSliderElm12 extends StatelessWidget {
                   ),
                   // Display current page number
                   Text(
-                    //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-                    '${controller.currentPageIndex + 1.toInt()} / ${elmList12.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList12.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         );
       },
     );
   }
 }
+
+
+
+// class CustomTextSliderElm12 extends StatelessWidget {
+//   const CustomTextSliderElm12({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     final Elm12ControllerImp controller = Get.find<Elm12ControllerImp>();
+//     // to enable refresh ui (slider() moving)
+//     return GetBuilder<Elm12ControllerImp>(
+//       builder: (_) {
+//         return Stack(
+//           children: [
+//             // 1 in stack
+//             Container(
+//               decoration: const BoxDecoration(
+//                 image: DecorationImage(
+//                   image: AssetImage(ImageLink.image12),
+//                   fit: BoxFit.cover,
+//                 ),
+//               ),
+//             ),
+//             // 2 in stack
+//             SizedBox(
+//               // to fix auto size of hight of text
+//               height: MediaQuery.of(context).size.height,
+//               child: PageView.builder(
+//                 reverse: true,
+//                 // to enable move through pages slider() using pageController
+//                 controller: controller.pageControllerAssma,
+//                 onPageChanged: (index) =>
+//                     // How to pass index. ==> onPageChanged(index)
+//                     controller.onPageChanged(index),
+//                 itemCount: elmList12.length,
+//                 itemBuilder: (context, i) => Column(
+//                   children: [
+//                     // To make text scrollable make insid contatiner and the container inside Expanded
+//                     Expanded(
+//                       child: Container(
+//                         padding: const EdgeInsets.only(
+//                             top: 60, left: 32, right: 32, bottom: 60),
+//                         child: SingleChildScrollView(
+//                           child:
+//                               // To make font change when click on button wrab Text() with GetBuilder<Page1controllerImp>(build: (controller) return Text())
+//                               GetBuilder<Elm12ControllerImp>(
+//                             builder: (controller) {
+//                               return // Rich Text Loop on rich text
+//                                   RichText(
+//                                 text: TextSpan(
+//                                   style: TextStyle(
+//                                     fontFamily: "AmiriQ",
+//                                     fontSize: controller.fontSize,
+//                                     color: Colors.black,
+//                                   ),
+//                                   children: [
+//                                     //  page 1 , page 2 , page 3
+//                                     ...getPageOneTexts(i),
+//                                     ...getPageTwoTexts(i),
+//                                     ...getPageThreeTexts(i),
+//                                     ...getPageFourTexts(i),
+//                                     ...getPageFiveTexts(i),
+//                                     ...getPageSixTexts(i),
+//                                     ...getPageSevenTexts(i),
+//                                     ...getPageEightTexts(i),
+//                                     ...getPageNineTexts(i),
+//                                     ...getPageTenTexts(i),
+//                                     ...getPageElevenTexts(i),
+//                                     ...getPageTwelveTexts(i),
+//                                     ...getPageTherteenTexts(i),
+//                                     ...getPageFourteenTexts(i),
+//                                     ...getPageFifteenTexts(i),
+//                                     ...getPageSixteenTexts(i),
+//                                     ...getPageSeventeenTexts(i),
+//                                     ...getPageEighteenTexts(i),
+//                                   ],
+//                                 ),
+//                                 textAlign: TextAlign.right,
+//                               );
+//                             },
+//                           ),
+//                         ),
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
+//             ),
+
+//             // slider widget
+//             Positioned(
+//               bottom: 16,
+//               left: 0,
+//               right: 0,
+//               child: Row(
+//                 mainAxisAlignment: MainAxisAlignment.center,
+//                 children: [
+//                   Expanded(
+//                     child: Slider(
+//                       activeColor: AppColor.black,
+//                       inactiveColor: AppColor.grey,
+//                       value: controller.currentPageIndex.toDouble(),
+//                       onChanged: (double value) {
+//                         controller.goToPage(value.toInt());
+//                       },
+//                       min: 0,
+//                       max: elmList12.length.toDouble() - 1,
+//                     ),
+//                   ),
+//                   // Display current page number
+//                   Text(
+//                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
+//                     '${controller.currentPageIndex + 1.toInt()} / ${elmList12.length}',
+//                     style: const TextStyle(
+//                         fontSize: 18, fontWeight: FontWeight.bold),
+//                   )
+//                 ],
+//               ),
+//             )
+//           ],
+//         );
+//       },
+//     );
+//   }
+// }
