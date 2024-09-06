@@ -100,6 +100,8 @@ List<ElmModel> elmList13 = [
     text: ElmTextDersTherteen.elmTextTherteenTwelve_1,
     ayah: ElmTextDersTherteen.ayahHadithTherteenTwelve_1,
     text2: ElmTextDersTherteen.elmTextTherteenTwelve_2,
+    subtitle: ElmTextDersTherteen.subtitleTherteenTwelve_2,
+    text3: ElmTextDersTherteen.elmTextTherteenTwelve_3,
     ayah2: ElmTextDersTherteen.ayahHadithTherteenTwelve_2,
   ),
   // 13

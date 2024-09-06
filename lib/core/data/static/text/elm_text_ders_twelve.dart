@@ -1,7 +1,6 @@
 class ElmTextDersTwelve {
   // page 1
   static const String ayahHadithTwelveOne_1 = """
-
 وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ
 -----------------
       """;

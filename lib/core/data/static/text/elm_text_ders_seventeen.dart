@@ -205,8 +205,7 @@ class ElmTextDersSeventeen {
  """;
 
 // page 11
-  static const String ayahHadithSeventeenEleven_1 = """;
- 
+  static const String ayahHadithSeventeenEleven_1 = """
  قَالَ أَصْحَابُ مُوسَى إِنَّا لَمُدْرَكُونَ قَالَ كَلا إِنَّ مَعِيَ رَبِّي سَيَهْدِينِ
 
 """;

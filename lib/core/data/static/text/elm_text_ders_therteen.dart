@@ -331,8 +331,11 @@ class ElmTextDersTherteen {
 
   static const String elmTextTherteenTwelve_2 = """
 لكن المؤمنين لهم مصائب من نوع آخر
-
+""";
+  static const String subtitleTherteenTwelve_2 = """
   المصيبة الأولى
+  """;
+  static const String elmTextTherteenTwelve_3 = """
  مصيبة دفع إلى باب الله يكون هناك تقصير
 """;
 

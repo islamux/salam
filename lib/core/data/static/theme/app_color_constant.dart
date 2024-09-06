@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColor {
   static const title = Colors.black;
-  static const subtitle = Color.fromRGBO(128, 128, 128, 1);
+  static const subtitle = Colors.black;
   static const ayahHadith = Color.fromARGB(255, 96, 51, 180);
   static const footer = Color.fromRGBO(158, 158, 158, 1);
 

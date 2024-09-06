@@ -23,7 +23,7 @@ List<ElmModel> elmList11 = [
   ),
   // page 4
   ElmModel(
-    text2: ElmTextDersEleven.elmTextElevenFour_1,
+    text: ElmTextDersEleven.elmTextElevenFour_1,
   ),
   // page 5
   ElmModel(
@@ -54,6 +54,7 @@ List<ElmModel> elmList11 = [
   ),
   // page 10,
   ElmModel(
+    title: ElmTextDersEleven.titleElevenTen,
     text: ElmTextDersEleven.elmTextElevenTen_1,
   ),
   // page 11,
@@ -117,6 +118,7 @@ List<ElmModel> elmList11 = [
   ),
   // page 19,
   ElmModel(
+    title: ElmTextDersEleven.titleElevenNinteen,
     text: ElmTextDersEleven.elmTextElevenNinteen,
   ),
   // page 20,
