@@ -3,16 +3,16 @@ import 'package:elm/core/data/model/elm_lists/elm_list_4.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_seven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_eight_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_nine_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_ten_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_five_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_four_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_one_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_six_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_three_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/4/get_page_two_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_seven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_eight_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_nine_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_ten_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_five_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_four_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_one_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_six_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_three_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_4/get_page_two_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

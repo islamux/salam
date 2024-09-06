@@ -11,7 +11,7 @@ List<ElmModel> elmList4 = [
   ),
   // page 2
   ElmModel(
-    text2: ElmTextDersFour.elmTextFourTwo_1,
+    text: ElmTextDersFour.elmTextFourTwo_1,
   ),
   // page 3
   ElmModel(

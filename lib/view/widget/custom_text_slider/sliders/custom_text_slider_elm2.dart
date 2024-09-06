@@ -2,21 +2,9 @@ import 'package:elm/controller/elm2_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_2.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_eleven_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_therteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/1/get_page_twelve_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../get_pages_texts/2/get_page_eight_texts.dart';
-import '../get_pages_texts/2/get_page_five_texts.dart';
-import '../get_pages_texts/2/get_page_four_texts.dart';
-import '../get_pages_texts/2/get_page_nine_texts.dart';
-import '../get_pages_texts/2/get_page_one_texts.dart';
-import '../get_pages_texts/2/get_page_seven_texts.dart';
-import '../get_pages_texts/2/get_page_six_texts.dart';
-import '../get_pages_texts/2/get_page_ten_texts.dart';
-import '../get_pages_texts/2/get_page_three_texts.dart';
-import '../get_pages_texts/2/get_page_two_text.dart';
 
 class CustomTextSliderElm2 extends StatelessWidget {
   const CustomTextSliderElm2({super.key});
@@ -50,49 +38,7 @@ class CustomTextSliderElm2 extends StatelessWidget {
                 itemBuilder: (context, i) {
                   // Determine which page content to display
                   List<TextSpan> pageTexts;
-                  switch (i) {
-                    case 0:
-                      pageTexts = getPageOneTexts(i);
-                      break;
-                    case 1:
-                      pageTexts = getPageTwoTexts(i);
-                      break;
-                    case 2:
-                      pageTexts = getPageThreeTexts(i);
-                      break;
-                    case 3:
-                      pageTexts = getPageFourTexts(i);
-                      break;
-                    case 4:
-                      pageTexts = getPageFiveTexts(i);
-                      break;
-                    case 5:
-                      pageTexts = getPageSixTexts(i);
-                      break;
-                    case 6:
-                      pageTexts = getPageSevenTexts(i);
-                      break;
-                    case 7:
-                      pageTexts = getPageEightTexts(i);
-                      break;
-                    case 8:
-                      pageTexts = getPageNineTexts(i);
-                      break;
-                    case 9:
-                      pageTexts = getPageTenTexts(i);
-                      break;
-                    case 10:
-                      pageTexts = getPageElevenTexts(i);
-                      break;
-                    case 11:
-                      pageTexts = getPageTwelveTexts(i);
-                      break;
-                    case 12:
-                      pageTexts = getPageTherteenTexts(i);
-                      break;
-                    default:
-                      pageTexts = [];
-                  }
+                  pageTexts = whichPageToGetInElm2(i);
 
                   return Column(
                     children: [

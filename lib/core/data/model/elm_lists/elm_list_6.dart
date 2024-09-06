@@ -12,7 +12,7 @@ List<ElmModel> elmList6 = [
   ),
   // page 2
   ElmModel(
-    subtitle: ElmTextDersSix.sutitleSixTwo_1,
+    title: ElmTextDersSix.titleSixTwo_1,
     text: ElmTextDersSix.elmTextSixTwo_1,
     ayah: ElmTextDersSix.ayahHadithSixTwo_1,
   ),

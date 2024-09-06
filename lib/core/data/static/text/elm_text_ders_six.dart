@@ -24,7 +24,7 @@ class ElmTextDersSix {
 """;
 
 // ---- ----Page 2 ------------
-  static const String sutitleSixTwo_1 = """
+  static const String titleSixTwo_1 = """
 ملخص الملخص
 ----------
 """;

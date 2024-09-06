@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTherteenTexts(int i) {
   return [
-    TextSpan(text: elmList2[i].footer, style: AppTheme.customTextStyleFooter()),
+    TextSpan(text: elmList2[i].title, style: AppTheme.customTextStyleTitle()),
     TextSpan(text: elmList2[i].ayah, style: AppTheme.customTextStyleHadith()),
     TextSpan(text: elmList2[i].text),
   ];

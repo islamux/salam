@@ -71,7 +71,7 @@ List<ElmModel> elmList2 = [
   ),
   // 13
   ElmModel(
-    footer: ElmTextDersTwo.elmTextTwoTherteen_1,
+    title: ElmTextDersTwo.titleTwoTherteen,
     ayah: ElmTextDersTwo.ayhaHadithTowTherteen_1,
     text: ElmTextDersTwo.elmTextTwoTherteen_1,
   ),
