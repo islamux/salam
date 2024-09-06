@@ -41,7 +41,6 @@ List<TextSpan> whichPageToGetInElm2(int i) {
       return getPageTwelveTexts(i);
     case 12:
       return getPageTherteenTexts(i);
-      print("fix footer");
     default:
       return [];
   }
