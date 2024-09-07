@@ -20,7 +20,7 @@ List<ElmModel> elmList5 = [
 
 //  page 3
   ElmModel(
-    text: ElmTextDersFive.elmTextFiveTherteen_1,
+    text: ElmTextDersFive.elmTextFiveThree_1,
     ayah: ElmTextDersFive.ayahHadithFiveThree_1,
     text2: ElmTextDersFive.elmTextFiveThree_2,
   ),

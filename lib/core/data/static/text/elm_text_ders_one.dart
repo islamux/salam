@@ -1,7 +1,6 @@
 class ElmTextDersOne {
 // page 1
   static const String titleOneOne = """
-
 عوامل تفكك وفشل الأسرة والقبيلة
 --------------------------
   """;
@@ -243,14 +242,13 @@ class ElmTextDersOne {
   """;
 
   // page 13
-  static const String titleOneTherteen = """
+  static const String elmTextOneTherteen_1 = """
           (15)
   قلة الاحترام، الصغير لايحترم الكبير
----------------------
  
   """;
 
-  static const String elmTextOneTherteen_1 = """
+  static const String elmTextOneTherteen_2 = """
           (16)
 تدخل الأبناء والصغار بخلافات الآباء وعدم احترام مجالس الكبار وعدم توقير كبار السن 
 

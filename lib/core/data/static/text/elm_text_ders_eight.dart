@@ -59,7 +59,6 @@ class ElmTextDersEight {
 فَإِذَا خِفۡتِ عَلَیۡهِ فَأَلۡقِیهِ فِی ٱلۡیَمِّ 
   القصص 7 
 
----------------------
   """;
   // page 4
   static const String ayhaHadithFour_1 = """

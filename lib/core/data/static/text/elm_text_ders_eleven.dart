@@ -113,8 +113,11 @@ class ElmTextDersEleven {
 
   static const String elmTextElevenNine_1 = """
 ليعرفوني فيُطيعوني فيسعدوا بقربي في الدنيا والآخرة ، وهذا هو الهدف
-
+""";
+  static const String subtitleElevenNine = """
 :انواع الرزق
+""";
+  static const String elmTextElevenNine_2 = """
  نوع ميسور بلا ثمن -
 نوع ميسور بلا ثمن ، الهواء ، ولو كان الهواء بالثمن وبالقسائم ، وبالأحتكار لهلك الناس
 
@@ -186,10 +189,13 @@ class ElmTextDersEleven {
    """;
 
 // page 13
-  static const String elmTextElevenTherteen_1 = """
+  static const String subtitleElevenTherteen = """
  :زيادة الرزق يكون ب
-
+-----------------
  :الإيمان والتقوى 
+
+""";
+  static const String elmTextElevenTherteen_1 = """
 الرزق يزيد بالايمان والتقوى
 """;
   static const String ayahHadithElevenTherteen_1 = """
@@ -197,8 +203,10 @@ class ElmTextDersEleven {
  وَلَوۡ أَنَّ أَهۡلَ ٱلۡقُرَىٰۤ ءَامَنُوا۟ وَٱتَّقَوۡا۟ لَفَتَحۡنَا عَلَیۡهِم بَرَكَـٰتࣲ مِّنَ ٱلسَّمَاۤءِ وَٱلۡأَرۡضِ
 الأعراف 96 
 """;
-  static const String elmTextElevenTherteen_2 = """
+  static const String subtitleElevenTherteen_2 = """
  :الإستقامة
+ """;
+  static const String elmTextElevenTherteen_2 = """
  يزيد ايضا بالاستقامه 
 """;
   static const String ayahHadithElevenTherteen_2 = """
@@ -206,8 +214,10 @@ class ElmTextDersEleven {
  وَأَلَّوِ ٱسۡتَقَـٰمُوا۟ عَلَى ٱلطَّرِیقَةِ لَأَسۡقَیۡنَـٰهُم مَّاۤءً غَدَقࣰا ۝١٦ 
 الجن 16 
 """;
-  static const String elmTextElevenTherteen_3 = """
+  static const String subtitleElevenTherteen_3 = """
  :إلتزام احكام الشرع
+ """;
+  static const String elmTextElevenTherteen_3 = """
  يزيد بالتزام أحكام الشرع
 """;
   static const String ayahHadithElevenTherteen_3 = """
@@ -218,8 +228,11 @@ class ElmTextDersEleven {
 
    """;
 // page 14
+  static const String titleElevenFourteen = """
+ الإستغفار:
+ """;
   static const String elmTextElevenFourteen_1 = """
- الإستغفار: والرزق يزيد بالاستغفار
+  والرزق يزيد بالاستغفار
 """;
   static const String ayahHadithElevenFourteen_1 = """
 
@@ -231,8 +244,11 @@ class ElmTextDersEleven {
 """;
   static const String elmTextElevenFourteen_2 = """
 يزيد بالاستقامه والايمان والطاعة ، ويزيد ايضا بالاستغفار
-
+""";
+  static const String subtitleElevenFourteen_1 = """
  :إقامة الصلاة
+""";
+  static const String elmTextElevenFourteen_3 = """
 ويزيد الرزق بإقامةالصلاة
 """;
   static const String ayahHadithElevenFourteen_2 = """
@@ -242,30 +258,34 @@ class ElmTextDersEleven {
 طه 132 
 
 """;
-  static const String elmTextElevenFourteen_3 = """
+  static const String elmTextElevenFourteen_4 = """
 بيت تقام فيه الصلوات ، هذا بيت في الأعم الأغلب الله سبحانه وتعالى يرزُقهُ 
 
 """;
 // page 15
-  static const String elmTextElevenFifteen_1 = """
+
+  static const String titleElevenFifteen = """
  الصدقة-
 """;
   static const String ayahHadithElevenFifteen_1 = """
   یَمۡحَقُ ٱللَّهُ ٱلرِّبَوٰا۟ وَیُرۡبِی ٱلصَّدَقَـٰتِۗ 
  البقرة 276 
 """;
-  static const String elmTextElevenFifteen_2 = """
+  static const String elmTextElevenFifteen_1 = """
     الصدقة تزيد في الرزق  
 """;
   static const String ayahHadithElevenFifteen_2 = """
     قال عليه الصلاة والسلام ***
     استمطرو الرزق بالصدقة 
   """;
-  static const String elmTextElevenFifteen_3 = """
+  static const String elmTextElevenFifteen_2 = """
     اي إذا اردتم الرزق الوفير 
 الإنفاق بالحسابات المادية ينقص المال ، لكنه بالحسابات الربانية يُنميه يكثرُه ، لذلك مانقص مال من صدقه
-
+""";
+  static const String subtitleElevenFifteen_1 = """
  الإتقان-
+ """;
+  static const String elmTextElevenFifteen_3 = """
 شيئ أخر ، وهو أن الرزق يزيد بالإتقان ، فإتقان العمل جزء من الدين ، فالإتقان أحد اسباب نماء الرزق
 """;
 

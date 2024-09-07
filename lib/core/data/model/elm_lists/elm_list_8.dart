@@ -41,6 +41,7 @@ List<ElmModel> elmList8 = [
   // 7
   ElmModel(
     text: ElmTextDersEight.elmTextDersEigthtSeven_1,
+    footer: ElmTextDersEight.footerEightSeven_1,
     text2: ElmTextDersEight.elmTextDersEigthtSeven_2,
   ),
 ];

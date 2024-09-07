@@ -45,6 +45,7 @@ List<ElmModel> elmList4 = [
       ayah: ElmTextDersFour.ayahHadithFourNine_1),
   // page 10
   ElmModel(
+      title: ElmTextDersFour.titleFourTen_1,
       text: ElmTextDersFour.elmTextFourTen_1,
-      ayah2: ElmTextDersFour.ayahHadithFourTen_1),
+      ayah: ElmTextDersFour.ayahHadithFourTen_1),
 ];

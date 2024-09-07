@@ -29,9 +29,6 @@ class Elm11 extends StatelessWidget {
             ),
             const Text(
               " الخاطرة 11 ",
-              // style: TextStyle(
-              //     color: AppColor.primaryColorGolden,
-              //     backgroundColor: AppColor.primaryColorBlack2),
             ),
           ],
         ),

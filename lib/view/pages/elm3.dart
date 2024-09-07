@@ -56,7 +56,6 @@ class Elm3 extends StatelessWidget {
             children: [
               Text(
                 "الخط",
-                //   style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),

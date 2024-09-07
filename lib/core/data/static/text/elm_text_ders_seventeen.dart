@@ -1,7 +1,6 @@
 class ElmTextDersSeventeen {
   //---- page 1
   static const String elmTextSeventeenOne_1 = """
-
 سيدنا موسى عليه السلام عندما قال 
 """;
   static const String ayahHadithSeventeenOne_1 = """

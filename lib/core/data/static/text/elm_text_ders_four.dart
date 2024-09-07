@@ -6,7 +6,6 @@ class ElmTextDersFour {
  """;
 
   static const String elmTextFourOne_1 = """
-
  أتريد أن يحبك الله؟ 
 افتح القرآن واقرأ الآيات في مواضع كثيرة ومتفرقة 
 """;
@@ -37,7 +36,6 @@ class ElmTextDersFour {
 إِنَّ ٱللَّهَ یُحِبُّ ٱلۡمُقۡسِطِینَ ۝٤٢
 المائدة 42  
 
----------------------
 """;
 // page 2
   static const String elmTextFourTwo_1 = """
@@ -179,8 +177,11 @@ class ElmTextDersFour {
   """;
 
   // page 10
-  static const String elmTextFourTen_1 = """
+  static const String titleFourTen_1 = """
 :أخيراً
+""";
+
+  static const String elmTextFourTen_1 = """
  أعظم الحب الذي يكون من الله فإن أحبك الله أسعدك ونصرك وأجاب دعائك وأزال همك وأزاح غمك وألقى في قلوب الخلق حبك 
 """;
   static const String ayahHadithFourTen_1 = """

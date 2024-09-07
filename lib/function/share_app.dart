@@ -1,13 +1,13 @@
-// Add share social media
+// // Add share social media
 
-import 'package:flutter_share/flutter_share.dart';
+// import 'package:flutter_share/flutter_share.dart';
 
-shareApp() {
-  print("Add linkUrl fter push app to GooglePlay store !");
-  return FlutterShare.share(
-    title: 'مشاركة عبر',
-    text: ' تطبيق سلام ',
-    linkUrl: 'سيتم عرض العنوان حال رفع التطبيق .. نشكر لكم ثقتكم',
-    chooserTitle: ' مشاركة عبر',
-  );
-}
+// // shareApp() {
+// //   print("Add linkUrl fter push app to GooglePlay store !");
+// //   return FlutterShare.share(
+// //     title: 'مشاركة عبر',
+// //     text: ' تطبيق سلام ',
+// //     linkUrl: 'سيتم عرض العنوان حال رفع التطبيق .. نشكر لكم ثقتكم',
+// //     chooserTitle: ' مشاركة عبر',
+// //   );
+// // }

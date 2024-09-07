@@ -6,7 +6,6 @@ import 'package:elm/view/widget/home/custom_drawer_listview.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../function/share_app.dart';
 import '../widget/custom_botton.dart';
 
 class Home extends StatelessWidget {
@@ -45,7 +44,7 @@ class Home extends StatelessWidget {
 
               // Share button
               TextButton(
-                onPressed: () => shareApp(),
+                onPressed: () {/* depreicated flutter_share*/},
                 child: const Text(
                   "شارك",
                   style: TextStyle(
