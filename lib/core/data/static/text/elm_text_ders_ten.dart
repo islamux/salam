@@ -12,7 +12,6 @@ class ElmTextDersTen {
 
   static const String ayahHadithTenOne_1 = """
  وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا 
-سورة العنكبوت 
 """;
 
   static const String elmTextTenOne_2 = """
@@ -32,7 +31,6 @@ class ElmTextDersTen {
 // page 2
   static const String ayahHadithTenTwo_1 = """
 وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِینَ ۝٦٩ 
-سورة العنكبوت 
 """;
 
   static const String elmTextTenTwo_1 = """
@@ -41,13 +39,13 @@ class ElmTextDersTen {
 """;
 
 // page 3
-  static const String ayahHadithTenThree_1 = """
-وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِینَ ۝٦٩ 
-""";
-
-  static const String subtitleTenThree_1 = """
+  static const String titleTenThree_1 = """
 معية الله للمحسنين 
 --------------
+""";
+
+  static const String ayahHadithTenThree_1 = """
+وَٱلَّذِینَ جَـٰهَدُوا۟ فِینَا لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِینَ ۝٦٩ 
 """;
 
   static const String elmTextTenThree_1 = """

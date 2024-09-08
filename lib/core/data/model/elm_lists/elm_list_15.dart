@@ -29,6 +29,7 @@ List<ElmModel> elmList15 = [
   ), //
   // page 5
   ElmModel(
+    title: ElmTextDersFifteen.titleFifteenFive,
     text: ElmTextDersFifteen.elmTextFifteenFive_1,
     ayah: ElmTextDersFifteen.ayahHadithFifteenFive_1,
   ), //
@@ -44,12 +45,14 @@ List<ElmModel> elmList15 = [
   ), //
   // page 8
   ElmModel(
+    title: ElmTextDersFifteen.titleFifteenEight,
     text: ElmTextDersFifteen.elmTextFifteenEight_1,
     ayah: ElmTextDersFifteen.ayahHadithFifteenEight_1,
     text2: ElmTextDersFifteen.elmTextFifteenEight_2,
   ), //
   // page 9
   ElmModel(
+    title: ElmTextDersFifteen.titleFifteenNine,
     text: ElmTextDersFifteen.elmTextFifteenNine_1,
   ), //
   // page 10
@@ -64,10 +67,14 @@ List<ElmModel> elmList15 = [
   ), //
   // page 12
   ElmModel(
+    title: ElmTextDersFifteen.titleFifteenTwelve,
     text: ElmTextDersFifteen.elmTextFifteenTwelve_1,
+    subtitle: ElmTextDersFifteen.subtitleFifteenTwelve_1,
+    text2: ElmTextDersFifteen.elmTextFifteenTwelve_2,
   ), //
   // page 13
   ElmModel(
+    title: ElmTextDersFifteen.titleFifteenTherteen_1,
     text: ElmTextDersFifteen.elmTextFifteenTherteen_1,
   ), //
   // page 14

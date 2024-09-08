@@ -91,13 +91,11 @@ class CustomTextSliderElm1 extends StatelessWidget {
                       max: elmList.length.toDouble() - 1,
                     ),
                   ),
-
-                  // Display current page number
                   Text(
                     '${controller.currentPageIndex + 1} / ${elmList.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
-                  )
+                  ),
                 ],
               ),
             ),

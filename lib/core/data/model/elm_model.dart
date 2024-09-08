@@ -18,6 +18,7 @@ class ElmModel {
   final String? text6;
   final String? text7;
   final String? text8;
+  final String? text9;
   // ayah
   final String? ayah;
   final String? ayah2;
@@ -48,6 +49,7 @@ class ElmModel {
     this.text6,
     this.text7,
     this.text8,
+    this.text9,
     // ayah
     this.ayah,
     this.ayah2,

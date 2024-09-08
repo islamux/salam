@@ -142,7 +142,7 @@ class ElmTextDersFourteen {
   static const String ayahHadithFourteenSeven_1 = """
 ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ ) 
 """;
-  static const String elmTextFourteen_1 = """"
+  static const String elmTextFourteenSeven_1 = """"
 أي: يا من آمنتم بي خالقاً ورباً وإلهاً وموجوداً وواحداً وكاملاً ، ويا من آمنتم بمنهجي افعلوا كذا أو لا تفعلوا
 """;
   static const String ayahHadithFourteenSeven_2 = """
@@ -153,14 +153,14 @@ class ElmTextDersFourteen {
 الايمان درجات
 ----------
 """;
-  static const String elmTextFourteenSeven_3 = """
+  static const String elmTextFourteenSeven_2 = """
 في الآيه ملمح لطيف ، وهو أن الله يُخاطب الذين آمنو ويأمرهم أن يؤمنوا ، معنى ذلك أن الايمان درجات ، وأن من بعض درجات الإيمان أنه لا يُنجي صاحبه ، الحد الأدنى المنجي للايمان أن يحملك على طاعة الله ، ومهما يكُن إيمانك واضحاً في ذهنك ولم تستقم على أمر الله فإيمانك هذا لا يُنجي ، لإنه قد قيل : " كفى بالمرء علماً أن يطيع الله أو أن يخشاه ، وكفى به جهلاً أن يعصيه" ، فحينما يعصي الإنسان ربه فهو لا يعرفه ، لو كان الله عز وجل عنده عظيماً لما عصاه
 """;
   static const String ayahHadithFourteenSeven_3 = """
  يَا أَيُّهَا الَّذِينَ آمَنُوا آمِنُوا
 """;
 
-  static const String elmTextFourteenSeven_4 = """
+  static const String elmTextFourteenSeven_3 = """
 يعني أنت مؤمن ، ولكن إيمانك لا يكفي ، لا بد من أن تجدد إيمانك 
 الايمان درجات كثيرة جداً ، لكن أهم شيئ أنه إذا كنت في درجة لا يقودك إيمانك إلى طاعة الله ينبغي أن تُشمر وتجدد إيمانك ، لا ينبغي أن تقر عينك إلا بإيمان مؤداه الاستقامه على أمر الله
 

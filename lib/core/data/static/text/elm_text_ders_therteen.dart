@@ -30,6 +30,7 @@ class ElmTextDersTherteen {
 
 والحديث
 يَا عِبَادِي! لَوْ أَنَّ أَوَّلَكُمْ وَآخِرَكُمْ وَإِنْسَكُمْ وَجِنَّكُمْ كَانُوا عَلَى أَتْقَى قَلْبِ رَجُلٍ وَاحِدٍ مِنْكُمْ، مَا زَادَ ذَلِكَ فِي مُلْكِي شَيْئًا. يَا عِبَادِي! لَوْ أَنَّ أَوَّلَكُمْ وَآخِرَكُمْ وَإِنْسَكُمْ وَجِنَّكُمْ كَانُوا عَلَى أَفْجَرِ قَلْبِ رَجُلٍ وَاحِدٍ مِنْكُمْ، مَا نَقَصَ ذَلِكَ مِنْ مُلْكِي شَيْئًا
+
 """;
 
   static const String elmTextTherteenOne_3 = """
@@ -58,18 +59,18 @@ class ElmTextDersTherteen {
 """;
 
   static const String elmTextTherteenTwo_2 = """
-العكس غير صحيح ، أي كل شيئ أصابك بسبب معصية ، لكن ما كل مخالفة وذنب يتبعها مصيبة ، هو يعفو عن كثير ( فالمعنى دقيق ) فكل مصيبةٍ أصابت الإنسان بسبب معصيةٍ أو ذنب ، لكن ما كل ذنب ٍ أو معصيةٍ يتبعها مصيبة
+العكس غير صحيح ، أي كل شيئ أصابك بسبب معصية ، لكن ما كل مخالفة وذنب يتبعها مصيبة هو يعفو عن كثير ( فالمعنى دقيق ) فكل مصيبةٍ أصابت الإنسان بسبب معصيةٍ أو ذنب ، لكن ما كل ذنب ٍ أو معصيةٍ يتبعها مصيبة
 
 الله عز وجل عفو يعفو عن الإنسان ويسامحه ويعطيه فرصآ كثيرة
 """;
 
   static const String ayahHadithTherteenTwo_2 = """
-(وَیَعۡفُوا۟ عَن كَثِیرࣲ)
+وَیَعۡفُوا۟ عَن كَثِیرࣲ
 """;
 
   static const String elmTextTherteenTwo_3 = """
-فربنا عز وجل يحاسب قليلآ ويعفو كثيرآ ، إذ يحاسبك عن واحدة ويسامحك بعشرة كي تتعظ ، وكي تقترب ، والله يعطي فرصآ كثيرة 
----------------------
+فربنا عز وجل يحاسب قليلآ ويعفو كثيرآ ، إذ يحاسبك عن واحدة ويسامحك بعشرة كي تتعظ وكي تقترب ، والله يعطي فرصآ كثيرة 
+
 """;
 // page3
   static const String ayahHadithTherteenThree_1 = """
@@ -97,7 +98,7 @@ class ElmTextDersTherteen {
 
   static const String ayahHadithTherteenThree_3 = """
 
- وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠ *
+ وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠ 
 """;
 
   static const String elmTextTherteenThree_4 = """
@@ -107,7 +108,11 @@ class ElmTextDersTherteen {
   // page 4
   static const String elmTextTherteenFour_1 = """
 من تعامل مع الله عز وجل بصدق واستقامه نال 
+""";
+  static const String subtitleTherteenFour_1 = """
 ١.. السرور والسعادة و التيسير
+""";
+  static const String elmTextTherteenFour_2 = """
 تعامل معه بصدق وباستقامة تر من السرور والسعادة والتيسير ما لا سبيل إلى وصفه
 """;
   static const String ayahHadithTherteenFour_1 = """
@@ -118,8 +123,10 @@ class ElmTextDersTherteen {
 
 """;
 
-  static const String elmTextTherteenFour_2 = """
+  static const String subtitleTherteenFour_2 = """
 ٢.. الحياة الطيبة
+""";
+  static const String elmTextTherteenFour_3 = """
 وهذه واحدة ، ترى الحياة الطيبة
 """;
 
@@ -129,20 +136,23 @@ class ElmTextDersTherteen {
 الحج 40 
 """;
 
-  static const String elmTextTherteenFour_3 = """
+  static const String subtitleTherteenFour_3 = """
 ٣.. دفاع الله عن الذين آمنو
+""";
+  static const String elmTextTherteenFour_4 = """
 ترى أن الله يدافع عن الذين آمنو ، وهذه الثالثة
+
 """;
 
   static const String ayahHadithTherteenFour_3 = """
  وَلَیَنصُرَنَّ ٱللَّهُ مَن یَنصُرُهُۥۤۚ  
 """;
 
-  static const String elmTextTherteenFour_4 = """
+  static const String subtitleTherteenFour_4 = """
 ٤.. النصر والتأييد
 """;
 
-// page 5
+// page 5 -------------
   static const String elmTextTherteenFive_1 = """
 والآيه الرابعه
 """;
@@ -350,11 +360,17 @@ class ElmTextDersTherteen {
   static const String elmTextTherteenTherteen_1 = """
 من قصر بالعمل ابتلاه الله بالهم، يكون هناك عبادة شكلية وصلاة صورية، تساهل ببعض الطاعات تقصير في الصلوات تلاوة القرآن عنده شكلية ليس فيها عمق ولا خشوع، من قصر بالعمل ابتلاه الله بالهم
 مصيبة المؤمنين مصيبة دفع
-
+""";
+  static const String subtitleTherteenTherteen_1 = """
 المصيبة الثانية
+""";
+  static const String elmTextTherteenTherteen_2 = """
  مصيبة الرفع ، هو مستقيم وسرعته عالية في طريق الإيمان ، لكن يمكن أن يرقى عند الله إلى درجات أعلى ، فلذلك إضافة إلى ايمانه وإخلاصه وإلى أعماله الصالحة يحمله الله بعض المتاعب كي يكون مثلاً أعلى في تحمله إياها وصبره عليها ، هذه مصيبة الرفع ، فالمؤمن بين الدفع والرفع ، إما أنه يدفعه إلى بابه ، وإما أنه يرقى به
-
+""";
+  static const String subtitleTherteenTherteen_2 = """
 المصيبة الثالثة
+""";
+  static const String elmTextTherteenTherteen_3 = """
  مصيبة الكشف للأنبياء 
 
 أما الأنبياء المكرمون هؤلاء تنطوي نفوسهم على خير وعلى حب وعلى كمال لا يظهر إلا بالمصائب 

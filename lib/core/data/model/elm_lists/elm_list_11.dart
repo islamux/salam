@@ -12,12 +12,13 @@ List<ElmModel> elmList11 = [
   ),
   // page 2
   ElmModel(
+    title: ElmTextDersEleven.titleElevenTwo,
     text: ElmTextDersEleven.elmTextElevenTwo_1,
     ayah: ElmTextDersEleven.ayahHadithElevenTwo_1,
   ),
   // page 3
   ElmModel(
-    text: ElmTextDersEleven.ayahHadithElevenTwo_1,
+    text: ElmTextDersEleven.elmTextElevenThree_1,
     ayah: ElmTextDersEleven.ayahHadithElevenThree_1,
     text2: ElmTextDersEleven.elmTextElevenThree_2,
   ),
@@ -108,9 +109,9 @@ List<ElmModel> elmList11 = [
   ),
   // page 16,
   ElmModel(
-    text: ElmTextDersEleven.elmTextElevenSixteen_1,
+    title: ElmTextDersEleven.titleElevenSixteen,
     ayah: ElmTextDersEleven.ayahHadithElevenSixteen_1,
-    text2: ElmTextDersEleven.elmTextElevenSixteen_2,
+    subtitle: ElmTextDersEleven.subtitleElevenSixteen_1,
     ayah2: ElmTextDersEleven.ayahHadithElevenSixteen_3,
     text3: ElmTextDersEleven.elmTextElevenSixteen_3,
     footer: ElmTextDersEleven.footerElevenSixteen,

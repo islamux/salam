@@ -27,8 +27,10 @@ class ElmTextDersEleven {
 """;
 
 // page 2
-  static const String elmTextElevenTwo_1 = """
+  static const String titleElevenTwo = """
 :الرزق بيد الله سبحانه وتعالى
+""";
+  static const String elmTextElevenTwo_1 = """
 من ابتغى أمرآ بمعصية كان أبعد مما رجا وأقرب مما اتقى  
 إياك أن تقول إن اطعت الله أخسر عملي ، فهذا كلام الجوهال ، وكلام مشرك ، وكلام من أُفُقه ضيق ، فهذا التوهم من الشيطان  
 """;
@@ -58,7 +60,7 @@ class ElmTextDersEleven {
 
 // page 4
   static const String elmTextElevenFour_1 = """
-وما من المن تفيد إستغراق افراد النوع 
+وما من ,المن تفيد إستغراق افراد النوع 
 لو دخلت إلى فصل وقلت هؤلا الطلاب لهم عندي جائزه أي اللذين امامك
 اما إذا قلت ما من طالب في هذا الصف إلا وله عندي جائزه شملت الغائبين
 
@@ -140,7 +142,7 @@ class ElmTextDersEleven {
 
 // page 11
   static const String elmTextElevenEleven_1 = """
-أما انتفاعك به فعلى ثلاثة أقسام ، قسم تستهلكه كالطعام والشراب ، وقسم يبلى كالثياب ، وقسم يبقى كالصدقات
+أما انتفاعك به فعلى ثلاثة أقسام ، قسم تستهلكه كالطعام والشراب ، وقسم يبلى كالثياب وقسم يبقى كالصدقات
 
 يقول إبن آدم مالي مالي مالي ، وليس لك من مالك إلا ما أكلت فأفنيت ، أو لبست فأبليت ، أو تصدقت فأبقيت ، وماسوى هذه الثلاثة ليست لك
 """;
@@ -229,7 +231,7 @@ class ElmTextDersEleven {
    """;
 // page 14
   static const String titleElevenFourteen = """
- الإستغفار:
+ :الإستغفار
  """;
   static const String elmTextElevenFourteen_1 = """
   والرزق يزيد بالاستغفار
@@ -295,15 +297,15 @@ class ElmTextDersEleven {
    """;
 
 // page 16
-  static const String elmTextElevenSixteen_1 = """
- الآمانة-
+  static const String titleElevenSixteen = """
+ الأمانة-
 """;
   static const String ayahHadithElevenSixteen_1 = """
 والأمانه كما قال عليه الصلاة والسلام 
 ( الأمانة غنى )   *
  
 """;
-  static const String elmTextElevenSixteen_2 = """
+  static const String subtitleElevenSixteen_1 = """
 صلة الرحم- **
 """;
   static const String ayahHadithElevenSixteen_3 = """

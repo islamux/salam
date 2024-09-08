@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageTowTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
-  TextStyle footer = AppTheme.customTextStyleFooter();
   return [
     TextSpan(text: elmList16[i].text),
     TextSpan(text: elmList16[i].ayah, style: ayah),
@@ -17,6 +16,5 @@ List<TextSpan> getPageTowTexts(int i) {
     TextSpan(text: elmList16[i].text4),
     TextSpan(text: elmList16[i].ayah4, style: ayah),
     TextSpan(text: elmList16[i].text5),
-    TextSpan(text: elmList16[i].footer, style: footer),
   ];
 }

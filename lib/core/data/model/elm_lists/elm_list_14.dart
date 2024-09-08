@@ -49,13 +49,15 @@ List<ElmModel> elmList14 = [
   ),
   // page 7
   ElmModel(
-    ayah: ElmTextDersFourteen.ayahHadithFourteenSeven_2,
-    subtitle: ElmTextDersFourteen.subtitleFourteenSeven_1,
-    text: ElmTextDersFourteen.elmTextFourteenSeven_3,
-    ayah2: ElmTextDersFourteen.ayahHadithFourteenSeven_3,
-    ayah3: ElmTextDersFourteen.ayahHadithFourteenSeven_1,
-    text3: ElmTextDersFourteen.elmTextFourteenSeven_4,
+    ayah: ElmTextDersFourteen.ayahHadithFourteenSeven_1,
+    text: ElmTextDersFourteen.elmTextFourteenSeven_1,
+    ayah2: ElmTextDersFourteen.ayahHadithFourteenSeven_2,
+    subtitle2: ElmTextDersFourteen.subtitleFourteenSeven_1,
+    text2: ElmTextDersFourteen.elmTextFourteenSeven_2,
+    ayah3: ElmTextDersFourteen.ayahHadithFourteenSeven_3,
+    text3: ElmTextDersFourteen.elmTextFourteenSeven_3,
   ),
+
   // page 8
   ElmModel(
     text: ElmTextDersFourteen.elmTextFourteenEight_1,

@@ -30,10 +30,11 @@ List<ElmModel> elmList12 = [
   // 5
   ElmModel(
     title: ElmTextDersTwelve.titleTwelveFive_1,
+    subtitle: ElmTextDersTwelve.subtitleTwelveFive_1,
     text: ElmTextDersTwelve.elmTextTwelveFive_1,
-    ayah: ElmTextDersTwelve.ayahHadithTwelveFive_2,
-    text2: ElmTextDersTwelve.elmTextTwelveFive_3,
-    ayah2: ElmTextDersTwelve.ayahHadithTwelveFive_3,
+    ayah: ElmTextDersTwelve.ayahHadithTwelveFive_1,
+    text2: ElmTextDersTwelve.elmTextTwelveFive_2,
+    ayah2: ElmTextDersTwelve.ayahHadithTwelveFive_2,
     footer: ElmTextDersTwelve.footerTwelveFive,
   ),
   // 6
@@ -71,6 +72,7 @@ List<ElmModel> elmList12 = [
   ),
   // 12
   ElmModel(
+    title: ElmTextDersTwelve.titleTwelveTwelve,
     text: ElmTextDersTwelve.elmTextTwelveTwelve_1,
   ),
   // 13

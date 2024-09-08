@@ -29,9 +29,6 @@ class Elm1 extends StatelessWidget {
             ),
             const Text(
               "الخاطرة 1  ",
-              // style: TextStyle(
-              //     color: AppColor.primaryColorGolden,
-              //     backgroundColor: AppColor.primaryColorBlack2),
             ),
           ],
         ),
@@ -59,7 +56,6 @@ class Elm1 extends StatelessWidget {
               // testing adding <Widget>
               Text(
                 "الخط",
-                //      style: TextStyle(color: AppColor.primaryColorGolden),
               ),
             ],
           ),

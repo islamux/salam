@@ -33,13 +33,17 @@ List<ElmModel> elmList13 = [
   ),
   // 4
   ElmModel(
-    text: ElmTextDersTherteen.elmTextTherteenThree_4,
-    ayah: ElmTextDersTherteen.ayahHadithTherteenFour_1,
+    text: ElmTextDersTherteen.elmTextTherteenFour_1,
+    subtitle: ElmTextDersTherteen.subtitleTherteenFour_1,
     text2: ElmTextDersTherteen.elmTextTherteenFour_2,
-    ayah2: ElmTextDersTherteen.ayahHadithTherteenFour_2,
+    ayah: ElmTextDersTherteen.ayahHadithTherteenFour_1,
+    subtitle2: ElmTextDersTherteen.subtitleTherteenFour_2,
     text3: ElmTextDersTherteen.elmTextTherteenFour_3,
-    ayah3: ElmTextDersTherteen.ayahHadithTherteenFour_3,
+    ayah2: ElmTextDersTherteen.ayahHadithTherteenFour_2,
+    subtitle3: ElmTextDersTherteen.subtitleTherteenFour_3,
     text4: ElmTextDersTherteen.elmTextTherteenFour_4,
+    ayah3: ElmTextDersTherteen.ayahHadithTherteenFour_3,
+    subtitle4: ElmTextDersTherteen.subtitleTherteenFour_4,
   ),
   // 5
   ElmModel(
@@ -107,5 +111,9 @@ List<ElmModel> elmList13 = [
   // 13
   ElmModel(
     text: ElmTextDersTherteen.elmTextTherteenTherteen_1,
+    subtitle: ElmTextDersTherteen.subtitleTherteenTherteen_1,
+    text2: ElmTextDersTherteen.elmTextTherteenTherteen_2,
+    subtitle2: ElmTextDersTherteen.subtitleTherteenTherteen_2,
+    text3: ElmTextDersTherteen.elmTextTherteenTherteen_3,
   ),
 ];

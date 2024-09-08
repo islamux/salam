@@ -7,9 +7,11 @@ List<TextSpan> getPageSevenTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
   return [
     TextSpan(text: elmList14[i].ayah, style: ayah),
+    TextSpan(text: elmList14[i].text),
     TextSpan(text: elmList14[i].ayah2, style: ayah),
     TextSpan(text: elmList14[i].subtitle, style: subtitle),
-    TextSpan(text: elmList14[i].text),
+    TextSpan(text: elmList14[i].text2),
     TextSpan(text: elmList14[i].ayah3, style: ayah),
+    TextSpan(text: elmList14[i].text3),
   ];
 }
