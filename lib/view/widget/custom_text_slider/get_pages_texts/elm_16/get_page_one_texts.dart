@@ -14,15 +14,5 @@ List<TextSpan> getPageOneTexts(int i) {
     TextSpan(text: elmList16[i].text),
     TextSpan(text: elmList16[i].ayah, style: ayah),
     TextSpan(text: elmList16[i].text2),
-    TextSpan(text: elmList16[i].subtitle, style: subtitle),
-    TextSpan(text: elmList16[i].text3),
-    TextSpan(text: elmList16[i].ayah2, style: ayah),
-    TextSpan(text: elmList16[i].text4),
-    TextSpan(text: elmList16[i].ayah3, style: ayah),
-    TextSpan(text: elmList16[i].text5),
-    TextSpan(text: elmList16[i].ayah4, style: ayah),
-    TextSpan(text: elmList16[i].text6),
-    TextSpan(text: elmList16[i].ayah5, style: ayah),
-    TextSpan(text: elmList16[i].footer, style: footer),
   ];
 }
