@@ -7,6 +7,5 @@ List<TextSpan> getPageSevenTexts(int i) {
   return [
     TextSpan(text: elmList8[i].text),
     TextSpan(text: elmList8[i].footer, style: footer),
-    TextSpan(text: elmList8[i].text2),
   ];
 }
