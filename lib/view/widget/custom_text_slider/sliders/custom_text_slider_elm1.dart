@@ -11,9 +11,9 @@ class CustomTextSliderElm1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm1ControllerImp controller = Get.find<Elm1ControllerImp>();
+    final Elm1Controller controller = Get.find<Elm1Controller>();
 
-    return GetBuilder<Elm1ControllerImp>(
+    return GetBuilder<Elm1Controller>(
       builder: (_) {
         return Stack(
           children: [
@@ -47,7 +47,7 @@ class CustomTextSliderElm1 extends StatelessWidget {
                           padding: const EdgeInsets.only(
                               top: 60, left: 32, right: 32, bottom: 60),
                           child: SingleChildScrollView(
-                            child: GetBuilder<Elm1ControllerImp>(
+                            child: GetBuilder<Elm1Controller>(
                               builder: (controller) {
                                 return RichText(
                                   text: TextSpan(

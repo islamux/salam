@@ -14,7 +14,7 @@ class Elm2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //ElmPage1ControllerImp controllerM = Get.put(AthkarMassaControllerImp());
-    final controllerM = Get.find<Elm2ControllerImp>();
+    final controllerM = Get.find<Elm2Controller>();
 
     return Scaffold(
       appBar: AppBar(

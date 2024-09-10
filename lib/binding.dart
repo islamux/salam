@@ -28,8 +28,8 @@ class MyBinding extends Bindings {
     // binding Page controller
     Get.put(ElmPreControllerImp());
     Get.put(HomeControllerImp());
-    Get.put(Elm1ControllerImp());
-    Get.put(Elm2ControllerImp());
+    Get.put(Elm1Controller());
+    Get.put(Elm2Controller());
     Get.put(Elm3ControllerImp());
     Get.put(Elm4ControllerImp());
     Get.put(Elm5ControllerImp());

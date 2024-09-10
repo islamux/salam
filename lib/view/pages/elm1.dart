@@ -13,7 +13,7 @@ class Elm1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm1ControllerImp controllerAs = Get.find<Elm1ControllerImp>();
+    final Elm1Controller controllerAs = Get.find<Elm1Controller>();
     //Elm1ControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
     return Scaffold(
       appBar: AppBar(
@@ -36,7 +36,7 @@ class Elm1 extends StatelessWidget {
         leading: GestureDetector(
           onTap: () {
             // reset before return to home page
-            Get.find<Elm1ControllerImp>().resetCounter();
+            Get.find<Elm1Controller>().resetCounter();
             Get.toNamed(AppRoute.home);
           },
           child: const Icon(Icons.arrow_back),
