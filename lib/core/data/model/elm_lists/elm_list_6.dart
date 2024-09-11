@@ -24,4 +24,11 @@ List<ElmModel> elmList6 = [
   ),
   // page 4
   ElmModel(text: ElmTextDersSix.elmTextSixFour_1),
+
+  // page 5
+  ElmModel(
+    title: ElmTextDersSix.titleSixFive,
+    ayah: ElmTextDersSix.ayahHadithSixFive_1,
+    text: ElmTextDersSix.elmTextSixFive_1,
+  )
 ];
