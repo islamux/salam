@@ -124,27 +124,23 @@ class ElmTextDersEight {
 المقصود من قصص القرآن العبر
 """;
   static const String ayahHadithEightEight_1 = """
-
   ( يانار كوني برداً وسلاماً على ابراهيم ) 
-
 """;
   static const String elmTextEightEight_1 = """
-
 أية قصه في القرآن الكريم ليست مقصوده لذاتها بل مطلوبة للعبرة التي يمكن أن تُستنبط منها لأن هذه العبرة يمكن أن تُطبق في حياتنا 
 
 """;
   static const String ayahHadithEightEight_2 = """
-  
   ( يانار كوني برداً وسلاماً على ابراهيم ) 
-
 """;
   static const String subtitleEightEight_2 = """
 معية الله للمؤمن في الشدة
 """;
   static const String elmTextEightEight_2 = """
 بشكل أو بأخر يمكن أن يواجه المؤمن صعوبة ، مشكلة ، خطراً ، شبح مصيبة ، أن يواجه مؤامرة مثلاً ، كيداً ، فالله جل جلاله يُبطل الكيد ، ويزيل الخطر ، ويصرف المرض ، هذه كرامة المؤمن على الله عز وجل ، لكن خرق العادات إذا جرى مع الانبياء فهو معجزة ، وإذا جرى مع المؤمنين فهو كرامة ، وهذا الذي عبر عنه الله جل جلاله في بعض الآيات الكريمة
- إذ يقول : 
+ إذ يقول
 """;
+// page 9
   static const String ayahHadithEightEight_3 = """
   ( وذكرهم بايام الله ) 
 """;
@@ -161,13 +157,12 @@ class ElmTextDersEight {
 فيما يشبهها قصة سيدنا يونس عليه وعلى نبينا افضل الصلاة والسلام حينما كان في بطن الحوت ، في ظلمات ثلاث 
 
 """;
+// page 10
   static const String ayahHadithEightEight_5 = """
-
   ( فنادى في الظلمات أن لا إله إلا أنت سبحانك إني كنت من الظالمين فاستجبنا له ونجيناه من الغم ) 
 """;
   static const String elmTextEightEight_5 = """
 الآن ربنا عز وجل أراد من هذه القصة أن يجعلها قانوناً ، قال  
-
 """;
   static const String ayahHadithEightEight_6 = """
 

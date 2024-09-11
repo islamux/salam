@@ -53,13 +53,19 @@ List<ElmModel> elmList8 = [
     ayah2: ElmTextDersEight.ayahHadithEightEight_2,
     subtitle2: ElmTextDersEight.subtitleEightEight_2,
     text2: ElmTextDersEight.elmTextEightEight_2,
-    ayah3: ElmTextDersEight.ayahHadithEightEight_3,
-    text3: ElmTextDersEight.elmTextEightEight_3,
-    ayah4: ElmTextDersEight.ayahHadithEightEight_4,
-    text4: ElmTextDersEight.elmTextEightEight_4,
-    ayah5: ElmTextDersEight.ayahHadithEightEight_5,
-    text5: ElmTextDersEight.elmTextEightEight_5,
-    ayah6: ElmTextDersEight.ayahHadithEightEight_6,
-    text6: ElmTextDersEight.elmTextEightEight_6,
+  ),
+  // 9
+  ElmModel(
+    ayah: ElmTextDersEight.ayahHadithEightEight_3,
+    text: ElmTextDersEight.elmTextEightEight_3,
+    ayah2: ElmTextDersEight.ayahHadithEightEight_4,
+    text2: ElmTextDersEight.elmTextEightEight_4,
+  ),
+  // 10
+  ElmModel(
+    ayah: ElmTextDersEight.ayahHadithEightEight_5,
+    text: ElmTextDersEight.elmTextEightEight_5,
+    ayah2: ElmTextDersEight.ayahHadithEightEight_6,
+    text2: ElmTextDersEight.elmTextEightEight_6,
   ),
 ];
