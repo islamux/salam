@@ -111,5 +111,77 @@ List<ElmModel> elmList16 = [
     // 17
     ayah: ElmTextDersSixteen.ayahHadithSixteenSeventeen_1,
     text: ElmTextDersSixteen.elmTextDersSixteenSeventeen_1,
-  )
+  ),
+  // page 18
+  ElmModel(
+    title: ElmTextDersSixteen.titleSixteenEighteen_1,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenEighteen_1,
+    subtitle: ElmTextDersSixteen.subtitleSixteenEighteen_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenEighteen_1,
+  ),
+  // page 19
+  ElmModel(
+    subtitle: ElmTextDersSixteen.subtitleSixteenNinteen_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenNine_1,
+  ),
+  // page 20
+  ElmModel(
+      title: ElmTextDersSixteen.titleSixteenTwenty,
+      text: ElmTextDersSixteen.elmTextDersSixteenTwenty_1),
+
+  // page 21
+  ElmModel(
+    title: ElmTextDersSixteen.titleSixteenTwentyOne,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenTwentyOne_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenTwentyOne_2,
+  ),
+  // page 22
+  ElmModel(
+    title: ElmTextDersSixteen.titleSixteenTwentyTwo,
+    subtitle: ElmTextDersSixteen.subtitleSixteenTwentyTwo_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenTwentyTwo_1,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenTwentyOne_1,
+    text2: ElmTextDersSixteen.elmTextDersSixteenTwentyTwo_2,
+  ),
+  // page 23
+  ElmModel(
+    title: ElmTextDersSixteen.titleSixteentTwentyThree,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenTwentyThree_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenTwentyThree_1,
+  ),
+  // page 24
+  ElmModel(
+    title: ElmTextDersSixteen.titleSixteentTwentyFour,
+    subtitle: ElmTextDersSixteen.subtitleSixteentTwentyFour_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenTwentyFour_1,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenTwentyFour_1,
+    text2: ElmTextDersSixteen.elmTextDersSixteenTwentyFour_2,
+    ayah2: ElmTextDersSixteen.ayahHadithSixteenTwentyFour_2,
+  ),
+
+  // page 25
+  ElmModel(
+    subtitle: ElmTextDersSixteen.subtitleSixteentTwentyFive_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenTwentyFive_1,
+    subtitle2: ElmTextDersSixteen.subtitleSixteentTwentyFive_2,
+    text2: ElmTextDersSixteen.elmTextDersSixteenTwentyFive_2,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenTwentyFive_1,
+    text3: ElmTextDersSixteen.elmTextDersSixteenTwentyFive_3,
+    ayah2: ElmTextDersSixteen.ayahHadithSixteenTwentyFive_2,
+  ),
+
+  // page 26
+  ElmModel(
+    text: ElmTextDersSixteen.elmTextDersSixteenTwentySix_1,
+    ayah: ElmTextDersSixteen.ayahHadithSixteenTwentySix_1,
+    text2: ElmTextDersSixteen.elmTextDersSixteenTwentySix_2,
+    ayah2: ElmTextDersSixteen.ayahHadithSixteenTwentySix_2,
+    text3: ElmTextDersSixteen.elmTextDersSixteenTwentySix_3,
+    text4: ElmTextDersSixteen.elmTextDersSixteenTwentySix_4,
+    ayah3: ElmTextDersSixteen.ayahHadithSixteenTwentySix_3,
+  ),
+  // page 27
+  ElmModel(
+      title: ElmTextDersSixteen.titelSixteenTwentySeven,
+      text: ElmTextDersSixteen.elmTextDersSixteenTwentySeven_1),
 ];
