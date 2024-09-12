@@ -1,15 +1,17 @@
 import 'package:elm/core/data/model/elm_lists/elm_list_pre.dart';
+import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageThreeTexts(int i) {
-  TextStyle ayah = AppTheme.customTextStyleHadith();
+  TextStyle ayahStyle = AppTheme.customTextStyleHadith();
+  ElmModel elmPre = elmListPre[i];
   return [
-    TextSpan(text: elmListPre[i].ayah, style: ayah),
-    TextSpan(text: elmListPre[i].text),
-    TextSpan(text: elmListPre[i].ayah2, style: ayah),
-    TextSpan(text: elmListPre[i].text2),
-    TextSpan(text: elmListPre[i].ayah3, style: ayah),
-    TextSpan(text: elmListPre[i].text3),
+    TextSpan(text: elmPre.ayah, style: ayahStyle),
+    TextSpan(text: elmPre.text),
+    TextSpan(text: elmPre.ayah2, style: ayahStyle),
+    TextSpan(text: elmPre.text2),
+    TextSpan(text: elmPre.ayah3, style: ayahStyle),
+    TextSpan(text: elmPre.text3),
   ];
 }

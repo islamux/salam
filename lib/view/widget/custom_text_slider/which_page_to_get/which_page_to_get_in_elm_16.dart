@@ -1,3 +1,6 @@
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_1/get_page_twenty_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_twentyOne_texts.dart';
+
 import '../get_pages_texts/elm_16/get_page_seven_texts.dart';
 import '../get_pages_texts/elm_16/get_page_six_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_seventeen_texts.dart';
@@ -16,6 +19,14 @@ import 'package:flutter/material.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_three_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_two_texts.dart';
+import '../get_pages_texts/elm_16/get_page_eighteen_texts.dart';
+import '../get_pages_texts/elm_16/get_page_ninteen_texts.dart';
+import '../get_pages_texts/elm_16/get_page_twentyTwo_texts.dart';
+import '../get_pages_texts/elm_16/get_page_twentyThree_texts.dart';
+import '../get_pages_texts/elm_16/get_page_twentyFive_texts.dart';
+import '../get_pages_texts/elm_16/get_page_twentyFour_texts.dart';
+import '../get_pages_texts/elm_16/get_page_twentySix_texts.dart';
+import '../get_pages_texts/elm_16/get_page_twentySeven_texts.dart';
 
 List<TextSpan> whichPageToGetInElm16(int i) {
   switch (i) {
@@ -53,6 +64,26 @@ List<TextSpan> whichPageToGetInElm16(int i) {
       return getPageSixteenTexts(i);
     case 16:
       return getPageSeventeenTexts(i);
+    case 17:
+      return getPageEighteenTexts(i);
+    case 18:
+      return getPageNinteenTexts(i);
+    case 19:
+      return getPageTwentyTexts(i);
+    case 20:
+      return getPageTwentyOneTexts(i);
+    case 21:
+      return getPageTwentyTwoTexts(i);
+    case 22:
+      return getPageTwentyThreeTexts(i);
+    case 23:
+      return getPageTwentyFourTexts(i);
+    case 24:
+      return getPageTwentyFiveTexts(i);
+    case 25:
+      return getPageTwentySixTexts(i);
+    case 26:
+      return getPageTwentySevenTexts(i);
     default:
       return [];
   }
