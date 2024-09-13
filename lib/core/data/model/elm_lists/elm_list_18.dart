@@ -32,21 +32,27 @@ List<ElmModel> elmList18 = [
     text: ElmTextDersEighteen.elmTextEighteenFive_1,
   ),
   // page 6
-  ElmModel(ayah: ElmTextDersEighteen.ayahHadithEighteenSix_1),
+  ElmModel(
+    ayah: ElmTextDersEighteen.ayahHadithEighteenSix_1,
+    text: ElmTextDersEighteen.elmTextEighteenSix_1,
+  ),
 
   // page 7
   ElmModel(
-    text2: ElmTextDersEighteen.elmTextEighteenSeven_1,
+    text: ElmTextDersEighteen.elmTextEighteenSeven_1,
   ),
   // page 8
   ElmModel(
-    ayah: ElmTextDersEighteen.ayahHadithEighteenEight_1,
-    subtitle: ElmTextDersEighteen.subtitleEighteenEight_1,
+    text: ElmTextDersEighteen.elmTextEighteenEight_1,
   ),
   // page 9
   ElmModel(
+    title: ElmTextDersEighteen.titleEighteenNine_1,
     ayah: ElmTextDersEighteen.ayahHadithEighteenNine_1,
     text: ElmTextDersEighteen.elmTextEighteenNine_1,
-    text2: ElmTextDersEighteen.elmTextEighteenNine_2,
+  ),
+  // page 10
+  ElmModel(
+    text: ElmTextDersEighteen.elmTextEighteenTen_1,
   ),
 ];

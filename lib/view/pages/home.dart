@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final HomeControllerImp controllerE = Get.find<HomeControllerImp>();
+    final HomeControllerImp controller = Get.find<HomeControllerImp>();
 
     return PopScope(
       canPop: true,
@@ -113,126 +113,133 @@ class Home extends StatelessWidget {
                         CustomButton(
                           // Button 1
                           customText: "خواطر متفرقة حول الدين والحياة",
-                          onPressed: () => controllerE.goToElmPre(),
+                          onPressed: () => controller.goToElmPre(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 2
                           customText: "(1) عوامل تفكك وفشل الأسرة والقبيلة",
-                          onPressed: () => controllerE.goToElm1(),
+                          onPressed: () => controller.goToElm1(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 3
                           customText: "(2)  العلم والمعرفة    ",
-                          onPressed: () => controllerE.goToElm2(),
+                          onPressed: () => controller.goToElm2(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 4
                           customText: "(3) العطاء ليس مقياس لحب الله للعبد",
-                          onPressed: () => controllerE.goToElm3(),
+                          onPressed: () => controller.goToElm3(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 5
                           customText: " (4) المحبة الإلهية   ",
-                          onPressed: () => controllerE.goToElm4(),
+                          onPressed: () => controller.goToElm4(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 6
                           customText: "  (5)   العدل      ",
-                          onPressed: () => controllerE.goToElm5(),
+                          onPressed: () => controller.goToElm5(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 7
                           customText: "  (6)   الشرك الخفي     ",
-                          onPressed: () => controllerE.goToElm6(),
+                          onPressed: () => controller.goToElm6(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         CustomButton(
                           // Button 8
                           customText: "  (7)   التوكل على الله     ",
-                          onPressed: () => controllerE.goToElm7(),
+                          onPressed: () => controller.goToElm7(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 9
                         CustomButton(
                           customText: " (8)   المعية الإلهية",
-                          onPressed: () => controllerE.goToElm8(),
+                          onPressed: () => controller.goToElm8(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 10
                         CustomButton(
                           customText: "(9) فأما اليتيم فلا تقهر ",
-                          onPressed: () => controllerE.goToElm9(),
+                          onPressed: () => controller.goToElm9(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 11
                         CustomButton(
                           customText: " (10) والذين جاهدو فينا",
-                          onPressed: () => controllerE.goToElm10(),
+                          onPressed: () => controller.goToElm10(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 12
                         CustomButton(
                           customText: " (11)   الرزق",
-                          onPressed: () => controllerE.goToElm11(),
+                          onPressed: () => controller.goToElm11(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 12
                         CustomButton(
                           customText: "(12) وإنك لعلى خلق عظيم",
-                          onPressed: () => controllerE.goToElm12(),
+                          onPressed: () => controller.goToElm12(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 13
                         CustomButton(
                           customText: "(13) مأ أصابكم من مصيبة ",
-                          onPressed: () => controllerE.goToElm13(),
+                          onPressed: () => controller.goToElm13(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 14
                         CustomButton(
                           customText: "(14)  الإسلام دين شامل",
-                          onPressed: () => controllerE.goToElm14(),
+                          onPressed: () => controller.goToElm14(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 15
                         CustomButton(
                           customText: "(15) العزة لله  ",
-                          onPressed: () => controllerE.goToElm15(),
+                          onPressed: () => controller.goToElm15(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
                         // Button 16
                         CustomButton(
                           customText: "(16)  المرأة الصالحة  ",
-                          onPressed: () => controllerE.goToElm16(),
+                          onPressed: () => controller.goToElm16(),
                           icon: const Icon(Icons.menu_book),
                         ),
 
-                        // Button 14
+                        // Button 17
                         CustomButton(
                           customText: " (17)   الدعاء",
-                          onPressed: () => controllerE.goToElm17(),
+                          onPressed: () => controller.goToElm17(),
+                          icon: const Icon(Icons.menu_book),
+                        ),
+
+                        // Button 18
+                        CustomButton(
+                          customText: " (18)   مقتطفات",
+                          onPressed: () => controller.goToElm18(),
                           icon: const Icon(Icons.menu_book),
                         ),
                       ],

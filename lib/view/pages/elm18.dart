@@ -1,4 +1,3 @@
-import 'package:elm/controller/elm17_controller.dart';
 import 'package:elm/controller/elm18_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -14,8 +13,8 @@ class Elm18 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Elm18ControllerImp controllerAs = Get.find<Elm18ControllerImp>();
-    //Elm18ControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
+    final Elm18ControllerImp controller = Get.find<Elm18ControllerImp>();
+    //Elm18ControllerImp controller = Get.put(AthkarSabahControllerImp());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.black,
@@ -25,11 +24,11 @@ class Elm18 extends StatelessWidget {
           children: [
             IconButton(
               // share content by pass controlle as a parameter of current page
-              onPressed: () => customShareContent(controllerAs),
+              onPressed: () => customShareContent(controller),
               icon: const Icon(Icons.share),
             ),
             const Text(
-              "الخاطرة 17  ",
+              "الخاطرة 18  ",
               style: TextStyle(
                 color: AppColor.primaryColorGolden,
                 //backgroundColor: AppColor.primaryColorBlack2
@@ -49,8 +48,8 @@ class Elm18 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              // controllerAs.decreaseFontSize();
-              decreaseFont(controllerAs);
+              // controller.decreaseFontSize();
+              decreaseFont(controller);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -68,8 +67,8 @@ class Elm18 extends StatelessWidget {
 
           IconButton(
               onPressed: () {
-                // controllerAs.increaseFontSize();
-                increaseFont(controllerAs);
+                // controller.increaseFontSize();
+                increaseFont(controller);
               },
               icon: const Icon(Icons.add))
         ],

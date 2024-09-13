@@ -5,6 +5,7 @@ import 'package:elm/controller/elm14_controller.dart';
 import 'package:elm/controller/elm15_controller.dart';
 import 'package:elm/controller/elm16_controller.dart';
 import 'package:elm/controller/elm17_controller.dart';
+import 'package:elm/controller/elm18_controller.dart';
 import 'package:elm/controller/elm1_controller.dart';
 import 'package:elm/controller/elm2_controller.dart';
 import 'package:elm/controller/elm3_controller.dart';
@@ -45,6 +46,7 @@ class MyBinding extends Bindings {
     Get.put(Elm15ControllerImp());
     Get.put(Elm16ControllerImp());
     Get.put(Elm17ControllerImp());
+    Get.put(Elm18ControllerImp());
     Get.put(FloatingButtonControllerImp());
   }
 }

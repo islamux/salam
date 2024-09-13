@@ -8,6 +8,7 @@ import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_18/get_pa
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_18/get_page_two_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_18/get_page_eight_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_18/get_page_nine_texts.dart';
+import '../get_pages_texts/elm_18/get_page_ten_texts.dart';
 
 List<TextSpan> whichPageToGetInElm18(int i) {
   switch (i) {
@@ -29,6 +30,8 @@ List<TextSpan> whichPageToGetInElm18(int i) {
       return getPageEightTexts(i);
     case 8:
       return getPageNineTexts(i);
+    case 9:
+      return getPageTenTexts(i);
     default:
       return [];
   }
