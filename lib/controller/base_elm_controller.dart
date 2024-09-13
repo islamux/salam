@@ -17,7 +17,7 @@ abstract class BaseElmController extends GetxController {
 
   void decreaseFontSize() {
     fontSize -= 2.0;
-    print("From Base Controoler")
+    print("From Base Controoler");
     update();
   }
 

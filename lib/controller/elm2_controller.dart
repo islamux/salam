@@ -12,19 +12,12 @@ class Elm2Controller extends BaseElmController {
     Get.toNamed(AppRoute.home);
   }
 
-  // method to handle page change
-  @override
-  void onPageChanged(int index) {
-    currentPageIndex = index; // try to fix using casting
-    // reset counter
-    resetCounter();
-  }
-
   @override
   String getShareText(int index) {
     final elm = elmList2[index];
 
     StringBuffer shareText = StringBuffer();
+    print("fix share page");
 
     // Check and add title
     if (elm.title != null) {
