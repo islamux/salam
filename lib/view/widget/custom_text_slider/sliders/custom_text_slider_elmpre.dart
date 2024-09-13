@@ -40,6 +40,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                   itemCount: elmListPre.length,
                   itemBuilder: (context, i) {
                     // Determine wich page content to display
+                    // getPage_Texts --> Responsible of make text , ayah in its correct place in the page, which one is frist whict next
                     List<TextSpan> pageTexts;
                     pageTexts = whichPageToGetInPre(i);
 

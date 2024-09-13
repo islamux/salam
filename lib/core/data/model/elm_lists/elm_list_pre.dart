@@ -1,23 +1,24 @@
 // TextElmPre
-import 'package:elm/core/data/model/elm_model.dart';
+import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_pre.dart';
 
-List<ElmModel> elmListPre = [
+List<ElmModelNew> elmListPre = [
   // page 1
-  ElmModel(
+  ElmModelNew(
     title: ElmTextPre.titlePreOne,
     ayahs: [ElmTextPre.ayahHadithPreOne_1],
     texts: [ElmTextPre.elmTextPreOne_1],
   ),
   // page 2
-  ElmModel(
+  ElmModelNew(
     title: ElmTextPre.titlePreTwo,
     subtitles: [ElmTextPre.subtitlePreTwo_1],
     texts: [ElmTextPre.elmTextPreTwo_1],
   ),
   //page 3
-  ElmModel(
+  ElmModelNew(
     ayahs: [
+      // order not nececery here but in getPageThree()
       ElmTextPre.ayahHadithPreThree_1,
       ElmTextPre.ayahHadithPreThree_2,
       ElmTextPre.ayahHadithPreThree_3
