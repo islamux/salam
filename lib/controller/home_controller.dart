@@ -21,6 +21,7 @@ abstract class HomeController extends GetxController {
   void goToElm16();
   void goToElm17();
   void goToElm18();
+  void goToElm19();
 }
 
 class HomeControllerImp extends HomeController {
@@ -117,5 +118,10 @@ class HomeControllerImp extends HomeController {
   @override
   void goToElm18() {
     Get.toNamed(AppRoute.elm18);
+  }
+
+  @override
+  void goToElm19() {
+    Get.toNamed(AppRoute.elm19);
   }
 }
