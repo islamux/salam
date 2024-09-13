@@ -11,11 +11,13 @@ abstract class BaseElmController extends GetxController {
   void goToHome();
   void increaseFontSize() {
     fontSize += 2.0;
+    print("From Base Controller ");
     update();
   }
 
   void decreaseFontSize() {
     fontSize -= 2.0;
+    print("From Base Controoler")
     update();
   }
 

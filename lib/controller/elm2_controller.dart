@@ -1,7 +1,6 @@
 import 'package:elm/controller/base_elm_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_2.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,25 +10,6 @@ class Elm2Controller extends BaseElmController {
   @override
   goToHome() {
     Get.toNamed(AppRoute.home);
-  }
-
-  @override
-  increaseFontSize() {
-    fontSize += 2.0;
-    update();
-  }
-
-  @override
-  decreaseFontSize() {
-    fontSize -= 2.0;
-    update();
-  }
-
-  @override
-  void resetCounter() {
-    currentPageCounter = 0;
-
-    update();
   }
 
   // method to handle page change
@@ -126,47 +106,5 @@ class Elm2Controller extends BaseElmController {
     }
 
     return shareText.toString().trim();
-  }
-
-  // @override
-  // String getShareText(int index) {
-  //   return elmList2[index].elmText ?? '';
-  // }
-
-  @override
-  void increamentPageController() {
-    currentPageCounter++;
-
-    if (currentPageCounter >= maxPageCounters[currentPageIndex]) {
-      currentPageIndex++;
-
-      if (currentPageIndex < maxPageCounters.length) {
-        currentPageCounter = 0;
-
-        pageControllerAssma.nextPage(
-            duration: const Duration(microseconds: 500),
-            curve: Curves.easeInOut);
-      } else {
-        Get.snackbar(
-          'الحمدلله',
-          '! أنهيت قراءة أسماء الله الحسنى',
-          colorText: AppColor.black,
-          backgroundColor: AppColor.transparent,
-          duration: const Duration(seconds: 5),
-          snackPosition: SnackPosition.BOTTOM,
-        );
-      }
-    }
-
-    update();
-  }
-
-  @override
-  void goToPage(int pageIndex) {
-    pageControllerAssma.animateToPage(
-      pageIndex,
-      duration: const Duration(microseconds: 300),
-      curve: Curves.easeInOut,
-    );
   }
 }
