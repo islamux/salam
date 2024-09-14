@@ -9,5 +9,9 @@ List<TextSpan> getPageThreeTexts(int i) {
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModel elm = elmList19[i];
 
-  return [];
+  return [
+    TextSpan(text: elm.text),
+    TextSpan(text: elm.ayah, style: ayahStyle),
+    TextSpan(text: elm.text2),
+  ];
 }

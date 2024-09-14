@@ -1,6 +1,5 @@
 //TextDersSixTeen
 import 'package:elm/core/data/model/elm_model.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_eight.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_nineteen.dart';
 
 // TextDersSeventeen
@@ -28,29 +27,94 @@ List<ElmModel> elmList19 = [
     text2: ElmTextNineteen.elmTextNineteenThree_2,
   ),
   // page 4
-  ElmModel(),
+  ElmModel(
+    text: ElmTextNineteen.elmTextNineteenFour_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenFour_1,
+    text2: ElmTextNineteen.elmTextNineteenFour_2,
+    ayah2: ElmTextNineteen.ayahHadithNineteenFour_2,
+    text3: ElmTextNineteen.elmTextNineteenFour_3,
+  ),
   // page 5
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextNineteen.ayahHadithNineteenFive_1,
+    text: ElmTextNineteen.elmTextNineteenFive_1,
+    ayah2: ElmTextNineteen.ayahHadithNineteenFive_2,
+    text2: ElmTextNineteen.elmTextNineteenFive_2,
+  ),
   // page 6
-  ElmModel(),
+  ElmModel(
+    text: ElmTextNineteen.elmTextNineteenSix_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenSix_1,
+  ),
   // page 7
-  ElmModel(),
+  ElmModel(
+    text: ElmTextNineteen.elmTextNineteenSeven_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenSeven_1,
+    text2: ElmTextNineteen.elmTextNineteenSeven_2,
+    ayah2: ElmTextNineteen.ayahHadithNineteenSeven_2,
+    text3: ElmTextNineteen.elmTextNineteenSeven_3,
+  ),
   // page 8
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextNineteen.ayahHadithNineteenEight_1,
+    text2: ElmTextNineteen.elmTextNineteenEight_1,
+    ayah2: ElmTextNineteen.ayahHadithNineteenEight_2,
+    text3: ElmTextNineteen.elmTextNineteenEight_2,
+  ),
   // page 9
-  ElmModel(),
+  ElmModel(
+    text: ElmTextNineteen.elmTextNineteenNine_1,
+  ),
   // page 10
-  ElmModel(),
+  ElmModel(
+    text: ElmTextNineteen.elmTextNineteenTen_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenTen_1,
+    text2: ElmTextNineteen.elmTextNineteenTen_2,
+    ayah2: ElmTextNineteen.ayahHadithNineteenTen_2,
+    text3: ElmTextNineteen.elmTextNineteenTen_3,
+  ),
   // page 11
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextNineteen.ayahHadithNineteenEleven_1,
+    text: ElmTextNineteen.elmTextNineteenEleven_1,
+    ayah2: ElmTextNineteen.ayahHadithNineteenEleven_2,
+    text2: ElmTextNineteen.elmTextNineteenEleven_2,
+  ),
   // page 12
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextNineteen.ayahHadithNineteenTwelve_1,
+    text: ElmTextNineteen.elmTextNineteenTwelve_1,
+    ayah2: ElmTextNineteen.ayahHadithNineteenTwelve_2,
+    text2: ElmTextNineteen.elmTextNineteenTwelve_2,
+    ayah3: ElmTextNineteen.ayahHadithNineteenTwelve_3,
+  ),
 // page 13
-  ElmModel(),
+  ElmModel(
+    text: ElmTextNineteen.elmTextNineteenTherteen_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenThertten_1,
+    text2: ElmTextNineteen.elmTextNineteenTherteen_2,
+    ayah2: ElmTextNineteen.ayahHadithNineteenTherteen_2,
+    subtitle: ElmTextNineteen.subtitleNineteenTherteen_1,
+    text3: ElmTextNineteen.elmTextNineteenTherteen_3,
+  ),
 // page 14
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextNineteen.ayahHadithNineteenFourteen_1,
+    text: ElmTextNineteen.elmTextNineteenFourteen_1,
+  ),
 // page 15
-  ElmModel(),
+  ElmModel(
+    subtitle: ElmTextNineteen.subtitleNineteenFifteen_1,
+    text: ElmTextNineteen.elmTextNineteenFifteen_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenFifteen_1,
+    text2: ElmTextNineteen.elmTextNineteenFifteen_2,
+    ayah2: ElmTextNineteen.ayahHadithNineteenFifteen_2,
+    text3: ElmTextNineteen.elmTextNineteenFifteen_3,
+  ),
 // page 16
-  ElmModel(),
+  ElmModel(
+    title: ElmTextNineteen.titleNinteenSixteen,
+    subtitle: ElmTextNineteen.subtitleNineteenSixteen_1,
+    text: ElmTextNineteen.elmTextNineteenSixteen_1,
+  ),
 ];

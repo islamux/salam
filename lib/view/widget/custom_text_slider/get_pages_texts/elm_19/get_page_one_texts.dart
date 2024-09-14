@@ -5,7 +5,13 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageOneTexts(int i) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
+  TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
+  TextStyle footerStyle = AppTheme.customTextStyleFooter();
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModel elm = elmList19[i];
-  return [];
+  return [
+    TextSpan(text: elm.title, style: titleStyle),
+    TextSpan(text: elm.text),
+    TextSpan(text: elm.ayah, style: ayahStyle),
+  ];
 }

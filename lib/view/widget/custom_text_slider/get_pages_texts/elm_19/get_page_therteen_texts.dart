@@ -3,7 +3,7 @@ import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageNineTexts(int i) {
+List<TextSpan> getPageTherteenTexts(int i) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
