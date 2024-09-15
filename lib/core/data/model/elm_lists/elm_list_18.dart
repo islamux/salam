@@ -1,7 +1,6 @@
 //TextDersSixTeen
 import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_eighteen.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_seventeen.dart';
 
 // TextDersSeventeen
 List<ElmModel> elmList18 = [

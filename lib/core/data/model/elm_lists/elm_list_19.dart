@@ -10,14 +10,15 @@ List<ElmModel> elmList19 = [
     text: ElmTextNineteen.elmTextNineteenOne_1,
     ayah: ElmTextNineteen.ayahHadithNineteenOne_1,
   ),
+
 // page 2
   ElmModel(
     subtitle: ElmTextNineteen.subtitleNineteenTwo_1,
-    text2: ElmTextNineteen.elmTextNineteenTwo_1,
-    text3: ElmTextNineteen.elmTextNineteenTwo_2,
+    text: ElmTextNineteen.elmTextNineteenTwo_1,
+    ayah: ElmTextNineteen.ayahHadithNineteenTwo_1,
     subtitle2: ElmTextNineteen.subtitleNineteenTwo_2,
-    text4: ElmTextNineteen.elmTextNineteenTwo_3,
-    ayah2: ElmTextNineteen.ayahHadithNineteenTwo_1,
+    text2: ElmTextNineteen.elmTextNineteenTwo_2,
+    ayah2: ElmTextNineteen.ayahHadithNineteenTwo_2,
   ),
 
   // page 3
@@ -57,9 +58,9 @@ List<ElmModel> elmList19 = [
   // page 8
   ElmModel(
     ayah: ElmTextNineteen.ayahHadithNineteenEight_1,
-    text2: ElmTextNineteen.elmTextNineteenEight_1,
+    text: ElmTextNineteen.elmTextNineteenEight_1,
     ayah2: ElmTextNineteen.ayahHadithNineteenEight_2,
-    text3: ElmTextNineteen.elmTextNineteenEight_2,
+    text2: ElmTextNineteen.elmTextNineteenEight_2,
   ),
   // page 9
   ElmModel(

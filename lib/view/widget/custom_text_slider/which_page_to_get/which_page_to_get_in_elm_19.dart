@@ -1,3 +1,9 @@
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_eleven_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_fourteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_sixteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_therteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_twelve_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_fifteen_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_five_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_19/get_page_four_texts.dart';
@@ -32,6 +38,18 @@ List<TextSpan> whichPageToGetInElm19(int i) {
       return getPageNineTexts(i);
     case 9:
       return getPageTenTexts(i);
+    case 10:
+      return getPageElevenTexts(i);
+    case 11:
+      return getPageTwelveTexts(i);
+    case 12:
+      return getPageTherteenTexts(i);
+    case 13:
+      return getPageFourteenTexts(i);
+    case 14:
+      return getPageFifteenTexts(i);
+    case 15:
+      return getPageSixteenTexts(i);
     default:
       return [];
   }

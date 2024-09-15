@@ -1,5 +1,230 @@
+class ElmTextTwenty {
+  //---- page 1
+  static const String elmTextTwentyOne_1 = """
+الذي لا شك فيه أن كلمة التقوى وردت في القرآن الكريم في أكثر من ثلاثمائة موضع ، والأحاديث الشهيرة والصحيحة تؤكد في مجملها أن التقوى جماع كل خير 
+""";
+  static const String subtitleTwentyOne_1 = """
+ماهي التقوى ؟ 
+""";
+
+  static const String elmTextTwentyOne_2 = """
+فما هي التقوى ؟ الحقيقة أن التقوى مشتقة من فعل ثلاثي ، الفعل هو وقى ، والوقاية تكون من شيئ خطير ، فربنا سبحانه وتعالى يقول 
+""";
+  static const String ayahHadithTwentyOne1 = """
+
+يا ايها الناس اعبدو ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
+
+""";
+
+  static const String subtitleTwentyOne_2 = """
+العبادة هي سبيل التقوى 
+""";
+
+  static const String elmTextTwentyOne_3 = """
+معنى ذلك أن العبادة هي سبيل الوقاية ، فأنت إذا دعوت إلى الله يجب أن تعتمد على حاجات الإنسان الفطرية ، وما منا واحد إلا وهو في حاجةٍ ماسة جداً إلى أن ينجو من شقاء الدنيا وعذاب الآخرة ، ففي نفس كل منا ميل جامح وحاجة مُلحة إلى النجاة 
+
+والله سبحانه وتعالى يقول 
+ """;
+
+  static const String ayahHadithTwentyOne_2 = """
+
+ياايها الناس اعبدوا ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
+
+""";
+// page 2
+  static const String titleTwentyTwo_1 = """
+في اللغة العربية هناك قاعدة : 
+""";
+
+  static const String elmTextTwentyTwo_1 = """
+أن الفعل إذا حُذف المفعول به المتعلق به أطلق الفعل ، تتقون ماذا ؟ 
+تتقون كُل خطر ، كل مكروه ، كل منزلق ، كل شقاء ، كل عذاب ، كل ضيق ، كل قلق ، كل مصيبة 
+""";
+
+  static const String ayahHadithTwentyTwo_1 = """
+
+ياايها الناس اعبدوا ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
+
+  """;
+
+  static const String elmTextTwentyTwo_2 = """
+إذاً لا سبيل إلى تحقيق النجاة ، ولا سبيل إلى تحقيق السلامة ، ولا سبيل إلى أن يبتعد الإنسان عن شقاء الدنيا وعذاب الآخرة إلا بطاعة الله عز وجل 
+لذلك فسر بعضهم التقوى بأنها إتقاء عذاب الله بطاعته 
+أي لا منجأ منك إلا إليك 
+لايستطيع الإنسان أن ينجو من التأديب الالهي ، ولا من المعالجة الإلهية ، ولا من العقاب الإلهي ، ولا من القضاء الذي يقضيه الله عز وجل للإنسان إلا بطاعة الله عز وجل 
+هذه النقطة الأولى 
+
+إذاً طاعة الله عز وجل سبيل إلى التقوى 
+""";
+
+// page 3
+  static const String subtitleTwentyThree_1 = """
+الإنسان له بناء مؤسس على تقوى الله : 
+
+  """;
+  static const String elmTextTwentyThree_1 = """
+نقطة ثانية ، الإنسان له بناء ، معنى البناء أنت لك منظومة قيم ، في الموضوع الفلاني لك موقف ، في علاقتك بالنساء لك موقف ، في علاقتك بكسب المال لك موقف ، في علاقتك بإنفاق المال لك موقف ، في علاقتك بالجوار لك موقف ، في علاقتك بالبيع والشراء لك موقف ، في علاقتك بالشهوة التي أودعها الله فيك لك موقف ، هذه المواقف تنبع من رؤية أو من قيم ، 
+فالله سبحانه وتعالى يقول 
+""";
+  static const String ayahHadithTwentyThree_1 = """
+
+  أفمن أسس بُنيانه 
+
+""";
+  static const String elmTextTwentyThree_2 = """
+أنت لك بناء ، الأسرة لبنة ، العمل لبنة ، علاقتك بذاتك لبنة ، علاقتك بالخالق لبنة ، علاقتك بأهلك ؛ بالوالد ، بالوالدة ، بالإخوة ، بالأخوات ، بالأصهار ، كل موقف ، وكل حركة وكل سكنة تنبع من رؤية أو من قيمة ، 
+فالمؤمن أسس بنيانه على تقوى من الله ورضوان ، إذاً فالله سبحانه وتعالى لا بد من أن يحميه 
+
+""";
+// Page 4
+  static const String subtitleTwentyFour_1 = """
+
+غير المؤمن بناءُه مؤسس على الشهوة والمصلحة:
+""";
+  static const String elmTextTwentyFour_1 = """
+غير المؤمن أسس بنيانه على الشهوة ، على المصلحة ، على انتهاز الفُرص ، على القنص ، على حب الذات ، على الأنانية ، هذا البناء المبني على غير تقوى الله عز وجل كأنه على شفا جرفٍ هار فانهار به في نار جهنم ، فكل إنسان له بناء ، إما أن يبني هذا البناء على تقوى الله ورضوان ، وإما أن يبني هذا البناء على شفا جرفٍ هار فانهار به في نار جهنم 
+""";
+  static const String subtitleTwentyFour_2 = """
+
+في الكون إله واحد يستحق العبادة: 
+
+""";
+  static const String elmTextTwentySeven_2 = """
+ """;
+  static const String ayahHadithTwentySeven_2 = """
+
+
+""";
+  static const String elmTextTwentySeven_3 = """
+
+
+""";
+// ------- page 8
+  static const String ayahHadithTwentyEight_1 = """
+
+
+""";
+  static const String elmTextTwentyEight_1 = """
+""";
+  static const String ayahHadithTwentyEight_2 = """
+
+
+""";
+  static const String elmTextTwentyEight_2 = """
+
+""";
+
+// page 9
+  static const String elmTextTwentyNine_1 = """
+
+""";
+// page 10
+  static const String elmTextTwentyTen_1 = """
+""";
+  static const String ayahHadithTwentyTen_1 = """
+
+
+""";
+
+  static const String elmTextTwentyTen_2 = """
+""";
+  static const String ayahHadithTwentyTen_2 = """
+
+
+""";
+
+  static const String elmTextTwentyTen_3 = """
+""";
+// page 11
+  static const String ayahHadithTwentyEleven_1 = """
+
+
+""";
+  static const String elmTextTwentyEleven_1 = """
+
+""";
+  static const String ayahHadithTwentyEleven_2 = """
+
+
+""";
+  static const String elmTextTwentyEleven_2 = """
+""";
+// page 12
+  static const String ayahHadithTwentyTwelve_1 = """
+
+
+
+""";
+  static const String elmTextTwentyTwelve_1 = """
+""";
+  static const String ayahHadithTwentyTwelve_2 = """
+
+
+
+
+""";
+  static const String elmTextTwentyTwelve_2 = """
+""";
+  static const String ayahHadithTwentyTwelve_3 = """
+
+
+""";
+// page 13
+  static const String elmTextTwentyTherteen_1 = """
+""";
+  static const String ayahHadithTwentyThertten_1 = """
+
+
+""";
+
+  static const String elmTextTwentyTherteen_2 = """
+""";
+  static const String ayahHadithTwentyTherteen_2 = """
+
+
+""";
+  static const String subtitleTwentyTherteen_1 = """
+
+""";
+  static const String elmTextTwentyTherteen_3 = """
+""";
+// page 14
+  static const String ayahHadithTwentyFourteen_1 = """
+
+
+""";
+  static const String elmTextTwentyFourteen_1 = """
+""";
+// page 15
+  static const String subtitleTwentyFifteen_1 = """
+""";
+
+  static const String elmTextTwentyFifteen_1 = """
+""";
+  static const String ayahHadithTwentyFifteen_1 = """
+""";
+  static const String elmTextTwentyFifteen_2 = """
+""";
+  static const String ayahHadithTwentyFifteen_2 = """
+""";
+  static const String elmTextTwentyFifteen_3 = """
+
+""";
+// page 16
+  static const String titleTwentySixteen = """
+------
+""";
+  static const String subtitleTwentySixteen_1 = """
+""";
+  static const String elmTextTwentySixteen_1 = """
+""";
+}
+
+class FullText {
+  static const String text = """
 
 الذي لا شك فيه أن كلمة التقوى وردت في القرآن الكريم في أكثر من ثلاثمائة موضع ، والأحاديث الشهيرة والصحيحة تؤكد في مجملها أن التقوى جماع كل خير 
+-------
 ماهي التقوى ؟ 
 فما هي التقوى ؟ الحقيقة أن التقوى مشتقة من فعل ثلاثي ، الفعل هو وقى ، والوقاية تكون من شيئ خطير ، فربنا سبحانه وتعالى يقول 
 
@@ -41,7 +266,7 @@
 غير المؤمن أسس بنيانه على الشهوة ، على المصلحة ، على انتهاز الفُرص ، على القنص ، على حب الذات ، على الأنانية ، هذا البناء المبني على غير تقوى الله عز وجل كأنه على شفا جرفٍ هار فانهار به في نار جهنم ، فكل إنسان له بناء ، إما أن يبني هذا البناء على تقوى الله ورضوان ، وإما أن يبني هذا البناء على شفا جرفٍ هار فانهار به في نار جهنم 
 
 في الكون إله واحد يستحق العبادة: 
-
+-----------------------------------
 الشيئ الثاني أن الإنسان حينما يفكر ، ففي هذا الكون العظيم حقيقة كبرى ، حقيقة وحيدة ، حقيقة ليس بعدها حقيقة هي الله سبحانه وتعالى ، فهل من جهة بالكون تستحق أن يخشى عذابها ، أو ان ترجو رحمتها غير الله ؟ 
 فهل في الكون جهة تستحق أن يرجى ماعندها ، وأن يخشى عقابها غير الله عز وجل ؟ 
 
@@ -346,3 +571,8 @@
    خذوا ما اتيناكم بقوة 
 
 بقوة، هناك أخذ بلين، ومسايرة، ومجاملة للآخرين، مواقفه دائماً ضبابية، دائماً متردد، دائماً مُرتاب، دائماً يُطيع الله ولكن على مضض، يخاف أن يعصيه، ولكن يرغب أن يعصيه، هذا الموقف المتردد الضبابي، موقف الأخذ والرد، موقف المتخاذل، موقف متردد، هذه المواقف ليست من صفات المؤمنين
+
+  
+  
+  """;
+}
