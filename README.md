@@ -1,16 +1,9 @@
-# elm
+تطبيق خواطر إيمانية
+تطبيق خواطر إيمانية هو تطبيق بسيط يعمل باستخدام إطار عمل Flutter و GetX، ويهدف إلى عرض نصوص دينية إيمانية تعزز الروحانية والتأمل. يتميز التطبيق بواجهة سهلة الاستخدام وتجربة مريحة لعرض المحتوى.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+المميزات
+عرض الخواطر الإيمانية: يتم تقسيم النصوص إلى صفحات تسهّل قراءة المحتوى والتنقل بين الأفكار.
+استخدام GetX: لإدارة الحالة وتحسين الأداء، مما يضمن سلاسة التطبيق وكفاءة في عرض البيانات.
+تنقل سهل: التنقل بين الصفحات بشكل أفقي لعرض المحتوى حسب حجم الشاشة.
+إشعارات يومية: جدولة 5 إشعارات يومية لتذكير المستخدم بالخواطر الإيمانية.
+دعم النصوص العربية: التطبيق يدعم اللغة العربية بشكل كامل لتوفير تجربة سلسة ومناسبة للمستخدمين.
