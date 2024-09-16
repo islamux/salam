@@ -251,7 +251,7 @@ class ElmTextTwenty {
 
 """;
 // page 10
-  static const String titleTwentyTen = """
+  static const String titletwentyten = """
 الله هو أهل التقوى  
 """;
 
@@ -356,7 +356,7 @@ class ElmTextTwenty {
    والله ولي المتقين 
 """;
 // page 15
-  static const String elmTextTwentyFifteen_3 = """
+  static const String elmTextTwentyFifteen_1 = """
 وربنا عز وجل قال: 
  """;
   static const String ayahHadithTwentyFifteen_1 = """
@@ -364,7 +364,7 @@ class ElmTextTwenty {
    أم نجعل المتقين كالفجار 
 
   """;
-  static const String elmTextTwentyFifteen_1 = """
+  static const String elmTextTwentyFifteen_2 = """
 فمن السذاجة، ومن الغباء، ومن ضيق الأفق، ومن الجهل أن تتصور أن هذا الذي استقام على أمر الله، وتعرف إلى الله، وأمضى وقتاً في تعلم العلم، وكان منظبطاً، ضبط حواسه الخمس، ضبط مشاعره، ضبط كسبه، ضبط إنفاقه، وكان محسناً، أحسن إلى كل مخلوق 
 هذا المتقي الذي يتقي غضب الله، يتقي سخط الله، يتقي عذاب الله، أهذا المتقي أيعقل أن يعامل كالفاجر؟ كالعاصي؟ 
 كالذي يفعل المعاصي على قارعة الطريق؟ كالذي يتباهى بالمعصية؟ شيئ مستحيل 
@@ -448,11 +448,11 @@ class ElmTextTwenty {
 فلا تزكوا أنفسكم هو أعلم بمن اتقى 
 
  """;
-  static const String subtitleTwentyTwenty_5 = """
+  static const String subtitleTwentyTwenty_1 = """
 التقوى خير زاد 
  """;
 
-  static const String elmTextTwentyTwenty_6 = """
+  static const String elmTextTwentyTwenty_3 = """
 الإنسان يتزوج، الإنسان يجمع الأموال، يقول: هذه الأموال تنفعني في خريف العمر
 الإنسان أحياناً يبني بناء شامخاً، يقول لك: أريد بيتاً فيه كل جيد وجديد، ينتقي أفضل الأثاث، ينتقي أفضل الكسوة، ينتقي أفضل الأجهزة، وقد يقتني أفضل سيارة، يقول لك: أريد شيئاً جيداً،
 كله من نوع الزاد 
@@ -474,10 +474,10 @@ class ElmTextTwenty {
 هذه قاعدة، الدين سليم مالم تعصي الله عزوجل، مالم تقترب من حدوده، مالم تعتد على حدوده، مالم تخرق قواعد الاستقامة، مالم تسيئ إلى إنسان، مالم يكن في عنقك دين لأحد، أو ظلامة لأحد، فقد سلم دينك؟ 
 
  """;
-  static const String elmTextTwentyTwentyOne_3 = """
+  static const String subtitleTwentyTwentyOne_1 = """
 التقوى سبيل الأمن والعافية والرضا: 
  """;
-  static const String elmTextTwentyTwentyOne_4 = """
+  static const String elmTextTwentyTwentyOne_3 = """
 دائماً وازن.. 
    من اصبح منكم آمناً في سربه 
 هذا أمن الإيمان، أنت مطمئن لعدالة الله، أنت مطمئن إلى أن الأمور كلها بيد الله، وأن الله رحمن رحيم، أنت مطمئن إلى أنه لا إله إلا الله، أنت مطمئن إلى أنه لا رافع ولا خافض، ولا معز ولا مذل، ولا معطي ولا مانع، ولا باسط ولا قابض إلا الله 
@@ -495,12 +495,13 @@ class ElmTextTwenty {
 من أصبح منكم آمنا في سربه، معافى في جسده، عنده قوت يومه فكأنما حيزت له الدنيا 
 
 """;
-  static const String elmTextTwentyTwentyTwo_3 = """
+  static const String elmTextTwentyTwentyTwo_2 = """
 إذا كنت كذلك فقد ملكت الدنيا بكل حذافيرها 
 أمن الإيمان، وسلامة الأبدان، وشيئ تقتات به، وانتهى الأمر، لذلك فالمؤمن لو أصابته مصيبة، مادام دينه سليماً، مادامت صحته طيبه، مادمت أفعاله كريمة، فلا شيئ في الدنيا يضيره
   """;
-  static const String titleTwentyTwentyTwo = """
- // page 23 
+
+  // page 23
+  static const String subtitleTwentyTwentyThree_1 = """
 تقوى القلوب أفضل لباس المسلم 
   """;
   static const String elmTextTwentyTwentyThree_1 = """
@@ -613,6 +614,8 @@ class ElmTextTwenty {
   """;
   static const String ayahHadithTwentyTwentyEight_2 = """
   وينجي الله الذين اتقو بمفازتهم لا يمسهم السؤ ولا هم يحزنون 
+""";
+  static const String elmTextTwentyTwentyEight_3 = """
 لم يقل الله عزوجل: لا يصيبهم السوء؛ بل قال: 
 
   """;
@@ -687,14 +690,14 @@ class ElmTextTwenty {
    والعاقبة للتقوى 
 
   """;
-  static const String elmTextTwentyTherty_3 = """
+  static const String elmTextTwentyTherty_2 = """
 لكن من أجل أن تقطف ثمار التقوى يانعة ربنا عز وجل يقول: 
    """;
   static const String ayahHadithTwentyTherty_2 = """
    خذوا ما اتيناكم بقوة 
    
   """;
-  static const String elmTextTwentyTherty_5 = """
+  static const String elmTextTwentyTherty_3 = """
 بقوة، هناك أخذ بلين، ومسايرة، ومجاملة للآخرين، مواقفه دائماً ضبابية، دائماً متردد، دائماً مُرتاب، دائماً يُطيع الله ولكن على مضض، يخاف أن يعصيه، ولكن يرغب أن يعصيه، هذا الموقف المتردد الضبابي، موقف الأخذ والرد، موقف المتخاذل، موقف متردد، هذه المواقف ليست من صفات المؤمنين
   """;
 }

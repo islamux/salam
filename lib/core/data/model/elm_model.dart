@@ -27,6 +27,8 @@ class ElmModel {
   final String? ayah5;
   final String? ayah6;
   final String? ayah7;
+  final String? ayah8;
+
   final String? footer;
 
   // Constructor (named to make allow rearange them like i want)
@@ -59,5 +61,6 @@ class ElmModel {
     this.ayah5,
     this.ayah6,
     this.ayah7,
+    this.ayah8,
   });
 }
