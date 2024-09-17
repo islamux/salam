@@ -8,5 +8,11 @@ List<TextSpan> getPageFourTexts(int i) {
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModel elm = elmList20[i];
-  return [];
+  return [
+    TextSpan(text: elm.subtitle, style: subtitleStyle),
+    TextSpan(text: elm.text),
+    TextSpan(text: elm.subtitle2, style: subtitleStyle),
+    TextSpan(text: elm.text2),
+    TextSpan(text: elm.ayah, style: ayahStyle),
+  ];
 }
