@@ -8,5 +8,7 @@ List<TextSpan> getPageEighteenTexts(int i) {
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModel elm = elmList20[i];
-  return [];
+  return [
+    TextSpan(text: elm.text),
+  ];
 }
