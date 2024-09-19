@@ -4,14 +4,11 @@ import 'package:elm/view/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'binding.dart';
-import 'package:timezone/data/latest.dart' as tz;
 
 void main() {
   // splash screen
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
-  tz.initializeTimeZones(); // Initialize time zones
 
   // After splash screen now you could run app
   runApp(const Elm());
