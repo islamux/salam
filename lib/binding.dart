@@ -21,6 +21,7 @@ import 'package:elm/controller/elm9_controller.dart';
 import 'package:elm/controller/elmpre_controller.dart';
 import 'package:elm/controller/floating_action_button_controller.dart';
 import 'package:elm/controller/home_controller.dart';
+import 'package:elm/controller/notification_controllr.dart';
 import 'package:get/get.dart';
 
 import 'controller/elm10_controller.dart';
