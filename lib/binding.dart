@@ -51,6 +51,7 @@ class MyBinding extends Bindings {
     Get.put(Elm18ControllerImp());
     Get.put(Elm19ControllerImp());
     Get.put(Elm20ControllerImp());
+    Get.put(Elm21ControllerImp());
     Get.put(FloatingButtonControllerImp());
   }
 }
