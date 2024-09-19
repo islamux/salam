@@ -1,47 +1,40 @@
-import 'package:elm/controller/base_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_pre.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class ElmPreControllerImp extends BaseController {
+abstract class BaseController extends GetxController {
   final PageController pageControllerAssma = PageController();
 
   double fontSize = 21.0;
   int currentPageIndex = 0;
   int currentPageCounter = 0;
   List maxPageCounters = [];
-  @override
   goToHome() {
     Get.toNamed(AppRoute.home);
   }
 
-  @override
   increaseFontSize() {
     fontSize += 2.0;
     update();
   }
 
-  @override
   decreaseFontSize() {
     fontSize -= 2.0;
     update();
   }
 
-  @override
   void resetCounter() {
     currentPageCounter = 0;
     update();
   }
 
-  @override
   void onPageChanged(int index) {
     currentPageIndex = index;
     resetCounter();
   }
 
-  @override
   String getShareText(int index) {
     final elm = elmListPre[index];
     StringBuffer shareText = StringBuffer();
@@ -69,7 +62,6 @@ class ElmPreControllerImp extends BaseController {
     return shareText.toString().trim();
   }
 
-  @override
   void increamentPageController() {
     currentPageCounter++;
 
@@ -97,7 +89,6 @@ class ElmPreControllerImp extends BaseController {
     update();
   }
 
-  @override
   void goToPage(int pageIndex) {
     pageControllerAssma.animateToPage(
       pageIndex,

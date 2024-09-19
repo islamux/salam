@@ -21,7 +21,7 @@ import 'package:elm/controller/elm8_controller/elm8_controller.dart';
 import 'package:elm/controller/elm9_controller/elm9_controller.dart';
 import 'package:elm/controller/elmpre_controller/elmpre_controller.dart';
 import 'package:elm/controller/floating_action_button_controller.dart';
-import 'package:elm/controller/home_controller.dart';
+import 'package:elm/controller/home_controller/home_controller.dart';
 import 'package:get/get.dart';
 
 class MyBinding extends Bindings {

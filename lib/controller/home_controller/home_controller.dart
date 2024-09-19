@@ -1,4 +1,4 @@
-import 'package:elm/controller/home_controller.dart';
+import 'package:elm/controller/home_controller/home_controller_abstract.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:get/get.dart';
 
