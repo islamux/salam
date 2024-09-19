@@ -1,4 +1,3 @@
-import 'package:elm/controller/notification_controllr.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_pre.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -18,29 +17,11 @@ abstract class ElmPreController extends GetxController {
 
 class ElmPreControllerImp extends ElmPreController {
   final PageController pageControllerAssma = PageController();
-  final NotificationController notificationController =
-      Get.find<NotificationController>(); // Find the NotificationController
 
   double fontSize = 21.0;
   int currentPageIndex = 0;
   int currentPageCounter = 0;
   List maxPageCounters = [];
-
-  @override
-  void onInit() {
-    super.onInit();
-    scheduleDailyNotification(); // Schedule the daily notification when this controller is initialized
-  }
-
-  // Schedule a daily notification at 6:00 AM
-  void scheduleDailyNotification() {
-    notificationController.scheduleDailyNotification(
-      1, // Notification ID
-      "Remember to Read",
-      "Don't forget to read today's reflection!",
-    );
-  }
-
   @override
   goToHome() {
     Get.toNamed(AppRoute.home);

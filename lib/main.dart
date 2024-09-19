@@ -1,18 +1,15 @@
-import 'package:elm/controller/notification_controllr.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:elm/route.dart';
 import 'package:elm/view/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'binding.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz;
 
 void main() {
   // splash screen
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  Get.put(NotificationController()); // Binding the NotificationController
 
   tz.initializeTimeZones(); // Initialize time zones
 
