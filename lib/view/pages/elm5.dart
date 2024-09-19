@@ -1,4 +1,4 @@
-import 'package:elm/controller/elm5_controller.dart';
+import 'package:elm/controller/elm5_controller/elm5_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
