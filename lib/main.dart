@@ -4,6 +4,7 @@ import 'package:elm/view/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'binding.dart';
+
 void main() {
   // splash screen
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -37,7 +38,7 @@ class Elm extends StatelessWidget {
       title: 'Elm',
       theme: AppTheme.goldenTheme,
       initialBinding: MyBinding(),
-      home:  const Home(),
+      home: const Home(),
       // Routes
       getPages: routes,
     );
