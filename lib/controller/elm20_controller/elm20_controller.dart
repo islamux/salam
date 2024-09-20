@@ -30,6 +30,7 @@ class Elm20ControllerImp extends Elm20Controller {
     update();
   }
 
+  // remove if you dont  need counter for page
   @override
   void resetCounter() {
     currentPageCounter = 0;
@@ -37,6 +38,7 @@ class Elm20ControllerImp extends Elm20Controller {
     update();
   }
 
+  // remove if you dont  need counter for page
   // method to handle page change
   @override
   void onPageChanged(int index) {

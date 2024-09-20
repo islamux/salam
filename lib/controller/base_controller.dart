@@ -77,7 +77,7 @@ abstract class BaseController extends GetxController {
       } else {
         Get.snackbar(
           'الحمدلله',
-          '! أنهيت  قراءة أسماء الله الحسنى',
+          'أنهيب القراءة بنجاح',
           colorText: AppColor.black,
           backgroundColor: AppColor.transparent,
           duration: const Duration(seconds: 5),
