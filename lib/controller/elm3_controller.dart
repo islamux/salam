@@ -4,7 +4,7 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Elm3ControllerImp extends BaseElmController {
+class Elm3ControllerImp extends BaseController {
   final PageController pageControllerAssma = PageController();
 
   @override
@@ -107,5 +107,15 @@ class Elm3ControllerImp extends BaseElmController {
       duration: const Duration(microseconds: 300),
       curve: Curves.easeInOut,
     );
+  }
+
+  @override
+  void increamentPageController() {
+    // TODO: implement increamentPageController
+  }
+
+  @override
+  void onPageChanged(int index) {
+    // TODO: implement onPageChanged
   }
 }

@@ -4,7 +4,7 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Elm2Controller extends BaseElmController {
+class Elm2Controller extends BaseController {
   final PageController pageControllerAssma = PageController();
 
   @override
@@ -99,5 +99,20 @@ class Elm2Controller extends BaseElmController {
     }
 
     return shareText.toString().trim();
+  }
+
+  @override
+  void goToPage(int pageIndex) {
+    // TODO: implement goToPage
+  }
+
+  @override
+  void increamentPageController() {
+    // TODO: implement increamentPageController
+  }
+
+  @override
+  void onPageChanged(int index) {
+    // TODO: implement onPageChanged
   }
 }

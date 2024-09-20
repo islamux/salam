@@ -4,7 +4,7 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class Elm1Controller extends BaseElmController {
+class Elm1Controller extends BaseController {
   final PageController pageControllerAssma = PageController();
 
   @override
@@ -22,5 +22,20 @@ class Elm1Controller extends BaseElmController {
   @override
   void goToHome() {
     Get.toNamed(AppRoute.home);
+  }
+
+  @override
+  void goToPage(int pageIndex) {
+    // TODO: implement goToPage
+  }
+
+  @override
+  void increamentPageController() {
+    // TODO: implement increamentPageController
+  }
+
+  @override
+  void onPageChanged(int index) {
+    // TODO: implement onPageChanged
   }
 }
