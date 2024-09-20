@@ -7,12 +7,20 @@ class ElmTextTwentyOne {
 1__أمره التكليفي: الحقيقة أن المؤمن مكلف أن يصبر عن الشهوات المحرمة، ومكلف أن يصبر على الطاعات، ومكلف أن يصبر على القضاء والقدر، ومكلف أن يصبر على حكم الله، والله عز وجل يُعطي كل إنسان حظوظاً متفاوتة، فأنت حكم الله لك بأن تنجب بنات فقط فهذا حكم الله، وحكم الله لإنسان آخر أن يجعله عقيماً، وحكم لإنسان ثالث أن يكون ذا دخل كبير، ولإنسان رابع ذا دخل محدود، ولإنسان خامس أن يؤدب بهذه الطريقة، فهذا كُله حُكمُ الله، والله عز وجل له أمر تكليفي، وله أمر تكويني 
 
 2__أمره التكويني ( أفعاله ) مثلاً: إذا كان هناك خصمان يتخاصمان فقد يربح أحدهما الدعوة على أخيه ولكنه قد يكون ظالماً، وقد يكون أخوه مظلوماً، فحكم الله هنا يأتي مُعاكساً لحكم القاضي، فقد يعوض المظلوم ويبطش بالظالم، فهذا حُكم الله، وأفعال الله هي حكمة، فقد يطلق الزوج زوجته مثلاً، وتكون الزوجة مظلومة في هذا، لذلك كانت حكمة ربنا عزوجل مع الزوجة المظلومة أن يكافئها بزوج يكرمها، وحكم الله مع الزوج الظالم أن يعاقبه بزوجةٍ تكيل له الصاع صاعين، فهذا حكم الله، فحكم الله عز وجل هو أفعاله، فاحياناً يُكرم ويُعلي ويعز، وأحياناً يهين ويذل، وقد يُعطي ويمنع ويشفي ويعافي ويرفع ويخفض ويقبض ويبسط فهذا هو حكم الله.. 
-
+""";
+  static const String ayahHadithTwentyOneOne_1 = """
       فاصبر لحكم ربك 
+      """;
+
+  static const String elmTextTwentyOneOne_2 = """
 معاني(فاصبر): 
 1__أي إذا كان عندك إكرام فاشكر، وإذا كان هناك شيئ مخالف لرغبتك فاصبر.. 
+""";
 
-      فاصبر لحكم ربك 
+  static const String ayahHadithTwentyOneOne_2 = """
+      فاصبر لحكم ربك """;
+
+  static const String elmTextTwentyOneOne_3 = """
 2__أي فاصبر للأمر والنهي، فالأمر والنهي يحتاجان إلى صبر، فهما تكليف، والتكليف ذو كلفة
 
 المؤمن الحق في أعلى درجات العناية والحفظ والتأييد: 
@@ -32,102 +40,102 @@ class ElmTextTwentyOne {
 
 """;
 
-  static const String ayahHadithTwentyOneTwo_2 = """
+  static const String elmTextTwentyOneTwo_1 = """
 يعني في أعلى درجات العناية، أعلى درجات الحفظ، والرعاية والتأييد، والتوفيق وكل مؤمن مستقيم، محب لله عز وجل، يشعر أن الله معه، وهو في محنته، يشعر أن الله معه، ولن يخيب ظنه، ولن يسلمه لأحد، ولا يتخلى عنه 
 """;
 
-  static const String subtitleTwentyOneOne_1 = """
+  static const String subtitleTwentyOneTwo_1 = """
 طاعة الله ثمنها التأييد والرعاية والحفظ: 
 """;
-  static const String elmTextTwentyOneOne_3 = """
+  static const String elmTextTwentyOneTwo_2 = """
 
       فإنك باعيننا 
  """;
 // page 3
-  static const String ayahHadithTwentyOneOne_2 = """
+  static const String ayahHadithTwentyOneThree_1 = """
 برعايتنا هذا معنى قول الله عز وجل """;
 
-  static const String subtitleTwentyOneTwo_1 = """
+  static const String subtitleTwentyOneThree_1 = """
 
       إن الله مع المتقين 
 """;
 
-  static const String elmTextTwentyOneTwo_1 = """
+  static const String elmTextTwentyOneThree_1 = """
 قال العلماء: هذه معية خاصة، معية بالتأييد، والنصر، والحفظ والتوفيق: 
 """;
 
-  static const String ayahHadithTwentyOneTwo_1 = """
+  static const String ayahHadithTwentyOneThree_2 = """
 
       واصبر لحكم ربك 
 
   """;
 
-  static const String elmTextTwentyOneTwo_2 = """
+  static const String elmTextTwentyOneThree_2 = """
 
 فالحكم غير واضح، إذ لو كان واضحاً لما احتاج إلى صبر 
 """;
 
-  static const String subtitleTwentyOneThree_1 = """
+  static const String ayahHadithTwentyOneThree_3 = """
       فاصبر إن العاقبة للمتقين 
   """;
-  static const String elmTextTwentyOneThree_1 = """
+  static const String elmTextTwentyOneThree_3 = """
 رب كريم يقول لك: 
 """;
-  static const String ayahHadithTwentyOneThree_1 = """
+  static const String ayahHadithTwentyOneThree_4 = """
 فاصبر إن العاقبة للمتقين
 """;
 
 // page 4
-  static const String elmTextTwentyOneThree_2 = """
+  static const String elmTextTwentyOneFour_1 = """
 
  وأنت أيها الأخ الكريم، اصبر على بعدك عن المعصية، واصبر على الطاعة، واصبر على تربية الله لك، أن العاقبة للمتقين يارسول الله ادعُ الله أن يرحمني، فقال: يارب ارحمه فقال: كيف ارحمه مما ألم به؟ وعزتي وجلالي لا أقبض عبدي المؤمن وأنا أحب أن ارحمهُ إلا ابتليته بكل سيئة كان عملها، سقماً في جسده، أو إقتاراً في رزقه، أو مصيبة في ماله أو ولده، حتى أبلغ منه مثل الذر فإذا بقي عليه شيئٌ شددتُ عليه سكرات الموت حتى يلقاني كيوم ولدتهُ أمه، فاصبر إن العاقبة للمتقين 
 
 """;
 
-  static const String subtitleTwentyOneFour_1 = """
+  static const String ayahHadithTwentyOneFour_1 = """
 
       فاصبر إن العاقبة للمتقين 
 
 """;
-  static const String elmTextTwentyOneFour_1 = """
+  static const String elmTextTwentyOneFour_2 = """
 والصبر من الإيمان كالرأس من الجسد، فإذا ذهب الصبر ذهب الإيمان، فاصبر إن العاقبة للمتقين 
 """;
-  static const String subtitleTwentyOneFour_2 = """
+  static const String ayahHadithTwentyOneFour_2 = """
       فصبر جميل 
 """;
-  static const String elmTextTwentyOneFour_2 = """
+  // page 5
+  static const String elmTextTwentyOneFive_1 = """
 ماهو الصبر الجميل؟ 
  """;
 
-// page 5
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String elmtTextTwentyOneFive_2 = """
 ماهو الصبر الجميل؟ الصبر الجميل هو الذي لا ترافقه شكوى إلى الخلق، ويعاب من يشكو الرحيم إلى الذي لا يرحم، الصبر الجميل ألا تشكو إلى أحد شكوتك، إن شكوت إلى كافر فكأنما اشتكيت على الله، وإن شكوت إلى مؤمن فكأنما شكوت إلى الله، وشتان بين من يشتكي على الله ومن يشتكي إلى الله، والصبر الجميل لا شكوى لا إلى مؤمن ولا إلى كافر 
 """;
 
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String ayahHadithTwentyOneFive_1 = """
       إنما اشكو بثي وحزني إلى الله 
       """;
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String elmTextTwentyOneFive_2 = """
 لأنك إذا شكوت مصيبتك لمؤمن حزن لحزنك، وهو عبد فقير لا يستطيع أن يفعل شيئاً، وإذا شكوت همك إلى كافر شمت بك، لذلك من الدعاء الشريف:
 """;
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String ayahHadithTwentyOneFive_2 = """
  عن أبي هريرة عن النبي صلى الله عليه وسلم قال: 
 تعوذوا بالله من جهد البلاء، ودرك الشقاء، وسؤ القضاء، وشماتة الأعداء(صحيح البخاري) 
 """;
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String elmTextTwentyOneFive_3 = """
 والشكوى لغير الله مذلة
 """;
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String ayahHadithTwentyOneFive_3 = """
  قال عبد الله بن شداد:{سمعتُ نشيج عُمر وأنا في آخر الصفوف يقرأ:إنما أشكو بثي وحزني إلى الله} (صحيح البخاري)،
 """;
 // page 6
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String elmTextTwentyOneSix_1 = """
   وكلما ارتفع مستوى الإيمان تجد أن المؤمن يستحيي أن يشكو مصيبته لغير الله، ليكن هذا النبي الكريم أسوة لنا في المصائب: 
   """;
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String ayahHadithTwentyOneSix_1 = """
 قال عبدُالله بن شداد:{سمعتُ نشيج عُمر وأنا في آخر الصفوف يقرأ: إنما أشكو بثي وحزني إلى الله} (صحيح البخاري) 
 """;
-  static const String ayahHadithTwentyOneFour_1 = """
+  static const String elmTextTwentyOneSix_2 = """
 هناك أناس إذا ألمت بهم ملمة ملؤوا الدنيا صياحاً وصخباً، ما من أحد يلتقون به إلا ويبثونه شكواهم، يشتكون الزمان، يشكون قلة الدخل، من جلس إلى غني فتضعضع له ذهب ثلثا دينه 
 """;
 
