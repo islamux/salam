@@ -139,28 +139,28 @@ class ElmTextTwentyOne {
 هناك أناس إذا ألمت بهم ملمة ملؤوا الدنيا صياحاً وصخباً، ما من أحد يلتقون به إلا ويبثونه شكواهم، يشتكون الزمان، يشكون قلة الدخل، من جلس إلى غني فتضعضع له ذهب ثلثا دينه 
 """;
 
-  static const String elmTextTwentyOneFive_1 = """
+  static const String elmTextTwentyOneSix_3 = """
       فصبر جميل 
 """;
-  static const String ayahHadithTwentyOneFive_1 = """
+  static const String ayahHadithTwentyOneSix_2 = """
 إذا أحب الله عبداً ابتلاه 
 """;
-  static const String elmTextTwentyOneFive_2 = """
+  static const String elmTextTwentyOneSix_4 = """
 إذا أحب الله عبده ابتلاه، فإن صبر اجتباه، فإن شكر اقتناه، وإذا لم يحبه تركه هملاً، أنت إذا سمعت من طفل في الطريق كلمةنابية لا تقول شيئاً، بل تقول: مالي وله، أما إذا نظرت إلى القائل فإذا هو ابنك، ماذا تفعل؟ تؤدبه تأديباً شديداً، تقيم قيامته، لماذا فعلت به مافعلت؟ من شدة حبك له وحرصك عليه، فلذلك الذي يحبه الله سبحانه وتعالى يعالجه، إذا اراد الله بعبده خيراً عجل له بالعقاب، إذا أراد الله بعبد خيراً عاتبه في منامه، فهذا الذي يتابعه الله سبحانه وتعالى على كل ذنب، يتابعه على كل تقصير، يتابعه على كل خروج عن طريق الحق، ليفرح لأن الله يحبه، عن محمود بن لبيد أن النبي صلى الله عليه وسلم قال: 
       إذا احب الله قوماً ابتلاهم فمن صبر فله الصبر، ومن جزع فله الجزع 
 
       فاصبر على ما يقولون 
 """;
   // page 7
-  static const String ayahHadithTwentyOneFive_2 = """
+  static const String ayahHadithTwentyOneSeven_1 = """
 ماعند الله لا يُنال إلا بعد امتحان: 
 """;
-  static const String elmTextTwentyOneFive_3 = """
+  static const String elmTextTwentyOneSeven_1 = """
 في هذه الآية حقيقة أساسية، وهي أن ماعند الله سبحانه وتعالى لا يمكن أن ينال إلا بعد امتحان، ومن لوازم الإمتحان أنه شديد، وهذا العطاء الكبير لن يُنال والإنسان في بحبوحة، وكما يشتهي، فلا بد من امتحان: 
  
 """;
 
-  static const String ayahHadithTwentyOneFive_3 = """
+  static const String ayahHadithTwentyOneSeven_2 = """
      أم حسبتم ان تدخلوا الجنة ولما يعلم الله الذين جاهدوا منكم ويعلم الصابرين 
       أحسب الناس أن يتركوا أن يقولوا آمنا وهم لا يفتنون 
 
@@ -173,26 +173,26 @@ class ElmTextTwentyOne {
 
 """;
   // page 8
-  static const String elmTextTwentyOneSix_1 = """
+  static const String elmTextTwentyOneEight_1 = """
 
 إن الله سبحانه وتعالى عصم النبي عليه الصلاة والسلام من أن يناله المشركين بالقتل لئلا تغتال الدعوة باغتياله، ولكن لم يعصمه عن إيقاع الأذى الذي تحمله أيما تحمل وصبر له أيما صبر، ولذلك ربنا سبحانه وتعالى يقول: 
 """;
-  static const String ayahHadithTwentyOneSix_1 = """
+  static const String ayahHadithTwentyOneEight_1 = """
       واصبر كما صبر أولو العزم من الرسل 
       فاصبر على مايقولون 
 
 
 """;
 
-  static const String elmTextTwentyOneSix_2 = """
+  static const String elmTextTwentyOneEight_2 = """
 ي إذا عارضك إنسان، وسفه دعوتك إنسان، واستخف بك فلك أسوةٌ حسنة بهذا النبي العدنان 
 """;
-  static const String ayahHadithTwentyOneSix_2 = """
+  static const String ayahHadithTwentyOneEight_2 = """
 
 فاصبر إن وعد الله حق 
 
 """;
-  static const String elmTextTwentyOneSix_3 = """
+  static const String elmTextTwentyOneEight_3 = """
 
 العلماء حينما فسروا قوله تعالى: 
 """;
@@ -201,22 +201,22 @@ class ElmTextTwentyOne {
       الم تر كيف فعل ربك بأصحاب الفيل 
 
 """;
-  static const String elmTextTwentyOneSix_4 = """
+  static const String elmTextTwentyOneEigth_4 = """
           ( الم تر ) 
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل: 
  
 """;
 // page 10
-  static const String ayahHadithTwentyOneSeven_1 = """
+  static const String ayahHadithTwentyOneTen_1 = """
           ( الم تر ) 
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل: 
 
 """;
-  static const String elmTextTwentyOneSeven_1 = """
+  static const String elmTextTwentyOneTen_1 = """
  
       أتى امر الله فلا تستعجلوه 
 """;
-  static const String ayahHadithTwentyOneSeven_2 = """
+  static const String ayahHadithTwentyOneTen_2 = """
 
 معنى هذا أنه لم يأت بعد، انظر التعبير القرآني 
 
@@ -268,14 +268,14 @@ class ElmTextTwentyOne {
 
 """;
 
-  static const String elmTextTwentyOneTen_1 = """
+  static const String elmTextTwentyOneEleven_1 = """
       فاصبر إن وعد الله حق 
 """;
 
   static const String titleTwentyOneEleven = """
 أحياناً يكون المؤمن ضعيفاً مستضعفاً، وأحياناً يكون فقيراً، وأحياناً يكون من الطبقة الدنيا في المجتمع، أما انت أيها الضال فأنت المتفوق، وأنت الرابح، وأنت الفائز، وأنت الناجح، وأنت السعيد، وأنت الملك ولكن 
 """;
-  static const String elmTextTwentyOneEleven_1 = """
+  static const String elmTextTwentyOneEleven_2 = """
 
       فاصبر إن وعد الله حق 
 """;
@@ -284,7 +284,7 @@ class ElmTextTwentyOne {
     
 وعد المؤمن بالنصر، وعد المؤمن بالتأييد، وعده بالتوفيق، وعده بالسعادة، وعدهُ بالعفو، وعدهُ بالمغفرة، وعدهُ بجنةٍ عرضها السماوات والأرض، وعده بقبر روضة من رياض الجنة، وقد يكون حفرة من حفر النيران لمن ضل أو كفر 
 """;
-  static const String elmTextTwentyOneEleven_2 = """
+  static const String elmTextTwentyOneEleven_3 = """
 
       فاصبر إن وعد الله حق فإما نرينك بعض الذي نعدهم أو نتوفينك فإلينا يُرجعون 
 """;

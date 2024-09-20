@@ -11,7 +11,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ElmPreControllerImp controllerAs = Get.find<ElmPreControllerImp>();
+    final ElmPreControllerImp controller = Get.find<ElmPreControllerImp>();
     // to enable refresh ui (slider() moving)
     return GetBuilder<ElmPreControllerImp>(
       builder: (_) {
@@ -33,10 +33,10 @@ class CustomTextSliderElmPre extends StatelessWidget {
               child: PageView.builder(
                   reverse: true,
                   // to enable move through pages slider() using pageController
-                  controller: controllerAs.pageControllerAssma,
+                  controller: controller.pageControllerAssma,
                   onPageChanged: (index) =>
                       // How to pass index. ==> onPageChanged(index)
-                      controllerAs.onPageChanged(index),
+                      controller.onPageChanged(index),
                   itemCount: elmListPre.length,
                   itemBuilder: (context, i) {
                     // Determine wich page content to display
@@ -87,22 +87,22 @@ class CustomTextSliderElmPre extends StatelessWidget {
                     child: Slider(
                       activeColor: AppColor.black,
                       inactiveColor: AppColor.grey,
-                      value: controllerAs.currentPageIndex.toDouble(),
+                      value: controller.currentPageIndex.toDouble(),
                       onChanged: (double value) {
-                        controllerAs.goToPage(value.toInt());
+                        controller.goToPage(value.toInt());
                       },
                       min: 0,
                       max: elmListPre.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controllerAs.currentPageIndex + 1} / ${elmListPre.length}',
+                    '${controller.currentPageIndex + 1} / ${elmListPre.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
-            ),
+            )
           ],
         );
       },
