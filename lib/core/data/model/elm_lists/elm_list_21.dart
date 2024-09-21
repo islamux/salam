@@ -5,20 +5,66 @@ import 'package:elm/core/data/static/text/elm_text_ders_twenty_one.dart';
 // TextDersSeventeen
 List<ElmModel> elmList21 = [
   // page 1
-  ElmModel(),
+  ElmModel(
+    title: ElmTextTwentyOne.titleTwentyOneOne,
+    text: ElmTextTwentyOne.elmTextTwentyOneOne_1,
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneOne_1,
+    text2: ElmTextTwentyOne.elmTextTwentyOneOne_2,
+    ayah2: ElmTextTwentyOne.ayahHadithTwentyOneOne_2,
+    text3: ElmTextTwentyOne.elmTextTwentyOneOne_3,
+  ),
 
 // page 2
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneTwo_1,
+    text: ElmTextTwentyOne.elmTextTwentyOneTwo_1,
+    subtitle: ElmTextTwentyOne.subtitleTwentyOneTwo_1,
+    text2: ElmTextTwentyOne.elmTextTwentyOneTwo_2,
+  ),
   // page 3
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneThree_1,
+    subtitle: ElmTextTwentyOne.subtitleTwentyOneThree_1,
+    text: ElmTextTwentyOne.elmTextTwentyOneThree_1,
+    ayah2: ElmTextTwentyOne.ayahHadithTwentyOneThree_2,
+    text2: ElmTextTwentyOne.elmTextTwentyOneThree_2,
+    ayah3: ElmTextTwentyOne.ayahHadithTwentyOneThree_3,
+    text3: ElmTextTwentyOne.elmTextTwentyOneThree_3,
+    ayah4: ElmTextTwentyOne.ayahHadithTwentyOneThree_4,
+  ),
   // page 4
-  ElmModel(),
+  ElmModel(
+    text: ElmTextTwentyOne.elmTextTwentyOneFour_1,
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneFour_1,
+    text2: ElmTextTwentyOne.elmTextTwentyOneFour_2,
+    ayah2: ElmTextTwentyOne.ayahHadithTwentyOneFour_2,
+  ),
   // page 5
-  ElmModel(),
+  ElmModel(
+    subtitle: ElmTextTwentyOne.subtitleTwentyOneFive_1,
+    text: ElmTextTwentyOne.elmtTextTwentyOneFive_1,
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneFive_1,
+    text2: ElmTextTwentyOne.elmTextTwentyOneFive_2,
+    ayah2: ElmTextTwentyOne.ayahHadithTwentyOneFive_2,
+    text3: ElmTextTwentyOne.elmTextTwentyOneFive_3,
+    ayah3: ElmTextTwentyOne.ayahHadithTwentyOneFive_3,
+  ),
   // page 6
-  ElmModel(),
+  ElmModel(
+    text: ElmTextTwentyOne.elmTextTwentyOneSix_1,
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneSix_1,
+    text2: ElmTextTwentyOne.elmTextTwentyOneSix_2,
+    ayah2: ElmTextTwentyOne.ayahHadithTwentyOneSix_2,
+    text3: ElmTextTwentyOne.elmTextTwentyOneSix_3,
+  ),
   // page 7
-  ElmModel(),
+  ElmModel(
+    ayah: ElmTextTwentyOne.ayahHadithTwentyOneSeven_1,
+    text: ElmTextTwentyOne.elmTextTwentyOneSeven_1,
+    ayah2: ElmTextTwentyOne.ayahHadithTwentyOneSeven_2,
+    text2: ElmTextTwentyOne.elmTextTwentyOneSeven_2,
+    ayah3: ElmTextTwentyOne.ayahHadithTwentyOneSeven_3,
+  ),
   // page 8
   ElmModel(),
   // page 9
@@ -73,22 +119,5 @@ List<ElmModel> elmList21 = [
   ElmModel(),
 
 // page 28
-  ElmModel(),
-
-// page 29
-  ElmModel(),
-
-// page 30
-  ElmModel(),
-  // page 31
-  ElmModel(),
-  // page 32
-  ElmModel(),
-// page 33
-  ElmModel(),
-
-// page 34
-  ElmModel(),
-// page 35
   ElmModel(),
 ];
