@@ -1,4 +1,5 @@
-import 'package:elm/controller/elm10_controller/elm10_controller.dart';
+import 'package:elm/controller/elm10_controller.dart';
+import 'package:elm/controller/font_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_10.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -12,6 +13,7 @@ class CustomTextSliderElm10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Elm10ControllerImp controllerAs = Get.find<Elm10ControllerImp>();
+    final FontControllerImp fontController = Get.find<FontControllerImp>();
 
     return GetBuilder<Elm10ControllerImp>(
       builder: (_) {
@@ -52,7 +54,7 @@ class CustomTextSliderElm10 extends StatelessWidget {
                                   text: TextSpan(
                                     style: TextStyle(
                                       fontFamily: 'AmiriQ',
-                                      fontSize: controllerAs.fontSize,
+                                      fontSize: fontController.fontSize,
                                       color: Colors.black,
                                     ),
                                     children: pageTexts,

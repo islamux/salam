@@ -7,7 +7,7 @@ import 'package:get/get.dart';
 abstract class BaseController extends GetxController {
   final PageController pageControllerAssma = PageController();
 
-  double fontSize = 21.0;
+  //double fontSize = 21.0;
   int currentPageIndex = 0;
   int currentPageCounter = 0;
   List maxPageCounters = [];
@@ -15,15 +15,15 @@ abstract class BaseController extends GetxController {
     Get.toNamed(AppRoute.home);
   }
 
-  increaseFontSize() {
-    fontSize += 2.0;
-    update();
-  }
+  // increaseFontSize() {
+  //   fontSize += 2.0;
+  //   update();
+  // }
 
-  decreaseFontSize() {
-    fontSize -= 2.0;
-    update();
-  }
+  // decreaseFontSize() {
+  //   fontSize -= 2.0;
+  //   update();
+  // }
 
   void resetCounter() {
     currentPageCounter = 0;

@@ -1,27 +1,27 @@
-import 'package:elm/controller/elm10_controller/elm10_controller.dart';
-import 'package:elm/controller/elm11_controller/elm11_controller.dart';
-import 'package:elm/controller/elm12_controller/elm12_controller.dart';
-import 'package:elm/controller/elm13_controller/elm13_controller.dart';
-import 'package:elm/controller/elm14_controller/elm14_controller.dart';
-import 'package:elm/controller/elm15_controller/elm15_controller.dart';
-import 'package:elm/controller/elm16_controller/elm16_controller.dart';
-import 'package:elm/controller/elm17_controller/elm17_controller.dart';
-import 'package:elm/controller/elm18_controller/elm18_controller.dart';
-import 'package:elm/controller/elm19_controller/elm19_controller.dart';
-import 'package:elm/controller/elm1_controller/elm1_controller.dart';
-import 'package:elm/controller/elm20_controller/elm20_controller2.dart';
-import 'package:elm/controller/elm21_controller/elm21_controller.dart';
-import 'package:elm/controller/elm2_controller/elm2_controller.dart';
-import 'package:elm/controller/elm3_controller/elm3_controller.dart';
-import 'package:elm/controller/elm4_controller/elm4_controller.dart';
-import 'package:elm/controller/elm5_controller/elm5_controller.dart';
-import 'package:elm/controller/elm6_controller/elm6_controller.dart';
-import 'package:elm/controller/elm7_controller/elm7_controller.dart';
-import 'package:elm/controller/elm8_controller/elm8_controller.dart';
-import 'package:elm/controller/elm9_controller/elm9_controller.dart';
-import 'package:elm/controller/elmpre_controller/elmpre_controller.dart';
-import 'package:elm/controller/floating_action_button_controller.dart';
-import 'package:elm/controller/home_controller/home_controller.dart';
+import 'package:elm/controller/elm10_controller.dart';
+import 'package:elm/controller/elm11_controller.dart';
+import 'package:elm/controller/elm12_controller.dart';
+import 'package:elm/controller/elm13_controller.dart';
+import 'package:elm/controller/elm14_controller.dart';
+import 'package:elm/controller/elm15_controller.dart';
+import 'package:elm/controller/elm16_controller.dart';
+import 'package:elm/controller/elm17_controller.dart';
+import 'package:elm/controller/elm18_controller.dart';
+import 'package:elm/controller/elm19_controller.dart';
+import 'package:elm/controller/elm1_controller.dart';
+import 'package:elm/controller/elm20_controller.dart';
+import 'package:elm/controller/elm21_controller.dart';
+import 'package:elm/controller/elm2_controller.dart';
+import 'package:elm/controller/elm3_controller.dart';
+import 'package:elm/controller/elm4_controller.dart';
+import 'package:elm/controller/elm5_controller.dart';
+import 'package:elm/controller/elm6_controller.dart';
+import 'package:elm/controller/elm7_controller.dart';
+import 'package:elm/controller/elm8_controller.dart';
+import 'package:elm/controller/elm9_controller.dart';
+import 'package:elm/controller/elmpre_controller.dart';
+import 'package:elm/controller/font_controller.dart';
+import 'package:elm/controller/home_controller.dart';
 import 'package:get/get.dart';
 
 class MyBinding extends Bindings {
@@ -52,6 +52,6 @@ class MyBinding extends Bindings {
     Get.put(Elm19ControllerImp());
     Get.put(Elm20ControllerImp());
     Get.put(Elm21ControllerImp());
-    Get.put(FloatingButtonControllerImp());
+    Get.put(FontControllerImp());
   }
 }

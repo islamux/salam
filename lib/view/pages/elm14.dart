@@ -1,9 +1,9 @@
-import 'package:elm/controller/elm14_controller/elm14_controller.dart';
+import 'package:elm/controller/elm14_controller.dart';
+import 'package:elm/controller/font_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
 import 'package:elm/function/decrease_font.dart';
-import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm14.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,6 +14,7 @@ class Elm14 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Elm14ControllerImp controllerAs = Get.find<Elm14ControllerImp>();
+    final FontControllerImp fontControllerImp = Get.find<FontControllerImp>();
     //Elm14ControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
     return Scaffold(
       appBar: AppBar(
@@ -49,6 +50,7 @@ class Elm14 extends StatelessWidget {
             onPressed: () {
               // controllerAs.decreaseFontSize();
               decreaseFont(controllerAs);
+              fontControllerImp.decreaseFontSize();
             },
             icon: const Icon(Icons.remove),
           ),
@@ -66,7 +68,7 @@ class Elm14 extends StatelessWidget {
           IconButton(
               onPressed: () {
                 // controllerAs.increaseFontSize();
-                increaseFont(controllerAs);
+                fontControllerImp.increaseFontSize();
               },
               icon: const Icon(Icons.add))
         ],

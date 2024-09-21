@@ -1,4 +1,4 @@
-import 'package:elm/controller/elm19_controller/elm19_controller.dart';
+import 'package:elm/controller/elm19_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_19.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -6,12 +6,15 @@ import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../controller/font_controller.dart';
+
 class CustomTextSliderElm19 extends StatelessWidget {
   const CustomTextSliderElm19({super.key});
 
   @override
   Widget build(BuildContext context) {
     final Elm19ControllerImp controller = Get.find<Elm19ControllerImp>();
+    final FontControllerImp fontController = Get.find<FontControllerImp>();
 
     return GetBuilder<Elm19ControllerImp>(
       builder: (_) {
@@ -50,7 +53,7 @@ class CustomTextSliderElm19 extends StatelessWidget {
                                 text: TextSpan(
                                   style: TextStyle(
                                     fontFamily: "AmiriQ",
-                                    fontSize: controller.fontSize,
+                                    fontSize: fontController.fontSize,
                                     color: Colors.black,
                                   ),
                                   children: pageTexts,

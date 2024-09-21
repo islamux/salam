@@ -5,10 +5,8 @@ import 'package:get/get.dart';
 
 class AppTheme {
   //static final FontControllerImp fontController = Get.put(FontControllerImp());
-  static final FontControllerImp fontController = Get.put(FontControllerImp());
-
   //static final List<String> fontList = ['Amiri', 'Cairo', 'Kawkab','Tajawal'];
-
+  static final FontControllerImp fontController = Get.put(FontControllerImp());
   static TextStyle customTextStyleFooter() {
     return const TextStyle(
       color: AppColor.footer,

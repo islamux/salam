@@ -1,4 +1,5 @@
-import 'package:elm/controller/elmpre_controller/elmpre_controller.dart';
+import 'package:elm/controller/elmpre_controller.dart';
+import 'package:elm/controller/font_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_pre.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -12,6 +13,8 @@ class CustomTextSliderElmPre extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ElmPreControllerImp controller = Get.find<ElmPreControllerImp>();
+    final FontControllerImp fontController = Get.find<FontControllerImp>();
+
     // to enable refresh ui (slider() moving)
     return GetBuilder<ElmPreControllerImp>(
       builder: (_) {
@@ -59,7 +62,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                                     text: TextSpan(
                                       style: TextStyle(
                                         fontFamily: "AmiriQ",
-                                        fontSize: controllerAs.fontSize,
+                                        fontSize: fontController.fontSize,
                                         color: Colors.black,
                                       ),
                                       children: pageTexts,
