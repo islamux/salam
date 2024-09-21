@@ -9,7 +9,7 @@ import 'package:elm/controller/elm17_controller/elm17_controller.dart';
 import 'package:elm/controller/elm18_controller/elm18_controller.dart';
 import 'package:elm/controller/elm19_controller/elm19_controller.dart';
 import 'package:elm/controller/elm1_controller/elm1_controller.dart';
-import 'package:elm/controller/elm20_controller/elm20_controller2.dart';
+import 'package:elm/controller/elm20_controller/elm20_controller.dart';
 import 'package:elm/controller/elm21_controller/elm21_controller.dart';
 import 'package:elm/controller/elm2_controller/elm2_controller.dart';
 import 'package:elm/controller/elm3_controller/elm3_controller.dart';

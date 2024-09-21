@@ -1,10 +1,11 @@
-import 'package:elm/controller/elm20_controller/elm20_controller2.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_20.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_20.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../../controller/elm20_controller/elm20_controller.dart';
 
 class CustomTextSliderElm20 extends StatelessWidget {
   const CustomTextSliderElm20({super.key});

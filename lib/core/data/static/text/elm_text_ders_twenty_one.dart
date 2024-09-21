@@ -165,10 +165,10 @@ class ElmTextTwentyOne {
       أحسب الناس أن يتركوا أن يقولوا آمنا وهم لا يفتنون 
 
 """;
-  static const String elmTextTwentyOneFive_4 = """
+  static const String elmTextTwentyOneSeven_2 = """
 وحينما دعا الله سبحانه وتعالى نبيه إلى الصبر، فقد كان من الممكن أن يخلق الله النبي وأصحابه الكرام من دون أعداء، وهؤلاء الأعداء الكفار الفجار المعارضين الذين كادوا للنبي عليه الصلاة والسلام، كان من الممكن أن يأتي بهم قبل بعثة النبي أو بعدها بكثير، ولكن العبرة أن النبي عليه الصلاة والسلام قدوة لكل مؤمن، فيجب أن يتحمل المتاعب، حتى تكون سيرته قدوة لنا، ومثلاً أعلى يحتذى 
 """;
-  static const String ayahHadithTwentyOneFive_4 = """
+  static const String ayahHadithTwentyOneSeven_3 = """
      لقد جاءكم رسول من انفسكم 
 
 """;
@@ -196,7 +196,7 @@ class ElmTextTwentyOne {
 
 العلماء حينما فسروا قوله تعالى: 
 """;
-  static const String ayahHadithTwentyOneSix_3 = """
+  static const String ayahHadithTwentyOneEight_3 = """
 
       الم تر كيف فعل ربك بأصحاب الفيل 
 
@@ -206,94 +206,94 @@ class ElmTextTwentyOne {
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل: 
  
 """;
-// page 10
-  static const String ayahHadithTwentyOneTen_1 = """
+// page 9
+  static const String ayahHadithTwentyOneNine_1 = """
           ( الم تر ) 
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل: 
 
 """;
-  static const String elmTextTwentyOneTen_1 = """
+  static const String elmTextTwentyOneNine_1 = """
  
       أتى امر الله فلا تستعجلوه 
 """;
-  static const String ayahHadithTwentyOneTen_2 = """
+  static const String ayahHadithTwentyOneNine_2 = """
 
 معنى هذا أنه لم يأت بعد، انظر التعبير القرآني 
 
 
 """;
-  static const String elmTextTwentyOneSeven_2 = """
+  static const String elmTextTwentyOneNine_2 = """
 
       اتى امر الله فلا تستعجلوه 
 """;
-  static const String ayahHadithTwentyOneSeven_3 = """
+  static const String ayahHadithTwentyOneNine_3 = """
 
 المعنى أنه ما أتى، تعرف ذلك من قوله تعالى: 
 
 """;
-  static const String subtitleTwentyOneEight_1 = """
+  static const String subtitleTwentyOneNine_1 = """
 
         فلا تستعجلوه 
 """;
-  static const String elmtTextTwentyOneEight_1 = """
+  static const String elmtTextTwentyOneNine_3 = """
 هو قال 
        ( اتى ) 
 عبر عما يحدث بالمستقبل بالفعل الماضي تحقيقاً لوقوعه 
 إذاً ربنا عز وجل قال: 
 
 """;
-// page 11
-  static const String ayahHadithTwentyOneNine_1 = """
+// page 10
+  static const String ayahHadithTwentyOneTen_1 = """
 
       فاصبر إن وعد الله حق 
 
 """;
-  static const String elmTextTwentyOneNine_1 = """
+  static const String elmTextTwentyOneTen_1 = """
 لذلك أحد الصحابة قال: {والله لو كشف الغطاء ما ازددت يقيناً} أي أن يقينه بوعد الله قبل كشف الغطاء كيقينه بعد كشف الغطاء. 
 صحابي آخر قال:{والله لو علمت أن غداً أجلي ماقدرت أن أزيد في عملي} أي أنه استنفذ طاقته في الطاعة، وإخواننا السائقون يقولون_العداد مغلق_ هذه أقصى سرعة ينطلق بها، فهذا هو المؤمن الذي يستحق وعد الله عز وجل، ويستحق النصر والتأييد، فنحن نجد المساجد مليئة، أما البيوت فليست إسلامية، والأسواق غصت بالضلالات، ونساءٌ كاسيات عاريات، وعمت تلك الأسواق الأيمان الكاذبة التي تدك الآذان، جعلها أصحاب المحلات فخاخاً لاغتنام الأرباح 
 عن أبي هريرة رضي الله عنهُ قال سمعت رسول الله صلى الله عليه وسلم يقول: 
 الحلف منفقة للسلعة ممحقة للبركة 
 فيها التدليس، فيها الكذب، فيها الغش، فيها بيع لا يرضي الله عز وجل، فيها بيع يشبه الربا، هذه أسواقنا، وهذه بيوتنا، فإذا كنت قد قرأت في القرآن وعداً للمؤمنين بالحفظ، ولم تجد هذا الحفظ، قرأت وعداً للمؤمنين بالتوفيق، وما وجدت التوفيق، فالقضية بسيطة جداً، عليك أن تشك بالموعود لا بالوعد، هذه فكرة دقيقة صائبة 
 """;
-  static const String ayahHadithTwentyOneNine_2 = """
+  static const String ayahHadithTwentyOneTen_2 = """
 
       فاصبر إن وعد الله حق 
 
 """;
-// page 12
-  static const String titletwentyten = """
+// page 11
+  static const String titleTwentyEleven = """
 معنى حق أي أنه لابد من أن يقع، وزوال الكون أهون على الله من أن لا يقع 
 من عمل صالحاً من ذكر أو انثى وهو مؤمن فلنحيينه حياة طيبة 
 هذا وعد إلهي لكل مؤمن، هذه الآية لا علاقة لها بالظروف المستجدة، لا علاقة لها بالأزمات، لا علاقة لها بالفقر، لا علاقة لها بالضعف، لا علاقة لها بالمرض، إنه وعد إلهي 
 
 """;
 
-  static const String elmTextTwentyOneEleven_1 = """
+  static const String ayahHadithTwentyOneEleven_1 = """
       فاصبر إن وعد الله حق 
 """;
 
-  static const String titleTwentyOneEleven = """
+  static const String elmTextTwentyOneEleven_1 = """
 أحياناً يكون المؤمن ضعيفاً مستضعفاً، وأحياناً يكون فقيراً، وأحياناً يكون من الطبقة الدنيا في المجتمع، أما انت أيها الضال فأنت المتفوق، وأنت الرابح، وأنت الفائز، وأنت الناجح، وأنت السعيد، وأنت الملك ولكن 
 """;
-  static const String elmTextTwentyOneEleven_2 = """
+  static const String ayahHadithTwentyOneEleven_2 = """
 
       فاصبر إن وعد الله حق 
 """;
 
-  static const String ayahHadithTwentyOneEleven_1 = """
+  static const String elmTextTwentyOneEleven_2 = """
     
 وعد المؤمن بالنصر، وعد المؤمن بالتأييد، وعده بالتوفيق، وعده بالسعادة، وعدهُ بالعفو، وعدهُ بالمغفرة، وعدهُ بجنةٍ عرضها السماوات والأرض، وعده بقبر روضة من رياض الجنة، وقد يكون حفرة من حفر النيران لمن ضل أو كفر 
 """;
-  static const String elmTextTwentyOneEleven_3 = """
+  static const String ayahHadithTwentyOneEleven_3 = """
 
       فاصبر إن وعد الله حق فإما نرينك بعض الذي نعدهم أو نتوفينك فإلينا يُرجعون 
 """;
-// page 13
+// page 12
   static const String elmTextTwentyOneTwelve_1 = """
 
 أي إن رأيت مصيرهم في الدنيا أو لم تر فلا بد من أن يلقوا المصير المؤلم 
 """;
-  static const String ayahHadithTwentyOneTwelve_1 = """
+  static const String subtitleTwentyOneTwelve_1 = """
 الصبر وانواعه: 
      """;
   static const String elmTextTwentyOneTwelve_2 = """
@@ -306,25 +306,26 @@ class ElmTextTwentyOne {
 
 """;
 
-  static const String elmTextTwentyOneTherteen_1 = """
+  static const String ayahHadithTwentyOneTwelve_1 = """
 
       ولربك فاصبر 
+
 """;
-  static const String subtitleTwentyOneTherteen_1 = """
+  static const String elmTextTwentyOneTwelve_3 = """
 الإنسان أحياناً يكون ضعيفاً فيصبر أمام القوي، يكون فقيراً فيصبر أمام الغني، ليس هذا هو الصبر المحمود، الصبر المحمود أن تكون في أعلى درجات القوة، وفي أعلى درجات الغنى وأنت صابر لله وحده، مقيدك خوفك من الله، مقيدك تواضعك لله، هذا الصبر المحمود
 أحياناً الإنسان يسكت(لا أستطيع التكلم) طبعاً لا تستطيع أن تتكلم لأنك ضعيف وخصمك قوي، ليس هذا هو الصبر المحمود، الصبر المحمود أن تكون قوياً وأن تضبط سلوكك، الإنسان غضب من خادم عنده قال: ياسيدي والكاظمين الغيظ، قال: كظمت غيظي، قال: والعافين عن الناس، قال: عفوت عنك، قال: والله يحب المحسنين، قال: أنت حرٌ لوجه الله، يعني أن تكون قوياً وأن تصبر، أن تكون غنياً وأن تصبر، فهذا الصبر المحمود 
- 
 """;
-  static const String elmTextTwentyOneTherteen_2 = """
+
+  static const String ayahHadithTwentyOneTwelve_2 = """
 
       ولربك فاصبر 
+
 """;
+// page 13
   static const String ayahHadithTwentyOneTherteen_1 = """
-
 القضاء وأنواعه: 
-
 """;
-// page 14
+
   static const String elmTextTwentyOneeTherteen_3 = """
 1__القضاء المحمود: 
 العلماء قالوا لسيدك ومالك فاصبر على أداء فرائضه وعباداته 
@@ -336,273 +337,295 @@ class ElmTextTwentyOne {
 2__القضاء المكروه: أما أصابه مرض لاسمح الله، أصابه فقر، أصابه مشكلة، سيدنا علي قال: الرضا بمكروه القضاء أرفع درجات اليقين 
 
 اصبر على البلوى لأن الله يمتحن أصفياءه وأولياءه، اصبر على أوامره ونواهيه، وقيل: اصبر على فراق الأهل والأوطان في الهجره 
-
-
 """;
-  static const String ayahHadithTwentyOneFourteen_1 = """
+
+  static const String ayahHadithTwentyOneTherteen_2 = """
 
       ولربك فاصبر 
 
 """;
-//page 15
-  static const String elmTextTwentyOneFourteen_1 = """
+
+  // page 14
+  static const String subtitleTwentyOneFourteen_1 = """
 الأيمان هو الصبر: 
 """;
-  static const String elmTextTwentyOneFourteen_2 = """
+  static const String elmTextTwentyOneFourteen_1 = """
 وبشكل مختصر اصبر على الطاعة، واصبر على المعصية واصبر على قضاء الله وقدره، ثلاثة أنواع اساسيات، اصبر على الطاعة{على مشقة الطاعة} 
 واصبر عن المعصية{إغراء المعصية} 
 اصبر على مشقة الطاعة، واصبر عن إغراء المعصية، واصبر على قضاء الله وقدره لأن الأيمان في الأساس صبر 
 الأيمان انضباط والانضباط صبر، والصبر ثمن الجنة 
 وفي حديث 
-
 """;
 
-  static const String elmTextTwentyOneFifteen_1 = """
+  static const String ayahHadithTwentyOneFourteen_1 = """
+
       (الايمان هو الصبر) 
+      `
  """;
-  static const String ayahHadithTwentyOneFifteen_1 = """
+
+  static const String elmTextTwentyOneFourteen_2 = """
 الإنسان يظبط أموره كلها بالصبر، يصبر فيغض بصره، يصبر فيظبط لسانه، يصبر فيظبط يده، يصبر فيظبط رجله، فهذا هو الصبر 
   """;
-  static const String elmTextTwentyOneFifteen_2 = """
+
+  static const String elmTextTwentyOneFourteen_3 = """
 ولمن صبر وغفر إن ذلك لمن عزم الأمور 
  """;
-  // page 16
-  static const String titleTwentyOneSixteen = """
+
+  // page 15
+  static const String elmTextTwentyOneFifteen_1 = """
 أحياناً يأتي القضاء والقدر مباشرةً من الله مثلاً: شخص وقع ابنه من الشرفة فمات، فلمن يتجه الأب؟ وسوف يحاكم من؟ وسينتقم ممن؟ ويقيم دعوى على من؟ لا يوجد أحد، ابنه وقع من الشرفة إلى الأرض فمات، ولكن حينما يُدهس سائق سيارة ولداً، فبالحالتين الابن مات ولكن مرة مات قضاءً وقدراً ومرة مات بفعل بشري، فالإنسان عندما يكون إيمانه بالله قوياً جداً، وتوحيده قوياً جداً ولو أن الفعل المؤلم جاءه على يد إنسان فيبقى موحداً ويبقى مؤمناً وإن الله وحده هو الذي شاء ذلك، ولذلك فليس عنده حقدٌ دفين على هذا الذي جرى على يده هذا العمل
  """;
-  static const String elmTextTwentyOneSixteen_2 = """
+
+  static const String subtitleTwentyOneFifteen_1 = """
 من صبر على قضاء الله وقدره فأجره على الله: 
 """;
-  static const String elmTextTwentyOneSeventeen_1 = """
+
+  static const String elmTextTwentyOneFifteen_2 = """
 الآية الكريمة: 
 """;
-  static const String ayahHdithTwentyOneSeventeen_1 = """
+  static const String ayahHdithTwentyOneFifteen_1 = """
       ولمن صبر 
 """;
 
-  static const String elmTextTwentyOneEighteen_1 = """
+  static const String elmTextTwentyOneFifteen_3 = """
 على قضاء الله وقدره.. 
  """;
 
-  // page 19
-  static const String titleTwentyOneNinteen = """
-
+  // page 16
+  static const String ayahHadithTwentyOneSixteen_1 = """
       وغفر 
  """;
-  static const String elmTextTwentyOneNinteen_1 = """
-
+  static const String elmTextTwentyOneSixteen_1 = """
 لمن كانت هذه الإساءة على يديه، قال: 
  """;
-  static const String ayahHadithTwentyOneNinteen_1 = """
+  static const String ayahHadithTwentyOneSixteen_2 = """
 
       إن ذلك لمن عزم الأمور 
+
  """;
 
-  static const String elmTextTwentyOneTwenty_1 = """
-
+  static const String elmTextTwentyOneSixteen_2 = """
 إن يحتاج إلى إيمان قوي وإلى توحيد قوي 
  """;
-  static const String ayahHadithTwentyOneTwenty_1 = """
+  static const String ayahHadithTwentyOneSixteen_3 = """
 
 من عاقب المذنب أو عفا عنه عليه أن يرى أن الله وحده هو الذي سمح له أن يفعل هذا: 
 
  """;
-  // page 20
-  static const String elmTextTwentyOneTwenty_2 = """
 
+  static const String elmTextTwentyOneSixteen_3 = """
 أما هذه الأية: 
  """;
-  static const String ayahHadithTwentyOneTwenty_2 = """
+  static const String ayahHadithTwentyOneSixteen_4 = """
 
       ولمن صبر وغفر إن ذلك لمن عزم الأمور 
 
  """;
-  static const String subtitleTwentyOneTwenty_1 = """
+  static const String elmTextTwentyOneSixteen_4 = """
 لذلك المؤمن لو جاءه مكروهٌ على يد إنسان يرى أن الله وحده هو الذي سمح له أن يفعل هذا وتبقى علاقته مع الله، ويقف من هذا الذي ساق الله على يده الشر موقفاً حكيماً، إما أن يعاقبه لمصلحته، وإما أن يعفو عنه ولكن بالحالتين ليس في قلبه حقدٌ عليه. 
 إنسان تلقى ضربة من العصا فهل ألمه من العصا أم من الذي ضرب؟ بل من الضارب، فإذا صب كل نقمته على العصا يكون جاهلا، وعليه أن يتألم ممن ضرب لا من العصا لأنها أداة، وينبغي أن تعلم أن كل البشر الذين يُخاف منهم إنهم عصيٌ بيد الله، والدليل: 
 فكيدوني جميعاً ثم لا تنظرون إني توكلت على الله ربي وربكم مامن دابة الا هو آخذٌ بناصيتها إن ربي على صراطٍ مستقيم 
 
  """;
 
-  static const String elmTextTwentyOneTwenty_3 = """
-
+// page 17
+  static const String subtitleTwentyOneSeventeen_1 = """
 الإيمان الكامل أن تقف موقفاً حكيماً من دون حقد ولا إشراك بالله ممن تلقيت منه الأذى: 
 """;
-  static const String ayahHadithTwentyOneTwenty_3 = """
 
+  static const String elmTextTwentyOneSeventeen_1 = """
 الإيمان الكامل حتى لو جاءك لا سمح الله شر على يد إنسان، فهذا الإنسان لا يستطيع أن يفعل ما فعل إلا بعد أن يأذن الله، وهذا الإنسان سيحاسب ولكن شاءت حكمة الله أن يكون الأذى على يده، إذاً يجب أن تقف موقفاً حكيماً من دون حقد، ولا إشراك بالله، فمع التوحيد الكامل تقف الموقف الكامل، فإن كانت الحكمة أن تعاقبه لتردعه عن أن يعود لمثلها فلا مانع ولكن بالحالتين بدون حقد 
 """;
-// page 21
-  static const String elmTextTwentyOneTwentyOne_1 = """
+
+  static const String ayahHadithTwentyOneSeventeen_1 = """
 
 ياايها الذين امنوا اصبروا وصابروا 
-""";
-  static const String ayahHadithTwentyOneTwentyOne_1 = """
 
+""";
+  static const String subtitleTwentyOnSeventeen_2 = """
 الحكمة من بدء الآية بالنداء بلفظ الإيمان: 
 """;
-  static const String elmTextTwentyOneTwentyOne_2 = """
-أية آية تبدأ بقوله تعالى: 
 
+  static const String elmTextTwentyOneSeventeen_2 = """
+أية آية تبدأ بقوله تعالى: 
  """;
-  static const String subtitleTwentyOneTwentyOne_1 = """
+
+  static const String ayahHadithTwentyOneSeventeen_2 = """
 
       ياأيها الذين امنوا 
+
  """;
-  static const String elmTextTwentyOneTwentyOne_3 = """
+
+  static const String elmTextTwentyOneSeventeen_3 = """
 أي إنكم أيها المؤمنون مرتبطون مع الله بعقد إيماني، أنتم آمنتم به موجوداً وواحداً وكاملاً، 
 أمنتم به خالقاً ومربياً ومسيراً، آمنتم بأسمائه الحسنى وصفاته الفضلى، آمنتم أن الأمر كله بيده، وأن كماله كمال مطلق، وأن حكمته لا حكمة بعدها، ورحمته، وقدرته، وعدله بحسب إيمانكم، ومعرفتكم افعلوا كذا اصبروا 
-
-
    """;
-// page 22
-  static const String elmTextTwentyOneTwentyTwo_1 = """
 
+// page 18
+  static const String elmTextTwentyOneEighteen_1 = """
 الأمر بالصبر: ما من آية يحتاجها المسلمون في هذه الآيام الدقيقة التي يمر بها المسلمون في ظرف أصعب من هذه الظرف هم في أمس الحاجة إلى هذه الآية: 
-
 """;
-  static const String ayahHadithTwentyOneTwentyTwo_1 = """
+
+  static const String ayahHadithTwentyOneEighteen_1 = """
 
       ياأيها الذين آمنوا اصبروا 
-""";
-  static const String elmTextTwentyOneTwentyTwo_2 = """
+
 يقول الله عز وجل: 
 وإن تصبروا وتتقوا لا يضركم كيدهم شيئا 
 
   """;
 
-  static const String subtitleTwentyOneTwentyThree_1 = """
+  static const String elmTextTwentyOneEighteen_2 = """
 وقد مكروا مكرهم وعند الله مكرهم وإن كان مكرهم لتزول منه الجبال 
 خالق الأكوان يقول: 
   """;
-  static const String elmTextTwentyOneTwentyThree_1 = """
+
+  static const String ayahHadithTwentyOneEighteen_2 = """
 
       وإن كان مكرهم لتزول منه الجبال 
+
   """;
-  static const String ayahHadithTwentyOneTwentyThree_1 = """
+  static const String elmTextTwentyOneEighteen_3 = """
 ومع ذلك: 
-
   """;
 
-  static const String elmTextTwentyOneTwentyThree_2 = """
+  static const String ayahHadithTwentyOneEighteen_3 = """
 
       وإن تصبروا وتتقوا لا يضركم كيدهم شيئا 
-  """;
-// page 23
-  static const String ayahHadithTwentyOneTwentyThree_2 = """
 
+  """;
+
+// page 19
+  static const String elmTextTwentyOneNinteen_1 = """
 كل ماتتصورون من قوة، ومن تقنية، ومن تفوق تزول إذا آمنا وصبرنا، وأعددنا مانستطيع من قوة، أعددنا الإيمان الذي يحملنا على طاعة الله، هذا هو الحل ولا حل سواه 
  """;
-  static const String elmTextTwentyOneTwentyThree_3 = """
+
+  static const String ayahHadithTwentyOneNinteen_1 = """
+
 ياايها الذين امنوا اصبروا 
+
  """;
-  static const String ayahHadithTwentyOneTwentyThree_3 = """
+
+  static const String subtitleTwentyOneNinteen_1 = """
 أصبر على الطاعة وعن المعصية وعلى قضاء الله وقدره: 
  """;
-  // page 24
-  static const String elmTextTwentyOneTwentyFour_1 = """
+
+  static const String elmTextTwentyOneNinteen_2 = """
 ينبغي أن تصبر على طاعة الله، وعن معصيةالله، وأن تصبر على قضاء الله وقدره 
  """;
-  static const String ayahHadithTwentyOneTwentyFour_1 = """
+
+  static const String ayahHadithTwentyOneNinteen_2 = """
 
       ياايها الذين امنوا اصبروا 
- """;
-  static const String elmTextTwentyOneTwentyFour_2 = """
 
+ """;
+
+  static const String elmTextTwentyOneNinteen_3 = """
 أمر إلهي، وحينما يكون الأمر واضحاً وضوح الشمس، لكن متى تصبر؟ حينما تختلط الأمور، وحينما تضيع القضية، وحينما لا يتضح الأمر فأنت مأمور أن تصبر على حكم الله، وعلى طاعة الله، وعن معصيته 
    """;
-  static const String ayahHadithTwentyOneTwentyFour_2 = """
+
+  static const String ayahHadithTwentyOneNinteen_3 = """
 
       ياايها الذين امنوا اصبروا 
+
  """;
-  // page 25
-  static const String subtitleTwentyOneTwentyFive_1 = """
+
+  // page 20
+  static const String subtitleTwentyOneTwenty_1 = """
 آية في كتاب الله إذا قرأتها يقشعر لها الجلد، ربنا يحدثنا عن أحد أنبيائه العظام قال: 
  """;
-  static const String elmTextTwentyOneTwentyFive_2 = """
+
+  static const String ayahHadithTwentyOneTwenty_1 = """
 
 إنا وجدناه صابراً نعم العبد إنه اواب 
+
  """;
 
-  static const String ayahHadithTwentyOneTwentySix_1 = """
+  static const String elmTextTwentyOneTwenty_1 = """
 وتكلم عن نبي أخر فقال:
  """;
-  static const String subtitleTwentyOneTwentySeven_1 = """
+
+  static const String ayahHadithTwentyOneTwenty_2 = """
       وابراهيم الذي وفى 
 """;
-  static const String elmTextTwentyOneTwentySeven_1 = """
+
+  static const String elmTextTwentyOneTwenty_2 = """
 وفى ماعليه، وفى نعمة الله شكراً، ومنهج الله طاعة، وفى الله ذكراً ومعرفة 
   """;
-  static const String ayahHadithTwentyOneTwentySeven_1 = """
+  static const String ayahHadithTwentyOneTwenty_3 = """
 
       ياايها الذين امنوا اصبروا 
+
   """;
-// page 26
-  static const String elmTextTwentyOneTwentySeven_2 = """
+
+  static const String elmTextTwentyOneTwenty_3 = """
 
 لنصبر على مكر أعدائنا، وعلى شظف العيش أحياناً، ربما لا تدوم النعم، وقد يأتي ظرف صعب، وربما لا يتاح لنا أن نعيش كما كنا نعيش، لأنك مؤمن، ولأن الإيمان أكبر قضية في حياتك، فينبغي أن تصبر 
   """;
-  static const String ayahHadithTwentyOneTwentySeven_2 = """
+  static const String ayahHadithTwentyOneTwenty_4 = """
 
       ياايها الذين امنوا اصبروا 
-  """;
-  static const String elmTextTwentyOneTwentySeven_3 = """
 
+  """;
+
+  // page 21
+  static const String subtitleTwentyOneTwentyOne_1 = """
 الصبر هو الإيمان: 
   """;
-  static const String ayahHadithTwentyOneTwentySeven_3 = """
-والصبر نصف الإيمان، بل هو الإيمان كله، الطاعة صبر، وغض البصر صبر، أن تنطق بالحق صبر، من السهل جداً أن تنطق بكلام يرضي الأقوياء فتنعم بالأمن عندهم، لكنك إذا تكلمت كلاماً يزعجهم فقدت الأمن عندهم، فقد يكون النطق بالحق صبر، وقد يكون التحرك في كسب المال صبر، لأن أبواب الربا مفتحة على مصاريعها 
 
+  static const String elmTextTwentyOneTwentyOne_1 = """
+والصبر نصف الإيمان، بل هو الإيمان كله، الطاعة صبر، وغض البصر صبر، أن تنطق بالحق صبر، من السهل جداً أن تنطق بكلام يرضي الأقوياء فتنعم بالأمن عندهم، لكنك إذا تكلمت كلاماً يزعجهم فقدت الأمن عندهم، فقد يكون النطق بالحق صبر، وقد يكون التحرك في كسب المال صبر، لأن أبواب الربا مفتحة على مصاريعها 
   """;
-  // page 28
-  static const String elmTextTwentyOneTwentyEight_1 = """
+
+  static const String ayahHadithTwentyOneTwentyOne_1 = """
 
       ياايها الذين امنوا اصبروا وصابروا 
-   """;
-  static const String ayahHadithTwentyOneTwentyEight_1 = """
 
+   """;
+
+  static const String elmTextTwentyOneTwentyOne_2 = """
 معنى صابروا 
   """;
-  static const String elmTextTwentyOneTwentyEight_2 = """
 
+  static const String elmTextTwentyOneTwentyOne_3 = """
 المعنى الذي يمكن أن يستنبط من كلمة وصابروا:
 أي احملوا من حولكم على الصبر، اصبر وصابر أحياناً الإنسان من غير حكمة يشكو لك مشكلة، والله مشكلتك صعبة لا تحتمل، الله يعينك، ليس هذا هو الموقف الكامل، ينبغي أن تخفف عنه، وتهون في عينه الدنيا، وأن تطمعه في الآخرة، وأن تشعره أن معظم الناس يعانون مايعانون، فأنت ينبغي أن تصبر، وينبغي أن تحمل غيرك على الصبر، ينبغي أن تصبر، وينبغي أن تبين حكمة الله التي ينبغي أن نصبر عليها، ينبغي أن تصبر، وتبين ماذا ينتظر الصابرون 
-
-
   """;
-  static const String ayahHadithTwentyOneTwentyEight_2 = """
 
+  static const String subtitleTwentyOneTwentyOne_2 = """
 الصبر: أجره بغير حساب: 
-""";
-  static const String elmTextTwentyOneTwentyEight_3 = """
-الحقيقة: دائماً لكل عمل صالح أجر من ضعف إلى عشرة أضعاف إلى سبعمائة ضعف إلا الصبر 
 
+الحقيقة: دائماً لكل عمل صالح أجر من ضعف إلى عشرة أضعاف إلى سبعمائة ضعف إلا الصبر 
   """;
-  static const String ayahHadithTwentyOneTwentyEight_3 = """
+
+  static const String ayahHadithTwentyOneTwentyOne_2 = """
 
 إنما يوفى الصابرون أجرهم بغير حساب 
 
   """;
 
-  // page 29
-  static const String elmTextTwentyOneTwentyNine_1 = """
-
+  // page 22
+  static const String elmTextTwentyOneTwentyTwo_1 = """
 يمكن أن نعطيك أمر دفع بمائة بمليون، أما إذا وقعنا لك هذا الأمر، وقلنا لك: اكتب الرقم الذي تريد، هذا مفتوح، هكذا عطاء الصابرين 
 """;
-  static const String ayahHadithTwentyOneTwentyNine_1 = """
+
+  static const String ayahHadithTwentyOneTwentyTwo_1 = """
+
 إنما يوفى الصابرون أجرهم بغير حساب 
 
 """;
-  static const String elmTextTwentyOneTwentyNine_2 = """
 
+  static const String elmTextTwentyOneTwentyTwo_2 = """
 هُناك إمرأة صابرة على زوج شرس، هناك شريك صابر على شريك متعب، هناك ابن صابر لأب صعب المعاملة، هناك أب يصبر على ابنه، هناك من يصبر على الآخرين، يصبر ابتغاء وجه الله 
 """;
-  static const String ayahHadithTwentyOneTwentyNine_2 = """
+
+  static const String ayahHadithTwentyOneTwentyTwo_2 = """
    
       ياايها الذين امنوا اصبروا وصابروا 
-   """;
-  static const String elmTextTwentyOneTwentyNine_3 = """
 
+   """;
+
+  static const String elmTextTwentyOneTwentyTwo_3 = """
 احملوا غيركم على الصبر، اصبر وصابر، اصبر، وانتظر من الله الفرج، اصبر واعلم علم اليقين أن الله يحب الصابرين، اصبر، واعلم أن الله مع الصابرين، اصبر، واعلم أن الله سيجزي الصابرين بغير حساب
 """;
 }
