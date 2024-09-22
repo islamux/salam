@@ -1,5 +1,4 @@
 //TextDersSixTeen
-import 'dart:math';
 
 import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_twenty_one.dart';

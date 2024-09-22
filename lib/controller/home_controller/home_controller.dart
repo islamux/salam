@@ -112,4 +112,9 @@ class HomeControllerImp extends HomeController {
   void goToElm21() {
     Get.toNamed(AppRoute.elm21);
   }
+
+  @override
+  void goToElm22() {
+    Get.toNamed(AppRoute.elm22);
+  }
 }

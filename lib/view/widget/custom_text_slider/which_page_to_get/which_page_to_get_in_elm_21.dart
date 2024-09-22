@@ -2,27 +2,14 @@ import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_pa
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_twenty_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_ninteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_seventeen_texts.dart';
-import '../get_pages_texts/elm_21/get_page_twenty_five_texts.dart';
-import '../get_pages_texts/elm_21/get_page_twenty_four_texts.dart';
 import '../get_pages_texts/elm_21/get_page_twenty_one_texts.dart';
-import '../get_pages_texts/elm_21/get_page_twenty_seven_texts.dart';
-import '../get_pages_texts/elm_21/get_page_twenty_six_texts.dart';
-import '../get_pages_texts/elm_21/get_page_twenty_three_texts.dart';
 import '../get_pages_texts/elm_21/get_page_twenty_two_texts.dart';
-import '../get_pages_texts/elm_21/get_page_therty_one_texts.dart';
-import '../get_pages_texts/elm_21/get_page_therty_two_texts.dart';
-import '../get_pages_texts/elm_21/get_page_therty_three_texts.dart';
-import '../get_pages_texts/elm_21/get_page_therty_Four_texts.dart';
-import '../get_pages_texts/elm_21/get_page_therty_Five_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_eleven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_fourteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_sixteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_therteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_therty_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_twelve_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_fifteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_twenty_eight_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_twenty_nine_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_five_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_21/get_page_four_texts.dart';
@@ -81,32 +68,6 @@ List<TextSpan> whichPageToGetInElm21(int i) {
       return getPageTwentyOneTexts(i);
     case 21:
       return getPageTwentyTwoTexts(i);
-    case 22:
-      return getPageTwentyThreeTexts(i);
-    case 23:
-      return getPageTwentyFourTexts(i);
-    case 24:
-      return getPageTwentyFiveTexts(i);
-    case 25:
-      return getPageTwentySixTexts(i);
-    case 26:
-      return getPageTwentySevenTexts(i);
-    case 27:
-      return getPageTwentyEightTexts(i);
-    case 28:
-      return getPageTwentyNineTexts(i);
-    case 29:
-      return getPageThertyTexts(i);
-    case 30:
-      return getPageThertyOneTexts(i);
-    case 31:
-      return getPageThertyTwoTexts(i);
-    case 32:
-      return getPageThertyThreeTexts(i);
-    case 33:
-      return getPageThertyFourTexts(i);
-    case 34:
-      return getPageThertyFiveTexts(i);
 
     default:
       return [];
