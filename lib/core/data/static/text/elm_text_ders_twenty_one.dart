@@ -181,7 +181,6 @@ class ElmTextTwentyOne {
       واصبر كما صبر أولو العزم من الرسل 
       فاصبر على مايقولون 
 
-
 """;
 
   static const String elmTextTwentyOneEight_2 = """
@@ -326,7 +325,7 @@ class ElmTextTwentyOne {
 القضاء وأنواعه: 
 """;
 
-  static const String elmTextTwentyOneeTherteen_3 = """
+  static const String elmTextTwentyOneeTherteen_1 = """
 1__القضاء المحمود: 
 العلماء قالوا لسيدك ومالك فاصبر على أداء فرائضه وعباداته 
 وقال مجاهد: اصبر على ما أذيت 
@@ -367,7 +366,7 @@ class ElmTextTwentyOne {
 الإنسان يظبط أموره كلها بالصبر، يصبر فيغض بصره، يصبر فيظبط لسانه، يصبر فيظبط يده، يصبر فيظبط رجله، فهذا هو الصبر 
   """;
 
-  static const String elmTextTwentyOneFourteen_3 = """
+  static const String ayahHadithTwentyOneFourteen_3 = """
 ولمن صبر وغفر إن ذلك لمن عزم الأمور 
  """;
 
@@ -585,9 +584,7 @@ class ElmTextTwentyOne {
 
   static const String elmTextTwentyOneTwentyOne_2 = """
 معنى صابروا 
-  """;
 
-  static const String elmTextTwentyOneTwentyOne_3 = """
 المعنى الذي يمكن أن يستنبط من كلمة وصابروا:
 أي احملوا من حولكم على الصبر، اصبر وصابر أحياناً الإنسان من غير حكمة يشكو لك مشكلة، والله مشكلتك صعبة لا تحتمل، الله يعينك، ليس هذا هو الموقف الكامل، ينبغي أن تخفف عنه، وتهون في عينه الدنيا، وأن تطمعه في الآخرة، وأن تشعره أن معظم الناس يعانون مايعانون، فأنت ينبغي أن تصبر، وينبغي أن تحمل غيرك على الصبر، ينبغي أن تصبر، وينبغي أن تبين حكمة الله التي ينبغي أن نصبر عليها، ينبغي أن تصبر، وتبين ماذا ينتظر الصابرون 
   """;
