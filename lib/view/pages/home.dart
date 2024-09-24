@@ -266,7 +266,7 @@ class Home extends StatelessWidget {
 
                         // Button 22
                         CustomButton(
-                          customText: " (خاتمة)  الصبر ",
+                          customText: " (خاتمة)  المصير المحتوم ",
                           onPressed: () => controller.goToElm22(),
                           icon: const Icon(Icons.menu_book),
                         ),

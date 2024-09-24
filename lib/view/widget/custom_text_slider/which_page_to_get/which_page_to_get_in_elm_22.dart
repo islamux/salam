@@ -1,9 +1,3 @@
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_eighteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_twenty_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_ninteen_texts.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_seventeen_texts.dart';
-import '../get_pages_texts/elm_22/get_page_twenty_one_texts.dart';
-import '../get_pages_texts/elm_22/get_page_twenty_two_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_eleven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_fourteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_22/get_page_sixteen_texts.dart';
@@ -56,18 +50,6 @@ List<TextSpan> whichPageToGetInElm22(int i) {
       return getPageFifteenTexts(i);
     case 15:
       return getPageSixteenTexts(i);
-    case 16:
-      return getPageSeventeenTexts(i);
-    case 17:
-      return getPageEighteenTexts(i);
-    case 18:
-      return getPageNinteenTexts(i);
-    case 19:
-      return getPageTwentyTexts(i);
-    case 20:
-      return getPageTwentyOneTexts(i);
-    case 22:
-      return getPageTwentyTwoTexts(i);
 
     default:
       return [];

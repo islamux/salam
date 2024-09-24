@@ -9,11 +9,10 @@ List<TextSpan> getPageFifteenTexts(int i) {
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModel elm = elmList21[i];
   return [
-    // Form ElmTextTwentyOne{} // page 15
-    TextSpan(text: elm.text),
+    // Form ElmTextTwentyFifteen // page 15
     TextSpan(text: elm.subtitle, style: subtitleStyle),
-    TextSpan(text: elm.text2),
+    TextSpan(text: elm.text),
     TextSpan(text: elm.ayah, style: ayahStyle),
-    TextSpan(text: elm.text3),
+    TextSpan(text: elm.text2),
   ];
 }
