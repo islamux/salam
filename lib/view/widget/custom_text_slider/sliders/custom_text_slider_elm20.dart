@@ -5,7 +5,7 @@ import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../controller/elm20_controller/elm20_controller.dart';
+import '../../../../controller/elm20_controller.dart';
 
 class CustomTextSliderElm20 extends StatelessWidget {
   const CustomTextSliderElm20({super.key});

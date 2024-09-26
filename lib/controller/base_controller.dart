@@ -16,13 +16,17 @@ abstract class BaseController extends GetxController {
   }
 
   increaseFontSize() {
-    fontSize += 2.0;
-    update();
+    if (fontSize <= 37.0) {
+      fontSize += 2.0;
+      update();
+    }
   }
 
   decreaseFontSize() {
-    fontSize -= 2.0;
-    update();
+    if (fontSize > 21.0) {
+      fontSize -= 2.0;
+      update();
+    }
   }
 
   void resetCounter() {

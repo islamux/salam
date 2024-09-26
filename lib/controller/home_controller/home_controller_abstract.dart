@@ -1,4 +1,3 @@
-import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:get/get.dart';
 
 abstract class HomeController extends GetxController {

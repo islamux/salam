@@ -2,8 +2,6 @@ import 'package:elm/controller/elm23_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
-import 'package:elm/function/decrease_font.dart';
-import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm23.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -48,8 +46,8 @@ class Elm23 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              // controller.decreaseFontSize();
-              decreaseFont(controller);
+              controller.decreaseFontSize();
+              // decreaseFont(controller);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -67,8 +65,8 @@ class Elm23 extends StatelessWidget {
 
           IconButton(
               onPressed: () {
-                // controller.increaseFontSize();
-                increaseFont(controller);
+                controller.increaseFontSize();
+                // increaseFont(controller);
               },
               icon: const Icon(Icons.add))
         ],

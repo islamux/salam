@@ -1,4 +1,4 @@
-import 'package:elm/controller/elm5_controller/elm5_controller.dart';
+import 'package:elm/controller/elm5_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
@@ -47,8 +47,8 @@ class Elm5 extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
-              // controllerM.decreaseFontSize();
-              decreaseFont(controllerM);
+              controllerM.decreaseFontSize();
+              //decreaseFont(controllerM);
             },
             icon: const Icon(Icons.remove),
           ),
@@ -66,8 +66,8 @@ class Elm5 extends StatelessWidget {
 
           IconButton(
               onPressed: () {
-                // controllerM.increaseFontSize();
-                increaseFont(controllerM);
+                controllerM.increaseFontSize();
+                //increaseFont(controllerM);
               },
               icon: const Icon(Icons.add))
         ],

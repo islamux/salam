@@ -3,13 +3,11 @@ import 'package:get/get.dart';
 abstract class FontController extends GetxController {
   void increaseFontSize();
   void decreaseFontSize();
-
 }
 
 class FontControllerImp extends FontController {
   // Proberties
   double fontSize = 21.0;
-
 
   @override
   increaseFontSize() {
@@ -22,9 +20,4 @@ class FontControllerImp extends FontController {
     fontSize -= 2.0;
     update();
   }
-
-
-
-
-
 }
