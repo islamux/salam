@@ -28,6 +28,7 @@ class ElmModel {
   final String? ayah6;
   final String? ayah7;
   final String? ayah8;
+  final String? ayah9;
 
   final String? footer;
 
@@ -62,5 +63,6 @@ class ElmModel {
     this.ayah6,
     this.ayah7,
     this.ayah8,
+    this.ayah9,
   });
 }
