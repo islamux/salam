@@ -290,7 +290,7 @@ class ElmTextTwentyThree {
   static const String ayahHadithTwentyThreePageTen_1 = """
       ما من شفيع إلا من بعد إذنه 
 """;
-  static const String textTwentyThreePageTen_2 = """
+  static const String textTwentyThreePageTen_1 = """
 فهذا هو التوحيد، الدين كله توحيد، وماتعلمت العبيد أفضل من التوحيد، وحد تسترح 
 """;
   static const String ayahHadithTwentyThreePageTen_2 = """
@@ -298,7 +298,7 @@ class ElmTextTwentyThree {
 فلا تدع مع الله الهاً اخر فتكون من المعذبين 
 
 """;
-  static const String textTwentyThreePageTen_3 = """
+  static const String textTwentyThreePageTen_2 = """
 أي ان هذا أساس الإيمان، لا يستطيع إنسانٌ ما؛ مهما كبر شأنه، مهما كان قوياً، مهما كان جباراً، لا يستطيع إنسانٌ ما أن يصل إليك إلا بإذن الله، كن مع الله تر الله معك.. 
 أطع امرنا نرفع لأجلك حجبنا 
              فإنا منحنا بالرضا من أحبنا 
@@ -319,26 +319,26 @@ class ElmTextTwentyThree {
   static const String titleTwentyThreePageEleven_1 = """
 لكل شيئ سبب: 
 """;
-  static const String ayahHadithTwentyThreePageEleven_1 = """
+  static const String textTwentyThreePageEleven_1 = """
 الزمن معدوم بين إرادة الله وخلقه، ولكن شاءت حكمة الله أن يجعل لكل شيء سبباً في الدنيا، ماوظيفة هذا السبب؟ وظيفته أن العقل الذي أودعه الله فيك مبادئه ثلاث؛ أحد هذه المبادئ هو السببيه، فعقلك البشري لا يستوعب شيئاً من دون سبب، لا يمكن أن تقبل شيئاً من دون سبب، وقد صُمم الكون على مبدأ السببية، الفاكهة من الشجرة، والشجرة من البذرة، تضع البذرة في التراب، فتصبح فسيلة، ثم شجرة تثمر، الماء من البئر، البيضة من الدجاجة، كل شيئ له سبب، قال تعالى:
 ويسألونك عن ذي القرنين قل سأتلوا عليكم منه ذكرا إنا مكنا له في الأرض واتيناه من كل شيئ سببا فاتبع سببا 
 حتى أن الله جل جلاله حينما يريد أن يعطي فإنه يعطي بسبب، وحينما يؤدب فإنه يؤدب بسبب، وهو مسبب الأسباب، لكن كل شيئ يقع في الكون له سبب ونتيجة، وعقلك لا يستوعب الأمر إلا بسبب، لكن الله سبحانه وتعالى قدرته كن فيكون 
 نحن إن اردنا أن نبني بيتاً نحتاج إلى سنوات لشراء أرض، واستصدار ترخيص، وحفر الأرض، وإنشاء الدعائم والهيكل، فقد نحتاج إلى سنوات، لكن للتقريب فقط، الإله العظيم إذا قال: كن، فلا يوجد هناك وقت أبداً، الوقت معدوم بين كلمة كن وأن ترى بناءً شامخاً، قال تعالى 
 """;
-  static const String ayahHadithTwentyThreePageEleven_2 = """
+  static const String ayahHadithTwentyThreePageEleven_1 = """
 
 إنما امره إذا اراد شيئاً ان يقول له كن فيكون 
 
 """;
-  static const String textTwentyThreePageEleven_3 = """
+  static const String textTwentyThreePageEleven_2 = """
 يؤكد هذا المعنى حديث صحيح من الأحاديث القدسية،
 """;
-  static const String ayahHadithTwentyThreePageEleven_3 = """
+  static const String ayahHadithTwentyThreePageEleven_2 = """
  فعن أبي ذر عن النبي صلى الله عليه وسلم فيما يروي عن ربه تبارك وتعالى ((...ياعبادي لو أن اولكم واخركم، وانسكم وجنكم قاموا في صعيد واحد، فسألوني فاعطيت كل إنسان مسألته مانقص ذلك مما عندي إلا كما ينقص المخيط إذا أُدخل البحر)) 
  
 ذلك لأن عطائي كلام، كن فيكون 
 """;
-  static const String textTwentyThreePageEleven_4 = """
+  static const String textTwentyThreePageEleven_3 = """
 ولكن شاءت حكمة الله أن يكون خلقه وفق مبدأ السببية في الدنيا، لماذا؟ أنت إذا رأيت شيئاً بلا سبب تقيس عليه الكون، تقول: هذا الكون بلا سبب، ولا يحتاج إلى خالق، مادمت رأيت شيئاً بلا سبب تجعله قانوناً، لكن الله لحكمةٍ أرادها جعل لكل شيئاً سببا، هذا المبدأ الذي تشاهده، والذي رسخ في عقلك يهديك إلى مسبب الأسباب، فكأن الله يأخذ بيدنا بنعومةٍ، وبلطف إليه 
 """;
 
@@ -371,7 +371,7 @@ class ElmTextTwentyThree {
 وجاءت سيارة فأرسلوا واردهم فأدلى دلوه قال يابشرى هذا غلام وأسروه بضاعة والله عليم بما يعملون 
 """;
 
-  static const String textTwentyThreePageThirteen_2 = """
+  static const String textTwentyThreePageThirteen_1 = """
 من الذي ساق السيارة، الله الذي ساقها في الوقت المناسب 
   """;
   static const String ayahHadithTwentyThreePageThirteen_2 = """
@@ -379,10 +379,10 @@ class ElmTextTwentyThree {
 وقال الذي اشتراه من مصر لامرأته أكرمي مثواه
 
 """;
-  static const String subtitleTwentyThreePageThirteen_3 = """
+  static const String subtitleTwentyThreePageThirteen_1 = """
 من فصول العناية الربانيه بيوسف: 
  """;
-  static const String textTwentyThreePageThirteen_3 = """
+  static const String textTwentyThreePageThirteen_2 = """
 أكرميه شيئ، وأكرمي مثواه شيئٌ آخر، المثوى مكان الثوي وهو الإقامة، إذا كان مكان الثوي مكرماً فكيف بصاحب المقام؟ هذه مبالغة في الإكرام، أستنبط العلماء أن عزيز مصر الذي اشتراه لم ينجب أولاداً، فأراد أن يجعله ابناً له بالتبني، انتهت أول مرحلة من القصة 
  """;
   static const String ayahHadithTwentyThreePageThirteen_3 = """
@@ -391,13 +391,13 @@ class ElmTextTwentyThree {
         وكذلك مكنا ليوسف في الأرض 
 
 """;
-  static const String subtitleTwentyThreePageThirteen_4 = """
+  static const String subtitleTwentyThreePageThirteen_2 = """
 من بئر إلى قصر!!! 
 """;
-  static const String textTwentyThreePageThirteenc_4 = """
+  static const String textTwentyThreePageThirteen_3 = """
 انتقل من البئر إلى القصر، ومن جفوة الإخوة إلى إكرام السيد 
  """;
-  static const String ayahHadiTwentyThreePageThirteen_3 = """
+  static const String ayahHadithTwentyThreePageThirteen_4 = """
 
         وكذلك مكنا ليوسف في الأرض 
 
@@ -407,13 +407,13 @@ class ElmTextTwentyThree {
   static const String titleTwentyThreePageFourteen_1 = """
 والله غالبٌ على امره ولكن أكثر الناس لا يعلمون 
   """;
-  static const String textTwentyThreePageFourteen_2 = """
+  static const String textTwentyThreePageFourteen_1 = """
 أرادوا أن يقتلوه فما استطاعوا، أرادوا أن يجعلوه في غيابت الجب فجعله الله في قصر العزيز، نجاه منهم ومن كيدهم، ومكن له في الأرض، هذا تدبير الله، وهذا بعض من مغزى القصة 
   """;
-  static const String subtitleTwentyThreePageFourteen_3 = """
+  static const String subtitleTwentyThreePageFourteen_1 = """
 العبرة من القصة بالحقائق العملية لا بالحقائق النظرية:
 """;
-  static const String textTwentyThreePageFourteen_3 = """
+  static const String textTwentyThreePageFourteen_2 = """
 قصة سيدنا يوسف بأكملها مغزاها أنه لا إله إلا الله، وكذلك قصة سيدنا موسى مع فرعون: 
 فإذا خفت عليه فالقيه في اليم ولا تخاف ولا تحزني إنا رادوه إليك وجاعلوه من المرسلين 
 طفل صغير ألقي في اليم، ألتقطه آل فرعون، ألقى الله حبه في قلب أمرأة فرعون: 
@@ -424,17 +424,17 @@ class ElmTextTwentyThree {
   static const String titleTwentyThreePageFifteen_1 = """
 قصة موسى من التطبيقات العملية في القرآن: 
   """;
-  static const String textTwentyThreePageFifteen_2 = """
+  static const String textTwentyThreePageFifteen_1 = """
 القرآن فيه قواعد نظرية، وفيه تطبيقات عملية، وهذه القصة من التطبيقات العملية التي تؤكد القواعد النظرية، وهي قصة تعني كل مؤمن، لأن المؤمن في الحياة يحتاج إلى ركن ركين يلوذ به، ويلجأ إليه، وينصره على خصومه، فكن مع الله تلق كل راحة، وكل توفيق، وكل نصر، وكل تفوق 
   """;
-  static const String subtitleTwentyThreePageFifteen_3 = """
+  static const String subtitleTwentyThreePageFifteen_1 = """
 تآمر المشركين على إحراق إبراهيم عليه السلام 
   """;
-  static const String textTwentyThreePageFifteen_3 = """
+  static const String textTwentyThreePageFifteen_2 = """
     هنا المعجزة، الله سبحانه وتعالى كان من الممكن ألا يعثروا عليه، وإن لم يعثروا عليه فليس هناك معجزة، وكان من الممكن أن تأتي سحابة تمطر مطراً غزيراً تطفىء النار، فليس هذا معجزة، ولكن الله سبحانه وتعالى مكنهم من إلقاء القبض عليه، ومكنهم من أن يجمعوا حطباً لأسابيع عديدة فجعلوها كالتلة الكبيرة، وأشعلوا هذا الحطب حتى اتقدت النار، وفي هذه اللحظة الحرجة ألقوه في النار. 
 تروي بعض الكتب أن سيدنا جبريل عليه السلام جاءه وقال له أتريد شيئاً؟ ألك من حاجة؟ قال فمنك لأ، قال لا من الله، قال علمه بحالي يغني عن سؤالي، أي أن الإنسان إذا وقع في أزمة فرب إبراهيم موجود، هوَ هو، كن صادقاً مع ربك، وكن مستقيماً على أمره، وكن مخلصاً له ورب إبراهيم موجود، الذي أنقذ إبراهيم ينقذك من كل ورطة، والذي أنقذ يونس من بطن الحوت.. 
   """;
-  static const String ayahHadiTwentyThreePageFifteen_3 = """
+  static const String ayahHadithTwentyThreePageFifteen_1 = """
   
 فنادى في الظلمات أن لا إله إلا أنت سبحانك إني كنت من الظالمين 
 
@@ -443,22 +443,22 @@ class ElmTextTwentyThree {
   static const String titleTwentyThreePageSixteen_1 = """
 معجزة: يانار كوني برداً وسلاماً 
   """;
-  static const String textTwentyThreePageSixteen_2 = """
+  static const String textTwentyThreePageSixteen_1 = """
 قال: لو أن الله عز وجل قال لها: كوني برداً لمات من البرد، وهو في النار، لكن: 
 """;
-  static const String ayahHadiTwentyThreePageSixteen_2 = """
+  static const String ayahHadithTwentyThreePageSixteen_1 = """
         كوني برداً وسلاماً 
   """;
-  static const String textTwentyThreePageSixteen_3 = """
+  static const String textTwentyThreePageSixteen_2 = """
 لا تؤذيه، فاعلاً غير الله، فالعلماء بعضهم قالوا: إن الله سبحانه وتعالى أفقد النار قوة الإحراق، وبعضهم قال: أعطى جسم إبراهيم عليه السلام تحملاً، وبعضهم قال: جعل بينه وبين النار حاجزاً، وأصح الأقوال أن النار نفسها فقدت قوة الإحراق لقوله تعالى 
 """;
-  static const String ayahHadiTwentyThreePageSixteen_3 = """
+  static const String ayahHadithTwentyThreePageSixteen_2 = """
 
 قلنا يانار كوني برداً وسلاماً على ابراهيم 
 
 """;
 
-  static const String textTwentyThreePageSixteen_4 = """
+  static const String textTwentyThreePageSixteen_3 = """
 هذه معجزة، لكن والله الذي لا إله إلا هو على شكل مُخفف يقع منها كل يوم، أما بهذه الحدة فهذه لسيدنا إبراهيم، هذه معجزة، لكن إذا دعا المؤمن ربه، واستجار به، والتجأ إليه، وكان في ورطةٍ كبيرة، وهو مُحق فالله سبحانه وتعالى ينقذه من كل شدة.. 
 فهذه القصة ليست للتسلية، هذه قصة مغزاها أن تلتجئ إلى الله في ساعات الشدة كما ألتجأ إبراهيم عليه السلام في هذه الساعة الشديدة، والله لن يتخلى عنك، والله سبحانه وتعالى يُدافع عنك وينصرك مادمت على الحق
   """;
@@ -467,13 +467,13 @@ class ElmTextTwentyThree {
   static const String titleTwentyThreePageSeventeen_1 = """
 ⭐رد فعل العباد تجاه نعم الله: 
  """;
-  static const String textTwentyThreePageSeventeen_2 = """
+  static const String textTwentyThreePageSeventeen_1 = """
 أمر الأمطار، أمر النبات، أمر الأرزاق، أمر تأديب العباد، أمر معالجتهم فرادى ومجتمعين، الأمر مطلق، والمطلق على إطلاقه، من السماء إلى الأرض، الآن الله أرسل مصيبة، أو ارسل أمطاراً غزيرة أنت بخير وفير، الآن رد الفعل، هل هناك من شكر؟ هل هناك من طغى وبغى؟ هل هناك من كفر؟ هل هناك من استخدم المال في معصية الله؟ هل هناك من استخدم المال في طاعة الله؟ ردود الفعل، الله عز وجل دبر الأمر من السماء إلى الأرض، ماذا ردُ فعل العباد؟ هل هم شاكرون؟ هل هم صابرون؟ هل هم حامدون؟ هل هم ناقمون؟ هل هم طائعون؟ هل هم عصاة؟
  """;
-  static const String subtitleTwentyThreePageSeventeen_3 = """
+  static const String subtitleTwentyThreePageSeventeen_1 = """
 ⭐افتقر إلى الله تكن أغنى الناس: 
 """;
-  static const String textTwentyThreePageSeventeen_3 = """
+  static const String textTwentyThreePageSeventeen_2 = """
 لك إله واحد لا إله إلا هو، هو الحقيقة الكبرى في الكون ولا حقيقة سواه، إذا افتقرت إلى الله عز وجل فأنت أغنى الأغنياء، وإن استغنيت عن الله عز وجل فأنت أفقر الفقراء 
 وما لي سوى فقري إليك وسيلة 
         فبالأفتقار إليك فقري أدفع 
@@ -487,13 +487,13 @@ class ElmTextTwentyThree {
   static const String titleTwentyThreePageEighteen_1 = """
 ⭐فإذا قضى أمراً فإنما يقول له كن فيكون 
  """;
-  static const String textTwentyThreePageEighteen_2 = """
+  static const String textTwentyThreePageEighteen_1 = """
 هذه الآية عجيبة جداً، كن فيكون، دونما اعتبار للزمن، الإنسان هذا المخلوق الضعيف توصل بعلمه إلى اختراع حواسب، فقد يحتاج شيئ ما إلى عمل شهرين من دون حاسوب، فالحاسوب ينجزه في خمس ثوانٍ، فالله عز وجل إذا اراد لك شيئ بأمره فهذا شيئ طبيعي جداً على الله، كن فيكون 
 """;
-  static const String subtitleTwentyThreePageEighteen_3 = """
+  static const String subtitleTwentyThreePageEighteen_1 = """
 ⭐خرق القوانين والسنن والعادات الثابتة للأنبياء معجزة، وللأوليا كرامة، وللظُلال ضلالة، قد يؤتى الإنسان بمساعدة الجن بشيءٍ من خرق العادات، هذا فيها ضلالة، لأنها تُوظف في الباطل، وقد يؤتى المؤمن الكريم عند الله كرامة، وقد يُؤتى النبي معجزة 
 """;
-  static const String textTwentyThreePageEighteen_3 = """
+  static const String textTwentyThreePageEighteen_2 = """
 ⭐ أية قصة في القرآن الكريم ليست مقصودة لذاتها بل مطلوبة للعبرة التي يمكن أن تُستنبط منها لأن العبرة يمكن أن تُطبق في حياتنا
 """;
 }

@@ -4,7 +4,7 @@ import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_twenty_three.dart';
 
 // TextDersSeventeen
-List<ElmModel> elmList22 = [
+List<ElmModel> elmList23 = [
   // From class ElmTextTwentyThree
   // PageOne
   ElmModel(
@@ -105,66 +105,81 @@ List<ElmModel> elmList22 = [
 
   // PageTen
   ElmModel(
+    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageTen_1,
     text: ElmTextTwentyThree.textTwentyThreePageTen_1,
-    ayah: ElmTextTwentyThree.ayahHdithTwentyThreePageTen_1,
+    ayah2: ElmTextTwentyThree.ayahHadithTwentyThreePageTen_2,
     text2: ElmTextTwentyThree.textTwentyThreePageTen_2,
+    ayah3: ElmTextTwentyThree.ayahHadithTwentyThreePageTen_3,
   ),
 
   // PageEleven
   ElmModel(
+    title: ElmTextTwentyThree.titleTwentyThreePageEleven_1,
     text: ElmTextTwentyThree.textTwentyThreePageEleven_1,
-    ayah: ElmTextTwentyThree.ayahHdithTwentyThreePageEleven_1,
+    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageTwelve_1,
     text2: ElmTextTwentyThree.textTwentyThreePageEleven_2,
+    ayah2: ElmTextTwentyThree.ayahHadithTwentyThreePageEleven_2,
+    text3: ElmTextTwentyThree.textTwentyThreePageEleven_3,
   ),
 
   // PageTwelve
   ElmModel(
+    title: ElmTextTwentyThree.titleTwentyThreePageTwelve_1,
     text: ElmTextTwentyThree.textTwentyThreePageTwelve_1,
-    ayah: ElmTextTwentyThree.ayahHdithTwentyThreePageTwelve_1,
+    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageTwelve_1,
     text2: ElmTextTwentyThree.textTwentyThreePageTwelve_2,
   ),
   // PageThirteen
   ElmModel(
-    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageTherteen_1,
-    subtitle2: ElmTextTwentyThree.subtitleTwentyThreePageTherteen_2,
-    ayah: ElmTextTwentyThree.ayahHdithTwentyThreePageTherteen_1,
-    text2: ElmTextTwentyThree.textTwentyThreePageTherteen_1,
+    title: ElmTextTwentyThree.titleTwentyThreePageThirteen_1,
+    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageThirteen_1,
+    text: ElmTextTwentyThree.textTwentyThreePageThirteen_1,
+    ayah2: ElmTextTwentyThree.ayahHadithTwentyThreePageThirteen_2,
+    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageThirteen_1,
+    text2: ElmTextTwentyThree.textTwentyThreePageThirteen_2,
+    ayah3: ElmTextTwentyThree.ayahHadithTwentyThreePageThirteen_3,
+    subtitle2: ElmTextTwentyThree.subtitleTwentyThreePageThirteen_2,
+    text3: ElmTextTwentyThree.textTwentyThreePageThirteen_3,
+    ayah4: ElmTextTwentyThree.ayahHadithTwentyThreePageThirteen_4,
   ),
 
   // PageFourteen
   ElmModel(
-    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageFourteen_1,
-    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageFourteen_2,
-    text: ElmTextTwentyThree.textTwentyThreePageFourteen_3,
-    ayah2: ElmTextTwentyThree.ayahHadithTwentyThreePageFourteen_4,
-    text2: ElmTextTwentyThree.textTwentyThreePageFourteen_5,
+    title: ElmTextTwentyThree.titleTwentyThreePageFourteen_1,
+    text: ElmTextTwentyThree.textTwentyThreePageFourteen_1,
+    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageFourteen_1,
+    text2: ElmTextTwentyThree.textTwentyThreePageFourteen_2,
   ),
 
   // PageFifteen
   ElmModel(
-    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageFifteen_1,
+    title: ElmTextTwentyThree.titleTwentyThreePageFifteen_1,
     text: ElmTextTwentyThree.textTwentyThreePageFifteen_1,
-    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageFifteen_1,
+    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageFifteen_1,
     text2: ElmTextTwentyThree.textTwentyThreePageFifteen_1,
+    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageFifteen_1,
   ),
 
   // PageSixteen
   ElmModel(
-    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageSixteen_1,
-    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageSix_1,
-    text: ElmTextTwentyThree.textTwentyThreePageSixteen_1,
-    ayah2: ElmTextTwentyThree.ayahHadithTwentyThreePageSixteen_2,
-  ),
+      title: ElmTextTwentyThree.titleTwentyThreePageSixteen_1,
+      text: ElmTextTwentyThree.textTwentyThreePageSixteen_1,
+      ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageSixteen_1,
+      text2: ElmTextTwentyThree.textTwentyThreePageSixteen_2,
+      ayah2: ElmTextTwentyThree.ayahHadithTwentyThreePageSixteen_2,
+      text3: ElmTextTwentyThree.textTwentyThreePageSixteen_3),
   // PageSeventeen
   ElmModel(
+    title: ElmTextTwentyThree.titleTwentyThreePageSeventeen_1,
     text: ElmTextTwentyThree.textTwentyThreePageSeventeen_1,
-    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageSeventeen_1,
+    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageSeventeen_1,
     text2: ElmTextTwentyThree.textTwentyThreePageSeventeen_2,
   ),
   // PageEighteen
   ElmModel(
+    title: ElmTextTwentyThree.titleTwentyThreePageEighteen_1,
     text: ElmTextTwentyThree.textTwentyThreePageEighteen_1,
-    ayah: ElmTextTwentyThree.ayahHadithTwentyThreePageEighteen_1,
+    subtitle: ElmTextTwentyThree.subtitleTwentyThreePageEighteen_1,
     text2: ElmTextTwentyThree.textTwentyThreePageEighteen_2,
   ),
 ];
