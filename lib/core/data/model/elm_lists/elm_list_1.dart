@@ -25,7 +25,7 @@ List<ElmModel> elmList = [
   ElmModel(
     text: ElmTextDersOne.elmTextOneFour_1,
     text2: ElmTextDersOne.elmTextOneFour_2,
-    ayah: ElmTextDersOne.ayahHadithOneFour_3,
+    ayah: ElmTextDersOne.ayahHadithOneFour_1,
   ),
   // 5
   ElmModel(
@@ -60,6 +60,8 @@ List<ElmModel> elmList = [
   // 10
   ElmModel(
     text: ElmTextDersOne.elmTextOneTen_1,
+    ayah: ElmTextDersOne.ayahHadithOneTen_1,
+    footer: ElmTextDersOne.footerOneTen,
   ),
   // 11
   ElmModel(

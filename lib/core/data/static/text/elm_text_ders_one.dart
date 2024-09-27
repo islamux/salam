@@ -68,7 +68,7 @@ class ElmTextDersOne {
           (5)
 الكبر والاستعلاء وهذا من عمل الشيطان 
   """;
-  static const String ayahHadithOneFour_3 = """
+  static const String ayahHadithOneFour_1 = """
 
 قال تعالى 
 أَنَا۠ خَیۡرࣱ مِّنۡهُ خَلَقۡتَنِی مِن نَّارࣲ وَخَلَقۡتَهُۥ مِن طِینࣲ ۝١٢

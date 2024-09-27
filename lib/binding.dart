@@ -22,6 +22,7 @@ import 'package:elm/controller/elm7_controller.dart';
 import 'package:elm/controller/elm8_controller.dart';
 import 'package:elm/controller/elm9_controller.dart';
 import 'package:elm/controller/elmpre_controller.dart';
+import 'package:elm/controller/font_controller.dart';
 import 'package:elm/controller/home_controller/home_controller.dart';
 import 'package:get/get.dart';
 
@@ -55,5 +56,6 @@ class MyBinding extends Bindings {
     Get.put(Elm21ControllerImp());
     Get.put(Elm22ControllerImp());
     Get.put(Elm23ControllerImp());
+    Get.put(FontControllerImp());
   }
 }

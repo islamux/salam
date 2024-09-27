@@ -2,8 +2,6 @@ import 'package:elm/controller/elm15_controller.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/function/custom_share_content.dart';
-import 'package:elm/function/decrease_font.dart';
-import 'package:elm/function/increase_font.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm15.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -66,8 +64,8 @@ class Elm15 extends StatelessWidget {
 
           IconButton(
               onPressed: () {
-                // controllerAs.increaseFontSize();
-                increaseFont(controllerAs);
+                controllerAs.increaseFontSize();
+//                increaseFont(controllerAs);
               },
               icon: const Icon(Icons.add))
         ],

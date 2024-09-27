@@ -24,4 +24,5 @@ abstract class HomeController extends GetxController {
   void goToElm20();
   void goToElm21();
   void goToElm22();
+  void goToElm23();
 }

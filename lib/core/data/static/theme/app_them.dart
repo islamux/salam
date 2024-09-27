@@ -5,8 +5,9 @@ import 'package:get/get.dart';
 
 class AppTheme {
   //static final FontControllerImp fontController = Get.put(FontControllerImp());
+  // i want to make instance from BaseController to increase, decrease font
+  // but the class is abstract so i make a FontControllerImp inherts from BaseController
   static final FontControllerImp fontController = Get.put(FontControllerImp());
-
   //static final List<String> fontList = ['Amiri', 'Cairo', 'Kawkab','Tajawal'];
 
   static TextStyle customTextStyleFooter() {
