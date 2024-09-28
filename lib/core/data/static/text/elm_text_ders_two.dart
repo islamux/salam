@@ -68,7 +68,7 @@ class ElmTextDersTwo {
   static const String elmTextTwoFour_3 = """
 هذا اللذي لا يعرف إلا الطعام والشراب وكسب المال والإنغماس في الشهوات هذا ميت 
 """;
-  static const String ayahHadithTwoFour_2 = """
+  static const String ayahHadithTwoFour_1 = """
 
 قال تعالى 
 أَمۡوَ ٰتٌ غَیۡرُ أَحۡیَاۤءࣲۖ 

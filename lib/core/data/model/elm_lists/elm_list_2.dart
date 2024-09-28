@@ -7,9 +7,9 @@ List<ElmModel> elmList2 = [
   ElmModel(
       title: ElmTextDersTwo.titleTwoOne,
       ayah: ElmTextDersTwo.ayahHadithTwoOne_1,
-      text2: ElmTextDersTwo.elmTextTwoOne_1,
+      text: ElmTextDersTwo.elmTextTwoOne_1,
       ayah2: ElmTextDersTwo.ayahHadithTwoOne_2,
-      text3: ElmTextDersTwo.elmTextTwoOne_2),
+      text2: ElmTextDersTwo.elmTextTwoOne_2),
   // 2
   ElmModel(
     ayah: ElmTextDersTwo.ayahHadithTwoTwo_1,
@@ -26,7 +26,7 @@ List<ElmModel> elmList2 = [
     text: ElmTextDersTwo.elmTextsTwoFour_1,
     text2: ElmTextDersTwo.elmTextTwoFour_2,
     text3: ElmTextDersTwo.elmTextTwoFour_3,
-    ayah2: ElmTextDersTwo.ayahHadithTwoFour_2,
+    ayah: ElmTextDersTwo.ayahHadithTwoFour_1,
   ),
   // 5
   ElmModel(
