@@ -16,8 +16,8 @@ List<ElmModel> elmList3 = [
   ElmModel(
     text: ElmTextDersThree.elmTextThreeTwo_1,
     text2: ElmTextDersThree.elmTextThreeTwo_2,
-    text3: ElmTextDersThree.elmTextThreeTwo_2,
     ayah: ElmTextDersThree.ayahHadithThreeTwo_1,
+    text3: ElmTextDersThree.elmTextThreeTwo_3,
   ),
 
   // page 3
