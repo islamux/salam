@@ -308,7 +308,7 @@ class ElmTextDersEleven {
   static const String subtitleElevenSixteen_1 = """
 صلة الرحم- **
 """;
-  static const String ayahHadithElevenSixteen_3 = """
+  static const String ayahHadithElevenSixteen_2 = """
 قَالَ رَسُولُ اللَّهِ ﷺ: مَنْ أَحَبَّ أَنْ يُبْسَطَ له فِي رِزْقِهِ، وأَنْ يُنْسَأَ لَهُ فِي أَثَرِهِ, فَلْيَصِلْ رَحِمَهُ
 """;
   static const String elmTextElevenSixteen_3 = """

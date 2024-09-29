@@ -7,5 +7,6 @@ List<TextSpan> getPageEightTexts(int i) {
 
   return [
     TextSpan(text: elmList11[i].ayah, style: ayah),
+    TextSpan(text: elmList11[i].text, style: null),
   ];
 }

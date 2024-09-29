@@ -19,8 +19,8 @@ List<ElmModel> elmList10 = [
   ),
   // 3
   ElmModel(
-      ayah: ElmTextDersTen.ayahHadithTenThree_1,
       title: ElmTextDersTen.titleTenThree_1,
+      ayah: ElmTextDersTen.ayahHadithTenThree_1,
       text: ElmTextDersTen.elmTextTenThree_1,
       ayah2: ElmTextDersTen.ayahHadithTenThree_2,
       text2: ElmTextDersTen.elmTextTenThree_2),

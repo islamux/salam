@@ -7,8 +7,8 @@ List<ElmModel> elmList11 = [
   ElmModel(
     title: ElmTextDersEleven.titleElevenOne,
     text: ElmTextDersEleven.elmTextElevenOne_1,
-    text2: ElmTextDersEleven.elmTextElevenOne_2,
     ayah: ElmTextDersEleven.ayahHadithElevenOne_1,
+    text2: ElmTextDersEleven.elmTextElevenOne_2,
   ),
   // page 2
   ElmModel(
@@ -95,6 +95,7 @@ List<ElmModel> elmList11 = [
     subtitle: ElmTextDersEleven.subtitleElevenFourteen_1,
     text3: ElmTextDersEleven.elmTextElevenFourteen_3,
     ayah2: ElmTextDersEleven.ayahHadithElevenFourteen_2,
+    text4: ElmTextDersEleven.elmTextElevenFourteen_4,
   ),
   // page 15,
   ElmModel(
@@ -112,7 +113,7 @@ List<ElmModel> elmList11 = [
     title: ElmTextDersEleven.titleElevenSixteen,
     ayah: ElmTextDersEleven.ayahHadithElevenSixteen_1,
     subtitle: ElmTextDersEleven.subtitleElevenSixteen_1,
-    ayah2: ElmTextDersEleven.ayahHadithElevenSixteen_3,
+    ayah2: ElmTextDersEleven.ayahHadithElevenSixteen_2,
     text3: ElmTextDersEleven.elmTextElevenSixteen_3,
     footer: ElmTextDersEleven.footerElevenSixteen,
   ),

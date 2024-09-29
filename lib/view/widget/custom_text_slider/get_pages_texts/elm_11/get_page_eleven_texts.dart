@@ -10,6 +10,8 @@ List<TextSpan> getPageElevenTexts(int i) {
     TextSpan(text: elmList11[i].text),
     TextSpan(text: elmList11[i].ayah, style: ayah),
     TextSpan(text: elmList11[i].text2),
+    TextSpan(text: elmList11[i].ayah2, style: ayah),
+    TextSpan(text: elmList11[i].text3),
     TextSpan(text: elmList11[i].footer, style: footer),
   ];
 }
