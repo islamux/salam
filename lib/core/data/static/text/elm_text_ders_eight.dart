@@ -141,34 +141,34 @@ class ElmTextDersEight {
  إذ يقول
 """;
 // page 9
-  static const String ayahHadithEightEight_3 = """
+  static const String ayahHadithEightNine_1 = """
   ( وذكرهم بايام الله ) 
 """;
-  static const String elmTextEightEight_3 = """
+  static const String elmTextEightNine_1 = """
 يوم دعوته وقد احكمت حلقاتُ المصيبة ، فاستجاب لك ، وفرج عنك 
 """;
-  static const String ayahHadithEightEight_4 = """
+  static const String ayahHadithEightNine_2 = """
 
   ( ومن يتق الله يجعل له مخرجا ) 
 """;
-  static const String elmTextEightEight_4 = """
+  static const String elmTextEightNine_2 = """
 كلمة " مخرج " تعني أن الأمور مغلقة ، الحلقة محكمة ، الأبواب مُغلقة ، السُبُل مسدودة ، الطرق موصدة ، كلمة: " يجعل له مخرجا " ، أي بعد إذ لم يكن هناك مخرج ، الحلقات محكمة ، الطرق كلها مسدودة ، فلذلك هذه القصة ليست مقصودة لذاتها ؛ بل يجب أن نستنبط منها أن الله سبحانه وتعالى ينجي المؤمنين 
 
 فيما يشبهها قصة سيدنا يونس عليه وعلى نبينا افضل الصلاة والسلام حينما كان في بطن الحوت ، في ظلمات ثلاث 
 
 """;
 // page 10
-  static const String ayahHadithEightEight_5 = """
+  static const String ayahHadithEightTen_1 = """
   ( فنادى في الظلمات أن لا إله إلا أنت سبحانك إني كنت من الظالمين فاستجبنا له ونجيناه من الغم ) 
 """;
-  static const String elmTextEightEight_5 = """
+  static const String elmTextEightTen_1 = """
 الآن ربنا عز وجل أراد من هذه القصة أن يجعلها قانوناً ، قال  
 """;
-  static const String ayahHadithEightEight_6 = """
+  static const String ayahHadithEightTen_2 = """
 
   ( وكذلك ننجي المؤمنين ) 
 """;
-  static const String elmTextEightEight_6 = """
+  static const String elmTextEightTen_2 = """
 وكذلك كلما ضاقت بك الأمور ، كلما استحكمت حلقات المصائب ، كلما رأيت الطرق مسدودة ، كلما رأيت المعابر موصدة ، كلما رأيت أن الأمر ضاق ، لعل الله جل جلاله يخرق لك العادات ، وينجيك من عدوك ، ومما يحاك لك ، وأنت لا تدري 
 
 إذاً : كن مع الله تر الله معك ، أخلص له تشعر انه معك ؛ معك بالتأييد ، ومعك بالنصر ، ومعك بالتوفيق ، ومعك بالحفظ 

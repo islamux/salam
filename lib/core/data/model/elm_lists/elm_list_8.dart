@@ -35,7 +35,7 @@ List<ElmModel> elmList8 = [
 
   // 6
   ElmModel(
-    title: ElmTextDersEight.subtitleEightSix_1,
+    subtitle: ElmTextDersEight.subtitleEightSix_1,
     text: ElmTextDersEight.elmTextDersEightSix_1,
   ),
   // 7
@@ -56,16 +56,16 @@ List<ElmModel> elmList8 = [
   ),
   // 9
   ElmModel(
-    ayah: ElmTextDersEight.ayahHadithEightEight_3,
-    text: ElmTextDersEight.elmTextEightEight_3,
-    ayah2: ElmTextDersEight.ayahHadithEightEight_4,
-    text2: ElmTextDersEight.elmTextEightEight_4,
+    ayah: ElmTextDersEight.ayahHadithEightNine_1,
+    text: ElmTextDersEight.elmTextEightNine_1,
+    ayah2: ElmTextDersEight.ayahHadithEightNine_1,
+    text2: ElmTextDersEight.elmTextEightNine_2,
   ),
   // 10
   ElmModel(
-    ayah: ElmTextDersEight.ayahHadithEightEight_5,
-    text: ElmTextDersEight.elmTextEightEight_5,
-    ayah2: ElmTextDersEight.ayahHadithEightEight_6,
-    text2: ElmTextDersEight.elmTextEightEight_6,
+    ayah: ElmTextDersEight.ayahHadithEightTen_1,
+    text: ElmTextDersEight.elmTextEightTen_1,
+    ayah2: ElmTextDersEight.ayahHadithEightTen_1,
+    text2: ElmTextDersEight.elmTextEightTen_2,
   ),
 ];

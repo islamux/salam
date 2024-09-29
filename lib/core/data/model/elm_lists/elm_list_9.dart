@@ -64,8 +64,8 @@ List<ElmModel> elmList9 = [
   ElmModel(
     title: ElmTextDersNine.titleNineTen_1,
     text: ElmTextDersNine.elmTextNineTen_1,
-    ayah: ElmTextDersNine.ayahHadithNineTen_2,
+    ayah: ElmTextDersNine.ayahHadithNineTen_1,
     text2: ElmTextDersNine.elmTextNineTen_2,
-    ayah2: ElmTextDersNine.ayahHadithNineTen_3,
+    ayah2: ElmTextDersNine.ayahHadithNineTen_2,
   ),
 ];

@@ -3,9 +3,9 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageSixTexts(int i) {
-  TextStyle title = AppTheme.customTextStyleTitle();
+  TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   return [
-    TextSpan(text: elmList8[i].title, style: title),
+    TextSpan(text: elmList8[i].subtitle, style: subtitleStyle),
     TextSpan(text: elmList8[i].text),
   ];
 }
