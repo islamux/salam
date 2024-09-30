@@ -80,7 +80,7 @@ class ElmTextDersTherteen {
 
 """;
 
-  static const String elmTextTherteenThree_2 = """
+  static const String elmTextTherteenThree_1 = """
 وهذه الأيه قد تكون شعارآ للإنسان يضعها في بيته ، وفي مكتبه ، ودكانه حتى لا يتهم الخالق ألعظيم بشيئ ، الله عز وجل عادل 
 
 المصائب التي تنزل بالإنسان ماهي إلا معالجة من الله عز وجل
@@ -92,7 +92,7 @@ class ElmTextDersTherteen {
 النساء 147 
 
 """;
-  static const String elmTextTherteenThree_3 = """
+  static const String elmTextTherteenThree_2 = """
 الله ماذا يفعل بالمصائب التي ينزلها بكم ؟ لا معنى لها بالنسبة له لكنها معالجة
 """;
 
@@ -101,7 +101,7 @@ class ElmTextDersTherteen {
  وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠ 
 """;
 
-  static const String elmTextTherteenThree_4 = """
+  static const String elmTextTherteenThree_3 = """
 هذه الآية يجب ألا تغيب عن أذهاننا
 
   """;

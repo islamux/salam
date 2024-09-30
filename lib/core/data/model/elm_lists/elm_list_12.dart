@@ -8,10 +8,12 @@ List<ElmModel> elmList12 = [
     ayah: ElmTextDersTwelve.ayahHadithTwelveOne_1,
     text: ElmTextDersTwelve.elmtextTwelveOne_1,
   ),
+
   // 2
   ElmModel(
     text: ElmTextDersTwelve.elmTextTwelveTwo_1,
   ),
+
   // 3
   ElmModel(
     text: ElmTextDersTwelve.elmTextTwelveThree_1,
@@ -20,6 +22,7 @@ List<ElmModel> elmList12 = [
     ayah2: ElmTextDersTwelve.ayahHadithTwelveThree_2,
     text3: ElmTextDersTwelve.elmTextTwelveThree_3,
   ),
+
   // 4
   ElmModel(
     ayah: ElmTextDersTwelve.ayahHadithTwelveFour_1,
@@ -81,6 +84,7 @@ List<ElmModel> elmList12 = [
       text: ElmTextDersTwelve.elmTextTwelveTherteen_1,
       ayah: ElmTextDersTwelve.ayahHadithTwelveTherteen_1,
       text2: ElmTextDersTwelve.elmTextTwelveTherteen_2),
+
   // 14
   ElmModel(
     title: ElmTextDersTwelve.titleTwelveFourteen,
@@ -89,6 +93,7 @@ List<ElmModel> elmList12 = [
     ayah2: ElmTextDersTwelve.ayahHadithTwelveFourteen_2,
     footer: ElmTextDersTwelve.footerTwelveFourteen,
   ),
+
   // 15
   ElmModel(
     text: ElmTextDersTwelve.elmTextTwelveFifteen_1,
@@ -104,10 +109,10 @@ List<ElmModel> elmList12 = [
     ayah: ElmTextDersTwelve.ayahHadithTwelveSixteen_1,
     text: ElmTextDersTwelve.elmTextTwelveSixteen_1,
     ayah2: ElmTextDersTwelve.ayahHadithTwelveSixteen_2,
-    text3: ElmTextDersTwelve.elmTextTwelveSixteen_2,
+    text2: ElmTextDersTwelve.elmTextTwelveSixteen_2,
     ayah3: ElmTextDersTwelve.ayahHadithTwelveSixteen_3,
     ayah4: ElmTextDersTwelve.ayahHadithTwelveSixteen_4,
-    text2: ElmTextDersTwelve.elmTextTwelveSixteen_3,
+    text3: ElmTextDersTwelve.elmTextTwelveSixteen_3,
     footer: ElmTextDersTwelve.footerTwelveSixteen,
   ),
   // 17

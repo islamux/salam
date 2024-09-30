@@ -3,10 +3,7 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageNineTexts(int i) {
-  TextStyle ayah = AppTheme.customTextStyleHadith();
-
   return [
     TextSpan(text: elmList12[i].text),
-    TextSpan(text: elmList12[i].ayah, style: ayah),
   ];
 }

@@ -25,11 +25,11 @@ List<ElmModel> elmList13 = [
   // 3
   ElmModel(
     ayah: ElmTextDersTherteen.ayahHadithTherteenThree_1,
-    text: ElmTextDersTherteen.elmTextTherteenThree_2,
+    text: ElmTextDersTherteen.elmTextTherteenThree_1,
     ayah2: ElmTextDersTherteen.ayahHadithTherteenThree_2,
-    text2: ElmTextDersTherteen.elmTextTherteenThree_3,
+    text2: ElmTextDersTherteen.elmTextTherteenThree_2,
     ayah3: ElmTextDersTherteen.ayahHadithTherteenThree_3,
-    text3: ElmTextDersTherteen.elmTextTherteenThree_4,
+    text3: ElmTextDersTherteen.elmTextTherteenThree_3,
   ),
   // 4
   ElmModel(
