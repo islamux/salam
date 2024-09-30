@@ -9,8 +9,8 @@ List<TextSpan> getPageSixTexts(int i) {
     TextSpan(text: elmList13[i].ayah, style: ayah),
     TextSpan(text: elmList13[i].text2),
     TextSpan(text: elmList13[i].ayah2, style: ayah),
-    TextSpan(text: elmList13[i].text2),
-    TextSpan(text: elmList13[i].ayah3, style: ayah),
     TextSpan(text: elmList13[i].text3),
+    TextSpan(text: elmList13[i].ayah3, style: ayah),
+    TextSpan(text: elmList13[i].text4),
   ];
 }

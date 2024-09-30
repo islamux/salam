@@ -70,8 +70,8 @@ List<ElmModel> elmList13 = [
   ElmModel(
     text: ElmTextDersTherteen.elmTextTherteenSeven_1,
     ayah: ElmTextDersTherteen.ayahHadithTherteenSeven_1,
-    ayah2: ElmTextDersTherteen.ayahHadithTherteenSeven_2,
     text2: ElmTextDersTherteen.elmTextTherteenSeven_2,
+    ayah2: ElmTextDersTherteen.ayahHadithTherteenSeven_2,
     footer: ElmTextDersTherteen.footerTherteenSeven,
   ),
   //8

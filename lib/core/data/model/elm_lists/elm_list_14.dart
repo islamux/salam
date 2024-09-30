@@ -16,11 +16,11 @@ List<ElmModel> elmList14 = [
   ),
   // page 3
   ElmModel(
+    subtitle: ElmTextDersFourteen.subtitleFourteenThree_1,
     ayah: ElmTextDersFourteen.ayahHadithFourteenThree_1,
     text: ElmTextDersFourteen.elmTextFourteenThree_1,
     ayah2: ElmTextDersFourteen.ayahHadithFourteenThree_2,
     text2: ElmTextDersFourteen.elmTextFourteenThree_2,
-    subtitle: ElmTextDersFourteen.subtitleFourteenThree_1,
   ),
   // page 4
   ElmModel(
@@ -36,23 +36,24 @@ List<ElmModel> elmList14 = [
   // page 6
   ElmModel(
     text: ElmTextDersFourteen.elmTextFourteenSix_1,
-    ayah: ElmTextDersFourteen.ayahHadithFourteenSix_2,
+    ayah: ElmTextDersFourteen.ayahHadithFourteenSix_1,
     text2: ElmTextDersFourteen.elmTextFourteenSix_2,
-    ayah2: ElmTextDersFourteen.ayahHadithFourteenSix_3,
+    ayah2: ElmTextDersFourteen.ayahHadithFourteenSix_2,
     text3: ElmTextDersFourteen.elmTextFourteenSix_3,
-    ayah3: ElmTextDersFourteen.ayahHadithFourteenSix_4,
+    ayah3: ElmTextDersFourteen.ayahHadithFourteenSix_3,
     text4: ElmTextDersFourteen.elmTextFourteenSix_4,
-    ayah5: ElmTextDersFourteen.ayahHadithFourteenSix_5,
+    ayah4: ElmTextDersFourteen.ayahHadithFourteenSix_4,
     text5: ElmTextDersFourteen.elmTextFourteenSix_5,
-    ayah6: ElmTextDersFourteen.ayahHadithFourteenSix_6,
-    text6: ElmTextDersFourteen.elmTextFourteenSix_7,
+    ayah5: ElmTextDersFourteen.ayahHadithFourteenSix_5,
+    text6: ElmTextDersFourteen.elmTextFourteenSix_6,
   ),
+
   // page 7
   ElmModel(
     ayah: ElmTextDersFourteen.ayahHadithFourteenSeven_1,
     text: ElmTextDersFourteen.elmTextFourteenSeven_1,
     ayah2: ElmTextDersFourteen.ayahHadithFourteenSeven_2,
-    subtitle2: ElmTextDersFourteen.subtitleFourteenSeven_1,
+    subtitle: ElmTextDersFourteen.subtitleFourteenSeven_1,
     text2: ElmTextDersFourteen.elmTextFourteenSeven_2,
     ayah3: ElmTextDersFourteen.ayahHadithFourteenSeven_3,
     text3: ElmTextDersFourteen.elmTextFourteenSeven_3,
@@ -77,9 +78,9 @@ List<ElmModel> elmList14 = [
     ayah2: ElmTextDersFourteen.ayahHadithFourteenTen_2,
     text2: ElmTextDersFourteen.elmTextFourteenTen_2,
     ayah3: ElmTextDersFourteen.ayahHadithFourteenTen_3,
-    text4: ElmTextDersFourteen.elmTextFourteenTen_3,
+    text3: ElmTextDersFourteen.elmTextFourteenTen_3,
     ayah4: ElmTextDersFourteen.ayahHadithFourteenTen_4,
-    text5: ElmTextDersFourteen.elmTextFourteenTen_4,
+    text4: ElmTextDersFourteen.elmTextFourteenTen_4,
   ),
   // page 11
   ElmModel(

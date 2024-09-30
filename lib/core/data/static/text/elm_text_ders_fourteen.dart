@@ -104,7 +104,7 @@ class ElmTextDersFourteen {
 وأن الله عزيز ( فبعزتك ) 
 وأن الله رب
 """;
-  static const String ayahHadithFourteenSix_2 = """
+  static const String ayahHadithFourteenSix_1 = """
  ( أَنظِرۡنِیۤ إِلَىٰ یَوۡمِ یُبۡعَثُونَ ۝١٤ ) 
 الأعراف 14 
 """;
@@ -112,28 +112,28 @@ class ElmTextDersFourteen {
 إذاً هذه المعرفة اللتي لا توصل إلى طاعة هي معرفة إبليسية لا قيمة لها  
 مقياس معرفتك التي تحملك على طاعة الله ، هذا مقياس المعرفة 
 """;
-  static const String ayahHadithFourteenSix_3 = """
+  static const String ayahHadithFourteenSix_2 = """
 ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ ) 
 """;
   static const String elmTextFourteenSix_3 = """
 :الله جل جلاله يُخاطب عامة الناس بأصول الدين
 """;
-  static const String ayahHadithFourteenSix_4 = """
+  static const String ayahHadithFourteenSix_3 = """
 ( یَـٰۤأَیُّهَا ٱلنَّاسُ ٱعۡبُدُوا۟ رَبَّكُمُ ) 
 """;
   static const String elmTextFourteenSix_4 = """
 ويُخاطب المؤمنين بفروع الدين ، ذلك أن بين المؤمن وربه عقداً إيمانياً ، أي ياأيها الذي عرفتني ، وياأيها الذي أمنت بعدلي ، وبقدرتي ، وبمنهجي ، وبأن الطريق التي رسمتها لك تُفضي إلى جنة عرضها السماوات والأرض ، وكل المعاني الكبرى التي جاء بها الدين منطوية في قوله تعالى
 """;
-  static const String ayahHadithFourteenSix_5 = """
+  static const String ayahHadithFourteenSix_4 = """
 ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ )
 """;
   static const String elmTextFourteenSix_5 = """
 واللذي لا يتأثر حينما يقرأ اي أية تبدأ بقوله
 """;
-  static const String ayahHadithFourteenSix_6 = """
+  static const String ayahHadithFourteenSix_5 = """
  ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ )
 """;
-  static const String elmTextFourteenSix_7 = """
+  static const String elmTextFourteenSix_6 = """
   ولا يرى نفسه معنياً بها ، ففي إيمانه خلل خطير
 فالمؤمن الصادق الحق هو اللذي إذا قرأ مثل هذه الأية رأى نفسه مخاطباً بالقرآن الكريم
   """;
@@ -206,7 +206,6 @@ class ElmTextDersFourteen {
 
   """;
 // page 10
-
   static const String ayahHadithFourteenTen_1 = """
 ( ألم يأن )
 """;
@@ -235,6 +234,7 @@ class ElmTextDersFourteen {
   static const String elmTextFourteenTen_4 = """
 يعرض الله تعالى علينا هنا مرضاً خطيراً من أمراض أهل الكتاب ، وما عرض علينا هذا المرض إلا لأن المسلمين مهيؤون لأن يُصابو بمثل هذا المرض
 """;
+
 // page 11
   static const String ayahHadithFourteenEleven_1 = """
  أَلَمۡ یَأۡنِ لِلَّذِینَ ءَامَنُوۤا۟ أَن تَخۡشَعَ قُلُوبُهُمۡ لِذِكۡرِ ٱللَّهِ وَمَا نَزَلَ مِنَ ٱلۡحَقِّ 

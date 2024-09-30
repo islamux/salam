@@ -9,6 +9,5 @@ List<TextSpan> getPageFourTexts(int i) {
     TextSpan(text: elmList14[i].ayah, style: ayah),
     TextSpan(text: elmList14[i].text2),
     TextSpan(text: elmList14[i].ayah2, style: ayah),
-    TextSpan(text: elmList14[i].text3),
   ];
 }
