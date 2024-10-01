@@ -12,21 +12,25 @@ List<ElmModel> elmList17 = [
     ayah2: ElmTextDersSeventeen.ayahHadithSeventeenOne_2,
     text3: ElmTextDersSeventeen.elmTextSeventeenOne_3,
   ),
+
   // page 2
   ElmModel(
     ayah: ElmTextDersSeventeen.ayahHadithSeventeenTwo_1,
     text: ElmTextDersSeventeen.elmTextSeventeenTwo_1,
     ayah2: ElmTextDersSeventeen.ayahHadithSeventeenTwo_2,
-    title: ElmTextDersSeventeen.subtitleSeventtenTwo_1,
+    subtitle: ElmTextDersSeventeen.subtitleSeventtenTwo_1,
     text2: ElmTextDersSeventeen.elmTextSeventeenTwo_2,
   ),
+
   // page 3
   ElmModel(
     ayah: ElmTextDersSeventeen.ayahHadithSeventeenThree_1,
-    title: ElmTextDersSeventeen.subtitleSeventeenThree_1,
+    subtitle: ElmTextDersSeventeen.subtitleSeventeenThree_1,
     text: ElmTextDersSeventeen.elmTextSeventeenThree_1,
+    ayah2: ElmTextDersSeventeen.ayahHadithSeventeenThree_2,
     text2: ElmTextDersSeventeen.elmTextSeventeenThree_2,
   ),
+
   // page 4
   ElmModel(
     text: ElmTextDersSeventeen.elmTextSeventeenFour_1,
@@ -45,6 +49,7 @@ List<ElmModel> elmList17 = [
     ayah: ElmTextDersSeventeen.ayahHadithSeventeenSix_1,
     text3: ElmTextDersSeventeen.elmTextSeventeenSix_3,
   ),
+
   // page 7
   ElmModel(
     text: ElmTextDersSeventeen.elmTextSeventeenSeven_1,
@@ -54,11 +59,13 @@ List<ElmModel> elmList17 = [
     text3: ElmTextDersSeventeen.elmTextSeventeenSeven_3,
     ayah3: ElmTextDersSeventeen.ayahHadithSeventeenSeven_3,
   ),
+
   // page 8
   ElmModel(
     text: ElmTextDersSeventeen.elmTextSeventeenEight_1,
     footer: ElmTextDersSeventeen.footerSeventeenEight,
   ),
+
   // page 9
   ElmModel(
     subtitle: ElmTextDersSeventeen.subtitleSeventeenNine_1,
@@ -66,6 +73,7 @@ List<ElmModel> elmList17 = [
     ayah: ElmTextDersSeventeen.ayahHadithSeventeenNine_1,
     text2: ElmTextDersSeventeen.elmTextSeventeenNine_2,
   ),
+
   // page 10
   ElmModel(
     text: ElmTextDersSeventeen.elmTextSeventeenTen_1,

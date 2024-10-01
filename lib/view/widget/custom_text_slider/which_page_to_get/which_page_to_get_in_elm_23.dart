@@ -1,7 +1,7 @@
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_11/get_page_seventeen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_eleven_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_fourteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_sixteen_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_seventeen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_therteen_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_twelve_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_23/get_page_fifteen_texts.dart';
@@ -53,7 +53,7 @@ List<TextSpan> whichPageToGetInElm23(int i) {
     case 15:
       return getPageSixteenTexts(i);
     case 16:
-      return getPageSeventeenTexts(i);
+      return getPageSevnteenTexts(i);
     case 17:
       return getPageEighteenTexts(i);
 

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTwentyOneTexts(int i) {
   TextStyle ayah = AppTheme.customTextStyleHadith();
-  TextStyle subtitle = AppTheme.customTextStyleSubtitle();
   TextStyle title = AppTheme.customTextStyleTitle();
   return [
     TextSpan(text: elmList16[i].title, style: title),

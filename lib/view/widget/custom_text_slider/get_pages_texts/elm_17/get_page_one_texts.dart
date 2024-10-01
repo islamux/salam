@@ -9,5 +9,6 @@ List<TextSpan> getPageOneTexts(int i) {
     TextSpan(text: elmList17[i].ayah, style: ayah),
     TextSpan(text: elmList17[i].text2),
     TextSpan(text: elmList17[i].ayah2, style: ayah),
+    TextSpan(text: elmList17[i].text3),
   ];
 }

@@ -14,7 +14,7 @@ List<TextSpan> getPageTwentyFourTexts(int i) {
     TextSpan(text: elm.subtitle, style: subtitleStyle),
     TextSpan(text: elm.text),
     TextSpan(text: elm.ayah, style: ayahStyle),
-    TextSpan(text: elm.text),
+    TextSpan(text: elm.text2),
     TextSpan(text: elm.ayah2, style: ayahStyle),
   ];
 }

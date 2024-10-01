@@ -1,5 +1,5 @@
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_1/get_page_twenty_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_twentyOne_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16/get_page_twenty_texts.dart';
 
 import '../get_pages_texts/elm_16/get_page_seven_texts.dart';
 import '../get_pages_texts/elm_16/get_page_six_texts.dart';

@@ -9,7 +9,6 @@ List<TextSpan> getPageTwoTexts(int i) {
     TextSpan(text: elmList17[i].ayah, style: ayah),
     TextSpan(text: elmList17[i].text),
     TextSpan(text: elmList17[i].ayah2, style: ayah),
-    TextSpan(text: elmList17[i].ayah3, style: ayah),
     TextSpan(text: elmList17[i].subtitle, style: title),
     TextSpan(text: elmList17[i].text2),
   ];

@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTwentySixTexts(int i) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-  TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-  TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModel elm = elmList16[i];
 
   return [

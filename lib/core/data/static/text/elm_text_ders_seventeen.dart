@@ -3,6 +3,7 @@ class ElmTextDersSeventeen {
   static const String elmTextSeventeenOne_1 = """
 سيدنا موسى عليه السلام عندما قال 
 """;
+
   static const String ayahHadithSeventeenOne_1 = """
 
 رَبَّنَا ٱطۡمِسۡ عَلَىٰۤ أَمۡوَ ٰلِهِمۡ وَٱشۡدُدۡ عَلَىٰ قُلُوبِهِمۡ فَلَا یُؤۡمِنُوا۟ حَتَّىٰ یَرَوُا۟ ٱلۡعَذَابَ ٱلۡأَلِیمَ ۝٨٨
@@ -16,6 +17,7 @@ class ElmTextDersSeventeen {
 من الداعي ؟ الداعي سيدنا موسى
 لماذا قال الله عز وجل؟
 """;
+
   static const String ayahHadithSeventeenOne_2 = """
  
  قَدۡ أُجِیبَت دَّعۡوَتُكُمَا
