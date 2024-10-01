@@ -50,11 +50,13 @@ List<ElmModel> elmList15 = [
     ayah: ElmTextDersFifteen.ayahHadithFifteenEight_1,
     text2: ElmTextDersFifteen.elmTextFifteenEight_2,
   ), //
+
   // page 9
   ElmModel(
     title: ElmTextDersFifteen.titleFifteenNine,
     text: ElmTextDersFifteen.elmTextFifteenNine_1,
   ), //
+
   // page 10
   ElmModel(
     ayah: ElmTextDersFifteen.ayahHadithFifteenTen_1,
@@ -81,7 +83,8 @@ List<ElmModel> elmList15 = [
   ElmModel(
     ayah: ElmTextDersFifteen.ayahHadithFifteenFourteen_1,
     text: ElmTextDersFifteen.elmTextFifteenFourteen_1,
-  ), //
+  ),
+
   // page 15
   ElmModel(
     ayah: ElmTextDersFifteen.ayahHadithFifteenFifteen_1,
@@ -89,6 +92,7 @@ List<ElmModel> elmList15 = [
     ayah2: ElmTextDersFifteen.ayahHadithFifteenFifteen_2,
     text2: ElmTextDersFifteen.elmTextFifteenFifteen_2,
   ), //
+
   // page 16
   ElmModel(
     ayah: ElmTextDersFifteen.ayahHadithFifteenSixteen_1,
@@ -98,6 +102,7 @@ List<ElmModel> elmList15 = [
     ayah3: ElmTextDersFifteen.ayahHadithFifteenSixteen_3,
     text4: ElmTextDersFifteen.elmtTextFifteenSixteen_4,
   ), //
+
   // page 17
   ElmModel(
     ayah: ElmTextDersFifteen.ayahHadithFifteenSeventeen_1,

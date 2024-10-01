@@ -7,7 +7,7 @@ List<TextSpan> getPageElevenTexts(int i) {
   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
   return [
     TextSpan(text: elmList16[i].subtitle, style: subtitle),
-    TextSpan(text: elmList16[i].subtitle2, style: ayah),
+    TextSpan(text: elmList16[i].text),
     TextSpan(text: elmList16[i].ayah, style: ayah),
   ];
 }

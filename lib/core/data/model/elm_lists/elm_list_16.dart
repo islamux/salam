@@ -18,11 +18,13 @@ List<ElmModel> elmList16 = [
     subtitle: ElmTextDersSixteen.subtitleSixteenTwo_1,
     text: ElmTextDersSixteen.elmTextDersSixteenTwo_1,
   ),
+
   // page 3
   ElmModel(
     // 3
-    text: ElmTextDersSixteen.elmTextDersSixteenThree_1,
     ayah: ElmTextDersSixteen.ayahHadithSixteenThree_1,
+    text: ElmTextDersSixteen.elmTextDersSixteenThree_1,
+    ayah2: ElmTextDersSixteen.ayahHadithSixteenThree_2,
   ),
   // page 4
   ElmModel(
