@@ -23,7 +23,7 @@ List<TextSpan> getPageTwentyNineTexts(int i) {
     TextSpan(text: elm.ayah6, style: ayahStyle),
     TextSpan(text: elm.text7),
     TextSpan(text: elm.ayah7, style: ayahStyle),
-    TextSpan(text: elm.text7),
+    TextSpan(text: elm.text8),
     TextSpan(text: elm.ayah8, style: ayahStyle),
   ];
 }

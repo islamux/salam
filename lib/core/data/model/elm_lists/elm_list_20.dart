@@ -48,6 +48,7 @@ List<ElmModel> elmList20 = [
     text4: ElmTextTwenty.elmTextTwentyFive_4,
     ayah4: ElmTextTwenty.ayahHadithTwentyFive_4,
   ),
+
   // page 6
   ElmModel(
     text: ElmTextTwenty.elmTextTwentySix_1,
