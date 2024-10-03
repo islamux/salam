@@ -5,6 +5,9 @@
 - Refactor customTextSpan()
 - title, subtitle, ayah 
 ------
+Refactor
+- change getPageOne, two, three.... to getPageText() one func only.
+--------
 اضافة سلايدر فيه معلومات سريعة عن التطبيق وشرح استخدام التطبيق
 اضافة اشارة تفيد بان هناك نص في الاسفل .. اسحب للاسفل
 enable dark mode
