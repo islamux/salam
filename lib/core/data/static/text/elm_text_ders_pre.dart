@@ -65,36 +65,4 @@ class ElmTextPre {
   static const String elmTextPreThree_3 = """
 لايوجد أحد من بني البشر على الإطلاق إلا ويتمنى السلامة والسعادة ، والسلامة والسعادة لا تكونان إلا في تطبيق تعاليم هذا الدين
 """;
-
-  static const String elmTextPreThree_4 = """
-
-الصفحة الثالثة - النص الرابع  -
-
-
-""";
-
-// page 4 testing
-  static const String elmTextPreFourTesting_1 = """
-الصفحة الرابعة النص الاول 
-""";
-  static const String ayahPreFourTesting_2 = """
-الصفحة الرابعة ايه الاول 
-""";
-  static const String titlelePreFourTesting_1 = """
-لصفحة الرابعة عنوان الاول 
-
-""";
-
-// page 5 testing
-
-  static const String subtitlelePreFiverTesting_1 = """
-عناوان الصفحة الخامسة 
-""";
-  static const String ayahPreFiveTesteing_1 = """
-الصفحة الخمسة ايه 
-""";
-
-  static const String elmTextPreFivTesting_1 = """
-الصحفة الخامسة نص 
-""";
 }
