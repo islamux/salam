@@ -1,7 +1,7 @@
 // TextElmPre
+import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_pre.dart';
-import 'package:elm/view/pages/elmpre.dart';
 
 List<ElmModelNew> elmListPre = [
   // page 1
@@ -41,5 +41,13 @@ List<ElmModelNew> elmListPre = [
   // page 4 testing
   ElmModelNew(
     texts: [ElmTextPre.elmTextPreFourTesting_1],
-  )
+    ayahs: [ElmTextPre.ayahPreFourTesting_2],
+    titles: [ElmTextPre.titlelePreFourTesting_1],
+  ),
+
+// page 5
+  ElmModelNew(
+      subtitles: [ElmTextPre.subtitlelePreFiverTesting_1],
+      ayahs: [ElmTextPre.ayahPreFiveTesteing_1],
+      texts: [ElmTextPre.elmTextPreFivTesting_1])
 ];
