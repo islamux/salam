@@ -4,7 +4,6 @@ class ElmTextPre {
 مجموعة خواطر حول الدين والحياة  
 ----------------------------
 """;
-// page 1
   static const String ayahHadithPreOne_1 = """
 وَذَكِّرۡ فَإِنَّ ٱلذِّكۡرَىٰ تَنفَعُ ٱلۡمُؤۡمِنِینَ ۝٥٥ * 
 الذاريات 55 * 
@@ -16,6 +15,7 @@ class ElmTextPre {
 
 فإن كان من توفيق فمن الله وما كان من خطأ أو نسيان فمن نفسي ومن الشيطان والله ورسولة براء
 """;
+  static const String ayahPreOneTest_2 = """ Page  one - ayah 2 test""";
 
 // page 2
   static const String titlePreTwo = """
@@ -35,6 +35,9 @@ class ElmTextPre {
 وهذا الملك الذي كان ملكاً ثم ترك الملك وصار عارفاً بالله وإسمه إبراهيم بن الأدهم ، قال: لو يعلم الملوك مانحن عليه لقاتلونا عليه بالسيوف 
 
 
+""";
+  static const String subtitlePreTwoTest_2 = """
+  page two - subtitle 2
 """;
 // page 3
 
@@ -61,5 +64,17 @@ class ElmTextPre {
 """;
   static const String elmTextPreThree_3 = """
 لايوجد أحد من بني البشر على الإطلاق إلا ويتمنى السلامة والسعادة ، والسلامة والسعادة لا تكونان إلا في تطبيق تعاليم هذا الدين
+""";
+
+  static const String elmTextPreThree_4 = """
+
+الصفحة الثالثة - النص الرابع  -
+
+
+""";
+
+// page 4 testing
+  static const String elmTextPreFourTesting_1 = """
+الصفحة الرابعة النص الاول 
 """;
 }

@@ -61,8 +61,8 @@ class ElmPreControllerImp extends ElmPreController {
     StringBuffer shareText = StringBuffer();
 
     // Add title if available
-    if (elm.title != null) {
-      shareText.write('${elm.title!}\n\n');
+    if (elm.titles != null) {
+      shareText.write('${elm.titles!}\n\n');
     }
 
     // Loop through subtitles if available

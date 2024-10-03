@@ -1,7 +1,7 @@
 class ElmModelNew {
   // Content of every page
   // title
-  final String? title;
+  final List<String>? titles;
   // subtitle
   final List<String>? subtitles;
   // text
@@ -14,7 +14,7 @@ class ElmModelNew {
   ElmModelNew({
 //    التحقق من أن الحقول ليست null قبل الاستخدام
     // بهذه الطريقة، إذا لم يتم تعيين أي قيم، ستكون الحقول عبارة عن قائمة فارغة، وبالتالي لن تتسبب في حدوث خطأ.
-    this.title,
+    this.titles = const [],
     this.subtitles = const [], // to make
     this.texts = const [],
     this.ayahs = const [],
