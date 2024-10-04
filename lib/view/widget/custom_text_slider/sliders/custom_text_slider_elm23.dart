@@ -1,5 +1,5 @@
 import 'package:elm/controller/elm23_controller.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_23.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_23_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_23.dart';
@@ -34,7 +34,7 @@ class CustomTextSliderElm23 extends StatelessWidget {
                 reverse: true,
                 controller: controller.pageControllerAssma,
                 onPageChanged: (index) => controller.onPageChanged(index),
-                itemCount: elmList23.length,
+                itemCount: elmList23New.length,
                 itemBuilder: (context, i) => Column(
                   children: [
                     Expanded(
@@ -84,11 +84,11 @@ class CustomTextSliderElm23 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList23.length.toDouble() - 1,
+                      max: elmList23New.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmList23.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList23New.length}',
                     style: const TextStyle(
                         fontSize: 23, fontWeight: FontWeight.bold),
                   ),

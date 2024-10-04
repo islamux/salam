@@ -4,6 +4,7 @@
 - ElmDersText... لجميع الصفحات مع التكست الاصلي 
 - Refactor customTextSpan()
 - title, subtitle, ayah 
+- font of slider is bigg fix it.
 ------
 Refactor
 - change getPageOne, two, three.... to getPageText() one func only.

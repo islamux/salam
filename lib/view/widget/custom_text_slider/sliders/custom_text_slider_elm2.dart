@@ -1,10 +1,11 @@
 import 'package:elm/controller/elm2_controller.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_2.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../../core/data/model/elm_lists/elm_list_2_new.dart';
 
 class CustomTextSliderElm2 extends StatelessWidget {
   const CustomTextSliderElm2({super.key});
@@ -34,10 +35,11 @@ class CustomTextSliderElm2 extends StatelessWidget {
                 reverse: true,
                 controller: controller.pageControllerAssma,
                 onPageChanged: (index) => controller.onPageChanged(index),
-                itemCount: elmList2.length,
+                itemCount: elmList2New.length,
                 itemBuilder: (context, i) {
                   // Determine which page content to display
                   List<TextSpan> pageTexts;
+                  // pageTexts = whichPageToGetInElm2(i);
                   pageTexts = whichPageToGetInElm2(i);
 
                   return Column(
@@ -88,11 +90,11 @@ class CustomTextSliderElm2 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList2.length.toDouble() - 1,
+                      max: elmList2New.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmList2.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList2New.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),

@@ -9,7 +9,7 @@ class ElmModelNew {
   // ayah
   final List<String>? ayahs;
   // footer
-  final List<String>? footers;
+  final String? footer;
 
   // Constructor (named to make allow rearange them like i want)
   ElmModelNew({
@@ -17,6 +17,6 @@ class ElmModelNew {
     this.subtitles,
     this.texts,
     this.ayahs,
-    this.footers,
+    this.footer,
   });
 }

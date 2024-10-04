@@ -1,5 +1,5 @@
 import 'package:elm/controller/elmpre_controller.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_pre.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_pre.dart';
@@ -37,10 +37,11 @@ class CustomTextSliderElmPre extends StatelessWidget {
                   onPageChanged: (index) =>
                       // How to pass index. ==> onPageChanged(index)
                       controller.onPageChanged(index),
-                  itemCount: elmListPre.length,
+                  itemCount: elmListPreNew.length,
                   itemBuilder: (context, i) {
                     // Determine wich page content to display
                     List<TextSpan> pageTexts;
+                    // pageTexts = whichPageToGetInPreNew(i);
                     pageTexts = whichPageToGetInPre(i);
 
                     return Column(
@@ -92,11 +93,11 @@ class CustomTextSliderElmPre extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmListPre.length.toDouble() - 1,
+                      max: elmListPreNew.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmListPre.length}',
+                    '${controller.currentPageIndex + 1} / ${elmListPreNew.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),

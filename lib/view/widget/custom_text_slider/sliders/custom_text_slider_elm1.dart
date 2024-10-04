@@ -1,5 +1,6 @@
 import 'package:elm/controller/elm1_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_1.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_1_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_1.dart';
@@ -34,7 +35,7 @@ class CustomTextSliderElm1 extends StatelessWidget {
                 reverse: true,
                 controller: controller.pageControllerAssma,
                 onPageChanged: (index) => controller.onPageChanged(index),
-                itemCount: elmList.length,
+                itemCount: elmList1New.length,
                 itemBuilder: (context, i) {
                   // Determine which page content to display
                   List<TextSpan> pageTexts;
@@ -88,11 +89,11 @@ class CustomTextSliderElm1 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList.length.toDouble() - 1,
+                      max: elmList1New.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmList.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList1New.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
