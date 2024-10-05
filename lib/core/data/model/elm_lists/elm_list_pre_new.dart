@@ -1,5 +1,3 @@
-// textsElmPre
-
 import '../../static/text/elm_text_ders_pre.dart';
 import '../elm_model_new.dart';
 

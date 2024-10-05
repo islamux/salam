@@ -123,7 +123,7 @@ List<ElmModel> elmList21 = [
     text: ElmTextTwentyOne.elmTextTwentyOneFourteen_1,
     ayah: ElmTextTwentyOne.ayahHadithTwentyOneFourteen_1,
     text2: ElmTextTwentyOne.elmTextTwentyOneFourteen_2,
-    ayah3: ElmTextTwentyOne.ayahHadithTwentyOneFourteen_3,
+    ayah3: ElmTextTwentyOne.ayahHadithTwentyOneFourteen_2,
   ),
 
   // page 15
