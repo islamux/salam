@@ -366,7 +366,7 @@ class ElmTextTwentyOne {
 الإنسان يظبط أموره كلها بالصبر، يصبر فيغض بصره، يصبر فيظبط لسانه، يصبر فيظبط يده، يصبر فيظبط رجله، فهذا هو الصبر 
   """;
 
-  static const String ayahHadithTwentyOneFourteen_3 = """
+  static const String ayahHadithTwentyOneFourteen_2 = """
 ولمن صبر وغفر إن ذلك لمن عزم الأمور 
  """;
 
