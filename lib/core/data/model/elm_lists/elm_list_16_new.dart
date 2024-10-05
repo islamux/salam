@@ -7,56 +7,52 @@ import '../elm_model_new.dart';
 List<ElmModelNew> elmList16New = [
   // page 1
   ElmModelNew(
-    titles: [],
-    ElmTextDersSixteen.titleSixteenOne,
-    subtitles: [],
-    ElmTextDersSixteen.subtitleSixteenOne_1,
-    texts: [],
-    ElmTextDersSixteen.elmTextDersSixteenOne_1,
-    ayahs: [],
-    ElmTextDersSixteen.ayahHadithSixteenOne_1,
-    text2: ElmTextDersSixteen.elmTextDersSixteenOne_2,
+    titles: [ElmTextDersSixteen.titleSixteenOne,],
+   
+    subtitles: [ElmTextDersSixteen.subtitleSixteenOne_1,],
+    
+    texts: [ElmTextDersSixteen.elmTextDersSixteenOne_1,ElmTextDersSixteen.elmTextDersSixteenOne_2,],
+    
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenOne_1,],
+    
   ),
   // page 2
   ElmModelNew(
     // 2
-    subtitles: [], ElmTextDersSixteen.subtitleSixteenTwo_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenTwo_1,
+    subtitles: [ElmTextDersSixteen.subtitleSixteenTwo_1,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenTwo_1,], 
   ),
 
   // page 3
   ElmModelNew(
     // 3
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenThree_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenThree_1,
-    ayah2: ElmTextDersSixteen.ayahHadithSixteenThree_2,
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenThree_1,ElmTextDersSixteen.ayahHadithSixteenThree_2,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenThree_1,], 
   ),
   // page 4
   ElmModelNew(
     // 4
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenFour_1,
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenFour_1,
+    texts: [ElmTextDersSixteen.elmTextDersSixteenFour_1,], 
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenFour_1,], 
   ),
   // page 5
   ElmModelNew(
     // 5
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenFive_1,
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenFive_1,
+    texts: [ElmTextDersSixteen.elmTextDersSixteenFive_1,], 
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenFive_1,], 
   ),
   // page 6
   ElmModelNew(
-    texts: [],
-    ElmTextDersSixteen.elmTextDersSixteenSix_1,
-    ayahs: [],
-    ElmTextDersSixteen.ayahHadithSixteenSix_1,
+    texts: [ElmTextDersSixteen.elmTextDersSixteenSix_1,],
+    
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenSix_1,],
+    
   ),
   // page 7
   ElmModelNew(
     // 7
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenSeven_1,
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenSeven_1,
-    text2: ElmTextDersSixteen.elmTextDersSixteenSeven_2,
-    ayah2: ElmTextDersSixteen.ayahHadithSixteenSeven_2,
+    texts: [ElmTextDersSixteen.elmTextDersSixteenSeven_1,ElmTextDersSixteen.elmTextDersSixteenSeven_2,], 
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenSeven_1,ElmTextDersSixteen.ayahHadithSixteenSeven_2,], 
   ),
   // page 8
   ElmModelNew(
@@ -67,36 +63,34 @@ List<ElmModelNew> elmList16New = [
   // page 9
   ElmModelNew(
     // 9
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenNine_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenNine_1,
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenNine_1,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenNine_1,], 
   ),
   // page 10
   ElmModelNew(
     // 10
-    subtitles: [], ElmTextDersSixteen.subtitleSixteenTen_1,
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenTen_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenTen_1,
+    subtitles: [ElmTextDersSixteen.subtitleSixteenTen_1,], 
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenTen_1,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenTen_1,], 
   ),
   // page 11
   ElmModelNew(
     // 11
-    subtitles: [], ElmTextDersSixteen.subtitleSixteenEleven_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenEleven_1,
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenEleven_1,
+    subtitles: [ElmTextDersSixteen.subtitleSixteenEleven_1,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenEleven_1,], 
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenEleven_1,], 
   ),
   // page 12
   ElmModelNew(
     // 12
-    subtitles: [], ElmTextDersSixteen.subtitleSixteenTwelve_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenTwelve_1,
+    subtitles: [ElmTextDersSixteen.subtitleSixteenTwelve_1,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenTwelve_1,], 
   ),
   // page 13
   ElmModelNew(
     // 13
-    ayahs: [], ElmTextDersSixteen.ayahHadithSixteenTherteen_1,
-    texts: [], ElmTextDersSixteen.elmTextDersSixteenTherteen_1,
-    ayah2: ElmTextDersSixteen.ayahHadithSixteenTherteen_1,
-    text2: ElmTextDersSixteen.elmTextDersSixteenTherteen_2,
+    ayahs: [ElmTextDersSixteen.ayahHadithSixteenTherteen_1,ElmTextDersSixteen.ayahHadithSixteenTherteen_1,], 
+    texts: [ElmTextDersSixteen.elmTextDersSixteenTherteen_1,ElmTextDersSixteen.elmTextDersSixteenTherteen_2,], 
   ),
   // page 14
   ElmModelNew(
