@@ -145,37 +145,46 @@ List<ElmModelNew> elmList14New = [
   ),
   // page 12
   ElmModelNew(
-    titles: [],
-    ElmTextDersFourteen.titleFourteenTwelve_1,
-    texts: [],
-    ElmTextDersFourteen.elmTextFourteenTwelve_1,
+    titles: [
+      ElmTextDersFourteen.titleFourteenTwelve_1,
+    ],
+    texts: [
+      ElmTextDersFourteen.elmTextFourteenTwelve_1,
+    ],
   ),
   // page 13
   ElmModelNew(
-    texts: [],
-    ElmTextDersFourteen.elmTextFourteenTherteen_1,
+    texts: [
+      ElmTextDersFourteen.elmTextFourteenTherteen_1,
+    ],
   ),
   // page 14
   ElmModelNew(
-    ayahs: [],
-    ElmTextDersFourteen.ayahHadithFourteenFourteen_1,
-    texts: [],
-    ElmTextDersFourteen.elmTextFourteenFourteen_1,
+    ayahs: [
+      ElmTextDersFourteen.ayahHadithFourteenFourteen_1,
+    ],
+    texts: [
+      ElmTextDersFourteen.elmTextFourteenFourteen_1,
+    ],
   ),
   // page 15
   ElmModelNew(
-    ayahs: [],
-    ElmTextDersFourteen.ayahHadithFourteenFifteen_1,
-    texts: [],
-    ElmTextDersFourteen.elmTextFourteenFifteen_1,
-    ayah2: ElmTextDersFourteen.ayahHadithFourteenFifteen_2,
-    text2: ElmTextDersFourteen.elmTextFourteenFifteen_2,
+    ayahs: [
+      ElmTextDersFourteen.ayahHadithFourteenFifteen_1,
+      ElmTextDersFourteen.ayahHadithFourteenFifteen_2,
+    ],
+    texts: [
+      ElmTextDersFourteen.elmTextFourteenFifteen_1,
+      ElmTextDersFourteen.elmTextFourteenFifteen_2,
+    ],
   ),
   // page 16
   ElmModelNew(
-    ayahs: [],
-    ElmTextDersFourteen.ayahHadithFourteenSixteen_1,
-    texts: [],
-    ElmTextDersFourteen.elmTextFourteenSixteen_1,
+    ayahs: [
+      ElmTextDersFourteen.ayahHadithFourteenSixteen_1,
+    ],
+    texts: [
+      ElmTextDersFourteen.elmTextFourteenSixteen_1,
+    ],
   ),
 ];

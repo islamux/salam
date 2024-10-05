@@ -69,7 +69,7 @@ List<ElmModel> elmList14 = [
   ElmModel(
     title: ElmTextDersFourteen.titleFourteenNine_1,
     ayah: ElmTextDersFourteen.ayahHadithFourteenNine_1,
-    text: ElmTextDersFourteen.elmTextFourteenNine_2,
+    text: ElmTextDersFourteen.elmTextFourteenNine_1,
   ),
   // page 10
   ElmModel(

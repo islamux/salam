@@ -96,11 +96,11 @@ List<ElmModel> elmList15 = [
   // page 16
   ElmModel(
     ayah: ElmTextDersFifteen.ayahHadithFifteenSixteen_1,
-    text: ElmTextDersFifteen.elmtTextFifteenSixteen_2,
+    text: ElmTextDersFifteen.elmtTextFifteenSixteen_1,
     ayah2: ElmTextDersFifteen.ayahHadithFifteenSixteen_2,
-    text2: ElmTextDersFifteen.elmtTextFifteenSixteen_3,
+    text2: ElmTextDersFifteen.elmtTextFifteenSixteen_2,
     ayah3: ElmTextDersFifteen.ayahHadithFifteenSixteen_3,
-    text4: ElmTextDersFifteen.elmtTextFifteenSixteen_4,
+    text4: ElmTextDersFifteen.elmtTextFifteenSixteen_3,
   ), //
 
   // page 17
