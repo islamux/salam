@@ -5,6 +5,8 @@
 - Refactor customTextSpan()
 - title, subtitle, ayah 
 - font of slider is bigg fix it.
+- مراجعة getPageText... ترتبب النصوص والايات و...
+
 ------
 Refactor
 - change getPageOne, two, three.... to getPageText() one func only.

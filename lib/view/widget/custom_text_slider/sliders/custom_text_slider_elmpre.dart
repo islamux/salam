@@ -6,6 +6,8 @@ import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../which_page_to_get/which_page_to_get_in_elm_pre_new.dart';
+
 class CustomTextSliderElmPre extends StatelessWidget {
   const CustomTextSliderElmPre({super.key});
 
@@ -42,7 +44,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                     // Determine wich page content to display
                     List<TextSpan> pageTexts;
                     // pageTexts = whichPageToGetInPreNew(i);
-                    pageTexts = whichPageToGetInPre(i);
+                    pageTexts = whichPageToGetInPreNew(i, elmListPreNew);
 
                     return Column(
                       children: [
