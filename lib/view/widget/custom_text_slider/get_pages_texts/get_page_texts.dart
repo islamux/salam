@@ -6,8 +6,8 @@ import '../../../../../core/data/model/elm_model_new.dart';
 List<TextSpan> getPageTexts(int i, List<ElmModelNew> elmList) {
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-  TextStyle ayahStyle = AppTheme.customTextStyleHadith();
   TextStyle footerStyle = AppTheme.customTextStyleFooter();
+  TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 
   ElmModelNew elm = elmList[i];
   return [
