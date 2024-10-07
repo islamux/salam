@@ -32,7 +32,6 @@ List<TextSpan> whichPageToGetInElm1(int i) {
       return getPageNineTexts(i);
     case 9:
       return getPageTenTexts(i);
-    case 10:
     default:
       return [];
   }

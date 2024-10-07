@@ -2,6 +2,7 @@ import 'package:elm/controller/elm3_controller.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_3.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_3_new.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -40,7 +41,7 @@ class CustomTextSliderElm3 extends StatelessWidget {
                   // Determine which page content to display
                   List<TextSpan> pageTexts;
                   // pageTexts = whichPageToGetInElm3(i);
-                  pageTexts = whichPageToGetInElm3(i);
+                  pageTexts = whichPageToGetInElm3New(i, elmList3New);
 
                   return Column(
                     children: [

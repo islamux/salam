@@ -41,7 +41,6 @@ List<TextSpan> whichPageToGetInElm5(int i) {
       return getPageTwelveTexts(i);
     case 12:
       return getPageTherteenTexts(i);
-    case 13:
     default:
       return [];
   }
