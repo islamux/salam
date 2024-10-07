@@ -34,6 +34,9 @@ List<TextSpan> getPageTexts(int i, List<ElmModelNew> elmList) {
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
+    // text 3
+    if (elm.texts != null && elm.texts!.length > 2)
+      TextSpan(text: elm.texts![3], style: null),
 
     // ayah 0
     if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
@@ -44,9 +47,12 @@ List<TextSpan> getPageTexts(int i, List<ElmModelNew> elmList) {
     // ayah 2
     if (elm.ayahs != null && elm.ayahs!.length > 2)
       TextSpan(text: elm.ayahs![2], style: ayahStyle),
+    // ayah 3
+    if (elm.ayahs != null && elm.ayahs!.length > 2)
+      TextSpan(text: elm.ayahs![3], style: ayahStyle),
 
     // footer
     if (elm.footer != null && elm.footer!.isNotEmpty)
-      TextSpan(text: elm.ayahs![2], style: footerStyle),
+      TextSpan(text: elm.footer!, style: footerStyle),
   ];
 }

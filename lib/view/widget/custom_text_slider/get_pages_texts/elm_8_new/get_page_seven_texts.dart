@@ -15,7 +15,7 @@ List<TextSpan> getPageSevenTexts(int i, List<ElmModelNew> elmList) {
 
     // footer
     if (elm.footer != null && elm.footer!.isNotEmpty)
-      TextSpan(text: elm.ayahs![2], style: footerStyle),
+      TextSpan(text: elm.footer!, style: footerStyle),
   ];
 }
 

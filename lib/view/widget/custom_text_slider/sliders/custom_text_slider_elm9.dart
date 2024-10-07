@@ -1,5 +1,6 @@
 import 'package:elm/controller/elm9_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_9.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_9_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_9.dart';
@@ -34,11 +35,11 @@ class CustomTextSliderElm9 extends StatelessWidget {
                 reverse: true,
                 controller: controllerAs.pageControllerAssma,
                 onPageChanged: (index) => controllerAs.onPageChanged(index),
-                itemCount: elmList9.length,
+                itemCount: elmList9New.length,
                 itemBuilder: (context, i) {
                   // Determine which page content to display
                   List<TextSpan> pageTexts;
-                  pageTexts = whichPageToGetInElm9(i);
+                  pageTexts = whichPageToGetInElm9New(i, elmList9New);
                   return Column(
                     children: [
                       Expanded(
@@ -87,12 +88,12 @@ class CustomTextSliderElm9 extends StatelessWidget {
                         controllerAs.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList9.length.toDouble() - 1,
+                      max: elmList9New.length.toDouble() - 1,
                     ),
                   ),
                   // Display current page number
                   Text(
-                    '${controllerAs.currentPageIndex + 1} / ${elmList9.length}',
+                    '${controllerAs.currentPageIndex + 1} / ${elmList9New.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
@@ -138,7 +139,7 @@ class CustomTextSliderElm9 extends StatelessWidget {
 //                 onPageChanged: (index) =>
 //                     // How to pass index. ==> onPageChanged(index)
 //                     controllerAs.onPageChanged(index),
-//                 itemCount: elmList9.length,
+//                 itemCount: elmList9New.length,
 //                 itemBuilder: (context, i) => Column(
 //                   children: [
 //                     // To make text scrollable make insid contatiner and the container inside Expanded
@@ -202,13 +203,13 @@ class CustomTextSliderElm9 extends StatelessWidget {
 //                         controllerAs.goToPage(value.toInt());
 //                       },
 //                       min: 0,
-//                       max: elmList9.length.toDouble() - 1,
+//                       max: elmList9New.length.toDouble() - 1,
 //                     ),
 //                   ),
 //                   // Display current page number
 //                   Text(
 //                     //'${controllerAs.currentPageCounter + 1} / ${elm1List.length}',
-//                     '${controllerAs.currentPageIndex + 1.toInt()} / ${elmList9.length}',
+//                     '${controllerAs.currentPageIndex + 1.toInt()} / ${elmList9New.length}',
 //                     style: const TextStyle(
 //                         fontSize: 18, fontWeight: FontWeight.bold),
 //                   )

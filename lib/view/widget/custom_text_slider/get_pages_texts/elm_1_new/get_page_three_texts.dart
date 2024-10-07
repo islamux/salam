@@ -11,7 +11,7 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
 
     if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![1], style: null), // النص
+      TextSpan(text: elm.texts![0], style: null), // النص
 
     if (elm.ayahs != null && elm.ayahs!.length > 1)
       TextSpan(text: elm.ayahs![1], style: ayahStyle), // الآية الثانية
