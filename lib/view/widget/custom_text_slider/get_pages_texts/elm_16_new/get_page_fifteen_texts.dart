@@ -1,40 +1,37 @@
+import 'package:elm/core/data/model/elm_lists/elm_list_16.dart';
+import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
+import 'package:elm/view/widget/custom_text_span.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
+List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 
   ElmModelNew elm = elmList[i];
 
   return [
-    // subtitle 0
+    // subtitle
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
-    // ayah 0
+    // ayah
     if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
-    // text 0
+    // text
     if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
-    // ayah 1
-    if (elm.ayahs != null && elm.ayahs!.length > 1)
-      TextSpan(text: elm.ayahs![1], style: ayahStyle),
-    // text 1
-    if (elm.texts != null && elm.texts!.length > 1)
-      TextSpan(text: elm.texts![1], style: null),
   ];
 }
 
-// List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
+// List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew>elmList) {
+//   // refactor : customTextSpan()
 //   TextStyle ayah = AppTheme.customTextStyleHadith();
+//   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
+//   ElmModel elm = elmList16[i];
 //   return [
-//     TextSpan(text: elmList14[i].subtitle, style: subtitle),
-//     TextSpan(text: elmList14[i].ayah, style: ayah),
-//     TextSpan(text: elmList14[i].text),
-//     TextSpan(text: elmList14[i].ayah2, style: ayah),
-//     TextSpan(text: elmList14[i].text2),
+//     customTextSpan(elm.subtitle, subtitle),
+//     customTextSpan(elm.ayah, ayah),
+//     customTextSpan(elm.text, null),
 //   ];
 // }

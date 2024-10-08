@@ -2,7 +2,7 @@ import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageTenTexts(int i, List<ElmModelNew> elmList) {
+List<TextSpan> getPageSixteenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 
   ElmModelNew elm = elmList[i];
@@ -26,25 +26,17 @@ List<TextSpan> getPageTenTexts(int i, List<ElmModelNew> elmList) {
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
-    // ayah 3
-    if (elm.ayahs != null && elm.ayahs!.length > 3)
-      TextSpan(text: elm.ayahs![3], style: ayahStyle),
-    // text 3
-    if (elm.texts != null && elm.texts!.length > 3)
-      TextSpan(text: elm.texts![3], style: null),
   ];
 }
 
-// List<TextSpan> getPageTenTexts(int i, List<ElmModelNew>elmList) {
+// List<TextSpan> getPageSixteenTexts(int i, List<ElmModelNew>elmList) {
 //   TextStyle ayah = AppTheme.customTextStyleHadith();
 //   return [
-//     TextSpan(text: elmList14[i].ayah, style: ayah),
-//     TextSpan(text: elmList14[i].text),
-//     TextSpan(text: elmList14[i].ayah2, style: ayah),
-//     TextSpan(text: elmList14[i].text2),
-//     TextSpan(text: elmList14[i].ayah3),
-//     TextSpan(text: elmList14[i].text3),
-//     TextSpan(text: elmList14[i].ayah4, style: ayah),
-//     TextSpan(text: elmList14[i].text4),
+//     TextSpan(text: elmList15[i].ayah, style: ayah),
+//     TextSpan(text: elmList15[i].text),
+//     TextSpan(text: elmList15[i].ayah2, style: ayah),
+//     TextSpan(text: elmList15[i].text2),
+//     TextSpan(text: elmList15[i].ayah3, style: ayah),
+//     TextSpan(text: elmList15[i].text4),
 //   ];
 // }
