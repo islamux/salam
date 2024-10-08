@@ -13,7 +13,7 @@ List<TextSpan> getPageSeventeentTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
 
     //  ayah
-    if (elm.ayahs != null && elm.ayahs![0].isNotEmpty)
+    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle)
   ];
 }
