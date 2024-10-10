@@ -3,6 +3,7 @@ import 'package:elm/core/data/model/elm_lists/elm_list_23_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_23.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_23_new.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -45,7 +46,8 @@ class CustomTextSliderElm23 extends StatelessWidget {
                           child: GetBuilder<Elm23ControllerImp>(
                             builder: (controller) {
                               List<TextSpan> pageTexts = [];
-                              pageTexts = whichPageToGetInElm23(i);
+                              pageTexts =
+                                  whichPageToGetInElm23New(i, elmList23New);
                               return RichText(
                                 text: TextSpan(
                                   style: TextStyle(

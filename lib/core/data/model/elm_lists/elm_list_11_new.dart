@@ -3,7 +3,7 @@ import 'package:elm/core/data/static/text/elm_text_ders_eleven.dart';
 
 import '../elm_model_new.dart';
 
-List<ElmModelNew> elmList11 = [
+List<ElmModelNew> elmList11New = [
   // page 1
   ElmModelNew(
     titles: [

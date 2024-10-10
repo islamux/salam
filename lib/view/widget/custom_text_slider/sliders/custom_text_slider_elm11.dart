@@ -1,8 +1,8 @@
 import 'package:elm/controller/elm11_controller.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_11.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_11_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_11.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_11_new.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,11 +34,11 @@ class CustomTextSliderElm11 extends StatelessWidget {
                 reverse: true,
                 controller: controller.pageControllerAssma,
                 onPageChanged: (index) => controller.onPageChanged(index),
-                itemCount: elmList11.length,
+                itemCount: elmList11New.length,
                 itemBuilder: (context, i) {
                   // Determine which page content to display
                   List<TextSpan> pageTexts;
-                  pageTexts = whichPageToGetInElm11(i);
+                  pageTexts = whichPageToGetInElm11New(i, elmList11New);
                   return Column(
                     children: [
                       Expanded(
@@ -87,12 +87,12 @@ class CustomTextSliderElm11 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList11.length.toDouble() - 1,
+                      max: elmList11New.length.toDouble() - 1,
                     ),
                   ),
                   // Display current page number
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmList11.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList11New.length}',
                     style: const TextStyle(
                         fontSize: 18, fontWeight: FontWeight.bold),
                   ),
@@ -139,7 +139,7 @@ class CustomTextSliderElm11 extends StatelessWidget {
 //                 onPageChanged: (index) =>
 //                     // How to pass index. ==> onPageChanged(index)
 //                     controller.onPageChanged(index),
-//                 itemCount: elmList11.length,
+//                 itemCount: elmList11New.length,
 //                 itemBuilder: (context, i) => Column(
 //                   children: [
 //                     // To make text scrollable make insid contatiner and the container inside Expanded
@@ -213,13 +213,13 @@ class CustomTextSliderElm11 extends StatelessWidget {
 //                         controller.goToPage(value.toInt());
 //                       },
 //                       min: 0,
-//                       max: elmList11.length.toDouble() - 1,
+//                       max: elmList11New.length.toDouble() - 1,
 //                     ),
 //                   ),
 //                   // Display current page number
 //                   Text(
 //                     //'${controller.currentPageCounter + 1} / ${elm1List.length}',
-//                     '${controller.currentPageIndex + 1.toInt()} / ${elmList11.length}',
+//                     '${controller.currentPageIndex + 1.toInt()} / ${elmList11New.length}',
 //                     style: const TextStyle(
 //                         fontSize: 18, fontWeight: FontWeight.bold),
 //                   )

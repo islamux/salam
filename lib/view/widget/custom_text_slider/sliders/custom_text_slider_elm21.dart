@@ -1,8 +1,10 @@
 import 'package:elm/controller/elm21_controller.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_21.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_21_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_21.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_21_new.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,7 +36,7 @@ class CustomTextSliderElm21 extends StatelessWidget {
                 reverse: true,
                 controller: controller.pageControllerAssma,
                 onPageChanged: (index) => controller.onPageChanged(index),
-                itemCount: elmList21.length,
+                itemCount: elmList21New.length,
                 itemBuilder: (context, i) => Column(
                   children: [
                     Expanded(
@@ -45,7 +47,8 @@ class CustomTextSliderElm21 extends StatelessWidget {
                           child: GetBuilder<Elm21ControllerImp>(
                             builder: (controller) {
                               List<TextSpan> pageTexts = [];
-                              pageTexts = whichPageToGetInElm21(i);
+                              pageTexts =
+                                  whichPageToGetInElm21New(i, elmList21New);
                               return RichText(
                                 text: TextSpan(
                                   style: TextStyle(
@@ -84,11 +87,11 @@ class CustomTextSliderElm21 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList21.length.toDouble() - 1,
+                      max: elmList21New.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmList21.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList21New.length}',
                     style: const TextStyle(
                         fontSize: 21, fontWeight: FontWeight.bold),
                   ),

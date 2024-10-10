@@ -1,7 +1,9 @@
 import 'package:elm/core/data/model/elm_lists/elm_list_20.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_20_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_20.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_20_new.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -35,7 +37,7 @@ class CustomTextSliderElm20 extends StatelessWidget {
                 reverse: true,
                 controller: controller.pageControllerAssma,
                 onPageChanged: (index) => controller.onPageChanged(index),
-                itemCount: elmList20.length,
+                itemCount: elmList20New.length,
                 itemBuilder: (context, i) => Column(
                   children: [
                     Expanded(
@@ -46,7 +48,8 @@ class CustomTextSliderElm20 extends StatelessWidget {
                           child: GetBuilder<Elm20ControllerImp>(
                             builder: (controller) {
                               List<TextSpan> pageTexts = [];
-                              pageTexts = whichPageToGetInElm20(i);
+                              pageTexts =
+                                  whichPageToGetInElm20New(i, elmList20New);
                               return RichText(
                                 text: TextSpan(
                                   style: TextStyle(
@@ -85,11 +88,11 @@ class CustomTextSliderElm20 extends StatelessWidget {
                         controller.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmList20.length.toDouble() - 1,
+                      max: elmList20New.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${controller.currentPageIndex + 1} / ${elmList20.length}',
+                    '${controller.currentPageIndex + 1} / ${elmList20New.length}',
                     style: const TextStyle(
                         fontSize: 20, fontWeight: FontWeight.bold),
                   ),
