@@ -92,7 +92,7 @@ class CustomTextSliderElm23 extends StatelessWidget {
                   Text(
                     '${controller.currentPageIndex + 1} / ${elmList23New.length}',
                     style: const TextStyle(
-                        fontSize: 23, fontWeight: FontWeight.bold),
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),

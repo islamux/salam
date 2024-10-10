@@ -34,14 +34,6 @@ List<TextSpan> getPageNineTexts(int i, List<ElmModelNew> elmList) {
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
 
-    // ayah 2
-    if (elm.ayahs != null && elm.ayahs!.length > 2)
-      TextSpan(text: elm.ayahs![2], style: ayahStyle),
-
-    // text 3
-    if (elm.texts != null && elm.texts!.length > 2)
-      TextSpan(text: elm.texts![3], style: null),
-
     // footer
     if (elm.footer != null && elm.footer!.isNotEmpty)
       TextSpan(text: elm.footer!, style: footerStyle),

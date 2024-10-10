@@ -87,12 +87,12 @@ List<ElmModelNew> elmList13New = [
       ElmTextDersTherteen.elmTextTherteenSix_1,
       ElmTextDersTherteen.elmTextTherteenSix_2,
       ElmTextDersTherteen.elmTextTherteenSix_3,
+      ElmTextDersTherteen.elmTextTherteenSix_4,
     ],
     ayahs: [
       ElmTextDersTherteen.ayahHadithTherteenSix_1,
       ElmTextDersTherteen.ayahHadithTherteenSix_2,
       ElmTextDersTherteen.ayahHadithTherteenSix_3,
-      ElmTextDersTherteen.elmTextTherteenSix_4,
     ],
   ),
   // 7
