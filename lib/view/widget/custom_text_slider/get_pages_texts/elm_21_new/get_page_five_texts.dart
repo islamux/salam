@@ -1,17 +1,18 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_20.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_21.dart';
 import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageTwentyThreeTexts(int i, List<ElmModelNew> elmList) {
+List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-
+  TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   ElmModelNew elm = elmList[i];
   return [
+    // Form ElmTextTwentyOne{} // page 5
     // subtitle 0
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
-      TextSpan(text: elm.subtitles![0], style: null),
+      TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text 0
     if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
@@ -33,12 +34,14 @@ List<TextSpan> getPageTwentyThreeTexts(int i, List<ElmModelNew> elmList) {
   ];
 }
 
-// List<TextSpan> getPageTwentyThreeTexts(int i, List<ElmModelNew>elmList) {
+// List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew>elmList) {
 //   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 //   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
 //   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList20[i];
+//   ElmModel elm = elmList21[i];
+
 //   return [
+//     // Form ElmTextTwentyOne{} // page 5
 //     TextSpan(text: elm.subtitle, style: subtitleStyle),
 //     TextSpan(text: elm.text),
 //     TextSpan(text: elm.ayah, style: ayahStyle),
