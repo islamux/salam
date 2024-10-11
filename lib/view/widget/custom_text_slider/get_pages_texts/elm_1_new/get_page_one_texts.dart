@@ -18,13 +18,3 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![2]), // النص الثالث
   ];
 }
-
-// List<TextSpan> getPageOneTexts(int i) {
-//   TextStyle title = AppTheme.customTextStyleTitle();
-//   return [
-//     TextSpan(text: elmList[i].title, style: title),
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].text2),
-//     TextSpan(text: elmList[i].text3),
-//   ];
-// }

@@ -25,14 +25,3 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageOneTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle title = AppTheme.customTextStyleTitle();
-//   return [
-//     TextSpan(text: elmList6[i].title, style: title),
-//     TextSpan(text: elmList6[i].text),
-//     TextSpan(text: elmList6[i].text2),
-//     TextSpan(text: elmList6[i].ayah, style: ayah),
-//   ];
-// }

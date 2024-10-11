@@ -25,16 +25,3 @@ List<TextSpan> getPageEighteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![2], style: null), // النص الثالث
   ];
 }
-
-
-
-// List<TextSpan> getPageEighteenTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].ayah, style: ayah),
-//     TextSpan(text: elmList[i].text2),
-//     TextSpan(text: elmList[i].ayah2, style: ayah),
-//     TextSpan(text: elmList[i].text2),
-//   ];
-// }

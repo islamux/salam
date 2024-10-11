@@ -1,4 +1,3 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_4.dart';
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +9,3 @@ List<TextSpan> getPageSevenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageSevenTexts(int i) {
-//   return [
-//     TextSpan(text: elmList4[i].text),
-//   ];
-// }

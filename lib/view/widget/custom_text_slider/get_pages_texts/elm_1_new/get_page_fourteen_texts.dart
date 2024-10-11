@@ -18,12 +18,3 @@ List<TextSpan> getPageFourteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.footer!, style: footerStyle), // الخاتمة
   ];
 }
-
-// List<TextSpan> getPageFourteenTexts(int i) {
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-//   return [
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].text2),
-//     TextSpan(text: elmList[i].footer, style: footer),
-//   ];
-// }

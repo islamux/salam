@@ -25,14 +25,3 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-
-// List<TextSpan> getPageOneTexts(int i) {
-//   return [
-//     TextSpan(text: elmList2[i].title, style: title),
-//     TextSpan(text: elmList2[i].ayah, style: ayah),
-//     TextSpan(text: elmList2[i].text),
-//     TextSpan(text: elmList2[i].ayah2, style: ayah),
-//     TextSpan(text: elmList2[i].text2),
-//   ];
-// }

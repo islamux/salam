@@ -17,10 +17,3 @@ List<TextSpan> getPageNineTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageNineTexts(int i) {
-//   return [
-//     TextSpan(text: elmList5[i].text),
-//     TextSpan(text: elmList5[i].ayah),
-//   ];
-// }

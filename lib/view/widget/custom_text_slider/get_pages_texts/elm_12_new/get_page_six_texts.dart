@@ -28,16 +28,3 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.footer!, style: footerStyle),
   ];
 }
-
-// List<TextSpan> getPageSixTexts(int i, List<ElmodelNew> elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-
-//   return [
-//     TextSpan(text: elmList12[i].text),
-//     TextSpan(text: elmList12[i].ayah, style: ayah),
-//     TextSpan(text: elmList12[i].text2),
-//     TextSpan(text: elmList12[i].ayah2, style: ayah),
-//     TextSpan(text: elmList12[i].footer, style: footer),
-//   ];
-// }

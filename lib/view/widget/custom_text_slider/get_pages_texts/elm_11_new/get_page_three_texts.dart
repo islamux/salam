@@ -20,13 +20,3 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageThreeTexts(int i, List<ElmodelNew> elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-
-//   return [
-//     TextSpan(text: elmList11[i].text),
-//     TextSpan(text: elmList11[i].ayah, style: ayah),
-//     TextSpan(text: elmList11[i].text2),
-//   ];
-// }

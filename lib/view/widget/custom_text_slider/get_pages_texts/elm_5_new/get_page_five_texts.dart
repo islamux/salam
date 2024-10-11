@@ -21,11 +21,3 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageFiveTexts(int i) {
-//   return [
-//     TextSpan(text: elmList5[i].text),
-//     TextSpan(text: elmList5[i].ayah, style: AppTheme.customTextStyleHadith()),
-//     TextSpan(text: elmList5[i].text2),
-//   ];
-// }

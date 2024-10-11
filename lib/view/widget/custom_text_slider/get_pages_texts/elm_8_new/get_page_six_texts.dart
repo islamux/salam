@@ -17,11 +17,3 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageSixTexts(int i) {
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   return [
-//     TextSpan(text: elmList8[i].subtitle, style: subtitleStyle),
-//     TextSpan(text: elmList8[i].text),
-//   ];
-// }

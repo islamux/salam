@@ -21,13 +21,3 @@ List<TextSpan> getPageTowTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![2], style: null),
   ];
 }
-
-// List<TextSpan> getPageTowTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList3[i].text),
-//     TextSpan(text: elmList3[i].text2),
-//     TextSpan(text: elmList3[i].ayah, style: ayah),
-//     TextSpan(text: elmList3[i].text3),
-//   ];
-// }

@@ -15,12 +15,3 @@ List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
   ];
 }
-
-
-// List<TextSpan> getPageElevenTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].ayah, style: ayah),
-//   ];
-// }

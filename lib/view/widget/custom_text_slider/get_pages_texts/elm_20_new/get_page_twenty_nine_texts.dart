@@ -1,13 +1,9 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_20.dart';
-import 'package:elm/core/data/model/elm_model.dart';
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTwentyNineTexts(int i, List<ElmModelNew> elmList) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-  TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-  TextStyle titleStyle = AppTheme.customTextStyleTitle();
 
   ElmModelNew elm = elmList[i];
   return [

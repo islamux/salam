@@ -37,19 +37,3 @@ List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageEightTexts(int i) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList8[i];
-//   return [
-//     customTextSpan(elm.title, titleStyle),
-//     customTextSpan(elm.subtitle, subtitleStyle),
-//     customTextSpan(elm.ayah, ayahStyle),
-//     customTextSpan(elm.text, null),
-//     customTextSpan(elm.ayah2, ayahStyle),
-//     customTextSpan(elm.subtitle, subtitleStyle),
-//     customTextSpan(elm.text2, null),
-//   ];
-// }

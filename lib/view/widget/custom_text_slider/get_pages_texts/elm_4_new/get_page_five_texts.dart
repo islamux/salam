@@ -21,13 +21,3 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.footer, style: footerStyle),
   ];
 }
-
-// List<TextSpan> getPageFiveTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-//   return [
-//     TextSpan(text: elmList4[i].text),
-//     TextSpan(text: elmList4[i].ayah, style: ayah),
-//     TextSpan(text: elmList4[i].footer, style: footer),
-//   ];
-// }

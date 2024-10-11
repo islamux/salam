@@ -13,12 +13,3 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null), // النص الأول
   ];
 }
-
-
-// List<TextSpan> getPageTwoTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList[i].ayah, style: ayah),
-//     TextSpan(text: elmList[i].text),
-//   ];
-// }

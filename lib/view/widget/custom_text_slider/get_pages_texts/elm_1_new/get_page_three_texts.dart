@@ -17,11 +17,3 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![1], style: ayahStyle), // الآية الثانية
   ];
 }
-// List<TextSpan> getPageThreeTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList[i].ayah, style: ayah),
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].ayah2, style: ayah),
-//   ];
-// }

@@ -9,9 +9,3 @@ List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageElevenTexts(int i) {
-//   return [
-//     TextSpan(text: elmList5[i].text),
-//   ];
-// }

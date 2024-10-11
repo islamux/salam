@@ -16,14 +16,4 @@ List<TextSpan> getPageSixteenTexts(int i, List<ElmModelNew> elmList) {
     if (elm.footer != null && elm.footer!.isNotEmpty)
       TextSpan(text: elm.footer, style: footerStyle),
   ];
-}  
-
-
-
-// List<TextSpan> getPageSixteenTexts(int i) {
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-//   return [
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].footer, style: footer),
-//   ];
-// }
+}

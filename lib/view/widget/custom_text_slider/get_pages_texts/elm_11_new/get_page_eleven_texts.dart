@@ -29,17 +29,3 @@ List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.footer!, style: footerStyle),
   ];
 }
-
-// List<TextSpan> getPageElevenTexts(int i) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-
-//   return [
-//     TextSpan(text: elmList11[i].text),
-//     TextSpan(text: elmList11[i].ayah, style: ayah),
-//     TextSpan(text: elmList11[i].text2),
-//     TextSpan(text: elmList11[i].ayah2, style: ayah),
-//     TextSpan(text: elmList11[i].text3),
-//     TextSpan(text: elmList11[i].footer, style: footer),
-//   ];
-// }

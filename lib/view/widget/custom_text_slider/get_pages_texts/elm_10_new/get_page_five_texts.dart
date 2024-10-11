@@ -11,21 +11,11 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
     // ayah 0
     if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
-    // text 1
+    // text 0
     if (elm.texts != null && elm.texts!.length > 1)
-      TextSpan(text: elm.texts![1], style: null),
+      TextSpan(text: elm.texts![0], style: null),
     // ayah 1
     if (elm.ayahs != null && elm.ayahs!.length > 1)
       TextSpan(text: elm.ayahs![1], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   ElmModel elm = elmList10[i];
-//   return [
-//     customTextSpan(elm.ayah, ayahStyle),
-//     customTextSpan(elm.text, null),
-//     customTextSpan(elm.ayah2, ayahStyle),
-//   ];
-// }
