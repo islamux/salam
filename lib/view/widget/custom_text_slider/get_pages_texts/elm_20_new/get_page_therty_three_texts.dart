@@ -23,20 +23,7 @@ List<TextSpan> getPageThertyThreeTexts(int i, List<ElmModelNew> elmList) {
     if (elm.subtitles != null && elm.subtitles!.length > 1)
       TextSpan(text: elm.subtitles![1], style: subtitleStyle),
     // text 2
+    if (elm.texts != null && elm.texts!.length > 1)
+      TextSpan(text: elm.texts![2], style: null),
   ];
 }
-
-// List<TextSpan> getPageThertyThreeTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList20[i];
-//   return [
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.text2),
-//     TextSpan(text: elm.subtitle2, style: subtitleStyle),
-//     TextSpan(text: elm.text3),
-//   ];
-// }

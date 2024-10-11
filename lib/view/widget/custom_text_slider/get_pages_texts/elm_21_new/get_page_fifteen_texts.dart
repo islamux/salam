@@ -7,7 +7,6 @@ List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   ElmModelNew elm = elmList[i];
   return [
-    // Form ElmTextTwentyOne{} // page 15
     // text 0
     if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
@@ -25,18 +24,3 @@ List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![2], style: null),
   ];
 }
-
-// List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList21[i];
-//   return [
-//     // Form ElmTextTwentyOne{} // page 15
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.text2),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text3),
-//   ];
-// }

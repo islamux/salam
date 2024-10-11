@@ -16,11 +16,3 @@ List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.footer!, style: footerStyle),
   ];
 }
-
-// List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-//   return [
-//     TextSpan(text: elmList17[i].text),
-//     TextSpan(text: elmList17[i].footer, style: footer),
-//   ];
-// }

@@ -21,16 +21,3 @@ List<TextSpan> getPageThertyFiveTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageThertyFiveTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList20[i];
-//   return [
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah2, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

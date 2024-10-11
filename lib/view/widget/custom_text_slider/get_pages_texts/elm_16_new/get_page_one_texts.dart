@@ -27,18 +27,3 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageOneTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle title = AppTheme.customTextStyleTitle();
-//   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
-//   ElmModel elm = elmList16[i];
-//   return [
-//     // Page 1 : titles, subtitles, texts, ayahHadiths, footer
-//     TextSpan(text: elm.title, style: title),
-//     TextSpan(text: elm.subtitle, style: subtitle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayah),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

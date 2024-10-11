@@ -26,22 +26,8 @@ List<TextSpan> getPageSevenTexts(int i, List<ElmModelNew> elmList) {
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
+    // ayah 3
+    if (elm.ayahs != null && elm.ayahs!.length > 3)
+      TextSpan(text: elm.ayahs![3], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageSevenTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList21[i];
-//   return [
-//     // Form ElmTextTwentyOne{} // page 7
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah2, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//     TextSpan(text: elm.ayah3, style: ayahStyle),
-//     TextSpan(text: elm.text3),
-//     TextSpan(text: elm.ayah4, style: ayahStyle),
-//   ];
-// }

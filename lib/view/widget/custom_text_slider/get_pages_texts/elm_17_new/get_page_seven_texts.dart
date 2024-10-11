@@ -28,15 +28,3 @@ List<TextSpan> getPageSevenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![2], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageSevenTexts(List<ElmModelNew> elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList17[i].text),
-//     TextSpan(text: elmList17[i].ayah, style: ayah),
-//     TextSpan(text: elmList17[i].text2),
-//     TextSpan(text: elmList17[i].ayah2, style: ayah),
-//     TextSpan(text: elmList17[i].text3),
-//     TextSpan(text: elmList17[i].ayah3, style: ayah),
-//   ];
-// }

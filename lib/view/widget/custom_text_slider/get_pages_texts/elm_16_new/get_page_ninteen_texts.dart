@@ -8,6 +8,7 @@ List<TextSpan> getPageNinteenTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
 
   return [
+    // subtitle
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text
@@ -15,12 +16,3 @@ List<TextSpan> getPageNinteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageNinteenTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
-//   return [
-//     TextSpan(text: elmList16[i].subtitle, style: subtitle),
-//     TextSpan(text: elmList16[i].text),
-//   ];
-// }
