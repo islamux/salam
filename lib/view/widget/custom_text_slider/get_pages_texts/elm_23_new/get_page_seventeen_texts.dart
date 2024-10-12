@@ -26,19 +26,3 @@ List<TextSpan> getPageSevnteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageSevnteenTexts(int i, List<ElmModelNew>elmList, List<ElmModelNew>elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
-//   TextStyle title = AppTheme.customTextStyleTitle();
-//   TextStyle footer = AppTheme.customTextStyleFooter();
-//   ElmModel elm = elmList23[i];
-//   return [
-//     // From ElmTextTwentyThree
-//     // pageSeventeen
-//     TextSpan(text: elm.title, style: title),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.subtitle, style: subtitle),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

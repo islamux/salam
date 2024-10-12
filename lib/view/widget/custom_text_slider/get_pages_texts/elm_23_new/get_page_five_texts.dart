@@ -24,16 +24,6 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList23[i];
-
-//   return [
-//     // Form ElmTextTwentyThree{}
-//     // pageFive
 //     TextSpan(text: elm.subtitle, style: subtitleStyle),
 //     TextSpan(text: elm.text),
 //     TextSpan(text: elm.ayah, style: ayahStyle),

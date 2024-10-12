@@ -22,17 +22,3 @@ List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList22[i];
-//   return [
-//     // Form ElmTextTwentyTwo{} // page 13
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.subtitle2, style: subtitleStyle),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

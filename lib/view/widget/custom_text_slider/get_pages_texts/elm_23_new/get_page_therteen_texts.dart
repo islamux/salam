@@ -9,8 +9,6 @@ List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew> elmList) {
 
   ElmModelNew elm = elmList[i];
   return [
-    // Form ElmTextTwentyThree
-    // pageThirteen
     // title
     if (elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle),
@@ -43,24 +41,3 @@ List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![3], style: null),
   ];
 }
-
-// List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList22[i];
-//   return [
-//     // Form ElmTextTwentyThree
-//     // pageThirteen
-//     TextSpan(text: elm.title, style: titleStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//     TextSpan(text: elm.ayah2, style: ayahStyle),
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.text3),
-//     TextSpan(text: elm.ayah3, style: ayahStyle),
-//     TextSpan(text: elm.subtitle2, style: subtitleStyle),
-//     TextSpan(text: elm.text4),
-//   ];
-// }

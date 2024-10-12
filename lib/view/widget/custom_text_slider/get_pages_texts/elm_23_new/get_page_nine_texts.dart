@@ -27,19 +27,3 @@ List<TextSpan> getPageNineTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-
-// List<TextSpan> getPageNineTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList22[i];
-//   return [
-//     // ElmtextTwentyThree
-//     // pageNine
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.title, style: titleStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah2, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

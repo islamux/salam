@@ -26,19 +26,3 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![2], style: null),
   ];
 }
-
-// List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList22[i];
-
-//   return [
-//     // Form ElmTextTwentyTwo{} // page 3
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.text3),
-//   ];
-// }

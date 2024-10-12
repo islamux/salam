@@ -9,8 +9,6 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
 
   ElmModelNew elm = elmList[i];
   return [
-    // from ElmTextTwentyThree
-    // pageTwo
     // text 0
     if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
@@ -37,22 +35,3 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![3], style: null),
   ];
 }
-
-// List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   ElmModel elm = elmList23[i];
-//   return [
-//     // from ElmTextTwentyThree
-//     // pageTwo
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//     TextSpan(text: elm.title, style: titleStyle),
-//     TextSpan(text: elm.text3),
-//     TextSpan(text: elm.ayah2, style: ayahStyle),
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.text4),
-//   ];
-// }
