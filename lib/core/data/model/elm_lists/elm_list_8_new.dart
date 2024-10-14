@@ -104,7 +104,7 @@ List<ElmModelNew> elmList8New = [
   ElmModelNew(
     ayahs: [
       ElmTextDersEight.ayahHadithEightTen_1,
-      ElmTextDersEight.ayahHadithEightTen_1,
+      ElmTextDersEight.ayahHadithEightTen_2,
     ],
     texts: [
       ElmTextDersEight.elmTextEightTen_1,

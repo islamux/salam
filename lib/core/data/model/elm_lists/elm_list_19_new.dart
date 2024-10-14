@@ -49,11 +49,11 @@ List<ElmModelNew> elmList19New = [
     texts: [
       ElmTextNineteen.elmTextNineteenFour_1,
       ElmTextNineteen.elmTextNineteenFour_2,
-      ElmTextNineteen.ayahHadithNineteenFour_2,
       ElmTextNineteen.elmTextNineteenFour_3,
     ],
     ayahs: [
       ElmTextNineteen.ayahHadithNineteenFour_1,
+      ElmTextNineteen.ayahHadithNineteenFour_2,
     ],
   ),
   // page 5

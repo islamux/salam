@@ -5,13 +5,9 @@ import 'package:flutter/material.dart';
 List<TextSpan> getPageSevnteenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-  TextStyle footerStyle = AppTheme.customTextStyleFooter();
-  TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 
   ElmModelNew elm = elmList[i];
   return [
-    // From ElmTextTwentyThree
-    // pageSeventeen
     // title
     if (elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle),

@@ -26,10 +26,10 @@ List<ElmModelNew> elmList21New = [
   ElmModelNew(
     ayahs: [
       ElmTextTwentyOne.ayahHadithTwentyOneTwo_1,
+      ElmTextTwentyOne.ayahHadithTwentyOneTwo_2
     ],
     texts: [
       ElmTextTwentyOne.elmTextTwentyOneTwo_1,
-      ElmTextTwentyOne.elmTextTwentyOneTwo_2,
     ],
     subtitles: [
       ElmTextTwentyOne.subtitleTwentyOneTwo_1,
@@ -41,7 +41,6 @@ List<ElmModelNew> elmList21New = [
       ElmTextTwentyOne.ayahHadithTwentyOneThree_1,
       ElmTextTwentyOne.ayahHadithTwentyOneThree_2,
       ElmTextTwentyOne.ayahHadithTwentyOneThree_3,
-      ElmTextTwentyOne.ayahHadithTwentyOneThree_4,
     ],
     subtitles: [
       ElmTextTwentyOne.subtitleTwentyOneThree_1,
@@ -50,6 +49,7 @@ List<ElmModelNew> elmList21New = [
       ElmTextTwentyOne.elmTextTwentyOneThree_1,
       ElmTextTwentyOne.elmTextTwentyOneThree_2,
       ElmTextTwentyOne.elmTextTwentyOneThree_3,
+      ElmTextTwentyOne.elmTextTwentyOneThree_4,
     ],
   ),
   // page 4
@@ -117,20 +117,21 @@ List<ElmModelNew> elmList21New = [
       ElmTextTwentyOne.elmTextTwentyOneEigth_4,
     ],
   ),
-  // page 9
+  // page 9 -- under edit
   ElmModelNew(
     ayahs: [
       ElmTextTwentyOne.ayahHadithTwentyOneNine_1,
       ElmTextTwentyOne.ayahHadithTwentyOneNine_2,
       ElmTextTwentyOne.ayahHadithTwentyOneNine_3,
+      ElmTextTwentyOne.ayahHadithTwentyOneNine_4,
+      ElmTextTwentyOne.ayahHadithTwentyOneNine_5,
     ],
     texts: [
       ElmTextTwentyOne.elmTextTwentyOneNine_1,
       ElmTextTwentyOne.elmTextTwentyOneNine_2,
-      ElmTextTwentyOne.elmtTextTwentyOneNine_3,
-    ],
-    subtitles: [
-      ElmTextTwentyOne.subtitleTwentyOneNine_1,
+      ElmTextTwentyOne.elmTextTwentyOneNine_3,
+      ElmTextTwentyOne.elmTextTwentyOneNine_4,
+      ElmTextTwentyOne.elmTextTwentyOneNine_5,
     ],
   ),
   // page 10
@@ -145,7 +146,6 @@ List<ElmModelNew> elmList21New = [
   ),
   // page 11
   ElmModelNew(
-    titles: [ElmTextTwentyOne.titleTwentyEleven],
     ayahs: [
       ElmTextTwentyOne.ayahHadithTwentyOneEleven_1,
       ElmTextTwentyOne.ayahHadithTwentyOneEleven_2,
@@ -154,6 +154,7 @@ List<ElmModelNew> elmList21New = [
     texts: [
       ElmTextTwentyOne.elmTextTwentyOneEleven_1,
       ElmTextTwentyOne.elmTextTwentyOneEleven_2,
+      ElmTextTwentyOne.elmTextTwentyOneEleven_3,
     ],
   ),
   // page 12
@@ -212,22 +213,20 @@ List<ElmModelNew> elmList21New = [
       ElmTextTwentyOne.ayahHdithTwentyOneFifteen_1,
     ],
   ),
-  // page 16
+  // page 16 -- under editing
   ElmModelNew(
     ayahs: [
       ElmTextTwentyOne.ayahHadithTwentyOneSixteen_1,
       ElmTextTwentyOne.ayahHadithTwentyOneSixteen_2,
       ElmTextTwentyOne.ayahHadithTwentyOneSixteen_3,
-      ElmTextTwentyOne.elmTextTwentyOneSixteen_4,
     ],
     texts: [
       ElmTextTwentyOne.elmTextTwentyOneSixteen_1,
       ElmTextTwentyOne.elmTextTwentyOneSixteen_2,
       ElmTextTwentyOne.elmTextTwentyOneSixteen_3,
-      ElmTextTwentyOne.ayahHadithTwentyOneSixteen_4,
     ],
   ),
-  // page 17
+  // page 17 -- under editing
   ElmModelNew(
     subtitles: [
       ElmTextTwentyOne.subtitleTwentyOneSeventeen_1,

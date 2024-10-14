@@ -145,7 +145,7 @@ List<ElmModelNew> elmList16New = [
     // 13
     ayahs: [
       ElmTextDersSixteen.ayahHadithSixteenTherteen_1,
-      ElmTextDersSixteen.ayahHadithSixteenTherteen_1,
+      ElmTextDersSixteen.ayahHadithSixteenTherteen_2,
     ],
     texts: [
       ElmTextDersSixteen.elmTextDersSixteenTherteen_1,

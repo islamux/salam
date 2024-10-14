@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageNineTexts(int i, List<ElmModelNew> elmList) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-  TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   ElmModelNew elm = elmList[i];
   return [
     // ayah 0
@@ -22,11 +21,20 @@ List<TextSpan> getPageNineTexts(int i, List<ElmModelNew> elmList) {
     // ayah 2
     if (elm.ayahs != null && elm.ayahs!.length > 2)
       TextSpan(text: elm.ayahs![2], style: ayahStyle),
-    // subtitle 0
-    if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
-      TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
+    // ayah 3
+    if (elm.ayahs != null && elm.ayahs!.length > 3)
+      TextSpan(text: elm.ayahs![3], style: ayahStyle),
+    // text 3
+    if (elm.texts != null && elm.texts!.length > 3)
+      TextSpan(text: elm.texts![3], style: null),
+    // ayah 4
+    if (elm.ayahs != null && elm.ayahs!.length > 4)
+      TextSpan(text: elm.ayahs![4], style: ayahStyle),
+    // text 4
+    if (elm.texts != null && elm.texts!.length > 4)
+      TextSpan(text: elm.texts![4], style: null),
   ];
 }

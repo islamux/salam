@@ -25,11 +25,5 @@ List<TextSpan> getPageSixteenTexts(int i, List<ElmModelNew> elmList) {
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
-    // ayah 3
-    if (elm.ayahs != null && elm.ayahs!.length > 3)
-      TextSpan(text: elm.ayahs![3], style: ayahStyle),
-    // text 3
-    if (elm.texts != null && elm.texts!.length > 3)
-      TextSpan(text: elm.texts![3], style: null),
   ];
 }

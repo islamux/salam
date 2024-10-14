@@ -318,6 +318,10 @@ List<ElmModelNew> elmList20New = [
   ElmModelNew(
     ayahs: [
       ElmTextTwenty.ayahHadithTwentyTwentySix_1,
+      ElmTextTwenty.ayahHadithTwentyTwentySix_2
+    ],
+    texts: [
+      ElmTextTwenty.elmTextTwentyTwentySix_1,
     ],
   ),
 

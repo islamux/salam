@@ -106,8 +106,8 @@ List<ElmModelNew> elmList23New = [
   ElmModelNew(
     texts: [
       ElmTextTwentyThree.textTwentyThreePageSeven_1,
-      ElmTextTwentyThree.textTwentyThreePageSeven_2,
-      ElmTextTwentyThree.textTwentyThreePageSeven_3,
+      //  ElmTextTwentyThree.textTwentyThreePageSeven_2,
+      //   ElmTextTwentyThree.textTwentyThreePageSeven_3,
       ElmTextTwentyThree.textTwentyThreePageSeven_4,
       ElmTextTwentyThree.textTwentyThreePageSeven_5,
       ElmTextTwentyThree.textTwentyThreePageSeven_6,
@@ -117,7 +117,6 @@ List<ElmModelNew> elmList23New = [
     ],
     ayahs: [
       ElmTextTwentyThree.ayahHadithTwentyThreePageSeven_1,
-      ElmTextTwentyThree.ayahHadithTwentyThreePageSeven_3,
       ElmTextTwentyThree.ayahHadithTwentyThreePageSeven_4,
       ElmTextTwentyThree.ayahHadithTwentyThreePageSeven_5,
       ElmTextTwentyThree.ayahHadithTwentyThreePageSeven_6,

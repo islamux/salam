@@ -1,4 +1,3 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +11,6 @@ abstract class BaseController extends GetxController {
   int currentPageCounter = 0;
   List maxPageCounters = [];
 
-  // Methods
   void goToHome() {
     Get.toNamed(AppRoute.home);
   }
@@ -40,33 +38,6 @@ abstract class BaseController extends GetxController {
     currentPageIndex = index;
     resetCounter();
   }
-
-  // String getShareText(int index) {
-  //   final elm = elmListPreNew[index];
-  //   StringBuffer shareText = StringBuffer();
-
-  //   if (elm.title != null) {
-  //     shareText.write('${elm.title!}\n\n');
-  //   }
-
-  //   if (elm.subtitle != null) {
-  //     shareText.write('${elm.subtitle!}\n\n');
-  //   }
-
-  //   if (elm.text != null) {
-  //     shareText.write('${elm.text!}\n\n');
-  //   }
-
-  //   if (elm.ayah != null) {
-  //     shareText.write('${elm.ayah!}\n\n');
-  //   }
-
-  //   if (elm.footer != null) {
-  //     shareText.write(elm.footer!);
-  //   }
-
-  //   return shareText.toString().trim();
-  // }
 
   void increamentPageController() {
     currentPageCounter++;
