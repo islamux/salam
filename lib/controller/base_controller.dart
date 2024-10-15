@@ -147,7 +147,7 @@ abstract class BaseController extends GetxController {
   }
 
   void goToElm17() {
-    Get.toNamed(AppRoute.elm18);
+    Get.toNamed(AppRoute.elm17);
   }
 
   void goToElm18() {

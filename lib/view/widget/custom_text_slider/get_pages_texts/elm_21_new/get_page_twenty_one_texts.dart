@@ -23,6 +23,9 @@ List<TextSpan> getPageTwentyOneTexts(int i, List<ElmModelNew> elmList) {
     // subtitle 1
     if (elm.subtitles != null && elm.subtitles!.length > 1)
       TextSpan(text: elm.subtitles![1], style: subtitleStyle),
+    // text 2
+    if (elm.texts != null && elm.texts!.length > 1)
+      TextSpan(text: elm.texts![2], style: null),
     // ayah 1
     if (elm.ayahs != null && elm.ayahs!.length > 1)
       TextSpan(text: elm.ayahs![1], style: ayahStyle),

@@ -429,11 +429,11 @@ class ElmTextTwentyOne {
  """;
 
 // page 17
-  static const String subtitleTwentyOneSeventeen_1 = """
+  static const String elmTextTwentyOneSeventeen_1 = """
 الإيمان الكامل أن تقف موقفاً حكيماً من دون حقد ولا إشراك بالله ممن تلقيت منه الأذى 
 """;
 
-  static const String elmTextTwentyOneSeventeen_1 = """
+  static const String elmTextTwentyOneSeventeen_2 = """
 الإيمان الكامل حتى لو جاءك لا سمح الله شر على يد إنسان، فهذا الإنسان لا يستطيع أن يفعل ما فعل إلا بعد أن يأذن الله، وهذا الإنسان سيحاسب ولكن شاءت حكمة الله أن يكون الأذى على يده، إذاً يجب أن تقف موقفاً حكيماً من دون حقد، ولا إشراك بالله، فمع التوحيد الكامل تقف الموقف الكامل، فإن كانت الحكمة أن تعاقبه لتردعه عن أن يعود لمثلها فلا مانع ولكن بالحالتين بدون حقد 
 """;
 
@@ -442,11 +442,11 @@ class ElmTextTwentyOne {
 ياايها الذين امنوا اصبروا وصابروا 
 
 """;
-  static const String subtitleTwentyOnSeventeen_2 = """
+  static const String subtitleTwentyOnSeventeen_1 = """
 الحكمة من بدء الآية بالنداء بلفظ الإيمان 
 """;
 
-  static const String elmTextTwentyOneSeventeen_2 = """
+  static const String elmTextTwentyOneSeventeen_3 = """
 أية آية تبدأ بقوله تعالى 
  """;
 
@@ -456,7 +456,7 @@ class ElmTextTwentyOne {
 
  """;
 
-  static const String elmTextTwentyOneSeventeen_3 = """
+  static const String elmTextTwentyOneSeventeen_4 = """
 أي إنكم أيها المؤمنون مرتبطون مع الله بعقد إيماني، أنتم آمنتم به موجوداً وواحداً وكاملاً، 
 أمنتم به خالقاً ومربياً ومسيراً، آمنتم بأسمائه الحسنى وصفاته الفضلى، آمنتم أن الأمر كله بيده، وأن كماله كمال مطلق، وأن حكمته لا حكمة بعدها، ورحمته، وقدرته، وعدله بحسب إيمانكم، ومعرفتكم افعلوا كذا اصبروا 
    """;
@@ -478,7 +478,7 @@ class ElmTextTwentyOne {
 
   static const String elmTextTwentyOneEighteen_2 = """
 وقد مكروا مكرهم وعند الله مكرهم وإن كان مكرهم لتزول منه الجبال 
-خالق الأكوان يقول: 
+خالق الأكوان يقول 
   """;
 
   static const String ayahHadithTwentyOneEighteen_2 = """
@@ -532,7 +532,7 @@ class ElmTextTwentyOne {
  """;
 
   // page 20
-  static const String subtitleTwentyOneTwenty_1 = """
+  static const String elmTextTwentyOneTwenty_1 = """
 آية في كتاب الله إذا قرأتها يقشعر لها الجلد، ربنا يحدثنا عن أحد أنبيائه العظام قال 
  """;
 
@@ -542,7 +542,7 @@ class ElmTextTwentyOne {
 
  """;
 
-  static const String elmTextTwentyOneTwenty_1 = """
+  static const String elmTextTwentyOneTwenty_2 = """
 وتكلم عن نبي أخر فقال
  """;
 
@@ -550,7 +550,7 @@ class ElmTextTwentyOne {
       وابراهيم الذي وفى 
 """;
 
-  static const String elmTextTwentyOneTwenty_2 = """
+  static const String elmTextTwentyOneTwenty_3 = """
 وفى ماعليه، وفى نعمة الله شكراً، ومنهج الله طاعة، وفى الله ذكراً ومعرفة 
   """;
   static const String ayahHadithTwentyOneTwenty_3 = """
@@ -559,7 +559,7 @@ class ElmTextTwentyOne {
 
   """;
 
-  static const String elmTextTwentyOneTwenty_3 = """
+  static const String elmTextTwentyOneTwenty_4 = """
 
 لنصبر على مكر أعدائنا، وعلى شظف العيش أحياناً، ربما لا تدوم النعم، وقد يأتي ظرف صعب، وربما لا يتاح لنا أن نعيش كما كنا نعيش، لأنك مؤمن، ولأن الإيمان أكبر قضية في حياتك، فينبغي أن تصبر 
   """;
@@ -593,7 +593,8 @@ class ElmTextTwentyOne {
 
   static const String subtitleTwentyOneTwentyOne_2 = """
 الصبر: أجره بغير حساب 
-
+""";
+  static const String elmTextTwentyOneTwentyOne_3 = """
 الحقيقة: دائماً لكل عمل صالح أجر من ضعف إلى عشرة أضعاف إلى سبعمائة ضعف إلا الصبر 
   """;
 
