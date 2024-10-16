@@ -1,9 +1,7 @@
 import 'package:elm/core/data/static/theme/app_them.dart';
-import 'package:elm/route.dart';
 import 'package:elm/view/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'binding.dart';
 
 void main() {
   // splash screen
