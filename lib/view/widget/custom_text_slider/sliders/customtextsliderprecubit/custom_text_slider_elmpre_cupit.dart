@@ -1,5 +1,5 @@
 import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_imp.dart';
-import 'package:elm/controller/elm_pre_cubit_controller/elmpre_cubit_controller_imp.dart';
+import 'package:elm/controller/elm_pre_cubit_controller/elmpre_cubit.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -12,9 +12,9 @@ class CustomTextSliderElmPre extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ElmPreCubitControllerImp, ElmpreState>(
+    return BlocBuilder<ElmPreCubit, ElmpreState>(
       builder: (context, state) {
-        var cubit = context.read<ElmPreCubitControllerImp>();
+        var cubit = context.read<ElmPreCubit>();
 
         return Stack(
           children: [
@@ -44,8 +44,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                           padding: const EdgeInsets.only(
                               top: 60, left: 32, right: 32, bottom: 60),
                           child: SingleChildScrollView(
-                            child: BlocBuilder<ElmPreCubitControllerImp,
-                                ElmpreState>(
+                            child: BlocBuilder<ElmPreCubit, ElmpreState>(
                               builder: (context, state) {
                                 return RichText(
                                   text: TextSpan(

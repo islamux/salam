@@ -35,10 +35,9 @@ class Elm extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Elm',
       theme: AppTheme.goldenTheme,
-      initialBinding: MyBinding(),
       home: const Home(),
+
       // Routes
-      getPages: routes,
     );
   }
 }

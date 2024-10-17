@@ -1,4 +1,4 @@
-import 'package:elm/controller/font_controller.dart';
+import 'package:elm/controller/font_cubit.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

@@ -2,8 +2,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_imp.dart';
 
-class ElmPreCubitControllerImp extends Cubit<ElmpreState> {
-  ElmPreCubitControllerImp() : super(ElmPreInitial());
+class ElmPreCubit extends Cubit<ElmpreState> {
+  ElmPreCubit() : super(ElmPreInitial());
 
   double fontSize = 21.0;
   int currentIndex = 0;

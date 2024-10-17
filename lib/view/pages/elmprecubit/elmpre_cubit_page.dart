@@ -1,4 +1,4 @@
-import 'package:elm/controller/elm_pre_cubit_controller/elmpre_cubit_controller_imp.dart';
+import 'package:elm/controller/elm_pre_cubit_controller/elmpre_cubit.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elmpre.dart';
@@ -12,7 +12,7 @@ class ElmPreCubitPage extends StatelessWidget {
   Widget build(BuildContext context) {
     //ElmPreControllerImp controllerAs = Get.put(AthkarSabahControllerImp());
     return BlocProvider(
-      create: (context) => ElmPreCubitControllerImp(),
+      create: (context) => ElmPreCubit(),
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: AppColor.black,
@@ -23,8 +23,7 @@ class ElmPreCubitPage extends StatelessWidget {
               IconButton(
                 // share content with cubit
                 onPressed: () =>
-                    BlocProvider.of<ElmPreCubitControllerImp>(context)
-                        .customShareContent(),
+                    BlocProvider.of<ElmPreCubit>(context).customShareContent(),
                 icon: const Icon(Icons.share),
               ),
               const Text(
@@ -39,7 +38,7 @@ class ElmPreCubitPage extends StatelessWidget {
           centerTitle: true,
           leading: GestureDetector(
             onTap: () {
-              context.read<ElmPreCubitControllerImp>().resetCounter;
+              context.read<ElmPreCubit>().resetCounter;
               Navigator.pushNamed(context, AppRoute.home);
               // Get.find<ElmPreControllerImp>().resetCounter();
               // Get.toNamed(AppRoute.home);
@@ -49,7 +48,7 @@ class ElmPreCubitPage extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {
-                context.read<ElmPreCubitControllerImp>().decreaseFontSize();
+                context.read<ElmPreCubit>().decreaseFontSize();
                 //controllerAs.decreaseFontSize();
                 // decreaseFont(controllerAs);
               },
@@ -68,7 +67,7 @@ class ElmPreCubitPage extends StatelessWidget {
 
             IconButton(
                 onPressed: () {
-                  context.read<ElmPreCubitControllerImp>().increastFontSize();
+                  context.read<ElmPreCubit>().increastFontSize();
                   //controllerAs.increaseFontSize();
                   //   increaseFont(controllerAs);
                 },
