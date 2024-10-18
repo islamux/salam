@@ -1,20 +1,24 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_state.dart';
 
-import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_imp.dart';
+class ElmPreCubit extends Cubit<ElmPreState> {
+  int currentPageIndex = 0; // Initialize the currentPageIndex
+  PageController pageControllerAssma = PageController();
 
-class ElmPreCubit extends Cubit<ElmpreState> {
   ElmPreCubit() : super(ElmPreInitial());
 
   double fontSize = 21.0;
-  int currentIndex = 0;
+// Define the page counter or whatever value you want to reset
+  int counter = 0;
 
-  get resetCounter => null;
+  void resetCounter() {
+    counter = 0; // Reset your counter or state logic here
+    emit(ElmPreStateUpdated(
+        updatedCounter: counter)); // Emit new state after resetting
+  }
 
-  get pageControllerAssma => null;
-
-  get currentPageIndex => null;
-
-  void increastFontSize() {
+  void increasFontSize() {
     if (fontSize <= 37.0) {
       fontSize += 2.0;
       emit(ElmPreFontSizeChanged(fontSize));
@@ -29,12 +33,13 @@ class ElmPreCubit extends Cubit<ElmpreState> {
   }
 
   void onPageChanged(int index) {
-    currentIndex = index;
+    currentPageIndex = index;
     emit(ElmPrePageChanged(index));
   }
 
   void goToPage(int index) {
-    currentIndex = index;
+    pageControllerAssma.jumpToPage(index);
+    currentPageIndex = index;
     emit(ElmPrePageChanged(index));
   }
 

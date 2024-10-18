@@ -1,13 +1,15 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FontCubit extends Cubit<double> {
-  FontCubit() : super(21.0); // initial font size
+  // Initial font size
+  FontCubit() : super(16.0);
 
-  void increaseFontSize() {
-    if (state < 37.0) emit(state + 2.0);
-  }
+  // Method to increase font size
+  void increaseFontSize() => emit(state + 1);
 
-  void decreaseFontSize() {
-    if (state > 21.0) emit(state - 2.0);
-  }
+  // Method to decrease font size
+  void decreaseFontSize() => emit(state - 1);
+
+  // Method to set a specific font size
+  void setFontSize(double size) => emit(size);
 }

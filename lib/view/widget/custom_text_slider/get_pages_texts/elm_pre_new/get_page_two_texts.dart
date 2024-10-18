@@ -13,17 +13,3 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
     TextSpan(text: elm.texts![0]),
   ];
 }
-
-
-
-// List<TextSpan> getPageTwoTexts(int i) {
-//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
-//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
-//   ElmModelNew elmPre = elmListPreNew[i];
-//   return [
-//     TextSpan(text: elmPre.titles![0], style: titleStyle),
-//     TextSpan(text: elmPre.subtitles![0], style: subtitleStyle),
-//     TextSpan(text: elmPre.texts![0]),
-//   ];
-// }
-

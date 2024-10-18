@@ -1,16 +1,18 @@
+import 'package:elm/app_routes.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
-import 'package:elm/view/pages/home.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:elm/controller/home_cubit_controller/home_cubit.dart';
 
 void main() {
-  // splash screen
+  // Splash screen
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  // After splash screen now you could run app
-  runApp(const Elm());
-  // wait 2 second showing splash screen.
+  // After splash screen now you can run the app
+  runApp(const ElmApp());
+
+  // Wait 2 seconds before removing the splash screen
   Future.delayed(const Duration(seconds: 2), () {
     FlutterNativeSplash.remove();
   });
@@ -22,22 +24,23 @@ class FlutterNativeSplash {
   static void remove() {}
 }
 
-class Elm extends StatelessWidget {
-  const Elm({super.key});
+class ElmApp extends StatelessWidget {
+  const ElmApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    // Remove splash screen after after app run
-
-    //check if there are images in all application that decrease performance.
-    //debugInvertOversizeImages = true; // i disable it after check images
-
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Elm',
-      theme: AppTheme.goldenTheme,
-      home: const Home(),
-
-      // Routes
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => HomeCubit()), // Initialize HomeCubit
+        // You can add more Cubits/Blocs here as needed
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Elm',
+        theme: AppTheme.goldenTheme,
+        initialRoute: '/', // Set the initial route to Home
+        onGenerateRoute: RouteApp.generateRoute, // Use the route generator
+      ),
     );
   }
 }
