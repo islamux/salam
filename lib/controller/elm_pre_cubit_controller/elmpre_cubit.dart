@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_state.dart';
+import 'package:share_plus/share_plus.dart';
 
 class ElmPreCubit extends Cubit<ElmPreState> {
   int currentPageIndex = 0; // Initialize the currentPageIndex
@@ -43,5 +44,16 @@ class ElmPreCubit extends Cubit<ElmPreState> {
     emit(ElmPrePageChanged(index));
   }
 
-  customShareContent() {}
+  // Share functionality
+  void customShareContent() {
+    try {
+      final contentToShare =
+          "Check out this page: Page $currentPageIndex"; // Dynamic content
+      Share.share(contentToShare);
+      emit(ElmPreShareSuccess());
+    } catch (e) {
+      emit(ElmPreShareFailure(
+          erroMessage: "Failed to share content: ${e.toString()}"));
+    }
+  }
 }

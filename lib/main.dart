@@ -38,7 +38,8 @@ class ElmApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Elm',
         theme: AppTheme.goldenTheme,
-        initialRoute: '/', // Set the initial route to Home
+        initialRoute: RouteApp.home, // Set the initial route to Home
+
         onGenerateRoute: RouteApp.generateRoute, // Use the route generator
       ),
     );
