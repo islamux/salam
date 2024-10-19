@@ -23,8 +23,13 @@ class ElmPrePage extends StatelessWidget {
                 children: [
                   IconButton(
                     // Share content with cubit
-                    onPressed: () =>
-                        context.read<ElmPreCubit>().customShareContent(),
+                    onPressed: () {
+                      final currentPageIndex =
+                          context.read<ElmPreCubit>().currentPageIndex;
+                      context
+                          .read<ElmPreCubit>()
+                          .customShareContent(currentPageIndex);
+                    },
                     icon: const Icon(Icons.share),
                   ),
                   const Text(
