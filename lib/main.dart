@@ -1,8 +1,9 @@
 import 'package:elm/app_routes.dart';
+import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
+import 'package:elm/cubit/home_cubit/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:elm/controller/home_cubit_controller/home_cubit.dart';
 
 void main() {
   // Splash screen
@@ -38,7 +39,7 @@ class ElmApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Elm',
         theme: AppTheme.goldenTheme,
-        initialRoute: RouteApp.home, // Set the initial route to Home
+        initialRoute: RoutesConstant.home, // Set the initial route to Home
 
         onGenerateRoute: RouteApp.generateRoute, // Use the route generator
       ),

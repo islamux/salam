@@ -1,7 +1,7 @@
 import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_state.dart';
+import 'package:elm/cubit/elm_pre_cubit/elm_pre_state.dart';
 import 'package:share_plus/share_plus.dart';
 
 class ElmPreCubit extends Cubit<ElmPreState> {

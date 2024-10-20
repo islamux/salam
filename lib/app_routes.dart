@@ -1,17 +1,15 @@
-import 'package:elm/view/pages/elmpre/elmpre_page.dart';
+import 'package:elm/core/data/static/routes_constant.dart';
+import 'package:elm/view/pages/elmpre_page.dart';
 import 'package:flutter/material.dart';
 import 'package:elm/view/pages/home.dart';
 
 class RouteApp {
-  static const String home = '/home';
-  static const String elmPre = '/elmPre';
-
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case home:
+      case RoutesConstant.home:
         return MaterialPageRoute(builder: (_) => const Home());
 
-      case elmPre:
+      case RoutesConstant.elmPre:
         return MaterialPageRoute(builder: (_) => const ElmPrePage());
 
       // case '/elm1':

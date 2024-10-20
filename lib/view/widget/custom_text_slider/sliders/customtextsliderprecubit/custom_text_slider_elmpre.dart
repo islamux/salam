@@ -1,5 +1,5 @@
-import 'package:elm/controller/elm_pre_cubit_controller/elm_pre_cubit_state.dart';
-import 'package:elm/controller/elm_pre_cubit_controller/elmpre_cubit.dart';
+import 'package:elm/cubit/elm_pre_cubit/elm_pre_state.dart';
+import 'package:elm/cubit/elm_pre_cubit/elmpre_cubit.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
@@ -14,7 +14,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<ElmPreCubit, ElmPreState>(
       builder: (context, state) {
-        var cubit = context.read<ElmPreCubit>();
+        ElmPreCubit cubit = context.read<ElmPreCubit>();
 
         return Stack(
           children: [

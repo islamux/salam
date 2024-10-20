@@ -1,4 +1,4 @@
-import 'package:elm/controller/elm_pre_cubit_controller/elmpre_cubit.dart';
+import 'package:elm/cubit/elm_pre_cubit/elmpre_cubit.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/customtextsliderprecubit/custom_text_slider_elmpre.dart';
@@ -43,7 +43,7 @@ class ElmPrePage extends StatelessWidget {
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  context.read<ElmPreCubit>().resetCounter();
+                  //   context.read<ElmPreCubit>().resetCounter();
                   // Ensure resetCounter is invoked
                   Navigator.pushNamed(context, RoutesConstant.home);
                 },
@@ -63,9 +63,7 @@ class ElmPrePage extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {
-                    context
-                        .read<ElmPreCubit>()
-                        .increasFontSize(); // Fixed typo (increaseFontSize)
+                    context.read<ElmPreCubit>().increasFontSize();
                   },
                   icon: const Icon(Icons.add),
                 )
@@ -75,8 +73,7 @@ class ElmPrePage extends StatelessWidget {
               child: Column(
                 children: [
                   Expanded(
-                    child:
-                        CustomTextSliderElmPre(), // Display your custom text slider here
+                    child: CustomTextSliderElmPre(),
                   ),
                 ],
               ),
