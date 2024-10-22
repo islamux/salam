@@ -1,7 +1,7 @@
-import 'package:elm/cubit/elm_pre_cubit/elmpre_cubit.dart';
+import 'package:elm/cubit/pages_cubits/elm_pre_cubit.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/customtextsliderprecubit/custom_text_slider_elmpre.dart';
+import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elmpre.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -63,7 +63,7 @@ class ElmPrePage extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {
-                    context.read<ElmPreCubit>().increasFontSize();
+                    context.read<ElmPreCubit>().increaseFontSize();
                   },
                   icon: const Icon(Icons.add),
                 )

@@ -1,7 +1,7 @@
 import 'package:elm/app_routes.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
-import 'package:elm/cubit/home_cubit/home_cubit.dart';
+import 'package:elm/cubit/pages_cubits/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
