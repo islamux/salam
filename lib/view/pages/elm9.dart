@@ -1,6 +1,6 @@
-import 'package:elm/cubit/pages_cubits/elm9_cubit.dart'; // Import Elm9Cubit
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/cubit/pages_cubits/elm_9_cubit.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm9.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -46,7 +46,9 @@ class Elm9Page extends StatelessWidget {
               actions: [
                 IconButton(
                   onPressed: () {
-                    context.read<Elm9Cubit>().decreaseFontSize(); // Decrease font size
+                    context
+                        .read<Elm9Cubit>()
+                        .decreaseFontSize(); // Decrease font size
                   },
                   icon: const Icon(Icons.remove),
                 ),
@@ -58,7 +60,9 @@ class Elm9Page extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {
-                    context.read<Elm9Cubit>().increaseFontSize(); // Increase font size
+                    context
+                        .read<Elm9Cubit>()
+                        .increaseFontSize(); // Increase font size
                   },
                   icon: const Icon(Icons.add),
                 ),

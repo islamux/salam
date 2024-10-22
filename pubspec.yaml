@@ -23,6 +23,7 @@ dependencies:
   flutter_launcher_icons: ^0.13.1 # change icons
   change_app_package_name: ^1.1.0 # remove later
   flutter_bloc: ^8.1.6
+  flutter_native_splash: ^2.4.2
   
 dev_dependencies:
   flutter_test:

@@ -1,29 +1,29 @@
 import 'package:elm/core/data/static/routes_constant.dart';
+import 'package:elm/view/pages/elm1.dart';
+import 'package:elm/view/pages/elm10.dart';
+import 'package:elm/view/pages/elm11.dart';
+import 'package:elm/view/pages/elm12.dart';
+import 'package:elm/view/pages/elm13.dart';
+import 'package:elm/view/pages/elm14.dart';
+import 'package:elm/view/pages/elm15.dart';
+import 'package:elm/view/pages/elm16.dart';
+import 'package:elm/view/pages/elm17.dart';
+import 'package:elm/view/pages/elm18.dart';
+import 'package:elm/view/pages/elm19.dart';
+import 'package:elm/view/pages/elm2.dart';
+import 'package:elm/view/pages/elm20.dart';
+import 'package:elm/view/pages/elm21.dart';
+import 'package:elm/view/pages/elm22.dart';
+import 'package:elm/view/pages/elm23.dart';
+import 'package:elm/view/pages/elm3.dart';
+import 'package:elm/view/pages/elm4.dart';
+import 'package:elm/view/pages/elm5.dart';
+import 'package:elm/view/pages/elm6.dart';
+import 'package:elm/view/pages/elm7.dart';
+import 'package:elm/view/pages/elm8.dart';
+import 'package:elm/view/pages/elm9.dart';
 import 'package:elm/view/pages/elmpre_page.dart';
 import 'package:elm/view/pages/home.dart';
-import 'package:elm/view/pages/elm1_page.dart'; // Import your Elm1 page
-import 'package:elm/view/pages/elm2_page.dart'; // Import your Elm2 page
-import 'package:elm/view/pages/elm3_page.dart'; // Import your Elm3 page
-import 'package:elm/view/pages/elm4_page.dart'; // Import your Elm4 page
-import 'package:elm/view/pages/elm5_page.dart'; // Import your Elm5 page
-import 'package:elm/view/pages/elm6_page.dart'; // Import your Elm6 page
-import 'package:elm/view/pages/elm7_page.dart'; // Import your Elm7 page
-import 'package:elm/view/pages/elm8_page.dart'; // Import your Elm8 page
-import 'package:elm/view/pages/elm9_page.dart'; // Import your Elm9 page
-import 'package:elm/view/pages/elm10_page.dart'; // Import your Elm10 page
-import 'package:elm/view/pages/elm11_page.dart'; // Import your Elm11 page
-import 'package:elm/view/pages/elm12_page.dart'; // Import your Elm12 page
-import 'package:elm/view/pages/elm13_page.dart'; // Import your Elm13 page
-import 'package:elm/view/pages/elm14_page.dart'; // Import your Elm14 page
-import 'package:elm/view/pages/elm15_page.dart'; // Import your Elm15 page
-import 'package:elm/view/pages/elm16_page.dart'; // Import your Elm16 page
-import 'package:elm/view/pages/elm17_page.dart'; // Import your Elm17 page
-import 'package:elm/view/pages/elm18_page.dart'; // Import your Elm18 page
-import 'package:elm/view/pages/elm19_page.dart'; // Import your Elm19 page
-import 'package:elm/view/pages/elm20_page.dart'; // Import your Elm20 page
-import 'package:elm/view/pages/elm21_page.dart'; // Import your Elm21 page
-import 'package:elm/view/pages/elm22_page.dart'; // Import your Elm22 page
-import 'package:elm/view/pages/elm23_page.dart'; // Import your Elm23 page
 import 'package:flutter/material.dart';
 
 class RouteApp {

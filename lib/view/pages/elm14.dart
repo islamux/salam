@@ -1,6 +1,6 @@
-import 'package:elm/cubit/pages_cubits/elm14_cubit.dart'; // Import the Elm14Cubit
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:elm/cubit/pages_cubits/elm_14_cubit.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm14.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,14 +39,17 @@ class Elm14Page extends StatelessWidget {
               leading: GestureDetector(
                 onTap: () {
                   context.read<Elm14Cubit>().resetCounter(); // Reset counter
-                  Navigator.pushNamed(context, RoutesConstant.home); // Navigate to home
+                  Navigator.pushNamed(
+                      context, RoutesConstant.home); // Navigate to home
                 },
                 child: const Icon(Icons.arrow_back),
               ),
               actions: [
                 IconButton(
                   onPressed: () {
-                    context.read<Elm14Cubit>().decreaseFontSize(); // Decrease font size
+                    context
+                        .read<Elm14Cubit>()
+                        .decreaseFontSize(); // Decrease font size
                   },
                   icon: const Icon(Icons.remove),
                 ),
@@ -58,7 +61,9 @@ class Elm14Page extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {
-                    context.read<Elm14Cubit>().increaseFontSize(); // Increase font size
+                    context
+                        .read<Elm14Cubit>()
+                        .increaseFontSize(); // Increase font size
                   },
                   icon: const Icon(Icons.add),
                 ),

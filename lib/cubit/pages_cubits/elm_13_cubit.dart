@@ -1,3 +1,5 @@
 import 'package:elm/cubit/base_cubit/base_page_cubit.dart';
 
-class Elm13Cubit extends BasePageCubit {}
+class Elm13Cubit extends BasePageCubit {
+  void customShareContent(int currentPageIndex) {}
+}

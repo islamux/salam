@@ -1,9 +1,9 @@
+import 'package:elm/core/data/model/elm_lists/elm_list_22_new.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart'; // Import BasePageState for managing state
-import 'package:elm/core/data/model/elm_lists/elm_list_10_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/pages_cubits/elm_10_cubit.dart';
-import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_10_new.dart';
+import 'package:elm/cubit/pages_cubits/elm_22_cubit.dart';
+import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_22_new.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart'; // Required for Bloc/Cubit
 
@@ -97,12 +97,11 @@ class CustomTextSliderElm22 extends StatelessWidget {
 
                   // Display current page number
                   Text(
-                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmList22New.length}', // Current page number display
-                    style: const TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    )
-                  ),
+                      '${(cubit.currentPageIndex ?? 0) + 1} / ${elmList22New.length}', // Current page number display
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      )),
                 ],
               ),
             ),
