@@ -1,17 +1,17 @@
-import 'package:elm/cubit/pages_cubits/elm_pre_cubit.dart';
+import 'package:elm/cubit/pages_cubits/elm6_cubit.dart'; // Import Elm6Cubit
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elmpre.dart';
+import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm6.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class ElmPrePage extends StatelessWidget {
-  const ElmPrePage({super.key});
+class Elm6Page extends StatelessWidget {
+  const Elm6Page({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => ElmPreCubit(),
+      create: (context) => Elm6Cubit(), // Provide Elm6Cubit
       child: Builder(
         builder: (context) {
           return Scaffold(
@@ -22,29 +22,23 @@ class ElmPrePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
-                    // Share content with cubit
+                    // Share content using cubit
                     onPressed: () {
                       final currentPageIndex =
-                          context.read<ElmPreCubit>().currentPageIndex;
+                          context.read<Elm6Cubit>().currentPageIndex;
                       context
-                          .read<ElmPreCubit>()
+                          .read<Elm6Cubit>()
                           .customShareContent(currentPageIndex);
                     },
                     icon: const Icon(Icons.share),
                   ),
-                  const Text(
-                    "  المقدمة  ",
-                    style: TextStyle(
-                      color: AppColor.primaryColorGolden,
-                    ),
-                  ),
+                  const Text(" الخاطرة 6 "),
                 ],
               ),
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  //   context.read<ElmPreCubit>().resetCounter();
-                  // Ensure resetCounter is invoked
+                  context.read<Elm6Cubit>().resetCounter(); // Reset counter before going back
                   Navigator.pushNamed(context, RoutesConstant.home);
                 },
                 child: const Icon(Icons.arrow_back),
@@ -52,30 +46,30 @@ class ElmPrePage extends StatelessWidget {
               actions: [
                 IconButton(
                   onPressed: () {
-                    context.read<ElmPreCubit>().decreaseFontSize();
+                    context.read<Elm6Cubit>().decreaseFontSize(); // Decrease font size
                   },
                   icon: const Icon(Icons.remove),
                 ),
-                const Center(
-                  child: Text(
-                    "الخط",
-                  ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("الخط"), // Font label
+                  ],
                 ),
                 IconButton(
                   onPressed: () {
-                    context.read<ElmPreCubit>().increaseFontSize();
+                    context.read<Elm6Cubit>().increaseFontSize(); // Increase font size
                   },
                   icon: const Icon(Icons.add),
-                )
+                ),
               ],
             ),
-            body: const SafeArea(
-              child: Column(
-                children: [
-                  Expanded(
-                    child: CustomTextSliderElmPre(),
-                  ),
-                ],
+            body: SafeArea(
+              child: GestureDetector(
+                onTap: () {
+                  Feedback.forTap(context); // Add feedback when tapping
+                },
+                child: const CustomTextSliderElm6(), // Custom text slider
               ),
             ),
           );
