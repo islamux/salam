@@ -1,3 +1,4 @@
+import 'package:elm/core/data/model/elm_lists/elm_list_17_new.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/pages_cubits/elm_17_cubit.dart';
@@ -28,7 +29,7 @@ class Elm17Page extends StatelessWidget {
                           context.read<Elm17Cubit>().currentPageIndex;
                       context
                           .read<Elm17Cubit>()
-                          .customShareContent(currentPageIndex);
+                          .customShareContent(currentPageIndex, elmList17New);
                     },
                     icon: const Icon(Icons.share),
                   ),

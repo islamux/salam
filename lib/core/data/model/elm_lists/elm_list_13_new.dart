@@ -17,6 +17,7 @@ List<ElmModelNew> elmList13New = [
     texts: [
       ElmTextDersTherteen.elmTextTherteenOne_1,
       ElmTextDersTherteen.elmTextTherteenOne_2,
+      ElmTextDersTherteen.elmTextTherteenOne_3,
     ],
     footer: ElmTextDersTherteen.footerTherteen,
   ),

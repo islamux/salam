@@ -279,15 +279,13 @@ List<ElmModelNew> elmList23New = [
   ),
   // PageEighteen
   ElmModelNew(
-    titles: [
-      ElmTextTwentyThree.titleTwentyThreePageEighteen_1,
+    ayahs: [
+      ElmTextTwentyThree.ayahTwentyThreePageEighteen_1,
     ],
     texts: [
       ElmTextTwentyThree.textTwentyThreePageEighteen_1,
       ElmTextTwentyThree.textTwentyThreePageEighteen_2,
-    ],
-    subtitles: [
-      ElmTextTwentyThree.subtitleTwentyThreePageEighteen_1,
+      ElmTextTwentyThree.textTwentyThreePageEighteen_3,
     ],
   ),
 ];

@@ -486,18 +486,18 @@ class ElmTextTwentyThree {
 """;
 
 // pageEighteen
-  static const String titleTwentyThreePageEighteen_1 = """
+  static const String ayahTwentyThreePageEighteen_1 = """
         ⭐
 فإذا قضى أمراً فإنما يقول له كن فيكون 
  """;
   static const String textTwentyThreePageEighteen_1 = """
 هذه الآية عجيبة جداً، كن فيكون، دونما اعتبار للزمن، الإنسان هذا المخلوق الضعيف توصل بعلمه إلى اختراع حواسب، فقد يحتاج شيئ ما إلى عمل شهرين من دون حاسوب، فالحاسوب ينجزه في خمس ثوانٍ، فالله عز وجل إذا اراد لك شيئ بأمره فهذا شيئ طبيعي جداً على الله، كن فيكون 
 """;
-  static const String subtitleTwentyThreePageEighteen_1 = """
+  static const String textTwentyThreePageEighteen_2 = """
         ⭐
 خرق القوانين والسنن والعادات الثابتة للأنبياء معجزة، وللأوليا كرامة، وللظُلال ضلالة، قد يؤتى الإنسان بمساعدة الجن بشيءٍ من خرق العادات، هذا فيها ضلالة، لأنها تُوظف في الباطل، وقد يؤتى المؤمن الكريم عند الله كرامة، وقد يُؤتى النبي معجزة 
 """;
-  static const String textTwentyThreePageEighteen_2 = """
+  static const String textTwentyThreePageEighteen_3 = """
         ⭐
  أية قصة في القرآن الكريم ليست مقصودة لذاتها بل مطلوبة للعبرة التي يمكن أن تُستنبط منها لأن العبرة يمكن أن تُطبق في حياتنا
 """;
