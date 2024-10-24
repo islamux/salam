@@ -1,4 +1,3 @@
-// PageState classes (كما هي)
 abstract class BasePageState {}
 
 class PageInitial extends BasePageState {}

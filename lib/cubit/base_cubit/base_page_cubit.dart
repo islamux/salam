@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_interpolation_to_compose_strings
+
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -5,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
 // BaseCubit: يحتوي على كل الدوال الأساسية
-class BasePageCubit extends Cubit<BasePageState> {
+abstract class BasePageCubit extends Cubit<BasePageState> {
   int currentPageIndex = 0;
   PageController pageController = PageController();
   double fontSize = 21.0;
@@ -70,61 +72,17 @@ class BasePageCubit extends Cubit<BasePageState> {
   // Share content function (reusable across all cubits)
   void customShareContent(int currentPageIndex, List<ElmModelNew> elmList) {
     try {
-      final String shareText = getShareText(currentPageIndex, elmList);
-      Share.share(shareText);
+      final List<Text> shareText = getShareText(currentPageIndex, elmList);
+      final String joinedText = shareText
+          .map((text) => text.data)
+          .join('\n'); // Join text elements with newline separator
+
+      Share.share(joinedText);
       emit(PageShareSuccess()); // Optionally handle the success case
     } catch (e) {
       emit(PageShareFailure(errorMessage: 'Failed to share!'));
     }
   }
 
-  // getShareText method (to be used by all pages)
-  String getShareText(int index, List<ElmModelNew> elmList) {
-    if (index < 0 || index >= elmList.length) {
-      return 'Invalid page';
-    }
-
-    final pageContent = elmList[index];
-    String shareText = '';
-
-    if (pageContent.titles != null) {
-      shareText += '${pageContent.titles!.join('\n')}\n\n';
-    }
-    if (pageContent.subtitles != null) {
-      shareText += '${pageContent.subtitles!.join('\n')}\n\n';
-    }
-    if (pageContent.ayahs != null) {
-      shareText += '${pageContent.ayahs!.join('\n')}\n\n';
-    }
-    if (pageContent.texts != null) {
-      shareText += '${pageContent.texts!.join('\n')}\n\n';
-    }
-    if (pageContent.footer != null) {
-      shareText += pageContent.footer!;
-    }
-
-    return shareText.trim();
-  }
+  getShareText(int currentPageIndex, List<ElmModelNew> elmList);
 }
-
-
-
-
-  // // دالة مشاركة النص
-  // void shareContent(int index) {
-  //   try {
-  //     final String shareText =
-  //         getShareText(index); // استدعاء الدالة المتغيرة في الصفحات المختلفة
-  //     Share.share(shareText);
-  //     emit(PageShareSuccess());
-  //   } catch (e) {
-  //     emit(PageShareFailure(errorMessage: 'Failed to share!'));
-  //   }
-  // }
-
-  // // دالة getShareText التي سيتم تعديلها في كل صفحة
-  // String getShareText(int index) {
-  //   // دالة افتراضية يمكن تجاوزها في cubits الفرعية
-  //   return "Default shared content"; // محتوى افتراضي
-  // }
-

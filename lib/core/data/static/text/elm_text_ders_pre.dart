@@ -18,6 +18,7 @@ class ElmTextPre {
 فإن كان من توفيق فمن الله وما كان من خطأ أو نسيان فمن نفسي ومن الشيطان والله ورسولة براء
 """;
 
+//  static const String titlePreOne_2 = """ title 2  """;
 // page 2
   static const String titlePreTwo = """
  ادخلو في السلم كافة

@@ -5,7 +5,7 @@ import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../cubit/pages_cubits/elm_3_cubit.dart';
+import '../../../../cubit/pages_cubits/cubits/elm_cubits/elm_3_cubit.dart';
 import '../which_page_to_get/which_page_to_get_in_elm_3_new.dart'; // Required for Bloc usage
 
 class CustomTextSliderElm3 extends StatelessWidget {

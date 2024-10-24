@@ -1,5 +1,5 @@
 import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
-import 'package:elm/cubit/pages_cubits/elm_pre_cubit.dart';
+import 'package:elm/cubit/pages_cubits/cubits/elm_cubits/elm_pre_cubit.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elmpre.dart';

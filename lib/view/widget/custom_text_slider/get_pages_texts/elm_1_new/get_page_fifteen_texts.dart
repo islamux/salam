@@ -11,12 +11,3 @@ List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1]), // النص الثاني
   ];
 }
-
-
-
-// List<TextSpan> getPageFifteenTexts(int i) {
-//   return [
-//     TextSpan(text: elmList[i].text),
-//     TextSpan(text: elmList[i].text2),
-//   ];
-// }

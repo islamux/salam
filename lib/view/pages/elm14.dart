@@ -2,7 +2,7 @@ import 'package:elm/core/data/model/elm_lists/elm_list_14_new.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_17_new.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/pages_cubits/elm_14_cubit.dart';
+import 'package:elm/cubit/pages_cubits/cubits/elm_cubits/elm_14_cubit.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm14.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
