@@ -2,7 +2,7 @@ import 'package:elm/cubit/base_cubit/base_page_state.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_1_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/pages_cubits/cubits/elm_cubits/elm_1_cubit.dart';
+import 'package:elm/cubit/elm_cubits/elm_1_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

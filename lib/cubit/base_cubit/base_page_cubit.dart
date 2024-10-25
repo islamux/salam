@@ -19,7 +19,8 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
 
   BasePageCubit() : super(PageInitial());
 
-  // Methods
+  // Methods -- //todo : move it from logic to ui
+
   // TextField buildSearchField() {
   //   return TextField(
   //     controller: _searchTextController,
