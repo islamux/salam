@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-
   ElmModelNew elm = elmList[i];
 
   return [

@@ -19,12 +19,3 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![1], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageFourTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList15[i].ayah, style: ayah),
-//     TextSpan(text: elmList15[i].text),
-//     TextSpan(text: elmList15[i].ayah2, style: ayah),
-//   ];
-// }

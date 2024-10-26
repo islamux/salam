@@ -8,7 +8,7 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
 
   return [
-// text
+  // text
     if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
     // ayah

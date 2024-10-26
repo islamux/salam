@@ -16,11 +16,3 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
   ];
 }
-
-// List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   return [
-//     TextSpan(text: elmList14[i].text),
-//     TextSpan(text: elmList14[i].ayah, style: ayah),
-//   ];
-// }

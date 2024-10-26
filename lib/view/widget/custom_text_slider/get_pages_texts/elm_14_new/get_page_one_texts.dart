@@ -16,10 +16,3 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageOneTexts(int i, List<ElmModelNew>elmList) {
-//   return [
-//     TextSpan(text: elmList14[i].title, style: AppTheme.customTextStyleTitle()),
-//     TextSpan(text: elmList14[i].text)
-//   ];
-// }

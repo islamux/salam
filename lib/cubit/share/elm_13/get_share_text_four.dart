@@ -5,19 +5,15 @@ List<Text> getShareTextFour(int currentPageIndex, List<ElmModelNew> elmList) {
   ElmModelNew text = elmList[currentPageIndex];
   return [
     Text(text.texts![0]),
-    Text(text.subtitle![0]),
+    Text(text.subtitles![0]),
     Text(text.texts![0]),
-
     Text(text.ayahs![0]),
-    Text(text.subtitle![1]),
+    Text(text.subtitles![1]),
     Text(text.texts![1]),
-
     Text(text.ayahs![0]),
-    Text(text.subtitle![0]),
+    Text(text.subtitles![0]),
     Text(text.texts![1]),
-
     Text(text.ayahs![0]),
-    Text(text.subtitle![0]),
-
+    Text(text.subtitles![0]),
   ];
 }

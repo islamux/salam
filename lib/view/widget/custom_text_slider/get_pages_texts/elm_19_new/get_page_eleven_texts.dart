@@ -22,9 +22,3 @@ List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah2, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 
 List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
   TextStyle footerStyle = AppTheme.customTextStyleFooter();
-
   ElmModelNew elm = elmList[i];
 
   return [

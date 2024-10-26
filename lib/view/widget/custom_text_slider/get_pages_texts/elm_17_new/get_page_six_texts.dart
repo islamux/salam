@@ -17,6 +17,7 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
     // ayah 0
     if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
+
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
