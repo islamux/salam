@@ -3,8 +3,7 @@ import 'package:elm/cubit/base_cubit/base_page_cubit.dart';
 
 class Elm13Cubit extends BasePageCubit {
   @override
-  getShareText(int currentPageIndex, List<ElmModelNew> elmList) {
-    // TODO: implement getShareText
-    throw UnimplementedError();
+List<Text>  getShareText(int currentPageIndex, List<ElmModelNew> elmList) {
+    return whichPageToShareInTherteen(currentPageIndex, elmList13);
   }
 }

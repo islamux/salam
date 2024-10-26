@@ -44,23 +44,3 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.subtitles![3], style: subtitleStyle),
   ];
 }
-
-// List<TextSpan> getPageFourTexts(int i, List<ElmModelNew>elmList) {
-//   TextStyle ayah = AppTheme.customTextStyleHadith();
-//   TextStyle subtitle = AppTheme.customTextStyleSubtitle();
-//   return [
-//     TextSpan(text: elmList13[i].text),
-//     TextSpan(text: elmList13[i].subtitle, style: ayah),
-//     TextSpan(text: elmList13[i].text2),
-//     TextSpan(text: elmList13[i].ayah, style: ayah),
-//     TextSpan(text: elmList13[i].subtitle2, style: subtitle),
-//     TextSpan(text: elmList13[i].text3),
-//     TextSpan(text: elmList13[i].ayah2, style: ayah),
-//     TextSpan(text: elmList13[i].subtitle3, style: subtitle),
-//     TextSpan(text: elmList13[i].text4),
-//     TextSpan(text: elmList13[i].ayah3, style: ayah),
-//     TextSpan(text: elmList13[i].subtitle4, style: subtitle),
-//   ];
-
-
-// }
