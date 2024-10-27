@@ -7,6 +7,5 @@ List<Text> getShareTextTwelve(int currentPageIndex, List<ElmModelNew> elmList) {
     Text(text.texts![0]),
     Text(text.ayahs![0]),
     Text(text.texts![1]),
-    Text(text.ayahs![1]),
   ];
 }
