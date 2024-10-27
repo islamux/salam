@@ -19,12 +19,14 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
     // ayah2
     if (elm.ayahs != null && elm.ayahs!.length > 1)
       TextSpan(text: elm.ayahs![1], style: ayahStyle),
+
     // text3
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: null),
     // ayah3
     if (elm.ayahs != null && elm.ayahs!.length > 2)
       TextSpan(text: elm.ayahs![2], style: ayahStyle),
+
     // text4
     if (elm.texts != null && elm.texts!.length > 3)
       TextSpan(text: elm.texts![3], style: null),

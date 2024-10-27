@@ -19,8 +19,3 @@ List<TextSpan> getPageNinteenTexts(int i, List<ElmModelNew> elmList) {
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
   ];
 }
-//     TextSpan(text: elm.title, style: titleStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//   ];
-// }

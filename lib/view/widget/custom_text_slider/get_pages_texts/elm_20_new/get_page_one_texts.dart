@@ -21,6 +21,7 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
     // ayah
     if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
+
     // subtitle
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
