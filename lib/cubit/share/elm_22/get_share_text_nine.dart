@@ -1,8 +1,7 @@
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:flutter/material.dart';
 
-List<Text> getShareTextTwentyTwo(
-    int currentPageIndex, List<ElmModelNew> elmList) {
+List<Text> getShareTextNine(int currentPageIndex, List<ElmModelNew> elmList) {
   ElmModelNew text = elmList[currentPageIndex];
   return [
     //
@@ -13,5 +12,9 @@ List<Text> getShareTextTwentyTwo(
     Text(text.ayahs![1]),
     //
     Text(text.texts![2]),
+    Text(text.ayahs![2]),
+    //
+    Text(text.texts![3]),
+    Text(text.ayahs![3]),
   ];
 }

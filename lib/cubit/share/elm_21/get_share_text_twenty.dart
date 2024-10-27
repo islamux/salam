@@ -10,9 +10,11 @@ List<Text> getShareTextTwenty(int currentPageIndex, List<ElmModelNew> elmList) {
 //
     Text(text.texts![1]),
     Text(text.ayahs![1]),
-    Text(text.subtitles![0]),
 //
     Text(text.texts![2]),
     Text(text.ayahs![2]),
+//
+    Text(text.texts![3]),
+    Text(text.ayahs![3]),
   ];
 }

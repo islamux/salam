@@ -18,28 +18,31 @@ List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
     // subtitle 0
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
-
     // text 1
     if (elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1], style: titleStyle),
+
     // ayah 1
     if (elm.ayahs != null && elm.ayahs!.length > 1)
       TextSpan(text: elm.ayahs![1], style: ayahStyle),
     // text 2
     if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2], style: titleStyle),
+
     // ayah 2
     if (elm.ayahs != null && elm.ayahs!.length > 2)
       TextSpan(text: elm.ayahs![2], style: ayahStyle),
     // text 3
     if (elm.texts != null && elm.texts!.length > 3)
       TextSpan(text: elm.texts![3], style: titleStyle),
+
     // ayah 3
     if (elm.ayahs != null && elm.ayahs!.length > 3)
       TextSpan(text: elm.ayahs![3], style: ayahStyle),
     // text 4
     if (elm.texts != null && elm.texts!.length > 4)
       TextSpan(text: elm.texts![4], style: titleStyle),
+
     // ayah 4
     if (elm.ayahs != null && elm.ayahs!.length > 4)
       TextSpan(text: elm.ayahs![4], style: ayahStyle),

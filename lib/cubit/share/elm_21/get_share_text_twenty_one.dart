@@ -6,6 +6,8 @@ List<Text> getShareTextTwentyOne(
   ElmModelNew text = elmList[currentPageIndex];
   return [
     //
+
+    Text(text.subtitles![0]),
     Text(text.texts![0]),
     Text(text.ayahs![0]),
     //
@@ -13,5 +15,6 @@ List<Text> getShareTextTwentyOne(
     Text(text.subtitles![0]),
     //
     Text(text.texts![2]),
+    Text(text.ayahs![1]),
   ];
 }
