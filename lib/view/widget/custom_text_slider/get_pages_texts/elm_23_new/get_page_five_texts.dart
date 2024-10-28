@@ -8,8 +8,6 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
 
   ElmModelNew elm = elmList[i];
   return [
-    // Form ElmTextTwentyThree{}
-    // pageFive
     // subtitle 0
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
@@ -19,14 +17,9 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
     // ayah 0
     if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
+
     // text 1
     if (elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1], style: null),
   ];
 }
-//     TextSpan(text: elm.subtitle, style: subtitleStyle),
-//     TextSpan(text: elm.text),
-//     TextSpan(text: elm.ayah, style: ayahStyle),
-//     TextSpan(text: elm.text2),
-//   ];
-// }

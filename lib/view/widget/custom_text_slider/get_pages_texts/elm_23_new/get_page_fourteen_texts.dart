@@ -7,8 +7,6 @@ List<TextSpan> getPageFourteenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   ElmModelNew elm = elmList[i];
   return [
-    // Form ElmTextTwentyThree{}
-    // pageFourteen
     // title
     if (elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle),
@@ -18,6 +16,7 @@ List<TextSpan> getPageFourteenTexts(int i, List<ElmModelNew> elmList) {
     // subtitle
     if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
+
     // text 1
     if (elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1], style: null),
