@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/view/pages/elm1.dart';
 import 'package:elm/view/pages/elm10.dart';
@@ -24,7 +26,6 @@ import 'package:elm/view/pages/elm8.dart';
 import 'package:elm/view/pages/elm9.dart';
 import 'package:elm/view/pages/elmpre_page.dart';
 import 'package:elm/view/pages/home.dart';
-import 'package:flutter/material.dart';
 
 class RouteApp {
   static Route<dynamic> generateRoute(RouteSettings settings) {

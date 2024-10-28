@@ -5,6 +5,6 @@ List<Text> getShareTextOne(int currentPageIndex, List<ElmModelNew> elmList) {
   ElmModelNew text = elmList[currentPageIndex];
   return [
     Text(text.titles![0]),
-    Text(text.titles![1]),
+    Text(text.texts![0]),
   ];
 }

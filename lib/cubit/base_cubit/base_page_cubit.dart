@@ -85,5 +85,5 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
     }
   }
 
-  getShareText(int currentPageIndex, List<ElmModelNew> elmList);
+  List<Text> getShareText(int currentPageIndex, List<ElmModelNew> elmList);
 }
