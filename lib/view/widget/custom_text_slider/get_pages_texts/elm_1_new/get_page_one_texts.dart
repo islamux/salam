@@ -8,13 +8,13 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق الجديد
 
   return [
-    if (elm.titles != null && elm.titles!.isNotEmpty)
+    // if (elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle), // العنوان
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    // if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0]), // النص الأول
-    if (elm.texts != null && elm.texts!.length > 1)
+    // if (elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1]), // النص الثاني
-    if (elm.texts != null && elm.texts!.length > 2)
+    // if (elm.texts != null && elm.texts!.length > 2)
       TextSpan(text: elm.texts![2]), // النص الثالث
   ];
 }

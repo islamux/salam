@@ -9,13 +9,13 @@ List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // تحقق من وجود النصوص
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    // if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null), // النص الأول
     // تحقق من وجود النصوص
-    if (elm.texts != null && elm.texts!.length > 1)
+    // if (elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1], style: null), // النص الثاني
     // تحقق من وجود الآيات
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    // if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
   ];
 }

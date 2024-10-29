@@ -9,10 +9,10 @@ List<TextSpan> getPageTherteenTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // title
-    if (elm.titles != null && elm.titles!.isNotEmpty)
+    //if(elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle),
     // text
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    //if(elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
   ];
 }

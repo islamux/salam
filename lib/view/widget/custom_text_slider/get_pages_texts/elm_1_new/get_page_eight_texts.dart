@@ -8,6 +8,7 @@ List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
   return [
     TextSpan(text: elm.texts![0]),
     TextSpan(text: elm.ayahs![0], style: ayah),
+    //
     TextSpan(text: elm.texts![1]),
   ];
 }

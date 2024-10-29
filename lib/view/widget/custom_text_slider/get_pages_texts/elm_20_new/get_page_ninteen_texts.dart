@@ -9,13 +9,13 @@ List<TextSpan> getPageNinteenTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
   return [
     // title
-    if (elm.titles != null && elm.titles!.isNotEmpty)
+    //if(elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle),
     // text
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    //if(elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
     // ayah
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    //if(elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
   ];
 }

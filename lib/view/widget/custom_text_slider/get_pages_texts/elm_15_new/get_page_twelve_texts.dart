@@ -10,16 +10,16 @@ List<TextSpan> getPageTwelveTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // title
-    if (elm.titles != null && elm.titles!.isNotEmpty)
+    //if(elm.titles != null && elm.titles!.isNotEmpty)
       TextSpan(text: elm.titles![0], style: titleStyle),
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    //if(elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
     // subtitle
-    if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
+    //if(elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text 1
-    if (elm.texts != null && elm.texts!.length > 1)
+    //if(elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1], style: null),
   ];
 }

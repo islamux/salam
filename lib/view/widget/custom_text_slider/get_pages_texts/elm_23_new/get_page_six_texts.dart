@@ -9,17 +9,17 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
   return [
     // ayah 0
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    //if(elm.ayahs != null && elm.ayahs!.isNotEmpty)
       TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    //if(elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
     // subtitle
-    if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
+    //if(elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
 
     // text 1
-    if (elm.texts != null && elm.texts!.length > 1)
+    //if(elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1], style: null),
   ];
 }

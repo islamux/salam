@@ -15,36 +15,3 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
     TextSpan(text: elm.texts![2]),
   ];
 }
-
-// FIXME=> Temprory func:  Remove Later
-
-getShareTextTest(int currentPageIndex, List<ElmModelNew> elmList) {
-  ElmModelNew text = elmList[currentPageIndex];
-  return [
-    Text(text.titles![0]),
-    Text(text.titles![1]),
-    Text(text.titles![2]),
-    Text(text.titles![3]),
-
-// Subtitle
-    Text(text.subtitles![0]),
-    Text(text.subtitles![1]),
-    Text(text.subtitles![2]),
-    Text(text.subtitles![3]),
-
-// Ayah
-    Text(text.ayahs![0]),
-    Text(text.ayahs![1]),
-    Text(text.ayahs![2]),
-    Text(text.ayahs![3]),
-    Text(text.ayahs![4]),
-
-// Text
-    Text(text.texts![0]),
-    Text(text.texts![1]),
-    Text(text.texts![2]),
-    Text(text.texts![3]),
-    Text(text.texts![4]),
-    Text(text.texts![5]),
-  ];
-}

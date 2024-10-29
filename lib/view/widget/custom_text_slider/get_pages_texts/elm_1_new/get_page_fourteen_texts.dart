@@ -8,13 +8,13 @@ List<TextSpan> getPageFourteenTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق الجديد
 
   return [
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    // if (elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0]), // النص الأول
 
-    if (elm.texts != null && elm.texts!.length > 1)
+    // if (elm.texts != null && elm.texts!.length > 1)
       TextSpan(text: elm.texts![1]), // النص الثاني
 
-    if (elm.footer != null)
+    // if (elm.footer != null)
       TextSpan(text: elm.footer!, style: footerStyle), // الخاتمة
   ];
 }

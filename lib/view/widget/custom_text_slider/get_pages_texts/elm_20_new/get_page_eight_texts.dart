@@ -7,10 +7,10 @@ List<TextSpan> getPageEightTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
   return [
     // subtitle 0
-    if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
+    //if(elm.subtitles != null && elm.subtitles!.isNotEmpty)
       TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
+    //if(elm.texts != null && elm.texts!.isNotEmpty)
       TextSpan(text: elm.texts![0], style: null),
   ];
 }
