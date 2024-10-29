@@ -10,9 +10,9 @@ List<ElmModelNew> elmList1New = [
       ElmTextDersOne.titleOneOne,
     ],
     texts: [
-      ElmTextDersOne.elmTextOneOne_3,
-      ElmTextDersOne.elmTextOneOne_2,
       ElmTextDersOne.elmTextOneOne_1,
+      ElmTextDersOne.elmTextOneOne_2,
+      ElmTextDersOne.elmTextOneOne_3,
     ],
   ),
   // 2
