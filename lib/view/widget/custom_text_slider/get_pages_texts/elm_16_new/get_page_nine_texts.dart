@@ -8,10 +8,10 @@ List<TextSpan> getPageNineTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
 
   return [
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // text
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
   ];
 }

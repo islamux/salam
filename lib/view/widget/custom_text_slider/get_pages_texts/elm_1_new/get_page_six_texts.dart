@@ -9,10 +9,10 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق
   return [
     // ayah 1
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // footer
-    if (elm.footer != null && elm.footer!.isNotEmpty)
-      TextSpan(text: elm.footer, style: footerStyle),
+    //if (elm.footer != null && elm.footer!.isNotEmpty)
+    TextSpan(text: elm.footer, style: footerStyle),
   ];
 }

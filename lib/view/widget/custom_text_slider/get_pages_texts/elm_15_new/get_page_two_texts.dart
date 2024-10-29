@@ -9,13 +9,13 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
     // ayah 0
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
     //footer 0
-    if (elm.footer != null && elm.footer!.isNotEmpty)
-      TextSpan(text: elm.footer![0], style: null),
+    //if (elm.footer != null && elm.footer!.isNotEmpty)
+    TextSpan(text: elm.footer![0], style: null),
   ];
 }

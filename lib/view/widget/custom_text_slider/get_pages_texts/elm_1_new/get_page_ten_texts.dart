@@ -8,13 +8,13 @@ List<TextSpan> getPageTenTexts(int i, List<ElmModelNew> elmList) {
 
   ElmModelNew elm = elmList[i]; // استخدم  بناءً على السياق
   return [
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null), // النص الأول
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null), // النص الأول
 
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
 
-    if (elm.footer != null && elm.footer!.isNotEmpty) // footer
-      TextSpan(text: elm.footer, style: footerStyle),
+    //if (elm.footer != null && elm.footer!.isNotEmpty) // footer
+    TextSpan(text: elm.footer, style: footerStyle),
   ];
 }

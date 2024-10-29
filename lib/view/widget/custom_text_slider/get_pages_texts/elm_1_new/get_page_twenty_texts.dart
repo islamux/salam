@@ -7,10 +7,10 @@ List<TextSpan> getPageTwentyTexts(int i, List<ElmModelNew> elmList) {
 
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق الجديد
   return [
-    if (elm.titles != null && elm.titles!.isNotEmpty)
-      TextSpan(text: elm.titles![0], style: titleStyle), // titlle
+    //if (elm.titles != null && elm.titles!.isNotEmpty)
+    TextSpan(text: elm.titles![0], style: titleStyle), // titlle
 
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null), // text
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null), // text
   ];
 }

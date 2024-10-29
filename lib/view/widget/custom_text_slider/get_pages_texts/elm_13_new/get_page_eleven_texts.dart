@@ -5,13 +5,7 @@ List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
   return [
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
   ];
 }
-
-// List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew>elmList) {
-//   return [
-//     TextSpan(text: elmList13[i].text),
-//   ];
-// }

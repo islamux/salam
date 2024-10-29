@@ -7,13 +7,13 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
 
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق
   return [
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
 
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null), // النص
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null), // النص
 
-    if (elm.ayahs != null && elm.ayahs!.length > 1)
-      TextSpan(text: elm.ayahs![1], style: ayahStyle), // الآية الثانية
+    //if (elm.ayahs != null && elm.ayahs!.length > 1)
+    TextSpan(text: elm.ayahs![1], style: ayahStyle), // الآية الثانية
   ];
 }

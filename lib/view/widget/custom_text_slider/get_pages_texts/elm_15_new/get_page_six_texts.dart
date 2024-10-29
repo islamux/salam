@@ -10,13 +10,13 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // text
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
     // ayah
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // footer
-    if (elm.footer != null && elm.footer!.isNotEmpty)
-      TextSpan(text: elm.footer![0], style: footerStyle),
+    //if (elm.footer != null && elm.footer!.isNotEmpty)
+    TextSpan(text: elm.footer![0], style: footerStyle),
   ];
 }

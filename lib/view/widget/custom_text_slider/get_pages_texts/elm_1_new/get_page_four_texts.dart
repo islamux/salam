@@ -8,11 +8,11 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق الجديد
 
   return [
-    if (elm.texts != null && elm.texts!.isNotEmpty) // النص الأول
-      TextSpan(text: elm.texts![0]),
-    if (elm.texts != null && elm.texts!.length > 1) // النص الثاني
-      TextSpan(text: elm.texts![1]),
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty) // الآية الأولى
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    // if (elm.texts != null && elm.texts!.isNotEmpty) // النص الأول
+    TextSpan(text: elm.texts![0]),
+    // if (elm.texts != null && elm.texts!.length > 1) // النص الثاني
+    TextSpan(text: elm.texts![1]),
+    // if (elm.ayahs != null && elm.ayahs!.isNotEmpty) // الآية الأولى
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
   ];
 }

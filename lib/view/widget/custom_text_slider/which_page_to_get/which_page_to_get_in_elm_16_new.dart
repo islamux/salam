@@ -1,5 +1,5 @@
 import 'package:elm/core/data/model/elm_model_new.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16_new/get_page_twentyOne_texts.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16_new/get_page_twenty_one_texts.dart';
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16_new/get_page_twenty_texts.dart';
 
 import '../get_pages_texts/elm_16_new/get_page_seven_texts.dart';
@@ -22,12 +22,12 @@ import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16_new/ge
 import 'package:elm/view/widget/custom_text_slider/get_pages_texts/elm_16_new/get_page_two_texts.dart';
 import '../get_pages_texts/elm_16_new/get_page_eighteen_texts.dart';
 import '../get_pages_texts/elm_16_new/get_page_ninteen_texts.dart';
-import '../get_pages_texts/elm_16_new/get_page_twentyTwo_texts.dart';
-import '../get_pages_texts/elm_16_new/get_page_twentyThree_texts.dart';
-import '../get_pages_texts/elm_16_new/get_page_twentyFive_texts.dart';
-import '../get_pages_texts/elm_16_new/get_page_twentyFour_texts.dart';
-import '../get_pages_texts/elm_16_new/get_page_twentySix_texts.dart';
-import '../get_pages_texts/elm_16_new/get_page_twentySeven_texts.dart';
+import '../get_pages_texts/elm_16_new/get_page_twenty_two_texts.dart';
+import '../get_pages_texts/elm_16_new/get_page_twenty_three_texts.dart';
+import '../get_pages_texts/elm_16_new/get_page_twenty_five_texts.dart';
+import '../get_pages_texts/elm_16_new/get_page_twenty_four_texts.dart';
+import '../get_pages_texts/elm_16_new/get_page_twenty_six_texts.dart';
+import '../get_pages_texts/elm_16_new/get_page_twenty_seven_texts.dart';
 
 List<TextSpan> whichPageToGetInElm16New(int i, List<ElmModelNew> elmList) {
   switch (i) {

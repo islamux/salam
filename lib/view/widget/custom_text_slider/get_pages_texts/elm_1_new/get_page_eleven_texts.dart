@@ -9,9 +9,9 @@ List<TextSpan> getPageElevenTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق الجديد
 
   return [
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null), // النص الأول
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
+    // if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null), // النص الأول
+    // if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle), // الآية الأولى
   ];
 }

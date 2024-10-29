@@ -10,20 +10,20 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // ayah 0
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // subtitle 0
-    if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
-      TextSpan(text: elm.subtitles![0], style: subtitleStyle),
+    //if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
+    TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
 
     // ayah 1
-    if (elm.ayahs != null && elm.ayahs!.length > 1)
-      TextSpan(text: elm.ayahs![1], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.length > 1)
+    TextSpan(text: elm.ayahs![1], style: ayahStyle),
     // text 1
-    if (elm.texts != null && elm.texts!.length > 1)
-      TextSpan(text: elm.texts![1], style: null),
+    //if (elm.texts != null && elm.texts!.length > 1)
+    TextSpan(text: elm.texts![1], style: null),
   ];
 }

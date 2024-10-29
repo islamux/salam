@@ -9,13 +9,13 @@ List<TextSpan> getPageThreeTexts(int i, List<ElmModelNew> elmList) {
 
   return [
     // ayah
-    if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
-      TextSpan(text: elm.ayahs![0], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
+    TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // text
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
     // ayah
-    if (elm.ayahs != null && elm.ayahs!.length > 1)
-      TextSpan(text: elm.ayahs![1], style: ayahStyle),
+    //if (elm.ayahs != null && elm.ayahs!.length > 1)
+    TextSpan(text: elm.ayahs![1], style: ayahStyle),
   ];
 }

@@ -7,11 +7,11 @@ List<TextSpan> getPageFiveTexts(int i, List<ElmModelNew> elmList) {
   TextStyle footerStyle = AppTheme.customTextStyleFooter();
   return [
     // text 0
-    if (elm.texts != null && elm.texts!.isNotEmpty)
-      TextSpan(text: elm.texts![0], style: null),
+    //if (elm.texts != null && elm.texts!.isNotEmpty)
+    TextSpan(text: elm.texts![0], style: null),
 
     // footer
-    if (elm.footer != null && elm.footer!.isNotEmpty)
-      TextSpan(text: elm.footer!, style: footerStyle),
+    //if (elm.footer != null && elm.footer!.isNotEmpty)
+    TextSpan(text: elm.footer!, style: footerStyle),
   ];
 }
