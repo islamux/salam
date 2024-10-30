@@ -1,46 +1,21 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings
 
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:share_plus/share_plus.dart';
+
 import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter/material.dart';
-import 'package:share_plus/share_plus.dart';
 
 // BaseCubit: يحتوي على كل الدوال الأساسية
 abstract class BasePageCubit extends Cubit<BasePageState> {
   int currentPageIndex = 0;
   PageController pageController = PageController();
   double fontSize = 21.0;
-
-  // late List<ElmModelNew> allTexts;
-  // late List<ElmModelNew> searchedText;
-  // bool isSearching = false;
-  // final TextEditingController _searchTextController = TextEditingController();
-
+  late List<ElmModelNew> elmList; // قائمة العناصر للنماذج
   BasePageCubit() : super(PageInitial());
 
   // Methods -- //todo : move it from logic to ui
-
-  // TextField buildSearchField() {
-  //   return TextField(
-  //     controller: _searchTextController,
-  //     cursorColor: AppColor.grey,
-  //     decoration: const InputDecoration(
-  //       hintText: "البحث عن نص...",
-  //       border: InputBorder.none,
-  //       hintStyle: TextStyle(color: AppColor.grey, fontSize: 18),
-  //     ),
-  //     style: const TextStyle(color: AppColor.grey, fontSize: 18),
-  //     onChanged: (searchedText) {
-  //       addSearchedTextToSearchedList(searchedText);
-  //     },
-  //   );
-  // }
-
-  // void addSearchedTextToSearchedList(String searchedText) {
-  //   searchedText = allTexts.where(test)  // todo : my model is list<string> and he wants only string
-  // }
-
   void resetCounter() {
     emit(PageUpdated(updatedCounter: 0));
   }
@@ -86,4 +61,28 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   }
 
   List<Text> getShareText(int currentPageIndex, List<ElmModelNew> elmList);
+
+  // البحث في محتوى `ElmModelNew`
+  List<ElmModelNew> searchContent(String query) {
+    final results = elmList.where((item) {
+      bool containsInTitles =
+          item.titles?.any((title) => title.contains(query)) ?? false;
+      bool containsInSubtitles =
+          item.subtitles?.any((subtitle) => subtitle.contains(query)) ?? false;
+      bool containsInTexts =
+          item.texts?.any((text) => text.contains(query)) ?? false;
+      bool containsInAyahs =
+          item.ayahs?.any((ayah) => ayah.contains(query)) ?? false;
+      bool containsInFooter = item.footer?.contains(query) ?? false;
+
+      return containsInTitles ||
+          containsInSubtitles ||
+          containsInTexts ||
+          containsInAyahs ||
+          containsInFooter;
+    }).toList();
+
+    emit(PageSearchResults(results));
+    return results;
+  }
 }

@@ -1,3 +1,5 @@
+import 'package:elm/core/data/model/elm_model_new.dart';
+
 abstract class BasePageState {}
 
 class PageInitial extends BasePageState {}
@@ -25,4 +27,10 @@ class PageShareSuccess extends BasePageState {
 class PageShareFailure extends BasePageState {
   late final String errorMessage;
   PageShareFailure({required this.errorMessage});
+}
+
+// الحالات الخاصة بالبحث والمشاركة
+class PageSearchResults extends BasePageState {
+  final List<ElmModelNew> results;
+  PageSearchResults(this.results);
 }
