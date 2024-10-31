@@ -39,6 +39,8 @@ class ElmTextPre {
 
 """;
 // page 3
+  static const String ayah_0 = """ \nayah 0\n """;
+  static const String text_0 = """ \ntext 0\n """;
 
   static const String ayahHadithPreThree_1 = """
 ( يا ايها اللذين امنو ادخلو في السلم كافة ) 
@@ -56,7 +58,6 @@ class ElmTextPre {
  في تعني شيئاً ضمن شيئ ، أي إنك دخلت كلك في الدين ، لم تدخُل أعضاؤك وبقي قلبك ، وما دخلت أعضاؤك وبقيت عيونك تُخالف فيها منهج الله ، ودخلت تجارتك في الدين وبقي بيتك ، ودخل بيتك وبقيت تجارتك ، فيجب أن تدخل جميعاً ، بقضك وقضيضك ، جسماً ، وروحاً ونفساً ، وفكراً ، وعقلاً ، ووقتاً ، وحرفة ، ولهواً ، وفرحاً ، وحزناً ، أن تدخل في الدين جميعاً
 وسمي هذا الدين سلماً ، لأنك إن دخلت فيه فأنت في السلم أبداً
 
-
 """;
   static const String ayahHadithPreThree_3 = """
    ( إدخلو في السلم ) 
@@ -64,4 +65,9 @@ class ElmTextPre {
   static const String elmTextPreThree_3 = """
 لايوجد أحد من بني البشر على الإطلاق إلا ويتمنى السلامة والسعادة ، والسلامة والسعادة لا تكونان إلا في تطبيق تعاليم هذا الدين
 """;
+  static const String ayah_1 = """\nayah test4 """;
+  static const String ayah_2 = """\nayah test5 """;
+  static const String title_1 = """\ntitle test1 """;
+  static const String subtitle_1 = """\nsubtitle test1 """;
+  static const String text_2 = """\ntext test3 """;
 }
