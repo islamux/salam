@@ -39,8 +39,6 @@ class ElmTextPre {
 
 """;
 // page 3
-  static const String ayah_0 = """ \nayah 0\n """;
-  static const String text_0 = """ \ntext 0\n """;
 
   static const String ayahHadithPreThree_1 = """
 ( يا ايها اللذين امنو ادخلو في السلم كافة ) 

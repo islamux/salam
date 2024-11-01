@@ -2,7 +2,7 @@ import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
+List<TextSpan> getPageTexts(int i, List<ElmModelNew> elmList) {
   TextStyle titleStyle = AppTheme.customTextStyleTitle(); // نمط العنوان
 
   ElmModelNew elm = elmList[i]; // استخدم elmListPreNew بناءً على السياق الجديد

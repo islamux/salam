@@ -34,13 +34,11 @@ List<ElmModelNewOrder> elmListPreNewOrder = [
       ElmTextPre.ayahHadithPreThree_1,
       ElmTextPre.ayahHadithPreThree_2,
       ElmTextPre.ayahHadithPreThree_3,
-      ElmTextPre.ayah_0,
       ElmTextPre.ayah_1,
       ElmTextPre.ayah_2,
     ],
     texts: [
       ElmTextPre.elmTextPreThree_1,
-      ElmTextPre.text_0,
       ElmTextPre.elmTextPreThree_2,
       ElmTextPre.elmTextPreThree_3,
       ElmTextPre.text_2,
@@ -50,8 +48,7 @@ List<ElmModelNewOrder> elmListPreNewOrder = [
     order: '''ayahs,texts,
               ayahs,texts,
               ayahs,texts,
-              ayahs,ayahs,titles,
-              subtitles,texts
+              ayahs,ayahs,titles,subtitles,texts,
     ''',
   )
 ];
