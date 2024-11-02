@@ -47,7 +47,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveFour_1,
     ],
-    order: '',
+    order: 'texts',
   ),
 
 //  page 5
@@ -59,7 +59,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     ayahs: [
       ElmTextDersFive.ayahHadithFiveFive_1,
     ],
-    order: '',
+    order: 'texts,ayahs,texts',
   ),
 
 //  page 6
@@ -67,7 +67,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveSix_1,
     ],
-    order: '',
+    order: 'texts',
   ),
 
 //  page 7
@@ -75,7 +75,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveSeven_1,
     ],
-    order: '',
+    order: 'texts',
   ),
 
 //  page 8
@@ -83,7 +83,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveEight_1,
     ],
-    order: '',
+    order: 'texts',
   ),
 
 //  page 9
@@ -94,7 +94,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     ayahs: [
       ElmTextDersFive.ayahHadithFiveNine_1,
     ],
-    order: '',
+    order: 'texts,ayahs',
   ),
 
 //  page 10
@@ -108,7 +108,11 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       ElmTextDersFive.ayahHadithFiveTen_1,
       ElmTextDersFive.ayahHadithFiveTen_2,
     ],
-    order: '',
+    order: '''
+    texts,ayahs,  
+    texts,ayahs,  
+    texts,  
+    ''',
   ),
 
 //  page 11
@@ -116,7 +120,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveEleven_1,
     ],
-    order: '',
+    order: 'texts ',
   ),
 
 //  page 12
@@ -124,7 +128,7 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveTwelve_1,
     ],
-    order: '',
+    order: 'texts ',
   ),
 
 //  page 13
@@ -140,6 +144,10 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       ElmTextDersFive.elmTextFiveTherteen_1,
       ElmTextDersFive.elmTextFiveTherteen_2,
     ],
-    order: '',
+    order: '''
+    titles,ayahs,texts,
+    ayahs,texts,
+
+ ''',
   ),
 ];
