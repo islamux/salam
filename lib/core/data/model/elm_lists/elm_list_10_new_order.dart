@@ -62,7 +62,9 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTextTenFour_1,
     ],
-    order: '',
+    order: ''',
+    ayahs,texts,
+    ''',
   ),
 
   // 5
@@ -74,7 +76,9 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTextTenFive_1,
     ],
-    order: '',
+    order: ''',
+    ayahs,texts,ayahs
+    ''',
   ),
 
   // 6
@@ -85,7 +89,9 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     ayahs: [
       ElmTextDersTen.ayahHadithTenSix_1,
     ],
-    order: '',
+    order: ''',
+    texts,ayahs,
+    ''',
   ),
 
   // 7
@@ -99,6 +105,10 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       ElmTextDersTen.ayahHadithTenSeven_1,
       ElmTextDersTen.ayahHadithTenSeven_2,
     ],
-    order: '',
+    order: ''',
+    texts,ayahs,
+    texts,ayahs,
+    texts,
+    ''',
   )
 ];

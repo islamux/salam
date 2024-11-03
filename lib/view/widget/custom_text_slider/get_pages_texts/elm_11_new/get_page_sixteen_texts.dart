@@ -20,6 +20,7 @@ List<TextSpan> getPageSixteenTexts(int i, List<ElmModelNew> elmList) {
     // subtitle 0
     //if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
     TextSpan(text: elm.subtitles![0], style: subtitleStyle),
+
     // ayah 1
     //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
     TextSpan(text: elm.ayahs![1], style: ayahStyle),
