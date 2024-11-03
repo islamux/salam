@@ -22,10 +22,10 @@ List<TextSpan> getPageSevenTexts(int i, List<ElmModelNew> elmList) {
     // subtitle 0
     //if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
     TextSpan(text: elm.subtitles![0], style: subtitleStyle),
-
     // text 1
     //if (elm.texts != null && elm.texts!.length > 1)
     TextSpan(text: elm.texts![1], style: null),
+
     // ayah 2
     //if (elm.ayahs != null && elm.ayahs!.length > 2)
     TextSpan(text: elm.ayahs![2], style: ayahStyle),

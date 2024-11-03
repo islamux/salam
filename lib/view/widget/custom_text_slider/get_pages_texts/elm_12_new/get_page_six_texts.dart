@@ -22,7 +22,6 @@ List<TextSpan> getPageSixTexts(int i, List<ElmModelNew> elmList) {
     // ayah 1
     //if (elm.ayahs != null && elm.ayahs!.length > 1)
     TextSpan(text: elm.ayahs![1], style: ayahStyle),
-
     // footer
     //if (elm.footer != null && elm.footer!.isNotEmpty)
     TextSpan(text: elm.footer!, style: footerStyle),

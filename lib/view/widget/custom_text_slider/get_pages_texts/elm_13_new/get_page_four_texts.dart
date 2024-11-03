@@ -21,6 +21,7 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
     // ayah 0
     //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
     TextSpan(text: elm.ayahs![0], style: ayahStyle),
+
     // subtitle 1
     //if (elm.subtitles != null && elm.subtitles!.length > 1)
     TextSpan(text: elm.subtitles![1], style: subtitleStyle),
@@ -30,6 +31,7 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
     // ayah 1
     //if (elm.ayahs != null && elm.ayahs!.length > 1)
     TextSpan(text: elm.ayahs![1], style: ayahStyle),
+
     // subtitle 2
     //if (elm.subtitles != null && elm.subtitles!.length > 2)
     TextSpan(text: elm.subtitles![2], style: subtitleStyle),
@@ -39,6 +41,7 @@ List<TextSpan> getPageFourTexts(int i, List<ElmModelNew> elmList) {
     // ayah 2
     //if (elm.ayahs != null && elm.ayahs!.length > 2)
     TextSpan(text: elm.ayahs![2], style: ayahStyle),
+
     // subtitle 3
     //if (elm.subtitles != null && elm.subtitles!.length > 2)
     TextSpan(text: elm.subtitles![3], style: subtitleStyle),
