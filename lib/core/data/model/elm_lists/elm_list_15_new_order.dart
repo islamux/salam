@@ -14,8 +14,11 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenOne_1,
     ],
-    order: '',
+    order: ''',
+    titles,ayahs,texts,
+    ''',
   ), //
+
   // page 2
   ElmModelNewOrder(
     texts: [
@@ -25,7 +28,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
       ElmTextDersFifteen.ayahHadithFifteenTwo_1,
     ],
     footer: ElmTextDersFifteen.footerFifteenTwo,
-    order: '',
+    order: 'texts,ayahs,footer',
   ), //
   // page 3
   ElmModelNewOrder(
@@ -36,7 +39,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     ayahs: [
       ElmTextDersFifteen.ayahHadithFifteenThree_1,
     ],
-    order: '',
+    order: 'texts,ayahs,texts',
   ), //
   // page 4
   ElmModelNewOrder(
@@ -47,7 +50,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenFour_1,
     ],
-    order: '',
+    order: 'ayahs,texts,ayahs',
   ), //
   // page 5
   ElmModelNewOrder(
@@ -60,7 +63,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     ayahs: [
       ElmTextDersFifteen.ayahHadithFifteenFive_1,
     ],
-    order: '',
+    order: 'titles,texts,ayahs',
   ), //
   // page 6
   ElmModelNewOrder(
@@ -71,14 +74,14 @@ List<ElmModelNewOrder> elmList15NewOrder = [
       ElmTextDersFifteen.ayahHadithFifteenSix_1,
     ],
     footer: ElmTextDersFifteen.footerFifteenSix,
-    order: '',
+    order: 'texts,ayahs,footer',
   ), //
   // page 7
   ElmModelNewOrder(
     texts: [
       ElmTextDersFifteen.elmTextFifteenSeven_1,
     ],
-    order: '',
+    order: 'texts',
   ), //
   // page 8
   ElmModelNewOrder(
@@ -92,7 +95,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     ayahs: [
       ElmTextDersFifteen.ayahHadithFifteenEight_1,
     ],
-    order: '',
+    order: 'titles,texts,ayahs,texts',
   ), //
 
   // page 9
@@ -103,7 +106,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenNine_1,
     ],
-    order: '',
+    order: 'titles,texts',
   ), //
 
   // page 10
@@ -114,7 +117,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenTen_1,
     ],
-    order: '',
+    order: 'ayahs,texts',
   ), //
   // page 11
   ElmModelNewOrder(
@@ -124,7 +127,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     ayahs: [
       ElmTextDersFifteen.ayahHadithFifteenEleven_1,
     ],
-    order: '',
+    order: 'texts,ayahs',
   ), //
   // page 12
   ElmModelNewOrder(
@@ -138,7 +141,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     subtitles: [
       ElmTextDersFifteen.subtitleFifteenTwelve_1,
     ],
-    order: '',
+    order: 'titles,texts,subtitles,texts',
   ), //
   // page 13
   ElmModelNewOrder(
@@ -148,7 +151,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenTherteen_1,
     ],
-    order: '',
+    order: 'titles,texts',
   ), //
   // page 14
   ElmModelNewOrder(
@@ -158,7 +161,7 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenFourteen_1,
     ],
-    order: '',
+    order: 'ayahs,texts',
   ),
 
   // page 15
@@ -171,7 +174,10 @@ List<ElmModelNewOrder> elmList15NewOrder = [
       ElmTextDersFifteen.elmTextFifteenFifteen_1,
       ElmTextDersFifteen.elmTextFifteenFifteen_2,
     ],
-    order: '',
+    order: '''
+    ayahs,texts,
+    ayahs,texts
+    ''',
   ), //
 
   // page 16
@@ -182,11 +188,14 @@ List<ElmModelNewOrder> elmList15NewOrder = [
       ElmTextDersFifteen.ayahHadithFifteenSixteen_3,
     ],
     texts: [
-      ElmTextDersFifteen.elmtTextFifteenSixteen_1,
-      ElmTextDersFifteen.elmtTextFifteenSixteen_2,
-      ElmTextDersFifteen.elmtTextFifteenSixteen_3,
+      ElmTextDersFifteen.elmTextFifteenSixteen_1,
+      ElmTextDersFifteen.elmTextFifteenSixteen_2,
+      ElmTextDersFifteen.elmTextFifteenSixteen_3,
     ],
-    order: '',
+    order: '''
+    ayahs,texts,
+    ayahs,texts,
+    ayahs,texts''',
   ), //
 
   // page 17
@@ -197,6 +206,6 @@ List<ElmModelNewOrder> elmList15NewOrder = [
     texts: [
       ElmTextDersFifteen.elmTextFifteenSeventeen_1,
     ],
-    order: '',
+    order: 'ayahs,texts',
   ), //
 ];

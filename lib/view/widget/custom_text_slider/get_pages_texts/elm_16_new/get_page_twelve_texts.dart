@@ -8,7 +8,7 @@ List<TextSpan> getPageTwelveTexts(int i, List<ElmModelNew> elmList) {
   ElmModelNew elm = elmList[i];
 
   return [
-// subtitle
+    // subtitle
     //if (elm.subtitles != null && elm.subtitles!.isNotEmpty)
     TextSpan(text: elm.subtitles![0], style: subtitleStyle),
     // text

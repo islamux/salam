@@ -56,7 +56,7 @@ List<TextSpan> whichPageToGetInElm16New(int i, List<ElmModelNew> elmList) {
     case 11:
       return getPageTwelveTexts(i, elmList);
     case 12:
-      return getPageTherteenTexts(i, elmList);
+      return getPageThirteenTexts(i, elmList);
     case 13:
       return getPageFourteenTexts(i, elmList);
     case 14:
@@ -68,7 +68,7 @@ List<TextSpan> whichPageToGetInElm16New(int i, List<ElmModelNew> elmList) {
     case 17:
       return getPageEighteenTexts(i, elmList);
     case 18:
-      return getPageNinteenTexts(i, elmList);
+      return getPageNineteenTexts(i, elmList);
     case 19:
       return getPageTwentyTexts(i, elmList);
     case 20:

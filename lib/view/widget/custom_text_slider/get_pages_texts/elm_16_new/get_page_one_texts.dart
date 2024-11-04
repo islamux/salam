@@ -22,6 +22,7 @@ List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
     // ayah
     //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
     TextSpan(text: elm.ayahs![0], style: ayahStyle),
+
     // text 2
     //if (elm.texts != null && elm.texts!.length > 1)
     TextSpan(text: elm.texts![1], style: null),

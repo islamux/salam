@@ -12,6 +12,7 @@ List<TextSpan> getPageFifteenTexts(int i, List<ElmModelNew> elmList) {
     TextSpan(text: elm.ayahs![0], style: ayahStyle),
     // text 0
     TextSpan(text: elm.texts![0], style: null),
+
     // ayah 1
     TextSpan(text: elm.ayahs![1], style: ayahStyle),
     // text 1

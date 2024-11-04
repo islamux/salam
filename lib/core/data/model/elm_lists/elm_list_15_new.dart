@@ -168,9 +168,9 @@ List<ElmModelNew> elmList15New = [
       ElmTextDersFifteen.ayahHadithFifteenSixteen_3,
     ],
     texts: [
-      ElmTextDersFifteen.elmtTextFifteenSixteen_1,
-      ElmTextDersFifteen.elmtTextFifteenSixteen_2,
-      ElmTextDersFifteen.elmtTextFifteenSixteen_3,
+      ElmTextDersFifteen.elmTextFifteenSixteen_1,
+      ElmTextDersFifteen.elmTextFifteenSixteen_2,
+      ElmTextDersFifteen.elmTextFifteenSixteen_3,
     ],
   ), //
 

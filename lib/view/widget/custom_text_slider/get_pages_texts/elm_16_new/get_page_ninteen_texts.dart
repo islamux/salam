@@ -2,7 +2,7 @@ import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageNinteenTexts(int i, List<ElmModelNew> elmList) {
+List<TextSpan> getPageNineteenTexts(int i, List<ElmModelNew> elmList) {
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
 
   ElmModelNew elm = elmList[i];

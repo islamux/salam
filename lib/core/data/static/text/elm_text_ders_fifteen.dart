@@ -252,7 +252,7 @@ class ElmTextDersFifteen {
  ال عمران 126 
 
 """;
-  static const String elmtTextFifteenSixteen_1 = """
+  static const String elmTextFifteenSixteen_1 = """
 :أجمل مافي الأية ، بحسب السياق
 """;
   static const String ayahHadithFifteenSixteen_2 = """
@@ -261,7 +261,7 @@ class ElmTextDersFifteen {
 ( وتعز من تشاء) 
 ( وتذل من تشاء) 
 """;
-  static const String elmtTextFifteenSixteen_2 = """
+  static const String elmTextFifteenSixteen_2 = """
 الإذلال شر بمفهوم الأرض كان ينبغي بحسب السياق أن تكون الآية
  بيدك الخير والشر  
 :لكن الله عز وجل قال
@@ -269,7 +269,7 @@ class ElmTextDersFifteen {
   static const String ayahHadithFifteenSixteen_3 = """
   ( بيدك الخير ) 
 """;
-  static const String elmtTextFifteenSixteen_3 = """
+  static const String elmTextFifteenSixteen_3 = """
 ماذا يستنبط ؟ يستنبط أن إيتاء الملك خير ، وان نزع الملك خير ، وأن الإعزاز خير ، وأن الإذلال خير
   """;
 

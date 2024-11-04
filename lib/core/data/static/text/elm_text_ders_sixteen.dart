@@ -167,19 +167,19 @@ class ElmTextDersSixteen {
 فالأصل في المرأة أن تكون في بيتها ، هذا هو الأصل ، المرأة اللتي تهز سرير ابنها بيمناها تهز العالم بيسراها ، لأنه كلما كانت اللبنة الأولى ، وهي الأسرة ؛ صحية متوازنة ، منتظمة ، مستقيمة كان الإنتاج خارج البيت مُضاعفاً ، فنجاح ألرجل في عمله أساسه نجاحه في بيته  إنتاج ألرجل أساسه راحة قلبه من طرف بيته ، لذلك حينما أمر الله سبحانه وتعالى الإناث ، أو نساء النبي خاصة ، والنساء عامة أن يقررن في بيوتهن ، فلأن البيت هو مكان تربية الأولاد ، هو مكان العناية باللبنة الأولى ألا وهي الأسرة 
 """;
 // page 13
-  static const String ayahHadithSixteenTherteen_1 = """
+  static const String ayahHadithSixteenThirteen_1 = """
 
 وَقَرْنَ فِي بُيُوتِكُنَّ 
 """;
-  static const String elmTextDersSixteenTherteen_1 = """
+  static const String elmTextDersSixteenThirteen_1 = """
 
 ولا تعني الآيه أنها ممنوعة من الخروج ، لكن تخرج للضرورة 
 """;
-  static const String ayahHadithSixteenTherteen_2 = """
+  static const String ayahHadithSixteenThirteen_2 = """
 
  قَالَ مَا خَطْبُكُمَا قَالَتَا لَا نَسْقِي حَتَّى يُصْدِرَ الرِّعَاءُ وَأَبُونَا شَيْخٌ كَبِيرٌ﴾ [القصص: 23]
 """;
-  static const String elmTextDersSixteenTherteen_2 = """
+  static const String elmTextDersSixteenThirteen_2 = """
 
 أستنبط العلماء من هذا : أن المرأة لا يصح أن تخالط الرجال ، ولا أن تزاحمهم ، بل عليها أن تقف بعيداً عنهم ، وعليها ايظاً ألا تخرج من بيتها لقضاء حوائج المنزل ، إذا كان أبوها أو أخوها ، أو زوجها رجلاً قوياً قادراً على كفايتها ، أما إذا كان مريضاً فلها العُذر 
 """;
@@ -302,7 +302,7 @@ class ElmTextDersSixteen {
 """;
 
 // page 23
-  static const String titleSixteentTwentyThree = """
+  static const String titleSixteenTwentyThree = """
  وقفة 4
  ------ 
   """;
@@ -316,11 +316,11 @@ class ElmTextDersSixteen {
 """;
 
 // page 24
-  static const String titleSixteentTwentyFour = """
+  static const String titleSixteenTwentyFour = """
  وقفة 5
  ------ 
   """;
-  static const String subtitleSixteentTwentyFour_1 = """
+  static const String subtitleSixteenTwentyFour_1 = """
   الأدلة على مساواة المرأة للرجل في التشريف والتكريم
 """;
   static const String elmTextDersSixteenTwentyFour_1 = """
@@ -337,7 +337,7 @@ class ElmTextDersSixteen {
 """;
 
 // paage 25
-  static const String subtitleSixteentTwentyFive_1 = """
+  static const String subtitleSixteenTwentyFive_1 = """
 المرأة الصالحة افضل من الف رجل عاص
 """;
   static const String elmTextDersSixteenTwentyFive_1 = """
@@ -345,7 +345,7 @@ class ElmTextDersSixteen {
 والله أن كل امرأة صالحة وهبت حياتها لزوجها وأولادها ، وكانت قدوة لبناتها ، وكانت رحمة مهداة لأسرتها ، تفضل عندالله مائة ألف ألف رجل تائه شارد ضال مُضل
 """;
 
-  static const String subtitleSixteentTwentyFive_2 = """
+  static const String subtitleSixteenTwentyFive_2 = """
 دور المرأة من خلال السُنة النبوية المطهرة  
 """;
   static const String elmTextDersSixteenTwentyFive_2 = """
@@ -386,7 +386,7 @@ class ElmTextDersSixteen {
 
 """;
 // page 27
-  static const String titelSixteenTwentySeven = """
+  static const String titlesSixteenTwentySeven = """
 النساء قاعدة البُنيان 
 --------------
   """;
