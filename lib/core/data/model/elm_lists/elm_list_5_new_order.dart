@@ -1,5 +1,6 @@
 // TextDersFive
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_five.dart';
 
 List<ElmModelNewOrder> elmList5NewOrder = [
@@ -15,7 +16,13 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       ElmTextDersFive.elmTextFiveOne_1,
     ],
     footer: ElmTextDersFive.footerFiveOne,
-    order: 'titles,ayahs,texts,footer',
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.footer,
+    ],
+    // 'titles,ayahs,texts,footer',
   ),
 
 //  page 2
@@ -27,7 +34,12 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveTwo_1,
     ],
-    order: 'ayahs,texts,ayahs',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // 'ayahs,texts,ayahs',
   ),
 
 //  page 3
@@ -39,7 +51,12 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     ayahs: [
       ElmTextDersFive.ayahHadithFiveThree_1,
     ],
-    order: 'texts,ayahs,texts',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // 'texts,ayahs,texts',
   ),
 
 //  page 4
@@ -47,7 +64,10 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveFour_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
 
 //  page 5
@@ -59,7 +79,12 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     ayahs: [
       ElmTextDersFive.ayahHadithFiveFive_1,
     ],
-    order: 'texts,ayahs,texts',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // 'texts,ayahs,texts',
   ),
 
 //  page 6
@@ -67,7 +92,10 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveSix_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
 
 //  page 7
@@ -75,7 +103,10 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveSeven_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
 
 //  page 8
@@ -83,7 +114,10 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveEight_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
 
 //  page 9
@@ -94,25 +128,38 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     ayahs: [
       ElmTextDersFive.ayahHadithFiveNine_1,
     ],
-    order: 'texts,ayahs',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // 'texts,ayahs',
   ),
 
 //  page 10
   ElmModelNewOrder(
     texts: [
-      ElmTextDersFive.elmTexteFiveTen_1,
-      ElmTextDersFive.elmTexteFiveTen_2,
-      ElmTextDersFive.elmTexteFiveTen_3,
+      ElmTextDersFive.elmTextFiveTen_1,
+      ElmTextDersFive.elmTextFiveTen_2,
+      ElmTextDersFive.elmTextFiveTen_3,
     ],
     ayahs: [
       ElmTextDersFive.ayahHadithFiveTen_1,
       ElmTextDersFive.ayahHadithFiveTen_2,
     ],
-    order: '''
-    texts,ayahs,  
-    texts,ayahs,  
-    texts,  
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
+    // '''
+    // texts,ayahs,
+    // texts,ayahs,
+    // texts,
+    // ''',
   ),
 
 //  page 11
@@ -120,7 +167,10 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveEleven_1,
     ],
-    order: 'texts ',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts ',
   ),
 
 //  page 12
@@ -128,26 +178,36 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveTwelve_1,
     ],
-    order: 'texts ',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts ',
   ),
 
 //  page 13
   ElmModelNewOrder(
     titles: [
-      ElmTextDersFive.titleFiveTherteen,
+      ElmTextDersFive.titleFiveThirteen,
     ],
     ayahs: [
-      ElmTextDersFive.ayahHadithFiveTherteen_1,
-      ElmTextDersFive.ayahHadithFiveTherteen_2,
+      ElmTextDersFive.ayahHadithFiveThirteen_1,
+      ElmTextDersFive.ayahHadithFiveThirteen_2,
     ],
     texts: [
-      ElmTextDersFive.elmTextFiveTherteen_1,
-      ElmTextDersFive.elmTextFiveTherteen_2,
+      ElmTextDersFive.elmTextFiveThirteen_1,
+      ElmTextDersFive.elmTextFiveThirteen_2,
     ],
-    order: '''
-    titles,ayahs,texts,
-    ayahs,texts,
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+//     '''
+//     titles,ayahs,texts,
+//     ayahs,texts,
 
- ''',
+//  ''',
   ),
 ];

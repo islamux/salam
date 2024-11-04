@@ -7,7 +7,7 @@ List<ElmModelNew> elmList3New = [
   // Page 1
   ElmModelNew(
     titles: [
-      ElmTextDersThree.titleThreeeOne,
+      ElmTextDersThree.titleThreeOne,
     ],
     texts: [
       ElmTextDersThree.elmTexThreeOne_1,

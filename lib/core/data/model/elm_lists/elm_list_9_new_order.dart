@@ -1,5 +1,6 @@
 // Text Ders Nin3
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_nine.dart';
 
 List<ElmModelNewOrder> elmList9NewOrder = [
@@ -12,10 +13,17 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     texts: [
       ElmTextDersNine.elmTextNineOne_1,
     ],
-    order: ''' ,
-      ayahs,texts,
-      ayahs,ayahs
-    ''',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.ayahs,
+    ],
+    // order: ''' ,
+    //   ayahs,texts,
+    //   ayahs,ayahs
+    // ''',
   ),
   // 2
   ElmModelNewOrder(
@@ -25,9 +33,13 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     ayahs: [
       ElmTextDersNine.ayahHadithNineTwo_1,
     ],
-    order: '''
-      texts,ayahs
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: '''
+    //   texts,ayahs
+    // ''',
   ),
   // 3
   ElmModelNewOrder(
@@ -37,9 +49,13 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     ayahs: [
       ElmTextDersNine.ayahHadithNineThree_1,
     ],
-    order: ''',
-      texts,ayahs
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: ''',
+    //   texts,ayahs
+    // ''',
   ),
   // 4
   ElmModelNewOrder(
@@ -49,9 +65,13 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     ayahs: [
       ElmTextDersNine.ayahHadithNineFour_1,
     ],
-    order: ''',
-      texts,ayahs
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: ''',
+    //   texts,ayahs
+    // ''',
   ),
   // 5
   ElmModelNewOrder(
@@ -62,9 +82,15 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     ayahs: [
       ElmTextDersNine.ayahHadithNineFive_1,
     ],
-    order: ''',
-      texts,ayahs,texts
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
+    // order: ''',
+    //   texts,ayahs,texts
+    // ''',
   ),
   // 6
   ElmModelNewOrder(
@@ -77,10 +103,17 @@ List<ElmModelNewOrder> elmList9NewOrder = [
       ElmTextDersNine.ayahHadithNineSix_1,
       ElmTextDersNine.ayahHadithNineSix_2,
     ],
-    order: ''',
-      texts,ayahs,
-      texts,ayahs
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: ''',
+    //   texts,ayahs,
+    //   texts,ayahs
+    // ''',
   ),
   // 7
   ElmModelNewOrder(
@@ -91,9 +124,15 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     ayahs: [
       ElmTextDersNine.ayahHadithNineSeven_1,
     ],
-    order: ''',
-      texts,ayahs,texts
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
+    // order: ''',
+    //   texts,ayahs,texts
+    // ''',
   ),
   // 8
   ElmModelNewOrder(
@@ -104,9 +143,14 @@ List<ElmModelNewOrder> elmList9NewOrder = [
     ayahs: [
       ElmTextDersNine.ayahHadithNineEight_1,
     ],
-    order: ''',
-      texts,ayahs,texts
-      ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: ''',
+    //   texts,ayahs,texts
+    //   ''',
   ),
   // 9
   ElmModelNewOrder(
@@ -123,11 +167,23 @@ List<ElmModelNewOrder> elmList9NewOrder = [
       ElmTextDersNine.ayahHadithNineNine_2,
     ],
     footer: ElmTextDersNine.footerNineNine,
-    order: ''',
-     titles,texts,ayahs,
-     texts,ayahs,
-     texts,footer,
-''',
+    order: [
+      EnOrder.titles,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.footer,
+    ],
+//     order: ''',
+//      titles,texts,ayahs,
+//      texts,ayahs,
+//      texts,footer,
+// ''',
   ),
   // 10
   ElmModelNewOrder(
@@ -142,9 +198,17 @@ List<ElmModelNewOrder> elmList9NewOrder = [
       ElmTextDersNine.ayahHadithNineTen_1,
       ElmTextDersNine.ayahHadithNineTen_2,
     ],
-    order: ''',
-     titles,texts,ayahs,
-     texts,ayahs,
-    ''',
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: ''',
+    //  titles,texts,ayahs,
+    //  texts,ayahs,
+    // ''',
   ),
 ];

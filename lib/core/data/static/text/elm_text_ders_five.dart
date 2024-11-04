@@ -99,7 +99,7 @@ class ElmTextDersFive {
  """;
 
 // page 10
-  static const String elmTexteFiveTen_1 = """
+  static const String elmTextFiveTen_1 = """
 حتى نعمة الأمن قد نحرم منها بسبب الظلم
 """;
   static const String ayahHadithFiveTen_1 = """
@@ -112,7 +112,7 @@ class ElmTextDersFive {
 الانعام 82 
 """;
 
-  static const String elmTexteFiveTen_2 = """
+  static const String elmTextFiveTen_2 = """
 أما إذا ألبس المؤمن إيمانه بالظلم ليس آمناً، وليس ناجياً وسوف يعذب أشد العذاب
  """;
   static const String ayahHadithFiveTen_2 = """
@@ -128,7 +128,7 @@ class ElmTextDersFive {
 وَلَنُذِیقَنَّهُم مِّنَ ٱلۡعَذَابِ ٱلۡأَدۡنَىٰ دُونَ ٱلۡعَذَابِ ٱلۡأَكۡبَرِ لَعَلَّهُمۡ یَرۡجِعُونَ ۝٢١
  السجدة 21 
 """;
-  static const String elmTexteFiveTen_3 = """
+  static const String elmTextFiveTen_3 = """
 والعذاب الادنى أي البلاء والمحن والمصائب في الدنيا قبل الاخرة وهناك من يظن أن مايحصل له إبتلاء من الله وأن الله يحبه 
 فيستمر في ظلمة لغيرة او حتى لنفسه في حين أن ذالك قد يكون تأديب أو عقاب من الله عز وجل
   """;
@@ -146,24 +146,24 @@ class ElmTextDersFive {
 
 """;
 // page 13
-  static const String titleFiveTherteen = """
+  static const String titleFiveThirteen = """
 وقفه  
 ----
 """;
-  static const String ayahHadithFiveTherteen_1 = """
+  static const String ayahHadithFiveThirteen_1 = """
  ۞ إِنَّ ٱللَّهَ یَأۡمُرُ بِٱلۡعَدۡلِ وَٱلۡإِحۡسَـٰنِ 
 النحل 90 
 """;
-  static const String elmTextFiveTherteen_1 = """
+  static const String elmTextFiveThirteen_1 = """
 كما انك مأمور بالعدل فأنت مأمور بالإحسان، العدل: توزيع الأموال وفق النصيب المفروض، والإحسان 
 """;
-  static const String ayahHadithFiveTherteen_2 = """
+  static const String ayahHadithFiveThirteen_2 = """
 قال تعالى 
 وَإِذَا حَضَرَ ٱلۡقِسۡمَةَ أُو۟لُوا۟ ٱلۡقُرۡبَىٰ وَٱلۡیَتَـٰمَىٰ وَٱلۡمَسَـٰكِینُ فَٱرۡزُقُوهُم مِّنۡهُ 
 النساء 8 
 """;
 
-  static const String elmTextFiveTherteen_2 = """
+  static const String elmTextFiveThirteen_2 = """
 العدل: قسري، والإحسان: طوعي، لكنك مأمور بالعدل والإحسان
 
 العدل نصيب مفروض فهو قسري أما الإحسان فهو طوعي، والف قضيه لاتستقيم على العدل، لكنها تستقيم على الإحسان

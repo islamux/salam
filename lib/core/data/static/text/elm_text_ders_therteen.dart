@@ -1,10 +1,10 @@
 class ElmTextDersTherteen {
 // page1
-  static const String titleTherteenOne = """
+  static const String titleThirteenOne = """
   ما أصابكم من مصيبة 
   --------------
  """;
-  static const String ayahHadithTherteenOne_1 = """
+  static const String ayahHadithThirteenOne_1 = """
 وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠ *
 """;
 
@@ -13,7 +13,7 @@ class ElmTextDersTherteen {
 ورد في الحديث الشريف 
 """;
 
-  static const String ayahHadithTherteenOne_2 = """
+  static const String ayahHadithThirteenOne_2 = """
 
 ( ما من عثره ) **
 

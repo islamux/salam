@@ -92,9 +92,9 @@ List<ElmModelNew> elmList5New = [
 //  page 10
   ElmModelNew(
     texts: [
-      ElmTextDersFive.elmTexteFiveTen_1,
-      ElmTextDersFive.elmTexteFiveTen_2,
-      ElmTextDersFive.elmTexteFiveTen_3,
+      ElmTextDersFive.elmTextFiveTen_1,
+      ElmTextDersFive.elmTextFiveTen_2,
+      ElmTextDersFive.elmTextFiveTen_3,
     ],
     ayahs: [
       ElmTextDersFive.ayahHadithFiveTen_1,
@@ -119,15 +119,15 @@ List<ElmModelNew> elmList5New = [
 //  page 13
   ElmModelNew(
     titles: [
-      ElmTextDersFive.titleFiveTherteen,
+      ElmTextDersFive.titleFiveThirteen,
     ],
     ayahs: [
-      ElmTextDersFive.ayahHadithFiveTherteen_1,
-      ElmTextDersFive.ayahHadithFiveTherteen_2,
+      ElmTextDersFive.ayahHadithFiveThirteen_1,
+      ElmTextDersFive.ayahHadithFiveThirteen_2,
     ],
     texts: [
-      ElmTextDersFive.elmTextFiveTherteen_1,
-      ElmTextDersFive.elmTextFiveTherteen_2,
+      ElmTextDersFive.elmTextFiveThirteen_1,
+      ElmTextDersFive.elmTextFiveThirteen_2,
     ],
   ),
 ];

@@ -219,10 +219,10 @@ List<ElmModelNew> elmList11New = [
   // page 19,
   ElmModelNew(
     titles: [
-      ElmTextDersEleven.titleElevenNinteen,
+      ElmTextDersEleven.titleElevenNineteen,
     ],
     texts: [
-      ElmTextDersEleven.elmTextElevenNinteen,
+      ElmTextDersEleven.elmTextElevenNineteen,
     ],
   ),
   // page 20,

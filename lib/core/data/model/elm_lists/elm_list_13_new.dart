@@ -7,11 +7,11 @@ List<ElmModelNew> elmList13New = [
   // 1
   ElmModelNew(
     titles: [
-      ElmTextDersTherteen.titleTherteenOne,
+      ElmTextDersTherteen.titleThirteenOne,
     ],
     ayahs: [
-      ElmTextDersTherteen.ayahHadithTherteenOne_1,
-      ElmTextDersTherteen.ayahHadithTherteenOne_2,
+      ElmTextDersTherteen.ayahHadithThirteenOne_1,
+      ElmTextDersTherteen.ayahHadithThirteenOne_2,
       ElmTextDersTherteen.ayahHadithTherteenOne_3,
     ],
     texts: [

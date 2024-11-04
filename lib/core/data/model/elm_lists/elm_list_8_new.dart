@@ -37,8 +37,8 @@ List<ElmModelNew> elmList8New = [
   // 4
   ElmModelNew(
     ayahs: [
-      ElmTextDersEight.ayhaHadithFour_1,
-      ElmTextDersEight.ayhaHadithFour_2,
+      ElmTextDersEight.ayahHadithFour_1,
+      ElmTextDersEight.ayahHadithFour_2,
     ],
     texts: [
       ElmTextDersEight.elmTextEightFour_1,
@@ -51,7 +51,7 @@ List<ElmModelNew> elmList8New = [
       ElmTextDersEight.elmTextEightFive_1,
     ],
     ayahs: [
-      ElmTextDersEight.ayhaHadithFour_2,
+      ElmTextDersEight.ayahHadithFour_2,
     ],
   ),
 

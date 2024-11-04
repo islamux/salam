@@ -37,7 +37,7 @@ class ElmTextDersOne {
 وكل ذالك بسبب عدم تدبرهم لقوله 
 """;
 // page 3
-  static const String ayahHaditheOneThree_1 = """
+  static const String ayahHadithOneThree_1 = """
 
 قال سبحانه وتعالى 
 وَلَا تَنَـٰزَعُوا۟ فَتَفۡشَلُوا۟ وَتَذۡهَبَ رِیحُكُمۡۖ وَٱصۡبِرُوۤا۟ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِینَ ۝٤٦
@@ -242,19 +242,19 @@ class ElmTextDersOne {
   """;
 
   // page 13
-  static const String elmTextOneTherteen_1 = """
+  static const String elmTextOneThirteen_1 = """
           (15)
   قلة الاحترام، الصغير لايحترم الكبير
  
   """;
 
-  static const String elmTextOneTherteen_2 = """
+  static const String elmTextOneThirteen_2 = """
           (16)
 تدخل الأبناء والصغار بخلافات الآباء وعدم احترام مجالس الكبار وعدم توقير كبار السن 
 
   """;
 
-  static const String ayahHadithOneTherteen_1 = """
+  static const String ayahHadithOneThirteen_1 = """
 قال تعالى 
  إِنَّ مِنۡ أَزۡوَ ٰجِكُمۡ وَأَوۡلَـٰدِكُمۡ عَدُوࣰّا لَّكُمۡ فَٱحۡذَرُوهُمۡۚ 
 التغابن 14 

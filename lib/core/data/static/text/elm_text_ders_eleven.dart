@@ -340,10 +340,10 @@ class ElmTextDersEleven {
   """;
 
 // page 19
-  static const String titleElevenNinteen = """
+  static const String titleElevenNineteen = """
   الإعتقاد بأجل الموت وكتابة الرزق سبيل للعزة
 """;
-  static const String elmTextElevenNinteen = """
+  static const String elmTextElevenNineteen = """
 إذا أعتقدنا أن حياتنا بيد الله ، وموتنا بيد الله ، ورزقنا بيد الله ، رفعنا رؤوسنا ، وكُنا أعزة ، وقد قيل للإمام الحسن البصري : ما سر عزك يا إمام ؟ فقال: علمت أن رزقي لا يأخذه أحد فاطمأنت نفسي
   
   """;

@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:elm/core/data/model/elm_lists/enum_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 
 class ElmModelNewOrder {
   final List<String>? titles;

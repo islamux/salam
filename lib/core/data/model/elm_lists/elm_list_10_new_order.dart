@@ -1,5 +1,6 @@
 // khatira 10
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_ten.dart';
 
 List<ElmModelNewOrder> elmList10NewOrder = [
@@ -17,11 +18,22 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     ayahs: [
       ElmTextDersTen.ayahHadithTenOne_1,
     ],
-    order: ''',
-    titles,texts,ayahs,
-    texts,ayahs,
-    texts,
-''',
+    order: [
+      EnOrder.titles,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
+//     order: ''',
+//     titles,texts,ayahs,
+//     texts,ayahs,
+//     texts,
+// ''',
   ),
   // 2
   ElmModelNewOrder(
@@ -31,9 +43,13 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTextTenTwo_1,
     ],
-    order: ''',
-    ayahs,texts,
-    ''',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: ''',
+    // ayahs,texts,
+    // ''',
   ),
 
   // 3
@@ -48,10 +64,18 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTextTenThree_1,
     ],
-    order: ''',
-    titles,ayahs,texts,
-    ayahs,texts,
-    ''',
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: ''',
+    // titles,ayahs,texts,
+    // ayahs,texts,
+    // ''',
   ),
 
   // 4
@@ -62,9 +86,13 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTextTenFour_1,
     ],
-    order: ''',
-    ayahs,texts,
-    ''',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: ''',
+    // ayahs,texts,
+    // ''',
   ),
 
   // 5
@@ -76,9 +104,14 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTextTenFive_1,
     ],
-    order: ''',
-    ayahs,texts,ayahs
-    ''',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: ''',
+    // ayahs,texts,ayahs
+    // ''',
   ),
 
   // 6
@@ -89,9 +122,13 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     ayahs: [
       ElmTextDersTen.ayahHadithTenSix_1,
     ],
-    order: ''',
-    texts,ayahs,
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: ''',
+    // texts,ayahs,
+    // ''',
   ),
 
   // 7
@@ -105,10 +142,19 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       ElmTextDersTen.ayahHadithTenSeven_1,
       ElmTextDersTen.ayahHadithTenSeven_2,
     ],
-    order: ''',
-    texts,ayahs,
-    texts,ayahs,
-    texts,
-    ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
+    // order: ''',
+    // texts,ayahs,
+    // texts,ayahs,
+    // texts,
+    // ''',
   )
 ];

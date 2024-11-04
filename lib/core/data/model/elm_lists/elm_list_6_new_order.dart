@@ -1,5 +1,6 @@
 // TextDersSix (new)
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_six.dart';
 
 List<ElmModelNewOrder> elmList6NewOrder = [
@@ -15,9 +16,15 @@ List<ElmModelNewOrder> elmList6NewOrder = [
     ayahs: [
       ElmTextDersSix.ayahHadithSixOne_1,
     ],
-    order: '''
-    titles,texts,texts,ayahs
- ''',
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+//     order: '''
+//     titles,texts,texts,ayahs
+//  ''',
   ),
   // page 2
   ElmModelNewOrder(
@@ -30,9 +37,14 @@ List<ElmModelNewOrder> elmList6NewOrder = [
     ayahs: [
       ElmTextDersSix.ayahHadithSixTwo_1,
     ],
-    order: '''
-    titles,texts,ayahs
- ''',
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+    // order: '''
+//     titles,texts,ayahs
+//  ''',
   ),
   // page 3
   ElmModelNewOrder(
@@ -43,16 +55,24 @@ List<ElmModelNewOrder> elmList6NewOrder = [
     ayahs: [
       ElmTextDersSix.ayahHadithSixThree_1,
     ],
-    order: '''
-    texts,ayahs,texts,
- ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+//     order: '''
+//     texts,ayahs,texts,
+//  ''',
   ),
   // page 4
   ElmModelNewOrder(
     texts: [ElmTextDersSix.elmTextSixFour_1],
-    order: '''
-    texts,
-     ''',
+    order: [
+      EnOrder.texts,
+    ],
+    // order: '''
+    // texts,
+    //  ''',
   ),
 
   // page 5
@@ -66,8 +86,13 @@ List<ElmModelNewOrder> elmList6NewOrder = [
     texts: [
       ElmTextDersSix.elmTextSixFive_1,
     ],
-    order: '''
-    titles,ayahs,texts,
- ''',
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: '''
+    // titles,ayahs,texts,
+//  ''',
   )
 ];

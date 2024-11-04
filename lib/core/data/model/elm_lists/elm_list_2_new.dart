@@ -115,13 +115,13 @@ List<ElmModelNew> elmList2New = [
   // 13
   ElmModelNew(
     titles: [
-      ElmTextDersTwo.titleTwoTherteen,
+      ElmTextDersTwo.titleTwoThirteen,
     ],
     ayahs: [
-      ElmTextDersTwo.ayhaHadithTowTherteen_1,
+      ElmTextDersTwo.ayahHadithTowThirteen_1,
     ],
     texts: [
-      ElmTextDersTwo.elmTextTwoTherteen_1,
+      ElmTextDersTwo.elmTextTwoThirteen_1,
     ],
   ),
 ];

@@ -1,6 +1,6 @@
 class ElmTextDersThree {
   /*------------ Page 1 -----------*/
-  static const String titleThreeeOne = """
+  static const String titleThreeOne = """
 العطاء (المال والملك) ليس مقياس لحب الله
 -------------
 """;

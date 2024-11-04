@@ -27,7 +27,7 @@ List<ElmModelNew> elmList1New = [
   // 3
   ElmModelNew(
     ayahs: [
-      ElmTextDersOne.ayahHaditheOneThree_1,
+      ElmTextDersOne.ayahHadithOneThree_1,
       ElmTextDersOne.ayahHadithOneThree_2,
     ],
     texts: [
@@ -125,13 +125,13 @@ List<ElmModelNew> elmList1New = [
   // 13
   ElmModelNew(
     titles: [
-      ElmTextDersOne.elmTextOneTherteen_1,
+      ElmTextDersOne.elmTextOneThirteen_1,
     ],
     texts: [
-      ElmTextDersOne.elmTextOneTherteen_2,
+      ElmTextDersOne.elmTextOneThirteen_2,
     ],
     ayahs: [
-      ElmTextDersOne.ayahHadithOneTherteen_1,
+      ElmTextDersOne.ayahHadithOneThirteen_1,
     ],
   ),
   // 14

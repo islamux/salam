@@ -1,12 +1,13 @@
 // TextDersThree (new)
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_three.dart';
 
 List<ElmModelNewOrder> elmList3NewOrder = [
   // Page 1
   ElmModelNewOrder(
     titles: [
-      ElmTextDersThree.titleThreeeOne,
+      ElmTextDersThree.titleThreeOne,
     ],
     texts: [
       ElmTextDersThree.elmTexThreeOne_1,
@@ -16,10 +17,18 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       ElmTextDersThree.ayaHadithThreeOne_1,
       ElmTextDersThree.ayahHadithThreeOne_2,
     ],
-    order: '''
-      titles,texts,ayahs, 
-      texts,ayahs, 
- ''',
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+//     order: '''
+//       titles,texts,ayahs,
+//       texts,ayahs,
+//  ''',
   ),
 
   // page 2
@@ -32,10 +41,16 @@ List<ElmModelNewOrder> elmList3NewOrder = [
     ayahs: [
       ElmTextDersThree.ayahHadithThreeTwo_1,
     ],
-    order: '''
-      texts,texts, 
-      ayahs,texts, 
-     ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: '''
+    //   texts,texts,
+    //   ayahs,texts,
+    //  ''',
   ),
 
   // page 3
@@ -47,10 +62,15 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       ElmTextDersThree.elmTextThreeThree_1,
       ElmTextDersThree.elmTextThreeThree_2,
     ],
-    order: '''
-      ayahs,texts, 
-      texts, 
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+//     order: '''
+//       ayahs,texts,
+//       texts,
 
- ''',
+//  ''',
   ),
 ];
