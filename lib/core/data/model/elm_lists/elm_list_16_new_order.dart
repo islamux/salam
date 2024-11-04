@@ -101,7 +101,7 @@ List<ElmModelNewOrder> elmList16NewOrder = [
     ],
     texts: [
       ElmTextDersSixteen.elmTextDersSixteenEight_1,
-    ],,
+    ],
     order: 'subtitles,texts',
   ),
   // page 9
@@ -243,7 +243,9 @@ List<ElmModelNewOrder> elmList16NewOrder = [
     titles: [
       ElmTextDersSixteen.titleSixteenTwenty,
     ],
-    texts: [ElmTextDersSixteen.elmTextDersSixteenTwenty_1,],
+    texts: [
+      ElmTextDersSixteen.elmTextDersSixteenTwenty_1,
+    ],
     order: 'titles,texts',
   ),
 

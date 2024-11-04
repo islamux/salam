@@ -43,7 +43,7 @@ class ElmTextDersSeventeen {
   ( فَٱسۡتَقِیمَا ) 
 
 """;
-  static const String subtitleSeventtenTwo_1 = """
+  static const String subtitleSeventeenTwo_1 = """
 :المعنى الأول
 """;
   static const String elmTextSeventeenTwo_2 = """

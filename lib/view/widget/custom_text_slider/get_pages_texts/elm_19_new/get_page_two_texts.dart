@@ -18,6 +18,7 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
     // ayah 0
     //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)
     TextSpan(text: elm.ayahs![0], style: ayahStyle),
+
     // subtitle 1
     //if (elm.subtitles != null && elm.subtitles!.length > 1)
     TextSpan(text: elm.subtitles![1], style: subtitleStyle),

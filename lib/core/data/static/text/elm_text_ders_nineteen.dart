@@ -248,28 +248,28 @@ class ElmTextNineteen {
 
 """;
 // page 13
-  static const String elmTextNineteenTherteen_1 = """
+  static const String elmTextNineteenThirteen_1 = """
 الله ولي المؤمنين
 """;
-  static const String ayahHadithNineteenThertten_1 = """
+  static const String ayahHadithNineteenThreaten_1 = """
 
     نحن أولياؤكم 
 
 """;
 
-  static const String elmTextNineteenTherteen_2 = """
+  static const String elmTextNineteenThirteen_2 = """
 ربنا عز وجل ينقلك من وضع إلى وضع أحسن، ومن تفلت إلى تمسك، ومن شقاء إلى سعادة، ومن ضياع إلى وجدان، ومن نقمة إلى رضى، ويؤويك في بيت فيأتيك الدخل الحلال، ويجمعك مع أهل الحق، ويجمعك مع الصالحين، ويدخل على قلبك السرور 
 """;
-  static const String ayahHadithNineteenTherteen_2 = """
+  static const String ayahHadithNineteenThirteen_2 = """
 
     نحن أولياؤكم في الحياة الدنيا 
 
 """;
-  static const String subtitleNineteenTherteen_1 = """
+  static const String subtitleNineteenThirteen_1 = """
 الإستقامة سبب ولاية الله للمؤمن 
 
 """;
-  static const String elmTextNineteenTherteen_3 = """
+  static const String elmTextNineteenThirteen_3 = """
 الإنسان إذا كان في طاعة الله صار الله وليه، والحقيقة أن القضية سهلة جداً، لمجرد أن تستقيم على أمره تستحق أن يكون الله وليك، خرج الإنسان عن أمر الله عز وجل فكأنه جعل الشيطان وليه، هو عدو مضل مبين، فكل إنسان يعصي الله خرج من ولاية الله، وصار تحت ولاية الشيطان، هو وليُهم يخرجهم من النور إلى الظلمات، فالإنسان المؤمن إذا قرأ هذه الآية شعر أن الله وليه يدافع عنه، يأخذ بيده كلما عثر، كلما زلت قدمه يسوق له من الشدائد مايحمله على التوبة، يتوب عليه ليتوب، هذا معنى وليه فأنت لست سائباً، فالله عز وجل قال 
 أفحسبتم أنما خلقناكم عبثاً وانكم إلينا لا تُرجعون 
 بل أنت ضمن التربية 
@@ -313,7 +313,7 @@ class ElmTextNineteen {
 
 """;
 // page 16
-  static const String titleNinteenSixteen = """
+  static const String titleNineteenSixteen = """
   وقفة 
 ------
 """;

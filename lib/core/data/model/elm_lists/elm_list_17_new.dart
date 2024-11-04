@@ -29,7 +29,7 @@ List<ElmModelNew> elmList17New = [
       ElmTextDersSeventeen.elmTextSeventeenTwo_2,
     ],
     subtitles: [
-      ElmTextDersSeventeen.subtitleSeventtenTwo_1,
+      ElmTextDersSeventeen.subtitleSeventeenTwo_1,
     ],
   ),
 
