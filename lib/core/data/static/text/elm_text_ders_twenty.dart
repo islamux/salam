@@ -251,7 +251,7 @@ class ElmTextTwenty {
 
 """;
 // page 10
-  static const String titletwentyten = """
+  static const String titleTwentyTen = """
 الله هو أهل التقوى  
 """;
 
@@ -307,14 +307,14 @@ class ElmTextTwenty {
 """;
 
 // page 13
-  static const String elmTextTwentyTherteen_1 = """
+  static const String elmTextTwentyThirteen_1 = """
 لكن ألا تحب أن يكون الله معك؟ 
 
 """;
-  static const String subtitleTwentyTherteen_1 = """
+  static const String subtitleTwentyThirteen_1 = """
 معية الله بالحفظ ملازمة للمتقين 
 """;
-  static const String elmTextTwentyTherteen_2 = """
+  static const String elmTextTwentyThirteen_2 = """
 هل تدري أن معية الله نوعان
 
 معية عامة
@@ -323,12 +323,12 @@ class ElmTextTwenty {
 الله مع كل مخلوق لقوله تعالى 
 
 """;
-  static const String ayahHadithTwentyTherteen_1 = """
+  static const String ayahHadithTwentyThirteen_1 = """
 
     وهو معكم أين ماكنتم 
 
 """;
-  static const String elmTextTwentyeTherteen_3 = """
+  static const String elmTextTwenteThirteen_3 = """
 ولكن المعية الخاصة معية الحفظ 
 معية الرعاية 
 معية النصر 
@@ -399,7 +399,7 @@ class ElmTextTwenty {
 
 وعندئذ تقبل على الطاعة وتبتعد عن المعصية، هذا هو النور الذي قال الله عنه
 """;
-  static const String ayahHdithTwentySeventeen_1 = """
+  static const String ayahHadithTwentySeventeen_1 = """
 
 ياايها الذين آمنو إن تتقو الله يجعل لكم فرقانا 
 
@@ -415,15 +415,15 @@ class ElmTextTwenty {
  """;
 
   // page 19
-  static const String titleTwentyNinteen = """
+  static const String titleTwentyNineteen = """
 تزكية وتقييم الناس من شأن الله وحده 
  """;
-  static const String elmTextTwentyNinteen_1 = """
+  static const String elmTextTwentyNineteen_1 = """
 شيئ آخر وهو موضوع التزكية، موضوع تقييم الذات هذا من شأن الله عزوجل 
 مؤمنون كثيرون يخوضون فيما لا حق لهم أن يخوضوا فيه 
 تقييم الإنسان من شأن الله عزوجل 
  """;
-  static const String ayahHadithTwentyNinteen_1 = """
+  static const String ayahHadithTwentyNineteen_1 = """
 
 النبي عليه الصلاة والسلام حينما عاتب أحد أصحابه بقتل إنسان في المعركة قال: لا إله إلا الله، فعن أسامة بن زيد قال: بعثنا رسول الله صل الله عليه وسلم في سرية، فصبحنا الحرقات من جهينة فأدركت رجلا فقال لا إله إلا الله فطعنتُهُ، فوقع في نفسي من ذلك، فذكرتُهُ للنبي صلى الله عليه وسلم، فقال رسول الله صلى الله عليه وسلم:
 أقال لا إله إلا الله، وقتلته؟ 

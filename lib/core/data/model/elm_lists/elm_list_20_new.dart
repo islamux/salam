@@ -128,7 +128,7 @@ List<ElmModelNew> elmList20New = [
   // page 10
   ElmModelNew(
     titles: [
-      ElmTextTwenty.titletwentyten,
+      ElmTextTwenty.titleTwentyTen,
     ],
     texts: [
       ElmTextTwenty.elmTextTwentyTen_1,
@@ -160,15 +160,15 @@ List<ElmModelNew> elmList20New = [
 // page 13
   ElmModelNew(
     texts: [
-      ElmTextTwenty.elmTextTwentyTherteen_1,
-      ElmTextTwenty.elmTextTwentyTherteen_2,
-      ElmTextTwenty.elmTextTwentyeTherteen_3,
+      ElmTextTwenty.elmTextTwentyThirteen_1,
+      ElmTextTwenty.elmTextTwentyThirteen_2,
+      ElmTextTwenty.elmTextTwenteThirteen_3,
     ],
     subtitles: [
-      ElmTextTwenty.subtitleTwentyTherteen_1,
+      ElmTextTwenty.subtitleTwentyThirteen_1,
     ],
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyTherteen_1,
+      ElmTextTwenty.ayahHadithTwentyThirteen_1,
     ],
   ),
 // page 14
@@ -208,7 +208,7 @@ List<ElmModelNew> elmList20New = [
       ElmTextTwenty.elmTextTwentySeventeen_1,
     ],
     ayahs: [
-      ElmTextTwenty.ayahHdithTwentySeventeen_1,
+      ElmTextTwenty.ayahHadithTwentySeventeen_1,
     ],
   ),
 
@@ -222,13 +222,13 @@ List<ElmModelNew> elmList20New = [
 // page 19
   ElmModelNew(
     titles: [
-      ElmTextTwenty.titleTwentyNinteen,
+      ElmTextTwenty.titleTwentyNineteen,
     ],
     texts: [
-      ElmTextTwenty.elmTextTwentyNinteen_1,
+      ElmTextTwenty.elmTextTwentyNineteen_1,
     ],
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyNinteen_1,
+      ElmTextTwenty.ayahHadithTwentyNineteen_1,
     ],
   ),
 
