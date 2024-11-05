@@ -6,6 +6,7 @@ List<TextSpan> getPageTwoTexts(int i, List<ElmModelNew> elmList) {
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   ElmModelNew elm = elmList[i];
+
   return [
     // ayah 0
     //if (elm.ayahs != null && elm.ayahs!.isNotEmpty)

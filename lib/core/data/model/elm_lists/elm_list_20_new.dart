@@ -383,25 +383,25 @@ List<ElmModelNew> elmList20New = [
 // page 30
   ElmModelNew(
     texts: [
-      ElmTextTwenty.elmTextTwentyTherty_1,
-      ElmTextTwenty.elmTextTwentyTherty_2,
-      ElmTextTwenty.elmTextTwentyTherty_3,
+      ElmTextTwenty.elmTextTwentyThirty_1,
+      ElmTextTwenty.elmTextTwentyThirty_2,
+      ElmTextTwenty.elmTextTwentyThirty_3,
     ],
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyTherty_1,
-      ElmTextTwenty.ayahHadithTwentyTherty_2,
+      ElmTextTwenty.ayahHadithTwentyThirty_1,
+      ElmTextTwenty.ayahHadithTwentyThirty_2,
     ],
   ),
   // page 31
   ElmModelNew(
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyThertyOne_1,
-      ElmTextTwenty.ayahHadithTwentyThertyOne_2,
-      ElmTextTwenty.ayahHadithTwentyThertyOne_3,
+      ElmTextTwenty.ayahHadithTwentyThirtyOne_1,
+      ElmTextTwenty.ayahHadithTwentyThirtyOne_2,
+      ElmTextTwenty.ayahHadithTwentyThirtyOne_3,
     ],
     texts: [
-      ElmTextTwenty.elmTextTwentyThertyOne_1,
-      ElmTextTwenty.elmTextTwentyThertyOne_2,
+      ElmTextTwenty.elmTextTwentyThirtyOne_1,
+      ElmTextTwenty.elmTextTwentyThirtyOne_2,
     ],
   ),
   // page 32
@@ -413,41 +413,41 @@ List<ElmModelNew> elmList20New = [
 // page 33
   ElmModelNew(
     texts: [
-      ElmTextTwenty.elmTextTwentyThertyThree_1,
-      ElmTextTwenty.elmTextTwentyThertyThree_2,
-      ElmTextTwenty.elmTextTwentyThertyThree_3,
+      ElmTextTwenty.elmTextTwentyThirtyThree_1,
+      ElmTextTwenty.elmTextTwentyThirtyThree_2,
+      ElmTextTwenty.elmTextTwentyThirtyThree_3,
     ],
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyThertyThree_1,
+      ElmTextTwenty.ayahHadithTwentyThirtyThree_1,
     ],
     subtitles: [
-      ElmTextTwenty.subtitleTwentyThertyThree_1,
-      ElmTextTwenty.subtitleTwentyThertyThree_2,
+      ElmTextTwenty.subtitleTwentyThirtyThree_1,
+      ElmTextTwenty.subtitleTwentyThirtyThree_2,
     ],
   ),
 
 // page 34
   ElmModelNew(
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyThertyFour_1,
-      ElmTextTwenty.ayahHadithTwentyThertyFour_2,
-      ElmTextTwenty.ayahHadithTwentyThertyFour_3,
+      ElmTextTwenty.ayahHadithTwentyThirtyFour_1,
+      ElmTextTwenty.ayahHadithTwentyThirtyFour_2,
+      ElmTextTwenty.ayahHadithTwentyThirtyFour_3,
     ],
     texts: [
-      ElmTextTwenty.elmTextTwentyThertyFour_1,
-      ElmTextTwenty.elmTextTwentyThertyFour_2,
-      ElmTextTwenty.elmTextTwentyThertyFour_3,
+      ElmTextTwenty.elmTextTwentyThirtyFour_1,
+      ElmTextTwenty.elmTextTwentyThirtyFour_2,
+      ElmTextTwenty.elmTextTwentyThirtyFour_3,
     ],
   ),
 // page 35
   ElmModelNew(
     ayahs: [
-      ElmTextTwenty.ayahHadithTwentyThertyFive_1,
-      ElmTextTwenty.ayahHadithTwentyThertyFive_2,
+      ElmTextTwenty.ayahHadithTwentyThirtyFive_1,
+      ElmTextTwenty.ayahHadithTwentyThirtyFive_2,
     ],
     texts: [
-      ElmTextTwenty.elmTextTwentyThertyFive_1,
-      ElmTextTwenty.elmTextTwentyThertyFive_2,
+      ElmTextTwenty.elmTextTwentyThirtyFive_1,
+      ElmTextTwenty.elmTextTwentyThirtyFive_2,
     ],
   ),
 ];

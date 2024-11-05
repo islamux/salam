@@ -684,44 +684,44 @@ class ElmTextTwenty {
 
   """;
   // page  30
-  static const String elmTextTwentyTherty_1 = """
+  static const String elmTextTwentyThirty_1 = """
 أي أن في النهاية لا يسعد إلا المتقي، لا يفوز إلا المتقي، لا ينجو إلا المتقي، لا يُفلح إلا المتقي، لا ينجح إلا المتقي، لا يسعد إلا المتقي 
   """;
-  static const String ayahHadithTwentyTherty_1 = """
+  static const String ayahHadithTwentyThirty_1 = """
    والعاقبة للمتقين 
    والعاقبة للتقوى 
 
   """;
-  static const String elmTextTwentyTherty_2 = """
+  static const String elmTextTwentyThirty_2 = """
 لكن من أجل أن تقطف ثمار التقوى يانعة ربنا عز وجل يقول 
    """;
-  static const String ayahHadithTwentyTherty_2 = """
+  static const String ayahHadithTwentyThirty_2 = """
    خذوا ما اتيناكم بقوة 
    
   """;
-  static const String elmTextTwentyTherty_3 = """
+  static const String elmTextTwentyThirty_3 = """
 بقوة، هناك أخذ بلين، ومسايرة، ومجاملة للآخرين، مواقفه دائماً ضبابية، دائماً متردد، دائماً مُرتاب، دائماً يُطيع الله ولكن على مضض، يخاف أن يعصيه، ولكن يرغب أن يعصيه، هذا الموقف المتردد الضبابي، موقف الأخذ والرد، موقف المتخاذل، موقف متردد، هذه المواقف ليست من صفات المؤمنين
   """;
 
   // page 31 وقفة
-  static const String ayahHadithTwentyThertyOne_1 = """
+  static const String ayahHadithTwentyThirtyOne_1 = """
 
    ومن يتق الله يجعل له مخرجا 
    
  """;
 
-  static const String elmTextTwentyThertyOne_1 = """
+  static const String elmTextTwentyThirtyOne_1 = """
 القرآن الكريم فيه شيئ رائع جداً، هذا الشيئ هو أن الآية وهي في سياقها لها معنى، فإذا نزعتها من سياقها وقرأتها وحدها فلها معنى آخر، وهذا من اعجاز القرآن، كل آية إن انتظمت مع أخواتها تؤدي معنى محدداً، أما حينما تنزع من سياقها فتؤدي معنى شمولياً كبيراً جداً 
  """;
-  static const String ayahHadithTwentyThertyOne_2 = """
+  static const String ayahHadithTwentyThirtyOne_2 = """
 
     ومن يتق الله يجعل له مخرجاً 
 
  """;
-  static const String elmTextTwentyThertyOne_2 = """
+  static const String elmTextTwentyThirtyOne_2 = """
 هذه الآية وردت في سورة الطلاق، معناها السياقي: أي ان من يتق الله في تطليق زوجته؛ يطلقها وفق السنة، يطلقها لعدتها، يطلقها في طهر مامسها فيه، يطلقها وهو اعتقد أن الله لعله يحدث بعد ذلك أمرا، يجعل الله له مخرجاً إلى الرجوع إليها، لو أنه ندم بإمكانه أن يُرجعها، لو أنه تأثر لفراقها بإمكانه أن يرجعها 
  """;
-  static const String ayahHadithTwentyThertyOne_3 = """
+  static const String ayahHadithTwentyThirtyOne_3 = """
 
     ومن يتق الله يجعل لهُ مخرجا 
 
@@ -741,34 +741,34 @@ class ElmTextTwenty {
 
  """;
   // page 33
-  static const String elmTextTwentyThertyThree_1 = """
+  static const String elmTextTwentyThirtyThree_1 = """
 هذه الآية يمكن أن تُطبق على مليون حالة، إذا نزعت من سياقها أصبحت قاعدة 
  """;
-  static const String ayahHadithTwentyThertyThree_1 = """
+  static const String ayahHadithTwentyThirtyThree_1 = """
 
     ومن يتق الله يجعل له مخرجا 
 
  """;
-  static const String subtitleTwentyThertyThree_1 = """
+  static const String subtitleTwentyThirtyThree_1 = """
 من يتق الله في الحرام يجعل الله له مخرجاً 
  """;
-  static const String elmTextTwentyThertyThree_2 = """
+  static const String elmTextTwentyThirtyThree_2 = """
 أحياناً يضعك في ظرف كل أبواب الحلال مغلقة، وكل الأبواب المشروعة مغلقة، وكل الطرق الآمنة مغلقة، وكل الأسباب التي رسمها الله عز وجل مغلقة ثم يفتح الله لك باب الحرام، باب المعصية، باب النفاق، باب الكذب، ويمتحنك، المؤمن يقول: والله لن أعصي الله ما حييت، ولن أتساهل في منهج الله قيد أنملة 
 
  """;
-  static const String subtitleTwentyThertyThree_2 = """
+  static const String subtitleTwentyThirtyThree_2 = """
 من اتقى الله عز وجل جاءه رزق وفير من حيث لا يحتسب 
  """;
-  static const String elmTextTwentyThertyThree_3 = """
+  static const String elmTextTwentyThirtyThree_3 = """
 فهذه الآية دقيقة، أحياناً تعرض عليك الدنيا من طريق غير مشروع، قد يأتيك رزق وفير من معصية، من عمل مشبوه، من إنجاز عمل لا يرضي الله، من طريقة لا ترضي الله، هذا المال الوفير الذي يأتيك من هذا الطريق لا بركة فيه، وقد يذهب، ويُذهب معه صاحبه، لكنك إذا اتقيت الله عز وجل جاءك رزق وفير من حيث لا تحتسب 
   """;
   // page 34
-  static const String ayahHadithTwentyThertyFour_1 = """
+  static const String ayahHadithTwentyThirtyFour_1 = """
 
     ومن يتق الله يجعل له مخرجاً ويرزقه من حيث لا يحتسب 
 
   """;
-  static const String elmTextTwentyThertyFour_1 = """
+  static const String elmTextTwentyThirtyFour_1 = """
 لكن لا تطالب الله بالوقت، الوقت له حكمته، أنت عليك أن تعبد الله، الآية دقيقة، وهذه نقطة مهمة جداً 
 
 لابد من ضيق ليظهر صدق الإنسان مع الله وبعد ذلك يأتي فرج الله: 
@@ -776,20 +776,20 @@ class ElmTextTwenty {
 لما ربنا عز وجل قال 
 
  """;
-  static const String ayahHadithTwentyThertyFour_2 = """
+  static const String ayahHadithTwentyThirtyFour_2 = """
 
 ياايها الذين امنوا إنما المشركون نجس فلا يقربوا المسجد الحرام بعد عامهم هذا 
 
  """;
-  static const String elmTextTwentyThertyFour_2 = """
+  static const String elmTextTwentyThirtyFour_2 = """
 فهذه السياحة قديمة، حينما يأتي هؤلاء إلى المسجد الحرام يشترون الطعام والشراب، يسكنون في البيوت، ينفقون أموالاً كثيرة جداً، والأن تكاد تكون صناعة السياحة أروج صناعةٍ في كل البلاد، وتحقق أكبر دخل من العملات الصعبة، فربنا عز وجل قال 
  """;
-  static const String ayahHadithTwentyThertyFour_3 = """
+  static const String ayahHadithTwentyThirtyFour_3 = """
 
 ياايها الذين آمنوا إنما المشركون نجس 
 
  """;
-  static const String elmTextTwentyThertyFour_3 = """
+  static const String elmTextTwentyThirtyFour_3 = """
 ماقال: نجسون، قال 
     ( نجس ) 
 أي هم عين النجاسة 
@@ -798,17 +798,17 @@ class ElmTextTwenty {
 
  """;
   // Page 35
-  static const String ayahHadithTwentyThertyFive_1 = """
+  static const String ayahHadithTwentyThirtyFive_1 = """
     وإن خفتم عيلة 
  """;
-  static const String elmTextTwentyThertyFive_1 = """
+  static const String elmTextTwentyThirtyFive_1 = """
 أي فقراً 
  """;
-  static const String ayahHadithTwentyThertyFive_2 = """
+  static const String ayahHadithTwentyThirtyFive_2 = """
 
     فسوف يغنيكم الله من فضله 
  """;
-  static const String elmTextTwentyThertyFive_2 = """
+  static const String elmTextTwentyThirtyFive_2 = """
 لكن لم يقل: يغنيكم، قال 
     ( فسوف ) 
 

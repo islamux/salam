@@ -195,10 +195,10 @@ class ElmTextDersFifteen {
 """;
 
 // page 13
-  static const String titleFifteenTherteen_1 = """
+  static const String titleFifteenThirteen_1 = """
  :مكانتك بيد الله
  """;
-  static const String elmTextFifteenTherteen_1 = """
+  static const String elmTextFifteenThirteen_1 = """
 مكانتك في المجتمع ملك لله عز وجل
 إن كنت تملك مكانة فهي ملك الله ، ملكك إياها  إن كنت تملك محبة الناس ، فمحبة الناس بالهام الله عز وجل
 عندك زوجة الله ملكك إياها عندك أولاد ابرار الله ملكك إياهم ، تتمتع بصحة طيبة ، الله ملكك إياها

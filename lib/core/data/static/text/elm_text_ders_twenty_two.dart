@@ -187,7 +187,7 @@ class ElmTextTwentyTwo {
   """;
 
 // page 8
-  static const ayahHdithTwentyTwoPageEight_1 = """
+  static const ayahHadithTwentyTwoPageEight_1 = """
 
         رب ارجعون لعلي اعمل صالحاً فيما تركت
 
@@ -201,11 +201,11 @@ class ElmTextTwentyTwo {
 ندم الإنسان بعد رؤية الموت رأي العين 
     """;
 
-  static const textTweentyTwoPageEight_2 = """
+  static const textTwentyTwoPageEight_2 = """
 عند الموت 
 """;
 
-  static const ayahHdithTwentyTwoPageEight_2 = """
+  static const ayahHadithTwentyTwoPageEight_2 = """
 
         ياليتني قدمت لحياتي 
         
@@ -213,7 +213,7 @@ class ElmTextTwentyTwo {
   static const textTwentyTwoPageEight_3 = """
 عند الموت 
 """;
-  static const ayahHdithTwentyTwoPageEight_3 = """
+  static const ayahHadithTwentyTwoPageEight_3 = """
 
         ياليتني اتخذت مع الرسول سبيلا 
 
@@ -222,7 +222,7 @@ class ElmTextTwentyTwo {
 عند الموت 
   """;
 
-  static const ayahHdithTwentyTwoPageEight_4 = """
+  static const ayahHadithTwentyTwoPageEight_4 = """
 
         ياويلتى ليتني لم اتخذ فلاناً خليلا 
 
@@ -231,7 +231,7 @@ class ElmTextTwentyTwo {
 عند الموت 
   """;
 
-  static const ayahHdithTwentyTwoPageEight_5 = """
+  static const ayahHadithTwentyTwoPageEight_5 = """
 
         ويوم يعض الظالم على يديه 
 
@@ -245,7 +245,7 @@ class ElmTextTwentyTwo {
 لا تملك إلا الساعة التي انت فيها، فالماضي لا يعود، والمستقبل لا تملكه، من عد غداً من أجله فقد أساء صحبة الموت فإذا قلت: غداً سأدفع ما علي من رسوم الهاتف، سأسدد إيصال الهاتف غداً 
 أنت لا تعرف حقيقة الموت، الموت أسرع من ذلك، يخطف الناس خطفاً خلال ثانية، يكون شخص ملء السمع والبصر فإذا هو كلمات على الجدران، المرحوم فلان، عميد أسرتهم، الشاب، الشابة، إثر حادث أليم، إثر نوبة قلبية 
 """;
-  static const ayahHdithTwentyTwoPageNine_1 = """
+  static const ayahHadithTwentyTwoPageNine_1 = """
 
         وجاءت سكرة الموت بالحق 
 
@@ -293,7 +293,7 @@ class ElmTextTwentyTwo {
 
 المعنى الآخر: أن كلنا عبيد لله عز وجل، والله وحده الباقي، وهو الذي سيحاسبنا جميعاً، وهو الذي سيُوقفنا أمام أعمالنا، لماذا فعلتم؟ لماذا لم تفعلوا؟ 
     """;
-  static const String ayahHdithTwentyTwoPageTen_1 = """
+  static const String ayahHadithTwentyTwoPageTen_1 = """
  
     انك ميت وإنهم ميتون ثم إنكم يوم القيامة عند ربكم تختصمون
  
@@ -325,7 +325,7 @@ class ElmTextTwentyTwo {
   static const String textTwentyTwoPageEleven_1 = """
 لابد من أن تنكشف الحقائق، لابد من أن يظهر الحق، لابد من أن يزهق الباطل 
     """;
-  static const String ayahHdithTwentyTwoPageEleven_1 = """
+  static const String ayahHadithTwentyTwoPageEleven_1 = """
 
         إن الباطل كان زهوقا 
 
@@ -352,26 +352,26 @@ class ElmTextTwentyTwo {
   static const String textTwentyTwoPageTwelve_1 = """
 إذاً 
 """;
-  static const String ayahHdithTwentyTwoPageTwelve_1 = """
+  static const String ayahHadithTwentyTwoPageTwelve_1 = """
         إنك ميت وإنهم ميتون   
   """;
   static const String textTwentyTwoPageTwelve_2 = """
 وقد قالوا: سبحان من قهر عباده بالموت، فالإنسان له أن يقول مايشاء، وله أن يفعل مايشاء، ولكن لا بد من أن يموت، وبعد الموت يحكم الواحد الديان
 """;
 // page 13
-  static const String subtitleTwentyTwoPageTherteen_1 = """
+  static const String subtitleTwentyTwoPageThirteen_1 = """
 وففة
 ---
 """;
-  static const String subtitleTwentyTwoPageTherteen_2 = """
+  static const String subtitleTwentyTwoPageThirteen_2 = """
 إحتضار الإنسان وعرض جميع أعماله أمامه 
   """;
-  static const String ayahHdithTwentyTwoPageTherteen_1 = """
+  static const String ayahHadithTwentyTwoPageThirteen_1 = """
 
     وجائت سكرة الموت بالحق ذلك ماكنت منه تحيد 
 
   """;
-  static const String textTwentyTwoPageTherteen_1 = """
+  static const String textTwentyTwoPageThirteen_1 = """
 هذا الإحتضار، والمؤمن يرى مقامه في الجنة فيقول: لم أر شراً قط، والكافر يرى مكانه في النار فيقول: لم أر خيراً قط، يكون في دنياه قد سافر، وتنقل كيف يشاء، وأكل أطيب الطعام، ومتع عينيه باجمل النساء، وماترك مكاناً إلا وذهب إليه، وفعل كل مايشتهي، وأنغمس في كل الملذات إلى قمة رأسه وعاش في مجتمع كما يقولون مجتمع التفلت، وفعل كل مايشتهي، وعندما يرى مكانه في النار يقول: لم أر خيراً قط
   """;
   // page 14

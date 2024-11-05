@@ -132,10 +132,10 @@ List<ElmModelNew> elmList15New = [
   // page 13
   ElmModelNew(
     titles: [
-      ElmTextDersFifteen.titleFifteenTherteen_1,
+      ElmTextDersFifteen.titleFifteenThirteen_1,
     ],
     texts: [
-      ElmTextDersFifteen.elmTextFifteenTherteen_1,
+      ElmTextDersFifteen.elmTextFifteenThirteen_1,
     ],
   ), //
   // page 14

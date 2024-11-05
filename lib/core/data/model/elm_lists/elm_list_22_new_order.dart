@@ -1,12 +1,12 @@
+import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_twenty_two.dart';
 
-import '../elm_model_new.dart';
-
 // TextDersSeventeen
-List<ElmModelNew> elmList22New = [
+List<ElmModelNewOrder> elmList22NewOrder = [
   // From class ElmTextTwentyTwo
   // page 1
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageOne_1,
       ElmTextTwentyTwo.textTwentyTwoOnePageOne_2,
@@ -14,10 +14,18 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahTwentyTwoPageOne_1,
     ],
+    // text 0
+    // ayah 0
+    // text 1
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
   ),
 
   // page 2
-  ElmModelNew(
+  ElmModelNewOrder(
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTwo_1,
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTwo_2,
@@ -30,19 +38,57 @@ List<ElmModelNew> elmList22New = [
       ElmTextTwentyTwo.subtitleTwentyTwoPageTwo_1,
       ElmTextTwentyTwo.subtitleTwentyTwoPageTwo_2
     ],
+    // ayah 0
+    // text 0
+
+    // ayah 1
+    // subtitle 0
+    // text 1
+    // subtitle 1
+
+    // ayah 2
+
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.subtitles,
+      //
+      EnOrder.ayahs,
+    ],
   ),
 
   // page 3
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageThree_1,
       ElmTextTwentyTwo.textTwentyTwoPageThree_2,
     ],
     ayahs: [ElmTextTwentyTwo.ayahHadithTwentyTwoPageThree_1],
+    // text 0
+    // ayah 0
+
+    // text 1
+    // subtitle 0
+
+    // text 2
+
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.subtitles,
+      //
+      EnOrder.texts,
+    ],
   ),
 
   // page 4
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageFour_1,
       ElmTextTwentyTwo.textTwentyTwoPageFour_2,
@@ -50,10 +96,18 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageFour_1,
     ],
+    // title
+    // ayah 0
+    // text 0
+
+    // ayah 1
+    // text 1
+
+    order: [],
   ),
 
   // page 5
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageFive_1,
       ElmTextTwentyTwo.textTwentyTwoPageFive_2,
@@ -61,19 +115,21 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageFive_1,
     ],
+    order: [],
   ),
 
   // page 6
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageSix_1,
       ElmTextTwentyTwo.textTwentyTwoPageSix_2,
     ],
     ayahs: [ElmTextTwentyTwo.ayahHadithTwentyTwoPageSix_1],
+    order: [],
   ),
 
   // page 7
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageSeven_1,
       ElmTextTwentyTwo.textTwentyTwoPageSeven_2,
@@ -81,10 +137,11 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageSeven_1,
     ],
+    order: [],
   ),
 
   // page 8
-  ElmModelNew(
+  ElmModelNewOrder(
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageEight_1,
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageEight_2,
@@ -103,10 +160,11 @@ List<ElmModelNew> elmList22New = [
     subtitles: [
       ElmTextTwentyTwo.subtitleTwentyTwoPageEight_1,
     ],
+    order: [],
   ),
 
   // page 9
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageNine_1,
       ElmTextTwentyTwo.textTwentyTwoPageNine_2,
@@ -114,10 +172,11 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageNine_1,
     ],
+    order: [],
   ),
 
   // page 10
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageTen_1,
       ElmTextTwentyTwo.textTwentyTwoPageTen_2,
@@ -125,10 +184,11 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_1,
     ],
+    order: [],
   ),
 
   // page 11
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageEleven_1,
       ElmTextTwentyTwo.textTwentyTwoPageEleven_2,
@@ -136,10 +196,11 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageEleven_1,
     ],
+    order: [],
   ),
 
   // page 12
-  ElmModelNew(
+  ElmModelNewOrder(
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageTwelve_1,
       ElmTextTwentyTwo.textTwentyTwoPageTwelve_2,
@@ -147,10 +208,11 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTwelve_1,
     ],
+    order: [],
   ),
 
   // page 13
-  ElmModelNew(
+  ElmModelNewOrder(
     subtitles: [
       ElmTextTwentyTwo.subtitleTwentyTwoPageThirteen_1,
       ElmTextTwentyTwo.subtitleTwentyTwoPageThirteen_2,
@@ -161,10 +223,11 @@ List<ElmModelNew> elmList22New = [
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageThirteen_1,
     ],
+    order: [],
   ),
 
   // page 14
-  ElmModelNew(
+  ElmModelNewOrder(
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageFourteen_1,
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageFourteen_4,
@@ -176,10 +239,11 @@ List<ElmModelNew> elmList22New = [
       ElmTextTwentyTwo.textTwentyTwoPageFourteen_3,
       ElmTextTwentyTwo.textTwentyTwoPageFourteen_5,
     ],
+    order: [],
   ),
 
   // page 15
-  ElmModelNew(
+  ElmModelNewOrder(
     subtitles: [
       ElmTextTwentyTwo.subtitleTwentyTwoPageFifteen_1,
     ],
@@ -190,10 +254,11 @@ List<ElmModelNew> elmList22New = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageFifteen_1,
     ],
+    order: [],
   ),
 
   // page 16
-  ElmModelNew(
+  ElmModelNewOrder(
     subtitles: [
       ElmTextTwentyTwo.subtitleTwentyTwoPageSixteen_1,
     ],
@@ -204,5 +269,6 @@ List<ElmModelNew> elmList22New = [
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageSixteen_1,
     ],
+    order: [],
   ),
 ];

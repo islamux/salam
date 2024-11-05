@@ -113,7 +113,7 @@ class ElmTextTwentyOne {
 ماهو الصبر الجميل؟ 
  """;
 
-  static const String elmtTextTwentyOneFive_1 = """
+  static const String elmTextTwentyOneFive_1 = """
 ماهو الصبر الجميل؟ الصبر الجميل هو الذي لا ترافقه شكوى إلى الخلق، ويعاب من يشكو الرحيم إلى الذي لا يرحم، الصبر الجميل ألا تشكو إلى أحد شكوتك، إن شكوت إلى كافر فكأنما اشتكيت على الله، وإن شكوت إلى مؤمن فكأنما شكوت إلى الله، وشتان بين من يشتكي على الله ومن يشتكي إلى الله، والصبر الجميل لا شكوى لا إلى مؤمن ولا إلى كافر 
 """;
 
@@ -206,7 +206,7 @@ class ElmTextTwentyOne {
       الم تر كيف فعل ربك بأصحاب الفيل 
 
 """;
-  static const String elmTextTwentyOneEigth_4 = """
+  static const String elmTextTwentyOneEight_4 = """
           ( الم تر ) 
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل 
  
@@ -326,11 +326,11 @@ class ElmTextTwentyOne {
 
 """;
 // page 13
-  static const String ayahHadithTwentyOneTherteen_1 = """
+  static const String ayahHadithTwentyOneThirteen_1 = """
 القضاء وأنواعه 
 """;
 
-  static const String elmTextTwentyOneeTherteen_1 = """
+  static const String elmTextTwentyOneThirteen_1 = """
 القضاء المحمود 
 العلماء قالوا لسيدك ومالك فاصبر على أداء فرائضه وعباداته 
 وقال مجاهد: اصبر على ما أذيت 
@@ -344,7 +344,7 @@ class ElmTextTwentyOne {
 اصبر على البلوى لأن الله يمتحن أصفياءه وأولياءه، اصبر على أوامره ونواهيه، وقيل: اصبر على فراق الأهل والأوطان في الهجره 
 """;
 
-  static const String ayahHadithTwentyOneTherteen_2 = """
+  static const String ayahHadithTwentyOneThirteen_2 = """
 
       ولربك فاصبر 
 
@@ -388,7 +388,7 @@ class ElmTextTwentyOne {
   static const String elmTextTwentyOneFifteen_2 = """
 الآية الكريمة 
 """;
-  static const String ayahHdithTwentyOneFifteen_1 = """
+  static const String ayahHadithTwentyOneFifteen_1 = """
       ولمن صبر 
 """;
 
@@ -497,35 +497,35 @@ class ElmTextTwentyOne {
   """;
 
 // page 19
-  static const String elmTextTwentyOneNinteen_1 = """
+  static const String elmTextTwentyOneNineteen_1 = """
 كل ماتتصورون من قوة، ومن تقنية، ومن تفوق تزول إذا آمنا وصبرنا، وأعددنا مانستطيع من قوة، أعددنا الإيمان الذي يحملنا على طاعة الله، هذا هو الحل ولا حل سواه 
  """;
 
-  static const String ayahHadithTwentyOneNinteen_1 = """
+  static const String ayahHadithTwentyOneNineteen_1 = """
 
 ياايها الذين امنوا اصبروا 
 
  """;
 
-  static const String subtitleTwentyOneNinteen_1 = """
+  static const String subtitleTwentyOneNineteen_1 = """
 أصبر على الطاعة وعن المعصية وعلى قضاء الله وقدره 
  """;
 
-  static const String elmTextTwentyOneNinteen_2 = """
+  static const String elmTextTwentyOneNineteen_2 = """
 ينبغي أن تصبر على طاعة الله، وعن معصيةالله، وأن تصبر على قضاء الله وقدره 
  """;
 
-  static const String ayahHadithTwentyOneNinteen_2 = """
+  static const String ayahHadithTwentyOneNineteen_2 = """
 
       ياايها الذين امنوا اصبروا 
 
  """;
 
-  static const String elmTextTwentyOneNinteen_3 = """
+  static const String elmTextTwentyOneNineteen_3 = """
 أمر إلهي، وحينما يكون الأمر واضحاً وضوح الشمس، لكن متى تصبر؟ حينما تختلط الأمور، وحينما تضيع القضية، وحينما لا يتضح الأمر فأنت مأمور أن تصبر على حكم الله، وعلى طاعة الله، وعن معصيته 
    """;
 
-  static const String ayahHadithTwentyOneNinteen_3 = """
+  static const String ayahHadithTwentyOneNineteen_3 = """
 
       ياايها الذين امنوا اصبروا 
 

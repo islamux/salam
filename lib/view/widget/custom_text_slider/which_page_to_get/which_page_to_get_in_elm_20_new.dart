@@ -99,7 +99,7 @@ List<TextSpan> whichPageToGetInElm20New(int i, List<ElmModelNew> elmList) {
     case 28:
       return getPageTwentyNineTexts(i, elmList);
     case 29:
-      return getPageThertyTexts(i, elmList);
+      return getPageThirtyTexts(i, elmList);
     case 30:
       return getPageThertyOneTexts(i, elmList);
     case 31:

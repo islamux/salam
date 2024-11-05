@@ -1,4 +1,4 @@
-class ElmTextDersSixteen {
+class ElmTextDebsSixteen {
   // page 1
   static const String titleSixteenOne = """
 المرأه الصالحه ودورها في المجتمع
@@ -246,7 +246,7 @@ class ElmTextDersSixteen {
 """;
 
 // page 19
-  static const String subtitleSixteenNinteen_1 = """
+  static const String subtitleSixteenNineteen_1 = """
  معنى الخضوع بالقول 
 """;
   static const String elmTextDersSixteenNinteen_1 = """

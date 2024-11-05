@@ -1,4 +1,5 @@
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_eighteen.dart';
 
 // TextDersSeventeen
@@ -11,7 +12,11 @@ List<ElmModelNewOrder> elmList18NewOrder = [
     texts: [
       ElmTextDersEighteen.elmTextEighteenOne_1,
     ],
-    order: 'titles,texts',
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+    ],
+    // 'titles,texts',
   ),
   // page 2
   ElmModelNewOrder(
@@ -22,7 +27,12 @@ List<ElmModelNewOrder> elmList18NewOrder = [
     ayahs: [
       ElmTextDersEighteen.ayahHadithEighteenTwo_1,
     ],
-    order: 'texts,ayahs,texts',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // 'texts,ayahs,texts',
   ),
   // page 3
   ElmModelNewOrder(
@@ -33,7 +43,12 @@ List<ElmModelNewOrder> elmList18NewOrder = [
       ElmTextDersEighteen.ayahHadithEighteenThree_1,
       ElmTextDersEighteen.ayahHadithEighteenThree_2,
     ],
-    order: 'texts,ayahs,ayahs',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.ayahs,
+    ],
+    // 'texts,ayahs,ayahs',
   ),
 
   // page 4
@@ -44,14 +59,21 @@ List<ElmModelNewOrder> elmList18NewOrder = [
     texts: [
       ElmTextDersEighteen.elmTextEighteenFour_1,
     ],
-    order: 'ayahs,texts',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // 'ayahs,texts',
   ),
   // page 5
   ElmModelNewOrder(
     texts: [
       ElmTextDersEighteen.elmTextEighteenFive_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
   // page 6
   ElmModelNewOrder(
@@ -61,7 +83,11 @@ List<ElmModelNewOrder> elmList18NewOrder = [
     texts: [
       ElmTextDersEighteen.elmTextEighteenSix_1,
     ],
-    order: 'ayahs,texts',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // 'ayahs,texts',
   ),
 
   // page 7
@@ -69,14 +95,20 @@ List<ElmModelNewOrder> elmList18NewOrder = [
     texts: [
       ElmTextDersEighteen.elmTextEighteenSeven_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
   // page 8
   ElmModelNewOrder(
     texts: [
       ElmTextDersEighteen.elmTextEighteenEight_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
   // page 9
   ElmModelNewOrder(
@@ -89,13 +121,21 @@ List<ElmModelNewOrder> elmList18NewOrder = [
     texts: [
       ElmTextDersEighteen.elmTextEighteenNine_1,
     ],
-    order: 'titles,ayahs,texts',
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // 'titles,ayahs,texts',
   ),
   // page 10
   ElmModelNewOrder(
     texts: [
       ElmTextDersEighteen.elmTextEighteenTen_1,
     ],
-    order: 'texts',
+    order: [
+      EnOrder.texts,
+    ],
+    // 'texts',
   ),
 ];

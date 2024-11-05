@@ -1,4 +1,5 @@
 import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:elm/core/data/model/enum_order.dart';
 
 import '../../static/text/elm_text_ders_pre.dart';
 
@@ -12,7 +13,12 @@ List<ElmModelNewOrder> elmListPreNewOrder = [
       ElmTextPre.ayahHadithPreOne_1,
     ],
     texts: [ElmTextPre.elmTextPreOne_1],
-    order: 'titles,ayahs,texts',
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: 'titles,ayahs,texts',
   ),
   // page 2
   ElmModelNewOrder(
@@ -25,7 +31,12 @@ List<ElmModelNewOrder> elmListPreNewOrder = [
     texts: [
       ElmTextPre.elmTextPreTwo_1,
     ],
-    order: 'titles,subtitles,texts',
+    order: [
+      EnOrder.titles,
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+    // order: 'titles,subtitles,texts',
   ),
 
   //page 3
@@ -45,10 +56,27 @@ List<ElmModelNewOrder> elmListPreNewOrder = [
     ],
     titles: [ElmTextPre.title_1],
     subtitles: [ElmTextPre.subtitle_1],
-    order: '''ayahs,texts,
-              ayahs,texts,
-              ayahs,texts,
-              ayahs,ayahs,titles,subtitles,texts,
-    ''',
+    order: [
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.ayahs,
+      EnOrder.titles,
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+    // order: '''ayahs,texts,
+    //           ayahs,texts,
+    //           ayahs,texts,
+    //           ayahs,ayahs,titles,subtitles,texts,
+    // ''',
   )
 ];
