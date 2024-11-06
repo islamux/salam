@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:elm/core/data/model/enum_order.dart';
 
 class ElmModelNewOrder {
