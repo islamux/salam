@@ -21,7 +21,7 @@ class ElmTextTwentyTwo {
         كل نفس ذائقة الموت 
 
   """;
-  static const textTwentyTwoPageTwo_2 = """
+  static const textTwentyTwoPageTwo_1 = """
 هذا أخطر حدث في حياة الإنسان، أخطر من الحياة والولادة، لماذا؟ الولادة فيها خيارات كثيرة أمامك، أما الموت فليس فيه خيار، فإذا سيق رجل للإعدام، إذا بكى هل يخلصونه مما هو فيه؟ البكاء والتوسل هل ينجيانه من الإعدام؟ لا، لو ضحك هل ينجو؟ هذا ممر إجباري، ضحكه كبكائه، وصراخه كصمته، وتوسله ككبريائه، هذا الحكمُ لابد من أن يقع، لذلك قال ربنا عز وجل 
   
   """;
@@ -35,7 +35,7 @@ class ElmTextTwentyTwo {
 خلق الموت والحياة 
   """;
 
-  static const textTwentyTwoPageTwo_3 = """
+  static const textTwentyTwoPageTwo_2 = """
 بدأ بالموت، لأن حدث الموت أخطر في حياة الإنسان من حدث الحياة، كمثل أول العام الدراسي فأوله سهل، الفرص كلها واسعة ومفتوحة، تدرس أو لا تدرس، تهدر بعض الوقت أو تستغله، تنتبه أو لا تنتبه، تتشاغل، تكتب، تؤدي الواجبات، تهملها 
 هناك خيارات واسعة جداً، ولكن دخولك على قاعة الامتحان يترتب عليه النجاح أو الرسوب، الإكرام أو الإهانة، هنا ضاقت الخيارات
 """;
@@ -427,4 +427,18 @@ class ElmTextTwentyTwo {
   static const String ayahHadithTwentyTwoPageSixteen_2 = """
 {لا أجمع على عبدي أمنين وخوفين، إن أمنني في الدنيا أخفته يوم القيامة، وإن خافني في الدنيا أمنته يوم القيامة}
 """;
+
+  static var ayahHadithTwentyTwoPageNine_2;
+
+  static var ayahHadithTwentyTwoPageNine_3;
+
+  static var ayahHadithTwentyTwoPageNine_4;
+
+  static var ayahHadithTwentyTwoPageTen_2;
+
+  static var ayahHadithTwentyTwoPageEleven_2;
+
+  static var ayahHadithTwentyTwoPageEleven_3;
+
+  static var textTwentyTwoPageTwo_3;
 }
