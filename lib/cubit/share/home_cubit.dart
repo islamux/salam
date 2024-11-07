@@ -1,4 +1,4 @@
-import 'package:elm/core/data/model/elm_model_new.dart';
+import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:flutter/material.dart';
 
 import 'package:elm/core/data/static/routes_constant.dart';
@@ -104,7 +104,7 @@ class HomeCubit extends BasePageCubit {
   }
 
   @override
-  getShareText(int currentPageIndex, List<ElmModelNew> elmList) {
+  getShareText(int currentPageIndex, List<ElmModelNewOrder> elmList) {
     // TODO: implement getShareText
     throw UnimplementedError();
   }

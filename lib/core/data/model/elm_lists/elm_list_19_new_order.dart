@@ -2,7 +2,6 @@
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_nineteen.dart';
-import 'package:intl/date_symbols.dart';
 
 // TextDersSeventeen
 List<ElmModelNewOrder> elmList19NewOrder = [

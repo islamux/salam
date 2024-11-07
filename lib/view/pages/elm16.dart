@@ -1,4 +1,4 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_16_new.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_16_new_order.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_16_cubit.dart';
@@ -27,9 +27,8 @@ class Elm16Page extends StatelessWidget {
                     onPressed: () {
                       final currentPageIndex =
                           context.read<Elm16Cubit>().currentPageIndex;
-                      context
-                          .read<Elm16Cubit>()
-                          .customShareContent(currentPageIndex, elmList16New);
+                      context.read<Elm16Cubit>().customShareContent(
+                          currentPageIndex, elmList16NewOrder);
                     },
                     icon: const Icon(Icons.share),
                   ),

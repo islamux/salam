@@ -1,10 +1,9 @@
 import 'package:elm/core/data/model/elm_lists/elm_list_pre_new_order.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_pre_cubit.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_one_texts_order.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_texts_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -33,7 +32,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                 reverse: true,
                 controller: cubit.pageController,
                 onPageChanged: (index) => cubit.onPageChanged(index),
-                itemCount: elmListPreNew.length,
+                itemCount: elmListPreNewOrder.length,
                 itemBuilder: (context, i) {
                   List<TextSpan> pageTexts =
                       getPageTexts(i, elmListPreNewOrder);
@@ -81,11 +80,11 @@ class CustomTextSliderElmPre extends StatelessWidget {
                         cubit.goToPage(value.toInt());
                       },
                       min: 0,
-                      max: elmListPreNew.length.toDouble() - 1,
+                      max: elmListPreNewOrder.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmListPreNew.length}', // Null check added
+                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmListPreNewOrder.length}', // Null check added
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

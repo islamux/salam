@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings
 
+import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
-import 'package:elm/core/data/model/elm_model_new.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart';
 
 // BaseCubit: يحتوي على كل الدوال الأساسية
@@ -12,7 +12,7 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   int currentPageIndex = 0;
   PageController pageController = PageController();
   double fontSize = 21.0;
-  late List<ElmModelNew> elmList; // قائمة العناصر للنماذج
+  late List<ElmModelNewOrder> elmList; // قائمة العناصر للنماذج
   BasePageCubit() : super(PageInitial());
 
   // Methods -- //todo : move it from logic to ui
@@ -46,7 +46,8 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   }
 
   // Share content function (reusable across all cubits)
-  void customShareContent(int currentPageIndex, List<ElmModelNew> elmList) {
+  void customShareContent(
+      int currentPageIndex, List<ElmModelNewOrder> elmList) {
     try {
       final List<Text> shareText = getShareText(currentPageIndex, elmList);
       final String joinedText = shareText
@@ -60,10 +61,10 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
     }
   }
 
-  List<Text> getShareText(int currentPageIndex, List<ElmModelNew> elmList);
+  List<Text> getShareText(int currentPageIndex, List<ElmModelNewOrder> elmList);
 
-  // البحث في محتوى `ElmModelNew`
-  List<ElmModelNew> searchContent(String query) {
+  // البحث في محتوى `ElmModelNewOrder`
+  List<ElmModelNewOrder> searchContent(String query) {
     final results = elmList.where((item) {
       bool containsInTitles =
           item.titles?.any((title) => title.contains(query)) ?? false;

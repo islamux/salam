@@ -1,11 +1,9 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_17_new.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_17_new_order.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart'; // Import BasePageState for managing state
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_17_cubit.dart';
-import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_one_texts_order.dart';
-import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_17_new.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_texts_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart'; // Required for Bloc/Cubit
 
