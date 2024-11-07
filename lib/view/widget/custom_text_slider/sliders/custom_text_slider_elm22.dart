@@ -6,7 +6,7 @@ import 'package:elm/cubit/elm_cubits/elm_22_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../get_pages_texts/get_page_texts_order.dart'; // Required for Bloc/Cubit
+import '../get_page_texts_order.dart'; // Required for Bloc/Cubit
 
 class CustomTextSliderElm22 extends StatelessWidget {
   const CustomTextSliderElm22({super.key});
