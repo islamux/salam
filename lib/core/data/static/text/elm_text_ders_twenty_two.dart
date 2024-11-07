@@ -253,7 +253,7 @@ class ElmTextTwentyTwo {
   static const String textTwentyTwoPageNine_2 = """
 الموت ينقلك من علم اليقين إلى حق اليقين، ينقلك من أفكار منطقية سمعتها إلى مشاهدات حقيقية تراها، خيارنا مع الإيمان هل هو خيار قبول أو رفض؟ لا والله، إنما هو خيار وقت، إما أن نؤمن قبل فوات الآوان، إما أن نؤمن ونستفيد من إيماننا، أو أن نؤمن من دون أن نستفيد من الإيمان شيئاً فتزداد الحسرة والندم 
   """;
-  static const String ayahHdithTwentyTwoPageNine_2 = """
+  static const String ayahHadithTwentyTwoPageNine_2 = """
 
         إنك ميت وإنهم ميتون 
 
@@ -268,7 +268,7 @@ class ElmTextTwentyTwo {
 
 فالموت حق، فالأنبياء ماتوا، والمؤمنون ماتوا، والكفار ماتوا، والأغنياء ماتوا، والفقراء ماتوا، والأصحاء ماتوا، والمرضى ماتوا، والأقوياء ماتوا، والضعفاء ماتوا، والظالمون ماتوا، والمظلومون ماتوا، وكل مخلوق يموت 
    """;
-  static const String ayahHdithTwentyTwoPageNine_3 = """
+  static const String ayahHadithTwentyTwoPageNine_3 = """
 
         إنك ميت وإنهم ميتون 
         
@@ -277,7 +277,7 @@ class ElmTextTwentyTwo {
 
 هم سيموتون أيضاً، يقول لك: مسكين مات، فهل أنت لن تموت؟ لا شماتة في الموت، فلان مات؟! وإنك ميتٌ معه، طبيب تراءى له أن مريضه سيموت بعد ساعتين، عاش ثلاثين سنة بعد هذه الكلمة، والطبيب مات بعد اثنتي عشرة سنة 
   """;
-  static const String ayahHdithTwentyTwoPageNine_4 = """
+  static const String ayahHadithTwentyTwoPageNine_4 = """
 
         إنك ميت وإنهم ميتون 
 
@@ -304,7 +304,7 @@ class ElmTextTwentyTwo {
   static const String textTwentyTwoPageTen_2 = """
 هنيئاً لمن كان على الحق، كل إنسان يدعي في هذه الدنيا أنه على حق، القضية سهلة 
 """;
-  static const String ayahHdithTwentyTwoPageTen_3 = """
+  static const String ayahHadithTwentyTwoPageTen_2 = """
 
         كل حزب بما لديهم فرحون 
 
@@ -313,7 +313,7 @@ class ElmTextTwentyTwo {
 كل إنسان يدعي أنه على حق، ومعه الأدلة، ومعه البراهين، ومعه الشواهد، ويظن نفسه محور العالم، والناس من حوله جهلة، أما البطولة أن تكون على الحق فعلاً، البطولة حينما ترجع إلى الله عز وجل أن تكون مع الله، أن تكون مع الحق المبين
 لذلك ربنا عز وجل قال 
 """;
-  static const String ayahHdithTwentyTwoPageTen_4 = """
+  static const String ayahHdithTwentyTwoPageTen_3 = """
 
         فتوكل على الله إنك على الحق المُبين 
 
@@ -333,7 +333,7 @@ class ElmTextTwentyTwo {
   static const String textTwentyTwoPageEleven_2 = """
 فبشكل أو بأخر لو معك كيلو من الذهب الخالص، والناس جميعاً ظنوه معدناً خسيساً، لا تبالي بهم، ولو أوهمت الناس أن معك ذهباً خالصاً وهو معدن خسيس، لا تفرح بهذا الإيهام، خيرك منك وشرك منك، سعادتك منك وشقاؤك منك، ويوم القيامة
 """;
-  static const String ayahHdithTwentyTwoPageEleven_2 = """
+  static const String ayahHadithTwentyTwoPageEleven_2 = """
 
         اليوم نختم على أفواههم وتكلمنا أيديهم وتشهد ارجلهم 
 
@@ -341,7 +341,7 @@ class ElmTextTwentyTwo {
   static const String textTwentyTwoPageEleven_3 = """
 فبشكل أو بأخر لو معك كيلو من الذهب الخالص، والناس جميعاً ظنوه معدناً خسيساً، لا تبالي بهم، ولو أوهمت الناس أن معك ذهباً خالصاً وهو معدن خسيس، لا تفرح بهذا الإيهام، خيرك منك وشرك منك، سعادتك منك وشقاؤك منك، ويوم القيامة
 """;
-  static const String ayahHdithTwentyTwoPageEleven_3 = """
+  static const String ayahHadithTwentyTwoPageEleven_3 = """
           يُنبأ الإنسان يومئذٍ بما قدم واخر 
         كل نفس بما كسبت رهينة 
 """;
@@ -428,17 +428,17 @@ class ElmTextTwentyTwo {
 {لا أجمع على عبدي أمنين وخوفين، إن أمنني في الدنيا أخفته يوم القيامة، وإن خافني في الدنيا أمنته يوم القيامة}
 """;
 
-  static var ayahHadithTwentyTwoPageNine_2;
+  // static var ayahHadithTwentyTwoPageNine_2;
 
-  static var ayahHadithTwentyTwoPageNine_3;
+  // static var ayahHadithTwentyTwoPageNine_3;
 
-  static var ayahHadithTwentyTwoPageNine_4;
+  // static var ayahHadithTwentyTwoPageNine_4;
 
-  static var ayahHadithTwentyTwoPageTen_2;
+  // static var ayahHadithTwentyTwoPageTen_2;
 
-  static var ayahHadithTwentyTwoPageEleven_2;
+  // static var ayahHadithTwentyTwoPageEleven_2;
 
-  static var ayahHadithTwentyTwoPageEleven_3;
+  // static var ayahHadithTwentyTwoPageEleven_3;
 
-  static var textTwentyTwoPageTwo_3;
+  // static var textTwentyTwoPageTwo_3;
 }

@@ -326,6 +326,7 @@ List<ElmModelNewOrder> elmList22NewOrder = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_1,
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_2,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_2,
     ],
     // subtitle 0
     // text 0

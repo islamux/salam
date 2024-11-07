@@ -44,6 +44,7 @@ class Elm21Page extends StatelessWidget {
               leading: GestureDetector(
                 onTap: () {
                   context.read<Elm21Cubit>().resetCounter(); // Reset counter
+                  // todo make the navigation better , shorter using helper
                   Navigator.pushNamed(
                       context, RoutesConstant.home); // Navigate to home
                 },

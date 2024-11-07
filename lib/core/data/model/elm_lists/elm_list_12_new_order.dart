@@ -13,6 +13,7 @@ List<ElmModelNewOrder> elmList12NewOrder = [
     ],
     order: [
       EnOrder.ayahs,
+      EnOrder.texts,
     ],
     // order: 'ayahs,texts',
   ),
