@@ -4,7 +4,7 @@ import 'package:elm/core/data/model/elm_lists/elm_list_pre_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_pre_cubit.dart';
-import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_pre_new_order.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_one_texts_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -36,7 +36,7 @@ class CustomTextSliderElmPre extends StatelessWidget {
                 itemCount: elmListPreNew.length,
                 itemBuilder: (context, i) {
                   List<TextSpan> pageTexts =
-                      whichPageToGetInPrerOrder(i, elmListPreNewOrder);
+                      getPageTexts(i, elmListPreNewOrder);
 
                   return Column(
                     children: [

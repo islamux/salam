@@ -3,9 +3,12 @@ import 'package:elm/core/data/model/elm_lists/elm_list_4_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_4_cubit.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_one_texts_order.dart';
 import 'package:elm/view/widget/custom_text_slider/which_page_to_get/which_page_to_get_in_elm_4_new.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart'; // Required for Bloc/Cubit
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../../../core/data/model/elm_lists/elm_list_4_new_order.dart'; // Required for Bloc/Cubit
 
 class CustomTextSliderElm4 extends StatelessWidget {
   const CustomTextSliderElm4({super.key});
@@ -37,11 +40,10 @@ class CustomTextSliderElm4 extends StatelessWidget {
                 controller: cubit.pageController, // Use cubit's page controller
                 onPageChanged: (index) =>
                     cubit.onPageChanged(index), // Handle page change
-                itemCount: elmList4New.length, // Total pages
+                itemCount: elmList4NewOrder.length, // Total pages
                 itemBuilder: (context, i) {
                   // Fetch the content of the current page
-                  List<TextSpan> pageTexts =
-                      whichPageToGetInElm4New(i, elmList4New);
+                  List<TextSpan> pageTexts = getPageTexts(i, elmList4NewOrder);
 
                   return Column(
                     children: [
@@ -90,14 +92,14 @@ class CustomTextSliderElm4 extends StatelessWidget {
                             value.toInt()); // Move to selected page via cubit
                       },
                       min: 0,
-                      max: elmList4New.length.toDouble() -
+                      max: elmList4NewOrder.length.toDouble() -
                           1, // Maximum number of pages
                     ),
                   ),
 
                   // Display current page number
                   Text(
-                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmList4New.length}', // Handle current page and total pages
+                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmList4NewOrder.length}', // Handle current page and total pages
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

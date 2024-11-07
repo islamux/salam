@@ -3,9 +3,11 @@ import 'package:elm/core/data/model/elm_lists/elm_list_2_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_2_cubit.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_one_texts_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/data/model/elm_lists/elm_list_2_new_order.dart';
 import '../which_page_to_get/which_page_to_get_in_elm_2_new.dart';
 
 class CustomTextSliderElm2 extends StatelessWidget {
@@ -40,11 +42,10 @@ class CustomTextSliderElm2 extends StatelessWidget {
                     cubit.pageController, // Use the pageController from cubit
                 onPageChanged: (index) =>
                     cubit.onPageChanged(index), // Update page index using cubit
-                itemCount: elmList2New.length,
+                itemCount: elmList2NewOrder.length,
                 itemBuilder: (context, i) {
                   // Get page texts from cubit
-                  List<TextSpan> pageTexts =
-                      whichPageToGetInElm2New(i, elmList2New);
+                  List<TextSpan> pageTexts = getPageTexts(i, elmList2NewOrder);
 
                   return Column(
                     children: [
@@ -93,11 +94,11 @@ class CustomTextSliderElm2 extends StatelessWidget {
                             value.toInt()); // Use cubit's page control method
                       },
                       min: 0,
-                      max: elmList2New.length.toDouble() - 1,
+                      max: elmList2NewOrder.length.toDouble() - 1,
                     ),
                   ),
                   Text(
-                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmList2New.length}', // Null check added
+                    '${(cubit.currentPageIndex ?? 0) + 1} / ${elmList2NewOrder.length}', // Null check added
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

@@ -6,43 +6,49 @@ import 'package:elm/core/data/static/theme/app_them.dart';
 List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   final elm = elmList[pageIndex];
   final List<TextSpan> spans = [];
+
   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
   TextStyle titleStyle = AppTheme.customTextStyleTitle();
   TextStyle footerStyle = AppTheme.customTextStyleFooter();
-//  TextStyle defaultStyle = AppTheme.defaultTextStyle();
 
-  // تكرار العناصر حسب الترتيب الموجود في order
+  int titleIndex = 0;
+  int subtitleIndex = 0;
+  int textIndex = 0;
+  int ayahIndex = 0;
+
+  // تكرار العناصر حسب الترتيب الموجود في order مع التأكد من عدم تكرارها
   for (var orderItem in elm.order) {
     switch (orderItem) {
       case EnOrder.titles:
-        if (elm.titles != null) {
-          for (var title in elm.titles!) {
-            spans.add(TextSpan(text: title, style: titleStyle));
-          }
+        if (elm.titles != null && titleIndex < elm.titles!.length) {
+          spans.add(TextSpan(text: elm.titles![titleIndex], style: titleStyle));
+          titleIndex++;
         }
         break;
+
       case EnOrder.subtitles:
-        if (elm.subtitles != null) {
-          for (var subtitle in elm.subtitles!) {
-            spans.add(TextSpan(text: subtitle, style: subtitleStyle));
-          }
+        if (elm.subtitles != null && subtitleIndex < elm.subtitles!.length) {
+          spans.add(TextSpan(
+              text: elm.subtitles![subtitleIndex], style: subtitleStyle));
+          subtitleIndex++;
         }
         break;
+
       case EnOrder.texts:
-        if (elm.texts != null) {
-          for (var text in elm.texts!) {
-            spans.add(TextSpan(text: text, style: null));
-          }
+        if (elm.texts != null && textIndex < elm.texts!.length) {
+          spans.add(TextSpan(text: elm.texts![textIndex], style: null));
+          textIndex++;
         }
         break;
+
       case EnOrder.ayahs:
-        if (elm.ayahs != null) {
-          for (var ayah in elm.ayahs!) {
-            spans.add(TextSpan(text: ayah, style: ayahStyle));
-          }
+        if (elm.ayahs != null && ayahIndex < elm.ayahs!.length) {
+          spans.add(TextSpan(text: elm.ayahs![ayahIndex], style: ayahStyle));
+          ayahIndex++;
         }
         break;
+
       case EnOrder.footer:
         if (elm.footer != null) {
           spans.add(TextSpan(text: elm.footer, style: footerStyle));
@@ -50,8 +56,65 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
         break;
     }
   }
+
   return spans;
 }
+
+
+// import 'package:elm/core/data/model/elm_model_new_order.dart';
+// import 'package:elm/core/data/model/enum_order.dart';
+// import 'package:flutter/material.dart';
+// import 'package:elm/core/data/static/theme/app_them.dart';
+
+// List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
+//   final elm = elmList[pageIndex];
+//   final List<TextSpan> spans = [];
+//   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
+//   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
+//   TextStyle titleStyle = AppTheme.customTextStyleTitle();
+//   TextStyle footerStyle = AppTheme.customTextStyleFooter();
+// //  TextStyle defaultStyle = AppTheme.defaultTextStyle();
+
+//   // تكرار العناصر حسب الترتيب الموجود في order
+//   for (var orderItem in elm.order) {
+//     switch (orderItem) {
+//       case EnOrder.titles:
+//         if (elm.titles != null) {
+//           for (var title in elm.titles!) {
+//             spans.add(TextSpan(text: title, style: titleStyle));
+//           }
+//         }
+//         break;
+//       case EnOrder.subtitles:
+//         if (elm.subtitles != null) {
+//           for (var subtitle in elm.subtitles!) {
+//             spans.add(TextSpan(text: subtitle, style: subtitleStyle));
+//           }
+//         }
+//         break;
+//       case EnOrder.texts:
+//         if (elm.texts != null) {
+//           for (var text in elm.texts!) {
+//             spans.add(TextSpan(text: text, style: null));
+//           }
+//         }
+//         break;
+//       case EnOrder.ayahs:
+//         if (elm.ayahs != null) {
+//           for (var ayah in elm.ayahs!) {
+//             spans.add(TextSpan(text: ayah, style: ayahStyle));
+//           }
+//         }
+//         break;
+//       case EnOrder.footer:
+//         if (elm.footer != null) {
+//           spans.add(TextSpan(text: elm.footer, style: footerStyle));
+//         }
+//         break;
+//     }
+//   }
+//   return spans;
+// }
 
 // import 'package:elm/core/data/model/elm_model_new_order.dart';
 // import 'package:elm/core/data/static/theme/app_them.dart';

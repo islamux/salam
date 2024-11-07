@@ -1,8 +1,10 @@
+import 'package:elm/core/data/model/elm_lists/elm_list_1_new_order.dart';
 import 'package:elm/cubit/base_cubit/base_page_state.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_1_new.dart';
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_1_cubit.dart';
+import 'package:elm/view/widget/custom_text_slider/get_pages_texts/get_page_one_texts_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -40,11 +42,10 @@ class CustomTextSliderElm1 extends StatelessWidget {
                     cubit.pageController, // Use the pageController from cubit
                 onPageChanged: (index) =>
                     cubit.onPageChanged(index), // Update page index using cubit
-                itemCount: elmList1New.length,
+                itemCount: elmList1NewOrder.length,
                 itemBuilder: (context, i) {
                   // Get page texts from cubit
-                  List<TextSpan> pageTexts =
-                      whichPageToGetInElm1New(i, elmList1New);
+                  List<TextSpan> pageTexts = getPageTexts(i, elmList1NewOrder);
 
                   return Column(
                     children: [

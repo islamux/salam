@@ -39,16 +39,15 @@ class ElmTextPre {
 
 """;
 // page 3
-
   static const String ayahHadithPreThree_1 = """
 ( يا ايها اللذين امنو ادخلو في السلم كافة ) 
 """;
-
   static const String elmTextPreThree_1 = """
 كلمة كافة: تعني انه يجب أن ندخل جميعاً في الدين ، من أجل أن نقطف ثماره ، وعلينا أن نأخذ بفقرات الدين كُلها واحدة واحدة ، 
 
 كافة تعني: مجموع الداخلين في الدين ، وتعني مجموع بنود الدين
 """;
+
   static const String ayahHadithPreThree_2 = """
    ( إدخلو في السلم ) 
 """;
@@ -63,9 +62,4 @@ class ElmTextPre {
   static const String elmTextPreThree_3 = """
 لايوجد أحد من بني البشر على الإطلاق إلا ويتمنى السلامة والسعادة ، والسلامة والسعادة لا تكونان إلا في تطبيق تعاليم هذا الدين
 """;
-  static const String ayah_1 = """\nayah test4 """;
-  static const String ayah_2 = """\nayah test5 """;
-  static const String title_1 = """\ntitle test1 """;
-  static const String subtitle_1 = """\nsubtitle test1 """;
-  static const String text_2 = """\ntext test3 """;
 }
