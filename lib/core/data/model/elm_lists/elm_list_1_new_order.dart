@@ -268,7 +268,7 @@ List<ElmModelNewOrder> elmList1NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersOne.elmTextOneEighteen_1,
-      ElmTextDersOne.elmTextOneFifteen_2,
+      ElmTextDersOne.elmTextOneEighteen_2,
       ElmTextDersOne.elmTextOneEighteen_3,
     ],
     ayahs: [
@@ -293,7 +293,7 @@ List<ElmModelNewOrder> elmList1NewOrder = [
     texts: [
       ElmTextDersOne.elmTextOneNinteen_1,
     ],
-    order: [],
+    order: [EnOrder.texts],
     // order: 'texts',
   ),
   // 20

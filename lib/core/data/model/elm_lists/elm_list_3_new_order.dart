@@ -73,4 +73,53 @@ List<ElmModelNewOrder> elmList3NewOrder = [
 
 //  ''',
   ),
+
+  // page 4
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersThree.titleThreeFour,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeFour_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+    ],
+    // order: 'texts,ayahs',
+  ),
+  // page 5
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersThree.ayahHadithThreeFive_1,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeFive_1,
+    ],
+
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: 'texts,ayahs',
+  ),
+  // page 6
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersThree.elmTextThreeSix_1,
+      ElmTextDersThree.elmTextThreeSix_2,
+    ],
+    ayahs: [
+      ElmTextDersThree.ayahHadithThreeSix_1,
+      ElmTextDersThree.ayahHadithThreeSix_2,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+    // order: 'texts,ayahs',
+  )
 ];

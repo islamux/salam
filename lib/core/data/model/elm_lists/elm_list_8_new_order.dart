@@ -82,7 +82,10 @@ List<ElmModelNewOrder> elmList8NewOrder = [
     ayahs: [
       ElmTextDersEight.ayahHadithFour_2,
     ],
-    order: [],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
     // order: 'texts,ayahs',
   ),
 
@@ -150,10 +153,11 @@ List<ElmModelNewOrder> elmList8NewOrder = [
   ElmModelNewOrder(
     ayahs: [
       ElmTextDersEight.ayahHadithEightNine_1,
-      ElmTextDersEight.ayahHadithEightNine_1,
+      ElmTextDersEight.ayahHadithEightNine_2,
     ],
     texts: [
       ElmTextDersEight.elmTextEightNine_1,
+      ElmTextDersEight.elmTextEightNine_2,
     ],
     order: [
       EnOrder.ayahs,

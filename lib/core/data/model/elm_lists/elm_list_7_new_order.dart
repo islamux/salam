@@ -172,6 +172,8 @@ List<ElmModelNewOrder> elmList7NewOrder = [
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
       EnOrder.ayahs,
       //
       EnOrder.texts,

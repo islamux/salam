@@ -141,6 +141,7 @@ List<ElmModelNewOrder> elmList2NewOrder = [
     footer: ElmTextDersTwo.footerTwoEight,
     order: [
       EnOrder.texts,
+      EnOrder.ayahs,
       EnOrder.footer,
     ],
     // order: 'texts,ayahs,footer',

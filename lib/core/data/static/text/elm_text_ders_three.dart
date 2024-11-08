@@ -80,7 +80,7 @@ class ElmTextDersThree {
 ( فأما الإنسان إذا ماابتلاه ربه فأكرمه ونعمه فيقول ربي اكرمن وأما إذا ما ابتلاه فقدر عليه رزقه فيقول ربي اهانن ) 
 
  """;
-  static const String elmTextThreeFour_2 = """
+  static const String elmTextThreeFive_1 = """
 هناك حكمة إذا كُشفت رضيت بالواقع ، لو كُشف الغطاء لاخترتم الواقع
 """;
 
