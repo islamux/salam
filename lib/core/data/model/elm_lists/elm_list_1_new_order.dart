@@ -77,8 +77,8 @@ List<ElmModelNewOrder> elmList1NewOrder = [
     ],
     order: [
       EnOrder.texts,
-      EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.texts,
     ],
     // order: '''
     //   texts,ayahs,
@@ -198,10 +198,8 @@ List<ElmModelNewOrder> elmList1NewOrder = [
   ),
   // 13
   ElmModelNewOrder(
-    titles: [
-      ElmTextDersOne.elmTextOneThirteen_1,
-    ],
     texts: [
+      ElmTextDersOne.elmTextOneThirteen_1,
       ElmTextDersOne.elmTextOneThirteen_2,
     ],
     ayahs: [

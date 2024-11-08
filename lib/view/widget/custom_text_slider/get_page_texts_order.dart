@@ -17,7 +17,7 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   int textIndex = 0;
   int ayahIndex = 0;
 
-  // تكرار العناصر حسب الترتيب الموجود في order مع التأكد من عدم تكرارها
+  // تكرار العناصر حسب الترتيب المطلوب في order مع التشكيل من عدم تكرارها
   for (var orderItem in elm.order) {
     switch (orderItem) {
       case EnOrder.titles:
