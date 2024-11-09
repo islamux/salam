@@ -12,11 +12,11 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     texts: [
       ElmTextDersTen.elmTexTenOne_1,
       ElmTextDersTen.elmTextTenOne_2,
-      ElmTextDersTen.ayahHadithTenOne_2,
       ElmTextDersTen.elmTextTenOne_3,
     ],
     ayahs: [
       ElmTextDersTen.ayahHadithTenOne_1,
+      ElmTextDersTen.ayahHadithTenOne_2,
     ],
     order: [
       EnOrder.titles,
@@ -37,9 +37,7 @@ List<ElmModelNewOrder> elmList10NewOrder = [
   ),
   // 2
   ElmModelNewOrder(
-    ayahs: [
-      ElmTextDersTen.ayahHadithTenOne_1,
-    ],
+    ayahs: [ElmTextDersTen.ayahHadithTenTwo_1],
     texts: [
       ElmTextDersTen.elmTextTenTwo_1,
     ],
@@ -63,6 +61,7 @@ List<ElmModelNewOrder> elmList10NewOrder = [
     ],
     texts: [
       ElmTextDersTen.elmTextTenThree_1,
+      ElmTextDersTen.elmTextTenThree_2,
     ],
     order: [
       EnOrder.titles,

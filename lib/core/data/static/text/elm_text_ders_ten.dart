@@ -61,7 +61,6 @@ class ElmTextDersTen {
 
   static const String elmTextTenThree_2 = """
 ومن السذاجه والغباء، وضيق العقل والحمق ان تظن ان معيةالله تنالها بلا ثمن أو بثمن بخس
- ---------------------
  """;
 
 // page 4

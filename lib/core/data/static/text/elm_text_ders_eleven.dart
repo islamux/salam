@@ -265,7 +265,6 @@ class ElmTextDersEleven {
 
 """;
 // page 15
-
   static const String titleElevenFifteen = """
  الصدقة-
 """;

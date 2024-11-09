@@ -188,6 +188,7 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
       //
+      EnOrder.texts,
       EnOrder.footer,
     ],
     // order: ''',
@@ -263,6 +264,7 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     ],
     ayahs: [
       ElmTextDersEleven.ayahHadithElevenFourteen_1,
+      ElmTextDersEleven.ayahHadithElevenFourteen_2,
     ],
     subtitles: [
       ElmTextDersEleven.subtitleElevenFourteen_1,
@@ -277,6 +279,8 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       //
       EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
     ],
     // order: ''',
     // titles,texts,ayahs,

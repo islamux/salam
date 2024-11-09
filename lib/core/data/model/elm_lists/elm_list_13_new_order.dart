@@ -30,6 +30,8 @@ List<ElmModelNewOrder> elmList13NewOrder = [
       //
       EnOrder.ayahs,
       EnOrder.texts,
+      //
+      EnOrder.footer,
     ],
     // getPageOneTexts(){}
 //     order: '''
