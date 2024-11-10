@@ -44,6 +44,7 @@ List<ElmModelNewOrder> elmList17NewOrder = [
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
+      EnOrder.ayahs,
       EnOrder.subtitles,
       //
       EnOrder.texts,

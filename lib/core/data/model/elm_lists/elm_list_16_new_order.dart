@@ -238,10 +238,10 @@ List<ElmModelNewOrder> elmList16NewOrder = [
   ElmModelNewOrder(
     // 14
     ayahs: [
-      ElmTextDebsSixteen.ayahHadithSixteenFour_1,
+      ElmTextDebsSixteen.ayahHadithSixteenFourteen_1,
     ],
     texts: [
-      ElmTextDebsSixteen.elmTextDersSixteenFour_1,
+      ElmTextDebsSixteen.elmTextDersSixteenFourteen_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -324,7 +324,7 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       ElmTextDebsSixteen.subtitleSixteenNineteen_1,
     ],
     texts: [
-      ElmTextDebsSixteen.elmTextDersSixteenNine_1,
+      ElmTextDebsSixteen.elmTextDersSixteenNinteen_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -378,7 +378,7 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       ElmTextDebsSixteen.elmTextDersSixteenTwentyTwo_2,
     ],
     ayahs: [
-      ElmTextDebsSixteen.ayahHadithSixteenTwentyOne_1,
+      ElmTextDebsSixteen.ayahHadithSixteenTwentyTwo_1,
     ],
     order: [
       EnOrder.titles,
@@ -478,6 +478,7 @@ List<ElmModelNewOrder> elmList16NewOrder = [
     ayahs: [
       ElmTextDebsSixteen.ayahHadithSixteenTwentySix_1,
       ElmTextDebsSixteen.ayahHadithSixteenTwentySix_2,
+      ElmTextDebsSixteen.ayahHadithSixteenTwentySix_3,
     ],
     order: [
       EnOrder.texts,

@@ -222,7 +222,6 @@ class ElmTextTwenty {
 """;
 // page 9
   static const String ayahHadithTwentyNine_1 = """
-
   واتقوا الله ويعلمكم الله
 
 """;
@@ -350,7 +349,7 @@ class ElmTextTwenty {
 يكيد لك 
 ألا تتمنى ذلك؟ 
 """;
-  static const String elmTextTwentyFourteen_2 = """
+  static const String ayahHadithTwentyFourteen_2 = """
    والله ولي المتقين 
    إن الله يحب المتقين 
    إن الله مع المتقين 

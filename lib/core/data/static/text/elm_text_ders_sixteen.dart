@@ -193,7 +193,6 @@ class ElmTextDebsSixteen {
 """;
 // page 15
   static const String subtitleSixteenFifteen_1 = """
-
 من ضوابط خروج المرأة 
 -------------- 
 """;
@@ -206,7 +205,6 @@ class ElmTextDebsSixteen {
 """;
 // page 16
   static const String subtitleSixteenSixteen_1 = """
-
 المرأة نقطة ضعف الرجل  
 ------------------
 """;
@@ -307,7 +305,7 @@ class ElmTextDebsSixteen {
  ------ 
   """;
   static const String ayahHadithSixteenTwentyThree_1 = """
-( والمؤمنون والمؤمنات بعضهم أولياء بعض )
+والمؤمنون والمؤمنات بعضهم أولياء بعض
 """;
   static const String elmTextDersSixteenTwentyThree_1 = """
 المؤمنون والمؤمنات بالله ورسوله بعضهم أنصار بعض ، يأمرون الناس بالإيمان والعمل الصالح ، وينهونهم عن الكفر والمعاصي ، ويؤدون الصلاة ، ويعطون الزكاة ، ويطيعون الله ورسوله ، وينتهون عما نهوا عنه
@@ -327,13 +325,13 @@ class ElmTextDebsSixteen {
 الآية الأولى  
 """;
   static const String ayahHadithSixteenTwentyFour_1 = """
-( فاستجاب لهم ربهم اني لا أضيع عمل عامل منكم من ذكر أو أنثى بعضكم من بعض ) 
+فاستجاب لهم ربهم اني لا أضيع عمل عامل منكم من ذكر أو أنثى بعضكم من بعض 
 """;
   static const String elmTextDersSixteenTwentyFour_2 = """
 الآية الثانية  
 """;
   static const String ayahHadithSixteenTwentyFour_2 = """
-( من عمل صالحاً من ذكر أو أنثى وهو مؤمن فلنحيينه حياة طيبة ) 
+من عمل صالحاً من ذكر أو أنثى وهو مؤمن فلنحيينه حياة طيبة
 """;
 
 // paage 25

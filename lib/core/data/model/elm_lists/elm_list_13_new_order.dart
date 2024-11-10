@@ -219,7 +219,16 @@ List<ElmModelNewOrder> elmList13NewOrder = [
       ElmTextDersTherteen.ayahHadithTherteenSeven_1,
       ElmTextDersTherteen.ayahHadithTherteenSeven_2,
     ],
-    footer: ElmTextDersTherteen.footerTherteenSeven, order: [],
+    footer: ElmTextDersTherteen.footerTherteenSeven,
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.footer,
+    ],
     // order: ''',
     //   texts,ayahs,
     //   texts,ayahs,
@@ -236,7 +245,14 @@ List<ElmModelNewOrder> elmList13NewOrder = [
     texts: [
       ElmTextDersTherteen.elmTextTherteenEight_1,
     ],
-    footer: ElmTextDersTherteen.footerTherteen, order: [],
+    footer: ElmTextDersTherteen.footerTherteenEight,
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.footer,
+    ],
     // order: ''',
     //   ayahs,texts,
     //   ayahs,footer,
@@ -247,7 +263,9 @@ List<ElmModelNewOrder> elmList13NewOrder = [
     texts: [
       ElmTextDersTherteen.elmTextTherteenNine_1,
     ],
-    order: [],
+    order: [
+      EnOrder.texts,
+    ],
     // order: 'texts',
   ),
   // 10
@@ -261,7 +279,13 @@ List<ElmModelNewOrder> elmList13NewOrder = [
       ElmTextDersTherteen.ayahHadithTherteenTen_1,
       ElmTextDersTherteen.ayahHadithTherteenTen_2,
     ],
-    order: [],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
     // order: ''',
     //   texts,ayahs,
     //   texts,ayahs,
@@ -273,7 +297,9 @@ List<ElmModelNewOrder> elmList13NewOrder = [
     texts: [
       ElmTextDersTherteen.elmTextTherteenEleven_1,
     ],
-    order: [],
+    order: [
+      EnOrder.texts,
+    ],
     // order: 'texts',
   ),
 
@@ -294,7 +320,17 @@ List<ElmModelNewOrder> elmList13NewOrder = [
     subtitles: [
       ElmTextDersTherteen.subtitleTherteenTwelve_2,
     ],
-    order: [],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.subtitles,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
     // order: ''',
     //  titles,texts,ayahs,
     //   texts,subtitles
@@ -312,7 +348,15 @@ List<ElmModelNewOrder> elmList13NewOrder = [
       ElmTextDersTherteen.subtitleTherteenTherteen_1,
       ElmTextDersTherteen.subtitleTherteenTherteen_2,
     ],
-    order: [],
+    order: [
+      EnOrder.texts,
+      EnOrder.subtitles,
+      //
+      EnOrder.texts,
+      EnOrder.subtitles,
+      //
+      EnOrder.texts,
+    ],
     // order: ''',
     //   texts,subtitles,
     //   texts,subtitles

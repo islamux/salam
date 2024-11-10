@@ -150,6 +150,7 @@ class ElmTextDersFourteen {
 """;
 
   static const String subtitleFourteenSeven_1 = """
+
 الايمان درجات
 ----------
 """;

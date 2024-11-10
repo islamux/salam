@@ -33,6 +33,8 @@ List<ElmModelNewOrder> elmList21NewOrder = [
       //
       EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
     ],
   ),
 
@@ -92,6 +94,9 @@ List<ElmModelNewOrder> elmList21NewOrder = [
     order: [
       EnOrder.texts,
       EnOrder.subtitles,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
       //
       EnOrder.texts,
       EnOrder.ayahs,

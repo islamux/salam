@@ -6,29 +6,37 @@ import '../enum_order.dart';
 
 List<ElmModelNewOrder> elmList20NewOrder = [
   // page 1
-  ElmModelNewOrder(texts: [
-    ElmTextTwenty.elmTextTwentyOne_1,
-    ElmTextTwenty.elmTextTwentyOne_2,
-    ElmTextTwenty.elmTextTwentyOne_3,
-  ], titles: [
-    ElmTextTwenty.titleTwentyOne,
-  ], ayahs: [
-    ElmTextTwenty.ayahHadithTwentyOne1,
-    ElmTextTwenty.ayahHadithTwentyOne_2,
-  ], subtitles: [
-    ElmTextTwenty.subtitleTwentyOne_1,
-  ], order: [
-    EnOrder.texts,
-    EnOrder.titles,
-    //
-    EnOrder.texts,
-    EnOrder.ayahs,
-    EnOrder.subtitles,
-    //
-    EnOrder.texts, EnOrder.ayahs,
-  ]),
+  ElmModelNewOrder(
+    texts: [
+      ElmTextTwenty.elmTextTwentyOne_1,
+      ElmTextTwenty.elmTextTwentyOne_2,
+      ElmTextTwenty.elmTextTwentyOne_3,
+    ],
+    titles: [
+      ElmTextTwenty.titleTwentyOne,
+    ],
+    ayahs: [
+      ElmTextTwenty.ayahHadithTwentyOne1,
+      ElmTextTwenty.ayahHadithTwentyOne_2,
+    ],
+    subtitles: [
+      ElmTextTwenty.subtitleTwentyOne_1,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.titles,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
 
 // page 2
+
   ElmModelNewOrder(
     subtitles: [
       ElmTextTwenty.subtitleTwentyTwo_1,
@@ -113,10 +121,18 @@ List<ElmModelNewOrder> elmList20NewOrder = [
       ElmTextTwenty.ayahHadithTwentyFive_4,
     ],
     order: [
+      EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
       EnOrder.ayahs,
+      //
     ],
     // order: ''',
     // texts,ayahs,
@@ -131,12 +147,12 @@ List<ElmModelNewOrder> elmList20NewOrder = [
     texts: [
       ElmTextTwenty.elmTextTwentySix_1,
       ElmTextTwenty.elmTextTwentySix_2,
-      ElmTextTwenty.ayahHadithTwentySix_2,
       ElmTextTwenty.elmTextTwentySix_3,
       ElmTextTwenty.elmTextTwentySix_4,
     ],
     ayahs: [
       ElmTextTwenty.ayahHadithTwentySix_1,
+      ElmTextTwenty.ayahHadithTwentySix_2,
       ElmTextTwenty.ayahHadithTwentySix_3,
     ],
     order: [
@@ -148,6 +164,8 @@ List<ElmModelNewOrder> elmList20NewOrder = [
       //
       EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
       // text
     ],
     // order: ''',
@@ -299,15 +317,15 @@ List<ElmModelNewOrder> elmList20NewOrder = [
   ElmModelNewOrder(
     ayahs: [
       ElmTextTwenty.ayahHadithTwentyFourteen_1,
+      ElmTextTwenty.ayahHadithTwentyFourteen_2,
     ],
     texts: [
       ElmTextTwenty.elmTextTwentyFourteen_1,
-      ElmTextTwenty.elmTextTwentyFourteen_2,
     ],
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
-      EnOrder.texts,
+      EnOrder.ayahs,
     ],
     // order: ''',
     // ayahs,texts,
@@ -443,7 +461,7 @@ List<ElmModelNewOrder> elmList20NewOrder = [
       ElmTextTwenty.ayahHadithTwentyTwentyOne_1,
     ],
     subtitles: [
-      ElmTextTwenty.subtitleTwentyOne_1,
+      ElmTextTwenty.subtitleTwentyTwentyOne_1,
 
       // text 0
       // ayah 0
