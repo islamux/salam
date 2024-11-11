@@ -326,7 +326,7 @@ List<ElmModelNewOrder> elmList22NewOrder = [
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_1,
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_2,
-      ElmTextTwentyTwo.ayahHadithTwentyTwoPageTen_2,
+      ElmTextTwentyTwo.ayahHdithTwentyTwoPageTen_3,
     ],
     // subtitle 0
     // text 0
@@ -481,7 +481,7 @@ List<ElmModelNewOrder> elmList22NewOrder = [
     ],
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageFifteen_1,
-      ElmTextTwentyTwo.textTwentyTwoPageFifteen_1,
+      ElmTextTwentyTwo.textTwentyTwoPageFifteen_2,
     ],
     ayahs: [
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageFifteen_1,
@@ -507,7 +507,7 @@ List<ElmModelNewOrder> elmList22NewOrder = [
       ElmTextTwentyTwo.subtitleTwentyTwoPageSixteen_1,
     ],
     ayahs: [
-      ElmTextTwentyTwo.ayahHadithTwentyTwoPageSix_1,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageSixteen_1,
       ElmTextTwentyTwo.ayahHadithTwentyTwoPageSixteen_2,
     ],
     texts: [

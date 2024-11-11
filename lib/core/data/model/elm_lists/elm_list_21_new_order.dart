@@ -1,5 +1,6 @@
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_one.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_twenty_one.dart';
 
 // TextDersSeventeen
@@ -234,12 +235,12 @@ List<ElmModelNewOrder> elmList21NewOrder = [
       ElmTextTwentyOne.elmTextTwentyOneEight_1,
       ElmTextTwentyOne.elmTextTwentyOneEight_2,
       ElmTextTwentyOne.elmTextTwentyOneEight_3,
+      ElmTextTwentyOne.elmTextTwentyOneEight_4,
     ],
     ayahs: [
       ElmTextTwentyOne.ayahHadithTwentyOneEight_1,
       ElmTextTwentyOne.ayahHadithTwentyOneEight_2,
       ElmTextTwentyOne.ayahHadithTwentyOneEight_3,
-      ElmTextTwentyOne.elmTextTwentyOneEight_4,
     ],
     // text 0
     // ayah 0
@@ -328,6 +329,7 @@ List<ElmModelNewOrder> elmList21NewOrder = [
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
+      EnOrder.ayahs,
     ],
   ),
 
@@ -726,6 +728,80 @@ List<ElmModelNewOrder> elmList21NewOrder = [
       EnOrder.ayahs,
       //
       EnOrder.texts,
+    ],
+  ),
+
+// page 23
+  ElmModelNewOrder(
+    titles: [
+      ElmTextTwentyOne.titleTwentyOneOne,
+    ],
+    subtitles: [
+      ElmTextTwentyOne.subtitleTwentyOneTwentyThree_1,
+    ],
+    ayahs: [
+      ElmTextTwentyOne.ayahHadithTwentyOneTwentyThree_1,
+      ElmTextTwentyOne.ayahHadithTwentyOneTwentyThree_2,
+    ],
+    texts: [
+      ElmTextTwentyOne.elmTextTwentyOneTwentyThree_1,
+      ElmTextTwentyOne.elmTextTwentyOneTwentyThree_2,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+    ],
+  ),
+// page 24
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextTwentyOne.ayahHadithTwentyOneTwentyFour_1,
+    ],
+    texts: [
+      ElmTextTwentyOne.elmTextTwentyOneTwentyFour_1,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+// page 25
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextTwentyOne.ayahHadithTwentyOneTwentyFive_1,
+    ],
+    texts: [
+      ElmTextTwentyOne.elmTextTwentyOneTwentyFive_1,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+// page 26
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextTwentyOne.ayahHadithTwentyOneTwentySix_1,
+      ElmTextTwentyOne.ayahHadithTwentyOneTwentySix_2,
+    ],
+    subtitles: [
+      ElmTextTwentyOne.subtitleTwentyOneTwentySix_1,
+    ],
+    texts: [
+      ElmTextTwentyOne.elmTextTwentyOneTwentySix_1,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
     ],
   ),
 ];

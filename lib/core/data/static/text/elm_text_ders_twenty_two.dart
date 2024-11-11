@@ -361,7 +361,7 @@ class ElmTextTwentyTwo {
 // page 13
   static const String subtitleTwentyTwoPageThirteen_1 = """
 وففة
----
+-------
 """;
   static const String subtitleTwentyTwoPageThirteen_2 = """
 إحتضار الإنسان وعرض جميع أعماله أمامه 
@@ -427,18 +427,4 @@ class ElmTextTwentyTwo {
   static const String ayahHadithTwentyTwoPageSixteen_2 = """
 {لا أجمع على عبدي أمنين وخوفين، إن أمنني في الدنيا أخفته يوم القيامة، وإن خافني في الدنيا أمنته يوم القيامة}
 """;
-
-  // static var ayahHadithTwentyTwoPageNine_2;
-
-  // static var ayahHadithTwentyTwoPageNine_3;
-
-  // static var ayahHadithTwentyTwoPageNine_4;
-
-  // static var ayahHadithTwentyTwoPageTen_2;
-
-  // static var ayahHadithTwentyTwoPageEleven_2;
-
-  // static var ayahHadithTwentyTwoPageEleven_3;
-
-  // static var textTwentyTwoPageTwo_3;
 }

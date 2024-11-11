@@ -113,6 +113,7 @@ class ElmTextTwentyThree {
 
   static const String ayahHadithTwentyThreePageFour_1 = """
 ثم يعرج إليه في يوم كان مقداره الف سنة مما تعدون 
+
 """;
   static const String subtitleTwentyThreePageFour_2 = """
 مايفعله الله في يوم لا يفعله العباد في ألف سنة 
@@ -172,66 +173,49 @@ class ElmTextTwentyThree {
  """;
 
   static const String ayahHadithTwentyThreePageSeven_1 = """
-
         (يدبر الأمر) 
 
  """;
 
-//   static const String textTwentyThreePageSeven_2 = """
-// إذا رأيت في سنة مواسم الفواكه كثيرة
-
-//         (يدبر الأمر)
-
-// """;
-
-//   static const String textTwentyThreePageSeven_3 = """
-// إذا رأيت في سنة مواسم الفواكه كثيرة
-// """;
-//   static const String ayahHadithTwentyThreePageSeven_3 = """
-
-//         (يدبر الأمر)
-
-// """;
-  static const String textTwentyThreePageSeven_4 = """
+  static const String textTwentyThreePageSeven_2 = """
 سنة فيها شح بالأمطار 
 """;
-  static const String ayahHadithTwentyThreePageSeven_4 = """
+  static const String ayahHadithTwentyThreePageSeven_2 = """
+        (يدبر الأمر)
+        """;
+  static const String textTwentyThreePageSeven_3 = """
 
+جاءك ذكور فقط
+   """;
+  static const String ayahHadithTwentyThreePageSeven_3 = """
+        (يدبر الأمر)
+        """;
+  static const String textTwentyThreePageSeven_4 = """
+
+جاءك إناث فقط 
+   """;
+  static const String ayahHadithTwentyThreePageSeven_4 = """
         (يدبر الأمر)
         """;
   static const String textTwentyThreePageSeven_5 = """
-جاءك ذكور فقط
+
+جعلك الله عقيما 
    """;
   static const String ayahHadithTwentyThreePageSeven_5 = """
-
         (يدبر الأمر)
         """;
   static const String textTwentyThreePageSeven_6 = """
-جاءك إناث فقط 
+
+زوجة صالحة 
    """;
   static const String ayahHadithTwentyThreePageSeven_6 = """
-
         (يدبر الأمر)
         """;
   static const String textTwentyThreePageSeven_7 = """
-جعلك الله عقيما 
-   """;
-  static const String ayahHadithTwentyThreePageSeven_7 = """
 
-        (يدبر الأمر)
-        """;
-  static const String textTwentyThreePageSeven_8 = """
-زوجة صالحة 
-   """;
-  static const String ayahHadithTwentyThreePageSeven_8 = """
-
-        (يدبر الأمر)
-        """;
-  static const String textTwentyThreePageSeven_9 = """
 صحة طيبة 
    """;
-  static const String ayahHadithTwentyThreePageSeven_9 = """
-
+  static const String ayahHadithTwentyThreePageSeven_7 = """
         (يدبر الأمر)
         """;
 // pageEight
@@ -259,7 +243,6 @@ class ElmTextTwentyThree {
 """;
 // pageNine
   static const String ayahHadithTwentyThreePageNine_1 = """
-
         يدبر الأمر ما من شفيع إلا من بعد إذنه 
 
 """;
@@ -411,6 +394,7 @@ class ElmTextTwentyThree {
 أرادوا أن يقتلوه فما استطاعوا، أرادوا أن يجعلوه في غيابت الجب فجعله الله في قصر العزيز، نجاه منهم ومن كيدهم، ومكن له في الأرض، هذا تدبير الله، وهذا بعض من مغزى القصة 
   """;
   static const String subtitleTwentyThreePageFourteen_1 = """
+
 العبرة من القصة بالحقائق العملية لا بالحقائق النظرية
 """;
   static const String textTwentyThreePageFourteen_2 = """
