@@ -287,9 +287,7 @@ class ElmTextTwentyOne {
      """;
   static const String elmTextTwentyOneTwelve_2 = """
  صبر القهر
- 
 صبر الشكر 
-
 الصبر المحمود
 """;
 

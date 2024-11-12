@@ -184,9 +184,9 @@ List<ElmModelNewOrder> elmList22NewOrder = [
 
   // page 7
   ElmModelNewOrder(
-    titles: [
-      ElmTextTwentyTwo.titleTwentyTwoPageSeven_1,
-    ],
+    // titles: [
+    //   ElmTextTwentyTwo.titleTwentyTwoPageSeven_1,
+    // ],
     texts: [
       ElmTextTwentyTwo.textTwentyTwoPageSeven_1,
       ElmTextTwentyTwo.textTwentyTwoPageSeven_2,
@@ -203,7 +203,7 @@ List<ElmModelNewOrder> elmList22NewOrder = [
     // text 1
 
     order: [
-      EnOrder.titles,
+      // EnOrder.titles,
       //
       EnOrder.ayahs,
       EnOrder.texts,

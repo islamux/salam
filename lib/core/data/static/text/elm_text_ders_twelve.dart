@@ -220,7 +220,8 @@ class ElmTextDersTwelve {
 // page 14
   static const String titleTwelveFourteen = """
 لطفه عليه الصلاة والسلام
-------------------""";
+------------------
+""";
 
   static const String ayahHadithTwelveFourteen_1 = """
 قال عليه الصلاة والسلام

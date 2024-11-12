@@ -74,6 +74,7 @@ class ElmTextTwentyThree {
 يريك في المجتمع كيف أن المرابي محقه الله عز وجل، يقول لك: """;
 
   static const String ayahHadithTwentyThreePageThree_2 = """
+
         ويربي الصدقات 
 
 """;

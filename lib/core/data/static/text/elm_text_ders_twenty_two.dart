@@ -132,6 +132,7 @@ class ElmTextTwentyTwo {
 الجواب زجر وردع وخزي 
  """;
   static const ayahHadithTwentyTwoPageSix_2 = """
+
     كلا إنها كلمة هو قائلها 
     
  """;
@@ -146,9 +147,9 @@ class ElmTextTwentyTwo {
  """;
 
 // page 7
-  static const titleTwentyTwoPageSeven_1 = """
-وجائت سكرة الموت بالحق 
-  """;
+//   static const titleTwentyTwoPageSeven_1 = """
+// وجائت سكرة الموت بالحق
+//   """;
 
   static const ayahHadithTwentyTwoPageSeven_1 = """
 وجائت سكرة الموت بالحق 

@@ -295,16 +295,13 @@ class ElmTextTwenty {
 """;
   static const String elmTextTwentyThirteen_2 = """
 هل تدري أن معية الله نوعان
-
 معية عامة
 معية خاصة
-
 الله مع كل مخلوق لقوله تعالى 
 
 """;
   static const String ayahHadithTwentyThirteen_1 = """
     وهو معكم أين ماكنتم 
-
 """;
   static const String elmTextTwenteThirteen_3 = """
 ولكن المعية الخاصة معية الحفظ 
@@ -556,7 +553,7 @@ class ElmTextTwenty {
 
   static const String elmTextTwentyTwentySeven_2 = """
 الأتقى اسم تفضيل، فهناك في اللغة تقي وأتقى، وكريم وأكرم، أما الأتقى ماصفاته الأساسية؟ 
-قال: 
+قال 
   """;
   static const String ayahHadithTwentyTwentySeven_2 = """
    الذي يؤتي ماله يتزكى 
