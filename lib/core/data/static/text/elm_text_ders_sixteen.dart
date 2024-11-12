@@ -5,7 +5,6 @@ class ElmTextDebsSixteen {
 --------------------------
  """;
   static const String subtitleSixteenOne_1 = """
-
 دور المرأه بين تيه الفلسفة الوضعية ونور الإسلام 
  """;
   static const String elmTextDersSixteenOne_1 = """
@@ -159,19 +158,15 @@ class ElmTextDebsSixteen {
 """;
 // page 13
   static const String ayahHadithSixteenThirteen_1 = """
-
 وَقَرْنَ فِي بُيُوتِكُنَّ 
 """;
   static const String elmTextDersSixteenThirteen_1 = """
-
 ولا تعني الآيه أنها ممنوعة من الخروج ، لكن تخرج للضرورة 
 """;
   static const String ayahHadithSixteenThirteen_2 = """
-
  قَالَ مَا خَطْبُكُمَا قَالَتَا لَا نَسْقِي حَتَّى يُصْدِرَ الرِّعَاءُ وَأَبُونَا شَيْخٌ كَبِيرٌ﴾ [القصص: 23]
 """;
   static const String elmTextDersSixteenThirteen_2 = """
-
 أستنبط العلماء من هذا : أن المرأة لا يصح أن تخالط الرجال ، ولا أن تزاحمهم ، بل عليها أن تقف بعيداً عنهم ، وعليها ايظاً ألا تخرج من بيتها لقضاء حوائج المنزل ، إذا كان أبوها أو أخوها ، أو زوجها رجلاً قوياً قادراً على كفايتها ، أما إذا كان مريضاً فلها العُذر 
 """;
 // page 14

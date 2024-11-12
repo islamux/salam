@@ -95,7 +95,6 @@ class ElmTextDersTwelve {
 وحينما جائته رسالة الهدى وحمل أمانة التبليغ دعته زوجته السيدة خديجة لأخذ قسط من الراحة
 """;
   static const String ayahHadithTwelveSix_1 = """
-
 فقال لها:(أنقضى عهد النوم ياخديجة)  *
 
 """;
@@ -224,7 +223,6 @@ class ElmTextDersTwelve {
 ------------------""";
 
   static const String ayahHadithTwelveFourteen_1 = """
-
 قال عليه الصلاة والسلام
     (( لا تحمرو الوجوه)) *
 """;
@@ -297,7 +295,6 @@ class ElmTextDersTwelve {
       نعم الجمل جملكما ونعم الحملان أنتما **
 """;
   static const String ayahHadithTwelveSixteen_4 = """
-    
     وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤ 
 القلم 4 
 

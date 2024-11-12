@@ -19,7 +19,6 @@ class ElmTextDersFourteen {
 :أي أية تبدأ ب
 """;
   static const String ayahHadithFourteenTwo_1 = """
-
 یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ 
 
 """;

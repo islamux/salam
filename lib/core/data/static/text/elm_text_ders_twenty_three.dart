@@ -216,7 +216,6 @@ class ElmTextTwentyThree {
 عجباً لأمر المؤمن؛ إن أمره كله خير، وليس ذاك لأحد إلا لمؤمن، إن أصابته سراء شكر فكان خيراً له، وإن اصابته ضراء صبر فكان خيراً له(صحيح مسلم عن صهيب) 
 """;
   static const String ayahHadithTwentyThreePageEight_1 = """
-
         يدبر الأمر 
 
         """;
@@ -337,7 +336,6 @@ class ElmTextTwentyThree {
 تدبير الله سبحانه وتعالى لسيدنا يوسف عليه السلام
   """;
   static const String ayahHadithTwentyThreePageThirteen_1 = """
-  
 وجاءت سيارة فأرسلوا واردهم فأدلى دلوه قال يابشرى هذا غلام وأسروه بضاعة والله عليم بما يعملون 
 """;
 

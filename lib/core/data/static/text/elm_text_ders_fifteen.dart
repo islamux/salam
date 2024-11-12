@@ -139,7 +139,6 @@ class ElmTextDersFifteen {
 إذا توهم الإنسان أنه بمعصية الله قد يرتفع ، وإذا توهم الإنسان أنه بترك الدين يملك عزة وكرامة فهذا هو عين الجهل هذا كلام واضح كالشمس
 """;
   static const String ayahHadithFifteenEight_1 = """
-
  مَن كَانَ یُرِیدُ ٱلۡعِزَّةَ فَلِلَّهِ ٱلۡعِزَّةُ جَمِیعًاۚ 
 فاطر 10 
 """;
@@ -159,7 +158,6 @@ class ElmTextDersFifteen {
   """;
 // page 10
   static const String ayahHadithFifteenTen_1 = """
-  
   فَلِلَّهِ ٱلۡعِزَّةُ جَمِیعًاۚ 
 """;
   static const String elmTextFifteenTen_1 = """

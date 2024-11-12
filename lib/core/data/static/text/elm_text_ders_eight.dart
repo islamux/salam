@@ -113,7 +113,6 @@ class ElmTextDersEight {
  قصة المثل*
 يقال أن براقش كانت كلبة، وقد أغار قوم على قومها، فنبحت، فنبهت قومها، فقاموا، وذهبوا إلى مغارة؛ ليختبوا فيها، وعندما جاء اللصوص أخذوا يبحثون عن أهل القرية، ولم يجدوا أحد، وعندما هموا بالانصراف نبحت الكلبة براقش، فانتبه لها اللصوص، فقتلوا عددا من قومها، وقتلوها أيضا، فقيل: جنت على أهلها براقش
 
-
  """;
   // page 8
   static const String titleEightEigh = """
@@ -148,7 +147,6 @@ class ElmTextDersEight {
 يوم دعوته وقد احكمت حلقاتُ المصيبة ، فاستجاب لك ، وفرج عنك 
 """;
   static const String ayahHadithEightNine_2 = """
-
   ( ومن يتق الله يجعل له مخرجا ) 
 """;
   static const String elmTextEightNine_2 = """
@@ -165,7 +163,6 @@ class ElmTextDersEight {
 الآن ربنا عز وجل أراد من هذه القصة أن يجعلها قانوناً ، قال  
 """;
   static const String ayahHadithEightTen_2 = """
-
   ( وكذلك ننجي المؤمنين ) 
 """;
   static const String elmTextEightTen_2 = """

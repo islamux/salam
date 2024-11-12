@@ -4,7 +4,6 @@ class ElmTextTwentyTwo {
 لاصدقة ولا جهاد، جهاد النفس والهوى، فبم تلقى الله إذاً؟ 
   """;
   static const ayahTwentyTwoPageOne_1 = """
-
         كل نفس ذائقة الموت ثم إلينا ترجعون 
 
  """;
@@ -133,7 +132,6 @@ class ElmTextTwentyTwo {
 الجواب زجر وردع وخزي 
  """;
   static const ayahHadithTwentyTwoPageSix_2 = """
-
     كلا إنها كلمة هو قائلها 
     
  """;
@@ -153,7 +151,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageSeven_1 = """
-
 وجائت سكرة الموت بالحق 
 
  """;

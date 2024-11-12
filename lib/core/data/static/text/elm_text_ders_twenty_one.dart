@@ -273,11 +273,9 @@ class ElmTextTwentyOne {
 """;
 
   static const String elmTextTwentyOneEleven_3 = """
-    
 وعد المؤمن بالنصر، وعد المؤمن بالتأييد، وعده بالتوفيق، وعده بالسعادة، وعدهُ بالعفو، وعدهُ بالمغفرة، وعدهُ بجنةٍ عرضها السماوات والأرض، وعده بقبر روضة من رياض الجنة، وقد يكون حفرة من حفر النيران لمن ضل أو كفر 
 """;
   static const String ayahHadithTwentyOneEleven_3 = """
-
       فاصبر إن وعد الله حق فإما نرينك بعض الذي نعدهم أو نتوفينك فإلينا يُرجعون 
 """;
 // page 12
@@ -529,7 +527,6 @@ class ElmTextTwentyOne {
   """;
 
   static const String elmTextTwentyOneTwenty_4 = """
-
 لنصبر على مكر أعدائنا، وعلى شظف العيش أحياناً، ربما لا تدوم النعم، وقد يأتي ظرف صعب، وربما لا يتاح لنا أن نعيش كما كنا نعيش، لأنك مؤمن، ولأن الإيمان أكبر قضية في حياتك، فينبغي أن تصبر 
   """;
   static const String ayahHadithTwentyOneTwenty_4 = """
