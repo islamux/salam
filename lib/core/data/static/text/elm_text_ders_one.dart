@@ -21,7 +21,6 @@ class ElmTextDersOne {
 
 // page 2
   static const String ayahHadithOneTwo_1 = """
- 
  و َقِفُوهُمۡۖ إِنَّهُم مَّسۡءُولُونَ ۝٢٤ 
 الصافات 
 
@@ -38,7 +37,6 @@ class ElmTextDersOne {
 """;
 // page 3
   static const String ayahHadithOneThree_1 = """
-
 قال سبحانه وتعالى 
 وَلَا تَنَـٰزَعُوا۟ فَتَفۡشَلُوا۟ وَتَذۡهَبَ رِیحُكُمۡۖ وَٱصۡبِرُوۤا۟ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِینَ ۝٤٦
 الانفال  
@@ -51,7 +49,6 @@ class ElmTextDersOne {
   """;
 
   static const String ayahHadithOneThree_2 = """
-
  بقوله سبحانه وتعالى 
 إِنَّ ٱلشَّیۡطَـٰنَ لَكُمۡ عَدُوࣱّ فَٱتَّخِذُوهُ عَدُوًّاۚ إِنَّمَا یَدۡعُوا۟ حِزۡبَهُۥ لِیَكُونُوا۟ مِنۡ أَصۡحَـٰبِ ٱلسَّعِیرِ ۝٦
 
@@ -69,7 +66,6 @@ class ElmTextDersOne {
 الكبر والاستعلاء وهذا من عمل الشيطان 
   """;
   static const String ayahHadithOneFour_1 = """
-
 قال تعالى 
 أَنَا۠ خَیۡرࣱ مِّنۡهُ خَلَقۡتَنِی مِن نَّارࣲ وَخَلَقۡتَهُۥ مِن طِینࣲ ۝١٢
 الأعراف  
@@ -86,7 +82,6 @@ class ElmTextDersOne {
 
   """;
   static const String ayahHadithOneFive_1 = """
-
 تِلۡكَ إِذࣰا قِسۡمَةࣱ ضِیزَىٰۤ ۝٢٢ 
 النجم 
 
@@ -95,7 +90,6 @@ class ElmTextDersOne {
   static const String elmTextOneFive_2 = """
           (7)
 الشك والوهم التسرع في الحكم على الآخرين الأحكام الجائرة المبنية على سوء الظن والشك والوهم لأنهم لم يتدبروا
-  
 قوله سبحانه وتعالى 
   """;
 
@@ -123,7 +117,6 @@ class ElmTextDersOne {
 يوسف 
 
 الله سبحانه وتعالى يقول 
-
  وَلِلرِّجَالِ عَلَیۡهِنَّ دَرَجَةࣱۗ وَٱللَّهُ عَزِیزٌ حَكِیمٌ ۝٢٢٨
 البقرة  
 """;
@@ -194,7 +187,6 @@ class ElmTextDersOne {
   """;
 
   static const String ayahHadithOneEleven_1 = """
-
  وَلَا تَتَمَنَّوۡا۟ مَا فَضَّلَ ٱللَّهُ بِهِۦ بَعۡضَكُمۡ عَلَىٰ بَعۡضࣲۚ 
 النساء 32 
  
@@ -312,7 +304,6 @@ class ElmTextDersOne {
 
   """;
   static const String ayahHadithOneSeventeen_1 = """
-
 وَجَعَلۡنَا ٱلَّیۡلَ لِبَاسࣰا ۝١٠
 وَجَعَلۡنَا ٱلنَّهَارَ مَعَاشࣰا ۝١١ 
 النبأ 10 

@@ -91,7 +91,6 @@ class ElmTextDersEighteen {
 """;
 
   static const String ayahHadithEighteenNine_1 = """
- 
 وماتفرقو إلا من بعد ماجائهم العلم بغياً بينهم 
 
         ( بغياً بينهم ) 

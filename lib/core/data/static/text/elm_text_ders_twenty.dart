@@ -11,7 +11,6 @@ class ElmTextTwenty {
 فما هي التقوى ؟ الحقيقة أن التقوى مشتقة من فعل ثلاثي ، الفعل هو وقى ، والوقاية تكون من شيئ خطير ، فربنا سبحانه وتعالى يقول 
 """;
   static const String ayahHadithTwentyOne1 = """
-
 يا ايها الناس اعبدو ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
 
 """;
@@ -27,7 +26,6 @@ class ElmTextTwenty {
  """;
 
   static const String ayahHadithTwentyOne_2 = """
-
 ياايها الناس اعبدوا ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
 
 """;
@@ -42,7 +40,6 @@ class ElmTextTwenty {
 """;
 
   static const String ayahHadithTwentyTwo_1 = """
-
 ياايها الناس اعبدوا ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
 
   """;
@@ -67,7 +64,6 @@ class ElmTextTwenty {
 فالله سبحانه وتعالى يقول 
 """;
   static const String ayahHadithTwentyThree_1 = """
-
   أفمن أسس بُنيانه 
 
 """;
@@ -78,14 +74,12 @@ class ElmTextTwenty {
 """;
 // Page 4
   static const String subtitleTwentyFour_1 = """
-
 غير المؤمن بناءُه مؤسس على الشهوة والمصلحة
 """;
   static const String elmTextTwentyFour_1 = """
 غير المؤمن أسس بنيانه على الشهوة ، على المصلحة ، على انتهاز الفُرص ، على القنص ، على حب الذات ، على الأنانية ، هذا البناء المبني على غير تقوى الله عز وجل كأنه على شفا جرفٍ هار فانهار به في نار جهنم ، فكل إنسان له بناء ، إما أن يبني هذا البناء على تقوى الله ورضوان ، وإما أن يبني هذا البناء على شفا جرفٍ هار فانهار به في نار جهنم 
 """;
   static const String subtitleTwentyFour_2 = """
-
 في الكون إله واحد يستحق العبادة 
 
 """;
@@ -94,7 +88,6 @@ class ElmTextTwenty {
 فهل في الكون جهة تستحق أن يرجى ماعندها ، وأن يخشى عقابها غير الله عز وجل ؟ 
  """;
   static const String ayahHadithTwentyFour_1 = """
-
   الله لا اله الا هو الحي القيوم 
 
 """;
@@ -110,7 +103,6 @@ class ElmTextTwenty {
 لذلك ربنا عز وجل في آية صغيرة قال 
 """;
   static const String ayahHadithTwentyFive_1 = """
-
   أفغير الله تتقون 
 
 فما لكم كيف تحكمون 
@@ -121,7 +113,6 @@ class ElmTextTwenty {
 ربنا عز وجل طمأنك فقال على لسان أحد رسله 
 """;
   static const String ayahHadithTwentyFive_2 = """
-
 فكيدوني جميعاً ثم لا تنظرون اني توكلت على الله ربي وربكم ما من دابة الا هو اخذ بناصيتها 
 
 """;
@@ -136,7 +127,6 @@ class ElmTextTwenty {
 قال لك 
 """;
   static const String ayahHadithTwentyFive_4 = """
-
   مايفتح الله للناس من رحمة فلا ممسك لها 
 
 """;
@@ -145,7 +135,6 @@ class ElmTextTwenty {
 قال لك 
 """;
   static const String ayahHadithTwentySix_1 = """
-
   له الخلق والأمر 
 
 """;
@@ -154,17 +143,14 @@ class ElmTextTwenty {
 قال لك 
 """;
   static const String ayahHadithTwentySix_2 = """
-
   يد الله فوق ايديهم 
 
 """;
   static const String elmTextTwentySix_3 = """
-
 فإذا خشيت غير الله أو رجوت غير الله فلست متقياً 
 أي: لم تتق الله عز وجل 
 """;
   static const String ayahHadithTwentySix_3 = """
-
     أفغير الله تتقون 
 
 """;
@@ -174,7 +160,6 @@ class ElmTextTwenty {
 """;
 // page 7
   static const String ayahHadithTwentySeven_1 = """
-
   واتقو الله واعلمو ان الله مع المتقين 
 
 """;
@@ -183,7 +168,6 @@ class ElmTextTwenty {
 فما دامت رقابة الله عليك مستمرة ألا ينبغي أن تتقي الله ؟ 
 """;
   static const String ayahHadithTwentySeven_2 = """
-
   واتقوا الله واعلموا ان الله بكل شيئ عليم 
 
   واتقوا الله إن الله سريع الحساب 
@@ -196,7 +180,6 @@ class ElmTextTwenty {
 ألا تكفي هذه الدوافع كي تتقي الله عزوجل ؟ 
 """;
   static const String ayahHadithTwentySeven_3 = """
-
 قُل سيروا في الأرض ثم انظروا كيف كان عاقبة المكذبين 
 
 """;
@@ -245,7 +228,6 @@ class ElmTextTwenty {
 :لذلك 
 """;
   static const String ayahHadithTwentyNine_2 = """
-
    أفغير الله تتقون 
 
 """;
@@ -272,7 +254,6 @@ class ElmTextTwenty {
 """;
 
   static const String ayahHadithTwentyEleven_1 = """
-
     إن الله يحب المتقين 
     
 """;
@@ -292,7 +273,6 @@ class ElmTextTwenty {
  مراتب مالية، مراتب علمية، مراتب اجتماعية، ومراتب رياضية، يقول لك: معه وسام ذهبي، وهناك معه ميدالية برونزية، مراتب نفسية ومراتب جسمية، ومراتب دينية، ألا تعتقد معي أن أعظم مرتبة ينالها إنسان على وجه الأرض هي القرب من الله، وأن يحبه الله عزوجل؟ 
 """;
   static const String ayahHadithTwentyTwelve_1 = """
-
      إن الله يحب المتقين
      
      """;
@@ -323,7 +303,6 @@ class ElmTextTwenty {
 
 """;
   static const String ayahHadithTwentyThirteen_1 = """
-
     وهو معكم أين ماكنتم 
 
 """;
@@ -336,7 +315,6 @@ class ElmTextTwenty {
 """;
 // page 14
   static const String ayahHadithTwentyFourteen_1 = """
-
    إن الله مع المتقين 
 
 """;
@@ -399,7 +377,6 @@ class ElmTextTwenty {
 وعندئذ تقبل على الطاعة وتبتعد عن المعصية، هذا هو النور الذي قال الله عنه
 """;
   static const String ayahHadithTwentySeventeen_1 = """
-
 ياايها الذين آمنو إن تتقو الله يجعل لكم فرقانا 
 
 """;
@@ -435,7 +412,6 @@ class ElmTextTwenty {
 لذلك الأدب أن تحكم بالظاهر والله يتولى السرائر 
  """;
   static const String ayahHadithTwentyTwenty_1 = """
-
    وكفى بربك بذنوب عباده خبيراً بصيرا 
 
  """;
@@ -444,7 +420,6 @@ class ElmTextTwenty {
 لذلك قال ربنا عزوجل 
  """;
   static const String ayahHadithTwentyTwenty_2 = """
-
 فلا تزكوا أنفسكم هو أعلم بمن اتقى 
 
  """;
@@ -490,7 +465,6 @@ class ElmTextTwenty {
 الأمن الحقيقي أن تكون بما في يدي الله أوثق منك مما في يديك، هذا أعلى درجة من درجات الأمن، لذلك 
 """;
   static const String ayahHadithTwentyTwentyTwo_1 = """
-
 عن عبدالله بن محصن الخطمي قال: قال رسول الله صلى الله عليه وسلم 
 من أصبح منكم آمنا في سربه، معافى في جسده، عنده قوت يومه فكأنما حيزت له الدنيا 
 
@@ -508,7 +482,6 @@ class ElmTextTwenty {
 انظر إلى هذه المعاني الدقيقة، أحياناً تجد إنساناً قد أكرمه الله عز وجل بقوام جميل، بشكل وسيم، قد يكون ذا ذوق رفيع في ارتداء الثياب، له أذواق رفيعة جداً، قد يكون له ذوق عال جداً في أقتناء الأثاث، قد يختار سيارة جيدة، قد يعتني بها عناية بالغة، قد يُلبسُ أولاده أجمل الألبسة، قد يفرش بيته بأجمل الأثاث، ربنا عز وجل قال في كلمة 
   """;
   static const String ayahHadithTwentyTwentyThree_1 = """
-
    ولباس التقوى ذلك خير 
 
   """;
@@ -541,7 +514,6 @@ class ElmTextTwenty {
 طهرت منظر الخلق سنين أفلا طهرت منظري ساعة؟ 
   """;
   static const String ayahHadithTwentyTwentyFour_2 = """
-
    ولباس التقوى ذلك خير 
 
    وتزودوا فإن خير الزاد التقوى 
@@ -560,7 +532,6 @@ class ElmTextTwenty {
  """;
   // page 26
   static const String ayahHadithTwentyTwentySix_1 = """
-
 أم حسبتم ان تدخلوا الجنة ولما يعلم الله الذين جاهدوا منكم ويعلم الصابرين 
 """;
   static const String elmTextTwentyTwentySix_1 = """
@@ -704,7 +675,6 @@ class ElmTextTwenty {
 
   // page 31 وقفة
   static const String ayahHadithTwentyThirtyOne_1 = """
-
    ومن يتق الله يجعل له مخرجا 
    
  """;
@@ -713,7 +683,6 @@ class ElmTextTwenty {
 القرآن الكريم فيه شيئ رائع جداً، هذا الشيئ هو أن الآية وهي في سياقها لها معنى، فإذا نزعتها من سياقها وقرأتها وحدها فلها معنى آخر، وهذا من اعجاز القرآن، كل آية إن انتظمت مع أخواتها تؤدي معنى محدداً، أما حينما تنزع من سياقها فتؤدي معنى شمولياً كبيراً جداً 
  """;
   static const String ayahHadithTwentyThirtyOne_2 = """
-
     ومن يتق الله يجعل له مخرجاً 
 
  """;
@@ -721,7 +690,6 @@ class ElmTextTwenty {
 هذه الآية وردت في سورة الطلاق، معناها السياقي: أي ان من يتق الله في تطليق زوجته؛ يطلقها وفق السنة، يطلقها لعدتها، يطلقها في طهر مامسها فيه، يطلقها وهو اعتقد أن الله لعله يحدث بعد ذلك أمرا، يجعل الله له مخرجاً إلى الرجوع إليها، لو أنه ندم بإمكانه أن يُرجعها، لو أنه تأثر لفراقها بإمكانه أن يرجعها 
  """;
   static const String ayahHadithTwentyThirtyOne_3 = """
-
     ومن يتق الله يجعل لهُ مخرجا 
 
  """;
@@ -744,7 +712,6 @@ class ElmTextTwenty {
 هذه الآية يمكن أن تُطبق على مليون حالة، إذا نزعت من سياقها أصبحت قاعدة 
  """;
   static const String ayahHadithTwentyThirtyThree_1 = """
-
     ومن يتق الله يجعل له مخرجا 
 
  """;
@@ -763,7 +730,6 @@ class ElmTextTwenty {
   """;
   // page 34
   static const String ayahHadithTwentyThirtyFour_1 = """
-
     ومن يتق الله يجعل له مخرجاً ويرزقه من حيث لا يحتسب 
 
   """;
@@ -776,7 +742,6 @@ class ElmTextTwenty {
 
  """;
   static const String ayahHadithTwentyThirtyFour_2 = """
-
 ياايها الذين امنوا إنما المشركون نجس فلا يقربوا المسجد الحرام بعد عامهم هذا 
 
  """;
@@ -784,7 +749,6 @@ class ElmTextTwenty {
 فهذه السياحة قديمة، حينما يأتي هؤلاء إلى المسجد الحرام يشترون الطعام والشراب، يسكنون في البيوت، ينفقون أموالاً كثيرة جداً، والأن تكاد تكون صناعة السياحة أروج صناعةٍ في كل البلاد، وتحقق أكبر دخل من العملات الصعبة، فربنا عز وجل قال 
  """;
   static const String ayahHadithTwentyThirtyFour_3 = """
-
 ياايها الذين آمنوا إنما المشركون نجس 
 
  """;

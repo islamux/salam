@@ -33,7 +33,6 @@ class ElmTextDersFourteen {
 """;
 
   static const String ayahHadithFourteenThree_1 = """
-
  ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ 
 البقرة 25 
 
@@ -79,7 +78,6 @@ class ElmTextDersFourteen {
 والطرف الآخر لأنهم تفلتوا ، وكانو أحراراً من كل شيئ
 """;
   static const String ayahHadithFourteenFour_2 = """
-
  أُو۟لَـٰۤئِكَ فِی ضَلَـٰلࣲ مُّبِینٍ ۝٢٢ 
 الزمر 22 
 
@@ -94,7 +92,6 @@ class ElmTextDersFourteen {
 كما عرف إبليس أن الله خالق 
 """;
   static const String ayahHadithFourteenFive_1 = """
-
  خَلَقۡتَنِی مِن نَّارࣲ وَخَلَقۡتَهُۥ مِن طِینࣲ ۝١٢ 
  الأعراف 12 
 
@@ -150,7 +147,6 @@ class ElmTextDersFourteen {
 """;
 
   static const String subtitleFourteenSeven_1 = """
-
 الايمان درجات
 ----------
 """;

@@ -6,7 +6,6 @@ class ElmTextPre {
 """;
 // page 1
   static const String ayahHadithPreOne_1 = """
-
 وَذَكِّرۡ فَإِنَّ ٱلذِّكۡرَىٰ تَنفَعُ ٱلۡمُؤۡمِنِینَ ۝٥٥ * 
 الذاريات 55 * 
 """;

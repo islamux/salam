@@ -11,7 +11,6 @@ class ElmTextDersFour {
 """;
 
   static const String ayahHadithFourOne_1 = """
-      
 قال تعالى 
 إِنَّ ٱللَّهَ یُحِبُّ ٱلتَّوَّ ٰبِینَ وَیُحِبُّ ٱلۡمُتَطَهِّرِینَ ۝٢٢٢
 البقرة 222

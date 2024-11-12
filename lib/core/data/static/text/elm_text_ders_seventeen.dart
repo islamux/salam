@@ -5,7 +5,6 @@ class ElmTextDersSeventeen {
 """;
 
   static const String ayahHadithSeventeenOne_1 = """
-
 رَبَّنَا ٱطۡمِسۡ عَلَىٰۤ أَمۡوَ ٰلِهِمۡ وَٱشۡدُدۡ عَلَىٰ قُلُوبِهِمۡ فَلَا یُؤۡمِنُوا۟ حَتَّىٰ یَرَوُا۟ ٱلۡعَذَابَ ٱلۡأَلِیمَ ۝٨٨
 
 قال الله عز وجل
@@ -19,7 +18,6 @@ class ElmTextDersSeventeen {
 """;
 
   static const String ayahHadithSeventeenOne_2 = """
- 
  قَدۡ أُجِیبَت دَّعۡوَتُكُمَا
 
  """;
@@ -30,7 +28,6 @@ class ElmTextDersSeventeen {
 
 //-- page 2
   static const String ayahHadithSeventeenTwo_1 = """
-
 قَالَ قَدۡ أُجِیبَت دَّعۡوَتُكُمَا فَٱسۡتَقِیمَا وَلَا تَتَّبِعَاۤنِّ سَبِیلَ ٱلَّذِینَ لَا یَعۡلَمُونَ ۝٨٩ 
   يونس 89 
 """;
@@ -39,7 +36,6 @@ class ElmTextDersSeventeen {
 لكل شيئ أوان ، وتلبية الدعاء مرهونة بمشيئة الله ، فمن تعجل الشيئ قبل أوانه عوقب بحرمانه ، لكن اطلب من الله واستسلم
   """;
   static const String ayahHadithSeventeenTwo_2 = """
-  
   ( فَٱسۡتَقِیمَا ) 
 
 """;
@@ -77,7 +73,6 @@ class ElmTextDersSeventeen {
 الله سبحانه وتعالى امرنا بالدعاء
 """;
   static const String ayahHadithSeventeenFour_1 = """
-
 ادْعُونِي أَسْتَجِبْ لَكُمْ ۚ إِنَّ الَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِي سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ
 
 """;
@@ -197,7 +192,6 @@ class ElmTextDersSeventeen {
 سيدنا موسى لم لم يقتله فرعون ؟ لم هابه ، وأجرى معه مناظرة ؟ وجاء بالسحرة ، الأمر بيد الله عز وجل 
 """;
   static const String ayahHadithSeventeenTen_1 = """
-
  قَالَا رَبَّنَا إِنَّنَا نَخَافُ أَن يَفْرُطَ عَلَيْنَا أَوْ أَن يَطْغَىٰ
 
  قَالَ لَا تَخَافَا ۖ إِنَّنِي مَعَكُمَا أَسْمَعُ وَأَرَىٰ

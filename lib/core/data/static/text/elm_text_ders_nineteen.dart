@@ -32,7 +32,6 @@ class ElmTextNineteen {
  """;
 
   static const String ayahHadithNineteenTwo_2 = """
-
  ( ورد في الآثر ) 
  الذين يُذكر الله برؤيتهم ، أولياء أمتي إذا رُوؤا ذكر الله بهم 
 
@@ -59,7 +58,6 @@ class ElmTextNineteen {
 تعريف ثالث
   """;
   static const String ayahHadithNineteenFour_1 = """
-
 هم قوم تحابو بروح الله ، على غير أرحام بينهم ، ولا أموال يتعاطونها ، فوالله إن وجوههم لنور ، وإنهم على نور ، لا يخافون إذا خاف الناس ولا يحزنون إذا حزن الناس 
  سنن ابي داؤد عن عمر ابن الخطاب 
 
@@ -70,7 +68,6 @@ class ElmTextNineteen {
 """;
 
   static const String ayahHadithNineteenFour_2 = """
-
  إن الإنسان خُلق هلوعا إذا مسه الشر جزوعا وإذا مسه الخير منوعا إلا المصلين  
 
 """;
@@ -81,7 +78,6 @@ class ElmTextNineteen {
 
 // page 5
   static const String ayahHadithNineteenFive_1 = """
-
         ( واصبر لحكم ربك فإنك باعيننا ) 
   
         ( إن الله يدافع عن الذين امنوا ) 
@@ -93,7 +89,6 @@ class ElmTextNineteen {
 لذلك قال عليه الصلاة والسلام  
 """;
   static const String ayahHadithNineteenFive_2 = """
-
       ( لا يحزن قارى القران ) 
 
 """;
@@ -108,7 +103,6 @@ class ElmTextNineteen {
 إذا ابتعد الإنسان عن الله عزوجل ألقى الله الخوف في قلبه فانقلبت حياته جحيماً ، وانقلب غناه فقراً ، فأنت من خوف الفقر في فقر ، وأنت من خوف المرض في مرض ، وتوقع المصيبة مصيبة اكبر منها ، وما من مرض يفتك بالناس اليوم في بقاع الأرض كالقلق 
 """;
   static const String ayahHadithNineteenSix_1 = """
-
      ( لا تحزن إن الله معنا ) 
 
  قلت للنبي صل الله عليه وسلم وأنا في الغار
@@ -123,7 +117,6 @@ class ElmTextNineteen {
 هذا هو الإيمان 
 """;
   static const String ayahHadithNineteenSeven_1 = """
-
      ( لا خوف عليهم ولا هم يحزنون )
 
 """;
@@ -131,19 +124,16 @@ class ElmTextNineteen {
 يجب أن تكون أنت من أولياء الله ، إذا اطعت الله طاعة تامة فأنت من أولياء الله الذين لا خوف عليهم ولا هم يحزنون 
  """;
   static const String ayahHadithNineteenSeven_2 = """
-
   ( الذين امنو وكانو يتقون ) 
 
 """;
   static const String elmTextNineteenSeven_3 = """
-
 الولي آمن بالله وهو مستمر على تقواه إلى الممات  
 
 آمنو فعل ماض ، عرف الله عز وجل فآمن به ، لكن يتقون فعل مضارع ، والمضارع يفيد الاستمرار ، أي طوال حياته يتقي الله ، يتقي أن يعصيه ، هذه مرتبة ، يتقي أن ينقطع عنه هذه مرتبة أعلى ، يتقي أن يكون في قلبه سواه ، مرتبة ثالثة ، وعندنا صيام عامة الناس عن الطعام والشراب ، وصيام المؤمنين هو صيام الجوارح عن المعاصي ، وصيام الأتقياء وهو صيام القلب عما سوى الله ، فالولي يتقي أن يعصي الله ، ويتقي أن ينقطع عن الله ، ويتقي أن يكون في قلبه غير الله  
 """;
 // ------- page 8
   static const String ayahHadithNineteenEight_1 = """
-
   ( الذين امنو وكانو يتقون ) 
 
 """;
@@ -151,7 +141,6 @@ class ElmTextNineteen {
 بجهود مستمرة ، يبذلون جهوداً كبيرة لا تنقضي .. 
 """;
   static const String ayahHadithNineteenEight_2 = """
-
   ( تتجافى جنوبهم عن المضاجع )
 
 """;
@@ -210,7 +199,6 @@ class ElmTextNineteen {
 مستحيل أن تكون من حزب الله وأن تُغلب 
 """;
   static const String ayahHadithNineteenEleven_2 = """
-
 قال تعالى 
 ومن يتول الله ورسوله والذين آمنوا فإن حزب الله هم الغالبون 
 
@@ -221,7 +209,6 @@ class ElmTextNineteen {
 """;
 // page 12
   static const String ayahHadithNineteenTwelve_1 = """
-
     فإن حزب الله هم الغالبون 
 
 إنا لننصر رسلنا والذين آمنوا في الحياة الدنيا 
@@ -231,7 +218,6 @@ class ElmTextNineteen {
 هكذا حكم الله عزوجل: 
 """;
   static const String ayahHadithNineteenTwelve_2 = """
-
     وإن جندنا لهم الغالبون 
 
    وكان حقاً علينا نصر المؤمنين 
@@ -252,7 +238,6 @@ class ElmTextNineteen {
 الله ولي المؤمنين
 """;
   static const String ayahHadithNineteenThreaten_1 = """
-
     نحن أولياؤكم 
 
 """;
@@ -261,7 +246,6 @@ class ElmTextNineteen {
 ربنا عز وجل ينقلك من وضع إلى وضع أحسن، ومن تفلت إلى تمسك، ومن شقاء إلى سعادة، ومن ضياع إلى وجدان، ومن نقمة إلى رضى، ويؤويك في بيت فيأتيك الدخل الحلال، ويجمعك مع أهل الحق، ويجمعك مع الصالحين، ويدخل على قلبك السرور 
 """;
   static const String ayahHadithNineteenThirteen_2 = """
-
     نحن أولياؤكم في الحياة الدنيا 
 
 """;

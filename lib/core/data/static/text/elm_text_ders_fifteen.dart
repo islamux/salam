@@ -75,7 +75,6 @@ class ElmTextDersFifteen {
 
   // page 4
   static const String ayahHadithFifteenFour_1 = """
-
   (مَن كَانَ یُرِیدُ ٱلۡعِزَّةَ) 
 
 """;
@@ -85,7 +84,6 @@ class ElmTextDersFifteen {
 :ربنا عز وجل بدده في هذه الآية قال
 """;
   static const String ayahHadithFifteenFour_2 = """
-
   (مَن كَانَ یُرِیدُ ٱلۡعِزَّةَ) 
 فاطر 10 
 
@@ -102,7 +100,6 @@ class ElmTextDersFifteen {
 """;
 
   static const String ayahHadithFifteenFive_1 = """
-
 ( یَعۡرِفُونَهُۥ كَمَا یَعۡرِفُونَ أَبۡنَاۤءَهُمۡۖ ) 
 البقرة 146 
 
@@ -118,7 +115,6 @@ class ElmTextDersFifteen {
 ألم يقل النبي عليه الصلاة والسلام لهم *
 """;
   static const String ayahHadithFifteenSix_1 = """
-
  يا أَبَا جَهْلِ بنَ هِشَامٍ يا أُمَيَّةَ بنَ خَلَفٍ يا عُتْبَةَ بنَ رَبِيعَةَ يا شيبَةَ بنَ رَبِيعَةَ -خاطبهم بأسمائهم واحدا واحدا - أَليسَ قدْ وَجَدْتُمْ ما وَعَدَ رَبُّكُمْ حَقًّا؟ فإنِّي قدْ وَجَدْتُ ما وَعَدَنِي رَبِّي حَقًّا فَسَمِعَ عُمَرُ قَوْلَ النبيِّ صَلَّى اللَّهُ عليه وسلَّمَ، فَقالَ: يا رَسولَ اللهِ، كيفَ يَسْمَعُوا وَأنَّى يُجِيبُوا وَقَدْ جَيَّفُوا؟ قالَ: وَالَّذِي نَفْسِي بيَدِهِ ما أَنْتُمْ بأَسْمع لِما أَقُولُ منهمْ، وَلَكِنَّهُمْ لا يَقْدِرُونَ أَنْ يُجِيبُوا 
 """;
 
@@ -212,7 +208,6 @@ class ElmTextDersFifteen {
 
 // page 14
   static const String ayahHadithFifteenFourteen_1 = """
-
  تُؤۡتِی ٱلۡمُلۡكَ مَن تَشَاۤءُ وَتَنزِعُ ٱلۡمُلۡكَ مِمَّن تَشَاۤءُ 
  ال عمران 126 
 
@@ -226,7 +221,6 @@ class ElmTextDersFifteen {
 
 // pag 15
   static const String ayahHadithFifteenFifteen_1 = """
-
  وَتُعِزُّ مَن تَشَاۤءُ وَتُذِلُّ مَن تَشَاۤءُۖ 
 ال عمران 126 
 
@@ -237,7 +231,6 @@ class ElmTextDersFifteen {
 وفرعون كان له ملك مصر
 """;
   static const String ayahHadithFifteenFifteen_2 = """
-
   فَقَالَ أَنَا۠ رَبُّكُمُ ٱلۡأَعۡلَىٰ ۝٢٤
 
 """;
@@ -247,7 +240,6 @@ class ElmTextDersFifteen {
 
 // page 16
   static const String ayahHadithFifteenSixteen_1 = """
-
 قُلِ ٱللَّهُمَّ مَـٰلِكَ ٱلۡمُلۡكِ تُؤۡتِی ٱلۡمُلۡكَ مَن تَشَاۤءُ وَتَنزِعُ ٱلۡمُلۡكَ مِمَّن تَشَاۤءُ وَتُعِزُّ مَن تَشَاۤءُ وَتُذِلُّ مَن تَشَاۤءُۖ 
  ال عمران 126 
 
@@ -275,7 +267,6 @@ class ElmTextDersFifteen {
 
 // page 17
   static const String ayahHadithFifteenSeventeen_1 = """
-
  سُبۡحَـٰنَ رَبِّكَ رَبِّ ٱلۡعِزَّةِ عَمَّا یَصِفُونَ ۝١٨٠ 
 الصافات 180 
 

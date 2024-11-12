@@ -88,7 +88,6 @@ class ElmTextDersTen {
 """;
 
   static const String ayahHadithTenFive_2 = """
-
 وَلَمَّا بَلَغَ أَشُدَّهُۥۤ ءَاتَیۡنَـٰهُ حُكۡمࣰا وَعِلۡمࣰاۚ وَكَذَ ٰلِكَ نَجۡزِی ٱلۡمُحۡسِنِینَ ۝٢٢
 سورة يوسف 
 
@@ -111,7 +110,6 @@ class ElmTextDersTen {
 بذلوا كل جهدهم، كل طاقتهم، كل علمهم، كل خبرتهم، كل عضلاتهم، كل وقتهم، كل شبابهم فينا، من أجل معرفتنا وطاعتنا والتقرب إلينا
 """;
   static const String ayahHadithTenSeven_1 = """
-
 لَنَهۡدِیَنَّهُمۡ سُبُلَنَاۚ  
 
 """;
@@ -121,7 +119,6 @@ class ElmTextDersTen {
 """;
 
   static const String ayahHadithTenSeven_2 = """
-
  وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِینَ ۝٦٩ 
  سورة العنكبوت 
 

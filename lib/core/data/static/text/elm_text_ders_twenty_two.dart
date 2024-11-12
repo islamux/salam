@@ -17,7 +17,6 @@ class ElmTextTwentyTwo {
 
 // page 2
   static const ayahHadithTwentyTwoPageTwo_1 = """
-  
         كل نفس ذائقة الموت 
 
   """;
@@ -27,7 +26,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageTwo_2 = """
-
         الذي خلق الموت والحياة 
 
  """;
@@ -44,7 +42,6 @@ class ElmTextTwentyTwo {
   سكرات الموت 
   """;
   static const ayahHadithTwentyTwoPageTwo_3 = """
-  
     حتى إذا جاء احدهم الموت 
   
   """;
@@ -55,7 +52,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageThree_1 = """
-
     حتى إذا جاء احدهم الموت 
     قل إن الموت الذي تفرون منه فإنه ملاقيكم 
 
@@ -90,7 +86,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageFour_2 = """
-  
     واعبد ربك حتى يأتيك اليقين 
 
    """;
@@ -106,7 +101,6 @@ class ElmTextTwentyTwo {
  """;
 
   static const ayahHadithTwentyTwoPageFive_1 = """
-  
     إقرأ كتابك كفى بنفسك اليوم عليك حسيبا 
 
     لقد كنت في غفلة من هذا فكشفنا عنك غطائك فبصرك اليوم حديد 
@@ -122,7 +116,6 @@ class ElmTextTwentyTwo {
  """;
 
   static const ayahHadithTwentyTwoPageFive_2 = """
-
     حتى إذا جاء احدهم الموت قال رب ارجعون 
 
 """;
@@ -132,7 +125,6 @@ class ElmTextTwentyTwo {
 يقول بعضهم: إن الميت يُخاطب الملائكة الذين قبضوا روحه، وكلمة رب اعتراضية، كما لو أن الأب أخذ ابنه ليضربه فالطفل ينادي أمه.. ينادي إنسان آخر يظن أنه سيُخلصه.. قال: أي يارب، أرجعوني أيها الملائكة كما كنت في الدنيا 
   """;
   static const ayahHadithTwentyTwoPageSix_1 = """
-  
     لعلي اعمل صالحاً فيما تركت 
 
   """;
@@ -151,7 +143,6 @@ class ElmTextTwentyTwo {
 """;
 
   static const ayahHadithTwentyTwoPageSix_3 = """
-
     كلا إنها كلمة هو قائلها 
     
  """;
@@ -172,7 +163,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageSeven_2 = """
-  
     لا إله إلا الله، إن للموت لسكرات 
 
   """;
@@ -188,7 +178,6 @@ class ElmTextTwentyTwo {
 
 // page 8
   static const ayahHadithTwentyTwoPageEight_1 = """
-
         رب ارجعون لعلي اعمل صالحاً فيما تركت
 
 """;
@@ -206,7 +195,6 @@ class ElmTextTwentyTwo {
 """;
 
   static const ayahHadithTwentyTwoPageEight_2 = """
-
         ياليتني قدمت لحياتي 
         
         """;
@@ -214,7 +202,6 @@ class ElmTextTwentyTwo {
 عند الموت 
 """;
   static const ayahHadithTwentyTwoPageEight_3 = """
-
         ياليتني اتخذت مع الرسول سبيلا 
 
  """;
@@ -223,7 +210,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageEight_4 = """
-
         ياويلتى ليتني لم اتخذ فلاناً خليلا 
 
  """;
@@ -232,7 +218,6 @@ class ElmTextTwentyTwo {
   """;
 
   static const ayahHadithTwentyTwoPageEight_5 = """
-
         ويوم يعض الظالم على يديه 
 
  """;
@@ -246,7 +231,6 @@ class ElmTextTwentyTwo {
 أنت لا تعرف حقيقة الموت، الموت أسرع من ذلك، يخطف الناس خطفاً خلال ثانية، يكون شخص ملء السمع والبصر فإذا هو كلمات على الجدران، المرحوم فلان، عميد أسرتهم، الشاب، الشابة، إثر حادث أليم، إثر نوبة قلبية 
 """;
   static const ayahHadithTwentyTwoPageNine_1 = """
-
         وجاءت سكرة الموت بالحق 
 
   """;
@@ -254,7 +238,6 @@ class ElmTextTwentyTwo {
 الموت ينقلك من علم اليقين إلى حق اليقين، ينقلك من أفكار منطقية سمعتها إلى مشاهدات حقيقية تراها، خيارنا مع الإيمان هل هو خيار قبول أو رفض؟ لا والله، إنما هو خيار وقت، إما أن نؤمن قبل فوات الآوان، إما أن نؤمن ونستفيد من إيماننا، أو أن نؤمن من دون أن نستفيد من الإيمان شيئاً فتزداد الحسرة والندم 
   """;
   static const String ayahHadithTwentyTwoPageNine_2 = """
-
         إنك ميت وإنهم ميتون 
 
   """;
@@ -269,7 +252,6 @@ class ElmTextTwentyTwo {
 فالموت حق، فالأنبياء ماتوا، والمؤمنون ماتوا، والكفار ماتوا، والأغنياء ماتوا، والفقراء ماتوا، والأصحاء ماتوا، والمرضى ماتوا، والأقوياء ماتوا، والضعفاء ماتوا، والظالمون ماتوا، والمظلومون ماتوا، وكل مخلوق يموت 
    """;
   static const String ayahHadithTwentyTwoPageNine_3 = """
-
         إنك ميت وإنهم ميتون 
         
  """;
@@ -278,23 +260,19 @@ class ElmTextTwentyTwo {
 هم سيموتون أيضاً، يقول لك: مسكين مات، فهل أنت لن تموت؟ لا شماتة في الموت، فلان مات؟! وإنك ميتٌ معه، طبيب تراءى له أن مريضه سيموت بعد ساعتين، عاش ثلاثين سنة بعد هذه الكلمة، والطبيب مات بعد اثنتي عشرة سنة 
   """;
   static const String ayahHadithTwentyTwoPageNine_4 = """
-
         إنك ميت وإنهم ميتون 
 
   """;
 
   // page 10
   static const String subtitleTwentyTwoPageTen_1 = """
-    
 كُلنا عبيد لله عز وجل والله وحده الباقي 
 
     """;
   static const String textTwentyTwoPageTen_1 = """
-
 المعنى الآخر: أن كلنا عبيد لله عز وجل، والله وحده الباقي، وهو الذي سيحاسبنا جميعاً، وهو الذي سيُوقفنا أمام أعمالنا، لماذا فعلتم؟ لماذا لم تفعلوا؟ 
     """;
   static const String ayahHadithTwentyTwoPageTen_1 = """
- 
     انك ميت وإنهم ميتون ثم إنكم يوم القيامة عند ربكم تختصمون
  
  """;
@@ -305,7 +283,6 @@ class ElmTextTwentyTwo {
 هنيئاً لمن كان على الحق، كل إنسان يدعي في هذه الدنيا أنه على حق، القضية سهلة 
 """;
   static const String ayahHadithTwentyTwoPageTen_2 = """
-
         كل حزب بما لديهم فرحون 
 
   """;
@@ -314,7 +291,6 @@ class ElmTextTwentyTwo {
 لذلك ربنا عز وجل قال 
 """;
   static const String ayahHdithTwentyTwoPageTen_3 = """
-
         فتوكل على الله إنك على الحق المُبين 
 
   """;
@@ -326,7 +302,6 @@ class ElmTextTwentyTwo {
 لابد من أن تنكشف الحقائق، لابد من أن يظهر الحق، لابد من أن يزهق الباطل 
     """;
   static const String ayahHadithTwentyTwoPageEleven_1 = """
-
         إن الباطل كان زهوقا 
 
   """;
@@ -334,7 +309,6 @@ class ElmTextTwentyTwo {
 فبشكل أو بأخر لو معك كيلو من الذهب الخالص، والناس جميعاً ظنوه معدناً خسيساً، لا تبالي بهم، ولو أوهمت الناس أن معك ذهباً خالصاً وهو معدن خسيس، لا تفرح بهذا الإيهام، خيرك منك وشرك منك، سعادتك منك وشقاؤك منك، ويوم القيامة
 """;
   static const String ayahHadithTwentyTwoPageEleven_2 = """
-
         اليوم نختم على أفواههم وتكلمنا أيديهم وتشهد ارجلهم 
 
 """;
@@ -367,7 +341,6 @@ class ElmTextTwentyTwo {
 إحتضار الإنسان وعرض جميع أعماله أمامه 
   """;
   static const String ayahHadithTwentyTwoPageThirteen_1 = """
-
     وجائت سكرة الموت بالحق ذلك ماكنت منه تحيد 
 
   """;
@@ -376,7 +349,6 @@ class ElmTextTwentyTwo {
   """;
   // page 14
   static const String ayahHadithTwentyTwoPageFourteen_1 = """
-
 قُل إن الموت الذي تفرون منه فإنه ملاقيكم 
 
   """;
@@ -389,7 +361,6 @@ class ElmTextTwentyTwo {
 رجُل أصيب بأزمة قلبية، فرأى الموت يأتيه من قلبه، فاعتنى عناية تفوق حد الخيال، الطعام المقنن، والرياضة، والعناية، والراحة التامة، والبعد عن المشكلات، حسب تعليمات الطبيب، وهو لا ينتظر الموت إلا من قلبه، جاء صهره، ومعه سيارة فخمة، أخذه إلى نزهة، وفي طريق العودة وقع حادث أليم أودى بحياته، هو ينتظر الموت من أين؟ من قلبه، فإذا هو بحادث لم يكن يتوقعه 
   """;
   static const String ayahHadithTwentyTwoPageFourteen_4 = """
-
         قل إن الموت الذي تفرون منه فإنه ملاقيكم 
 
   """;

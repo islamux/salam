@@ -11,7 +11,6 @@ class ElmTextTwentyOne {
 أمره التكويني ( أفعاله ) مثلاً: إذا كان هناك خصمان يتخاصمان فقد يربح أحدهما الدعوة على أخيه ولكنه قد يكون ظالماً، وقد يكون أخوه مظلوماً، فحكم الله هنا يأتي مُعاكساً لحكم القاضي، فقد يعوض المظلوم ويبطش بالظالم، فهذا حُكم الله، وأفعال الله هي حكمة، فقد يطلق الزوج زوجته مثلاً، وتكون الزوجة مظلومة في هذا، لذلك كانت حكمة ربنا عزوجل مع الزوجة المظلومة أن يكافئها بزوج يكرمها، وحكم الله مع الزوج الظالم أن يعاقبه بزوجةٍ تكيل له الصاع صاعين، فهذا حكم الله، فحكم الله عز وجل هو أفعاله، فاحياناً يُكرم ويُعلي ويعز، وأحياناً يهين ويذل، وقد يُعطي ويمنع ويشفي ويعافي ويرفع ويخفض ويقبض ويبسط فهذا هو حكم الله.. 
 """;
   static const String ayahHadithTwentyOneOne_1 = """
-
       فاصبر لحكم ربك 
       """;
 
@@ -37,7 +36,6 @@ class ElmTextTwentyOne {
 """;
   // Page 2
   static const String ayahHadithTwentyOneTwo_1 = """
-
 والقيت عليك محبة مني ولتصنع على عيني 
 
       واصطنعتك لنفسي 
@@ -62,7 +60,6 @@ class ElmTextTwentyOne {
 برعايتنا هذا معنى قول الله عز وجل """;
 
   static const String subtitleTwentyOneThree_1 = """
-
       إن الله مع المتقين 
 """;
 
@@ -71,7 +68,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneThree_1 = """
-
       واصبر لحكم ربك 
 
   """;
@@ -92,13 +88,11 @@ class ElmTextTwentyOne {
 
 // page 4
   static const String elmTextTwentyOneFour_1 = """
-
  وأنت أيها الأخ الكريم، اصبر على بعدك عن المعصية، واصبر على الطاعة، واصبر على تربية الله لك، أن العاقبة للمتقين يارسول الله ادعُ الله أن يرحمني، فقال: يارب ارحمه فقال: كيف ارحمه مما ألم به؟ وعزتي وجلالي لا أقبض عبدي المؤمن وأنا أحب أن ارحمهُ إلا ابتليته بكل سيئة كان عملها، سقماً في جسده، أو إقتاراً في رزقه، أو مصيبة في ماله أو ولده، حتى أبلغ منه مثل الذر فإذا بقي عليه شيئٌ شددتُ عليه سكرات الموت حتى يلقاني كيوم ولدتهُ أمه، فاصبر إن العاقبة للمتقين 
 
 """;
 
   static const String ayahHadithTwentyOneFour_1 = """
-
       فاصبر إن العاقبة للمتقين 
 
 """;
@@ -193,16 +187,13 @@ class ElmTextTwentyOne {
 أي إذا عارضك إنسان، وسفه دعوتك إنسان، واستخف بك فلك أسوةٌ حسنة بهذا النبي العدنان 
 """;
   static const String ayahHadithTwentyOneEight_2 = """
-
 فاصبر إن وعد الله حق 
 
 """;
   static const String elmTextTwentyOneEight_3 = """
-
 العلماء حينما فسروا قوله تعالى 
 """;
   static const String ayahHadithTwentyOneEight_3 = """
-
       الم تر كيف فعل ربك بأصحاب الفيل 
 
 """;
@@ -220,21 +211,18 @@ class ElmTextTwentyOne {
 
 """;
   static const String ayahHadithTwentyOneNine_2 = """
- 
       أتى امر الله فلا تستعجلوه 
 """;
   static const String elmTextTwentyOneNine_2 = """
 معنى هذا أنه لم يأت بعد، انظر التعبير القرآني 
 """;
   static const String ayahHadithTwentyOneNine_3 = """
-
       اتى امر الله فلا تستعجلوه 
 """;
   static const String elmTextTwentyOneNine_3 = """
 المعنى أنه ما أتى، تعرف ذلك من قوله تعالى 
 """;
   static const String ayahHadithTwentyOneNine_4 = """
-
         فلا تستعجلوه 
 """;
   static const String elmTextTwentyOneNine_4 = """
@@ -262,7 +250,6 @@ class ElmTextTwentyOne {
 فيها التدليس، فيها الكذب، فيها الغش، فيها بيع لا يرضي الله عز وجل، فيها بيع يشبه الربا، هذه أسواقنا، وهذه بيوتنا، فإذا كنت قد قرأت في القرآن وعداً للمؤمنين بالحفظ، ولم تجد هذا الحفظ، قرأت وعداً للمؤمنين بالتوفيق، وما وجدت التوفيق، فالقضية بسيطة جداً، عليك أن تشك بالموعود لا بالوعد، هذه فكرة دقيقة صائبة 
 """;
   static const String ayahHadithTwentyOneTen_2 = """
-
       فاصبر إن وعد الله حق 
 
 """;
@@ -282,7 +269,6 @@ class ElmTextTwentyOne {
 أحياناً يكون المؤمن ضعيفاً مستضعفاً، وأحياناً يكون فقيراً، وأحياناً يكون من الطبقة الدنيا في المجتمع، أما انت أيها الضال فأنت المتفوق، وأنت الرابح، وأنت الفائز، وأنت الناجح، وأنت السعيد، وأنت الملك ولكن 
 """;
   static const String ayahHadithTwentyOneEleven_2 = """
-
       فاصبر إن وعد الله حق 
 """;
 
@@ -296,7 +282,6 @@ class ElmTextTwentyOne {
 """;
 // page 12
   static const String elmTextTwentyOneTwelve_1 = """
-
 أي إن رأيت مصيرهم في الدنيا أو لم تر فلا بد من أن يلقوا المصير المؤلم 
 """;
   static const String subtitleTwentyOneTwelve_1 = """
@@ -311,7 +296,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneTwelve_1 = """
-
       ولربك فاصبر 
 
 """;
@@ -321,7 +305,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneTwelve_2 = """
-
       ولربك فاصبر 
 
 """;
@@ -345,7 +328,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneThirteen_2 = """
-
       ولربك فاصبر 
 
 """;
@@ -363,7 +345,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneFourteen_1 = """
-
       (الايمان هو الصبر) 
       
  """;
@@ -404,7 +385,6 @@ class ElmTextTwentyOne {
 لمن كانت هذه الإساءة على يديه، قال 
  """;
   static const String ayahHadithTwentyOneSixteen_2 = """
-
       إن ذلك لمن عزم الأمور 
 
  """;
@@ -417,7 +397,6 @@ class ElmTextTwentyOne {
 أما هذه الأية 
  """;
   static const String ayahHadithTwentyOneSixteen_3 = """
-
       ولمن صبر وغفر إن ذلك لمن عزم الأمور 
 
  """;
@@ -438,7 +417,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneSeventeen_1 = """
-
 ياايها الذين امنوا اصبروا وصابروا 
 
 """;
@@ -451,7 +429,6 @@ class ElmTextTwentyOne {
  """;
 
   static const String ayahHadithTwentyOneSeventeen_2 = """
-
       ياأيها الذين امنوا 
 
  """;
@@ -468,7 +445,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneEighteen_1 = """
-
       ياأيها الذين آمنوا اصبروا 
 
 يقول الله عز وجل 
@@ -482,7 +458,6 @@ class ElmTextTwentyOne {
   """;
 
   static const String ayahHadithTwentyOneEighteen_2 = """
-
       وإن كان مكرهم لتزول منه الجبال 
 
   """;
@@ -491,7 +466,6 @@ class ElmTextTwentyOne {
   """;
 
   static const String ayahHadithTwentyOneEighteen_3 = """
-
       وإن تصبروا وتتقوا لا يضركم كيدهم شيئا 
 
   """;
@@ -502,7 +476,6 @@ class ElmTextTwentyOne {
  """;
 
   static const String ayahHadithTwentyOneNineteen_1 = """
-
 ياايها الذين امنوا اصبروا 
 
  """;
@@ -516,7 +489,6 @@ class ElmTextTwentyOne {
  """;
 
   static const String ayahHadithTwentyOneNineteen_2 = """
-
       ياايها الذين امنوا اصبروا 
 
  """;
@@ -526,7 +498,6 @@ class ElmTextTwentyOne {
    """;
 
   static const String ayahHadithTwentyOneNineteen_3 = """
-
       ياايها الذين امنوا اصبروا 
 
  """;
@@ -537,7 +508,6 @@ class ElmTextTwentyOne {
  """;
 
   static const String ayahHadithTwentyOneTwenty_1 = """
-
 إنا وجدناه صابراً نعم العبد إنه اواب 
 
  """;
@@ -554,7 +524,6 @@ class ElmTextTwentyOne {
 وفى ماعليه، وفى نعمة الله شكراً، ومنهج الله طاعة، وفى الله ذكراً ومعرفة 
   """;
   static const String ayahHadithTwentyOneTwenty_3 = """
-
       ياايها الذين امنوا اصبروا 
 
   """;
@@ -564,7 +533,6 @@ class ElmTextTwentyOne {
 لنصبر على مكر أعدائنا، وعلى شظف العيش أحياناً، ربما لا تدوم النعم، وقد يأتي ظرف صعب، وربما لا يتاح لنا أن نعيش كما كنا نعيش، لأنك مؤمن، ولأن الإيمان أكبر قضية في حياتك، فينبغي أن تصبر 
   """;
   static const String ayahHadithTwentyOneTwenty_4 = """
-
       ياايها الذين امنوا اصبروا 
 
   """;
@@ -579,7 +547,6 @@ class ElmTextTwentyOne {
   """;
 
   static const String ayahHadithTwentyOneTwentyOne_1 = """
-
       ياايها الذين امنوا اصبروا وصابروا 
 
    """;
@@ -599,7 +566,6 @@ class ElmTextTwentyOne {
   """;
 
   static const String ayahHadithTwentyOneTwentyOne_2 = """
-
 إنما يوفى الصابرون أجرهم بغير حساب 
 
   """;
@@ -610,7 +576,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneTwentyTwo_1 = """
-
 إنما يوفى الصابرون أجرهم بغير حساب 
 
 """;
@@ -620,7 +585,6 @@ class ElmTextTwentyOne {
 """;
 
   static const String ayahHadithTwentyOneTwentyTwo_2 = """
-   
       ياايها الذين امنوا اصبروا وصابروا 
 
    """;
@@ -650,7 +614,6 @@ class ElmTextTwentyOne {
 دائماً وفي أغلب الأحيان يأتي الصبر مع التسبيح، ما الذي يعينك على كلام هؤلاء الجهلة 
 """;
   static const String ayahHadithTwentyOneTwentyThree_2 = """
-
 فاصبر على مايقولون وسبح بحمد ربك 
 
 """;
@@ -661,7 +624,6 @@ class ElmTextTwentyOne {
   // page 24 وقفة 2
   // from saber2
   static const String ayahHadithTwentyOneTwentyFour_1 = """
-
       يا ايها الذين امنوا أستعينوا بالصبر والصلاة 
 
 """;
@@ -673,7 +635,6 @@ class ElmTextTwentyOne {
 // page 25 وقفة 3
   // from saber3
   static const String ayahHadithTwentyOneTwentyFive_1 = """
-
       (إن الله مع الصابرين) 
 
 """;
