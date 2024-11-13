@@ -24,21 +24,17 @@ class ElmTextDersTwelve {
 """;
   static const String elmTextTwelveThree_2 = """
 يامحمد   
-
       و ﴿إن ﴾ : حرف مشبه بالفعل يفيد التوكيد 
 """;
   static const String ayahHadithTwelveThree_2 = """
- 
  لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 القلم 4 
-
 """;
   static const String elmTextTwelveThree_3 = """
 يامحمد   
 و(اللام) لام التوكيد أيضاً، فاللام الواقعة في جواب إن هي لام التوكيد
  على : تفيد الاستعلاء
   أي أن النبي عليه الصلاة والسلام ليس ذا خُلُق، بل هو على خُلُق وشتان بين المعنيين، إذا قلت : النبي على خلق أي  متمكن من مكارم الأخلاق، والإنسان أحياناً قد يقع في صراع بين أخذٍ و رد، وإقدامٍ وإحجام، وإنفاذٍ ومنع، ثم ينتصر على نفسه بعد شق النفس، هذا ذو خلُق، لكن الذي(على خلق عظيم) هو في أعماق الكمالات لأنه متمكن من أخلاقه فلا يحتاج إلى أن يشعر بالصراع مع نفسه 
-
 """;
 // page 4
   static const String ayahHadithTwelveFour_1 = """
@@ -53,7 +49,6 @@ class ElmTextDersTwelve {
 
   static const String elmTextTwelveFour_2 = """
 لأن الإيمان هو الخلق، والذي يفضلك في الخلق يفضلك في الإيمان
-
 """;
 
 // page 5
@@ -96,7 +91,6 @@ class ElmTextDersTwelve {
 """;
   static const String ayahHadithTwelveSix_1 = """
 فقال لها:(أنقضى عهد النوم ياخديجة)  *
-
 """;
 
   static const String elmTextTwelveSix_2 = """
@@ -114,7 +108,6 @@ class ElmTextDersTwelve {
   حديث **
   ( اذْهَبُوا فَأَنْتُمْ الطُّلَقَاءُ )
    ضعيف بهذا اللفظ ، ولكن تسمية من أطلقهم النبي صلى الله عليه وسلم وخلى عنهم يوم الفتح بالطلقاء: ثابت في السنة
-
 """;
 
 // page 7
@@ -126,10 +119,8 @@ class ElmTextDersTwelve {
   static const String ayahHadithTwelveSeven_1 = """
  * 
    أكرموا النساء فوالله ما أكرمهن إلا كريم، ولا أهانهن إلا لئيم، يغلبن كل كريم ويغلبهن لئيم، وأنا أحب أن أكون كريمآ مغلوبآ من أن أكون لئيمآ غالبآ
-
 دخل بيته مرة **
 فقال:( هل عندكم من طعام ) 
-
 قالوا : لا 
  قال:( فإني صائم ) 
 """;
@@ -187,7 +178,6 @@ class ElmTextDersTwelve {
   static const String ayahHadithTwelveEleven_1 = """
      وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤ * 
 القلم 4 * 
-
 """;
 
 // page 12
@@ -214,7 +204,6 @@ class ElmTextDersTwelve {
 
   static const String elmTextTwelveThirteen_2 = """
 فكيف يكون النبي أسوة حسنة لك؟ إن لم تعرف سيرته ، إن لم تعرف أخلاقه ، إن لم تعرف أخذه وعطائه، إن لم تعرف رحمته ، إن لم تعرف لطفه
-
   """;
 
 // page 14
@@ -241,8 +230,6 @@ class ElmTextDersTwelve {
 {ما بال أقوام}
  ولم نقف على تخريجه من مصدر معتمد  
   موقع ليتفقهوا في الدين *
-
-
   """;
 
   // page 15
@@ -338,7 +325,6 @@ class ElmTextDersTwelve {
 """;
   static const String ayahHadithTwelveSeventeen_3 = """
 وما كَانَ ٱللَّهُ لِیُعَذِّبَهُمۡ 
-
 """;
 // page 18
   static const String elmTwelveEighteen_1 = """

@@ -74,9 +74,7 @@ class ElmTextTwentyThree {
 يريك في المجتمع كيف أن المرابي محقه الله عز وجل، يقول لك: """;
 
   static const String ayahHadithTwentyThreePageThree_2 = """
-
         ويربي الصدقات 
-
 """;
   static const String textTwentyThreePageThree_3 = """
 كيف أن المتصدق يزداد ماله، هذا التطابق بين كتاب الله وما يجري في الأرض، هذا التطابق هو دليل أن هذا الكلام كلام الله، فيدبر لك عقلك، كما دبر لك جسمك، ونزل الأمطار، وأرسل الرياح، والرياح ساقت السحب، التي انقلبت إلى أمطار، انقلبت الامطار إلى ينابيع، سُقي الزرع، ونما إلى أن صارت محاصيل، وخضار، وفواكه، كل هذا الشيئ من أجلك 
@@ -85,7 +83,6 @@ class ElmTextTwentyThree {
 
   static const String ayahHadithTwentyThreePageThree_3 = """
         والأنعام خلقها لكم 
-
 """;
   static const String textTwentyThreePageThree_4 = """
 خلقها خصيص لكم 
@@ -267,7 +264,6 @@ class ElmTextTwentyThree {
 فهذا هو التوحيد، الدين كله توحيد، وماتعلمت العبيد أفضل من التوحيد، وحد تسترح 
 """;
   static const String ayahHadithTwentyThreePageTen_2 = """
-
 فلا تدع مع الله الهاً اخر فتكون من المعذبين 
 
 """;
@@ -275,10 +271,8 @@ class ElmTextTwentyThree {
 أي ان هذا أساس الإيمان، لا يستطيع إنسانٌ ما؛ مهما كبر شأنه، مهما كان قوياً، مهما كان جباراً، لا يستطيع إنسانٌ ما أن يصل إليك إلا بإذن الله، كن مع الله تر الله معك 
 أطع امرنا نرفع لأجلك حجبنا 
              فإنا منحنا بالرضا من أحبنا 
-
 ولذ بحمانا واحتم بجنابنا 
             لنحميك مما فيه أشرار خلقنا 
-
 
 إنما امره إذا اراد شيئاً أن يقول له كن فيكون 
 بعض العلماء يقول: إنه حتى في هذا تقريب لنا، أمره أسرع من هذا فكلمة، (كن) حركتان، وكلمة (فيكون) حركتان، أي اربع حركات قال تعالى 
@@ -306,7 +300,6 @@ class ElmTextTwentyThree {
 """;
   static const String ayahHadithTwentyThreePageEleven_2 = """
  فعن أبي ذر عن النبي صلى الله عليه وسلم فيما يروي عن ربه تبارك وتعالى ((...ياعبادي لو أن اولكم واخركم، وانسكم وجنكم قاموا في صعيد واحد، فسألوني فاعطيت كل إنسان مسألته مانقص ذلك مما عندي إلا كما ينقص المخيط إذا أُدخل البحر)) 
- 
 ذلك لأن عطائي كلام، كن فيكون 
 """;
   static const String textTwentyThreePageEleven_3 = """
@@ -419,7 +412,6 @@ class ElmTextTwentyThree {
 """;
   static const String ayahHadithTwentyThreePageSixteen_2 = """
 قلنا يانار كوني برداً وسلاماً على ابراهيم 
-
 """;
 
   static const String textTwentyThreePageSixteen_3 = """

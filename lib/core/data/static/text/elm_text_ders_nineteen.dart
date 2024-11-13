@@ -37,10 +37,7 @@ class ElmTextNineteen {
 """;
 // page 3
   static const String elmTextNineteenThree_1 = """
-تقع عينك عليه فتذكر الله سبحانه وتعالى ، هذه علامة
-
-علامة أخرى
-
+تقع عينك عليه فتذكر الله سبحانه وتعالى هذه علامة ..علامة أخرى
 كما قال عليه الصلاة والسلام  
 """;
 
@@ -78,9 +75,7 @@ class ElmTextNineteen {
 // page 5
   static const String ayahHadithNineteenFive_1 = """
         ( واصبر لحكم ربك فإنك باعيننا ) 
-  
         ( إن الله يدافع عن الذين امنوا ) 
-
  إن الذين آمنوا وعملو الصالحات سيجعل لهم الرحمان ودا  
 
   """;
@@ -103,10 +98,8 @@ class ElmTextNineteen {
 """;
   static const String ayahHadithNineteenSix_1 = """
      ( لا تحزن إن الله معنا ) 
-
  قلت للنبي صل الله عليه وسلم وأنا في الغار
  لو أن احدهم نظر تحت قدميه لأبصرنا ، فقال
-
   (( ماظنك يا أبا بكر بأثنين الله ثالثهما ؟ )) 
 
 """;
@@ -206,7 +199,6 @@ class ElmTextNineteen {
 // page 12
   static const String ayahHadithNineteenTwelve_1 = """
     فإن حزب الله هم الغالبون 
-
 إنا لننصر رسلنا والذين آمنوا في الحياة الدنيا 
 
 """;
@@ -215,9 +207,7 @@ class ElmTextNineteen {
 """;
   static const String ayahHadithNineteenTwelve_2 = """
     وإن جندنا لهم الغالبون 
-
    وكان حقاً علينا نصر المؤمنين 
-
 ولن يجعل الله للكافرين على المؤمنين سبيلا 
 
 """;

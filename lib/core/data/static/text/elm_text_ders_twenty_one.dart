@@ -22,7 +22,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneOne_2 = """
       فاصبر لحكم ربك 
-      
       """;
 
   static const String elmTextTwentyOneOne_3 = """
@@ -37,12 +36,9 @@ class ElmTextTwentyOne {
   // Page 2
   static const String ayahHadithTwentyOneTwo_1 = """
 والقيت عليك محبة مني ولتصنع على عيني 
-
       واصطنعتك لنفسي 
-
 وقال للنبي عليه الصلاة والسلام 
       فإنك باعيننا 
-
 """;
 
   static const String elmTextTwentyOneTwo_1 = """
@@ -94,7 +90,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneFour_1 = """
       فاصبر إن العاقبة للمتقين 
-
 """;
   static const String elmTextTwentyOneFour_2 = """
 والصبر من الإيمان كالرأس من الجسد، فإذا ذهب الصبر ذهب الإيمان، فاصبر إن العاقبة للمتقين 
@@ -141,13 +136,11 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneSix_2 = """
       فصبر جميل 
-
 إذا أحب الله عبداً ابتلاه 
 """;
   static const String elmTextTwentyOneSix_3 = """
 إذا أحب الله عبده ابتلاه، فإن صبر اجتباه، فإن شكر اقتناه، وإذا لم يحبه تركه هملاً، أنت إذا سمعت من طفل في الطريق كلمةنابية لا تقول شيئاً، بل تقول: مالي وله، أما إذا نظرت إلى القائل فإذا هو ابنك، ماذا تفعل؟ تؤدبه تأديباً شديداً، تقيم قيامته، لماذا فعلت به مافعلت؟ من شدة حبك له وحرصك عليه، فلذلك الذي يحبه الله سبحانه وتعالى يعالجه، إذا اراد الله بعبده خيراً عجل له بالعقاب، إذا أراد الله بعبد خيراً عاتبه في منامه، فهذا الذي يتابعه الله سبحانه وتعالى على كل ذنب، يتابعه على كل تقصير، يتابعه على كل خروج عن طريق الحق، ليفرح لأن الله يحبه، عن محمود بن لبيد أن النبي صلى الله عليه وسلم قال 
       إذا احب الله قوماً ابتلاهم فمن صبر فله الصبر، ومن جزع فله الجزع 
-
       فاصبر على ما يقولون 
 """;
   // page 7
@@ -169,18 +162,14 @@ class ElmTextTwentyOne {
 """;
   static const String ayahHadithTwentyOneSeven_3 = """
      لقد جاءكم رسول من انفسكم 
-
 """;
   // page 8
   static const String elmTextTwentyOneEight_1 = """
-
 إن الله سبحانه وتعالى عصم النبي عليه الصلاة والسلام من أن يناله المشركين بالقتل لئلا تغتال الدعوة باغتياله، ولكن لم يعصمه عن إيقاع الأذى الذي تحمله أيما تحمل وصبر له أيما صبر، ولذلك ربنا سبحانه وتعالى يقول 
 """;
   static const String ayahHadithTwentyOneEight_1 = """
       واصبر كما صبر أولو العزم من الرسل 
-
       فاصبر على مايقولون 
-
 """;
 
   static const String elmTextTwentyOneEight_2 = """
@@ -195,12 +184,10 @@ class ElmTextTwentyOne {
 """;
   static const String ayahHadithTwentyOneEight_3 = """
       الم تر كيف فعل ربك بأصحاب الفيل 
-
 """;
   static const String elmTextTwentyOneEight_4 = """
           ( الم تر ) 
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل 
- 
 """;
 // page 9
   static const String ayahHadithTwentyOneNine_1 = """
@@ -208,7 +195,6 @@ class ElmTextTwentyOne {
 """;
   static const String elmTextTwentyOneNine_1 = """
 بماذا اجاب المفسرون؟ أجابوا بأن خبر الله لشدة أحقيته ووثوقه وصدقه كأنك تراه، وفضيلة العلامة الدكتور محمد راتب النابلسي يقول وانا بدوري أقيس على هذه الفكرة أن وعد الله لأحقية وقوعه كأنه وقع والدليل 
-
 """;
   static const String ayahHadithTwentyOneNine_2 = """
       أتى امر الله فلا تستعجلوه 
@@ -234,13 +220,10 @@ class ElmTextTwentyOne {
   static const String elmTextTwentyOneNine_5 = """
 عبر عما يحدث بالمستقبل بالفعل الماضي تحقيقاً لوقوعه 
 إذاً ربنا عز وجل قال 
-
 """;
 // page 10
   static const String ayahHadithTwentyOneTen_1 = """
-
       فاصبر إن وعد الله حق 
-
 """;
   static const String elmTextTwentyOneTen_1 = """
 لذلك أحد الصحابة قال: {والله لو كشف الغطاء ما ازددت يقيناً} أي أن يقينه بوعد الله قبل كشف الغطاء كيقينه بعد كشف الغطاء 
@@ -258,7 +241,6 @@ class ElmTextTwentyOne {
 معنى حق أي أنه لابد من أن يقع، وزوال الكون أهون على الله من أن لا يقع 
 من عمل صالحاً من ذكر أو انثى وهو مؤمن فلنحيينه حياة طيبة 
 هذا وعد إلهي لكل مؤمن، هذه الآية لا علاقة لها بالظروف المستجدة، لا علاقة لها بالأزمات، لا علاقة لها بالفقر، لا علاقة لها بالضعف، لا علاقة لها بالمرض، إنه وعد إلهي 
-
 """;
 
   static const String ayahHadithTwentyOneEleven_1 = """
@@ -293,7 +275,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneTwelve_1 = """
       ولربك فاصبر 
-
 """;
   static const String elmTextTwentyOneTwelve_3 = """
 الإنسان أحياناً يكون ضعيفاً فيصبر أمام القوي، يكون فقيراً فيصبر أمام الغني، ليس هذا هو الصبر المحمود، الصبر المحمود أن تكون في أعلى درجات القوة، وفي أعلى درجات الغنى وأنت صابر لله وحده، مقيدك خوفك من الله، مقيدك تواضعك لله، هذا الصبر المحمود
@@ -302,7 +283,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneTwelve_2 = """
       ولربك فاصبر 
-
 """;
 // page 13
   static const String ayahHadithTwentyOneThirteen_1 = """
@@ -325,7 +305,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneThirteen_2 = """
       ولربك فاصبر 
-
 """;
 
   // page 14
@@ -342,7 +321,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneFourteen_1 = """
       (الايمان هو الصبر) 
-      
  """;
 
   static const String elmTextTwentyOneFourteen_2 = """
@@ -382,14 +360,12 @@ class ElmTextTwentyOne {
  """;
   static const String ayahHadithTwentyOneSixteen_2 = """
       إن ذلك لمن عزم الأمور 
-
  """;
 
   static const String elmTextTwentyOneSixteen_2 = """
 إن يحتاج إلى إيمان قوي وإلى توحيد قوي 
 
 من عاقب المذنب أو عفا عنه عليه أن يرى أن الله وحده هو الذي سمح له أن يفعل هذا 
-
 أما هذه الأية 
  """;
   static const String ayahHadithTwentyOneSixteen_3 = """
@@ -442,7 +418,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneEighteen_1 = """
       ياأيها الذين آمنوا اصبروا 
-
 يقول الله عز وجل 
 وإن تصبروا وتتقوا لا يضركم كيدهم شيئا 
 
@@ -455,7 +430,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneEighteen_2 = """
       وإن كان مكرهم لتزول منه الجبال 
-
   """;
   static const String elmTextTwentyOneEighteen_3 = """
 ومع ذلك 
@@ -463,7 +437,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneEighteen_3 = """
       وإن تصبروا وتتقوا لا يضركم كيدهم شيئا 
-
   """;
 
 // page 19
@@ -473,7 +446,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneNineteen_1 = """
 ياايها الذين امنوا اصبروا 
-
  """;
 
   static const String subtitleTwentyOneNineteen_1 = """
@@ -486,7 +458,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneNineteen_2 = """
       ياايها الذين امنوا اصبروا 
-
  """;
 
   static const String elmTextTwentyOneNineteen_3 = """
@@ -495,7 +466,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneNineteen_3 = """
       ياايها الذين امنوا اصبروا 
-
  """;
 
   // page 20
@@ -505,7 +475,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneTwenty_1 = """
 إنا وجدناه صابراً نعم العبد إنه اواب 
-
  """;
 
   static const String elmTextTwentyOneTwenty_2 = """
@@ -521,7 +490,6 @@ class ElmTextTwentyOne {
   """;
   static const String ayahHadithTwentyOneTwenty_3 = """
       ياايها الذين امنوا اصبروا 
-
   """;
 
   static const String elmTextTwentyOneTwenty_4 = """
@@ -529,7 +497,6 @@ class ElmTextTwentyOne {
   """;
   static const String ayahHadithTwentyOneTwenty_4 = """
       ياايها الذين امنوا اصبروا 
-
   """;
 
   // page 21
@@ -548,7 +515,6 @@ class ElmTextTwentyOne {
 
   static const String elmTextTwentyOneTwentyOne_2 = """
 معنى صابروا 
-
 المعنى الذي يمكن أن يستنبط من كلمة وصابروا
 أي احملوا من حولكم على الصبر، اصبر وصابر أحياناً الإنسان من غير حكمة يشكو لك مشكلة، والله مشكلتك صعبة لا تحتمل، الله يعينك، ليس هذا هو الموقف الكامل، ينبغي أن تخفف عنه، وتهون في عينه الدنيا، وأن تطمعه في الآخرة، وأن تشعره أن معظم الناس يعانون مايعانون، فأنت ينبغي أن تصبر، وينبغي أن تحمل غيرك على الصبر، ينبغي أن تصبر، وينبغي أن تبين حكمة الله التي ينبغي أن نصبر عليها، ينبغي أن تصبر، وتبين ماذا ينتظر الصابرون 
   """;
@@ -562,7 +528,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneTwentyOne_2 = """
 إنما يوفى الصابرون أجرهم بغير حساب 
-
   """;
 
   // page 22
@@ -581,7 +546,6 @@ class ElmTextTwentyOne {
 
   static const String ayahHadithTwentyOneTwentyTwo_2 = """
       ياايها الذين امنوا اصبروا وصابروا 
-
    """;
 
   static const String elmTextTwentyOneTwentyTwo_3 = """
@@ -601,16 +565,13 @@ class ElmTextTwentyOne {
  الإنسان حينما يتصل بالله يستطيع أن يواجه أعداء الحق 
  """;
   static const String ayahHadithTwentyOneTwentyThree_1 = """
-
 فاصبر على مايقولون وسبح بحمد ربك قبل طلوع الشمس وقبل الغروب 
-
 """;
   static const String elmTextTwentyOneTwentyThree_1 = """
 دائماً وفي أغلب الأحيان يأتي الصبر مع التسبيح، ما الذي يعينك على كلام هؤلاء الجهلة 
 """;
   static const String ayahHadithTwentyOneTwentyThree_2 = """
 فاصبر على مايقولون وسبح بحمد ربك 
-
 """;
   static const String elmTextTwentyOneTwentyThree_2 = """
 لما يكون الإنسان في ضيق مادي، أو ضيق معنوي، أو حوله أناس أعداء منكرون، مفندون، إن كان له صلة بالله فهذه الصلة تغنيه عن صداقتهم، وتغنيه عن الإستماع إليهم، والحقيقة أن الإنسان حينما يتصل بالله يستطيع عندئذٍ أن يواجه أعداء الحق، لأن معه ذخيرة، ومعه سلاح، والاتصال بالله مُسعد، لذلك الإنسان الفارغ لا يحتمل المعارضة، ولا يحتمل النقد، ولا يحتمل التخويف، هو ضعيف في الأساس، أما حينما يقوى بالله عز وجل يصبح أقوى من كل قوةٍ تريد أن تنال منه
@@ -631,7 +592,6 @@ class ElmTextTwentyOne {
   // from saber3
   static const String ayahHadithTwentyOneTwentyFive_1 = """
       (إن الله مع الصابرين) 
-
 """;
 
   static const String elmTextTwentyOneTwentyFive_1 = """
@@ -656,7 +616,6 @@ class ElmTextTwentyOne {
 المنظر الجمالي لأهل الدنيا، المال، الطعام، النساء، الأماكن الجميلة، السيارات، البيوت، إذاً عندما الإنسان المؤمن يدع أشياء كثيرة لوجه الله لابد من مصدر جمالي يسعده، إنه ذكر الله، اصبر واذكر، دع هذا وخذ هذا، أما دع ولا تأخذ، اختل توازنه الإنسان، فالإنسان سعادته بذكر الله 
 
 البديل الإيجابي 
-
 لذلك قالوا: في الدنيا جنة من لم يدخلها لم يدخل جنة الآخرة، إنها جنة القرب، أحد العلماء قال: بستاني في صدري ماذا يفعل أعدائي بي؟ إن ابعدوني فإبعادي سياحة، وإن حبسوني فحبسي خلوة، وإن قتلوني فقتلي شهادة 
 """;
   static const String ayahHadithTwentyOneTwentySix_2 = """

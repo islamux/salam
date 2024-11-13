@@ -21,7 +21,6 @@ class ElmTextTwentyTwo {
   """;
   static const textTwentyTwoPageTwo_1 = """
 هذا أخطر حدث في حياة الإنسان، أخطر من الحياة والولادة، لماذا؟ الولادة فيها خيارات كثيرة أمامك، أما الموت فليس فيه خيار، فإذا سيق رجل للإعدام، إذا بكى هل يخلصونه مما هو فيه؟ البكاء والتوسل هل ينجيانه من الإعدام؟ لا، لو ضحك هل ينجو؟ هذا ممر إجباري، ضحكه كبكائه، وصراخه كصمته، وتوسله ككبريائه، هذا الحكمُ لابد من أن يقع، لذلك قال ربنا عز وجل 
-  
   """;
 
   static const ayahHadithTwentyTwoPageTwo_2 = """
@@ -86,7 +85,6 @@ class ElmTextTwentyTwo {
 
   static const ayahHadithTwentyTwoPageFour_2 = """
     واعبد ربك حتى يأتيك اليقين 
-
    """;
 
   static const textTwentyTwoPageFour_2 = """
@@ -101,7 +99,6 @@ class ElmTextTwentyTwo {
 
   static const ayahHadithTwentyTwoPageFive_1 = """
     إقرأ كتابك كفى بنفسك اليوم عليك حسيبا 
-
     لقد كنت في غفلة من هذا فكشفنا عنك غطائك فبصرك اليوم حديد 
     حتى إذا جاء احدهم الموت قال رب ارجعون 
     ان تقول نفس ياحسرتاه على مافرطت في جنب الله 
@@ -125,16 +122,13 @@ class ElmTextTwentyTwo {
   """;
   static const ayahHadithTwentyTwoPageSix_1 = """
     لعلي اعمل صالحاً فيما تركت 
-
   """;
 
   static const textTwentyTwoPageSix_2 = """
 الجواب زجر وردع وخزي 
  """;
   static const ayahHadithTwentyTwoPageSix_2 = """
-
     كلا إنها كلمة هو قائلها 
-    
  """;
 
   static const textTwentyTwoPageSix_3 = """
@@ -143,7 +137,6 @@ class ElmTextTwentyTwo {
 
   static const ayahHadithTwentyTwoPageSix_3 = """
     كلا إنها كلمة هو قائلها 
-    
  """;
 
 // page 7
@@ -162,7 +155,6 @@ class ElmTextTwentyTwo {
 
   static const ayahHadithTwentyTwoPageSeven_2 = """
     لا إله إلا الله، إن للموت لسكرات 
-
   """;
   static const textTwentyTwoPageSeven_2 = """
 ان سكرة الموت جاءت بالحق الذي سمعه الإنسان في الدنيا 
@@ -177,7 +169,6 @@ class ElmTextTwentyTwo {
 // page 8
   static const ayahHadithTwentyTwoPageEight_1 = """
         رب ارجعون لعلي اعمل صالحاً فيما تركت
-
 """;
   static const textTwentyTwoPageEight_1 = """
 هُناك طلب من العبد أن يؤخره الله 
@@ -282,7 +273,6 @@ class ElmTextTwentyTwo {
 """;
   static const String ayahHadithTwentyTwoPageTen_2 = """
         كل حزب بما لديهم فرحون 
-
   """;
   static const String textTwentyTwoPageTen_3 = """
 كل إنسان يدعي أنه على حق، ومعه الأدلة، ومعه البراهين، ومعه الشواهد، ويظن نفسه محور العالم، والناس من حوله جهلة، أما البطولة أن تكون على الحق فعلاً، البطولة حينما ترجع إلى الله عز وجل أن تكون مع الله، أن تكون مع الحق المبين
@@ -290,7 +280,6 @@ class ElmTextTwentyTwo {
 """;
   static const String ayahHdithTwentyTwoPageTen_3 = """
         فتوكل على الله إنك على الحق المُبين 
-
   """;
   // page 11
   static const String subtitleTwentyTwoPageEleven_1 = """
@@ -301,14 +290,12 @@ class ElmTextTwentyTwo {
     """;
   static const String ayahHadithTwentyTwoPageEleven_1 = """
         إن الباطل كان زهوقا 
-
   """;
   static const String textTwentyTwoPageEleven_2 = """
 فبشكل أو بأخر لو معك كيلو من الذهب الخالص، والناس جميعاً ظنوه معدناً خسيساً، لا تبالي بهم، ولو أوهمت الناس أن معك ذهباً خالصاً وهو معدن خسيس، لا تفرح بهذا الإيهام، خيرك منك وشرك منك، سعادتك منك وشقاؤك منك، ويوم القيامة
 """;
   static const String ayahHadithTwentyTwoPageEleven_2 = """
         اليوم نختم على أفواههم وتكلمنا أيديهم وتشهد ارجلهم 
-
 """;
   static const String textTwentyTwoPageEleven_3 = """
 فبشكل أو بأخر لو معك كيلو من الذهب الخالص، والناس جميعاً ظنوه معدناً خسيساً، لا تبالي بهم، ولو أوهمت الناس أن معك ذهباً خالصاً وهو معدن خسيس، لا تفرح بهذا الإيهام، خيرك منك وشرك منك، سعادتك منك وشقاؤك منك، ويوم القيامة
@@ -340,7 +327,6 @@ class ElmTextTwentyTwo {
   """;
   static const String ayahHadithTwentyTwoPageThirteen_1 = """
     وجائت سكرة الموت بالحق ذلك ماكنت منه تحيد 
-
   """;
   static const String textTwentyTwoPageThirteen_1 = """
 هذا الإحتضار، والمؤمن يرى مقامه في الجنة فيقول: لم أر شراً قط، والكافر يرى مكانه في النار فيقول: لم أر خيراً قط، يكون في دنياه قد سافر، وتنقل كيف يشاء، وأكل أطيب الطعام، ومتع عينيه باجمل النساء، وماترك مكاناً إلا وذهب إليه، وفعل كل مايشتهي، وأنغمس في كل الملذات إلى قمة رأسه وعاش في مجتمع كما يقولون مجتمع التفلت، وفعل كل مايشتهي، وعندما يرى مكانه في النار يقول: لم أر خيراً قط
@@ -348,7 +334,6 @@ class ElmTextTwentyTwo {
   // page 14
   static const String ayahHadithTwentyTwoPageFourteen_1 = """
 قُل إن الموت الذي تفرون منه فإنه ملاقيكم 
-
   """;
   static const String subtitleTwentyTwoPageFourteen_2 = """
 الموت مصير كل حي 
@@ -360,7 +345,6 @@ class ElmTextTwentyTwo {
   """;
   static const String ayahHadithTwentyTwoPageFourteen_4 = """
         قل إن الموت الذي تفرون منه فإنه ملاقيكم 
-
   """;
   static const String textTwentyTwoPageFourteen_5 = """
 تظنه وراء ظهرك، وأنت هارب منه قد تفاجأ أنه أمامك

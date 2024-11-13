@@ -12,7 +12,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentyOne1 = """
 يا ايها الناس اعبدو ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
-
 """;
 
   static const String subtitleTwentyOne_1 = """
@@ -41,7 +40,6 @@ class ElmTextTwenty {
 
   static const String ayahHadithTwentyTwo_1 = """
 ياايها الناس اعبدوا ربكم الذي خلقكم والذين من قبلكم لعلكم تتقون 
-
   """;
 
   static const String elmTextTwentyTwo_2 = """
@@ -57,7 +55,6 @@ class ElmTextTwenty {
 // page 3
   static const String subtitleTwentyThree_1 = """
 الإنسان له بناء مؤسس على تقوى الله  
-
   """;
   static const String elmTextTwentyThree_1 = """
 نقطة ثانية ، الإنسان له بناء ، معنى البناء أنت لك منظومة قيم ، في الموضوع الفلاني لك موقف ، في علاقتك بالنساء لك موقف ، في علاقتك بكسب المال لك موقف ، في علاقتك بإنفاق المال لك موقف ، في علاقتك بالجوار لك موقف ، في علاقتك بالبيع والشراء لك موقف ، في علاقتك بالشهوة التي أودعها الله فيك لك موقف ، هذه المواقف تنبع من رؤية أو من قيم ، 
@@ -65,7 +62,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentyThree_1 = """
   أفمن أسس بُنيانه 
-
 """;
   static const String elmTextTwentyThree_2 = """
 أنت لك بناء ، الأسرة لبنة ، العمل لبنة ، علاقتك بذاتك لبنة ، علاقتك بالخالق لبنة ، علاقتك بأهلك ؛ بالوالد ، بالوالدة ، بالإخوة ، بالأخوات ، بالأصهار ، كل موقف ، وكل حركة وكل سكنة تنبع من رؤية أو من قيمة ، 
@@ -89,7 +85,6 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyFour_1 = """
   الله لا اله الا هو الحي القيوم 
-
 """;
 // page 5
   static const String elmTextTwentyFive_1 = """
@@ -104,9 +99,7 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentyFive_1 = """
   أفغير الله تتقون 
-
 فما لكم كيف تحكمون 
-
 """;
   static const String elmTextTwentyFive_2 = """
 كيف تفكرون ؟ كيف تتأملون ؟ 
@@ -128,7 +121,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentyFive_4 = """
   مايفتح الله للناس من رحمة فلا ممسك لها 
-
 """;
   // page 6
   static const String elmTextTwentySix_1 = """
@@ -136,7 +128,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentySix_1 = """
   له الخلق والأمر 
-
 """;
 
   static const String elmTextTwentySix_2 = """
@@ -144,7 +135,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentySix_2 = """
   يد الله فوق ايديهم 
-
 """;
   static const String elmTextTwentySix_3 = """
 فإذا خشيت غير الله أو رجوت غير الله فلست متقياً 
@@ -152,7 +142,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentySix_3 = """
     أفغير الله تتقون 
-
 """;
   static const String elmTextTwentySix_4 = """
 أنت في قبظته ، ولماذا عليك أن تتقي الله ؟ 
@@ -161,7 +150,6 @@ class ElmTextTwenty {
 // page 7
   static const String ayahHadithTwentySeven_1 = """
   واتقو الله واعلمو ان الله مع المتقين 
-
 """;
   static const String elmTextTwentySeven_1 = """
 إذا كان الإنسان مراقباً فإنه يخافُ هذا الذي يراقبه ، فربنا عزوجل رقابته عليك مستمرة 
@@ -169,9 +157,7 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentySeven_2 = """
   واتقوا الله واعلموا ان الله بكل شيئ عليم 
-
   واتقوا الله إن الله سريع الحساب 
-
   واتقوا الله واعلموا انكم اليه تحشرون 
 """;
   static const String elmTextTwentySeven_2 = """
@@ -181,7 +167,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentySeven_3 = """
 قُل سيروا في الأرض ثم انظروا كيف كان عاقبة المكذبين 
-
 """;
 // page 8
   static const String subtitleTwentyEight_1 = """
@@ -255,7 +240,6 @@ class ElmTextTwenty {
 
   static const String ayahHadithTwentyEleven_1 = """
     إن الله يحب المتقين 
-    
 """;
   static const String elmTextTwentyEleven_2 = """
 فالتقوى منهم والعون والحب منه
@@ -274,7 +258,6 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentyTwelve_1 = """
      إن الله يحب المتقين
-     
      """;
   static const String elmTextTwentyTwelve_2 = """
 أتق الله أن تعصيه يحبك الله عز وجل
@@ -288,7 +271,6 @@ class ElmTextTwenty {
 // page 13
   static const String elmTextTwentyThirteen_1 = """
 لكن ألا تحب أن يكون الله معك؟ 
-
 """;
   static const String subtitleTwentyThirteen_1 = """
 معية الله بالحفظ ملازمة للمتقين 
@@ -313,7 +295,6 @@ class ElmTextTwenty {
 // page 14
   static const String ayahHadithTwentyFourteen_1 = """
    إن الله مع المتقين 
-
 """;
   static const String elmTextTwentyFourteen_1 = """
 ألا يتمنى الانسان أن يكون خالق الأكوان مدافعاً عنه؟ 
@@ -336,7 +317,6 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyFifteen_1 = """
    أم نجعل المتقين كالفجار 
-
   """;
   static const String elmTextTwentyFifteen_2 = """
 فمن السذاجة، ومن الغباء، ومن ضيق الأفق، ومن الجهل أن تتصور أن هذا الذي استقام على أمر الله، وتعرف إلى الله، وأمضى وقتاً في تعلم العلم، وكان منظبطاً، ضبط حواسه الخمس، ضبط مشاعره، ضبط كسبه، ضبط إنفاقه، وكان محسناً، أحسن إلى كل مخلوق 
@@ -408,7 +388,6 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyTwenty_1 = """
    وكفى بربك بذنوب عباده خبيراً بصيرا 
-
  """;
   static const String elmTextTwentyTwenty_2 = """
 الأدب أن تمتنع عن إصدار الأحكام على الناس، تقول: هذا من شأن الله وليس من شأن البشر 
@@ -416,7 +395,6 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyTwenty_2 = """
 فلا تزكوا أنفسكم هو أعلم بمن اتقى 
-
  """;
   static const String subtitleTwentyTwenty_1 = """
 التقوى خير زاد 
@@ -478,7 +456,6 @@ class ElmTextTwenty {
   """;
   static const String ayahHadithTwentyTwentyThree_1 = """
    ولباس التقوى ذلك خير 
-
   """;
 
   static const String elmTextTwentyTwentyThree_2 = """
@@ -510,9 +487,7 @@ class ElmTextTwenty {
   """;
   static const String ayahHadithTwentyTwentyFour_2 = """
    ولباس التقوى ذلك خير 
-
    وتزودوا فإن خير الزاد التقوى 
-
  """;
   // page 25
   static const String subtitleTwentyTwentyFive_1 = """
@@ -535,9 +510,7 @@ class ElmTextTwenty {
 
   static const String ayahHadithTwentyTwentySix_2 = """
 هكذا قال عليه الصلاة والسلام 
-
 حفت الجنة بالمكاره وحفت النار بالشهوات (من صحيح مسلم عن أنس بن مالك) 
-
  """;
   // page 27
   static const String subtitleTwentyTwentySeven_1 = """
@@ -548,7 +521,6 @@ class ElmTextTwenty {
   """;
   static const String ayahHadithTwentyTwentySeven_1 = """
    وسيُجنبها الأتقى 
-
   """;
 
   static const String elmTextTwentyTwentySeven_2 = """
@@ -557,7 +529,6 @@ class ElmTextTwenty {
   """;
   static const String ayahHadithTwentyTwentySeven_2 = """
    الذي يؤتي ماله يتزكى 
-
   """;
   static const String elmTextTwentyTwentySeven_3 = """
 المال: الله عز وجل أكرمنا به ليكون وسيلة للتقرُب إليه، أحد الصحابة الكرام قال: حبذا المال أصون به عرضي، وأتقرب به إلى ربي 
@@ -565,7 +536,6 @@ class ElmTextTwenty {
   """;
   static const String ayahHadithTwentyTwentySeven_3 = """
   وسيجنبها الأتقى الذي يؤتي ماله يتزكى 
-
   """;
   // page 28
   static const String elmTextTwentyTwentyEight_1 = """
@@ -584,11 +554,9 @@ class ElmTextTwenty {
 """;
   static const String elmTextTwentyTwentyEight_3 = """
 لم يقل الله عزوجل: لا يصيبهم السوء؛ بل قال 
-
   """;
   static const String ayahHadithTwentyTwentyEight_3 = """
 لا يمسهم 
-
   """;
 
   // page 29
@@ -597,56 +565,48 @@ class ElmTextTwenty {
 """;
   static const String ayahHadithTwentyTwentyNine_1 = """
 إن المتقين في جنات وعيون اخذين ما اتاهم ربهم إنهم كانوا قبل ذلك محسنين 
-
 """;
   static const String elmTextTwentyTwentyNine_2 = """
 الآية الخامسة 
 """;
   static const String ayahHadithTwentyTwentyNine_2 = """
    إن المتقين في جنات ونهر 
-   
    """;
   static const String elmTextTwentyTwentyNine_3 = """
 الآية السادسة 
 """;
   static const String ayahHadithTwentyTwentyNine_3 = """
    إن المتقين في جنات ونعيم 
-   
 """;
   static const String elmTextTwentyTwentyNine_4 = """
 الآية السابعة 
 """;
   static const String ayahHadithTwentyTwentyNine_4 = """
    إن المتقين في ظلال وعيون 
-
 """;
   static const String elmTextTwentyTwentyNine_5 = """
 الآية الثامنة 
 """;
   static const String ayahHadithTwentyTwentyNine_5 = """
    إن المتقين في جنات وعيون 
-   
 """;
   static const String elmTextTwentyTwentyNine_6 = """
 الآية التاسعة 
 """;
   static const String ayahHadithTwentyTwentyNine_6 = """
    إن المتقين في جنات ونعيم 
-
 """;
   static const String elmTextTwentyTwentyNine_7 = """
 الآية الحادية عشرة 
 """;
   static const String ayahHadithTwentyTwentyNine_7 = """
    والعاقبة للمتقين
-
 """;
   static const String elmTextTwentyTwentyNine_8 = """
 الآية الثانية عشرة 
 """;
   static const String ayahHadithTwentyTwentyNine_8 = """
    والعاقبة للتقوى 
-
   """;
   // page  30
   static const String elmTextTwentyThirty_1 = """
@@ -655,14 +615,12 @@ class ElmTextTwenty {
   static const String ayahHadithTwentyThirty_1 = """
    والعاقبة للمتقين 
    والعاقبة للتقوى 
-
   """;
   static const String elmTextTwentyThirty_2 = """
 لكن من أجل أن تقطف ثمار التقوى يانعة ربنا عز وجل يقول 
    """;
   static const String ayahHadithTwentyThirty_2 = """
    خذوا ما اتيناكم بقوة 
-   
   """;
   static const String elmTextTwentyThirty_3 = """
 بقوة، هناك أخذ بلين، ومسايرة، ومجاملة للآخرين، مواقفه دائماً ضبابية، دائماً متردد، دائماً مُرتاب، دائماً يُطيع الله ولكن على مضض، يخاف أن يعصيه، ولكن يرغب أن يعصيه، هذا الموقف المتردد الضبابي، موقف الأخذ والرد، موقف المتخاذل، موقف متردد، هذه المواقف ليست من صفات المؤمنين
@@ -671,7 +629,6 @@ class ElmTextTwenty {
   // page 31 وقفة
   static const String ayahHadithTwentyThirtyOne_1 = """
    ومن يتق الله يجعل له مخرجا 
-   
  """;
 
   static const String elmTextTwentyThirtyOne_1 = """
@@ -679,14 +636,12 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyThirtyOne_2 = """
     ومن يتق الله يجعل له مخرجاً 
-
  """;
   static const String elmTextTwentyThirtyOne_2 = """
 هذه الآية وردت في سورة الطلاق، معناها السياقي: أي ان من يتق الله في تطليق زوجته؛ يطلقها وفق السنة، يطلقها لعدتها، يطلقها في طهر مامسها فيه، يطلقها وهو اعتقد أن الله لعله يحدث بعد ذلك أمرا، يجعل الله له مخرجاً إلى الرجوع إليها، لو أنه ندم بإمكانه أن يُرجعها، لو أنه تأثر لفراقها بإمكانه أن يرجعها 
  """;
   static const String ayahHadithTwentyThirtyOne_3 = """
     ومن يتق الله يجعل لهُ مخرجا 
-
  """;
   // page 32
   static const String elmTextTwentyThertyTwo_1 = """
@@ -700,7 +655,6 @@ class ElmTextTwenty {
 من اتقى الله في أصول معاملة الزوجة يجعل الله له مخرجاً من النكد الزوجي، والشقاء الزوجي، والخصومة الزوجية 
 من يتق الله في اختيار البيت المناسب، اختاره في حي محافظ، بعيد عن الشُبُهات، بعيد عن التفلُت يجعل الله له مخرجاً من انحراف الأولاد 
 
-
  """;
   // page 33
   static const String elmTextTwentyThirtyThree_1 = """
@@ -708,14 +662,12 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyThirtyThree_1 = """
     ومن يتق الله يجعل له مخرجا 
-
  """;
   static const String subtitleTwentyThirtyThree_1 = """
 من يتق الله في الحرام يجعل الله له مخرجاً 
  """;
   static const String elmTextTwentyThirtyThree_2 = """
 أحياناً يضعك في ظرف كل أبواب الحلال مغلقة، وكل الأبواب المشروعة مغلقة، وكل الطرق الآمنة مغلقة، وكل الأسباب التي رسمها الله عز وجل مغلقة ثم يفتح الله لك باب الحرام، باب المعصية، باب النفاق، باب الكذب، ويمتحنك، المؤمن يقول: والله لن أعصي الله ما حييت، ولن أتساهل في منهج الله قيد أنملة 
-
  """;
   static const String subtitleTwentyThirtyThree_2 = """
 من اتقى الله عز وجل جاءه رزق وفير من حيث لا يحتسب 
@@ -726,7 +678,6 @@ class ElmTextTwenty {
   // page 34
   static const String ayahHadithTwentyThirtyFour_1 = """
     ومن يتق الله يجعل له مخرجاً ويرزقه من حيث لا يحتسب 
-
   """;
   static const String elmTextTwentyThirtyFour_1 = """
 لكن لا تطالب الله بالوقت، الوقت له حكمته، أنت عليك أن تعبد الله، الآية دقيقة، وهذه نقطة مهمة جداً 
@@ -738,14 +689,12 @@ class ElmTextTwenty {
  """;
   static const String ayahHadithTwentyThirtyFour_2 = """
 ياايها الذين امنوا إنما المشركون نجس فلا يقربوا المسجد الحرام بعد عامهم هذا 
-
  """;
   static const String elmTextTwentyThirtyFour_2 = """
 فهذه السياحة قديمة، حينما يأتي هؤلاء إلى المسجد الحرام يشترون الطعام والشراب، يسكنون في البيوت، ينفقون أموالاً كثيرة جداً، والأن تكاد تكون صناعة السياحة أروج صناعةٍ في كل البلاد، وتحقق أكبر دخل من العملات الصعبة، فربنا عز وجل قال 
  """;
   static const String ayahHadithTwentyThirtyFour_3 = """
 ياايها الذين آمنوا إنما المشركون نجس 
-
  """;
   static const String elmTextTwentyThirtyFour_3 = """
 ماقال: نجسون، قال 
