@@ -1,7 +1,6 @@
-import 'package:elm/cubit/share/home_cubit.dart';
+import 'package:elm/cubit/elm_cubits/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'package:elm/app_routes.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
@@ -10,16 +9,16 @@ import 'package:elm/cubit/font_cubit.dart'; // Import your FontCubit
 
 void main() {
   // Splash screen
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   // After splash screen, now you can run the app
   runApp(const ElmApp());
 
   // Wait 2 seconds before removing the splash screen
-  Future.delayed(const Duration(seconds: 2), () {
-    FlutterNativeSplash.remove();
-  });
+  // Future.delayed(const Duration(seconds: 2), () {
+  //   FlutterNativeSplash.remove();
+  // });
 }
 
 class ElmApp extends StatelessWidget {

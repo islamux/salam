@@ -61,29 +61,30 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
     }
   }
 
+  // share text
   List<Text> getShareText(int currentPageIndex, List<ElmModelNewOrder> elmList);
 
   // البحث في محتوى `ElmModelNewOrder`
-  List<ElmModelNewOrder> searchContent(String query) {
-    final results = elmList.where((item) {
-      bool containsInTitles =
-          item.titles?.any((title) => title.contains(query)) ?? false;
-      bool containsInSubtitles =
-          item.subtitles?.any((subtitle) => subtitle.contains(query)) ?? false;
-      bool containsInTexts =
-          item.texts?.any((text) => text.contains(query)) ?? false;
-      bool containsInAyahs =
-          item.ayahs?.any((ayah) => ayah.contains(query)) ?? false;
-      bool containsInFooter = item.footer?.contains(query) ?? false;
+  // List<ElmModelNewOrder> searchContent(String query) {
+  //   final results = elmList.where((item) {
+  //     bool containsInTitles =
+  //         item.titles?.any((title) => title.contains(query)) ?? false;
+  //     bool containsInSubtitles =
+  //         item.subtitles?.any((subtitle) => subtitle.contains(query)) ?? false;
+  //     bool containsInTexts =
+  //         item.texts?.any((text) => text.contains(query)) ?? false;
+  //     bool containsInAyahs =
+  //         item.ayahs?.any((ayah) => ayah.contains(query)) ?? false;
+  //     bool containsInFooter = item.footer?.contains(query) ?? false;
 
-      return containsInTitles ||
-          containsInSubtitles ||
-          containsInTexts ||
-          containsInAyahs ||
-          containsInFooter;
-    }).toList();
+  //     return containsInTitles ||
+  //         containsInSubtitles ||
+  //         containsInTexts ||
+  //         containsInAyahs ||
+  //         containsInFooter;
+  //   }).toList();
 
-    emit(PageSearchResults(results));
-    return results;
-  }
+  //   emit(PageSearchResults(results));
+  //   return results;
+  // }
 }

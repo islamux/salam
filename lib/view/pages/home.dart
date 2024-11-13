@@ -1,6 +1,6 @@
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/share/home_cubit.dart';
+import 'package:elm/cubit/elm_cubits/home_cubit.dart';
 import 'package:elm/helpers/alert_exit_app.dart';
 import 'package:elm/view/widget/home/custom_drawer_listview.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +16,8 @@ class Home extends StatelessWidget {
     return BlocProvider(
       create: (context) => HomeCubit(), // Provide HomeCubit
       child: PopScope(
-        canPop: true,
-        onPopInvoked: (didPop) => alertExitApp(),
+        canPop: false,
+        onPopInvoked: (didPop) => alertExitApp(context),
         child: Directionality(
           textDirection: TextDirection.rtl,
           child: Scaffold(
