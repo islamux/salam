@@ -1,7 +1,8 @@
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/home_cubit.dart';
-import 'package:elm/helpers/alert_exit_app.dart';
+import 'package:elm/helpers/handle_pop.dart';
+import 'package:elm/view/pages/result_page.dart';
 import 'package:elm/view/widget/home/custom_drawer_listview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -17,7 +18,8 @@ class Home extends StatelessWidget {
       create: (context) => HomeCubit(), // Provide HomeCubit
       child: PopScope(
         canPop: false,
-        onPopInvoked: (didPop) => alertExitApp(context),
+        onPopInvokedWithResult: (didPost, result) =>
+            handlePop(context, didPost, result),
         child: Directionality(
           textDirection: TextDirection.rtl,
           child: Scaffold(
@@ -34,7 +36,9 @@ class Home extends StatelessWidget {
               actions: [
                 IconButton(
                   onPressed: () {
-                    // showSearch(context: context, delegate: ()); // Disabled for now
+                    // showSearch();
+                    showSearch(
+                        context: context, delegate: DataSearch(elmList: []));
                   },
                   icon: const Icon(Icons.search),
                 ),

@@ -1,3 +1,5 @@
+import 'package:elm/core/data/model/elm_model_new_order.dart';
+
 abstract class BasePageState {}
 
 class PageInitial extends BasePageState {}
@@ -28,7 +30,7 @@ class PageShareFailure extends BasePageState {
 }
 
 // الحالات الخاصة بالبحث والمشاركة
-// class PageSearchResults extends BasePageState {
-//   final List<ElmModelNewOrder> results;
-//   PageSearchResults(this.results);
-// }
+class PageSearchResults extends BasePageState {
+  final List<ElmModelNewOrder> results;
+  PageSearchResults(this.results);
+}

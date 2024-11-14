@@ -21,7 +21,7 @@ class SearchPage extends StatelessWidget {
               controller: searchController,
               onSubmitted: (query) {
                 if (query.isNotEmpty) {
-                  // context.read<BasePageCubit>().searchContent(query);
+                  context.read<BasePageCubit>().searchContent(query);
                   // todo disable temprorly
                 }
               },
