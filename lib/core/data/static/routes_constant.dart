@@ -25,4 +25,6 @@ class RoutesConstant {
   static const String elm22 = "/elm22";
   static const String elm23 = "/elm23";
   static const String aboutUs = "/aboutUs";
+  static const String resultPage = "/resultPage";
+  static const String searchPage = "/searchPage";
 }
