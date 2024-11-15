@@ -2,6 +2,7 @@ import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/home_cubit.dart';
 import 'package:elm/helpers/handle_pop.dart';
+import 'package:elm/helpers/search/data_search.dart';
 import 'package:elm/view/pages/result_page.dart';
 import 'package:elm/view/widget/home/custom_drawer_listview.dart';
 import 'package:flutter/material.dart';
