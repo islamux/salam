@@ -38,8 +38,7 @@ class Home extends StatelessWidget {
                 IconButton(
                   onPressed: () {
                     // showSearch();
-                    showSearch(
-                        context: context, delegate: DataSearch(elmList: []));
+                    showSearch(context: context, delegate: DataSearch());
                   },
                   icon: const Icon(Icons.search),
                 ),

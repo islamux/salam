@@ -1,12 +1,64 @@
+import 'package:elm/core/data/model/elm_lists/elm_list_10_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_11_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_12_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_13_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_14_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_15_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_16_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_17_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_18_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_19_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_1_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_20_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_21_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_22_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_23_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_2_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_3_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_4_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_5_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_6_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_7_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_8_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_9_new_order.dart';
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/helpers/search/remove_search_diacritics.dart';
 import 'package:flutter/material.dart';
 
 class DataSearch extends SearchDelegate {
-  final List<ElmModelNewOrder> elmList;
+  final List<ElmModelNewOrder> elmList = [
+    ...elmList1NewOrder,
+    ...elmList2NewOrder,
+    ...elmList3NewOrder,
+    ...elmList4NewOrder,
+    ...elmList5NewOrder,
+    ...elmList6NewOrder,
+    ...elmList7NewOrder,
+    ...elmList8NewOrder,
+    ...elmList9NewOrder,
+    ...elmList10NewOrder,
+    ...elmList11NewOrder,
+    ...elmList12NewOrder,
+    ...elmList13NewOrder,
+    ...elmList14NewOrder,
+    ...elmList15NewOrder,
+    ...elmList16NewOrder,
+    ...elmList17NewOrder,
+    ...elmList18NewOrder,
+    ...elmList19NewOrder,
+    ...elmList20NewOrder,
+    ...elmList21NewOrder,
+    ...elmList22NewOrder,
+    ...elmList23NewOrder,
+  ];
 
-  DataSearch({required this.elmList});
+  @override
+  String get searchFieldLabel => "ابحث";
+
+  @override
+  TextStyle get searchFieldStyle => const TextStyle(fontSize: 17);
+
   @override
   List<Widget>? buildActions(BuildContext context) {
     return [
