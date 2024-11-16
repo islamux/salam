@@ -3,4 +3,7 @@
 // change elm --> salam
 // add extensions: 1- navigation 
 // remove multiBlocProvider from main 
+
+// -- Search 
 // go to search page when press on the result
+// highlight search word
