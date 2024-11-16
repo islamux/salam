@@ -2,3 +2,5 @@
 // local notification 
 // change elm --> salam
 // add extensions: 1- navigation 
+// remove multiBlocProvider from main 
+// go to search page when press on the result

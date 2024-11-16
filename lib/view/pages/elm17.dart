@@ -2,6 +2,7 @@ import 'package:elm/core/data/model/elm_lists/elm_list_17_new_order.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_17_cubit.dart';
+import 'package:elm/helpers/navigation_helper.dart';
 import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm17.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -44,8 +45,10 @@ class Elm17Page extends StatelessWidget {
               leading: GestureDetector(
                 onTap: () {
                   context.read<Elm17Cubit>().resetCounter(); // Reset counter
-                  Navigator.pushNamed(
-                      context, RoutesConstant.home); // Navigate to home
+                  // Navigator.pushNamed(
+                  //     context, RoutesConstant.home); // Navigate to home
+
+                  context.pushNamed(RoutesConstant.home);
                 },
                 child: const Icon(Icons.arrow_back),
               ),
