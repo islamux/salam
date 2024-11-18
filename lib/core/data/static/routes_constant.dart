@@ -1,13 +1,4 @@
-class AppRoute {
-  /* To make auto clean of memorty using Getx Route
-    instead of using Get.delete.
-    use all things in Getx 
-   */
-
-  ///  =======Disable ========== ///
-  //It's highly recommanded to use In Getx ==> route of Getx not rout of flutter so we comment  them then using Getx route
-  //Auth
-
+class RoutesConstant {
   static const String home = "/home";
   static const String elmPre = "/elmPre";
   static const String elm1 = "/elm1";
@@ -27,5 +18,13 @@ class AppRoute {
   static const String elm15 = "/elm15";
   static const String elm16 = "/elm16";
   static const String elm17 = "/elm17";
+  static const String elm18 = "/elm18";
+  static const String elm19 = "/elm19";
+  static const String elm20 = "/elm20";
+  static const String elm21 = "/elm21";
+  static const String elm22 = "/elm22";
+  static const String elm23 = "/elm23";
   static const String aboutUs = "/aboutUs";
+  static const String resultPage = "/resultPage";
+  static const String searchPage = "/searchPage";
 }

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppColor {
-  static const tail = Colors.teal;
+  static const title = Colors.black;
+  static const subtitle = Colors.black;
+  static const ayahHadith = Color.fromARGB(255, 96, 51, 180);
+  static const footer = Color.fromRGBO(158, 158, 158, 1);
 
   static const floatingColor2 = Color.fromRGBO(240, 236, 225, 0);
   //static const flotingColor = #F2F3E1;
   static final amber = Colors.amber[200];
+  static const tail = Colors.teal;
 
   static const primaryColorBlack2 = Colors.black87;
   static const primaryColorBlack = Colors.black;
