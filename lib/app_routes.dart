@@ -15,7 +15,7 @@ import 'package:elm/view/pages/elm19.dart';
 import 'package:elm/view/pages/elm2.dart';
 import 'package:elm/view/pages/elm20.dart';
 import 'package:elm/view/pages/elm21.dart';
-import 'package:elm/view/pages/elm22.dart';
+import 'package:elm/view/pages/elm_final.dart';
 import 'package:elm/view/pages/elm23.dart';
 import 'package:elm/view/pages/elm3.dart';
 import 'package:elm/view/pages/elm4.dart';
@@ -99,8 +99,8 @@ class RouteApp {
       case RoutesConstant.elm21:
         return MaterialPageRoute(builder: (_) => const Elm21Page());
 
-      case RoutesConstant.elm22:
-        return MaterialPageRoute(builder: (_) => const Elm22Page());
+      case RoutesConstant.elmFinal:
+        return MaterialPageRoute(builder: (_) => const ElmFinalPage());
 
       case RoutesConstant.elm23:
         return MaterialPageRoute(builder: (_) => const Elm23Page());

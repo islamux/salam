@@ -3,7 +3,7 @@ import 'package:elm/cubit/base_cubit/base_page_cubit.dart';
 import 'package:elm/cubit/share/get_page_text_for_sharing.dart';
 import 'package:flutter/material.dart';
 
-class Elm22Cubit extends BasePageCubit {
+class FinalCubit extends BasePageCubit {
   @override
   List<Text> getShareText(
       int currentPageIndex, List<ElmModelNewOrder> elmList) {

@@ -294,7 +294,7 @@ class Home extends StatelessWidget {
                             customText: " (خاتمة)  المصير المحتوم ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm22(context);
-                              context.pushNamed(RoutesConstant.elm22);
+                              context.pushNamed(RoutesConstant.elmFinal);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
