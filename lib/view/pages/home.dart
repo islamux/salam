@@ -283,6 +283,14 @@ class Home extends StatelessWidget {
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
+                            customText: " (22)  الحمد ",
+                            onPressed: () {
+                              // context.read<HomeCubit>().goToElm21(context);
+                              context.pushNamed(RoutesConstant.elm22);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
                             customText: " (23)  يدبر الأمر ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm23(context);

@@ -1,10 +1,7 @@
-//TextDersSixTeen
-
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_twenty_two.dart';
 
-// TextDersSeventeen
 List<ElmModelNewOrder> elmList22NewOrder = [
   // PageOne
   ElmModelNewOrder(
@@ -51,111 +48,254 @@ List<ElmModelNewOrder> elmList22NewOrder = [
   ),
   // PageThree
   ElmModelNewOrder(
-    titles: [],
-    texts: [],
-    ayahs: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageThree_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageThree_1,
+    ],
+    ayahs: [
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageThree_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
   ),
 
   // PageFour
   ElmModelNewOrder(
-    texts: [],
-    subtitles: [],
-    ayahs: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageFour_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageFour_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
 
   // PageFive
   ElmModelNewOrder(
-    subtitles: [],
-    texts: [],
-    ayahs: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageFive_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageFive_1,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageFive_2,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageFive_3,
+    ],
+    ayahs: [
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageFive_1,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageFive_2,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageFive_3,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
   ),
 
   // PageSix
   ElmModelNewOrder(
-    ayahs: [],
-    texts: [],
-    subtitles: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageSix_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSix_1,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSix_2,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSix_3,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSix_4,
+    ],
+    ayahs: [
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageSix_1,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageSix_2,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageSix_3,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
   ),
 
   // PageSeven
   ElmModelNewOrder(
-    texts: [],
-    ayahs: [],
-    order: [],
+    texts: [
+      ElmTextTwentyTwo.titleTwentyTwoPageSeven_1,
+    ],
+    ayahs: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSeven_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+    ],
   ),
 
   // PageEight
   ElmModelNewOrder(
-    texts: [],
-    ayahs: [],
-    order: [],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageEight_1,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageEight_2,
+    ],
+    ayahs: [
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageEight_1,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageEight_2,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
   ),
 
   // PageNine
   ElmModelNewOrder(
-    ayahs: [],
-    titles: [],
-    texts: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageNine_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageNine_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
 
   // PageTen
   ElmModelNewOrder(
-    ayahs: [],
-    texts: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageTen_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageTen_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
 
   // PageEleven
   ElmModelNewOrder(
-    titles: [],
-    texts: [],
-    ayahs: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageEleven_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageEleven_1,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageEleven_2,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageEleven_3,
+    ],
+    ayahs: [
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageEleven_1,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageEleven_2,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+    ],
   ),
 
   // PageTwelve
   ElmModelNewOrder(
-    titles: [],
-    texts: [],
-    ayahs: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageTwelve_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageTwelve_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
-  // PageThirteen
+  // PageTherteen
   ElmModelNewOrder(
-    titles: [],
-    ayahs: [],
-    texts: [],
-    subtitles: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageTherteen_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageTherteen_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
 
   // PageFourteen
   ElmModelNewOrder(
-    titles: [],
-    texts: [],
-    subtitles: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageFourteen_1,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageFourteen_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
 
   // PageFifteen
   ElmModelNewOrder(
-    titles: [],
-    texts: [],
-    subtitles: [],
-    ayahs: [],
-    order: [],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageFifteen_1,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
   ),
 
   // PageSixteen
   ElmModelNewOrder(
-    titles: [],
-    texts: [],
-    ayahs: [],
-    order: [],
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageSixteen_1,
+      ElmTextTwentyTwo.subtitleTwentyTwoPageSixteen_2,
+      ElmTextTwentyTwo.subtitleTwentyTwoPageSixteen_3,
+    ],
+    texts: [
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSixteen_1,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSixteen_2,
+      ElmTextTwentyTwo.elmTextTwentyTwoPageSixteen_3,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      //
+      EnOrder.subtitles,
+      EnOrder.texts,
+      //
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
   ),
 ];

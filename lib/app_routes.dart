@@ -1,3 +1,4 @@
+import 'package:elm/view/pages/elm22.dart';
 import 'package:flutter/material.dart';
 
 import 'package:elm/core/data/static/routes_constant.dart';
@@ -99,11 +100,14 @@ class RouteApp {
       case RoutesConstant.elm21:
         return MaterialPageRoute(builder: (_) => const Elm21Page());
 
-      case RoutesConstant.elmFinal:
-        return MaterialPageRoute(builder: (_) => const ElmFinalPage());
+      case RoutesConstant.elm22:
+        return MaterialPageRoute(builder: (_) => const Elm22Page());
 
       case RoutesConstant.elm23:
         return MaterialPageRoute(builder: (_) => const Elm23Page());
+
+      case RoutesConstant.elmFinal:
+        return MaterialPageRoute(builder: (_) => const ElmFinalPage());
 
       default:
         return _errorRoute();
