@@ -1,19 +1,19 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_9_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_24_new_order.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/elm_cubits/elm_9_cubit.dart';
+import 'package:elm/cubit/elm_cubits/elm_24_cubit.dart';
 import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm9.dart';
+import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm24.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class Elm9Page extends StatelessWidget {
-  const Elm9Page({super.key});
+class Elm24Page extends StatelessWidget {
+  const Elm24Page({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => Elm9Cubit(), // Provide Elm9Cubit
+      create: (context) => Elm24Cubit(), // Provide Elm23Cubit
       child: Builder(
         builder: (context) {
           return Scaffold(
@@ -27,20 +27,27 @@ class Elm9Page extends StatelessWidget {
                     // Share content using cubit
                     onPressed: () {
                       final currentPageIndex =
-                          context.read<Elm9Cubit>().currentPageIndex;
-                      context.read<Elm9Cubit>().customShareContent(
-                          currentPageIndex, elmList9NewOrder);
+                          context.read<Elm24Cubit>().currentPageIndex;
+                      context.read<Elm24Cubit>().customShareContent(
+                          currentPageIndex, elmList24NewOrder);
                     },
                     icon: const Icon(Icons.share),
                   ),
-                  const Text(" الخاطرة 9 "),
+                  const Text(
+                    "الخاطرة 24 ",
+                    style: TextStyle(
+                      color: AppColor.primaryColorGolden,
+                    ),
+                  ),
                 ],
               ),
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  context.read<Elm9Cubit>().resetCounter(); // Reset counter
-                  // Navigator.pushNamed(context, RoutesConstant.home);
+                  context.read<Elm24Cubit>().resetCounter(); // Reset counter
+                  // Navigator.pushNamed(
+                  //     context, RoutesConstant.home); // Navigate to home
+
                   context.pushNamed(RoutesConstant.home);
                 },
                 child: const Icon(Icons.arrow_back),
@@ -49,7 +56,7 @@ class Elm9Page extends StatelessWidget {
                 IconButton(
                   onPressed: () {
                     context
-                        .read<Elm9Cubit>()
+                        .read<Elm24Cubit>()
                         .decreaseFontSize(); // Decrease font size
                   },
                   icon: const Icon(Icons.remove),
@@ -63,7 +70,7 @@ class Elm9Page extends StatelessWidget {
                 IconButton(
                   onPressed: () {
                     context
-                        .read<Elm9Cubit>()
+                        .read<Elm24Cubit>()
                         .increaseFontSize(); // Increase font size
                   },
                   icon: const Icon(Icons.add),
@@ -74,9 +81,9 @@ class Elm9Page extends StatelessWidget {
               child: Column(
                 children: [
                   Expanded(
-                    child: CustomTextSliderElm9(), // Custom text slider
+                    child: CustomTextSliderElm24(), // Custom text slider
                   ),
-                  // You can add additional elements like the scroll indicator here
+                  // Additional elements can be added here if needed
                 ],
               ),
             ),
