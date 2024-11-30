@@ -1,4 +1,3 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_24_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_25_new_order.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
