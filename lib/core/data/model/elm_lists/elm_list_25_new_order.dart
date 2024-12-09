@@ -367,4 +367,178 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       EnOrder.texts,
     ],
   ),
+
+// todo : not completed
+  // PageFourteen
+  ElmModelNewOrder(
+    subtitles: <String>[
+      ElmTextTwentyFive.subtitleTwentyFivePageFourteen_1,
+    ],
+    texts: <String>[
+      ElmTextTwentyFive.elmTextTwentyFivePageFourteen_1,
+      ElmTextTwentyFive.elmTextTwentyFivePageFourteen_2,
+      ElmTextTwentyFive.elmTextTwentyFivePageFourteen_3,
+      ElmTextTwentyFive.elmTextTwentyFivePageFourteen_4,
+      ElmTextTwentyFive.elmTextTwentyFivePageFourteen_5,
+    ],
+    ayahs: <String>[
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFourteen_1,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFourteen_2,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFourteen_3,
+    ],
+    order: <EnOrder>[
+      // 1
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 2
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 3
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 4
+      EnOrder.texts,
+    ],
+  ),
+
+  // PageFifteen
+  ElmModelNewOrder(
+    subtitles: <String>[
+      ElmTextTwentyFive.subtitleTwentyFivePageFifteen_1,
+      ElmTextTwentyFive.subtitleTwentyFivePageFifteen_2,
+    ],
+    texts: <String>[
+      ElmTextTwentyFive.elmTextTwentyFivePageFifteen_1,
+      ElmTextTwentyFive.elmTextTwentyFivePageFifteen_2,
+      ElmTextTwentyFive.elmTextTwentyFivePageFifteen_3,
+      ElmTextTwentyFive.elmTextTwentyFivePageFifteen_4,
+      ElmTextTwentyFive.elmTextTwentyFivePageFifteen_5,
+    ],
+    ayahs: <String>[
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_1,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_2,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_3,
+    ],
+    order: <EnOrder>[
+      // 1
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 2
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 3
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 4
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 5
+      EnOrder.texts,
+    ],
+  ),
+
+// PageSixteen
+  ElmModelNewOrder(
+    texts: <String>[
+      ElmTextTwentyFive.elmTextTwentyFivePageSixteen_1,
+      ElmTextTwentyFive.elmTextTwentyFivePageSixteen_2,
+    ],
+    ayahs: <String>[
+      ElmTextTwentyFive.ayahHadithTwentyFivePageSixteen_1,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageSixteen_2,
+    ],
+    order: <EnOrder>[
+      // 1
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 2
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // PageSeventeen
+  ElmModelNewOrder(
+    subtitles: <String>[
+      ElmTextTwentyFive.subtitleTwentyFivePageSeventeen_1,
+      ElmTextTwentyFive.subtitleTwentyFivePageSeventeen_2,
+    ],
+    texts: <String>[
+      ElmTextTwentyFive.elmTextTwentyFivePageSeventeen_1,
+      ElmTextTwentyFive.elmTextTwentyFivePageSeventeen_2,
+      ElmTextTwentyFive.elmTextTwentyFivePageSeventeen_3,
+    ],
+    ayahs: <String>[
+      ElmTextTwentyFive.ayahHadithTwentyFivePageSeventeen_1,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageSeventeen_2,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageSeventeen_3,
+    ],
+    order: <EnOrder>[
+      // 1
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 2
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 3
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+
+  // PageEighteen
+  ElmModelNewOrder(
+    texts: <String>[
+      ElmTextTwentyFive.elmTextTwentyFivePageEighteen_1,
+      ElmTextTwentyFive.elmTextTwentyFivePageEighteen_2,
+    ],
+    ayahs: <String>[
+      ElmTextTwentyFive.ayahHadithTwentyFivePageEighteen_1,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageEighteen_2,
+    ],
+    order: <EnOrder>[
+      // 1
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 2
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 3
+      EnOrder.texts,
+    ],
+  ),
+
+  // PageNineteen
+  ElmModelNewOrder(
+    subtitles: <String>[],
+    texts: <String>[
+      ElmTextTwentyFive.elmTextTwentyFivePageNineteen_1,
+      ElmTextTwentyFive.elmTextTwentyFivePageNineteen_2,
+      ElmTextTwentyFive.elmTextTwentyFivePageNineteen_3,
+    ],
+    ayahs: <String>[
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_1, // 1
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_2, // 2
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_3, // 2
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_4, // 2
+    ],
+    order: <EnOrder>[
+      // 1
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 2
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 3
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 4
+      EnOrder.ayahs,
+    ],
+  ),
 ];
