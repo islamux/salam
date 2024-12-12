@@ -2,6 +2,8 @@ import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
+  // for more effiency i refactor code by using customTextStyleFooter = const TextStyle() not customTextStyeleFooter(){}
+  // becuse now i use one instance only not like before customTextStyleFooter() that is a fun it call every time i need it.
   static TextStyle customTextStyleFooter = const TextStyle(
     color: AppColor.footer,
     fontWeight: FontWeight.bold,
