@@ -2,33 +2,26 @@ import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static TextStyle customTextStyleFooter() {
-    return const TextStyle(
-      color: AppColor.footer,
-      fontWeight: FontWeight.bold,
-    );
-  }
+  // for more effiency i refactor code by using customTextStyleFooter = const TextStyle() not customTextStyeleFooter(){}
+  // becuse now i use one instance only not like before customTextStyleFooter() that is a fun it call every time i need it.
+  static TextStyle customTextStyleFooter = const TextStyle(
+    color: AppColor.footer,
+    fontWeight: FontWeight.bold,
+  );
 
-  static TextStyle customTextStyleHadith() {
-    return const TextStyle(
-      color: AppColor.ayahHadith,
-      fontWeight: FontWeight.bold,
-    );
-  }
+  static TextStyle customTextStyleHadith = const TextStyle(
+    color: AppColor.ayahHadith,
+    fontWeight: FontWeight.bold,
+  );
 
-  static TextStyle customTextStyleSubtitle() {
-    return const TextStyle(
-      color: AppColor.subtitle,
-      fontWeight: FontWeight.bold,
-    );
-  }
-
-  static TextStyle customTextStyleTitle() {
-    return const TextStyle(
-      color: AppColor.title,
-      fontWeight: FontWeight.bold,
-    );
-  }
+  static TextStyle customTextStyleSubtitle = const TextStyle(
+    color: AppColor.subtitle,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle customTextStyleTitle = const TextStyle(
+    color: AppColor.title,
+    fontWeight: FontWeight.bold,
+  );
 
   static ThemeData goldenTheme = ThemeData(
     textTheme: const TextTheme(

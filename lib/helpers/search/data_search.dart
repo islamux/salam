@@ -11,7 +11,7 @@ import 'package:elm/core/data/model/elm_lists/elm_list_19_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_1_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_20_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_21_new_order.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_22_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_final_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_23_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_2_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_3_new_order.dart';
@@ -49,7 +49,7 @@ class DataSearch extends SearchDelegate {
     ...elmList19NewOrder,
     ...elmList20NewOrder,
     ...elmList21NewOrder,
-    ...elmList22NewOrder,
+    ...finalListNewOrder,
     ...elmList23NewOrder,
   ];
 

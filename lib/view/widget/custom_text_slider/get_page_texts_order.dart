@@ -1,12 +1,12 @@
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/theme/custom_text_style_theme.dart';
+import 'package:elm/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   final elm = elmList[pageIndex];
   final List<TextSpan> spans = [];
-  CustomTextStyleTheme textStyle = CustomTextStyleTheme();
+  // AppTheme Appthem = AppTheme();
 
   int titleIndex = 0;
   int subtitleIndex = 0;
@@ -19,7 +19,8 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
       case EnOrder.titles:
         if (elm.titles != null && titleIndex < elm.titles!.length) {
           spans.add(TextSpan(
-              text: elm.titles![titleIndex], style: textStyle.titleStyle));
+              text: elm.titles![titleIndex],
+              style: AppTheme.customTextStyleTitle));
           titleIndex++;
         }
         break;
@@ -28,7 +29,7 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
         if (elm.subtitles != null && subtitleIndex < elm.subtitles!.length) {
           spans.add(TextSpan(
               text: elm.subtitles![subtitleIndex],
-              style: textStyle.subtitleStyle));
+              style: AppTheme.customTextStyleSubtitle));
           subtitleIndex++;
         }
         break;
@@ -43,14 +44,16 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
       case EnOrder.ayahs:
         if (elm.ayahs != null && ayahIndex < elm.ayahs!.length) {
           spans.add(TextSpan(
-              text: elm.ayahs![ayahIndex], style: textStyle.ayahStyle));
+              text: elm.ayahs![ayahIndex],
+              style: AppTheme.customTextStyleHadith));
           ayahIndex++;
         }
         break;
 
       case EnOrder.footer:
         if (elm.footer != null) {
-          spans.add(TextSpan(text: elm.footer, style: textStyle.footerStyle));
+          spans.add(TextSpan(
+              text: elm.footer, style: AppTheme.customTextStyleFooter));
         }
         break;
     }

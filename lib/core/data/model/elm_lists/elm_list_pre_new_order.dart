@@ -1,7 +1,6 @@
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
-
-import '../../static/text/elm_text_ders_pre.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_pre.dart';
 
 List<ElmModelNewOrder> elmListPreNewOrder = [
   // page 1

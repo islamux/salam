@@ -1,13 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:elm/core/data/static/imagelink/image_link.dart';
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/home_cubit.dart';
+import 'package:elm/helpers/extensions/navigation_helper.dart';
 import 'package:elm/helpers/handle_pop.dart';
-import 'package:elm/helpers/navigation_helper.dart';
 import 'package:elm/helpers/search/data_search.dart';
 import 'package:elm/view/widget/home/custom_drawer_listview.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../widget/custom_botton.dart';
 
@@ -109,7 +110,6 @@ class Home extends StatelessWidget {
                             customText: "خواطر متفرقة حول الدين والحياة",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElmPre(context);
-                              context.pushNamed(RoutesConstant.elmPre);
                               context.pushNamed(RoutesConstant.elmPre);
                             },
                             icon: const Icon(Icons.menu_book),
@@ -283,6 +283,14 @@ class Home extends StatelessWidget {
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
+                            customText: " (22)  الحمد ",
+                            onPressed: () {
+                              // context.read<HomeCubit>().goToElm21(context);
+                              context.pushNamed(RoutesConstant.elm22);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
                             customText: " (23)  يدبر الأمر ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm23(context);
@@ -291,10 +299,34 @@ class Home extends StatelessWidget {
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
+                            customText: "(24) شكر النعمة أمان من زوالها",
+                            onPressed: () {
+                              // context.read<HomeCubit>().goToElm23(context);
+                              context.pushNamed(RoutesConstant.elm24);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
+                            customText: "(25) قد أفلح المؤمنون",
+                            onPressed: () {
+                              // context.read<HomeCubit>().goToElm23(context);
+                              context.pushNamed(RoutesConstant.elm25);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
+                            customText: "(26) الكبــــــــر ",
+                            onPressed: () {
+                              // context.read<HomeCubit>().goToElm23(context);
+                              context.pushNamed(RoutesConstant.elm26);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
                             customText: " (خاتمة)  المصير المحتوم ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm22(context);
-                              context.pushNamed(RoutesConstant.elm22);
+                              context.pushNamed(RoutesConstant.elmFinal);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
