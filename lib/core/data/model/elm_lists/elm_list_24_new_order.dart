@@ -15,6 +15,7 @@ List<ElmModelNewOrder> elmList24NewOrder = [
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
+      //
       EnOrder.ayahs,
     ],
   ),
@@ -107,19 +108,19 @@ List<ElmModelNewOrder> elmList24NewOrder = [
       ElmTextTwentyFour.elmTextTwentyFourSix_4,
     ],
     order: [
-      //
+      // 1
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      // 2
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      //3
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      //4
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      //5
       EnOrder.ayahs,
     ],
   ),
