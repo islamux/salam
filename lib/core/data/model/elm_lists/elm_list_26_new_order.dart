@@ -57,6 +57,7 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       ElmTextTwentySix.elmTextTwentySixPageThree_1,
       ElmTextTwentySix.elmTextTwentySixPageThree_2,
       ElmTextTwentySix.elmTextTwentySixPageThree_3,
+      ElmTextTwentySix.elmTextTwentySixPageThree_4,
     ],
     ayahs: [
       ElmTextTwentySix.ayahHadithTwentySixPageThree_1,
@@ -80,7 +81,6 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
   ),
 
   // pageFour
-  // based on  elm_text_ders_twenty_six.dart
   ElmModelNewOrder(
     subtitles: [
       ElmTextTwentySix.subtitleTwentySixPageFour_1,
@@ -173,7 +173,6 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
   ),
 
   // pageEight
-  // @ elm_text_ders_twenty_six
   ElmModelNewOrder(
     subtitles: [
       ElmTextTwentySix.subtitleTwentySixPageEight_1,
@@ -208,13 +207,14 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
-      //5
-      EnOrder.texts,
     ],
   ),
 
 // pageNine
   ElmModelNewOrder(
+    subtitles: [
+      ElmTextTwentySix.subtitleTwentySixPageNine_1,
+    ],
     ayahs: [
       ElmTextTwentySix.ayahHadithTwentySixPageNine_1,
       ElmTextTwentySix.ayahHadithTwentySixPageNine_2,
@@ -227,9 +227,6 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       ElmTextTwentySix.elmTextTwentySixPageNine_2,
       ElmTextTwentySix.elmTextTwentySixPageNine_3,
       ElmTextTwentySix.elmTextTwentySixPageNine_4,
-    ],
-    subtitles: [
-      ElmTextTwentySix.subtitleTwentySixPageNine_1,
     ],
     order: [
       // 1
