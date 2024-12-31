@@ -1,5 +1,6 @@
 class ElmTextTwentyFive {
   // page one
+  // 1
   static const String subtitleTwentyFivePageOne_1 = """
  :الفلاح دنيوي وأخروي
   """;
@@ -10,12 +11,14 @@ class ElmTextTwentyFive {
   static const String ayahHadithTwentyFivePageOne_1 = """
         اللهم لا عيش إلا عيش الآخرة(متفق عليه عن أنس) 
 """;
+// 2
   static const String elmTextTwentyFivePageOne_2 = """
 لأن هذا مؤقت، هذا لا بد من أن يذهب، سيدنا عمر رضي الله عنه أمسك تفاحة شهية، فقال:{أكلتها ذهبت أطعمتها بقيت} 
 فكل شيئ تستهلكه يذهب، أما إذا أنفقته يبقى، والسعداء الذين قدموا أموالهم أمامهم إلى الآخرة، فإذا وافتهم المنية رأو لهم مقاماً عند الله رفيعاً
   """;
 
 // page 2
+// 1
   static const String ayahHadithTwentyFivePageTwo_1 = """
         قد أفلح المؤمنون 
 """;
@@ -25,17 +28,20 @@ class ElmTextTwentyFive {
   static const String elmTextTwentyFivePageTwo_1 = """
 قد: حرف تحقيق، إذا جاءت قبل الفعل الماضي، وتأتي قد حرف تقليل إذا جاءت قبل الفعل المضارع، تقول: قد نجح فلان لتحقيق الوقوع، وتقول: قد ينجح فلانٌ لاحتمال الوقوع، بين تحقيق الوقوع، وبين احتمال الوقوع مسافةٌ كبيرة، فقد إذا جاءت قبل الفعل الماضي تُعرَب حرف تحقيق، وإذا جاءت قبل الفعل المضارع تعرب حرف تقليل، فهنا 
 """;
+// 2
   static const String ayahHadithTwentyFivePageTwo_2 = """
         قد أفلح المؤمنون 
 """;
   static const String elmTextTwentyFivePageTwo_2 = """
 الفلاح تحقق، أما أي فلاح آخر ينجزه الإنسان في الدنيا ربما لا يكون محققاً، لو اشترى بيتاً فخماً، وبالغ في تزيينه، قد تعاجله المنية قبل أن ينتهي، فهذا النجاح ليس محققاً، وقد ينال المرء شهادةً عالية، وقد تعاجله المنية قبل أن يستفيد منها، وقد يقبض الإنسان مبلغاً كبيراً، وقد تعاجله المنية قبل أن ينفقه، فأيُ نجاح على وجه الأرض ليس محققاً أكيداً، لكن الله سبحانه وتعالى يقول 
 """;
+// 3
   static const String ayahHadithTwentyFivePageTwo_3 = """
         قد أفلح المؤمنون 
   """;
 
   // pageThree
+  // 1
   static const String subtitleTwentyFivePageThree_1 = """
 ورود فعل أفلح في القرآن في ثلاث أياتٍ حصراً 
 """;
@@ -162,10 +168,12 @@ class ElmTextTwentyFive {
   static const String ayahHadithTwentyFivePageSix_2 = """
 ياأيها الذين امنوا اتقوا الله وابتغوا إليه الوسيلة وجاهدوا في سبيله لعلكم تفلحون 
 """;
+
   static const String subtitleTwentyFivePageSix_2 = """
 
 العبادة وفعل الخير 
 """;
+
 // 3
   static const String ayahHadithTwentyFivePageSix_3 = """
 واعبدوا ربكم وافعلوا الخير لعلكم تفلحون 
@@ -185,7 +193,7 @@ class ElmTextTwentyFive {
   static const String elmTextTwentyFivePageSix_3 = """
 وجاء الفلاح في آية أخرى تحدثنا عن فئة ارتقت وسمت حتى صار بينها وبين الله صلة لا حدود لها، إنها حزب الله 
 """;
-//5
+// 5
   static const String ayahHadithTwentyFivePageSix_5 = """
         الا إن حزب الله هم المفلحون 
 """;

@@ -23,6 +23,7 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       EnOrder.texts,
     ],
   ),
+
 // PageTwo
   ElmModelNewOrder(
     subtitles: <String>[
@@ -132,6 +133,7 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       ElmTextTwentyFive.ayahHadithTwentyFivePageFive_2,
       ElmTextTwentyFive.ayahHadithTwentyFivePageFive_3,
       ElmTextTwentyFive.ayahHadithTwentyFivePageFive_4,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFive_5,
     ],
     order: <EnOrder>[
       // 1
@@ -368,7 +370,6 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
     ],
   ),
 
-// todo : not completed
   // PageFourteen
   ElmModelNewOrder(
     subtitles: <String>[
@@ -522,10 +523,10 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       ElmTextTwentyFive.elmTextTwentyFivePageNineteen_3,
     ],
     ayahs: <String>[
-      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_1, // 1
-      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_2, // 2
-      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_3, // 2
-      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_4, // 2
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_1,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_2,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_3,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageNineteen_4,
     ],
     order: <EnOrder>[
       // 1
