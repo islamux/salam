@@ -323,6 +323,13 @@ class Home extends StatelessWidget {
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
+                            customText: "(27) الأمر بالمعروف والنهي عن المنكر ",
+                            onPressed: () {
+                              context.pushNamed(RoutesConstant.elm27);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
                             customText: " (خاتمة)  المصير المحتوم ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm22(context);

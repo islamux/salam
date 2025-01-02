@@ -1,4 +1,6 @@
+// clean comments 
 // Try to change functions to widgets --> make project more effecient
+
 // local notification 
 // change elm --> salam
 // add extensions: 1- navigation 

@@ -80,7 +80,7 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       ElmTextDersEight.elmTextEightFive_1,
     ],
     ayahs: [
-      ElmTextDersEight.ayahHadithFour_2,
+      ElmTextDersEight.ayhaHadithFive_1,
     ],
     order: [
       EnOrder.texts,
@@ -136,7 +136,7 @@ List<ElmModelNewOrder> elmList8NewOrder = [
     order: [
       EnOrder.titles,
       EnOrder.subtitles,
-//
+      //
       EnOrder.ayahs,
       EnOrder.texts,
       //
@@ -144,11 +144,8 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // order: '''
-    // titles,subtitles,ayahs,texts,
-    // ayahs,subtitles,texts,
-    // ''',
   ),
+
   // 9
   ElmModelNewOrder(
     ayahs: [
