@@ -9,3 +9,16 @@
 // -- Search 
 // go to search page when press on the result
 // highlight search word
+
+
+// Because java is 21 based on doctor -v it must upgrade to 8.4 at least
+// upgrade gradle to 8.4 
+1- Update gradle-wrapper.properties:
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
+
+2- Update android/build.gradle:
+classpath 'com.android.tools.build:gradle:8.2.2'
+
+3- cd android
+./gradlew wrapper
+./gradlew clean build
