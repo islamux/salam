@@ -9,11 +9,12 @@ class ElmTextTwentyFive {
 قال بعضهم: الفلاح في الدنيا البقاء، أن يكون عمره مديداً، والغنى، والعِز، وقال بعضهم: أما الفلاح في الآخرة فهو بقاءٌ بلا فناء، وغنىً بلا فقر، وعزٌ بلا ذل، وعلمٌ بلا جهل، وهذا ينطبق على أهل الآخرة، لذلك كان عليه الصلاة والسلام كلما وقعت عينه على بيتٍ جميل أو على شيءٍ من حُطام الدنيا، أو على بستانٍ جميل، أو على شيءٍ يروق للناس كان يدعو، ويقول 
 """;
   static const String ayahHadithTwentyFivePageOne_1 = """
-        اللهم لا عيش إلا عيش الآخرة(متفق عليه عن أنس) 
+        اللهم لا عيش إلا عيش الآخرة
+        متفق عليه عن أنس 
 """;
 // 2
   static const String elmTextTwentyFivePageOne_2 = """
-لأن هذا مؤقت، هذا لا بد من أن يذهب، سيدنا عمر رضي الله عنه أمسك تفاحة شهية، فقال:{أكلتها ذهبت أطعمتها بقيت} 
+لأن هذا مؤقت، هذا لا بد من أن يذهب، سيدنا عمر رضي الله عنه أمسك تفاحة شهية، فقال:{أكلتها ذهبت, أطعمتها بقيت} 
 فكل شيئ تستهلكه يذهب، أما إذا أنفقته يبقى، والسعداء الذين قدموا أموالهم أمامهم إلى الآخرة، فإذا وافتهم المنية رأو لهم مقاماً عند الله رفيعاً
   """;
 
@@ -205,9 +206,9 @@ class ElmTextTwentyFive {
 //1
   static const String subtitleTwentyFivePageSeven_1 = """
 تطهير النفس وتحليتها هو التزكي وهذا هو الفلاح 
-ربنا عز وجل يقول 
 """;
   static const String ayahHadithTwentyFivePageSeven_1 = """
+ربنا عز وجل يقول 
 قد أفلح من تزكى وذكر اسم ربه فصلى 
 """;
   static const String elmTextTwentyFivePageSeven_1 = """
@@ -217,7 +218,9 @@ class ElmTextTwentyFive {
 // 2
   static const String ayahHadithTwentyFivePageSeven_2 = """
         سلام قولاً من رب رحيم 
+
         ادخلوها بسلام آمنين 
+
 فأما من أوتي كتابه بيمينه فيقول هاؤم اقرءوا كتابيه 
  """;
 
@@ -276,7 +279,6 @@ class ElmTextTwentyFive {
 الهدف الأكبر من الخلق 
 """;
   static const String ayahHadithTwentyFivePageTen_1 = """
-قال تعالى 
         قد افلح من زكاها 
 """;
   static const String elmTextTwentyFivePageTen_1 = """
@@ -370,7 +372,11 @@ class ElmTextTwentyFive {
 // 5
   static const String elmTextTwentyFivePageTherteen_5 = """
 :هذا هو المقسم عليه 
+""";
+  static const String ayahHadithTwentyFivePageTherteen_5 = """
 والشمس وضحاها والقمر إذا تلاها والنهار إذا جلاها والليل إذا يغشاها والسماء وما بناها والأرض وما طحاها ونفس وما سواها فألهمها فجورها وتقواها 
+""";
+  static const String elmTextTwentyFivePageTherteen_6 = """
 فإذا كانت الآيات في نظرك عظيمة فجواب هذا القسم أن تزكي نفسك 
   """;
 
@@ -417,38 +423,43 @@ class ElmTextTwentyFive {
   static const String elmTextTwentyFivePageFifteen_1 = """
 قد أفلح من تزكى وذكر اسم ربه فصلى
 كيف تزكو النفس؟ إذا ذكرت اسم الله فصليت، هذا طريق التزكية
-️لا تزكو النفس إلا بمعرفة الله والإقبال عليه▪
+️لا تزكو النفس إلا بمعرفة الله والإقبال عليه
 
 ولتكن منكم أمة يدعون إلى الخير ويأمرون بالمعروف وينهون عن المنكر وأولئك هم المفلحون 
 """;
+// 2
   static const String subtitleTwentyFivePageFifteen_2 = """
+
 ️صفات المفلحين▪
 """;
-// 2
   static const String elmTextTwentyFivePageFifteen_2 = """
 الدعوة إلى الخير وهو الإسلام 
 هذه اللام لام الأمر ولتكن منكم أمة يدعون إلى الخير، فلا بد من فئة في كل مجتمع تتعلم العلم الصحيح العميق الواسع، وتدعوا إلى الله، تدعوا إلى الخير إلى هذا القرآن، إلى هذا الإسلام، إلى هذا الدين القويم، تدعوا إلى كل شيئ يقرب إلى الله، وتنهى عن كل شيء يبعد عن الله عز وجل 
 
 الأمر بالمعروف والنهي عن المنكر 
-
+""";
+  static const String ayahHadithTwentyFivePageFifteen_1 = """
 لكن الرسول والذين آمنوا جاهدوا بأموالهم وأنفسهم وأولئك لهم الخيرات وأولئك هم المفلحون
+""";
+  static const String subtitleTwentyFivePageFifteen_3 = """
+
 ️النجاح المطلق نجاح في الدنيا والآخرة▪
   """;
-  static const ayahHadithTwentyFivePageFifteen_1 = """
+  static const ayahHadithTwentyFivePageFifteen_2 = """
           لهم الخيرات 
   """;
   // 3
   static const elmTextTwentyFivePageFifteen_3 = """
 مطلقة في الدنيا والآخرة 
   """;
-  static const ayahHadithTwentyFivePageFifteen_2 = """
+  static const ayahHadithTwentyFivePageFifteen_3 = """
           ولمن خاف مقام ربه جنتان 
   """;
   // 4
   static const elmTextTwentyFivePageFifteen_4 = """
 في الدنيا جنة، وفي الآخرة جنة 
   """;
-  static const ayahHadithTwentyFivePageFifteen_3 = """
+  static const ayahHadithTwentyFivePageFifteen_4 = """
           وأولئك هم المفلحون 
   """;
   // 5

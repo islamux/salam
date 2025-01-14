@@ -284,7 +284,7 @@ List<ElmModelNewOrder> elmList27NewOrder = <ElmModelNewOrder>[
     ],
     ayahs: [
       ElmTextTwentySeven.ayahHadithTwentySevenPageTwelve_1,
-      ElmTextTwentySeven.ayahHadithTwentySevenPageTwelve_1,
+      ElmTextTwentySeven.ayahHadithTwentySevenPageTwelve_2,
     ],
     order: [
       EnOrder.subtitles,
@@ -342,7 +342,7 @@ List<ElmModelNewOrder> elmList27NewOrder = <ElmModelNewOrder>[
     ],
     ayahs: [
       ElmTextTwentySeven.ayahHadithTwentySevenPageFourteen_1,
-      ElmTextTwentySeven.ayahHadithTwentySevenPageFourteen_1,
+      ElmTextTwentySeven.ayahHadithTwentySevenPageFourteen_2,
     ],
     order: [
       EnOrder.texts,
@@ -482,11 +482,15 @@ List<ElmModelNewOrder> elmList27NewOrder = <ElmModelNewOrder>[
   ElmModelNewOrder(
     subtitles: [
       ElmTextTwentySeven.subtitleTwentySevenPageNineteen_1,
+      ElmTextTwentySeven.subtitleTwentySevenPageNineteen_2,
+      ElmTextTwentySeven.subtitleTwentySevenPageNineteen_3,
     ],
     texts: [
       ElmTextTwentySeven.elmTextTwentySevenPageNineteen_1,
       ElmTextTwentySeven.elmTextTwentySevenPageNineteen_2,
       ElmTextTwentySeven.elmTextTwentySevenPageNineteen_3,
+      ElmTextTwentySeven.elmTextTwentySevenPageNineteen_4,
+      ElmTextTwentySeven.elmTextTwentySevenPageNineteen_5,
     ],
     ayahs: [
       ElmTextTwentySeven.ayahHadithTwentySevenPageNineteen_1,
@@ -502,6 +506,12 @@ List<ElmModelNewOrder> elmList27NewOrder = <ElmModelNewOrder>[
       EnOrder.texts,
       //3
       EnOrder.ayahs,
+      EnOrder.texts,
+      // 4
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 5
+      EnOrder.subtitles,
       EnOrder.texts,
     ],
   ),

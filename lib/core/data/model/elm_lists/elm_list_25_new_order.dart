@@ -345,12 +345,14 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       ElmTextTwentyFive.elmTextTwentyFivePageTherteen_3,
       ElmTextTwentyFive.elmTextTwentyFivePageTherteen_4,
       ElmTextTwentyFive.elmTextTwentyFivePageTherteen_5,
+      ElmTextTwentyFive.elmTextTwentyFivePageTherteen_6,
     ],
     ayahs: <String>[
       ElmTextTwentyFive.ayahHadithTwentyFivePageTherteen_1,
       ElmTextTwentyFive.ayahHadithTwentyFivePageTherteen_2,
       ElmTextTwentyFive.ayahHadithTwentyFivePageTherteen_3,
       ElmTextTwentyFive.ayahHadithTwentyFivePageTherteen_4,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageTherteen_5,
     ],
     order: <EnOrder>[
       // 1
@@ -367,6 +369,9 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       EnOrder.ayahs,
       // 5
       EnOrder.texts,
+      EnOrder.ayahs,
+      // 6
+      EnOrder.texts
     ],
   ),
 
@@ -409,6 +414,7 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
     subtitles: <String>[
       ElmTextTwentyFive.subtitleTwentyFivePageFifteen_1,
       ElmTextTwentyFive.subtitleTwentyFivePageFifteen_2,
+      ElmTextTwentyFive.subtitleTwentyFivePageFifteen_3,
     ],
     texts: <String>[
       ElmTextTwentyFive.elmTextTwentyFivePageFifteen_1,
@@ -421,6 +427,7 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_1,
       ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_2,
       ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_3,
+      ElmTextTwentyFive.ayahHadithTwentyFivePageFifteen_4,
     ],
     order: <EnOrder>[
       // 1
@@ -429,6 +436,8 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
       // 2
       EnOrder.subtitles,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.subtitles,
       EnOrder.ayahs,
       // 3
       EnOrder.texts,

@@ -20,5 +20,5 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
 classpath 'com.android.tools.build:gradle:8.2.2'
 
 3- cd android
-./gradlew wrapper
+./gradlew wrapper // maybe not necessary
 ./gradlew clean build
