@@ -1,3 +1,8 @@
+# Review
+1- review the original text with its ready class.
+2- review the class with its list.
+
+
 // clean comments 
 // Try to change functions to widgets --> make project more effecient
 
