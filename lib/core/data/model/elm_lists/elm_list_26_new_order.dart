@@ -200,6 +200,7 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       ElmTextTwentySix.ayahHadithTwentySixPageEight_2,
       ElmTextTwentySix.ayahHadithTwentySixPageEight_3,
       ElmTextTwentySix.ayahHadithTwentySixPageEight_4,
+      ElmTextTwentySix.ayahHadithTwentySixPageEight_5,
     ],
     order: [
       // 1
@@ -215,6 +216,8 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       EnOrder.ayahs,
       //4
       EnOrder.texts,
+      EnOrder.ayahs,
+      // 5
       EnOrder.texts,
       EnOrder.ayahs,
     ],
@@ -261,6 +264,7 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       EnOrder.ayahs,
     ],
   ), // pageTen
+
   ElmModelNewOrder(
     subtitles: [
       ElmTextTwentySix.subtitleTwentySixPageTen_1,
