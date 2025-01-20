@@ -376,6 +376,7 @@ class ElmTextTwentyFive {
   static const String ayahHadithTwentyFivePageTherteen_5 = """
 والشمس وضحاها والقمر إذا تلاها والنهار إذا جلاها والليل إذا يغشاها والسماء وما بناها والأرض وما طحاها ونفس وما سواها فألهمها فجورها وتقواها 
 """;
+// 6
   static const String elmTextTwentyFivePageTherteen_6 = """
 فإذا كانت الآيات في نظرك عظيمة فجواب هذا القسم أن تزكي نفسك 
   """;
@@ -386,6 +387,7 @@ class ElmTextTwentyFive {
 صفات المفلحين 
 """;
   static const String elmTextTwentyFivePageFourteen_1 = """
+(1)
 الإيمان
 """;
   static const String ayahHadithTwentyFivePageFourteen_1 = """
@@ -393,6 +395,7 @@ class ElmTextTwentyFive {
 """;
 // 2
   static const String elmTextTwentyFivePageFourteen_2 = """
+(2)
 الخشوع في الصلاة
 """;
   static const String ayahHadithTwentyFivePageFourteen_2 = """
@@ -403,14 +406,20 @@ class ElmTextTwentyFive {
 ضاقت الدائرة 
 """;
   static const String elmTextTwentyFivePageFourteen_4 = """
+(3)
 الإعراض عن اللهو 
 """;
   static const String ayahHadithTwentyFivePageFourteen_3 = """
 والذين هم عن اللغو معرضون 
 """;
+
 // 4
   static const String elmTextTwentyFivePageFourteen_5 = """
+ضاقت 
+
+(4)
 أداء الزكاة وحفظ الفرج واداء الأمانة الحفاظ على الصلاة 
+
 والذين هم للزكاة فاعلون والذين هم لفروجهم حافظون إلا على ازواجهم او ما ملكت ايمانهم فإنهم غير ملومين فمن ابتغى وراء ذلك فاولئك هم العادون والذين هم لأماناتهم وعهدهم راعون والذين هم على صلواتهم يحافظون 
 كلما أضيفت صفة ضاقت الدائرة، فلذلك الفلاح الذي عناه الله سبحانه وتعالى ليس لمن يدعي الإيمان، وليس لمن يتوهم أنه مؤمن، ولكن لمن انطبقت عليه كل هذه الشروط 
 """;
@@ -433,10 +442,13 @@ class ElmTextTwentyFive {
 ️صفات المفلحين▪
 """;
   static const String elmTextTwentyFivePageFifteen_2 = """
+(1)
 الدعوة إلى الخير وهو الإسلام 
 هذه اللام لام الأمر ولتكن منكم أمة يدعون إلى الخير، فلا بد من فئة في كل مجتمع تتعلم العلم الصحيح العميق الواسع، وتدعوا إلى الله، تدعوا إلى الخير إلى هذا القرآن، إلى هذا الإسلام، إلى هذا الدين القويم، تدعوا إلى كل شيئ يقرب إلى الله، وتنهى عن كل شيء يبعد عن الله عز وجل 
 
+(2)
 الأمر بالمعروف والنهي عن المنكر 
+
 """;
   static const String ayahHadithTwentyFivePageFifteen_1 = """
 لكن الرسول والذين آمنوا جاهدوا بأموالهم وأنفسهم وأولئك لهم الخيرات وأولئك هم المفلحون
@@ -472,14 +484,14 @@ class ElmTextTwentyFive {
   static const ayahHadithTwentyFivePageSixteen_1 = """
 فمن ثقلت موازينه فاولئك هم المفلحون
   """;
-  static const elmTextTwentyFivePageSixteen_1 = """
-️فآت ذا القربى حقه والمسكين وابن السبيل ذلك خير للذين يريدون وجه الله وأولئك هم المفلحون 
-  """;
+
   // 2
   static const ayahHadithTwentyFivePageSixteen_2 = """
+️فآت ذا القربى حقه والمسكين وابن السبيل ذلك خير للذين يريدون وجه الله وأولئك هم المفلحون 
+
 أولئك على هدى من ربهم واولئك هم المفلحون 
   """;
-  static const elmTextTwentyFivePageSixteen_2 = """
+  static const elmTextTwentyFivePageSixteen_1 = """
 ️وردت هذه الآية في موضعين في القرآن الكريم، مرة في سورة البقرة، ومرة في سورة لقمان، في الأولى بين لنا بعض من صفات المتقين، أولئك الذين ارادوا الوقاية من عذاب الدنيا وعذاب الآخرة بحثوا عن المنهج فوجدوه في كتاب الله، فآمنوا بالله غيباً، واتصلوا به عن طريق الإنفاق، مما رزقهم، وآمنوا بسلسلة الرسالات، وآمنوا بالآخرة، أيمان بالغيب، إنفاق، اتصال بالله،
  هذا هو الفلاح، وهذا هو النجاح
 
