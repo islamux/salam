@@ -133,9 +133,12 @@ List<ElmModelNewOrder> elmList24NewOrder = [
     ],
     subtitles: [
       ElmTextTwentyFour.subtitleTwentyFourSeven_1,
+      ElmTextTwentyFour.subtitleTwentyFourSeven_2,
     ],
     order: [
+      EnOrder.subtitles,
       EnOrder.texts,
+      // 2
       EnOrder.subtitles,
       EnOrder.texts,
     ],
@@ -292,7 +295,7 @@ List<ElmModelNewOrder> elmList24NewOrder = [
       //
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      // 4
       EnOrder.ayahs,
     ],
   ),
