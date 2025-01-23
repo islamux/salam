@@ -2,6 +2,7 @@ class ElmTextTwentyTwo {
   //page 1
   static const String subtitleTwentyTwoPageOne_1 = """
   الله عز وجل له الملك وله الحمد 
+  
   """;
   static const String elmTextTwentyTwoPageOne_1 = """
 يسبح لله ما في السماوات وما في الأرض له الملك وله الحمد 
