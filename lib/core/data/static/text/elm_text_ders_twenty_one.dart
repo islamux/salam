@@ -382,9 +382,7 @@ class ElmTextTwentyOne {
 // page 17
   static const String elmTextTwentyOneSeventeen_1 = """
 الإيمان الكامل أن تقف موقفاً حكيماً من دون حقد ولا إشراك بالله ممن تلقيت منه الأذى 
-""";
 
-  static const String elmTextTwentyOneSeventeen_2 = """
 الإيمان الكامل حتى لو جاءك لا سمح الله شر على يد إنسان، فهذا الإنسان لا يستطيع أن يفعل ما فعل إلا بعد أن يأذن الله، وهذا الإنسان سيحاسب ولكن شاءت حكمة الله أن يكون الأذى على يده، إذاً يجب أن تقف موقفاً حكيماً من دون حقد، ولا إشراك بالله، فمع التوحيد الكامل تقف الموقف الكامل، فإن كانت الحكمة أن تعاقبه لتردعه عن أن يعود لمثلها فلا مانع ولكن بالحالتين بدون حقد 
 """;
 
@@ -395,8 +393,9 @@ class ElmTextTwentyOne {
   static const String subtitleTwentyOnSeventeen_1 = """
 الحكمة من بدء الآية بالنداء بلفظ الإيمان 
 """;
+// 2
 
-  static const String elmTextTwentyOneSeventeen_3 = """
+  static const String elmTextTwentyOneSeventeen_2 = """
 أية آية تبدأ بقوله تعالى 
  """;
 
@@ -404,8 +403,8 @@ class ElmTextTwentyOne {
       ياأيها الذين امنوا 
 
  """;
-
-  static const String elmTextTwentyOneSeventeen_4 = """
+  // 3
+  static const String elmTextTwentyOneSeventeen_3 = """
 أي إنكم أيها المؤمنون مرتبطون مع الله بعقد إيماني، أنتم آمنتم به موجوداً وواحداً وكاملاً 
 أمنتم به خالقاً ومربياً ومسيراً، آمنتم بأسمائه الحسنى وصفاته الفضلى، آمنتم أن الأمر كله بيده، وأن كماله كمال مطلق، وأن حكمته لا حكمة بعدها، ورحمته، وقدرته، وعدله بحسب إيمانكم، ومعرفتكم افعلوا كذا اصبروا 
    """;
