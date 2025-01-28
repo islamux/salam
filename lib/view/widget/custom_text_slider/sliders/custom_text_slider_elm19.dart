@@ -15,7 +15,7 @@ class CustomTextSliderElm19 extends StatelessWidget {
     return BlocBuilder<Elm19Cubit, BasePageState>(
       // Use BlocBuilder to listen for state changes
       builder: (context, state) {
-        Elm19Cubit cubit = context.read<Elm19Cubit>(); // Access the Elm10Cubit
+        Elm19Cubit cubit = context.read<Elm19Cubit>();
 
         return Stack(
           children: [

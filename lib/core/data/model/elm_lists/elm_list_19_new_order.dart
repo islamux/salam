@@ -313,9 +313,29 @@ List<ElmModelNewOrder> elmList19NewOrder = [
     ],
     subtitles: [
       ElmTextNineteen.subtitleNineteenSixteen_1,
+      ElmTextNineteen.subtitleNineteenSixteen_2,
+      ElmTextNineteen.subtitleNineteenSixteen_3,
+      ElmTextNineteen.subtitleNineteenSixteen_4,
+      ElmTextNineteen.subtitleNineteenSixteen_5,
     ],
     texts: [
       ElmTextNineteen.elmTextNineteenSixteen_1,
+      ElmTextNineteen.elmTextNineteenSixteen_2,
+      ElmTextNineteen.elmTextNineteenSixteen_3,
+      ElmTextNineteen.elmTextNineteenSixteen_4,
+      ElmTextNineteen.elmTextNineteenSixteen_5,
+      ElmTextNineteen.elmTextNineteenSixteen_7,
+      ElmTextNineteen.elmTextNineteenSixteen_8,
+      ElmTextNineteen.elmTextNineteenSixteen_9,
+    ],
+    ayahs: [
+      ElmTextNineteen.ayahHadithNineteenSixteen_1,
+      ElmTextNineteen.ayahHadithNineteenSixteen_2,
+      ElmTextNineteen.ayahHadithNineteenSixteen_3,
+      ElmTextNineteen.ayahHadithNineteenSixteen_4,
+      ElmTextNineteen.ayahHadithNineteenSixteen_5,
+      ElmTextNineteen.ayahHadithNineteenSixteen_6,
+      ElmTextNineteen.ayahHadithNineteenSixteen_7,
     ],
     order: [
       // 1
