@@ -267,11 +267,16 @@ List<ElmModelNewOrder> elmList19NewOrder = [
   ElmModelNewOrder(
     ayahs: [
       ElmTextNineteen.ayahHadithNineteenFourteen_1,
+      ElmTextNineteen.ayahHadithNineteenFourteen_2,
     ],
     texts: [
       ElmTextNineteen.elmTextNineteenFourteen_1,
+      ElmTextNineteen.elmTextNineteenFourteen_2,
     ],
     order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
       EnOrder.ayahs,
       EnOrder.texts,
     ],
@@ -313,8 +318,36 @@ List<ElmModelNewOrder> elmList19NewOrder = [
       ElmTextNineteen.elmTextNineteenSixteen_1,
     ],
     order: [
+      // 1
       EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
       EnOrder.subtitles,
+      // 2
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 3
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 4
+      EnOrder.texts,
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      // 5
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      // 6
+      EnOrder.texts,
+      EnOrder.subtitles,
+      // 7
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 8
+      EnOrder.texts,
+      EnOrder.subtitles,
+      // 9
       EnOrder.texts,
     ],
   ),

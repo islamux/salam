@@ -322,7 +322,7 @@ class ElmTextNineteen {
 كن ولياً لله وخذ كل ميزات هذه المرتبة 
 
 """;
-  static const String elmTextNineteenSixteen = """
+  static const String elmTextNineteenSixteen_1 = """
 كن ولياً لله وخذ كل ميزات هذه المرتبة، فحينما يعطى أحد الطلاب الشهادات العُليا فهو قد استحق كل امتيازات هذه الرُتبة العلمية، فكلمة ولياً لله، فهذه أعلى مرتبة
   """;
   static const String ayahHadithNineteenSixteen_1 = """
@@ -331,7 +331,9 @@ class ElmTextNineteen {
   static const String subtitleNineteenSixteen_1 = """
 ماذا تشعر إذا قال الله: ياعبدي أنا وليك؟ 
   """;
-  static const String elmTextNineteenSixteen_1 = """
+
+  // 2
+  static const String elmTextNineteenSixteen_2 = """
   إذا كان الله معك فمن عليك؟ وإذا كان الله عليك فمن معك؟ لا يوجد معك أحد، يجب أن يشعر المؤمن إذا تلا هذه الآية بقشعريرة 
 
 من استقام على امر الله نقله الله من حال إلى حال 
@@ -340,13 +342,15 @@ class ElmTextNineteen {
   static const String ayahHadithNineteenSixteen_2 = """
      ذلك بأن الله مولى الذين أمنو 
   """;
-  static const String elmTextNineteenSixteen_2 = """
+  // 3
+  static const String elmTextNineteenSixteen_3 = """
 عليك أن تؤمن وأن تستقيم، والله بعدها وليك، فلا تخف، ولا تحزن، ولا تخشى أحداً، ولا تخشى إلا ذنبك 
   """;
   static const String ayahHadithNineteenSixteen_3 = """
      ذلك بأن الله مولى الذين أمنو 
   """;
-  static const String elmTextNineteenSixteen_3 = """
+  // 4
+  static const String elmTextNineteenSixteen_4 = """
 ينقلك من حال إلى حال، من منزلة إلى منزلة، من مقام إلى مقام، من توفيق إلى توفيق، من نصر إلى نصر، الله وليك، اجعل هذه الكلمة هدفاً وشعاراً لك: إذا كان الله معك فمن عليك؟ وإذا كان عليك فمن معك؟ يارب ماذا وجد من فقدك؟ وماذا فقد من وجدك؟
  حجم ولي الله لا ينبغي أن يزيد على حجم سيد الأولياء 
   """;
@@ -356,7 +360,8 @@ class ElmTextNineteen {
   static const String ayahHadithNineteenSixteen_4 = """
        قل لا أملك لنفسي نفعاً ولا ضراً إلا ماشاء الله ولو كنت اعلم الغيب لاستكثرت من الخير وما مسني السؤ 
   """;
-  static const String elmTextNineteenSixteen_4 = """
+  // 5
+  static const String elmTextNineteenSixteen_5 = """
 إذاً لا حق لمن يدعي أنه ولي أياً كان أن يدعي أنه يملك النفع والضر، يقولون: الولي الفلاني نظر في فلان فاهتدى، هذه ليست لأحد، ولا لرسول الله، إقرأ قوله تعالى: 
   """;
   static const String ayahHadithNineteenSixteen_5 = """
@@ -369,19 +374,22 @@ class ElmTextNineteen {
   static const String ayahHadithNineteenSixteen_6 = """
      قل اني أخاف إن عصيت ربي عذاب يوم عظيم 
   """;
-  static const String elmTextNineteenSixteen_5 = """
+  // 6
+  static const String elmTextNineteenSixteen_6 = """
 سيد الأولياء يخاف إن عصى الله عذاب يوم عظيم 
   """;
   static const String subtitleNineteenSixteen_4 = """
 الولي لا يعلم الغيب 
   """;
-  static const String elmTextNineteenSixteen_6 = """
+  // 7
+  static const String elmTextNineteenSixteen_7 = """
 سيد الأولياء لا يعلم الغيب 
   """;
   static const String ayahHadithNineteenSixteen_7 = """
      قل لا أقول لكم عندي خزائن الله ولا أعلم الغيب 
   """;
-  static const String elmTextNineteenSixteen_7 = """
+  // 8
+  static const String elmTextNineteenSixteen_8 = """
 سيد الأولياء لا يملك لنفسه نفعاً ولا ظُراً، إذا كان سيد الأولياء لا يملك لنفسه نفعاً ولا ظراً، وإن كان سيد الأولياء لا يعلم الغيب، وإن كان سيد الأولياء يخاف إن عصى الله عذاب يوم عظيم، فهل يستطيع ولي على وجه الأرض أن يدعي خلاف ذلك؟ 
 هذا هو الحجم الحقيقي
 سُئل الإمام الجنيد رضي الله عنه: من ولي الله؟ أهو الذي يطير في الهواء؟ قال: لا، قالوا: أهو الذي يمشي على وجه الماء؟ قال: لا، فقالوا: من هو ولي الله إذاً؟ قال هو الذي تجده عند الحلال والحرام
@@ -393,7 +401,8 @@ class ElmTextNineteen {
 مفتاح باب الولاية الإلهية 
 -----------------
 """;
-  static const String elmTextNineteenSixteen_8 = """
+// 9
+  static const String elmTextNineteenSixteen_9 = """
 قد يقول قائل كيف الوصول إلى الله؟ 
 كيف الوصول إلى درجة الولاية؟ 
 ماهي الطريقة؟ 
