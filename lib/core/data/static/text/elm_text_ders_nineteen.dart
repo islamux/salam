@@ -329,6 +329,7 @@ class ElmTextNineteen {
       نحن اولياؤكم في الحياة الدنيا وفي الآخرة 
   """;
   static const String subtitleNineteenSixteen_1 = """
+
 ماذا تشعر إذا قال الله: ياعبدي أنا وليك؟ 
   """;
 
@@ -355,6 +356,7 @@ class ElmTextNineteen {
  حجم ولي الله لا ينبغي أن يزيد على حجم سيد الأولياء 
   """;
   static const String subtitleNineteenSixteen_2 = """
+
 الولي لا يملك النفع والضر 
   """;
   static const String ayahHadithNineteenSixteen_4 = """
@@ -367,29 +369,30 @@ class ElmTextNineteen {
   static const String ayahHadithNineteenSixteen_5 = """
      إنك لا تهدي من أحببت ولكن الله يهدي من يشاء 
   """;
-  static const String subtitleNineteenSixteen_3 = """
+
+  // page 17
+  // 1
+  static const String subtitleNineteenSeventeen_1 = """
 
 الولي لايسقط عنه التكليف 
   """;
-  static const String ayahHadithNineteenSixteen_6 = """
+  static const String ayahHadithNineteenSeventeen_1 = """
      قل اني أخاف إن عصيت ربي عذاب يوم عظيم 
   """;
-  // 6
-  static const String elmTextNineteenSixteen_6 = """
+  static const String elmTextNineteenSeventeen_1 = """
 سيد الأولياء يخاف إن عصى الله عذاب يوم عظيم 
   """;
-  static const String subtitleNineteenSixteen_4 = """
+  // 2
+  static const String subtitleNineteenSeventeen_2 = """
 الولي لا يعلم الغيب 
   """;
-  // 7
-  static const String elmTextNineteenSixteen_7 = """
+  static const String elmTextNineteenSeventeen_2 = """
 سيد الأولياء لا يعلم الغيب 
   """;
-  static const String ayahHadithNineteenSixteen_7 = """
+  static const String ayahHadithNineteenSeventeen_2 = """
      قل لا أقول لكم عندي خزائن الله ولا أعلم الغيب 
   """;
-  // 8
-  static const String elmTextNineteenSixteen_8 = """
+  static const String elmTextNineteenSeventeen_3 = """
 سيد الأولياء لا يملك لنفسه نفعاً ولا ظُراً، إذا كان سيد الأولياء لا يملك لنفسه نفعاً ولا ظراً، وإن كان سيد الأولياء لا يعلم الغيب، وإن كان سيد الأولياء يخاف إن عصى الله عذاب يوم عظيم، فهل يستطيع ولي على وجه الأرض أن يدعي خلاف ذلك؟ 
 هذا هو الحجم الحقيقي
 سُئل الإمام الجنيد رضي الله عنه: من ولي الله؟ أهو الذي يطير في الهواء؟ قال: لا، قالوا: أهو الذي يمشي على وجه الماء؟ قال: لا، فقالوا: من هو ولي الله إذاً؟ قال هو الذي تجده عند الحلال والحرام
@@ -397,12 +400,13 @@ class ElmTextNineteen {
 سيد الأولياء لا يعلم الغيب، سيد الأولياء يخاف إن عصى الله
   """;
 
-  static const String subtitleNineteenSixteen_5 = """
+  // 3
+  static const String subtitleNineteenSeventeen_3 = """
+
 مفتاح باب الولاية الإلهية 
 -----------------
 """;
-// 9
-  static const String elmTextNineteenSixteen_9 = """
+  static const String elmTextNineteenSeventeen_4 = """
 قد يقول قائل كيف الوصول إلى الله؟ 
 كيف الوصول إلى درجة الولاية؟ 
 ماهي الطريقة؟ 
