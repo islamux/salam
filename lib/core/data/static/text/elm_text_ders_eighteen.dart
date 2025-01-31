@@ -10,14 +10,16 @@ class ElmTextDersEighteen {
 
 """;
 // page 2
-  static const String elmTextEighteenTwo_1 = """
+  static const String ayahHadithEighteenTwo_1 = """
 ولايحزنك قولهم إن العزة لله جميعا هو السميع العليم 
+  """;
 
+  static const String elmTextEighteenTwo_1 = """
 الله جل جلاله هو العزيز ، وله العزة جميعا ، فنواصي العباد بيده ، ومشيئته نافذة فيهم ، وهو القاهر لهم على ما أراد 
 فمن اراد العز في الدنيا والآخره فليطلبه من رب العزة تبارك وتعالى مالك الدنيا والآخرة ، وذلك يحصل بكمال الإيمان والتقوى ، ولزوم طاعة الله عز وجل 
 """;
 
-  static const String ayahHadithEighteenTwo_1 = """
+  static const String ayahHadithEighteenTwo_2 = """
  من كان يريد العزة فلله العزة جميعا إليه يصعد الكلم الطيب والعمل الصالح يرفعه 
 """;
 
@@ -51,7 +53,8 @@ class ElmTextDersEighteen {
 
   static const String elmTextEighteenFour_1 = """
 هكذا نجزيهم على مر الايام ، على مر العصور ، في كل الأقاليم ، في كل البلاد ، في البلاد المتقدمه والبلاد المتخلفه ، وفي شرق الأرض وفي غربها ، في شمالها وفي جنوبها على البر وفي البحر وفي الجو 
-
+""";
+  static const String ayahHadithEighteenFour_2 = """
 إن الذين امنو وعملو الصالحات سيجعل لهم الرحمن ودا 
 """;
 
@@ -92,6 +95,7 @@ class ElmTextDersEighteen {
 
   static const String ayahHadithEighteenNine_1 = """
 وماتفرقو إلا من بعد ماجائهم العلم بغياً بينهم 
+
         ( بغياً بينهم ) 
 """;
 
