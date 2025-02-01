@@ -47,7 +47,7 @@ class ElmTextDersEighteen {
  """;
 
   // page 4
-  static const String ayahHadithTextEighteenFour_1 = """
+  static const String ayahHadithEighteenFour_1 = """
 ولما بلغ أشده اتيناه حكما وعلما وكذلك نجزي المحسنين  
 """;
 
@@ -111,6 +111,7 @@ class ElmTextDersEighteen {
   """;
 
 // page 11
+// 1
   static const String titleEighteenEleven_1 = """
 ذاهب إلى ربي
 -----------
@@ -121,6 +122,7 @@ class ElmTextDersEighteen {
   static const String ayahHadithEighteenEleven_1 = """
         إني ذاهب إلى ربي سيهدين 
   """;
+  // 2
   static const String elmEighteenEleven_2 = """
 العلماء قالوا: إنه إن أيقن بالموت فذهابه إلى الله عز وجل يعني أنه ملاق الله عز وجل، وسيهديني إلى الجنة، وإن خاف قومه، وتوجه بعيداً عنهم 
 """;
@@ -128,13 +130,14 @@ class ElmTextDersEighteen {
   static const String ayahHadithEighteenEleven_2 = """
         إني ذاهبٌ إلى ربي 
  """;
+  // 3
   static const String elmEighteenEleven_3 = """
 لينجيني من مكرهم، وبأسهم، وكيدهم
 """;
   static const String ayahHadithEighteenEleven_3 = """
         إني ذاهب إلى ربي سيهدين 
  """;
-
+// 4
   static const String elmEighteenEleven_4 = """
 لكن هذه كيف تقع معنا؟ كيف يقول أحدنا: إني ذاهبٌ إلى ربي؟ أي إذا توجه أحدنا إلى بيتٍ من بيوت الله ليصلي، توجه ليحضر مجلس علم، توجه إلى الفلاة ليناجي ربه، توجه إلى غرفة قصية في البيت ليصلي قيام الليل، إن توجه إلى غرفة قصية في البيت ذهب إلى ربه، وإن توجه إلى فلاةٍ ليناجي ربه وليذكره ذهب إلى ربه، وإذا توجه إلى بيت من بيوت الله لا يقصد منفعة، ولا دنيا، ولا حل مشكلةٍ؛ إنما يقصد مرضاة الله عز وجل فكأنه ذاهبٌ إلى الله عز وجل.. 
 وإذا توجه الإنسان إلى بيوت الله لا يرجوا دنيا؛ بل لا يخرج إلا ابتغاء مرضاة الله، فالله جل جلاله سيرحمه، سيتجلى عليه، سينور قلبه، سيوفقه في أعماله الدنيوية، سيمنحه الرضى، يمنحه القرب 
@@ -170,19 +173,19 @@ class ElmTextDersEighteen {
   static const String ayahHadithEighteenTwelve_1 = """
         وذكرهم بأيام الله 
         """;
+  // 2
   static const String elmEighteenTwelve_2 = """
 من أجل أن تحبه، من أجل أن تطمئن له، من أجل أن تعرف أن الذي أنقذك فيما مضى سيحفظك فيما هو آتٍ فلا تقلق..
   """;
 
 // page 13
-  static const String titleEighteenTherteen_1 = """
+  static const String titleEighteenThirteen_1 = """
 عن الله أحدثك
 ------------
  """;
-  static const String elmEighteenTherteen_1 = """
+  static const String elmTextEighteenThirteen_1 = """
 يراك وأنت تطرق باباً تلوا باب، تفشل هنا وتحزن هناك، هذا يعاتبك وذاك يكيد لك، ولكنه ينتظر إقبالك، وأنت تتعثر وتنهض وتقع وتبكي، ثم ماتلبث أن تأتيه مكسوراً، فتناديه فيفتح بابه لك، كأنه يقول لك، إن جافوك فأنا حبيبك، وإن آلموك فأنا طبيبك، مرحباً بك آيباً تائباً...
-  """;
-  static const String elmEighteenTherteen_2 = """
+
 عن الله أحدثك
  """;
 }
