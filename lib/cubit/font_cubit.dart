@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class FontCubit extends Cubit<double> {
-  // Initial font size
+  // Default font size is 16.0
   FontCubit() : super(16.0);
 
   // Method to increase font size

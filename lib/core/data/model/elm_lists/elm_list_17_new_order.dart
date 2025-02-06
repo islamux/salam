@@ -189,6 +189,7 @@ List<ElmModelNewOrder> elmList17NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersSeventeen.elmTextSeventeenTen_1,
+      ElmTextDersSeventeen.elmTextSeventeenTen_2,
     ],
     ayahs: [
       ElmTextDersSeventeen.ayahHadithSeventeenTen_1,
@@ -196,21 +197,8 @@ List<ElmModelNewOrder> elmList17NewOrder = [
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
-    ],
-    // 'texts,ayahs',
-  ),
-  // page 11
-  ElmModelNewOrder(
-    ayahs: [
-      ElmTextDersSeventeen.ayahHadithSeventeenEleven_1,
-    ],
-    texts: [
-      ElmTextDersSeventeen.elmTextSeventeenEleven_1,
-    ],
-    order: [
-      EnOrder.ayahs,
+      //
       EnOrder.texts,
     ],
-    // 'ayahs,texts',
   ),
 ];
