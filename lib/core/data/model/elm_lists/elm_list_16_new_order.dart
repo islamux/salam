@@ -28,10 +28,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // // '''
-    // titles,subtitles,texts,ayahs,
-    // texts
-    // ''',
   ),
   // page 2
   ElmModelNewOrder(
@@ -46,7 +42,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // 'subtitles,texts',
   ),
 
   // page 3
@@ -64,7 +59,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'ayahs,texts,ayahs',
   ),
   // page 4
   ElmModelNewOrder(
@@ -79,7 +73,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'texts,ayahs',
   ),
   // page 5
   ElmModelNewOrder(
@@ -94,7 +87,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'texts,ayahs',
   ),
   // page 6
   ElmModelNewOrder(
@@ -108,7 +100,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'texts,ayahs',
   ),
   // page 7
   ElmModelNewOrder(
@@ -128,7 +119,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'texts,ayahs,texts,ayahs',
   ),
   // page 8
   ElmModelNewOrder(
@@ -143,7 +133,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // 'subtitles,texts',
   ),
   // page 9
   ElmModelNewOrder(
@@ -158,7 +147,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'ayahs,texts',
   ),
   // page 10
   ElmModelNewOrder(
@@ -177,7 +165,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'subtitles,ayahs,texts',
   ),
   // page 11
   ElmModelNewOrder(
@@ -196,7 +183,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'subtitles,texts,ayahs',
   ),
   // page 12
   ElmModelNewOrder(
@@ -211,7 +197,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // 'subtitles,texts',
   ),
   // page 13
   ElmModelNewOrder(
@@ -231,8 +216,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'ayahs,texts',
-    // 'ayahs,texts',
   ),
   // page 14
   ElmModelNewOrder(
@@ -247,7 +230,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'ayahs,texts',
   ),
   // page 15
   ElmModelNewOrder(
@@ -266,7 +248,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'subtitles,ayahs,texts',
   ),
   ElmModelNewOrder(
     // 16
@@ -280,7 +261,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // 'subtitles,texts',
   ),
   ElmModelNewOrder(
     // 17
@@ -294,7 +274,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'ayahs,texts',
   ),
   // page 18
   ElmModelNewOrder(
@@ -316,7 +295,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // 'titles,ayahs,subtitles,texts',
   ),
   // page 19
   ElmModelNewOrder(
@@ -330,7 +308,6 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // 'subtitles,texts',
   ),
   // page 20
   ElmModelNewOrder(
@@ -339,12 +316,20 @@ List<ElmModelNewOrder> elmList16NewOrder = [
     ],
     texts: [
       ElmTextDebsSixteen.elmTextDersSixteenTwenty_1,
+      ElmTextDebsSixteen.elmTextDersSixteenTwenty_2,
+    ],
+    ayahs: [
+      ElmTextDebsSixteen.ayahHadithSixteenTwenty_1,
+      ElmTextDebsSixteen.ayahHadithSixteenTwenty_2
     ],
     order: [
       EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      //
+      EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'titles,texts',
   ),
 
   // page 21
@@ -352,80 +337,87 @@ List<ElmModelNewOrder> elmList16NewOrder = [
     titles: [
       ElmTextDebsSixteen.titleSixteenTwentyOne,
     ],
+    subtitles: [
+      ElmTextDebsSixteen.subtitleSixteenTwentyOne_1,
+    ],
     ayahs: [
       ElmTextDebsSixteen.ayahHadithSixteenTwentyOne_1,
     ],
     texts: [
+      ElmTextDebsSixteen.elmTextDersSixteenTwentyOne_1,
       ElmTextDebsSixteen.elmTextDersSixteenTwentyOne_2,
     ],
     order: [
       EnOrder.titles,
+      EnOrder.subtitles,
+      EnOrder.texts,
       EnOrder.ayahs,
+      //
       EnOrder.texts,
     ],
-    // 'titles,ayahs,texts',
   ),
   // page 22
   ElmModelNewOrder(
     titles: [
       ElmTextDebsSixteen.titleSixteenTwentyTwo,
     ],
-    subtitles: [
-      ElmTextDebsSixteen.subtitleSixteenTwentyTwo_1,
-    ],
     texts: [
       ElmTextDebsSixteen.elmTextDersSixteenTwentyTwo_1,
-      ElmTextDebsSixteen.elmTextDersSixteenTwentyTwo_2,
     ],
     ayahs: [
       ElmTextDebsSixteen.ayahHadithSixteenTwentyTwo_1,
     ],
     order: [
       EnOrder.titles,
-      EnOrder.subtitles,
-      EnOrder.texts,
       EnOrder.ayahs,
-      //
       EnOrder.texts,
     ],
-    // 'titles,subtitles,texts,ayahs,texts',
   ),
   // page 23
   ElmModelNewOrder(
     titles: [
       ElmTextDebsSixteen.titleSixteenTwentyThree,
     ],
+    subtitles: [
+      ElmTextDebsSixteen.subtitleSixteenTwentyThree_1,
+    ],
     ayahs: [
       ElmTextDebsSixteen.ayahHadithSixteenTwentyThree_1,
+      ElmTextDebsSixteen.ayahHadithSixteenTwentyThree_2,
     ],
     texts: [
       ElmTextDebsSixteen.elmTextDersSixteenTwentyThree_1,
+      ElmTextDebsSixteen.elmTextDersSixteenTwentyThree_2,
     ],
     order: [
       EnOrder.titles,
-      EnOrder.ayahs,
+      EnOrder.subtitles,
       EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
     ],
-    // 'titles,ayahs,texts',
   ),
   // page 24
   ElmModelNewOrder(
-    titles: [
-      ElmTextDebsSixteen.titleSixteenTwentyFour,
-    ],
     subtitles: [
       ElmTextDebsSixteen.subtitleSixteenTwentyFour_1,
+      ElmTextDebsSixteen.subtitleSixteenTwentyFour_2,
     ],
     texts: [
       ElmTextDebsSixteen.elmTextDersSixteenTwentyFour_1,
       ElmTextDebsSixteen.elmTextDersSixteenTwentyFour_2,
+      ElmTextDebsSixteen.elmTextDersSixteenTwentyFour_3,
     ],
     ayahs: [
       ElmTextDebsSixteen.ayahHadithSixteenTwentyFour_1,
       ElmTextDebsSixteen.ayahHadithSixteenTwentyFour_2,
     ],
     order: [
-      EnOrder.titles,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      //
       EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
@@ -433,79 +425,45 @@ List<ElmModelNewOrder> elmList16NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'titles,subtitles,texts,ayahs,texts,ayahs',
   ),
 
   // page 25
   ElmModelNewOrder(
-    subtitles: [
-      ElmTextDebsSixteen.subtitleSixteenTwentyFive_1,
-      ElmTextDebsSixteen.subtitleSixteenTwentyFive_2,
-    ],
     texts: [
       ElmTextDebsSixteen.elmTextDersSixteenTwentyFive_1,
       ElmTextDebsSixteen.elmTextDersSixteenTwentyFive_2,
       ElmTextDebsSixteen.elmTextDersSixteenTwentyFive_3,
+      ElmTextDebsSixteen.elmTextDersSixteenTwentyFive_4,
     ],
     ayahs: [
       ElmTextDebsSixteen.ayahHadithSixteenTwentyFive_1,
       ElmTextDebsSixteen.ayahHadithSixteenTwentyFive_2,
+      ElmTextDebsSixteen.ayahHadithSixteenTwentyFive_3,
     ],
     order: [
-      EnOrder.subtitles,
       EnOrder.texts,
-      EnOrder.subtitles,
+      EnOrder.ayahs,
       //
       EnOrder.texts,
       EnOrder.ayahs,
       //
+      EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // '''subtitles,texts,subtitles,
-    // texts,ayahs,
-    // texts,ayahs''',
   ),
 
   // page 26
   ElmModelNewOrder(
+    titles: [
+      ElmTextDebsSixteen.titlesSixteenTwentySix,
+    ],
     texts: [
       ElmTextDebsSixteen.elmTextDersSixteenTwentySix_1,
-      ElmTextDebsSixteen.elmTextDersSixteenTwentySix_2,
-      ElmTextDebsSixteen.elmTextDersSixteenTwentySix_3,
-      ElmTextDebsSixteen.elmTextDersSixteenTwentySix_4,
     ],
-    ayahs: [
-      ElmTextDebsSixteen.ayahHadithSixteenTwentySix_1,
-      ElmTextDebsSixteen.ayahHadithSixteenTwentySix_2,
-      ElmTextDebsSixteen.ayahHadithSixteenTwentySix_3,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.ayahs,
-      //
-      EnOrder.texts,
-      EnOrder.ayahs,
-      //
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-    //  subtitle,
-    // text, ayah,
-    // text, ayah,
-    // text, text, ayah
-  ),
-  // page 27
-  ElmModelNewOrder(
-    titles: [
-      ElmTextDebsSixteen.titlesSixteenTwentySeven,
-    ],
-    texts: [ElmTextDebsSixteen.elmTextDersSixteenTwentySeven_1],
     order: [
       EnOrder.titles,
       EnOrder.texts,
     ],
-    // 'titles,texts',
   ),
 ];
