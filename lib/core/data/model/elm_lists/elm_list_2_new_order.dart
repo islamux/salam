@@ -227,5 +227,108 @@ List<ElmModelNewOrder> elmList2NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-  )
+  ),
+
+  // page 15
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwo.titleTwoFifteen,
+    ],
+    subtitles: [
+      ElmTextDersTwo.subtitleTwoFifteen_1,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoFifteen_1,
+      ElmTextDersTwo.elmTextTwoFifteen_2,
+    ],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoFifteen_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 16
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwo.subtitleTextTwoSixteen_1,
+      ElmTextDersTwo.subtitleTextTwoSixteen_2,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoSixteen_1,
+      ElmTextDersTwo.elmTextTwoSixteen_2,
+      ElmTextDersTwo.elmTextTwoSixteen_3,
+      ElmTextDersTwo.elmTextTwoSixteen_4,
+      ElmTextDersTwo.elmTextTwoSixteen_5,
+      ElmTextDersTwo.elmTextTwoSixteen_6,
+      ElmTextDersTwo.elmTextTwoSixteen_7,
+    ],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoSixteen_1,
+      ElmTextDersTwo.ayahHadithTwoSixteen_2,
+      ElmTextDersTwo.ayahHadithTwoSixteen_3,
+      ElmTextDersTwo.ayahHadithTwoSixteen_4,
+      ElmTextDersTwo.ayahHadithTwoSixteen_5,
+      ElmTextDersTwo.ayahHadithTwoSixteen_6,
+      ElmTextDersTwo.ayahHadithTwoSixteen_7,
+    ],
+    order: [
+      // 1
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 2
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 3
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 4
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 5
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 6
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 7
+      EnOrder.ayahs,
+      EnOrder.texts
+    ],
+  ),
+
+  // page 17
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersTwo.elmTextTwoSeventeen_1,
+      ElmTextDersTwo.elmTextTwoSeventeen_2,
+      ElmTextDersTwo.elmTextTwoSeventeen_3,
+    ],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoSeventeen_1,
+      ElmTextDersTwo.ayahHadithTwoSeventeen_2,
+      ElmTextDersTwo.ayahHadithTwoSeventeen_3,
+      ElmTextDersTwo.ayahHadithTwoSeventeen_4,
+    ],
+    order: [
+      // 1
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 2
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 3
+      EnOrder.ayahs,
+      EnOrder.texts,
+      // 4
+      EnOrder.ayahs,
+    ],
+  ),
 ];
