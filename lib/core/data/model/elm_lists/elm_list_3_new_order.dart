@@ -25,10 +25,6 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-//     order: '''
-//       titles,texts,ayahs,
-//       texts,ayahs,
-//  ''',
   ),
 
   // page 2
@@ -36,21 +32,15 @@ List<ElmModelNewOrder> elmList3NewOrder = [
     texts: [
       ElmTextDersThree.elmTextThreeTwo_1,
       ElmTextDersThree.elmTextThreeTwo_2,
-      ElmTextDersThree.elmTextThreeTwo_3,
     ],
     ayahs: [
       ElmTextDersThree.ayahHadithThreeTwo_1,
     ],
     order: [
       EnOrder.texts,
-      EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: '''
-    //   texts,texts,
-    //   ayahs,texts,
-    //  ''',
   ),
 
   // page 3
@@ -60,18 +50,11 @@ List<ElmModelNewOrder> elmList3NewOrder = [
     ],
     texts: [
       ElmTextDersThree.elmTextThreeThree_1,
-      ElmTextDersThree.elmTextThreeThree_2,
     ],
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
-      EnOrder.texts,
     ],
-//     order: '''
-//       ayahs,texts,
-//       texts,
-
-//  ''',
   ),
 
   // page 4
@@ -86,22 +69,24 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
     ],
-    // order: 'texts,ayahs',
   ),
   // page 5
   ElmModelNewOrder(
     ayahs: [
       ElmTextDersThree.ayahHadithThreeFive_1,
+      ElmTextDersThree.ayahHadithThreeFive_2,
     ],
     texts: [
       ElmTextDersThree.elmTextThreeFive_1,
+      ElmTextDersThree.elmTextThreeFive_2,
     ],
-
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
+      //
+      EnOrder.ayahs,
+      EnOrder.texts,
     ],
-    // order: 'texts,ayahs',
   ),
   // page 6
   ElmModelNewOrder(
@@ -120,6 +105,5 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: 'texts,ayahs',
   )
 ];
