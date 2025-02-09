@@ -31,6 +31,7 @@ List<ElmModelNewOrder> elmList2NewOrder = [
   ElmModelNewOrder(
     ayahs: [
       ElmTextDersTwo.ayahHadithTwoTwo_1,
+      ElmTextDersTwo.ayahHadithTwoTwo_2,
     ],
     texts: [
       ElmTextDersTwo.elmTextTwoTwo_1,
@@ -38,6 +39,7 @@ List<ElmModelNewOrder> elmList2NewOrder = [
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
+      EnOrder.ayahs,
     ],
   ),
 
@@ -61,15 +63,11 @@ List<ElmModelNewOrder> elmList2NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersTwo.elmTextsTwoFour_1,
-      ElmTextDersTwo.elmTextTwoFour_2,
-      ElmTextDersTwo.elmTextTwoFour_3,
     ],
     ayahs: [
       ElmTextDersTwo.ayahHadithTwoFour_1,
     ],
     order: [
-      EnOrder.texts,
-      EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
@@ -91,10 +89,8 @@ List<ElmModelNewOrder> elmList2NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersTwo.elmTextTwoSix_1,
-      ElmTextDersTwo.elmTextTowSix_2,
     ],
     order: [
-      EnOrder.texts,
       EnOrder.texts,
     ],
   ),
@@ -133,10 +129,8 @@ List<ElmModelNewOrder> elmList2NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersTwo.elmTextTwoNine_1,
-      ElmTextDersTwo.elmTextTwoNine_2,
     ],
     order: [
-      EnOrder.texts,
       EnOrder.texts,
     ],
   ),
