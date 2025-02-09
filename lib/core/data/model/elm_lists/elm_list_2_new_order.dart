@@ -192,4 +192,40 @@ List<ElmModelNewOrder> elmList2NewOrder = [
       EnOrder.texts,
     ],
   ),
+
+  // 14
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwo.subtitleTextTwoFourteen_1,
+      ElmTextDersTwo.subtitleTextTwoFourteen_2,
+      ElmTextDersTwo.subtitleTextTwoFourteen_3,
+      ElmTextDersTwo.subtitleTextTwoFourteen_4,
+      ElmTextDersTwo.subtitleTextTwoFourteen_5,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoFourteen_1,
+      ElmTextDersTwo.elmTextTwoFourteen_2,
+      ElmTextDersTwo.elmTextTwoFourteen_3,
+    ],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoFourteen_1,
+      ElmTextDersTwo.ayahHadithTwoFourteen_2,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 2
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      // 3
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      // 4
+      EnOrder.subtitles,
+      EnOrder.texts,
+      // 5
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  )
 ];
