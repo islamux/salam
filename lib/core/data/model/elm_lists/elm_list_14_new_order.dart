@@ -13,9 +13,9 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       ElmTextDersFourteen.elmTextFourteenOne_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
   // page 2
   ElmModelNewOrder(
@@ -26,10 +26,11 @@ List<ElmModelNewOrder> elmList14NewOrder = [
     ayahs: [
       ElmTextDersFourteen.ayahHadithFourteenTwo_1,
     ],
-    order: [EnOrder.texts, EnOrder.ayahs, EnOrder.texts],
-    // order: ''',
-    //   texts,ayahs,text
-    // ''',
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
   ),
 
   // page 3
@@ -53,10 +54,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    //  subtitles,ayahs,text
-    //  ayahs,text
-    // ''',
   ),
 
   // page 4
@@ -76,10 +73,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: ''',
-    //  text,ayahs,
-    //  text,ayahs,
-    // ''',
   ),
   // page 5
   ElmModelNewOrder(
@@ -93,7 +86,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: 'texts,ayash',
   ),
   // page 6
   ElmModelNewOrder(
@@ -104,6 +96,7 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       ElmTextDersFourteen.elmTextFourteenSix_4,
       ElmTextDersFourteen.elmTextFourteenSix_5,
       ElmTextDersFourteen.elmTextFourteenSix_6,
+      ElmTextDersFourteen.elmTextFourteenSix_7,
     ],
     ayahs: [
       ElmTextDersFourteen.ayahHadithFourteenSix_1,
@@ -111,33 +104,29 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       ElmTextDersFourteen.ayahHadithFourteenSix_3,
       ElmTextDersFourteen.ayahHadithFourteenSix_4,
       ElmTextDersFourteen.ayahHadithFourteenSix_5,
+      ElmTextDersFourteen.ayahHadithFourteenSix_6,
     ],
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
-      //
+      // 2
       EnOrder.texts,
       EnOrder.ayahs,
-      //
+      // 3
       EnOrder.texts,
       EnOrder.ayahs,
-      //
+      // 4
       EnOrder.texts,
       EnOrder.ayahs,
-      //
+      //5
       EnOrder.texts,
       EnOrder.ayahs,
-      //
+      //6
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 7
       EnOrder.texts,
     ],
-    // order: ''',
-    //  text,ayahs,
-    //  text,ayahs,
-    //  text,ayahs,
-    //  text,ayahs,
-    //  text,ayahs,
-    //  text,
-    // ''',
   ),
 
   // page 7
@@ -166,11 +155,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts
     ],
-    // order: ''',
-    //  ayahs,text
-    //  ayahs,subtitles,text
-    //  ayahs,text
-    // ''',
   ),
 
   // page 8
@@ -187,10 +171,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    //  text,ayahs,
-    //  text,
-    // ''',
   ),
 
   // page 9
@@ -209,10 +189,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    // titles,ayahs,
-    //  text,
-    // ''',
   ),
   // page 10
   ElmModelNewOrder(
@@ -242,12 +218,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.texts,
       //
     ],
-    // order: ''',
-    //  ayahs,text
-    //  ayahs,text
-    //  ayahs,text
-    //  ayahs,text
-    // ''',
   ),
 
   // page 11
@@ -262,9 +232,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    //  ayahs,text
-    // ''',
   ),
   // page 12
   ElmModelNewOrder(
@@ -278,8 +245,8 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
     ],
-    // order: 'titles,texts',
   ),
+
   // page 13
   ElmModelNewOrder(
     texts: [
@@ -288,7 +255,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
   // page 14
   ElmModelNewOrder(
@@ -298,8 +264,10 @@ List<ElmModelNewOrder> elmList14NewOrder = [
     texts: [
       ElmTextDersFourteen.elmTextFourteenFourteen_1,
     ],
-    order: [EnOrder.ayahs, EnOrder.texts],
-    // order: 'ayahs,texts',
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
   ),
   // page 15
   ElmModelNewOrder(
@@ -317,10 +285,6 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    //  ayahs,text
-    //  ayahs,text
-    // ''',
   ),
   // page 16
   ElmModelNewOrder(
@@ -334,6 +298,5 @@ List<ElmModelNewOrder> elmList14NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: 'ayahs,texts',
   ),
 ];
