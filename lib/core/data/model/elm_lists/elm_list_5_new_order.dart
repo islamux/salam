@@ -1,4 +1,3 @@
-// TextDersFive
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_five.dart';
@@ -22,7 +21,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       EnOrder.texts,
       EnOrder.footer,
     ],
-    // 'titles,ayahs,texts,footer',
   ),
 
 //  page 2
@@ -39,7 +37,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'ayahs,texts,ayahs',
   ),
 
 //  page 3
@@ -56,7 +53,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'texts,ayahs,texts',
   ),
 
 //  page 4
@@ -67,7 +63,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // 'texts',
   ),
 
 //  page 5
@@ -84,7 +79,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // 'texts,ayahs,texts',
   ),
 
 //  page 6
@@ -95,7 +89,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // 'texts',
   ),
 
 //  page 7
@@ -106,7 +99,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // 'texts',
   ),
 
 //  page 8
@@ -117,7 +109,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // 'texts',
   ),
 
 //  page 9
@@ -132,7 +123,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // 'texts,ayahs',
   ),
 
 //  page 10
@@ -140,7 +130,6 @@ List<ElmModelNewOrder> elmList5NewOrder = [
     texts: [
       ElmTextDersFive.elmTextFiveTen_1,
       ElmTextDersFive.elmTextFiveTen_2,
-      ElmTextDersFive.elmTextFiveTen_3,
     ],
     ayahs: [
       ElmTextDersFive.ayahHadithFiveTen_1,
@@ -152,62 +141,43 @@ List<ElmModelNewOrder> elmList5NewOrder = [
       //
       EnOrder.texts,
       EnOrder.ayahs,
-      //
-      EnOrder.texts,
     ],
-    // '''
-    // texts,ayahs,
-    // texts,ayahs,
-    // texts,
-    // ''',
   ),
 
 //  page 11
   ElmModelNewOrder(
     texts: [
       ElmTextDersFive.elmTextFiveEleven_1,
+      ElmTextDersFive.elmTextFiveEleven_2,
+    ],
+    ayahs: [
+      ElmTextDersFive.ayahHadithFiveEleven_1,
     ],
     order: [
       EnOrder.texts,
     ],
-    // 'texts ',
   ),
 
 //  page 12
   ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersFive.subtitleFiveTwelve_1,
+    ],
     texts: [
       ElmTextDersFive.elmTextFiveTwelve_1,
-    ],
-    order: [
-      EnOrder.texts,
-    ],
-    // 'texts ',
-  ),
-
-//  page 13
-  ElmModelNewOrder(
-    titles: [
-      ElmTextDersFive.titleFiveThirteen,
+      ElmTextDersFive.elmTextFiveTwelve_2,
     ],
     ayahs: [
-      ElmTextDersFive.ayahHadithFiveThirteen_1,
-      ElmTextDersFive.ayahHadithFiveThirteen_2,
-    ],
-    texts: [
-      ElmTextDersFive.elmTextFiveThirteen_1,
-      ElmTextDersFive.elmTextFiveThirteen_2,
+      ElmTextDersFive.ayahHadithFiveTwelve_1,
+      ElmTextDersFive.ayahHadithFiveTwelve_2,
     ],
     order: [
-      EnOrder.titles,
+      EnOrder.subtitles,
       EnOrder.ayahs,
       EnOrder.texts,
+      //
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-//     '''
-//     titles,ayahs,texts,
-//     ayahs,texts,
-
-//  ''',
   ),
 ];
