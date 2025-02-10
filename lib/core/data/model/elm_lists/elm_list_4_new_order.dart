@@ -19,10 +19,8 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-//     order: '''
-//     titles,texts,ayahs
-//  ''',
   ),
+
   // page 2
   ElmModelNewOrder(
     texts: [
@@ -31,8 +29,8 @@ List<ElmModelNewOrder> elmList4NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: '''texts''',
   ),
+
   // page 3
   ElmModelNewOrder(
     texts: [
@@ -41,7 +39,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: '''texts ''',
   ),
   // page 4
   ElmModelNewOrder(
@@ -51,23 +48,26 @@ List<ElmModelNewOrder> elmList4NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
   // page 5
   ElmModelNewOrder(
     texts: [
       ElmTextDersFour.elmTextFourFive_1,
+      ElmTextDersFour.elmTextFourFive_2,
     ],
     ayahs: [
       ElmTextDersFour.ayahHadithFourFive_1,
+      ElmTextDersFour.ayahHadithFourFive_2,
     ],
     footer: ElmTextDersFour.footerFourFive,
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
       EnOrder.footer,
     ],
-    // order: 'texts,ayahs,footer',
   ),
   // page 6
   ElmModelNewOrder(
@@ -79,7 +79,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // order: 'subtitles,texts',
   ),
   // page 7
   ElmModelNewOrder(
@@ -89,7 +88,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
   // page 8
   ElmModelNewOrder(
@@ -105,7 +103,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: 'texts,ayahs,texts',
   ),
   // page 9
   ElmModelNewOrder(
@@ -119,7 +116,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: 'texts,ayahs',
   ),
   // page 10
   ElmModelNewOrder(
@@ -135,6 +131,5 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: 'titles,texts,ayahs',
   ),
 ];
