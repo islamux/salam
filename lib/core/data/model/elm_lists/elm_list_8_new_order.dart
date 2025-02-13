@@ -19,7 +19,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-//    order: 'titles,texts,ayahs',
   ),
   // 2
   ElmModelNewOrder(
@@ -35,10 +34,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: '''
-    //   texts,ayahs,
-    //   texts
-    //   ''',
   ),
   // 3
   ElmModelNewOrder(
@@ -52,7 +47,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: 'texts,ayahs',
   ),
   // 4
   ElmModelNewOrder(
@@ -68,10 +62,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: '''
-    // ayahs,texts,
-    // ayahs,
-    // ''',
   ),
 
   // 5
@@ -86,7 +76,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: 'texts,ayahs',
   ),
 
   // 6
@@ -101,7 +90,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
-    // order: 'subtitles,texts',
   ),
   // 7
   ElmModelNewOrder(
@@ -113,7 +101,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.texts,
       EnOrder.footer,
     ],
-    // order: 'texts,footer',
   ),
 
   // 8
@@ -162,11 +149,6 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    //  order: ''',
-
-    //   ayahs,texts,
-    //   ayahs,texts,
-    // '''
   ),
 
   // 10
@@ -186,9 +168,5 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    //  order: ''',
-    //   ayahs,texts,
-    //   ayahs,texts,
-    //   '''),
   ),
 ];
