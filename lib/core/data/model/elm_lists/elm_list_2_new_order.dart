@@ -331,4 +331,87 @@ List<ElmModelNewOrder> elmList2NewOrder = [
       EnOrder.ayahs,
     ],
   ),
+
+  // page 18
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwo.subtitleDersEighteen_1,
+      ElmTextDersTwo.subtitleDersEighteen_2,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextDersEighteen_1,
+      ElmTextDersTwo.elmTextDersEighteen_2,
+      ElmTextDersTwo.elmTextDersEighteen_3,
+    ],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithEighteen_1,
+      ElmTextDersTwo.ayahHadithEighteen_2,
+      ElmTextDersTwo.ayahHadithEighteen_3,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs
+    ],
+  ),
+
+  // page 19
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwo.subtitleDersNineteen_1,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextDersNineteen_1,
+      ElmTextDersTwo.elmTextDersNineteen_2,
+      ElmTextDersTwo.elmTextDersNineteen_3,
+      ElmTextDersTwo.elmTextDersNineteen_4,
+      ElmTextDersTwo.elmTextDersNineteen_5,
+      ElmTextDersTwo.elmTextDersNineteen_6,
+      ElmTextDersTwo.elmTextDersNineteen_7,
+      ElmTextDersTwo.elmTextDersNineteen_8,
+    ],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithNineteen_1,
+      ElmTextDersTwo.ayahHadithNineteen_2,
+      ElmTextDersTwo.ayahHadithNineteen_3,
+      ElmTextDersTwo.ayahHadithNineteen_4,
+      ElmTextDersTwo.ayahHadithNineteen_5,
+      ElmTextDersTwo.ayahHadithNineteen_6,
+      ElmTextDersTwo.ayahHadithNineteen_7,
+      ElmTextDersTwo.ayahHadithNineteen_8,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 2
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 3
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      // 4
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 5
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 6
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 7
+      EnOrder.texts,
+      EnOrder.ayahs,
+      // 8
+      EnOrder.texts,
+      EnOrder.ayahs
+    ],
+  ),
 ];
