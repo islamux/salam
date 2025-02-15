@@ -39,9 +39,6 @@ class ElmTextDersEighteen {
  
   صدق الله العظيم القائل ايضا 
   
-""";
-
-  static const String ayahHadithEighteenThree_2 = """
  إن الذين كفرو ينفقون اموالهم ليصدوا عن سبيل الله فسينفقونها ثم تكون عليهم حسره ثم يغلبون
 
  """;
