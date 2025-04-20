@@ -197,4 +197,49 @@ List<ElmModelNewOrder> elmList18NewOrder = [
       EnOrder.texts,
     ],
   ),
+  // from elm_text_eighteen.dart
+  // page 14
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.titleEighteenFourteen_1,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahHadithEighteenFourteen_1,
+      ElmTextDersEighteen.ayahHadithEighteenFourteen_2,
+    ],
+    texts: [
+      ElmTextDersEighteen.elmTextEighteenFourteen_1,
+      ElmTextDersEighteen.elmTextEighteenFourteen_2,
+      ElmTextDersEighteen.elmTextEighteenFourteen_3,
+    ],
+    subtitles: [
+      ElmTextDersEighteen.subtitleEighteenFourteen_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+
+  // 15
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.elmTextEighteenFifteen_1,
+      ElmTextDersEighteen.elmTextEighteenFifteen_2,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahHadithEighteenFifteen_1,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
 ];
