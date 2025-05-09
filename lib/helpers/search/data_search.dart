@@ -136,3 +136,4 @@ class DataSearch extends SearchDelegate {
     return const Center(child: Text("ابحث عن المحتوى المطلوب"));
   }
 }
+
