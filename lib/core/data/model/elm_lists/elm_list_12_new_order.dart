@@ -336,4 +336,154 @@ List<ElmModelNewOrder> elmList12NewOrder = [
       EnOrder.texts,
     ],
   ),
+
+  //using copilot gpt4.1
+
+  // 19
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwelve.titleTwelveNineteen_1,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_1,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_2,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_2,
+      ElmTextDersTwelve.subtitleTwelveNineteen_3,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_3,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_4,
+      ElmTextDersTwelve.subtitleTwelveNineteen_5,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_4,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_6,
+    ],
+    ayahs: [
+      ElmTextDersTwelve.ayahHadithTwelveNineteen_1,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_5,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwelve.ayahHadithTwelveNineteen_2,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_6,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_7,
+    ],
+    ayahs: [
+      ElmTextDersTwelve.ayahHadithTwelveNineteen_3,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_7,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwelve.ayahHadithTwelveNineteen_4,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_8,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_8,
+    ],
+    ayahs: [
+      ElmTextDersTwelve.ayahHadithTwelveNineteen_5,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersTwelve.subtitleTwelveNineteen_9,
+    ],
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_9,
+    ],
+    ayahs: [
+      ElmTextDersTwelve.ayahHadithTwelveNineteen_6,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersTwelve.elmTextTwelveNineteen_10,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+// ...existing code...
 ];

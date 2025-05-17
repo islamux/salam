@@ -105,5 +105,114 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-  )
+  ),
+  // ...existing code...
+
+  // page 7
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_1,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_2,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_2,
+    ],
+    ayahs: [
+      ElmTextDersThree.ayahHadithThreeSeven_1,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_3,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_3,
+    ],
+    ayahs: [
+      ElmTextDersThree.ayahHadithThreeSeven_2,
+      ElmTextDersThree.ayahHadithThreeSeven_3,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.ayahs,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_4,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_4,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_5,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_5,
+      ElmTextDersThree.elmTextThreeSeven_6,
+    ],
+    ayahs: [
+      ElmTextDersThree.ayahHadithThreeSeven_4,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_6,
+    ],
+    ayahs: [
+      ElmTextDersThree.ayahHadithThreeSeven_5,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_7,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    subtitles: [
+      ElmTextDersThree.subtitleThreeSeven_7,
+    ],
+    texts: [
+      ElmTextDersThree.elmTextThreeSeven_8,
+    ],
+    order: [
+      EnOrder.subtitles,
+      EnOrder.texts,
+    ],
+  ),
+
+// ...existing code...
 ];
