@@ -38,6 +38,7 @@ class ElmTextDersFourteen {
 """;
   static const String elmTextFourteenThree_1 = """
 اقترن العمل الصالح مع الإيمان بمئتي آية ، ولا قيمة للإيمان إطلاقاً من دون عمل ، فدائماً يجب أن تفحص عملك
+
 كيف ألقى الله؟
  هل بكسبك شيئ من الحرام ؟
   هل فيه إيهام للناس من أجل أبتزاز أموالهم ؟ 
@@ -97,39 +98,50 @@ class ElmTextDersFourteen {
 """;
 // page 6
   static const String elmTextFourteenSix_1 = """
-وأن الله عزيز ( فبعزتك ) 
-وأن الله رب
+وأن الله عزيز
 """;
   static const String ayahHadithFourteenSix_1 = """
+ ( فبعزتك ) 
+ """;
+  // 2
+  static const String elmTextFourteenSix_2 = """
+وأن الله رب
+""";
+  static const String ayahHadithFourteenSix_2 = """
  ( أَنظِرۡنِیۤ إِلَىٰ یَوۡمِ یُبۡعَثُونَ ۝١٤ ) 
 الأعراف 14 
 """;
-  static const String elmTextFourteenSix_2 = """
+// 3
+  static const String elmTextFourteenSix_3 = """
 إذاً هذه المعرفة اللتي لا توصل إلى طاعة هي معرفة إبليسية لا قيمة لها  
 مقياس معرفتك التي تحملك على طاعة الله ، هذا مقياس المعرفة 
 """;
-  static const String ayahHadithFourteenSix_2 = """
+  static const String ayahHadithFourteenSix_3 = """
 ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ ) 
 """;
-  static const String elmTextFourteenSix_3 = """
+// 4
+  static const String elmTextFourteenSix_4 = """
 :الله جل جلاله يُخاطب عامة الناس بأصول الدين
 """;
-  static const String ayahHadithFourteenSix_3 = """
+  static const String ayahHadithFourteenSix_4 = """
 ( یَـٰۤأَیُّهَا ٱلنَّاسُ ٱعۡبُدُوا۟ رَبَّكُمُ ) 
 """;
-  static const String elmTextFourteenSix_4 = """
+// 5
+  static const String elmTextFourteenSix_5 = """
 ويُخاطب المؤمنين بفروع الدين ، ذلك أن بين المؤمن وربه عقداً إيمانياً ، أي ياأيها الذي عرفتني ، وياأيها الذي أمنت بعدلي ، وبقدرتي ، وبمنهجي ، وبأن الطريق التي رسمتها لك تُفضي إلى جنة عرضها السماوات والأرض ، وكل المعاني الكبرى التي جاء بها الدين منطوية في قوله تعالى
 """;
-  static const String ayahHadithFourteenSix_4 = """
+  static const String ayahHadithFourteenSix_5 = """
 ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ )
 """;
-  static const String elmTextFourteenSix_5 = """
-واللذي لا يتأثر حينما يقرأ اي أية تبدأ بقوله
+// 6
+  static const String elmTextFourteenSix_6 = """
+والذي لا يتأثر حينما يقرأ اي أية تبدأ بقوله
 """;
-  static const String ayahHadithFourteenSix_5 = """
+  static const String ayahHadithFourteenSix_6 = """
  ( یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ )
 """;
-  static const String elmTextFourteenSix_6 = """
+// 7
+  static const String elmTextFourteenSix_7 = """
   ولا يرى نفسه معنياً بها ، ففي إيمانه خلل خطير
 فالمؤمن الصادق الحق هو اللذي إذا قرأ مثل هذه الأية رأى نفسه مخاطباً بالقرآن الكريم
   """;
@@ -182,11 +194,11 @@ class ElmTextDersFourteen {
   static const String titleFourteenNine_1 = """
 :عتاب رقيق
 """;
-  static const String ayahHadithFourteenNine_1 = """
- أَلَمۡ یَأۡنِ لِلَّذِینَ ءَامَنُوۤا۟ أَن تَخۡشَعَ قُلُوبُهُمۡ لِذِكۡرِ ٱللَّهِ وَمَا نَزَلَ مِنَ ٱلۡحَقِّ 
-الحديد 16 
 
+  static const String ayahHadithFourteenNine_1 = """
+ ألم يأن للذين آمنوا أن تخشع قلوبهم لذكر الله وما نزل من الحق  
 """;
+
   static const String elmTextFourteenNine_1 = """
 يُخاطب ربنا سبحانه وتعالى عقل الإنسان في كثير من الأحيان ، كما أنه يُخاطب قلبه أحياناً ، وفي هذه الآيه خطاب لقلبه ، فالله سُبحانه وتعالى يُعاتب هذا الانسان المقصر الذي لم يخشع قلبه لذكر الله ، ولم يستجب لأمر الله تعالى ، ولم يلتزم منهج الله عز وجل 
 فيا ايُها الإنسان إلى متى أنت غافل؟
@@ -201,7 +213,8 @@ class ElmTextDersFourteen {
 لو كان حبك صادقاً لأطعته
 إن المحب لمن يحب مطيع
 
-  """;
+""";
+
 // page 10
   static const String ayahHadithFourteenTen_1 = """
 ( ألم يأن )

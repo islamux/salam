@@ -49,3 +49,4 @@ app.*.map.json
 /windows
 todo.txt
 women.txt
+/lib/core/data/static/newtexts

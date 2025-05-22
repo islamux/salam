@@ -3,7 +3,8 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_6_cubit.dart';
 import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm6.dart';
+import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.dart'; // Changed
+import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -74,11 +75,15 @@ class Elm6Page extends StatelessWidget {
               ],
             ),
             body: SafeArea(
-              child: GestureDetector(
+              child: GestureDetector( // GestureDetector can likely be removed if not needed for other purposes
                 onTap: () {
-                  Feedback.forTap(context); // Add feedback when tapping
+                  Feedback.forTap(context);
                 },
-                child: const CustomTextSliderElm6(), // Custom text slider
+                child: GenericCustomTextSlider( // Changed
+                  cubit: context.read<Elm6Cubit>(),
+                  dataList: elmList6NewOrder,
+                  backgroundImagePath: ImageLink.image12,
+                ),
               ),
             ),
           );

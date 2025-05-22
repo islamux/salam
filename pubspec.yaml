@@ -13,26 +13,25 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  get: ^4.6.5
   hex: ^0.2.0
   # save data setting  
   shared_preferences: ^2.0.18
-  intl: ^0.19.0
+  intl: ^0.20.1
   # flutter_share: ^2.0.0 ** This plugin was discontinued after the flutter official one add support to files ** #
   share_plus: ^10.0.2
   url_launcher: ^6.1.10
-  flutter_launcher_icons: ^0.13.1 # change icons
+  flutter_launcher_icons: ^0.14.2 # change icons
   change_app_package_name: ^1.1.0 # remove later
-  flutter_bloc: ^8.1.6
+  #flutter_bloc: ^8.1.6
+  flutter_bloc: ^9.0.0
   # ui 
-  flutter_native_splash: ^2.4.2
   flutter_screenutil: ^5.9.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^4.0.0
+  flutter_lints: ^5.0.0
 
   #uses-material-design: true
 

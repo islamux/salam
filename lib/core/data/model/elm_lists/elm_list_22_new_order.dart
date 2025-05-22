@@ -5,19 +5,21 @@ import 'package:elm/core/data/static/text/elm_text_ders_twenty_two.dart';
 List<ElmModelNewOrder> elmList22NewOrder = [
   // PageOne
   ElmModelNewOrder(
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageOne_1,
+    ],
     texts: [
       ElmTextTwentyTwo.elmTextTwentyTwoPageOne_1,
       ElmTextTwentyTwo.elmTextTwentyTwoPageOne_2,
     ],
     ayahs: [
-      ElmTextTwentyTwo.elmTextTwentyTwoPageTwo_1,
-      ElmTextTwentyTwo.elmTextTwentyTwoPageTwo_2,
+      ElmTextTwentyTwo.ayahHadithTwentyTwoPageOne_1,
     ],
     order: [
-      EnOrder.ayahs,
+      EnOrder.subtitles,
       EnOrder.texts,
-      //
       EnOrder.ayahs,
+      //
       EnOrder.texts,
     ],
   ),
@@ -139,14 +141,14 @@ List<ElmModelNewOrder> elmList22NewOrder = [
 
   // PageSeven
   ElmModelNewOrder(
-    texts: [
-      ElmTextTwentyTwo.titleTwentyTwoPageSeven_1,
+    subtitles: [
+      ElmTextTwentyTwo.subtitleTwentyTwoPageSeven_1,
     ],
-    ayahs: [
+    texts: [
       ElmTextTwentyTwo.elmTextTwentyTwoPageSeven_1,
     ],
     order: [
-      EnOrder.titles,
+      EnOrder.subtitles,
       EnOrder.texts,
     ],
   ),

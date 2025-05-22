@@ -24,10 +24,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       //
       EnOrder.texts,
     ],
-    // order: ''',
-    // titles,texts,ayahs,
-    // texts,
-    // ''',
   ),
   // page 2
   ElmModelNewOrder(
@@ -45,9 +41,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: ''',
-    // titles,texts,ayahs,
-    // ''',
   ),
   // page 3
   ElmModelNewOrder(
@@ -63,10 +56,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    //  texts,ayahs,
-    //  texts,
-    // ''',
   ),
   // page 4
   ElmModelNewOrder(
@@ -76,7 +65,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
   // page 5
   ElmModelNewOrder(
@@ -86,7 +74,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
 
   // page 6
@@ -101,7 +88,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: 'ayahs,texts',
   ),
 
   // page 7
@@ -112,7 +98,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
 
   // page 8
@@ -127,8 +112,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-
-    // order: 'ayahs,texts',
   ),
 
   // page 9
@@ -150,10 +133,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       //
       EnOrder.texts,
     ],
-    // order: ''',
-    // ayahs,texts'subtitles,
-    // texts
-    // ''',
   ),
   // page 10,
   ElmModelNewOrder(
@@ -167,7 +146,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
     ],
-    // order: 'titles,texts',
   ),
   // page 11,
   ElmModelNewOrder(
@@ -191,11 +169,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.texts,
       EnOrder.footer,
     ],
-    // order: ''',
-    //  texts,ayahs,
-    //  texts,ayahs,
-    //  texts,footer,
-    // ''',
   ),
   // page 12,
   ElmModelNewOrder(
@@ -209,9 +182,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
     ],
-    // order: ''',
-    //  titles,texts,
-    // ''',
   ),
 
   // page 13,
@@ -244,11 +214,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: ''',
-    // subtitles,texts,ayahs'
-    // subtitles,texts,ayahs'
-    // subtitles,texts,ayahs'
-    // ''',
   ),
 
   // page 14,
@@ -282,11 +247,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       //
       EnOrder.texts,
     ],
-    // order: ''',
-    // titles,texts,ayahs,
-    // texts,subtitles,
-    // texts,ayahs
-    // ''',
   ),
 
   // page 15,
@@ -306,7 +266,7 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     subtitles: [
       ElmTextDersEleven.subtitleElevenFifteen_1,
     ],
-    footer: ElmTextDersEleven.footerElevenFifteen_3,
+    footer: ElmTextDersEleven.footerElevenFifteen_1,
     order: [
       EnOrder.titles,
       EnOrder.ayahs,
@@ -319,11 +279,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.texts,
       EnOrder.footer,
     ],
-    // order: ''',
-    // titles,ayahs,texts
-    // ayahs,texts,subtitles,
-    // texts,footer
-    // ''',
   ),
   // page 16,
   ElmModelNewOrder(
@@ -350,10 +305,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.texts,
       EnOrder.footer,
     ],
-    // order: ''',
-    // titles,ayahs,subtitles,
-    // ayahs,texts,footer
-    // ''',
   ),
   // page 17,
   ElmModelNewOrder(
@@ -363,7 +314,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
   // page 18,
   ElmModelNewOrder(
@@ -381,7 +331,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: 'titles,ayahs,texts',
   ),
   // page 19,
   ElmModelNewOrder(
@@ -395,7 +344,6 @@ List<ElmModelNewOrder> elmList11NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
     ],
-    // order: 'titles,texts',
   ),
   // page 20,
   ElmModelNewOrder(
@@ -405,6 +353,5 @@ List<ElmModelNewOrder> elmList11NewOrder = [
     order: [
       EnOrder.texts,
     ],
-    // order: 'texts',
   ),
 ];

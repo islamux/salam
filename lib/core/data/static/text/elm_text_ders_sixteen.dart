@@ -64,7 +64,7 @@ class ElmTextDebsSixteen {
  يقول الله عز وجل
 """;
   static const String ayahHadithSixteenFive_1 = """
-مَنْ عَمِلَ صَالِحًا مِنْ ذَكَرٍ أَوْ أُنْثَى وَهُوَ مُؤْمِنٌ فَلَنُحْيِيَنَّهُ حَيَاةً طَيِّبَةً وَلَنَجْزِيَنَّهُمْ أَجْرَهُمْ بِأَحْسَنِ مَا كَانُوا يَعْمَلُونَ 
+مَنْ عَمِلَ صَالِحًا مِنْ ذَكَرٍ أَوْ أُنْثَى وَهُوَ مُؤْمِنٌ فَلَنُحْيِيَنَّهُ حَيَاةً طَيِّبَةً  
 [النحل: 97]
 """;
 // page 6
@@ -241,136 +241,134 @@ class ElmTextDebsSixteen {
 ----
 """;
 
+  static const String ayahHadithSixteenTwenty_1 = """
+ ( وقرن في بيوتكن ) 
+""";
+
   static const String elmTextDersSixteenTwenty_1 = """
 قد يقول قائل يا أخي هذه الآية ليست للنساء عامة ، بل هذه لنساء النبي فقط
 نقول له: إذا وجه الأمر إلى نساء النبي وهن في أكمل حال ، وهن نساء النبي ، وهن العفيفات المُحصنات الطاهرات التائبات العابدات السائحات ، فمن باب أولى أن يوجه الأمر بالتبعية إلى نساء المؤمنين
 هناك قاعدة أصولية هذه القاعدة الأصولية عبر عنها العلماء بكلمة من باب أولى
 """;
 
-// page 21
-  static const String titleSixteenTwentyOne = """
-  وففة 2
-  ------
-  """;
-
-  static const String ayahHadithSixteenTwentyOne_1 = """
+  static const String ayahHadithSixteenTwenty_2 = """
  ( وقرن في بيوتكن ) 
 """;
-  static const String elmTextDersSixteenTwentyOne_2 = """
+  static const String elmTextDersSixteenTwenty_2 = """
 فلأن يكون هذا الأمر موجهاً إلى عامة النساء من باب أولى
 """;
 
-// page 22
-  static const String titleSixteenTwentyTwo = """
-  3 وقفة
+// page 21
+  static const String titleSixteenTwentyOne = """
+   وقفة
   ---
   """;
-  static const String subtitleSixteenTwentyTwo_1 = """
+  static const String subtitleSixteenTwentyOne_1 = """
 ( فجائته إحداهما تمشي على استحياء ) 
 """;
-  static const String elmTextDersSixteenTwentyTwo_1 = """
+  static const String elmTextDersSixteenTwentyOne_1 = """
 اجمل مافي المرأة حياؤها ، وحينما تفقد حياؤها تفقد أنوثتها ، وتصبح مسترجلة ، علامة عفة المرأة حياؤها
 """;
-  static const String ayahHadithSixteenTwentyTwo_1 = """
+  static const String ayahHadithSixteenTwentyOne_1 = """
 ( قالت ان ابي يدعوك ليجزيك أجر ماسقيت لنا ) 
 """;
-  static const String elmTextDersSixteenTwentyTwo_2 = """
+  static const String elmTextDersSixteenTwentyOne_2 = """
 خاطبته في أبلغ قول ، بكلام لا زيادة فيه ، لا يحتمل جواباً
 لا حاجة بعد الجواب أبداً ، انتهى الأمر ، 
 كلام لا جواب له ، لا زيادة ، ولا تكسر ، ولا استعطاف ، ولا لين في الكلام ، 
 لا يحق لامرأة أن تكون في كلامها لينة إلا مع محارمها ، لأن لين كلام المرأة يدعو إلى الشك في أخلاقها ، تخاطب بائعاً فتقول له : نحن جيرانك ، نحن كذا وكذا ، هذا هو الفسقُ بعينه ، إذا اضطرت المرأة أن تخاطب أجنبياً فيجب أن تخاطبه بأوجز كلام ، وبأدق عبارة ، بكلام لا يُشم منه رائحة إطلاقاً
 """;
 
-// page 23
-  static const String titleSixteenTwentyThree = """
- وقفة 4
+// page 22
+  static const String titleSixteenTwentyTwo = """
+ وقفة 
  ------ 
   """;
-  static const String ayahHadithSixteenTwentyThree_1 = """
+  static const String ayahHadithSixteenTwentyTwo_1 = """
 والمؤمنون والمؤمنات بعضهم أولياء بعض
 """;
-  static const String elmTextDersSixteenTwentyThree_1 = """
+  static const String elmTextDersSixteenTwentyTwo_1 = """
 المؤمنون والمؤمنات بالله ورسوله بعضهم أنصار بعض ، يأمرون الناس بالإيمان والعمل الصالح ، وينهونهم عن الكفر والمعاصي ، ويؤدون الصلاة ، ويعطون الزكاة ، ويطيعون الله ورسوله ، وينتهون عما نهوا عنه
 مجتمع التناصح ، مجتمع التعاون ، مجتمع التناصر ، مجتمع التواضع ، والحقيقة المؤلمة أن الطرف الآخر الغرب لا يقنع بهذا الدين من خلال الكتب والمحاضرات ، يقنع بهذا الدين من خلال مجتمع إسلامي يطبق هذا الدين
 كما قيل : القرآن كون ناطق ، والكون قرآن صامت ، والنبي قرآن يمشي ، والآن الذي يؤثر في الناس أن يرو بأم أعينهم إنساناً مسلماً صادقاً أميناً
 """;
 
-// page 24
-  static const String titleSixteenTwentyFour = """
- وقفة 5
+// page 23
+  static const String titleSixteenTwentyThree = """
+ وقفة 
  ------ 
   """;
-  static const String subtitleSixteenTwentyFour_1 = """
+  static const String subtitleSixteenTwentyThree_1 = """
   الأدلة على مساواة المرأة للرجل في التشريف والتكريم
 """;
-  static const String elmTextDersSixteenTwentyFour_1 = """
+  static const String elmTextDersSixteenTwentyThree_1 = """
 الآية الأولى  
 """;
-  static const String ayahHadithSixteenTwentyFour_1 = """
+  static const String ayahHadithSixteenTwentyThree_1 = """
 فاستجاب لهم ربهم اني لا أضيع عمل عامل منكم من ذكر أو أنثى بعضكم من بعض 
 """;
-  static const String elmTextDersSixteenTwentyFour_2 = """
+  static const String elmTextDersSixteenTwentyThree_2 = """
 الآية الثانية  
 """;
-  static const String ayahHadithSixteenTwentyFour_2 = """
+  static const String ayahHadithSixteenTwentyThree_2 = """
 من عمل صالحاً من ذكر أو أنثى وهو مؤمن فلنحيينه حياة طيبة
 """;
 
-// paage 25
-  static const String subtitleSixteenTwentyFive_1 = """
+// paage 24
+  static const String subtitleSixteenTwentyFour_1 = """
 المرأة الصالحة افضل من الف رجل عاص
 """;
-  static const String elmTextDersSixteenTwentyFive_1 = """
+  static const String elmTextDersSixteenTwentyFour_1 = """
 المرأة مساوية تماماً للرجل من حيث التكليف ، ولكن إذا وضعت امرأة مؤمنة مطيعة لله ورسوله وزوجها ، في كفة ، ووضع مئة الف رجل عاص لله عزوجل في كفة ، هذه المرأة هي عند الله وعند الناس أرجح من كل هؤلاء الرجال
 والله أن كل امرأة صالحة وهبت حياتها لزوجها وأولادها ، وكانت قدوة لبناتها ، وكانت رحمة مهداة لأسرتها ، تفضل عندالله مائة ألف ألف رجل تائه شارد ضال مُضل
 """;
 
-  static const String subtitleSixteenTwentyFive_2 = """
+  static const String subtitleSixteenTwentyFour_2 = """
 دور المرأة من خلال السُنة النبوية المطهرة  
 """;
-  static const String elmTextDersSixteenTwentyFive_2 = """
+  static const String elmTextDersSixteenTwentyFour_2 = """
 الحديث الأول  
 """;
-  static const String ayahHadithSixteenTwentyFive_1 = """
+  static const String ayahHadithSixteenTwentyFour_1 = """
  إذا صلت المرأة خمسها ، وصامت شهرها ، وحفظت فرجها ، وأطاعت زوجها قيل لها : ادخلي الجنة من أي أبواب الجنة شئت 
 """;
-  static const String elmTextDersSixteenTwentyFive_3 = """
+  static const String elmTextDersSixteenTwentyFour_3 = """
 الحديث الثاني  
 """;
-  static const String ayahHadithSixteenTwentyFive_2 = """
+  static const String ayahHadithSixteenTwentyFour_2 = """
  لو كنت آمراً أحداً أن يسجد لأمرت المرأة أن تسجد لزوجها 
 """;
 
-// page 26
-  static const String elmTextDersSixteenTwentySix_1 = """
+// page 25
+  static const String elmTextDersSixteenTwentyFive_1 = """
 الحديث الثالث  
 """;
-  static const String ayahHadithSixteenTwentySix_1 = """
+  static const String ayahHadithSixteenTwentyFive_1 = """
  أيما امرأة قعدت على بيت أولادها فهي معي في الجنة 
 """;
-  static const String elmTextDersSixteenTwentySix_2 = """
+  static const String elmTextDersSixteenTwentyFive_2 = """
 الحديث الرابع  
 """;
-  static const String ayahHadithSixteenTwentySix_2 = """
+  static const String ayahHadithSixteenTwentyFive_2 = """
  أول من يمسك بحلق الجنة أنا _ أي أول إنسان يمسك حلقة باب الجنة ليدخل هو رسول الله صلى الله عليه وسلم _ أول من يمسك بحلق الجنة أنا فإذا امرأة تُنازعني تريد أن تدخل الجنة قبلي _ غير معقول ، من هذه المرأة _ قلت: ياجبريل من هذه المرأة ؟ قال: يارسول الله هي امرأة مات زوجها وترك لها أولاداً فأبت أن تتزوج من أجلهم  
 """;
-  static const String elmTextDersSixteenTwentySix_3 = """
+  static const String elmTextDersSixteenTwentyFive_3 = """
 الحديث الخامس
 """;
-  static const String elmTextDersSixteenTwentySix_4 = """
+  static const String elmTextDersSixteenTwentyFive_4 = """
  وحينما جائت امرأة إلى النبي عليه الصلاة والسلام ، قالت: يارسول الله ذهب الرجال بكل شيئ ، الجهاد لهم ، والاستشهاد لهم ، والجنة لهم ، ماذا بقي لنا نحن ؟ أجاب النبي إجابة شافية
 """;
-  static const String ayahHadithSixteenTwentySix_3 = """
+  static const String ayahHadithSixteenTwentyFive_3 = """
 قال رسول الله صلى الله عليه وسلم *
  انصرفي أيتها المرأة وأعلمي من وراءك من النساء أن حسن تبعل إحداكن لزوجها وطلبها مرضاته واتباعها موافقته يعدل ذلك كله _ يعدل الجهاد في سبيل الله _  
 
 """;
-// page 27
-  static const String titlesSixteenTwentySeven = """
+// page 26
+  static const String titlesSixteenTwentySix = """
 النساء قاعدة البُنيان 
 --------------
   """;
-  static const String elmTextDersSixteenTwentySeven_1 = """
+  static const String elmTextDersSixteenTwentySix_1 = """
 لو تصورنا رجلاً يريد ان يبني برجاً عالياً ، ولو أفترضنا أن هذا البُرج على شارع رئيسي ، لايُتصور أبداً أن يقف احد بسيارته لكي ينظُر إلى المهندسين وهم يعملون تحت في الأساس ، يظل هؤلا المهندسين يعملون ولا يشعر بهم أحداً ، بعد الإنتهاء من بناء البرج ترى الناس يقفون وينضرون لإرتفاعه الشاهق وتصميمه ،
 متى يُذكر هذا المؤسس ؟ عندما تحصُل مصيبة ، ووقع البرج ، يقول لك أين الذي بنى الأساس ، لذلك فالمرأه دورها غير مرئي مثل المهندسين اللذين يصممون الأساس ، مهمتها أساس التربية ، وتربية العقيدة ، فما صلح بيت إلا فيه امرأة صالحة ، وما فسد بيت إلا وفيه امرأة فاسدة ، وإن كان رب البيت نبي
 

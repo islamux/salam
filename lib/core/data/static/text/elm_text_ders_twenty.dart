@@ -63,6 +63,7 @@ class ElmTextTwenty {
   static const String ayahHadithTwentyThree_1 = """
   أفمن أسس بُنيانه 
 """;
+//
   static const String elmTextTwentyThree_2 = """
 أنت لك بناء ، الأسرة لبنة ، العمل لبنة ، علاقتك بذاتك لبنة ، علاقتك بالخالق لبنة ، علاقتك بأهلك ؛ بالوالد ، بالوالدة ، بالإخوة ، بالأخوات ، بالأصهار ، كل موقف ، وكل حركة وكل سكنة تنبع من رؤية أو من قيمة ، 
 فالمؤمن أسس بنيانه على تقوى من الله ورضوان ، إذاً فالله سبحانه وتعالى لا بد من أن يحميه 
@@ -341,11 +342,11 @@ class ElmTextTwenty {
 تقرأ الأوامر 
 تقرأ النواهي 
 تطبق 
+هذا مستوى من التقوى 
+
 """;
   // page 17
   static const String elmTextTwentySeventeen_1 = """
-لا ترضى إلا أن تكون إماماً، والتقوى درجات، التقوى مستويات كبيرة جداً
-هذا مستوى من التقوى 
 أما المستوى الأعلى أن تجتهد في الإستقامة وأن تجتهد في البذل والتضحية حتى تنعقد الصلة مع الله عزوجل، إذا انعقدت هذه الصلة، فمن خلال هذه الصلة يتجلى الله على قلبك بنوره، عندئذ تصبح مستنير القلب 
 فإنها لا تعمى الأبصار ولكن تعمى القلوب التي في الصدور 
 عندئذ ترى في المعصية الوبال، والقطيعة، والدمار، والتأخر، والتدهور، والعقاب
@@ -560,48 +561,56 @@ class ElmTextTwenty {
   """;
 
   // page 29
+  // 0
   static const String elmTextTwentyTwentyNine_1 = """
 الآية الرابعة 
 """;
   static const String ayahHadithTwentyTwentyNine_1 = """
 إن المتقين في جنات وعيون اخذين ما اتاهم ربهم إنهم كانوا قبل ذلك محسنين 
 """;
+// 1
   static const String elmTextTwentyTwentyNine_2 = """
 الآية الخامسة 
 """;
   static const String ayahHadithTwentyTwentyNine_2 = """
    إن المتقين في جنات ونهر 
    """;
+  // 2
   static const String elmTextTwentyTwentyNine_3 = """
 الآية السادسة 
 """;
   static const String ayahHadithTwentyTwentyNine_3 = """
    إن المتقين في جنات ونعيم 
 """;
+// 3
   static const String elmTextTwentyTwentyNine_4 = """
 الآية السابعة 
 """;
   static const String ayahHadithTwentyTwentyNine_4 = """
    إن المتقين في ظلال وعيون 
 """;
+// 4
   static const String elmTextTwentyTwentyNine_5 = """
 الآية الثامنة 
 """;
   static const String ayahHadithTwentyTwentyNine_5 = """
    إن المتقين في جنات وعيون 
 """;
+// 5
   static const String elmTextTwentyTwentyNine_6 = """
 الآية التاسعة 
 """;
   static const String ayahHadithTwentyTwentyNine_6 = """
    إن المتقين في جنات ونعيم 
 """;
+// 6
   static const String elmTextTwentyTwentyNine_7 = """
 الآية الحادية عشرة 
 """;
   static const String ayahHadithTwentyTwentyNine_7 = """
    والعاقبة للمتقين
 """;
+// 7
   static const String elmTextTwentyTwentyNine_8 = """
 الآية الثانية عشرة 
 """;
@@ -663,16 +672,23 @@ class ElmTextTwenty {
   static const String ayahHadithTwentyThirtyThree_1 = """
     ومن يتق الله يجعل له مخرجا 
  """;
+  static const String elmTextTwentyThirtyThree_2 = """
+والآية تشير بشكل أو بأخر إلى أنه قبل أن يخلق الله المخرج لم يكن هناك مخرجاً، يبدو أن الأمر مستعص، الأمر مغلق، الأمر لا يوجد فيه فرج 
+  """;
+
   static const String subtitleTwentyThirtyThree_1 = """
 من يتق الله في الحرام يجعل الله له مخرجاً 
  """;
-  static const String elmTextTwentyThirtyThree_2 = """
+  static const String elmTextTwentyThirtyThree_3 = """
 أحياناً يضعك في ظرف كل أبواب الحلال مغلقة، وكل الأبواب المشروعة مغلقة، وكل الطرق الآمنة مغلقة، وكل الأسباب التي رسمها الله عز وجل مغلقة ثم يفتح الله لك باب الحرام، باب المعصية، باب النفاق، باب الكذب، ويمتحنك، المؤمن يقول: والله لن أعصي الله ما حييت، ولن أتساهل في منهج الله قيد أنملة 
  """;
   static const String subtitleTwentyThirtyThree_2 = """
 من اتقى الله عز وجل جاءه رزق وفير من حيث لا يحتسب 
  """;
-  static const String elmTextTwentyThirtyThree_3 = """
+  static const String ayahHadithTwentyThirtyThree_2 = """
+    ومن يتق الله يجعل له مخرجاً ويرزقه من حيث لا يحتسب 
+  """;
+  static const String elmTextTwentyThirtyThree_4 = """
 فهذه الآية دقيقة، أحياناً تعرض عليك الدنيا من طريق غير مشروع، قد يأتيك رزق وفير من معصية، من عمل مشبوه، من إنجاز عمل لا يرضي الله، من طريقة لا ترضي الله، هذا المال الوفير الذي يأتيك من هذا الطريق لا بركة فيه، وقد يذهب، ويُذهب معه صاحبه، لكنك إذا اتقيت الله عز وجل جاءك رزق وفير من حيث لا تحتسب 
   """;
   // page 34

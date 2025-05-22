@@ -29,11 +29,6 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       //
       EnOrder.texts,
     ],
-//     order: ''',
-//     titles,texts,ayahs,
-//     texts,ayahs,
-//     texts,
-// ''',
   ),
   // 2
   ElmModelNewOrder(
@@ -45,9 +40,6 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    // ayahs,texts,
-    // ''',
   ),
 
   // 3
@@ -71,10 +63,6 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    // titles,ayahs,texts,
-    // ayahs,texts,
-    // ''',
   ),
 
   // 4
@@ -89,9 +77,6 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       EnOrder.ayahs,
       EnOrder.texts,
     ],
-    // order: ''',
-    // ayahs,texts,
-    // ''',
   ),
 
   // 5
@@ -108,9 +93,6 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: ''',
-    // ayahs,texts,ayahs
-    // ''',
   ),
 
   // 6
@@ -125,9 +107,6 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
     ],
-    // order: ''',
-    // texts,ayahs,
-    // ''',
   ),
 
   // 7
@@ -150,10 +129,5 @@ List<ElmModelNewOrder> elmList10NewOrder = [
       //
       EnOrder.texts,
     ],
-    // order: ''',
-    // texts,ayahs,
-    // texts,ayahs,
-    // texts,
-    // ''',
   )
 ];

@@ -4,7 +4,6 @@ import 'package:elm/core/data/static/text/elm_text_ders_final.dart';
 
 // TextDersSeventeen
 List<ElmModelNewOrder> finalListNewOrder = [
-  // From class ElmTextFInal
   // page 1
   ElmModelNewOrder(
     texts: [
@@ -14,9 +13,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
     ayahs: [
       ElmTextFInal.ayahFInalPageOne_1,
     ],
-    // text 0
-    // ayah 0
-    // text 1
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
@@ -39,16 +35,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.subtitleFInalPageTwo_1,
       ElmTextFInal.subtitleFInalPageTwo_2
     ],
-    // ayah 0
-    // text 0
-
-    // ayah 1
-    // subtitle 0
-    // text 1
-    // subtitle 1
-
-    // ayah 2
-
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
@@ -69,18 +55,12 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.textFInalPageThree_2,
       ElmTextFInal.textFInalPageThree_3,
     ],
-    ayahs: [ElmTextFInal.ayahHadithFInalPageThree_1],
+    ayahs: [
+      ElmTextFInal.ayahHadithFInalPageThree_1,
+    ],
     subtitles: [
       ElmTextFInal.subtitleFInalPageThree_1,
     ],
-    // text 0
-    // ayah 0
-
-    // text 1
-    // subtitle 0
-
-    // text 2
-
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
@@ -105,13 +85,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.ayahHadithFInalPageFour_1,
       ElmTextFInal.ayahHadithFInalPageFour_2,
     ],
-    // title
-    // ayah 0
-    // text 0
-
-    // ayah 1
-    // text 1
-
     order: [
       EnOrder.titles,
       EnOrder.ayahs,
@@ -132,12 +105,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.ayahHadithFInalPageFive_1,
       ElmTextFInal.ayahHadithFInalPageFive_2,
     ],
-    // text 0
-    // ayah 0
-
-    // text 1
-    // ayah 1
-
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
@@ -154,21 +121,13 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.textFInalPageSix_1,
       ElmTextFInal.textFInalPageSix_2,
       ElmTextFInal.textFInalPageSix_3,
+      ElmTextFInal.textFInalPageSix_4,
     ],
     ayahs: [
       ElmTextFInal.ayahHadithFInalPageSix_1,
       ElmTextFInal.ayahHadithFInalPageSix_2,
       ElmTextFInal.ayahHadithFInalPageSix_3,
     ],
-    // text 0
-    // ayah 0
-
-    // text 1
-    // ayah 1
-
-    // text 2
-    // ayah 2
-
     order: [
       //
       EnOrder.texts,
@@ -179,14 +138,13 @@ List<ElmModelNewOrder> finalListNewOrder = [
       //
       EnOrder.texts,
       EnOrder.ayahs,
+      //
+      EnOrder.texts,
     ],
   ),
 
   // page 7
   ElmModelNewOrder(
-    // titles: [
-    //   ElmTextFInal.titleFInalPageSeven_1,
-    // ],
     texts: [
       ElmTextFInal.textFInalPageSeven_1,
       ElmTextFInal.textFInalPageSeven_2,
@@ -195,16 +153,7 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.ayahHadithFInalPageSeven_1,
       ElmTextFInal.ayahHadithFInalPageSeven_2,
     ],
-    // title
-    // ayah 0
-    // text 0
-
-    // ayah 1
-    // text 1
-
     order: [
-      // EnOrder.titles,
-      //
       EnOrder.ayahs,
       EnOrder.texts,
       //
@@ -229,84 +178,69 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.textFInalPageEight_4,
       ElmTextFInal.textFInalPageEight_5,
       ElmTextFInal.textFInalPageEight_6,
+      ElmTextFInal.textFInalPageEight_7,
     ],
     subtitles: [
       ElmTextFInal.subtitleFInalPageEight_1,
+      ElmTextFInal.subtitleFInalPageEight_2,
     ],
-    // ayah 0
-    // text 0
-    // subtitle 0
-    // text 1
-
-    // ayah 1
-    // text 2
-
-    // ayah 2
-    // text 3
-
-    // ayah 3
-    // text 4
-
-    // ayah 4
-    // text 5
-
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
       EnOrder.subtitles,
       EnOrder.texts,
-      //
+      // 2
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      // 3
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      // 4
       EnOrder.ayahs,
       EnOrder.texts,
-      //
+      // 5
       EnOrder.ayahs,
+      EnOrder.texts,
+      // 6
+      EnOrder.subtitles,
       EnOrder.texts,
     ],
   ),
 
   // page 9
   ElmModelNewOrder(
+    subtitles: [
+      ElmTextFInal.subtitleFInalPageNine_1,
+    ],
     texts: [
       ElmTextFInal.textFInalPageNine_1,
       ElmTextFInal.textFInalPageNine_2,
       ElmTextFInal.textFInalPageNine_3,
       ElmTextFInal.textFInalPageNine_4,
+      ElmTextFInal.textFInalPageNine_5,
     ],
     ayahs: [
       ElmTextFInal.ayahHadithFInalPageNine_1,
       ElmTextFInal.ayahHadithFInalPageNine_2,
       ElmTextFInal.ayahHadithFInalPageNine_3,
       ElmTextFInal.ayahHadithFInalPageNine_4,
+      ElmTextFInal.ayahHadithFInalPageNine_5,
     ],
-    // text 0
-    // ayah 0
-
-    // text 1
-    // ayah 1
-
-    // text 2
-    // ayah 2
-
-    // text 3
-    // ayah 3
-
     order: [
       //
+      EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
-      //
+      //2
       EnOrder.texts,
       EnOrder.ayahs,
-//
+      //3
       EnOrder.texts,
       EnOrder.ayahs,
-//
+      //4
+      EnOrder.texts,
+      EnOrder.ayahs,
+      //5
       EnOrder.texts,
       EnOrder.ayahs,
     ],
@@ -328,17 +262,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.ayahHadithFInalPageTen_2,
       ElmTextFInal.ayahHdithFInalPageTen_3,
     ],
-    // subtitle 0
-    // text 0
-    // ayah 0
-
-    // subtitle 1
-    // text 1
-    // ayah 1
-
-    // text 2
-    // ayah 2
-
     order: [
       //
       EnOrder.subtitles,
@@ -369,16 +292,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.ayahHadithFInalPageEleven_2,
       ElmTextFInal.ayahHadithFInalPageEleven_3,
     ],
-    // subtitle 0
-    // text 0
-    // ayah 0
-
-    // text 1
-    // ayah 1
-
-    // text 2
-    // ayah 2
-
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
@@ -404,12 +317,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
     ayahs: [
       ElmTextFInal.ayahHadithFInalPageTwelve_1,
     ],
-    // subtitle 0
-    // text 0
-    // ayah 0
-
-    // text 1
-
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
@@ -423,7 +330,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
   ElmModelNewOrder(
     subtitles: [
       ElmTextFInal.subtitleFInalPageThirteen_1,
-      ElmTextFInal.subtitleFInalPageThirteen_2,
     ],
     ayahs: [
       ElmTextFInal.ayahHadithFInalPageThirteen_1,
@@ -431,14 +337,8 @@ List<ElmModelNewOrder> finalListNewOrder = [
     texts: [
       ElmTextFInal.textFInalPageThirteen_1,
     ],
-    // subtitle 0
-    // subtitle 1
-    // ayah 0
-    // text 0
     order: [
       EnOrder.subtitles,
-      EnOrder.subtitles,
-      //
       EnOrder.ayahs,
       EnOrder.texts,
     ],
@@ -457,13 +357,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
       ElmTextFInal.textFInalPageFourteen_3,
       ElmTextFInal.textFInalPageFourteen_5,
     ],
-    // ayah 0
-    // subtitle 0
-    // text 0
-
-    // ayah 1
-    // text 1
-
     order: [
       EnOrder.ayahs,
       EnOrder.subtitles,
@@ -486,12 +379,6 @@ List<ElmModelNewOrder> finalListNewOrder = [
     ayahs: [
       ElmTextFInal.ayahHadithFInalPageFifteen_1,
     ],
-    // subtitle 0
-    // text 0
-    // ayah 0
-
-    // text 1
-
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
@@ -505,6 +392,7 @@ List<ElmModelNewOrder> finalListNewOrder = [
   ElmModelNewOrder(
     subtitles: [
       ElmTextFInal.subtitleFInalPageSixteen_1,
+      ElmTextFInal.subtitleFInalPageSixteen_2,
     ],
     ayahs: [
       ElmTextFInal.ayahHadithFInalPageSixteen_1,
@@ -512,19 +400,16 @@ List<ElmModelNewOrder> finalListNewOrder = [
     ],
     texts: [
       ElmTextFInal.textFInalPageSixteen_1,
+      ElmTextFInal.textFInalPageSixteen_2,
     ],
-    // subtitle 0
-    // ayah 0
-    // text 0
-
-    // ayah 1
-
     order: [
       EnOrder.subtitles,
       EnOrder.ayahs,
       EnOrder.texts,
       //
       EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
     ],
   ),
 ];

@@ -265,10 +265,6 @@ class ElmTextDersTherteen {
 قال: "ياعبدي لقد عاقبتك ولم تدر ، ألم أحرمك لذة مناچاتي 
 """;
 
-  static const String footerTherteenEight = """
-------------
-""";
-
 // page 9
   static const String elmTextTherteenNine_1 = """
 كلما شعر الإنسان بمشكلة عليه أن يترك الحل الأرضي ويبحث عن العلة السماويه
