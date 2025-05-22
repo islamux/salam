@@ -3,7 +3,8 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_10_cubit.dart';
 import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm10.dart';
+import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.dart'; // Changed
+import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -70,11 +71,15 @@ class Elm10Page extends StatelessWidget {
                 ),
               ],
             ),
-            body: const SafeArea(
+            body: SafeArea( // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: CustomTextSliderElm10(), // Custom text slider
+                    child: GenericCustomTextSlider( // Changed
+                      cubit: context.read<Elm10Cubit>(),
+                      dataList: elmList10NewOrder,
+                      backgroundImagePath: ImageLink.image12,
+                    ),
                   ),
                   // You can add additional elements like the scroll indicator here
                 ],

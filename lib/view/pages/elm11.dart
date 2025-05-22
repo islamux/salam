@@ -3,7 +3,8 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_11_cubit.dart';
 import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm11.dart';
+import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.dart'; // Changed
+import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -70,11 +71,15 @@ class Elm11Page extends StatelessWidget {
                 ),
               ],
             ),
-            body: const SafeArea(
+            body: SafeArea( // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: CustomTextSliderElm11(), // Custom text slider
+                    child: GenericCustomTextSlider( // Changed
+                      cubit: context.read<Elm11Cubit>(),
+                      dataList: elmList11NewOrder,
+                      backgroundImagePath: ImageLink.image12,
+                    ),
                   ),
                   // Additional elements can be added here if needed
                 ],

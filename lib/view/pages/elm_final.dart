@@ -3,7 +3,8 @@ import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_final_cubit.dart';
 import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm_final.dart';
+import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.dart'; // Changed
+import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -34,7 +35,7 @@ class ElmFinalPage extends StatelessWidget {
                     icon: const Icon(Icons.share),
                   ),
                   const Text(
-                    "الخاطرة 22  ",
+                    "الخاتمة", // Changed title
                     style: TextStyle(
                       color: AppColor.primaryColorGolden,
                     ),
@@ -44,10 +45,7 @@ class ElmFinalPage extends StatelessWidget {
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  context.read<FinalCubit>().resetCounter(); // Reset counter
-                  // Navigator.pushNamed(
-                  //     context, RoutesConstant.home); // Navigate to home
-
+                  context.read<FinalCubit>().resetCounter(); 
                   context.pushNamed(RoutesConstant.home);
                 },
                 child: const Icon(Icons.arrow_back),
@@ -57,31 +55,35 @@ class ElmFinalPage extends StatelessWidget {
                   onPressed: () {
                     context
                         .read<FinalCubit>()
-                        .decreaseFontSize(); // Decrease font size
+                        .decreaseFontSize(); 
                   },
                   icon: const Icon(Icons.remove),
                 ),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("الخط"), // Font label
+                    Text("الخط"), 
                   ],
                 ),
                 IconButton(
                   onPressed: () {
                     context
                         .read<FinalCubit>()
-                        .increaseFontSize(); // Increase font size
+                        .increaseFontSize(); 
                   },
                   icon: const Icon(Icons.add),
                 ),
               ],
             ),
-            body: const SafeArea(
+            body: SafeArea( // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: CustomTextSliderFinal(), // Custom text slider
+                    child: GenericCustomTextSlider( // Changed
+                      cubit: context.read<FinalCubit>(),
+                      dataList: finalListNewOrder,
+                      backgroundImagePath: ImageLink.image12,
+                    ),
                   ),
                   // Additional elements can be added here if needed
                 ],

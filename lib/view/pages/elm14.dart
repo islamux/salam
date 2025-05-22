@@ -1,9 +1,10 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_17_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_14_new_order.dart'; // Corrected import
 import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/core/data/static/theme/app_color_constant.dart';
 import 'package:elm/cubit/elm_cubits/elm_14_cubit.dart';
 import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/sliders/custom_text_slider_elm14.dart';
+import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.dart'; // Changed
+import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -29,7 +30,7 @@ class Elm14Page extends StatelessWidget {
                       final currentPageIndex =
                           context.read<Elm14Cubit>().currentPageIndex;
                       context.read<Elm14Cubit>().customShareContent(
-                          currentPageIndex, elmList17NewOrder);
+                          currentPageIndex, elmList14NewOrder); // Corrected dataList
                     },
                     icon: const Icon(Icons.share),
                   ),
@@ -71,11 +72,15 @@ class Elm14Page extends StatelessWidget {
                 ),
               ],
             ),
-            body: const SafeArea(
+            body: SafeArea( // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: CustomTextSliderElm14(), // Custom text slider
+                    child: GenericCustomTextSlider( // Changed
+                      cubit: context.read<Elm14Cubit>(),
+                      dataList: elmList14NewOrder, // Corrected dataList
+                      backgroundImagePath: ImageLink.image12,
+                    ),
                   ),
                   // Additional elements can be added here if needed
                 ],
