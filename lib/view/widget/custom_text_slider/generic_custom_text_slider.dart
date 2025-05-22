@@ -12,11 +12,11 @@ class GenericCustomTextSlider extends StatelessWidget {
   final String backgroundImagePath;
 
   const GenericCustomTextSlider({
-    Key? key,
+    super.key,
     required this.cubit,
     required this.dataList,
     required this.backgroundImagePath,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -43,20 +43,30 @@ class GenericCustomTextSlider extends StatelessWidget {
                 onPageChanged: (index) => cubit.onPageChanged(index),
                 itemCount: dataList.length,
                 itemBuilder: (BuildContext context, int i) {
-                  return Column( // Added Column
+                  return Column(
+                    // Added Column
                     children: [
-                      Expanded( // Added Expanded
-                        child: Container( // Added Container
-                          padding: const EdgeInsets.only(top: 60, left: 32, right: 32, bottom: 60), // Corrected padding
+                      Expanded(
+                        // Added Expanded
+                        child: Container(
+                          // Added Container
+                          padding: const EdgeInsets.only(
+                              top: 60,
+                              left: 32,
+                              right: 32,
+                              bottom: 60), // Corrected padding
                           child: SingleChildScrollView(
                             child: RichText(
                               textAlign: TextAlign.right, // Corrected textAlign
-                              text: getPageTexts(i, dataList), // Corrected getPageTexts call
-                              style: TextStyle(
-                                fontFamily: "AmiriQ",
-                                fontSize: cubit.fontSize,
-                                color: Colors.black, // Corrected color
-                                // height: 1.8, // Removed height
+                              text: TextSpan(
+                                children: getPageTexts(i, dataList),
+                                // Corrected getPageTexts call
+                                style: TextStyle(
+                                  fontFamily: "AmiriQ",
+                                  fontSize: cubit.fontSize,
+                                  color: Colors.black, // Corrected color
+                                  // height: 1.8, // Removed height
+                                ),
                               ),
                             ),
                           ),
@@ -78,13 +88,15 @@ class GenericCustomTextSlider extends StatelessWidget {
                     value: (cubit.currentPageIndex ?? 0).toDouble(),
                     onChanged: (double value) => cubit.goToPage(value.toInt()),
                     min: 0,
-                    max: dataList.isEmpty ? 0 : dataList.length.toDouble() -1 ,
+                    max: dataList.isEmpty ? 0 : dataList.length.toDouble() - 1,
                     activeColor: AppColor.black, // Corrected activeColor
                     inactiveColor: AppColor.grey, // Corrected inactiveColor
                   ),
                   Text(
                     '${(cubit.currentPageIndex ?? 0) + 1} / ${dataList.length}',
-                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold), // Corrected style
+                    style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold), // Corrected style
                   ),
                 ],
               ),
