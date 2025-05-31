@@ -292,4 +292,84 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       EnOrder.texts,
     ],
   ),
+
+  // pageEleven
+  ElmModelNewOrder(
+    texts: [
+      ElmTextTwentySix.elmTextTwentySixPageEleven_1,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_2,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_3,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_4,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_5,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_6,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_7,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_8,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_9,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_10,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_11,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_12,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_13,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_14,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_15,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_16,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_17,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_18,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_19,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_20,
+      ElmTextTwentySix.elmTextTwentySixPageEleven_21,
+    ],
+    ayahs: [
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_1,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_2,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_3,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_4,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_5,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_6,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_7,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_8,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_9,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_10,
+      ElmTextTwentySix.ayahHadithTwentySixPageEleven_11,
+    ],
+    subtitles: [
+      ElmTextTwentySix.subtitleTwentySixPageEleven_1,
+      ElmTextTwentySix.subtitleTwentySixPageEleven_2,
+    ],
+    order: [
+      EnOrder.texts, // elmTextTwentySixPageEleven_1
+      EnOrder.texts, // elmTextTwentySixPageEleven_2
+      EnOrder.texts, // elmTextTwentySixPageEleven_3
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_1
+      EnOrder.texts, // elmTextTwentySixPageEleven_4
+      EnOrder.texts, // elmTextTwentySixPageEleven_5
+      EnOrder.texts, // elmTextTwentySixPageEleven_6
+      EnOrder.texts, // elmTextTwentySixPageEleven_7
+      EnOrder.texts, // elmTextTwentySixPageEleven_8
+      EnOrder.texts, // elmTextTwentySixPageEleven_9
+      EnOrder.texts, // elmTextTwentySixPageEleven_10
+      EnOrder.texts, // elmTextTwentySixPageEleven_11
+      EnOrder.texts, // elmTextTwentySixPageEleven_12
+      EnOrder.texts, // elmTextTwentySixPageEleven_13
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_2
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_3
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_4
+      EnOrder.subtitles, // subtitleTwentySixPageEleven_1
+      EnOrder.texts, // elmTextTwentySixPageEleven_14
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_5
+      EnOrder.texts, // elmTextTwentySixPageEleven_15
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_6
+      EnOrder.texts, // elmTextTwentySixPageEleven_16
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_7
+      EnOrder.subtitles, // subtitleTwentySixPageEleven_2
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_8
+      EnOrder.texts, // elmTextTwentySixPageEleven_17
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_9
+      EnOrder.texts, // elmTextTwentySixPageEleven_18
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_10
+      EnOrder.ayahs, // ayahHadithTwentySixPageEleven_11
+      EnOrder.texts, // elmTextTwentySixPageEleven_19
+      EnOrder.texts, // elmTextTwentySixPageEleven_20
+      EnOrder.texts, // elmTextTwentySixPageEleven_21
+    ],
+  ),
 ];

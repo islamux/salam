@@ -318,4 +318,112 @@ class ElmTextTwentySix {
 الحجر عندما لان أصبح يوضع في العين، والكحل أساسه حجر 
 علامة المؤمن التواضع، بالتواضع يعلو، والإنسان غير المؤمن متكبر، وبالتكبر يسفُل، فربنا عز وجل يرفع المتواضعين، ويقصم العتاة والجبارين
 """;
+
+// pageEleven
+  static const String elmTextTwentySixPageEleven_1 = """
+على من تستكبر؟ على الذي خلقك من تراب ثم من نطفةٍ ثم سواك رجلا؟ على من بيده كل أجهزتك؟
+لو أنه عطل أحد الأجهزة لأصبحت الحياة جحيماً لا يطاق، على من تستكبر؟ على من لو أنه جمد في عروق دماغك نقطة دم لأصبح الإنسان مجنوناً، أو لأصبح مشلولاً أو لأصبح أعمى، على من تستكبر؟
+""";
+  static const String elmTextTwentySixPageEleven_2 = """
+المؤمن يرى نفسه صغيراً ويراه الناس كبيراً
+""";
+  static const String elmTextTwentySixPageEleven_3 = """
+الكافر يرى نفسه كبيراً ويراه الناس صغيراً
+""";
+  static const String ayahHadithTwentySixPageEleven_1 = """
+الدعاء النبوي الشريف: {اللهم اجعلني في عيني صغيراً وفي أعين الناس كبيراً} رواه البزاز عن بريدة بن الحصيب
+""";
+  static const String elmTextTwentySixPageEleven_4 = """
+لابد للمتكبر أن يصيبه الله سبحانه وتعالى بمشكلة تكشف ضعفه وزيفه
+""";
+  static const String elmTextTwentySixPageEleven_5 = """
+أيُعقل أن يحرم الإنسان الجنة لأن في قلبه مثقال حبة من كبر؟! نعم لأن مثقال حبة من كبر يتناقض مع العبودية لله
+""";
+  static const String elmTextTwentySixPageEleven_6 = """
+من كان في قلبه مثقال حبة من كبر فهو ليس عبداً لله
+""";
+  static const String elmTextTwentySixPageEleven_7 = """
+من أسباب الكفر الإستكبار والتواضع علامة الإيمان
+""";
+  static const String elmTextTwentySixPageEleven_8 = """
+أحد عوامل الكفر الكبر، ومن علامات المؤمن التواضع
+""";
+  static const String elmTextTwentySixPageEleven_9 = """
+تواضعوا لما تتعلمون منه، وتواضعوا لمن تعلمونه، والتواضع لابد منه في التعلم والتعليم، وقال أحد العارفين بالله لبعض تلامذته وقد تجاوز حده: يا فتى نحن إلى أدبك أحوج منا إلى علمك
+""";
+  static const String elmTextTwentySixPageEleven_10 = """
+خفض الجناح يؤلف القلوب، ويُعين على المحبة، والمحبة أساس الدعوة إلى الله
+""";
+  static const String elmTextTwentySixPageEleven_11 = """
+المؤمن الفقير خير من كل مستكبر
+""";
+  static const String elmTextTwentySixPageEleven_12 = """
+المستكبر المترف كافر بنص القرآن
+""";
+  static const String elmTextTwentySixPageEleven_13 = """
+عندما أخبرنا الله عن فرعون وملإيه قال
+""";
+  static const String ayahHadithTwentySixPageEleven_2 = """
+فاستكبروا وكانوا قوماً مجرمين
+""";
+  static const String ayahHadithTwentySixPageEleven_3 = """
+فاستكبروا وكانوا قوماً عالين
+""";
+  static const String ayahHadithTwentySixPageEleven_4 = """
+واستكبر هو وجنوده
+""";
+  static const String subtitleTwentySixPageEleven_1 = """
+فرعون استكبر واستعلى
+""";
+  static const String elmTextTwentySixPageEleven_14 = """
+فقال أنا ربكم الأعلى فأخذه الله نكال الآخرة والأولى. العلماء قالوا بدأ الله بكلمة الآخرة، لأن الكلمة الثانية أشد كفراً، والأولى أقل، لأنه في الأولى ماذا قال:
+""";
+  static const String ayahHadithTwentySixPageEleven_5 = """
+ما علمت لكم من إله غيري
+""";
+  static const String elmTextTwentySixPageEleven_15 = """
+كلام فيه تحفظ فيه اعتدال، أي بحسب معلوماتي، وبحسب علمي المتواضع، أي في حدود علمي ليس في الدنيا إله غيري، هذا كلام كفر، ولكنه أقل من قوله:
+""";
+  static const String ayahHadithTwentySixPageEleven_6 = """
+أنا ربكم الأعلى
+""";
+  static const String elmTextTwentySixPageEleven_16 = """
+وماذا قال في الآخرة؟
+""";
+  static const String ayahHadithTwentySixPageEleven_7 = """
+فقال أنا ربكم الأعلى
+فأخذه الله نكال الآخرة والأولى
+""";
+  static const String subtitleTwentySixPageEleven_2 = """
+من وصايا لقمان الحكيم
+""";
+  static const String ayahHadithTwentySixPageEleven_8 = """
+ولا تُصعر خدك للناس
+""";
+  static const String elmTextTwentySixPageEleven_17 = """
+أي كبراً وعجباً واختيالاً، واحتقاراً
+""";
+  static const String ayahHadithTwentySixPageEleven_9 = """
+ولا تمشي في الأرض مرحاً
+""";
+  static const String elmTextTwentySixPageEleven_18 = """
+إذا جائتك الدنيا كما تشتهي إياك أن تحملك الدنيا على أن ترقص طرباً
+أياك والكبرياء والعلو فإن الدنيا تزول
+""";
+  static const String ayahHadithTwentySixPageEleven_10 = """
+إن الله لا يُحب كل مختال فخور
+""";
+  static const String ayahHadithTwentySixPageEleven_11 = """
+وأقصد في مشيك واغضض من صوتك إن أنكر الأصوات لصوت الحمير
+""";
+  static const String elmTextTwentySixPageEleven_19 = """
+القصد هو الإعتدال، لا تمش في الأرض ذليلاً خانعاً، ولا تمش مفتخراً، مختالاً متكبراً
+""";
+  static const String elmTextTwentySixPageEleven_20 = """
+المؤمن يُعرف من خُلُقه الحسن في حركاته، وسكناته، في أخلاقه، في مواقفه، في تصرفاته، متميز
+""";
+  static const String elmTextTwentySixPageEleven_21 = """
+قاصمة من قواصم الظهر: الجمع بين المظهر الديني والسلوك المنفر
+أخطر إنسان في المجتمع هو الإنسان الذي له مظهر ديني، أو هوية دينية، أو خلفية دينية، أو انتماء ديني، ويسيء إلى الناس، أخطر إنسان، لأنه مِعول يُهدم به الدين
+""";
 }

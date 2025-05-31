@@ -538,4 +538,33 @@ List<ElmModelNewOrder> elmList18NewOrder = [
       EnOrder.texts,
     ],
   ),
+
+  // page 28 (from mukta.ini, as discussed)
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenTwentyEight_1,
+      ElmTextDersEighteen.ayahEighteenTwentyEight_2,
+      ElmTextDersEighteen.ayahEighteenTwentyEight_3,
+    ],
+    subtitles: [
+      ElmTextDersEighteen.subtitleEighteenTwentyEight_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.elmTextEighteenTwentyEight_1,
+      ElmTextDersEighteen.elmTextEighteenTwentyEight_2,
+      ElmTextDersEighteen.elmTextEighteenTwentyEight_3,
+      ElmTextDersEighteen.elmTextEighteenTwentyEight_4,
+    ],
+    order: [
+      EnOrder.ayahs, // ayahEighteenTwentyEight_1
+      EnOrder.subtitles, // subtitleEighteenTwentyEight_1
+      EnOrder.texts, // elmTextEighteenTwentyEight_1
+      EnOrder.texts, // elmTextEighteenTwentyEight_2
+      EnOrder.ayahs, // ayahEighteenTwentyEight_2
+      EnOrder.texts, // elmTextEighteenTwentyEight_3
+      EnOrder.ayahs, // ayahEighteenTwentyEight_3
+      EnOrder
+          .texts, // elmTextEighteenTwentyEight_4 (contains all mukta.ini items)
+    ],
+  ),
 ];
