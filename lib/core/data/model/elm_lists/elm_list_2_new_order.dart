@@ -3,9 +3,9 @@ import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_two.dart';
 
 List<ElmModelNewOrder> elmList2NewOrder = [
-  // 1
+  // TwoOne
   ElmModelNewOrder(
-    titles: [ElmTextDersTwo.titleTwoOne],
+    titles: [ElmTextDersTwo.titleTwoOne_1],
     ayahs: [
       ElmTextDersTwo.ayahHadithTwoOne_1,
     ],
@@ -19,13 +19,13 @@ List<ElmModelNewOrder> elmList2NewOrder = [
     ],
   ),
 
-  // 2
+  // TwoTwo
   ElmModelNewOrder(
     ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_2,
+      ElmTextDersTwo.ayahHadithTwoTwo_1,
     ],
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_2,
+      ElmTextDersTwo.elmTextTwoTwo_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -33,13 +33,45 @@ List<ElmModelNewOrder> elmList2NewOrder = [
     ],
   ),
 
-  // 3
+  // TwoThree
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoThree_1,
+      ElmTextDersTwo.ayahHadithTwoThree_2,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoThree_1,
+      ElmTextDersTwo.elmTextTwoThree_2,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoFour
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoThree_3,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoThree_3,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoFive
   ElmModelNewOrder(
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_3,
+      ElmTextDersTwo.elmTextTwoFour_1,
     ],
     ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_3,
+      ElmTextDersTwo.ayahHadithTwoFour_1,
     ],
     order: [
       EnOrder.texts,
@@ -47,77 +79,137 @@ List<ElmModelNewOrder> elmList2NewOrder = [
     ],
   ),
 
-  // 4
+  // TwoSix
   ElmModelNewOrder(
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_4,
+      ElmTextDersTwo.elmTextTwoFour_2,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoSeven
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersTwo.elmTextTwoFive_1,
+      ElmTextDersTwo.elmTextTwoFive_2,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoEight
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoFive_1,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoFive_3,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoNine
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoFive_2,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoFive_4,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoTen
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersTwo.elmTextTwoSix_1,
+      ElmTextDersTwo.elmTextTwoSix_2,
     ],
     ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_4,
+      ElmTextDersTwo.ayahHadithTwoSix_1,
     ],
     order: [
+      EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
   ),
 
-  // 5
+  // TwoEleven
   ElmModelNewOrder(
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_5,
-      ElmTextDersTwo.elmTextTwoOne_6,
+      ElmTextDersTwo.elmTextTwoSix_3,
     ],
     ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_5,
+      ElmTextDersTwo.ayahHadithTwoSix_2,
     ],
     order: [
-      EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
   ),
 
-  // 6
+  // TwoTwelve
   ElmModelNewOrder(
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_7,
+      ElmTextDersTwo.elmTextTwoSix_4,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoThirteen
+  ElmModelNewOrder(
+    titles: [ElmTextDersTwo.titleTwoSeven_1],
+    ayahs: [
+      ElmTextDersTwo.ayahHadithTwoSeven_1,
+    ],
+    texts: [
+      ElmTextDersTwo.elmTextTwoSeven_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // TwoFourteen
+  ElmModelNewOrder(
+    titles: [ElmTextDersTwo.titleTwoEight_1],
+    texts: [
+      ElmTextDersTwo.elmTextTwoEight_1,
+      ElmTextDersTwo.subtitleTwoEight_1,
     ],
     ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_6,
+      ElmTextDersTwo.ayahHadithTwoEight_1,
     ],
     order: [
+      EnOrder.titles,
+      EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
   ),
 
-  // 7
+  // TwoFifteen
   ElmModelNewOrder(
-    subtitles: [
-      ElmTextDersTwo.subtitleTwoOne_1,
-    ],
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_8,
-      ElmTextDersTwo.elmTextTwoOne_9,
+      ElmTextDersTwo.subtitleTwoEight_2,
     ],
     ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_7,
-    ],
-    order: [
-      EnOrder.subtitles,
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 8
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_10,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_8,
+      ElmTextDersTwo.ayahHadithTwoEight_2,
     ],
     order: [
       EnOrder.texts,
@@ -125,188 +217,26 @@ List<ElmModelNewOrder> elmList2NewOrder = [
     ],
   ),
 
-  // 9
+  // TwoSixteen
   ElmModelNewOrder(
-    subtitles: [
-      ElmTextDersTwo.subtitleTwoOne_2,
-    ],
+    titles: [ElmTextDersTwo.titleTwoNine_1],
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_11,
-      ElmTextDersTwo.elmTextTwoOne_12,
-      ElmTextDersTwo.elmTextTwoOne_13,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_9,
+      ElmTextDersTwo.elmTextTwoNine_1,
     ],
     order: [
-      EnOrder.subtitles,
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 10
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_14,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_10,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 11
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_15,
-      ElmTextDersTwo.elmTextTwoOne_16,
-    ],
-    order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
     ],
   ),
 
-  // 12
+  // TwoSeventeen
   ElmModelNewOrder(
-    subtitles: [
-      ElmTextDersTwo.subtitleTwoOne_3,
-    ],
+    titles: [ElmTextDersTwo.titleTwoTen_1],
     texts: [
-      ElmTextDersTwo.elmTextTwoOne_17,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_11,
+      ElmTextDersTwo.elmTextTwoTen_1,
     ],
     order: [
-      EnOrder.subtitles,
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 13
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_18,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_12,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 14
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_19,
-      ElmTextDersTwo.elmTextTwoOne_20,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_13,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 15
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_21,
-      ElmTextDersTwo.elmTextTwoOne_22,
-      ElmTextDersTwo.elmTextTwoOne_23,
-      ElmTextDersTwo.elmTextTwoOne_24,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_14,
-      ElmTextDersTwo.ayahHadithTwoOne_15,
-      ElmTextDersTwo.ayahHadithTwoOne_16,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.ayahs,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // 16
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_25,
-      ElmTextDersTwo.elmTextTwoOne_26,
-      ElmTextDersTwo.elmTextTwoOne_27,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.texts,
-    ],
-  ),
-
-  // 17
-  ElmModelNewOrder(
-    subtitles: [
-      ElmTextDersTwo.subtitleTwoOne_4,
-    ],
-    ayahs: [
-      ElmTextDersTwo.ayahHadithTwoOne_17,
-    ],
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_28,
-    ],
-    order: [
-      EnOrder.subtitles,
-      EnOrder.ayahs,
-      EnOrder.texts,
-    ],
-  ),
-
-  // 18
-  ElmModelNewOrder(
-    subtitles: [
-      ElmTextDersTwo.subtitleTwoOne_5,
-    ],
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_29,
-      ElmTextDersTwo.elmTextTwoOne_30,
-    ],
-    order: [
-      EnOrder.subtitles,
-      EnOrder.texts,
-      EnOrder.texts,
-    ],
-  ),
-
-  // 19
-  ElmModelNewOrder(
-    subtitles: [
-      ElmTextDersTwo.subtitleTwoOne_6,
-    ],
-    texts: [
-      ElmTextDersTwo.elmTextTwoOne_31,
-      ElmTextDersTwo.elmTextTwoOne_32,
-      ElmTextDersTwo.elmTextTwoOne_33,
-    ],
-    order: [
-      EnOrder.subtitles,
-      EnOrder.texts,
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
     ],
   ),

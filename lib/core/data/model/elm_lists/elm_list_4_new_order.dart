@@ -45,6 +45,7 @@ List<ElmModelNewOrder> elmList4NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersFour.elmTextFourFour_1,
+      ElmTextDersFour.elmTextFourFive_1,
     ],
     order: [
       EnOrder.texts,
@@ -52,14 +53,14 @@ List<ElmModelNewOrder> elmList4NewOrder = [
   ),
 
   // page 5
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersFour.elmTextFourFive_1,
-    ],
-    order: [
-      EnOrder.texts,
-    ],
-  ),
+  ElmModelNewOrder(texts: [
+    ElmTextDersFour.elmTextFourFive_1,
+  ], ayahs: [
+    ElmTextDersFour.ayahHadithFourFive_1,
+  ], order: [
+    EnOrder.texts,
+    EnOrder.ayahs,
+  ]),
 
   // page 6
   ElmModelNewOrder(
@@ -120,6 +121,7 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       ElmTextDersFour.elmTextFourNine_6,
       ElmTextDersFour.elmTextFourNine_7,
       ElmTextDersFour.elmTextFourNine_8,
+      ElmTextDersFour.elmTextFourNine_9,
     ],
     ayahs: [
       ElmTextDersFour.ayahHadithFourNine_1,
@@ -133,25 +135,37 @@ List<ElmModelNewOrder> elmList4NewOrder = [
     subtitles: [
       ElmTextDersFour.subtitleFourNine_1,
       ElmTextDersFour.subtitleFourNine_2,
+      ElmTextDersFour.subtitleFourNine_3,
     ],
     order: [
+      // 1
       EnOrder.texts, // elmTextFourNine_1
       EnOrder.ayahs, // ayahHadithFourNine_1
       EnOrder.ayahs, // ayahHadithFourNine_2
+      // 2
+      EnOrder.texts, // ayahHadithFourNine_3
       EnOrder.ayahs, // ayahHadithFourNine_3
       EnOrder.subtitles, // subtitleFourNine_1
+      // 3
       EnOrder.texts, // elmTextFourNine_2
       EnOrder.ayahs, // ayahHadithFourNine_4
+      // 4
       EnOrder.texts, // elmTextFourNine_3
       EnOrder.ayahs, // ayahHadithFourNine_5
+      // 5
       EnOrder.texts, // elmTextFourNine_4
       EnOrder.subtitles, // subtitleFourNine_2
+      // 6
       EnOrder.texts, // elmTextFourNine_5
       EnOrder.ayahs, // ayahHadithFourNine_6
+      // 7
       EnOrder.texts, // elmTextFourNine_6
       EnOrder.ayahs, // ayahHadithFourNine_7
+      // 8
       EnOrder.texts, // elmTextFourNine_7
-      EnOrder.texts, // elmTextFourNine_8
+      EnOrder.subtitles, //
+      // 9
+      EnOrder.texts,
     ],
   ),
 
@@ -183,24 +197,32 @@ List<ElmModelNewOrder> elmList4NewOrder = [
       ElmTextDersFour.subtitleFourTen_5,
     ],
     order: [
+      // 1
       EnOrder.texts, // elmTextFourTen_1
       EnOrder.subtitles, // subtitleFourTen_1
+      // 2
       EnOrder.texts, // elmTextFourTen_2
       EnOrder.ayahs, // ayahHadithFourTen_1
       EnOrder.subtitles, // subtitleFourTen_2
+      // 3
       EnOrder.texts, // elmTextFourTen_3
-      EnOrder.ayahs, // ayahHadithFourTen_2
       EnOrder.subtitles, // subtitleFourTen_3
-      EnOrder.ayahs, // ayahHadithFourTen_3
+      EnOrder.ayahs, // ayahHadithFourTen_2
+      // 4
       EnOrder.texts, // elmTextFourTen_4
-      EnOrder.ayahs, // ayahHadithFourTen_4
+      EnOrder.ayahs, // ayahHadithFourTen_3
+      // 5
       EnOrder.texts, // elmTextFourTen_5
+      EnOrder.ayahs, // ayahHadithFourTen_4
       EnOrder.subtitles, // subtitleFourTen_4
+      // 6
       EnOrder.texts, // elmTextFourTen_6
       EnOrder.ayahs, // ayahHadithFourTen_5
+      // 7
       EnOrder.texts, // elmTextFourTen_7
       EnOrder.ayahs, // ayahHadithFourTen_6
       EnOrder.subtitles, // subtitleFourTen_5
+      // 8
       EnOrder.texts, // elmTextFourTen_8
     ],
   ),
