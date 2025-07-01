@@ -275,7 +275,7 @@ class ElmTextDersTwo {
   // TwoThirteen (was Twelve)
   static const String titleTwoThirteen_1 = """
 وقفة
----
+
 ️النشاط العقلي والنفسي والسلوكي 
 """;
   static const String elmTextTwoThirteen_1 = """
