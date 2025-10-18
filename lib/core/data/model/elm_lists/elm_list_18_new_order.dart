@@ -567,4 +567,44 @@ List<ElmModelNewOrder> elmList18NewOrder = [
           .texts, // elmTextEighteenTwentyEight_4 (contains all mukta.ini items)
     ],
   ),
+
+  // page 29 (from muk4.ini)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.titleEighteenTwentyNine_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_1,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_2,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_3,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_4,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_5,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_6,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_7,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_8,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_9,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_10,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_11,
+      ElmTextDersEighteen.elmTextEighteenTwentyNine_12,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahHadithEighteenTwentyNine_1,
+    ],
+    order: [
+      EnOrder.titles, // titleEighteenTwentyNine_1
+      EnOrder.texts, // elmTextEighteenTwentyNine_1
+      EnOrder.ayahs, // ayahHadithEighteenTwentyNine_1
+      EnOrder.texts, // elmTextEighteenTwentyNine_2
+      EnOrder.texts, // elmTextEighteenTwentyNine_3
+      EnOrder.texts, // elmTextEighteenTwentyNine_4
+      EnOrder.texts, // elmTextEighteenTwentyNine_5
+      EnOrder.texts, // elmTextEighteenTwentyNine_6
+      EnOrder.texts, // elmTextEighteenTwentyNine_7
+      EnOrder.texts, // elmTextEighteenTwentyNine_8
+      EnOrder.texts, // elmTextEighteenTwentyNine_9
+      EnOrder.texts, // elmTextEighteenTwentyNine_10
+      EnOrder.texts, // elmTextEighteenTwentyNine_11
+      EnOrder.texts, // elmTextEighteenTwentyNine_12
+    ],
+  ),
 ];
