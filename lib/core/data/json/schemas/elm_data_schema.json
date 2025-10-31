@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/islamux/salam/schemas/elm-data-schema.json",
+  "title": "Elm Application Data Schema",
+  "description": "JSON schema for Elm spiritual texts data structure",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Schema version for compatibility tracking",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "examples": ["1.0.0"]
+    },
+    "generated": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when data was generated",
+      "format": "date-time",
+      "examples": ["2025-10-31T08:27:00Z"]
+    },
+    "totalLists": {
+      "type": "integer",
+      "description": "Total number of Elm lists in this file",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "lists": {
+      "type": "object",
+      "description": "Container for all Elm lists indexed by list number",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "array",
+          "description": "Array of Elm items for a specific list",
+          "items": {
+            "$ref": "#/definitions/elmItem"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["version", "generated", "totalLists", "lists"],
+  "definitions": {
+    "elmItem": {
+      "type": "object",
+      "description": "Individual content item within an Elm list",
+      "properties": {
+        "titles": {
+          "type": "array",
+          "description": "Optional array of title strings for this item",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "subtitles": {
+          "type": "array",
+          "description": "Optional array of subtitle strings for this item",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "texts": {
+          "type": "array",
+          "description": "Array of main text content for this item",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "ayahs": {
+          "type": "array",
+          "description": "Optional array of Quranic verses or hadith for this item",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        },
+        "footer": {
+          "type": ["string", "null"],
+          "description": "Optional footer text for this item",
+          "minLength": 1
+        },
+        "order": {
+          "type": "array",
+          "description": "Required array defining the rendering sequence of content",
+          "items": {
+            "type": "string",
+            "enum": ["titles", "subtitles", "texts", "ayahs", "footer"]
+          },
+          "minItems": 1,
+          "uniqueItems": false,
+          "examples": [
+            ["titles", "texts", "texts", "texts"],
+            ["ayahs", "texts"],
+            ["texts", "ayahs", "texts"]
+          ]
+        }
+      },
+      "required": ["order"],
+      "additionalProperties": false
+    }
+  },
+  "examples": [
+    {
+      "version": "1.0.0",
+      "generated": "2025-10-31T08:27:00Z",
+      "totalLists": 29,
+      "lists": {
+        "1": [
+          {
+            "titles": ["بسم الله الرحمن الرحيم"],
+            "texts": ["النص الأول", "النص الثاني"],
+            "order": ["titles", "texts", "texts"]
+          },
+          {
+            "ayahs": ["آية قرآنية"],
+            "texts": ["نص مرفق"],
+            "order": ["ayahs", "texts"]
+          }
+        ]
+      }
+    }
+  ]
+}
