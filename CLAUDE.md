@@ -4,11 +4,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Flutter application called **elm** - a Muslim devotional app that displays Islamic spiritual texts and quotations. The app features Arabic text support with custom fonts (Amiri and Cairo), and presents content across 27+ numbered sections plus introductory and final pages.
+This is a Flutter application called **elm** - a Muslim devotional app (Arabic: **تطبيق خواطر إيمانية**) that displays Islamic spiritual texts and quotations. The app features Arabic text support with custom fonts (Amiri and Cairo), and presents content across 27 numbered sections plus introductory and final pages.
 
 **Current Flutter Version**: 3.35.1
 **Dart Version**: 3.9.0
 **State Management**: Flutter BLoC
+**Current Branch**: `feat/text-to-json-migration` (migrating from Dart class-based data to JSON)
+
+### Current Development Focus
+The project is actively undergoing a **text-to-JSON migration** (Phase 1-4 completed as of the latest commit). This involves:
+- Converting static text data from Dart class files to JSON format
+- Implementing JSON-based data loading with schema validation
+- Generated JSON data file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items across 29 lists)
+- Migration plan and documentation available in `/docs` directory
 
 ## Common Commands
 
@@ -86,76 +94,119 @@ The app follows a **BLoC pattern** with clean separation of concerns:
 ```
 lib/
 ├── main.dart                    # App entry point, configures BLoC providers
-├── app_routes.dart             # Route definitions for all pages
+├── app_routes.dart             # Route definitions for all pages (27 content pages)
 ├── core/                       # Core functionality
 │   ├── data/
 │   │   ├── model/
-│   │   │   ├── elm_model_new_order.dart    # Base model structure
-│   │   │   └── elm_lists/                  # 27+ data files (elm_list_1_new_order.dart through elm_list_27_new_order.dart, etc.)
+│   │   │   ├── elm_model_new_order.dart    # Base data model with JSON serialization
+│   │   │   ├── enum_order.dart             # EnOrder enum for rendering sequence
+│   │   │   └── elm_lists/                  # 27 data files (elm_list_1_new_order.dart
+│   │   │                                     through elm_list_27_new_order.dart)
+│   │   ├── json/                          # JSON-based data (migration in progress)
+│   │   │   ├── data/
+│   │   │   │   └── elm_all_data.json      # 240KB JSON with 504 content items
+│   │   │   └── schemas/
+│   │   │       └── elm_data_schema.json   # JSON schema for validation
 │   │   └── static/
-│   │       ├── routes_constant.dart        # Route constants
-│   │       └── theme/                      # App themes
+│   │       ├── routes_constant.dart       # Route constants (all 27+ routes)
+│   │       ├── theme/                     # App themes and colors
+│   │       └── text/                      # Raw text data from ElmTextDers*.dart files
 ├── cubit/                      # BLoC state management
 │   ├── base_cubit/
-│   │   └── base_page_cubit.dart            # Base BLoC for page functionality
+│   │   ├── base_page_cubit.dart           # Base BLoC with common page functionality
+│   │   └── base_page_state.dart           # Base state definitions
 │   ├── elm_cubits/
-│   │   └── home_cubit.dart                 # Home page BLoC
-│   ├── font_cubit.dart                     # Font settings management
-│   └── share/
+│   │   └── home_cubit.dart                # Home page BLoC
+│   ├── font_cubit.dart                    # Font settings management
+│   └── share/                             # Share functionality
 ├── view/                       # UI layer
 │   ├── pages/
-│   │   ├── home.dart                      # Main home page
-│   │   ├── elm1.dart through elm27.dart   # Individual content pages
+│   │   ├── home.dart                      # Main home page with navigation
+│   │   ├── elm1.dart through elm27.dart   # Individual content pages (27 total)
 │   │   ├── elm_pre_page.dart              # Intro/preparation page
 │   │   ├── elm_final.dart                 # Final page
 │   │   ├── search_page.dart               # Search functionality
+│   │   ├── result_page.dart               # Search results page
 │   │   └── target_page.dart               # Target/goal page
-│   └── widget/                   # Reusable UI components
+│   └── widget/                            # Reusable UI components
 │       ├── custom_text_slider/            # Text slider component
 │       └── home/                          # Home page widgets
-└── helpers/                     # Utility functions
-    ├── extensions/                       # Dart extensions
-    └── search/                           # Search utilities
+├── helpers/                     # Utility functions
+│   ├── extensions/                        # Dart extensions
+│   └── search/                            # Search utilities
+
+docs/                          # Project documentation
+├── json-migration/             # JSON migration documentation
+│   ├── conversion-report.md   # Migration results and statistics
+│   ├── data-inventory.md      # Complete file inventory
+│   ├── schema-design.md       # JSON schema documentation
+│   └── usage-analysis.md      # Data flow analysis
+└── IMPROVEMENT_PLAN.md        # Overall project improvement plan
 ```
 
 ### Key Components
 
-1. **State Management (BLoC)**: Located in `/lib/cubit/`, using `flutter_bloc` package
+1. **State Management (BLoC)**: Located in `/lib/cubit/`, using `flutter_bloc: ^9.0.0`
    - `HomeCubit` extends `BasePageCubit` for home page state
-   - `FontCubit` manages font settings
+   - `BasePageCubit`: Provides common page functionality (font size, pagination, search, sharing)
+     - `fontSize` management (21.0 - 37.0 range)
+     - `PageController` for horizontal navigation
+     - `searchContent()`: Searches across titles, subtitles, texts, ayahs, and footer
+     - `customShareContent()`: Shares page content using share_plus
+   - `FontCubit` manages font settings (note: also managed in BasePageCubit)
    - Share functionality handled in `cubit/share/`
 
 2. **Data Models**: `/lib/core/data/model/`
-   - `ElmModelNewOrder`: Base data model structure
-   - Individual data files for each page content (27+ pages)
-   - Static data stored as Dart files in `core/data/static/`
+   - **ElmModelNewOrder**: Base data model with JSON serialization support
+     - Fields: `titles?`, `subtitles?`, `texts?`, `ayahs?`, `footer?`, `order` (required)
+     - `order`: List defining rendering sequence using `EnOrder` enum
+     - Supports `fromJson()`, `toJson()`, and `copyWith()` methods
+   - **EnOrder enum**: Defines rendering order (titles, subtitles, texts, ayahs, footer)
+   - Individual data files: `elm_list_1_new_order.dart` through `elm_list_27_new_order.dart`
+   - **JSON Data Migration** (Phase 1-4 complete):
+     - Raw data in `core/data/static/text/` (ElmTextDers*.dart files)
+     - JSON file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items)
+     - Schema: `lib/core/data/json/schemas/elm_data_schema.json`
 
 3. **Navigation**: Centralized in `app_routes.dart`
    - Uses `RoutesConstant` from `core/data/static/routes_constant.dart`
-   - Simple switch-based route generation
-   - Named routes for each content page (elm1-elm27)
+   - Switch-based route generation (37 total routes defined)
+   - Named routes for each content page (elm1-elm27, plus pre/final pages)
+   - Routes: home, elmPre, elm1-elm27, elmFinal, aboutUs, resultPage, searchPage
 
 4. **Theming**: `/lib/core/data/static/theme/`
    - `AppTheme.goldenTheme` set in main.dart
-   - Custom Arabic fonts: Amiri and Cairo
+   - Custom text styles for different content types:
+     - `customTextStyleTitle`: Black, bold
+     - `customTextStyleSubtitle`: Black, bold
+     - `customTextStyleHadith`: Purple (fromARGB 255, 96, 51, 180)
+     - `customTextStyleFooter`: Grey, bold
+   - Custom Arabic fonts: **Amiri** (Regular, Bold) and **Cairo** (Regular, Bold)
+   - Color constants in `app_color_constant.dart`
 
 5. **Dependencies** (from pubspec.yaml):
-   - `flutter_bloc`: State management
-   - `flutter_screenutil`: Responsive UI
-   - `shared_preferences`: Local storage
-   - `share_plus`: Share functionality
-   - `intl`: Internationalization
-   - Custom fonts: Amiri and Cairo
+   - `flutter_bloc: ^9.0.0`: State management
+   - `flutter_screenutil: ^5.9.0`: Responsive UI
+   - `shared_preferences: ^2.0.18`: Local storage
+   - `share_plus: ^11.0.0`: Share functionality (replaces deprecated flutter_share)
+   - `intl: ^0.20.1`: Internationalization
+   - `hex: ^0.2.0`: Hex color handling
+   - `url_launcher: ^6.1.10`: URL launching
+   - `flutter_launcher_icons: ^0.14.2`: Icon generation
+   - **Custom fonts**: Amiri and Cairo (TTF format)
 
-## Development Guidelines
+6. **Content Rendering Pattern**:
+   - Each page uses `BasePageCubit` for state management
+   - Content rendered using `PageView` with horizontal scrolling
+   - `order` list in `ElmModelNewOrder` defines rendering sequence
+   - Font size adjustable (21.0 - 37.0) via `increaseFontSize()` / `decreaseFontSize()`
+   - Search functionality searches across all text fields
 
-From the project rules:
-- Always create a phase-by-phase plan before implementing changes
-- Generate only the markdown/documentation files, don't change existing code
-- Use latest stable and community-supported libraries
-- Prefer native solutions over third-party libraries
-- Keep responses simple while respecting best practices
-- Ask clarifying questions when needed
+7. **Data Flow**:
+   - Static Dart files → ElmTextDers*.dart (raw text constants)
+   - ElmList*.dart → List<ElmModelNewOrder> (data models)
+   - Pages → Load ElmList data → Render via PageView
+   - **Migration in progress**: Dart files → JSON (elm_all_data.json)
 
 ## Testing
 
@@ -177,6 +228,57 @@ Located in `/assets/`:
 - Fonts: Arabic fonts (Amiri, Cairo) in TTF format
 - Referenced in `pubspec.yaml` under `flutter.assets` and `flutter.fonts`
 
+## Important Files to Know
+
+### Core Data Files
+- `lib/core/data/model/elm_model_new_order.dart:51-67`: `fromJson()` factory - JSON deserialization
+- `lib/core/data/model/elm_model_new_order.dart:83-92`: `toJson()` method - JSON serialization
+- `lib/cubit/base_cubit/base_page_cubit.dart:68-89`: `searchContent()` - Built-in search functionality
+- `lib/app_routes.dart:36-145`: Route generator - All 37 routes defined here
+
+### Data Structure Example
+```dart
+ElmModelNewOrder(
+  titles: ["Title Text"],
+  texts: ["Text 1", "Text 2"],
+  ayahs: ["Quran verse"],
+  order: [EnOrder.titles, EnOrder.texts, EnOrder.ayahs]
+)
+```
+
+### Current Migration Status
+**Phases 1-4 Complete** (as of latest commit):
+- ✅ Phase 1: Data inventory and analysis
+- ✅ Phase 2: JSON schema design
+- ✅ Phase 3: Migration script development
+- ✅ Phase 4: JSON generation (240KB, 504 items)
+- 🔄 Phase 5: Data service layer implementation (pending)
+
+See `/docs/json-migration/` for detailed migration documentation.
+
+## Development Guidelines
+
+From project rules and current implementation:
+- **Always create a phase-by-phase plan** before implementing changes
+- Follow clean architecture with separation of concerns
+- Use `BasePageCubit` for common page functionality (don't duplicate code)
+- **Font management**: Currently in both `FontCubit` and `BasePageCubit` - consider consolidation
+- **Search**: Use `BasePageCubit.searchContent()` for consistent search behavior
+- **Share**: Use `BasePageCubit.customShareContent()` for consistent sharing
+- Keep responses simple while respecting best practices
+- Ask clarifying questions when needed
+
 ## Current Status
 
-The project is on the `react-next-version` branch (switched from main), and the current focus is on text coloring based on README.md.
+**Branch**: `feat/text-to-json-migration`
+**Latest Commit**: "Complete Phases 1-4 of JSON Migration - Dart to JSON Conversion"
+
+**Current Focus**:
+1. Complete Phase 5: Data service layer implementation
+2. Text coloring improvements (as mentioned in Arabic README)
+3. Font management consolidation (resolve FontCubit vs BasePageCubit duplication)
+
+**App Status**:
+- ✅ Builds successfully (verified with `flutter build apk` and `flutter build linux`)
+- ✅ No analysis errors
+- ✅ Running on all platforms (Android, iOS, Web, Desktop)
