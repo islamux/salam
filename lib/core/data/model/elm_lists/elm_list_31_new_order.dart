@@ -1,15 +1,15 @@
-// ElmList31 - يا بني اركب معنا
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_thirty_one.dart';
 
 List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 1
   ElmModelNewOrder(
     titles: [
-      "يا بني اركب معنا",
+      ElmTextDersThirtyOne.titleThirtyOnePageOne_1,
     ],
     texts: [
-      "نداء للبشرية جمعًا، إلا من أبى واستكبر، فسيكون حتماً من المغرقين.",
+      ElmTextDersThirtyOne.textThirtyOnePageOne_1,
     ],
     order: [
       EnOrder.titles,
@@ -20,9 +20,9 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 2
   ElmModelNewOrder(
     texts: [
-      "لا تستوحش",
-      "لااااا تستوحش وأنت تُدشن سفينة النجاة على أرض يابسة وصحراء قاحلة، مفتقرة لأصحاب المبادئ والقيم.",
-      "لا تستوحش وأنت بين قوم يصرّوا ويستكبروا، وتأخذهم العزة بالإثم، وهم يحسبون أنهم يحسنون صنعا.",
+      ElmTextDersThirtyOne.textThirtyOnePageTwo_1,
+      ElmTextDersThirtyOne.textThirtyOnePageTwo_2,
+      ElmTextDersThirtyOne.textThirtyOnePageTwo_3,
     ],
     order: [
       EnOrder.texts,
@@ -34,8 +34,8 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 3
   ElmModelNewOrder(
     texts: [
-      "لا تتألم",
-      "لاااا تتألم إن استهزئوا، فقد استهزئ من قبلهم أقوام كانوا أكثر منهم أموالاً وأشد قوة وأثاراً في الأرض.",
+      ElmTextDersThirtyOne.textThirtyOnePageThree_1,
+      ElmTextDersThirtyOne.textThirtyOnePageThree_2,
     ],
     order: [
       EnOrder.texts,
@@ -46,11 +46,11 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 4
   ElmModelNewOrder(
     texts: [
-      "لا تيأس",
-      "لاااا تيأس، فربك هو هو رب نوح.",
+      ElmTextDersThirtyOne.textThirtyOnePageFour_1,
+      ElmTextDersThirtyOne.textThirtyOnePageFour_2,
     ],
     ayahs: [
-      "واتل عليهم نبأ نوح إذ قال لقومه يا قوم إن كان كبر عليكم مقامي وتذكيري بآيات الله فعلى الله توكلت فأجمعوا أمركم وشركاءكم ثم لا يكن أمركم عليكم غمة ثم أقضوا إلي ولا تنظرون.",
+      ElmTextDersThirtyOne.ayahHadithThirtyOnePageFour_1,
     ],
     order: [
       EnOrder.texts,
@@ -62,8 +62,8 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 5
   ElmModelNewOrder(
     texts: [
-      "ثق بربك",
-      "ثق بربك وثق بوعوده، فهو القائل: {إِنا لننصر رسلنا والذين آمنوا في الحياة الدنيا...}.",
+      ElmTextDersThirtyOne.textThirtyOnePageFive_1,
+      ElmTextDersThirtyOne.textThirtyOnePageFive_2,
     ],
     order: [
       EnOrder.texts,
@@ -74,10 +74,10 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 6
   ElmModelNewOrder(
     texts: [
-      "فلقد انتهروا نوح عليه السلام بأنواع السب والشتم والتهديد.",
+      ElmTextDersThirtyOne.textThirtyOnePageSix_1,
     ],
     ayahs: [
-      "{فدعا ربه أني مغلوب فانتصر} فأغرق الله البشرية من أجله.",
+      ElmTextDersThirtyOne.ayahHadithThirtyOnePageSix_1,
     ],
     order: [
       EnOrder.texts,
@@ -88,7 +88,7 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 7
   ElmModelNewOrder(
     texts: [
-      "وأنت كذلك مأمور بالدعاء والافتقار إلى الله ملك الملوك وأقوى الأقوياء، ورب نوح هو هو ربك.",
+      ElmTextDersThirtyOne.textThirtyOnePageSeven_1,
     ],
     order: [
       EnOrder.texts,
@@ -98,8 +98,8 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 8
   ElmModelNewOrder(
     texts: [
-      "لا تحزن",
-      "لاااا تحزن إذا تآمر عليك القريب والبعيد، فزوجة نوح خانته، وكذلك ابنه عصى واستكبر، وهو ابن بيت النبوة فكيف بك أنت؟!",
+      ElmTextDersThirtyOne.textThirtyOnePageEight_1,
+      ElmTextDersThirtyOne.textThirtyOnePageEight_2,
     ],
     order: [
       EnOrder.texts,
@@ -110,11 +110,11 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 9
   ElmModelNewOrder(
     texts: [
-      "فلك في نبي الله نوح أسوة حسنة، فلست أنت أفضل من الأنبياء.",
-      "فقد نادى نوح ابنه من قبل.",
+      ElmTextDersThirtyOne.textThirtyOnePageNine_1,
+      ElmTextDersThirtyOne.textThirtyOnePageNine_2,
     ],
     ayahs: [
-      "{يا بني اركب معنا}، فأبى واستكبر فلم يعصمه الجبل فكان من المغرقين…",
+      ElmTextDersThirtyOne.ayahHadithThirtyOnePageNine_1,
     ],
     order: [
       EnOrder.texts,
@@ -126,7 +126,7 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 10
   ElmModelNewOrder(
     texts: [
-      "مواساة لقلبي.",
+      ElmTextDersThirtyOne.textThirtyOnePageTen_1,
     ],
     order: [
       EnOrder.texts,

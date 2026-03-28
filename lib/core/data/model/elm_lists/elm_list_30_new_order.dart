@@ -1,16 +1,16 @@
-// ElmList30 - ياليتني قدمت لحياتي
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_thirty.dart';
 
 List<ElmModelNewOrder> elmList30NewOrder = <ElmModelNewOrder>[
   // Page 1
   ElmModelNewOrder(
     titles: [
-      "ياليتني قدمت لحياتي",
+      ElmTextDersThirty.titleThirtyPageOne_1,
     ],
     texts: [
-      "اعظم واكبر خسارة حلت بنا في كل ما مضى من اعمارنا هي اننا لم نفكر في اول يوم من حياتنا، وماذا اعددنا له؟! وكيف سيكون حالنا فيه؟!",
-      "لأجل ذلك ينبغي ان نتدارك ما تبقى من العمر، وان نعمل جاهدين وبهمة عالية وسرعة فائقة، ونسابق ونسارع لكي يكون اول يوم من حياتنا يوم عرس وفرحة تفوق حد الخيال.",
+      ElmTextDersThirty.textThirtyPageOne_1,
+      ElmTextDersThirty.textThirtyPageOne_2,
     ],
     order: [
       EnOrder.titles,
@@ -22,9 +22,9 @@ List<ElmModelNewOrder> elmList30NewOrder = <ElmModelNewOrder>[
   // Page 2
   ElmModelNewOrder(
     texts: [
-      "نعم اول يوم من حياتنا وهي الحياة الحقيقية الابدية السرمدية التي لا مناص منها.",
-      "فالسفر طويل، والزاد قليل، وقد لا يكفي لينير لنا ظلمة اول ليلة من حياتنا، تلك الليلة التي سنقضيها بعيدا عن الاهل والاحباب.",
-      "وسنحتاج ونحتاج ونحتاج فيها من يؤمن وحشتنا، هذا ما كان يجب علينا فعله منذ البداية.",
+      ElmTextDersThirty.textThirtyPageTwo_1,
+      ElmTextDersThirty.textThirtyPageTwo_2,
+      ElmTextDersThirty.textThirtyPageTwo_3,
     ],
     order: [
       EnOrder.texts,
@@ -36,10 +36,10 @@ List<ElmModelNewOrder> elmList30NewOrder = <ElmModelNewOrder>[
   // Page 3
   ElmModelNewOrder(
     texts: [
-      "وما يجب علينا فعله الان بعد الاستعانة بالله، والاستغاثة برحمته، والتمسك بحبله المتين.",
+      ElmTextDersThirty.textThirtyPageThree_1,
     ],
     ayahs: [
-      "{ حبل النجاة }.",
+      ElmTextDersThirty.ayahHadithThirtyPageThree_1,
     ],
     order: [
       EnOrder.texts,
@@ -50,8 +50,8 @@ List<ElmModelNewOrder> elmList30NewOrder = <ElmModelNewOrder>[
   // Page 4
   ElmModelNewOrder(
     texts: [
-      "صحيح بأن ما فرطنا به مما مضى من العمر كثير، ولكن الامل بالله كبير؛ ليس غروراً، ولكن ثقة بكرمه ورأفته مع مسارعه بالخيرات كسرعة النسر الى فريسته.",
-      "وثقة برحمته التي وسعت كل شيء، رحمته التي سبقت غضبه.",
+      ElmTextDersThirty.textThirtyPageFour_1,
+      ElmTextDersThirty.textThirtyPageFour_2,
     ],
     order: [
       EnOrder.texts,
@@ -62,8 +62,8 @@ List<ElmModelNewOrder> elmList30NewOrder = <ElmModelNewOrder>[
   // Page 5
   ElmModelNewOrder(
     texts: [
-      "فقد كنا في مكان اضيق واظلم من الحفرة التي سنبيت فيها اول ليلة من حياتنا، كنا في ظلمات ثلاث: ظلمة غشاء الجنين، وظلمة الرحم، وظلمة بطن الأم.",
-      "ولكنه برحمته سبحانه وتعالى اذا شاء ان يوسع وسع.",
+      ElmTextDersThirty.textThirtyPageFive_1,
+      ElmTextDersThirty.textThirtyPageFive_2,
     ],
     order: [
       EnOrder.texts,

@@ -1,15 +1,16 @@
 // ElmList29 - الطيران في الجنه
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_twenty_nine.dart';
 
 List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 1
   ElmModelNewOrder(
     titles: [
-      "الطيران في الجنه",
+      ElmTextDersTwentyNine.titleTwentyNinePageOne_1,
     ],
     texts: [
-      "وأنا أقف جوار المنزل عند غروب الشمس، رفعت رأسي إلى السماء لأرى صقرًا يجنح بجناحيه يمينًا ويسارًا، وينطلق محلقًا لمسافة لا تبعد عني كثيرًا، ثم يعود بكل أريحية، ويبدو أنه مستمتع بما يفعله. وعندما كنت أحدق بعينيّ لأرى أين ينتهي به المطاف، وأتمنى أن أطير مثله، كان لسان حالي يقول: هل ياترى سيتحقق هذا الحلم وهذه الأمنية إذا أكرمني ربي وأدخلني الجنة؟",
+      ElmTextDersTwentyNine.textTwentyNinePageOne_1,
     ],
     order: [
       EnOrder.titles,
@@ -20,10 +21,10 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 2
   ElmModelNewOrder(
     texts: [
-      "وتحدثني نفسي: هل ياترى أهل الجنة يستطيعون الطيران؟",
+      ElmTextDersTwentyNine.textTwentyNinePageTwo_1,
     ],
     ayahs: [
-      "ولرد عليها بكل ثقة: وكيف لا؟ وربنا سبحانه وتعالى لا يعجزه شيء في الأرض ولا في السماء، وهو السميع العليم، وقد وعدنا بذلك في سورة فصلت بقوله: {ولكم فيها ما تشتهي أنفسكم ولكم فيها ما تدعون}. ومن أوفى بعهده من الله؟!",
+      ElmTextDersTwentyNine.ayahHadithTwentyNinePageTwo_1,
     ],
     order: [
       EnOrder.texts,
@@ -34,8 +35,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 3
   ElmModelNewOrder(
     texts: [
-      "في تلك اللحظات المملوءة بأجواء حماسية وشوق ولهفة لجنة عرضها كعرض السماء والارض، طار بي عقلي المشغوف إلى جنة الفردوس الأعلى ونعيمها الدائم الذي لا ينقطع، حيث الذين أنعم الله عليهم من النبيين والصديقين والشهداء والصالحين، وحسن أولئك رفيقًا.",
-      "طاف بي عقلي في رياض الجنة بكل درجاتها، ومنها:",
+      ElmTextDersTwentyNine.textTwentyNinePageThree_1,
+      ElmTextDersTwentyNine.textTwentyNinePageThree_2,
     ],
     order: [
       EnOrder.texts,
@@ -46,8 +47,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 4
   ElmModelNewOrder(
     texts: [
-      "جنة المأوى، حيث هناك من خاف مقام ربه ونهى النفس عن الهوى.",
-      "وجنات النعيم، حيث السابقون بفعل الخيرات في الدنيا، السابقون بدخول الجنة في الآخرة، المقربون في جنات النعيم على سرر موضونة، متكئين عليها متقابلين،",
+      ElmTextDersTwentyNine.textTwentyNinePageFour_1,
+      ElmTextDersTwentyNine.textTwentyNinePageFour_2,
     ],
     order: [
       EnOrder.texts,
@@ -58,7 +59,7 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 5
   ElmModelNewOrder(
     texts: [
-      "حيث يوجد ثلة من الأولين وقليل من الآخرين، يطوف عليهم ولدان مخلدون بأكواب وأباريق، وكأس من معين وفاكهة مما يتخيرون، ولحم طير مما يشتهون، وحور عين كأمثال اللؤلؤ المكنون.",
+      ElmTextDersTwentyNine.textTwentyNinePageFive_1,
     ],
     order: [
       EnOrder.texts,
@@ -68,7 +69,7 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 6
   ElmModelNewOrder(
     texts: [
-      "وحيث أصحاب اليمين في سدر مخضود وطلح منظود وظل ممدود، وماء مسكوب وفاكهة كثيرة لا مقطوعة ولا ممنوعة، وفرش مرفوعة حيث يوجد عباد الله المخلصين على سرر متقابلين، يطاف عليهم بكأس من معين بيضاء، لذة للشاربين، وعندهم قاصرات الطرف عين كأنهن بيض مكنون.",
+      ElmTextDersTwentyNine.textTwentyNinePageSix_1,
     ],
     order: [
       EnOrder.texts,
@@ -78,8 +79,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 7
   ElmModelNewOrder(
     texts: [
-      "لأرى نفسي بعين عقلي مع المتقين من الأهل والأحباب في جنات ونهر، في مقعد صدق عند مليك مقتدر، المقعد الحقيقي الذي لا يزول.",
-      "لأرى نفسي متكئًا مع الأبرار من الأهل والأحباب في عليين، وهم على الأرائك، ينظرون، تعرف في وجوههم نظرة النعيم، يسقون من رحيق مختوم ختامه مسك.",
+      ElmTextDersTwentyNine.textTwentyNinePageSeven_1,
+      ElmTextDersTwentyNine.textTwentyNinePageSeven_2,
     ],
     order: [
       EnOrder.texts,
@@ -90,7 +91,7 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 8
   ElmModelNewOrder(
     texts: [
-      "لأرى نفسي مع كل من خاف مقام ربه، متكئين على فرش بطائنها من استبرق وجنى الجنتين، دان مع من يشربون من كأس كان مزاجها كافورًا، ويطاف عليهم بآنية من فضة وأكواب كانت قواريرا، ويسقون فيها كأسًا كان مزاجها زنجبيلا.",
+      ElmTextDersTwentyNine.textTwentyNinePageEight_1,
     ],
     order: [
       EnOrder.texts,
@@ -100,7 +101,7 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 9
   ElmModelNewOrder(
     texts: [
-      "تمنيت في تلك اللحظات الممتعة أن أطير في تلك الأجواء الرائعة التي لا فيها شمس ولا زمهرير، ونشوة تغمرني من رأسي إلى أسفل قدمي، تركتهم لأحلّق قليلاً فوق مملكتي التي أنعم الله علي بها، وانطلقت بسرعة كسرعة هذا الصقر أو أكثر قليلًا.",
+      ElmTextDersTwentyNine.textTwentyNinePageNine_1,
     ],
     order: [
       EnOrder.texts,
@@ -110,7 +111,7 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 10
   ElmModelNewOrder(
     texts: [
-      "ومع أن المسافة بعيدة ولا تقاس بمسافات الدنيا، لكن بمشيئة الله، وبعد أن ألهمني الله أن أقول: سبحانك اللهم، فهي العملة المتداولة في الجنة، لأرى نفسي قد وصلت إلى آخر مكان من مملكتي التي منّ الله علي بها، نزلت دون أن أشعر بأي تعب أو إعياء.",
+      ElmTextDersTwentyNine.textTwentyNinePageTen_1,
     ],
     order: [
       EnOrder.texts,
@@ -120,8 +121,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 11
   ElmModelNewOrder(
     texts: [
-      "لأرى نفسي بين أشجار مثمرة، وعينان نضّختان، وفاكهة ونخل ورمان، وقاصرات الطرف كأنهن الياقوت والمرجان.",
-      "ورأيت أشياء جميلة مختلفة تمامًا عن ما رأيت عند أول دخولي للجنة من بساتين وأشجار وأنهار وغرف يُرى باطنها من ظاهرها وظاهرها من باطنها، وخيرات حسان، حور مقصورات في الخيام.",
+      ElmTextDersTwentyNine.textTwentyNinePageEleven_1,
+      ElmTextDersTwentyNine.textTwentyNinePageEleven_2,
     ],
     order: [
       EnOrder.texts,
@@ -132,8 +133,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 12
   ElmModelNewOrder(
     texts: [
-      "تأملّت قليلاً، وشعرت بسكينة وراحة بال وطمأنينة، وتذكرت أنني تركت زوجتي الغالية في خيمتها مع حور العين، وقد من الله عليها بأن جعلها الأميرة عليهن بعملها الصالح، وتمنيت في تلك اللحظة أن تكون معي.",
-      "ولمجرد أن قلت: سبحانك اللهم، فإذا بي أنظر عن يميني لأراها إلى جانبي في الحال.",
+      ElmTextDersTwentyNine.textTwentyNinePageTwelve_1,
+      ElmTextDersTwentyNine.textTwentyNinePageTwelve_2,
     ],
     order: [
       EnOrder.texts,
@@ -144,8 +145,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 13
   ElmModelNewOrder(
     texts: [
-      "اشتقت كذلك لأودي الأعزاء وبناتي الغاليات، ولمجرد أن تمنيت أن أراهم، فإذا بهم أمام عيني.",
-      "حينها تذكرت قوله سبحانه وتعالى ووعده: والذين آمنوا واتبعتهم ذرياتهم بإيمان الحقنا بهم ذرياتهم.",
+      ElmTextDersTwentyNine.textTwentyNinePageThirteen_1,
+      ElmTextDersTwentyNine.textTwentyNinePageThirteen_2,
     ],
     order: [
       EnOrder.texts,
@@ -156,10 +157,10 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 14
   ElmModelNewOrder(
     texts: [
-      "وما كنت أفكر فيه أيضًا، وما كان يحيرني هو: هل هذه هي الغرف التي أخبرنا الله عنها في سورة الفرقان بأنها لعباد الرحمن، وذكر لنا صفاتهم بالتفصيل؟",
-      "أو التي أخبرنا عنها نبينا وحبيبنا محمد ﷺ بأنها لمن الان الكلام و أطعم الطعام وصلى في الليل والناس نيام؟",
-      "أو هذه الشجرة هي طوبى التي أخبرنا عنها بأنها لمن شغله عيبه عن عيوب الناس؟",
-      "أم هي لمن رأى في صحيفته استغفارًا كثيرًا؟",
+      ElmTextDersTwentyNine.textTwentyNinePageFourteen_1,
+      ElmTextDersTwentyNine.textTwentyNinePageFourteen_2,
+      ElmTextDersTwentyNine.textTwentyNinePageFourteen_3,
+      ElmTextDersTwentyNine.textTwentyNinePageFourteen_4,
     ],
     order: [
       EnOrder.texts,
@@ -172,10 +173,10 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 15
   ElmModelNewOrder(
     texts: [
-      "وهذه الفواكه التي أخبرنا الله عنها في سورة المرسلات، كل ذلك لم يكن من نسج الخيال في لحظة تأمل وتفكر وحوار مع نفسي المذنبة المقصرة، المتعلقة بحبل رحمة الله والمؤملة بكرمه ورأفته سبحانه وتعالى، ولكنها وعود قرأتها في كتاب الله الذي لا يخلف وعوده.",
+      ElmTextDersTwentyNine.textTwentyNinePageFifteen_1,
     ],
     ayahs: [
-      "والقائل: {وإذا رأيت ثم رأيت نعيماً وملكا كبيراً}.",
+      ElmTextDersTwentyNine.ayahHadithTwentyNinePageFifteen_1,
     ],
     order: [
       EnOrder.texts,
@@ -186,8 +187,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 16
   ElmModelNewOrder(
     texts: [
-      "ولأنه نعيم لا يمكن وصفه وملك عظيم لا يدانيه ملك، لم ولن أستطع تخيله على حقيقته.",
-      "ومع هذا لم أقتنع بكل ذلك الملك الذي قرأته في كتاب الله، ولكن نفسي كانت تواقة لتبحر وتتعمق في تفاصيل ما أخبرنا به ربنا سبحانه وتعالى على لسان نبينا ﷺ، من كل ما لا عين رأت، ولا أذن سمعت، ولا خطر على قلب بشر.",
+      ElmTextDersTwentyNine.textTwentyNinePageSixteen_1,
+      ElmTextDersTwentyNine.textTwentyNinePageSixteen_2,
     ],
     order: [
       EnOrder.texts,
@@ -198,7 +199,7 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   // Page 17
   ElmModelNewOrder(
     texts: [
-      "عندها صحوت من حلم اليقظة الجميل، لأن ما أريد أن أفكر فيه أكبر من حجم عقلي، ولا يمكن لعقل بشر أن يستطيع تخيله.",
+      ElmTextDersTwentyNine.textTwentyNinePageSeventeen_1,
     ],
     order: [
       EnOrder.texts,
