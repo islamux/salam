@@ -1,16 +1,17 @@
 // ElmList28 - لا تخف إنك انت الأعلى
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
+import 'package:elm/core/data/static/text/elm_text_ders_twenty_eight.dart';
 
 List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 1
   ElmModelNewOrder(
     titles: [
-      "لا تخف إنك انت الأعلى",
+      ElmTextDersTwentyEight.titleTwentyEightPageOne_1,
     ],
     texts: [
-      "{قلنا لا تخف إنك انت الأعلى}",
-      "عندما تكون على حق وتؤمن بأن الله هو الحق وقوله حق ووعده حق فلا تخف انك انت الأعلى",
+      ElmTextDersTwentyEight.textTwentyEightPageOne_1,
+      ElmTextDersTwentyEight.textTwentyEightPageOne_2,
     ],
     order: [
       EnOrder.titles,
@@ -22,7 +23,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 2
   ElmModelNewOrder(
     texts: [
-      "لطالما وأنك قد خلعت نعليك (رميت الدنيا وراء ظهرك) وشمرت عن ساعديك وامتثلت أمر الله {فاعبدني وأقم الصلاة لذكري فلا تقلق ولا تخف فستأتيك الدنيا وهي راغمة فإن الأرض لله يورثها من يشاء من عباده والعاقبة للمتقين",
+      ElmTextDersTwentyEight.textTwentyEightPageTwo_1,
     ],
     order: [
       EnOrder.texts,
@@ -32,7 +33,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 3
   ElmModelNewOrder(
     texts: [
-      "لطالما لسان حالك يقول وعجلت إليك ربي لترضى فلا تخف لأن ربك قد قالها من قبل { اقبل ولا تخف انك من الآمنين } فمن يواسي نبيه يواسيك أنت أيضا فرب موسى هو ربك",
+      ElmTextDersTwentyEight.textTwentyEightPageThree_1,
     ],
     order: [
       EnOrder.texts,
@@ -42,7 +43,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 4
   ElmModelNewOrder(
     texts: [
-      "وارفع يديك إلى السماء واخشع واخضع وأضرع فمن قال { قد أوتيت سؤلك يا موسى } لن يردك خائبا فإنه الحي الكريم ولا يرد من رفع يديه صفرا",
+      ElmTextDersTwentyEight.textTwentyEightPageFour_1,
     ],
     order: [
       EnOrder.texts,
@@ -52,7 +53,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 5
   ElmModelNewOrder(
     texts: [
-      "لا تخف أن يفرط عليك أحد أو أن يطغى فربك هو رب موسى وهارون ولن يعجزه كل من هو على شاكلة فرعون وهو القائل { لا تخافا انني معكما اسمع وأرى}",
+      ElmTextDersTwentyEight.textTwentyEightPageFive_1,
     ],
     order: [
       EnOrder.texts,
@@ -62,7 +63,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 6
   ElmModelNewOrder(
     texts: [
-      "عندما يكون يقينك كلا إن معي ربي سيهدين فلا تخاف دركا ولا تخشى",
+      ElmTextDersTwentyEight.textTwentyEightPageSix_1,
     ],
     order: [
       EnOrder.texts,
@@ -72,7 +73,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 7
   ElmModelNewOrder(
     texts: [
-      "فمن شق لموسى في البحر طريقا يبسا فإنه حتما سيشق لك طريق النجاة والنصر فرب موسى هو ربك وهو القائل { ثم ننجي رسلنا واللذين آمنوا }ووعد المؤمنين بالنجاة (كذلك حقا علينا ننج المؤمنين}",
+      ElmTextDersTwentyEight.textTwentyEightPageSeven_1,
     ],
     order: [
       EnOrder.texts,
@@ -82,7 +83,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 8
   ElmModelNewOrder(
     texts: [
-      "ما عليك إلا أن تثق بربك العظيم وأن تصبر فربك العظيم القائل { ولتصنع على عيني } هو القائل أيضا {واصبر لحكم ربك فإنك بأعيننا } فمن يطمئن أنبيائه فهو يطمئنك أنت أيضا",
+      ElmTextDersTwentyEight.textTwentyEightPageEight_1,
     ],
     order: [
       EnOrder.texts,
@@ -92,8 +93,8 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 9
   ElmModelNewOrder(
     texts: [
-      "لا تخف وما يجب عليك هو أن تأخذ الكتاب بقوة وأن يقشعر جلدك لأحسن الحديث ثم يلين قلبك",
-      "واستشعر بأن الخطاب موجه لك أنت أيضا فلا تقل من أنا حتى أضع نفسي مكان الأنبياء فمن وعد الأنبياء هو نفسه من وعد مجموع المؤمنين بقوله {ولا تهنوا ولا تحزنوا وأنتم الأعْلون إن كنتم مؤمنين}",
+      ElmTextDersTwentyEight.textTwentyEightPageNine_1,
+      ElmTextDersTwentyEight.textTwentyEightPageNine_2,
     ],
     order: [
       EnOrder.texts,
@@ -104,8 +105,8 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 10
   ElmModelNewOrder(
     texts: [
-      "واعلم يقينا بأن الله يدافع عن الذين آمنوا",
-      "فالقرآن هو منهج لك أنت أيضا وعلى قدر إيمانك بالوعد وثقتك بالواعد سيريك الله من آياته الكبرى",
+      ElmTextDersTwentyEight.textTwentyEightPageTen_1,
+      ElmTextDersTwentyEight.textTwentyEightPageTen_2,
     ],
     order: [
       EnOrder.texts,
@@ -116,8 +117,8 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 11
   ElmModelNewOrder(
     texts: [
-      "لا تخف",
-      "وما ينبغي عليك هو فقط أن تثق أن الله حق وقوله حق ووعده حق فتعالى الله الملك الحق فهو القائل {واصبر إن وعد الله حق}",
+      ElmTextDersTwentyEight.textTwentyEightPageEleven_1,
+      ElmTextDersTwentyEight.textTwentyEightPageEleven_2,
     ],
     order: [
       EnOrder.texts,
