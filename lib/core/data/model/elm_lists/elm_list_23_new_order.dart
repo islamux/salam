@@ -465,4 +465,24 @@ List<ElmModelNewOrder> elmList23NewOrder = [
       EnOrder.texts,
     ],
   ),
+
+  // PageNineteen (from 9.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextTwentyThree.titleTwentyThreePageNineteen_1,
+    ],
+    texts: [
+      ElmTextTwentyThree.textTwentyThreePageNineteen_1,
+      ElmTextTwentyThree.textTwentyThreePageNineteen_2,
+      ElmTextTwentyThree.textTwentyThreePageNineteen_3,
+      ElmTextTwentyThree.textTwentyThreePageNineteen_4,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
 ];

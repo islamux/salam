@@ -29,6 +29,10 @@ class RoutesConstant {
   static const String elm25 = "/elm25";
   static const String elm26 = "/elm26";
   static const String elm27 = "/elm27";
+  static const String elm28 = "/elm28";
+  static const String elm29 = "/elm29";
+  static const String elm30 = "/elm30";
+  static const String elm31 = "/elm31";
   static const String aboutUs = "/aboutUs";
   static const String resultPage = "/resultPage";
   static const String searchPage = "/searchPage";

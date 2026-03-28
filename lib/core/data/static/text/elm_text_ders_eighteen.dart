@@ -477,4 +477,172 @@ class ElmTextDersEighteen {
 
 ️إن فتحت لك أبواب السماء ألقى الله محبتك في قلوب الخلق
 """;
+
+  // From 6.md - الاحساس بالنذالة
+  static const String titleEighteenTwentyNine_1 = """
+الاحساس بالنذالة شيء لا يطاق
+""";
+  static const String textEighteenTwentyNine_1 = """
+وأنا استمع لسورة يوسف بصوت الشيخ خالد الجليل بأسلوبه الرائع في التلاوة والسرد وكأني ارى القصة امامي عندما عاد إخوة يوسف بدون اخاهم الثاني قال لهم ابوهم
+""";
+  static const String ayahEighteenTwentyNine_1 = """
+{إنما أشكو بثي وحزني إلى الله وأعلم من الله ما لا تعلمون}
+""";
+  static const String textEighteenTwentyNine_2 = """
+وقبل نهاية القصة
+""";
+  static const String ayahEighteenTwentyNine_2 = """
+{فلما جاء البشير القاه على وجهه فارتد بصيرا قال ألم أقل لكم إني أعلم من الله ما لا تعلمون}
+""";
+  static const String textEighteenTwentyNine_3 = """
+بكى قلبي قبل عيني التي ذرفت دموعها لتسطر على خدي اعذب عبارات الحب والحزن والخجل من الله سبحانه وتعالى في آن واحد
+""";
+  static const String textEighteenTwentyNine_4 = """
+لم ابكي متأثرا بقصة قد وقعت ومات جميع ابطالها، ما ابكاني هو كيف جبر بخاطر عبده الذي قال بكل ثقة {واعلم من الله ما لا تعلمون}
+""";
+  static const String textEighteenTwentyNine_5 = """
+بكيت ولسان حالي يقول هذا كلام الله العظيم الذي لم ولن يخيب ظن من احسن الظن به ولجأ اليه وشكا بثه وحزنه اليه، ومع ذلك نعصيه بنعمه
+""";
+  static const String textEighteenTwentyNine_6 = """
+ما ابكاني هو ان خيره الينا نازل وشرنا اليه صاعد
+""";
+  static const String textEighteenTwentyNine_7 = """
+بكيت ولسان حالي يقول سبحانك ربي ما اعظمك سبحانك ربي ما اكرمك سبحانك ربي ما اعدلك سبحانك ربي ما ارحمك سبحانك ربي ما الطفك وما ارأفك
+""";
+  static const String textEighteenTwentyNine_8 = """
+سبحانك ماعبدناك حق عبادتك سبحانك ما قدرناك حق قدرك سبحانك ما شكرناك حق شكرك
+""";
+  static const String textEighteenTwentyNine_9 = """
+سبحانك ربنا والسماوات يوم القيامة مطويات بيمينك لا اله الا انت سبحانك إني كنت من الظالمين
+""";
+
+  // From 3.md
+  static const String textEighteenThirty_1 = """
+في المظهر العام، من الواجب أن نحترم الجميع، والخبايا نتركها لرب العباد، وليس بالضرورة أن ندخل إلى قلوب الخلق لنتأكد من نياتهم.
+""";
+
+  // From 5.md
+  static const String textEighteenThirtyTwo_1 = """
+في صالة الانتظار، أنتظر دوري لأنتقل إلى الرفيق الأعلى، والزاد قليل لا أظن بأنه سيكفي لساعة، هذا ما لم نكن نعمل له حساب فتصدقوا عليّ بدعوة، لعلّ أن الله يرحم ضعفي وقلة حيلتي.
+""";
+
+  // From 7.md
+  static const String textEighteenThirtyThree_1 = """
+مشكلتنا أننا لم نحضر كل دروس معلم البشرية منذ الصغر، وأن حضرنا بعض دروسه لم نصغ لها جيدًا.
+""";
+  static const String textEighteenThirtyThree_2 = """
+وأن اكتسبنا بعض معلومات من بعض دروسه لم نطبق حتى ربع ربعها، هذه هي مشكلتنا ومأساتنا.
+""";
+
+  // From 8.md
+  static const String textEighteenThirtyFour_1 = """
+{ له ما في السماوات وما في الأرض }
+""";
+  static const String textEighteenThirtyFour_2 = """
+ملكيةٌ تامةٌ
+""";
+  static const String textEighteenThirtyFour_3 = """
+{الرحمن على العرش استوى له مافي السماوات وما في الأرض وما بينهما وما تحت الثرى}
+""";
+  static const String textEighteenThirtyFour_4 = """
+( له ) لامُ الملك؛ فله الملكُ إيجادًا، وتصرّفًا، ومصيرًا. كلُّ هذا الكونِ له، ولا تستطيعُ جهةٌ على وجهِ الأرضِ أن تفعلَ شيئًا إلا بإذنه. فلِمَ الحزن؟ ولِمَ الخوفُ والقلقُ والتضعضع؟
+""";
+  static const String textEighteenThirtyFour_5 = """
+وهو القائل { فما ظنكم برب العالمين }
+""";
+
+  // From 11.md
+  static const String textEighteenThirtyFive_1 = """
+سياسة الدول لعبة قذرة، وسياسة الأسر أقذر، وتسييس الخلافات الأسرية أحقر.
+""";
+
+  // From 12.md
+  static const String textEighteenThirtySix_1 = """
+لله جنود لا نراها ولا نعرفها، ويد الله تعمل في الخفاء، ومن لطفه الخفي انه يسوق العطايا فوق اجنحة البلايا. فلماذا القلق؟ ولِمَ الحزن؟
+""";
+  static const String ayahEighteenThirtySix_1 = """
+إن تدبرنا قوله سبحانه وتعالى { يد الله فوق ايديهم } وقرأناها بقلوبنا قبل ان تنطق بها السنتنا.
+""";
+
+  // From 13.md
+  static const String textEighteenThirtySeven_1 = """
+"إذا أحبك الله خدمك أعداؤك"
+""";
+  static const String textEighteenThirtySeven_2 = """
+مقوله سمعتها من شيخنا الغالي الدكتور محمد راتب النابلسي أعتقد قبل خمسة عشرة عامًا، وعرفت معناها على أرض الواقع الآن.
+""";
+
+  // From 15.md
+  static const String textEighteenThirtyEight_1 = """
+{يعكفون على أصنام لهم}
+""";
+  static const String textEighteenThirtyEight_2 = """
+{ما هذه التماثيل التي أنتم لها عاكفون}
+""";
+  static const String textEighteenThirtyEight_3 = """
+هذه الآيات العظيمة جعلتني أتفكر في حال بعض شباب هذه الأمة البائسة { من يعكفون على جوالاتهم لساعات طويلة في اللعب والّهو، ولا يلتفتون لكتاب الله سبحانه وتعالى ولو لربع ساعة في اليوم }.
+""";
+
+  // From 16.md
+  static const String textEighteenThirtyNine_1 = """
+لا زلت في صراع مع نفسي ولم أنتصر بعد، وأحتاج لمن يأخذ بيدي إلى الله، فالنفس أمارة بالسوء وشياطين الجن والإنس يكثفون جهودهم.
+""";
+  static const String textEighteenThirtyNine_2 = """
+لكنني أثق بأن الله لن يتخلى عني مادمت أرغب بالقرب وأطمح بالوصول إلى أعلى الدرجات، فلن يخذلني الله القائل في محكم كتابه العزيز:
+""";
+  static const String ayahEighteenThirtyNine_1 = """
+{والذين جاهدوا فينا لنهدينهم سبلنا وإن الله لمع المحسنين}
+""";
+
+  // From 20.md
+  static const String textEighteenForty_1 = """
+كل الأعداء لم يتغلبوا علينا إلا بمساعدة عدونا الأول، الذي حذرنا الله منه مرارًا وتكرارًا.
+""";
+  static const String textEighteenForty_2 = """
+لأجل ذلك، لن ننتصر على أعدائنا إلا إذا انتصرنا على أنفسنا أولًا، وعلى خطوات الشيطان ثانيًا.
+""";
+  static const String ayahEighteenForty_1 = """
+حينها سنستحق أن يفي الله بوعده { ولن يجعل الله للكافرين على المؤمنين سبيلاً }.
+""";
+
+  // From 18.md
+  static const String titleEighteenFortyOne_1 = """
+{إن الذين قالوا ربنا الله ثم استقاموا}
+""";
+  static const String ayahEighteenFortyOne_1 = """
+{تتنزل عليهم الملائكة ألا تخافوا ولا تحزنوا وأبشروا بالجنة التي كنتم توعدون}
+""";
+  static const String textEighteenFortyOne_1 = """
+وأنا أستمع لهذه الآية بصوت الشيخ خالد الجليل، شعرت بإحساس غريب لا أعلم هل هو بسبب التلاوة العذبة التي دغدغت مشاعري، أم لأنه كلام الله ربنا وخالقنا الذي لا معبود سواه.
+""";
+  static const String textEighteenFortyOne_2 = """
+وما لفت انتباهي هو الآية التي تليها:
+""";
+  static const String ayahEighteenFortyOne_2 = """
+{نحن أولياؤكم في الحياة الدنيا وفي الآخرة}
+""";
+  static const String textEighteenFortyOne_3 = """
+حتى اقشعر بدني، وأوقفت المقطع لبرهة من الزمن، ولسان حالي يقول: كيف السبيل، يا رب، لأكون منهم؟ لكي يشملني هذا الوعد الإلهي؟ كيف يمكن لي أن أصل إلى مرتبة ومكانة كهذه؟
+""";
+  static const String textEighteenFortyOne_4 = """
+كان قلبي يعتصر ألمًا على كل ما ضيعت من سنين عمري، وعلى كل ما فرطت فيه في جنب الله، وكل ما أسرفت فيه.
+""";
+  static const String textEighteenFortyOne_5 = """
+وشيءٌ في نفسي يقنعني بأن هذه المكانة لفئة من البشر فقط، وكأن نفسي تريد أن تقنعني بأنه مستحيل أن أكون منهم.
+""";
+  static const String textEighteenFortyOne_6 = """
+وعند رجوعي إلى الآية التي قبلها، وجدت أن الله سبحانه وتعالى يقول:
+""";
+  static const String textEighteenFortyOne_7 = """
+{إِن الذين قالوا ربنا الله ثم استقاموا}
+""";
+  static const String textEighteenFortyOne_8 = """
+هم هذه الفئة من البشر. لكن النفس الأمارة بالسوء تحاول إقناعنا باستحالة أن نكون منهم.
+""";
+  static const String textEighteenFortyOne_9 = """
+وعندما حاولت البحث عن السبب، وجدت أن ما اعتادت عليه النفس من التفلت خلال سنين العمر الماضية هو ما جعلها ترى الاستقامة شيئًا مستحيلًا.
+""";
+  static const String textEighteenFortyOne_10 = """
+لذلك، أنصح أبنائي الأعزاء على قلبي بأن يروضوا أنفسهم، وينتصروا عليها وعلى وسوسة الشيطان بإرادة فولاذية صلبة، لكي يستحقوا أن يكونوا ممن يتولاهم الله في الدنيا والآخرة، لأنهم ما زالوا في مقتبل العمر، كي لا يصلوا إلى العجز والوهن الذي وصلت إليه أنفسنا.
+""";
 }

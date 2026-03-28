@@ -567,4 +567,288 @@ List<ElmModelNewOrder> elmList18NewOrder = [
           .texts, // elmTextEighteenTwentyEight_4 (contains all mukta.ini items)
     ],
   ),
+
+  // page 29 (from 6.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.titleEighteenTwentyNine_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.textEighteenTwentyNine_1,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenTwentyNine_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+
+  // page 30 (from 6.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenTwentyNine_2,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenTwentyNine_2,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+
+  // page 31 (from 6.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenTwentyNine_3,
+      ElmTextDersEighteen.textEighteenTwentyNine_4,
+      ElmTextDersEighteen.textEighteenTwentyNine_5,
+      ElmTextDersEighteen.textEighteenTwentyNine_6,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 32 (from 6.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenTwentyNine_7,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenTwentyNine_8,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenTwentyNine_9,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 35 (from 3.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirty_1,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 37 (from 5.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyTwo_1,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 38 (from 7.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyThree_1,
+      ElmTextDersEighteen.textEighteenThirtyThree_2,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 39 (from 8.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.textEighteenThirtyFour_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyFour_2,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 40 (from 8.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.textEighteenThirtyFour_3,
+    ],
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyFour_4,
+      ElmTextDersEighteen.textEighteenThirtyFour_5,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 41 (from 11.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyFive_1,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 42 (from 12.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtySix_1,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenThirtySix_1,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+
+  // page 43 (from 13.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.textEighteenThirtySeven_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtySeven_2,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 44 (from 15.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.textEighteenThirtyEight_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyEight_2,
+      ElmTextDersEighteen.textEighteenThirtyEight_3,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 45 (from 16.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyNine_1,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenThirtyNine_1,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenThirtyNine_2,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 46 (from 20.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenForty_1,
+      ElmTextDersEighteen.textEighteenForty_2,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenForty_1,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.ayahs,
+    ],
+  ),
+
+  // page 48 (from 18.md)
+  ElmModelNewOrder(
+    titles: [
+      ElmTextDersEighteen.titleEighteenFortyOne_1,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenFortyOne_1,
+    ],
+    texts: [
+      ElmTextDersEighteen.textEighteenFortyOne_1,
+    ],
+    order: [
+      EnOrder.titles,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 49 (from 18.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenFortyOne_2,
+      ElmTextDersEighteen.textEighteenFortyOne_3,
+    ],
+    ayahs: [
+      ElmTextDersEighteen.ayahEighteenFortyOne_2,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 50 (from 18.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenFortyOne_4,
+      ElmTextDersEighteen.textEighteenFortyOne_5,
+      ElmTextDersEighteen.textEighteenFortyOne_6,
+      ElmTextDersEighteen.textEighteenFortyOne_7,
+      ElmTextDersEighteen.textEighteenFortyOne_8,
+      ElmTextDersEighteen.textEighteenFortyOne_9,
+      ElmTextDersEighteen.textEighteenFortyOne_10,
+    ],
+    order: [
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
 ];

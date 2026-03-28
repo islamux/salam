@@ -1,5 +1,9 @@
 import 'package:elm/view/pages/elm26.dart';
 import 'package:elm/view/pages/elm27.dart';
+import 'package:elm/view/pages/elm28.dart';
+import 'package:elm/view/pages/elm29.dart';
+import 'package:elm/view/pages/elm30.dart';
+import 'package:elm/view/pages/elm31.dart';
 import 'package:flutter/material.dart';
 
 import 'package:elm/core/data/static/routes_constant.dart';
@@ -121,6 +125,18 @@ class RouteApp {
 
       case RoutesConstant.elm27:
         return MaterialPageRoute(builder: (_) => const Elm27Page());
+
+      case RoutesConstant.elm28:
+        return MaterialPageRoute(builder: (_) => const Elm28Page());
+
+      case RoutesConstant.elm29:
+        return MaterialPageRoute(builder: (_) => const Elm29Page());
+
+      case RoutesConstant.elm30:
+        return MaterialPageRoute(builder: (_) => const Elm30Page());
+
+      case RoutesConstant.elm31:
+        return MaterialPageRoute(builder: (_) => const Elm31Page());
 
       case RoutesConstant.elmFinal:
         return MaterialPageRoute(builder: (_) => const ElmFinalPage());
