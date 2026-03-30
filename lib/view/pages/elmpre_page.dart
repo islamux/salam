@@ -7,6 +7,7 @@ import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.da
 import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:elm/helpers/search/data_search.dart';
 
 class ElmPrePage extends StatelessWidget {
   final int? initialPage;
@@ -78,14 +79,22 @@ class ElmPrePage extends StatelessWidget {
                     context.read<ElmPreCubit>().increaseFontSize();
                   },
                   icon: const Icon(Icons.add),
-                )
+                ),
+                IconButton(
+                  onPressed: () {
+                    showSearch(context: context, delegate: DataSearch());
+                  },
+                  icon: const Icon(Icons.search),
+                ),
               ],
             ),
-            body: SafeArea( // Removed const
+            body: SafeArea(
+              // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: GenericCustomTextSlider( // Changed
+                    child: GenericCustomTextSlider(
+                      // Changed
                       cubit: context.read<ElmPreCubit>(),
                       dataList: elmListPreNewOrder,
                       backgroundImagePath: ImageLink.image12,
