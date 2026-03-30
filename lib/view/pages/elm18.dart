@@ -9,12 +9,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Elm18Page extends StatelessWidget {
-  const Elm18Page({super.key});
+  final int? initialPage;
+
+  const Elm18Page({super.key, this.initialPage});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => Elm18Cubit(), // Provide Elm18Cubit
+      create: (context) {
+        final cubit = Elm18Cubit();
+        if (initialPage != null && initialPage! > 0) {
+          cubit.goToPage(initialPage!);
+        }
+        return cubit;
+      },
       child: Builder(
         builder: (context) {
           return Scaffold(
@@ -78,11 +86,13 @@ class Elm18Page extends StatelessWidget {
                 ),
               ],
             ),
-            body: SafeArea( // Removed const
+            body: SafeArea(
+              // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: GenericCustomTextSlider( // Changed
+                    child: GenericCustomTextSlider(
+                      // Changed
                       cubit: context.read<Elm18Cubit>(),
                       dataList: elmList18NewOrder,
                       backgroundImagePath: ImageLink.image12,

@@ -11,9 +11,17 @@ import 'package:elm/core/data/model/elm_lists/elm_list_19_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_1_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_20_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_21_new_order.dart';
-import 'package:elm/core/data/model/elm_lists/elm_list_final_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_22_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_23_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_24_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_25_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_26_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_27_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_28_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_29_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_2_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_30_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_31_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_3_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_4_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_5_new_order.dart';
@@ -21,37 +29,122 @@ import 'package:elm/core/data/model/elm_lists/elm_list_6_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_7_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_8_new_order.dart';
 import 'package:elm/core/data/model/elm_lists/elm_list_9_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_final_new_order.dart';
+import 'package:elm/core/data/model/elm_lists/elm_list_pre_new_order.dart';
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:elm/core/data/model/enum_order.dart';
+import 'package:elm/core/data/static/routes_constant.dart';
 import 'package:elm/helpers/search/remove_search_diacritics.dart';
+import 'package:elm/helpers/search/search_result.dart';
 import 'package:flutter/material.dart';
 
+class _ListConfig {
+  final List<ElmModelNewOrder> list;
+  final String listName;
+  final String routeName;
+
+  _ListConfig(this.list, this.listName, this.routeName);
+}
+
 class DataSearch extends SearchDelegate {
-  final List<ElmModelNewOrder> elmList = [
-    ...elmList1NewOrder,
-    ...elmList2NewOrder,
-    ...elmList3NewOrder,
-    ...elmList4NewOrder,
-    ...elmList5NewOrder,
-    ...elmList6NewOrder,
-    ...elmList7NewOrder,
-    ...elmList8NewOrder,
-    ...elmList9NewOrder,
-    ...elmList10NewOrder,
-    ...elmList11NewOrder,
-    ...elmList12NewOrder,
-    ...elmList13NewOrder,
-    ...elmList14NewOrder,
-    ...elmList15NewOrder,
-    ...elmList16NewOrder,
-    ...elmList17NewOrder,
-    ...elmList18NewOrder,
-    ...elmList19NewOrder,
-    ...elmList20NewOrder,
-    ...elmList21NewOrder,
-    ...finalListNewOrder,
-    ...elmList23NewOrder,
-  ];
+  List<SearchResult> _buildResultsWithPage() {
+    final results = <SearchResult>[];
+    final listConfigs = <_ListConfig>[
+      _ListConfig(elmListPreNewOrder, 'الدرس التمهيدي', RoutesConstant.elmPre),
+      _ListConfig(elmList1NewOrder, 'الدرس الأول', RoutesConstant.elm1),
+      _ListConfig(elmList2NewOrder, 'الدرس الثاني', RoutesConstant.elm2),
+      _ListConfig(elmList3NewOrder, 'الدرس الثالث', RoutesConstant.elm3),
+      _ListConfig(elmList4NewOrder, 'الدرس الرابع', RoutesConstant.elm4),
+      _ListConfig(elmList5NewOrder, 'الدرس الخامس', RoutesConstant.elm5),
+      _ListConfig(elmList6NewOrder, 'الدرس السادس', RoutesConstant.elm6),
+      _ListConfig(elmList7NewOrder, 'الدرس السابع', RoutesConstant.elm7),
+      _ListConfig(elmList8NewOrder, 'الدرس الثامن', RoutesConstant.elm8),
+      _ListConfig(elmList9NewOrder, 'الدرس التاسع', RoutesConstant.elm9),
+      _ListConfig(elmList10NewOrder, 'الدرس العاشر', RoutesConstant.elm10),
+      _ListConfig(elmList11NewOrder, 'الدرس الحادي عشر', RoutesConstant.elm11),
+      _ListConfig(elmList12NewOrder, 'الدرس الثاني عشر', RoutesConstant.elm12),
+      _ListConfig(elmList13NewOrder, 'الدرس الثالث عشر', RoutesConstant.elm13),
+      _ListConfig(elmList14NewOrder, 'الدرس الرابع عشر', RoutesConstant.elm14),
+      _ListConfig(elmList15NewOrder, 'الدرس الخامس عشر', RoutesConstant.elm15),
+      _ListConfig(elmList16NewOrder, 'الدرس السادس عشر', RoutesConstant.elm16),
+      _ListConfig(elmList17NewOrder, 'الدرس السابع عشر', RoutesConstant.elm17),
+      _ListConfig(elmList18NewOrder, 'الدرس الثامن عشر', RoutesConstant.elm18),
+      _ListConfig(elmList19NewOrder, 'الدرس التاسع عشر', RoutesConstant.elm19),
+      _ListConfig(elmList20NewOrder, 'الدرس العشرون', RoutesConstant.elm20),
+      _ListConfig(
+          elmList21NewOrder, 'الدرس الحادي والعشرون', RoutesConstant.elm21),
+      _ListConfig(
+          elmList22NewOrder, 'الدرس الثاني والعشرون', RoutesConstant.elm22),
+      _ListConfig(
+          elmList23NewOrder, 'الدرس الثالث والعشرون', RoutesConstant.elm23),
+      _ListConfig(
+          elmList24NewOrder, 'الدرس الرابع والعشرون', RoutesConstant.elm24),
+      _ListConfig(
+          elmList25NewOrder, 'الدرس الخامس والعشرون', RoutesConstant.elm25),
+      _ListConfig(
+          elmList26NewOrder, 'الدرس السادس والعشرون', RoutesConstant.elm26),
+      _ListConfig(
+          elmList27NewOrder, 'الدرس السابع والعشرون', RoutesConstant.elm27),
+      _ListConfig(
+          elmList28NewOrder, 'الدرس الثامن والعشرون', RoutesConstant.elm28),
+      _ListConfig(
+          elmList29NewOrder, 'الدرس التاسع والعشرون', RoutesConstant.elm29),
+      _ListConfig(elmList30NewOrder, 'الدرس الثلاثون', RoutesConstant.elm30),
+      _ListConfig(
+          elmList31NewOrder, 'الدرس الحادي والثلاثون', RoutesConstant.elm31),
+      _ListConfig(finalListNewOrder, 'الدرس الأخير', RoutesConstant.elmFinal),
+    ];
+
+    for (var config in listConfigs) {
+      for (int pageIndex = 0; pageIndex < config.list.length; pageIndex++) {
+        final elm = config.list[pageIndex];
+        for (var orderItem in elm.order) {
+          List<String>? contentList;
+          String fieldName = '';
+
+          switch (orderItem) {
+            case EnOrder.titles:
+              contentList = elm.titles;
+              fieldName = 'العنوان';
+              break;
+            case EnOrder.subtitles:
+              contentList = elm.subtitles;
+              fieldName = 'العنوان الفرعي';
+              break;
+            case EnOrder.texts:
+              contentList = elm.texts;
+              fieldName = 'النص';
+              break;
+            case EnOrder.ayahs:
+              contentList = elm.ayahs;
+              fieldName = 'الآية';
+              break;
+            case EnOrder.footer:
+              contentList = elm.footer != null ? [elm.footer!] : null;
+              fieldName = 'الهوامش';
+              break;
+          }
+
+          if (contentList != null) {
+            for (var content in contentList) {
+              if (removeSearchDiacritics(content)
+                  .contains(removeSearchDiacritics(query))) {
+                results.add(SearchResult(
+                  listName: config.listName,
+                  pageIndex: pageIndex,
+                  matchedText: content,
+                  routeName: config.routeName,
+                  fieldName: fieldName,
+                ));
+              }
+            }
+          }
+        }
+      }
+    }
+
+    return results;
+  }
 
   @override
   String get searchFieldLabel => "ابحث";
@@ -83,52 +176,38 @@ class DataSearch extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    final searchResults = <Widget>[];
+    final results = _buildResultsWithPage();
 
-    for (var elm in elmList) {
-      for (var orderItem in elm.order) {
-        List<String>? contentList;
-        switch (orderItem) {
-          case EnOrder.titles:
-            contentList = elm.titles;
-            break;
-          case EnOrder.subtitles:
-            contentList = elm.subtitles;
-            break;
-          case EnOrder.texts:
-            contentList = elm.texts;
-            break;
-          case EnOrder.ayahs:
-            contentList = elm.ayahs;
-            break;
-          case EnOrder.footer:
-            contentList = elm.footer != null ? [elm.footer!] : null;
-            break;
-        }
-
-        if (contentList != null) {
-          for (var content in contentList) {
-            // إزالة التشكيل من النصوص و query قبل المقارنة
-
-            if (removeSearchDiacritics(content)
-                .contains(removeSearchDiacritics(query))) {
-              searchResults.add(
-                ListTile(
-                  title: Text(content),
-                  onTap: () {
-                    // يمكن إضافة التنقل للصفحة المطلوبة هنا
-                  },
-                ),
-              );
-            }
-          }
-        }
-      }
+    if (results.isEmpty) {
+      return const Center(child: Text("لم يتم العثور على نتائج"));
     }
 
-    return searchResults.isNotEmpty
-        ? ListView(children: searchResults)
-        : const Center(child: Text("لم يتم العثور على نتائج"));
+    return ListView.builder(
+      itemCount: results.length,
+      itemBuilder: (context, index) {
+        final result = results[index];
+        return ListTile(
+          title: Text(
+            result.matchedText,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          ),
+          subtitle: Text(
+            '${result.listName} - ${result.displayTitle} - ${result.fieldName}',
+            style: const TextStyle(fontSize: 12),
+          ),
+          trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+          onTap: () {
+            Navigator.pushNamed(
+              context,
+              result.routeName,
+              arguments: result.pageIndex,
+            );
+            close(context, null);
+          },
+        );
+      },
+    );
   }
 
   @override
@@ -136,4 +215,3 @@ class DataSearch extends SearchDelegate {
     return const Center(child: Text("ابحث عن المحتوى المطلوب"));
   }
 }
-

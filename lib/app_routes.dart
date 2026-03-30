@@ -97,7 +97,9 @@ class RouteApp {
         return MaterialPageRoute(builder: (_) => const Elm17Page());
 
       case RoutesConstant.elm18:
-        return MaterialPageRoute(builder: (_) => const Elm18Page());
+        final elm18Args = settings.arguments as int?;
+        return MaterialPageRoute(
+            builder: (_) => Elm18Page(initialPage: elm18Args));
 
       case RoutesConstant.elm19:
         return MaterialPageRoute(builder: (_) => const Elm19Page());
