@@ -2,6 +2,7 @@
 
 import 'package:elm/core/data/model/elm_model_new_order.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -43,6 +44,12 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
     pageController.jumpToPage(index);
     currentPageIndex = index;
     emit(PageChanged(index));
+  }
+
+  void goToPageAfterBuild(int index) {
+    SchedulerBinding.instance.addPostFrameCallback((_) {
+      goToPage(index);
+    });
   }
 
   // Share content function (reusable across all cubits)

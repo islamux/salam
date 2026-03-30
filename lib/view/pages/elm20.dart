@@ -19,7 +19,7 @@ class Elm20Page extends StatelessWidget {
       create: (context) {
         final cubit = Elm20Cubit();
         if (initialPage != null && initialPage! > 0) {
-          cubit.goToPage(initialPage!);
+          cubit.goToPageAfterBuild(initialPage!);
         }
         return cubit;
       }, // Provide Elm20Cubit
