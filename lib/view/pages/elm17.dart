@@ -9,12 +9,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Elm17Page extends StatelessWidget {
-  const Elm17Page({super.key});
+  final int? initialPage;
+
+  const Elm17Page({super.key, this.initialPage});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => Elm17Cubit(), // Provide Elm17Cubit
+      create: (context) {
+        final cubit = Elm17Cubit();
+        if (initialPage != null && initialPage! > 0) {
+          cubit.goToPage(initialPage!);
+        }
+        return cubit;
+      }, // Provide Elm17Cubit
       child: Builder(
         builder: (context) {
           return Scaffold(

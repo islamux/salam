@@ -9,7 +9,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ElmFinalPage extends StatelessWidget {
-  const ElmFinalPage({super.key});
+  final int? initialPage;
+
+  const ElmFinalPage({super.key, this.initialPage});
 
   @override
   Widget build(BuildContext context) {

@@ -198,12 +198,12 @@ class DataSearch extends SearchDelegate {
           ),
           trailing: const Icon(Icons.arrow_forward_ios, size: 16),
           onTap: () {
+            close(context, null);
             Navigator.pushNamed(
               context,
               result.routeName,
               arguments: result.pageIndex,
             );
-            close(context, null);
           },
         );
       },
