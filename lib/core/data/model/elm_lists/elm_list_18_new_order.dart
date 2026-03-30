@@ -851,4 +851,14 @@ List<ElmModelNewOrder> elmList18NewOrder = [
       EnOrder.texts,
     ],
   ),
+
+  // page 51 (from 1.md)
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersEighteen.textEighteenFortyTwo_1,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
 ];
