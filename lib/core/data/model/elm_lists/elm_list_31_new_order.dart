@@ -141,8 +141,8 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     order: [
       EnOrder.texts,
       EnOrder.texts,
-      EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.texts,
       EnOrder.footer,
     ],
   ),
