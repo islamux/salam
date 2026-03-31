@@ -8,7 +8,7 @@ class ElmTextDersThirtyOne {
 """;
 
   // Page 2
-  static const String textThirtyOnePageTwo_1 = """
+  static const String titleThirtyOnePageTwo_1 = """
 لا تستوحش
 """;
   static const String textThirtyOnePageTwo_2 = """
@@ -19,7 +19,7 @@ class ElmTextDersThirtyOne {
 """;
 
   // Page 3
-  static const String textThirtyOnePageThree_1 = """
+  static const String titleThirtyOnePageThree_1 = """
 لا تتألم
 """;
   static const String textThirtyOnePageThree_2 = """
@@ -27,7 +27,7 @@ class ElmTextDersThirtyOne {
 """;
 
   // Page 4
-  static const String textThirtyOnePageFour_1 = """
+  static const String titleThirtyOnePageFour_1 = """
 لا تيأس
 """;
   static const String textThirtyOnePageFour_2 = """
@@ -38,7 +38,7 @@ class ElmTextDersThirtyOne {
 """;
 
   // Page 5
-  static const String textThirtyOnePageFive_1 = """
+  static const String titleThirtyOnePageFive_1 = """
 ثق بربك
 """;
   static const String textThirtyOnePageFive_2 = """
@@ -59,7 +59,7 @@ class ElmTextDersThirtyOne {
 """;
 
   // Page 8
-  static const String textThirtyOnePageEight_1 = """
+  static const String titleThirtyOnePageEight_1 = """
 لا تحزن
 """;
   static const String textThirtyOnePageEight_2 = """

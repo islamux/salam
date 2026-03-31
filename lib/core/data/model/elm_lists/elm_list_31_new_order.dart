@@ -19,13 +19,15 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
 
   // Page 2
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersThirtyOne.titleThirtyOnePageTwo_1,
+    ],
     texts: [
-      ElmTextDersThirtyOne.textThirtyOnePageTwo_1,
       ElmTextDersThirtyOne.textThirtyOnePageTwo_2,
       ElmTextDersThirtyOne.textThirtyOnePageTwo_3,
     ],
     order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.texts,
     ],
@@ -33,27 +35,31 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
 
   // Page 3
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersThirtyOne.titleThirtyOnePageThree_1,
+    ],
     texts: [
-      ElmTextDersThirtyOne.textThirtyOnePageThree_1,
       ElmTextDersThirtyOne.textThirtyOnePageThree_2,
     ],
     order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
     ],
   ),
 
   // Page 4
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersThirtyOne.titleThirtyOnePageFour_1,
+    ],
     texts: [
-      ElmTextDersThirtyOne.textThirtyOnePageFour_1,
       ElmTextDersThirtyOne.textThirtyOnePageFour_2,
     ],
     ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageFour_1,
     ],
     order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
@@ -61,12 +67,14 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
 
   // Page 5
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersThirtyOne.titleThirtyOnePageFive_1,
+    ],
     texts: [
-      ElmTextDersThirtyOne.textThirtyOnePageFive_1,
       ElmTextDersThirtyOne.textThirtyOnePageFive_2,
     ],
     order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
     ],
   ),
@@ -97,12 +105,14 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
 
   // Page 8
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersThirtyOne.titleThirtyOnePageEight_1,
+    ],
     texts: [
-      ElmTextDersThirtyOne.textThirtyOnePageEight_1,
       ElmTextDersThirtyOne.textThirtyOnePageEight_2,
     ],
     order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
     ],
   ),
