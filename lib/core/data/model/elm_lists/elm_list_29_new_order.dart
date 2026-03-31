@@ -25,10 +25,14 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
     ],
     ayahs: [
       ElmTextDersTwentyNine.ayahHadithTwentyNinePageTwo_1,
+      ElmTextDersTwentyNine.ayahTwentyNinePageTwo_2,
     ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageTwo_1,
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -61,8 +65,14 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
     texts: [
       ElmTextDersTwentyNine.textTwentyNinePageFive_1,
     ],
+    ayahs: [
+      ElmTextDersTwentyNine.ayahTwentyNinePageFive_1,
+    ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageFive_1,
     order: [
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -82,9 +92,15 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyNine.textTwentyNinePageSeven_1,
       ElmTextDersTwentyNine.textTwentyNinePageSeven_2,
     ],
+    ayahs: [
+      ElmTextDersTwentyNine.ayahTwentyNinePageSeven_1,
+    ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageSeven_1,
     order: [
       EnOrder.texts,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -148,9 +164,15 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyNine.textTwentyNinePageThirteen_1,
       ElmTextDersTwentyNine.textTwentyNinePageThirteen_2,
     ],
+    ayahs: [
+      ElmTextDersTwentyNine.ayahTwentyNinePageThirteen_1,
+    ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageThirteen_1,
     order: [
       EnOrder.texts,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -176,11 +198,13 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyNine.textTwentyNinePageFifteen_1,
     ],
     ayahs: [
-      ElmTextDersTwentyNine.ayahHadithTwentyNinePageFifteen_1,
+      ElmTextDersTwentyNine.ayahTwentyNinePageFifteen_1,
     ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageFifteen_1,
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
