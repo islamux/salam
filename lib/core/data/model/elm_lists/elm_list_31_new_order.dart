@@ -122,23 +122,13 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     texts: [
       ElmTextDersThirtyOne.textThirtyOnePageNine_1,
       ElmTextDersThirtyOne.textThirtyOnePageNine_2,
-    ],
-    ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageNine_1,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.texts,
-      EnOrder.ayahs,
-    ],
-  ),
-
-  // Page 10
-  ElmModelNewOrder(
-    texts: [
       ElmTextDersThirtyOne.textThirtyOnePageTen_1,
     ],
     order: [
+      EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
       EnOrder.texts,
     ],
   ),
