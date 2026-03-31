@@ -58,10 +58,12 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageFour_1,
     ],
+    footer: ElmTextDersThirtyOne.footerThirtyOnePageFour_1,
     order: [
       EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -73,9 +75,15 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     texts: [
       ElmTextDersThirtyOne.textThirtyOnePageFive_2,
     ],
+    ayahs: [
+      ElmTextDersThirtyOne.ayahThirtyOnePageFive_1,
+    ],
+    footer: ElmTextDersThirtyOne.footerThirtyOnePageFive_1,
     order: [
       EnOrder.titles,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -87,9 +95,11 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageSix_1,
     ],
+    footer: ElmTextDersThirtyOne.footerThirtyOnePageSix_1,
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -126,20 +136,14 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageNine_1,
     ],
+    footer: ElmTextDersThirtyOne.footerThirtyOnePageNine_1,
     order: [
       EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
-  // Page 10
-  ElmModelNewOrder(
-    texts: [
-      ElmTextDersThirtyOne.textThirtyOnePageTen_1,
-    ],
-    order: [
-      EnOrder.texts,
-    ],
-  ),
+  
 ];

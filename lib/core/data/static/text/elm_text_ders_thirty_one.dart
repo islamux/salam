@@ -34,7 +34,11 @@ class ElmTextDersThirtyOne {
 لاااا تيأس، فربك هو هو رب نوح.
 """;
   static const String ayahHadithThirtyOnePageFour_1 = """
-واتل عليهم نبأ نوح إذ قال لقومه يا قوم إن كان كبر عليكم مقامي وتذكيري بآيات الله فعلى الله توكلت فأجمعوا أمركم وشركاءكم ثم لا يكن أمركم عليكم غمة ثم أقضوا إلي ولا تنظرون.
+۞ وَاتْلُ عَلَيْهِمْ نَبَأَ نُوحٍ إِذْ قَالَ لِقَوْمِهِ يَا قَوْمِ إِن كَانَ كَبُرَ عَلَيْكُم مَّقَامِي وَتَذْكِيرِي بِآيَاتِ اللَّهِ فَعَلَى اللَّهِ تَوَكَّلْتُ فَأَجْمِعُوا أَمْرَكُمْ وَشُرَكَاءَكُمْ ثُمَّ لَا يَكُنْ أَمْرُكُمْ عَلَيْكُمْ غُمَّةً ثُمَّ اقْضُوا إِلَيَّ وَلَا تُنظِرُونِ
+""";
+  static const String footerThirtyOnePageFour_1 = """
+---------- 
+71 يونس
 """;
 
   // Page 5
@@ -42,7 +46,14 @@ class ElmTextDersThirtyOne {
 ثق بربك
 """;
   static const String textThirtyOnePageFive_2 = """
-ثق بربك وثق بوعوده، فهو القائل: {إِنا لننصر رسلنا والذين آمنوا في الحياة الدنيا...}.
+ثق بربك وثق بوعوده، فهو القائل:
+""";
+  static const String ayahThirtyOnePageFive_1 = """
+إِنَّا لَنَنصُرُ رُسُلَنَا وَالَّذِينَ آمَنُوا فِي الْحَيَاةِ الدُّنْيَا وَيَوْمَ يَقُومُ الْأَشْهَادُ
+""";
+  static const String footerThirtyOnePageFive_1 = """
+---------- 
+51 غافر
 """;
 
   // Page 6
@@ -50,7 +61,11 @@ class ElmTextDersThirtyOne {
 فلقد انتهروا نوح عليه السلام بأنواع السب والشتم والتهديد.
 """;
   static const String ayahHadithThirtyOnePageSix_1 = """
-{فدعا ربه أني مغلوب فانتصر} فأغرق الله البشرية من أجله.
+فَدَعَا رَبَّهُ أَنِّي مَغْلُوبٌ فَانتَصِرْ
+""";
+  static const String footerThirtyOnePageSix_1 = """
+----------
+10 القمر
 """;
 
   // Page 7
@@ -74,11 +89,13 @@ class ElmTextDersThirtyOne {
 فقد نادى نوح ابنه من قبل.
 """;
   static const String ayahHadithThirtyOnePageNine_1 = """
-{يا بني اركب معنا}، فأبى واستكبر فلم يعصمه الجبل فكان من المغرقين…
+يَا بُنَيَّ ارْكَب مَّعَنَا وَلَا تَكُن مَّعَ الْكَافِرِينَ
+
+مواساة لقلبي
+""";
+  static const String footerThirtyOnePageNine_1 = """
+----------
+42 هود
 """;
 
-  // Page 10
-  static const String textThirtyOnePageTen_1 = """
-مواساة لقلبي.
-""";
 }
