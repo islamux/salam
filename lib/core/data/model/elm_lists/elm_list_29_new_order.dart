@@ -54,9 +54,15 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyNine.textTwentyNinePageFour_1,
       ElmTextDersTwentyNine.textTwentyNinePageFour_2,
     ],
+    ayahs: [
+      ElmTextDersTwentyNine.ayahTwentyNinePageFour_1,
+    ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageFour_1,
     order: [
       EnOrder.texts,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
@@ -78,11 +84,19 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
 
   // Page 6
   ElmModelNewOrder(
+    ayahs: [
+      ElmTextDersTwentyNine.ayahTwentyNinePageSix_1,
+      ElmTextDersTwentyNine.ayahTwentyNinePageSix_2,
+    ],
     texts: [
       ElmTextDersTwentyNine.textTwentyNinePageSix_1,
     ],
+    footer: ElmTextDersTwentyNine.footerTwentyNinePageSix_1,
     order: [
+      EnOrder.ayahs,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.footer,
     ],
   ),
 
