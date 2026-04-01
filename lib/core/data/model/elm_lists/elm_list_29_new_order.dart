@@ -94,8 +94,8 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
     footer: ElmTextDersTwentyNine.footerTwentyNinePageSix_1,
     order: [
       EnOrder.ayahs,
-      EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.texts,
       EnOrder.footer,
     ],
   ),
