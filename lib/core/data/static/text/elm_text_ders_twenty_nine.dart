@@ -57,10 +57,13 @@ class ElmTextDersTwentyNine {
 """;
 
   // Page 6
+  static const String textTwentyNinePageSix_1 = """
+وحيث أصحاب اليمين
+""";
   static const String ayahTwentyNinePageSix_1 = """
 فِي سِدْرٍ مَّخْضُودٍ وَطَلْحٍ مَّنضُودٍ وَظِلٍّ مَّمْدُودٍ وَمَاءٍ مَّسْكُوبٍ وَفَاكِهَةٍ كَثِيرَةٍ لَّا مَقْطُوعَةٍ وَلَا مَمْنُوعَةٍ وَفُرُشٍ مَّرْفُوعَةٍ
 """;
-  static const String textTwentyNinePageSix_1 = """
+  static const String textTwentyNinePageSix_2 = """
 حيث يوجد عباد الله المخلصين
 """;
   static const String ayahTwentyNinePageSix_2 = """
