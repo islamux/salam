@@ -22,15 +22,15 @@ List<ElmModelNewOrder> elmList29NewOrder = <ElmModelNewOrder>[
   ElmModelNewOrder(
     texts: [
       ElmTextDersTwentyNine.textTwentyNinePageTwo_1,
+      ElmTextDersTwentyNine.textTwentyNinePageTwo_2,
     ],
     ayahs: [
-      ElmTextDersTwentyNine.ayahHadithTwentyNinePageTwo_1,
-      ElmTextDersTwentyNine.ayahTwentyNinePageTwo_2,
+      ElmTextDersTwentyNine.ayahTwentyNinePageTwo_1,
     ],
     footer: ElmTextDersTwentyNine.footerTwentyNinePageTwo_1,
     order: [
       EnOrder.texts,
-      EnOrder.ayahs,
+      EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.footer,
     ],

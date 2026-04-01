@@ -11,14 +11,15 @@ class ElmTextDersTwentyNine {
   static const String textTwentyNinePageTwo_1 = """
 وتحدثني نفسي: هل ياترى أهل الجنة يستطيعون الطيران؟
 """;
-  static const String ayahHadithTwentyNinePageTwo_1 = """
+  static const String textTwentyNinePageTwo_2 = """
 ولرد عليها بكل ثقة، وكيف لا؟ وربنا سبحانه وتعالى لا يعجزه شيء في الأرض ولا في السماء، وهو السميع العليم، وقد وعدنا بذلك في سورة فصلت
 """;
-  static const String ayahTwentyNinePageTwo_2 = """
+  static const String ayahTwentyNinePageTwo_1 = """
 وَلَكُمْ فِيهَا مَا تَشْتَهِي أَنفُسُكُمْ وَلَكُمْ فِيهَا مَا تَدَّعُونَ
 """;
   static const String footerTwentyNinePageTwo_1 = """
-----------  31 فصلت
+----------
+31 فصلت
 """;
 
   // Page 3
@@ -39,13 +40,13 @@ class ElmTextDersTwentyNine {
 
   // Page 5
   static const String textTwentyNinePageFive_1 = """
-حيث يوجد ثلة من الأولين وقليل من الآخرين، يطوف عليهم ولدان مخلدون بأكواب وأباريق، وكأس من معين وفاكهة مما يتخيرون، ولحم طير مما يشتهون، وحور عين كأمثال اللؤلؤ المكنون.
-""";
+حيث يوجد """;
   static const String ayahTwentyNinePageFive_1 = """
 ثُلَّةٌ مِّنَ الْأَوَّلِينَ وَقَلِيلٌ مِّنَ الْآخِرِينَ عَلَىٰ سُرُرٍ مَّوْضُونَةٍ مُّتَّكِئِينَ عَلَيْهَا مُتَقَابِلِينَ يَطُوفُ عَلَيْهِمْ وِلْدَانٌ مُّخَلَّدُونَ بِأَكْوَابٍ وَأَبَارِيقَ وَكَأْسٍ مِّن مَّعِينٍ لَّا يُصَدَّعُونَ عَنْهَا وَلَا يُنزِفُونَ وَفَاكِهَةٍ مِّمَّا يَتَخَيَّرُونَ وَلَحْمِ طَيْرٍ مِّمَّا يَشْتَهُونَ وَحُورٌ عِينٌ كَأَمْثَالِ اللُّؤْلُؤِ الْمَكْنُونِ
 """;
   static const String footerTwentyNinePageFive_1 = """
-----------  23 الواقعة
+----------
+23 الواقعة
 """;
 
   // Page 6
@@ -58,13 +59,14 @@ class ElmTextDersTwentyNine {
 لأرى نفسي بعين عقلي مع المتقين من الأهل والأحباب في جنات ونهر، في مقعد صدق عند مليك مقتدر، المقعد الحقيقي الذي لا يزول.
 """;
   static const String textTwentyNinePageSeven_2 = """
-لأرى نفسي متكئًا مع الأبرار من الأهل والأحباب في عليين، وهم على الأرائك، ينظرون، تعرف في وجوههم نظرة النعيم، يسقون من رحيق مختوم ختامه مسك.
+لأرى نفسي متكئًا مع الأبرار من الأهل والأحباب في عليين 
 """;
   static const String ayahTwentyNinePageSeven_1 = """
 عَلَى الْأَرَائِكِ يَنظُرُونَ تَعْرِفُ فِي وُجُوهِهِمْ نَضْرَةَ النَّعِيمِ يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ خِتَامُهُ مِسْكٌ
 """;
   static const String footerTwentyNinePageSeven_1 = """
-----------  26 المطففين
+----------
+26 المطففين
 """;
 
   // Page 8
@@ -109,7 +111,8 @@ class ElmTextDersTwentyNine {
 وَالَّذِينَ آمَنُوا وَاتَّبَعَتْهُمْ ذُرِّيَّتُهُم بِإِيمَانٍ أَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ
 """;
   static const String footerTwentyNinePageThirteen_1 = """
-----------  21 الطور
+----------
+21 الطور
 """;
 
   // Page 14
@@ -134,7 +137,8 @@ class ElmTextDersTwentyNine {
 وَإِذَا رَأَيْتَ ثَمَّ رَأَيْتَ نَعِيمًا وَمُلْكًا كَبِيرًا
 """;
   static const String footerTwentyNinePageFifteen_1 = """
-----------  20 الانسان
+----------
+20 الانسان
 """;
   static const String ayahHadithTwentyNinePageFifteen_1 = """
 والقائل: {وإذا رأيت ثم رأيت نعيماً وملكا كبيراً}.
