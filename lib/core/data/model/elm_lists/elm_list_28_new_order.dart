@@ -24,6 +24,9 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 2
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
+    ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageTwo_1,
       ElmTextDersTwentyEight.textTwentyEightPageTwo_2,
@@ -32,6 +35,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyEight.ayahTwentyEightPageTwo_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
@@ -40,6 +44,9 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 3
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
+    ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageThree_1,
       ElmTextDersTwentyEight.textTwentyEightPageThree_2,
@@ -48,6 +55,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyEight.ayahTwentyEightPageThree_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
@@ -56,6 +64,9 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 4
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
+    ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageFour_1,
       ElmTextDersTwentyEight.textTwentyEightPageFour_2,
@@ -64,6 +75,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyEight.ayahTwentyEightPageFour_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
@@ -72,37 +84,37 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 5
   ElmModelNewOrder(
-    ayahs: [
-      ElmTextDersTwentyEight.ayahTwentyEightPageFive_1,
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
     ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageFive_1,
     ],
+    ayahs: [
+      ElmTextDersTwentyEight.ayahTwentyEightPageFive_1,
+    ],
     order: [
-      EnOrder.ayahs,
+      EnOrder.titles,
       EnOrder.texts,
+      EnOrder.ayahs,
     ],
   ),
 
-  // Page 6
+  // Page 6 (merged with page 7)
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
+    ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageSix_1,
-    ],
-    order: [
-      EnOrder.texts,
-    ],
-  ),
-
-  // Page 7
-  ElmModelNewOrder(
-    texts: [
       ElmTextDersTwentyEight.textTwentyEightPageSeven_1,
     ],
     ayahs: [
       ElmTextDersTwentyEight.ayahTwentyEightPageSeven_1,
     ],
     order: [
+      EnOrder.titles,
+      EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
     ],
@@ -110,15 +122,21 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 8
   ElmModelNewOrder(
-    ayahs: [
-      ElmTextDersTwentyEight.ayahTwentyEightPageEight_1,
-      ElmTextDersTwentyEight.ayahTwentyEightPageEight_2,
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
     ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageEight_1,
       ElmTextDersTwentyEight.textTwentyEightPageEight_2,
+      ElmTextDersTwentyEight.textTwentyEightPageEight_3,
+    ],
+    ayahs: [
+      ElmTextDersTwentyEight.ayahTwentyEightPageEight_1,
+      ElmTextDersTwentyEight.ayahTwentyEightPageEight_2,
     ],
     order: [
+      EnOrder.titles,
+      EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
       EnOrder.ayahs,
@@ -128,6 +146,9 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 9
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
+    ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageNine_1,
       ElmTextDersTwentyEight.textTwentyEightPageNine_2,
@@ -136,6 +157,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyEight.ayahTwentyEightPageNine_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
@@ -144,6 +166,9 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 10
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightShared,
+    ],
     texts: [
       ElmTextDersTwentyEight.textTwentyEightPageTen_1,
       ElmTextDersTwentyEight.textTwentyEightPageTen_2,
@@ -152,6 +177,7 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
       ElmTextDersTwentyEight.ayahTwentyEightPageTen_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
@@ -160,15 +186,17 @@ List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
 
   // Page 11
   ElmModelNewOrder(
+    titles: [
+      ElmTextDersTwentyEight.titleTwentyEightPageEleven_1,
+    ],
     texts: [
-      ElmTextDersTwentyEight.textTwentyEightPageEleven_1,
       ElmTextDersTwentyEight.textTwentyEightPageEleven_2,
     ],
     ayahs: [
       ElmTextDersTwentyEight.ayahTwentyEightPageEleven_1,
     ],
     order: [
-      EnOrder.texts,
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
     ],

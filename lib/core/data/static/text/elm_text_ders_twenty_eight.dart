@@ -1,4 +1,9 @@
 class ElmTextDersTwentyEight {
+  // Shared title for pages 2-10
+  static const String titleTwentyEightShared = """
+لاااا تخف
+""";
+
   // Page 1
   static const String titleTwentyEightPageOne_1 = """
 لا تخف إنك انت الأعلى
@@ -65,17 +70,20 @@ class ElmTextDersTwentyEight {
 """;
 
   // Page 8
+  static const String textTwentyEightPageEight_1 = """
+ما عليك إلا أن تثق بربك العظيم وأن تصبر فربك العظيم القائل
+""";
   static const String ayahTwentyEightPageEight_1 = """
 ولتصنع على عيني
 """;
-  static const String textTwentyEightPageEight_1 = """
-ما عليك إلا أن تثق بربك العظيم وأن تصبر فربك العظيم القائل
+  static const String textTwentyEightPageEight_2 = """
+هو القائل أيضاً
 """;
   static const String ayahTwentyEightPageEight_2 = """
 واصبر لحكم ربك فإنك بأعيننا
 """;
-  static const String textTwentyEightPageEight_2 = """
-فمن يطمئن أنبيائه فهو يطمئنك أنت أيضا
+  static const String textTwentyEightPageEight_3 = """
+فمن يطمئن أنبيائه فهو يطمئنك أنت أيضاً
 """;
 
   // Page 9
@@ -101,7 +109,7 @@ class ElmTextDersTwentyEight {
 """;
 
   // Page 11
-  static const String textTwentyEightPageEleven_1 = """
+  static const String titleTwentyEightPageEleven_1 = """
 لا تخف
 """;
   static const String textTwentyEightPageEleven_2 = """
