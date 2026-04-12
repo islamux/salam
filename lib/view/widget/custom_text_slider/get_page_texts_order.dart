@@ -62,7 +62,6 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   return spans;
 }
 
-
 // import 'package:elm/core/data/model/elm_model_new_order.dart';
 // import 'package:elm/core/data/model/enum_order.dart';
 // import 'package:flutter/material.dart';

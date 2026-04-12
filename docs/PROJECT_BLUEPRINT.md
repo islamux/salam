@@ -232,6 +232,14 @@ class FontCubit extends Cubit<FontState> {
 }
 ```
 
+### Search Functionality
+
+Implemented via `DataSearch` (SearchDelegate) to allow diacritic-insensitive content lookup across all lessons.
+
+- **Location**: `lib/helpers/search/`
+- **Documentation**: [Search Functionality](SEARCH_FUNCTIONALITY.md)
+- **Key Features**: Diacritic removal for Arabic text, lesson-wide traversal, and direct navigation to matched pages.
+
 ### Custom Text Slider
 
 ```dart
