@@ -702,6 +702,7 @@ List<ElmModelNewOrder> elmList18NewOrder = [
 
   // page 46 (from 20.md)
   ElmModelNewOrder(
+    titles: ["الأعداء"],
     texts: [
       ElmTextDersEighteen.textEighteenForty_1,
       ElmTextDersEighteen.textEighteenForty_2,
@@ -710,6 +711,7 @@ List<ElmModelNewOrder> elmList18NewOrder = [
       ElmTextDersEighteen.ayahEighteenForty_1,
     ],
     order: [
+      EnOrder.titles,
       EnOrder.texts,
       EnOrder.texts,
       EnOrder.ayahs,
