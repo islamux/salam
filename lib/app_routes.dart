@@ -4,6 +4,7 @@ import 'package:elm/view/pages/elm28.dart';
 import 'package:elm/view/pages/elm29.dart';
 import 'package:elm/view/pages/elm30.dart';
 import 'package:elm/view/pages/elm31.dart';
+import 'package:elm/view/pages/elm32.dart';
 import 'package:flutter/material.dart';
 
 import 'package:elm/core/data/static/routes_constant.dart';
@@ -44,93 +45,75 @@ class RouteApp {
 
       case RoutesConstant.elmPre:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => ElmPrePage(initialPage: args));
+        return MaterialPageRoute(builder: (_) => ElmPrePage(initialPage: args));
 
       case RoutesConstant.elm1:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm1Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm1Page(initialPage: args));
 
       case RoutesConstant.elm2:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm2Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm2Page(initialPage: args));
 
       case RoutesConstant.elm3:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm3Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm3Page(initialPage: args));
 
       case RoutesConstant.elm4:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm4Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm4Page(initialPage: args));
 
       case RoutesConstant.elm5:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm5Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm5Page(initialPage: args));
 
       case RoutesConstant.elm6:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm6Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm6Page(initialPage: args));
 
       case RoutesConstant.elm7:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm7Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm7Page(initialPage: args));
 
       case RoutesConstant.elm8:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm8Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm8Page(initialPage: args));
 
       case RoutesConstant.elm9:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm9Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm9Page(initialPage: args));
 
       case RoutesConstant.elm10:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm10Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm10Page(initialPage: args));
 
       case RoutesConstant.elm11:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm11Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm11Page(initialPage: args));
 
       case RoutesConstant.elm12:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm12Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm12Page(initialPage: args));
 
       case RoutesConstant.elm13:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm13Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm13Page(initialPage: args));
 
       case RoutesConstant.elm14:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm14Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm14Page(initialPage: args));
 
       case RoutesConstant.elm15:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm15Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm15Page(initialPage: args));
 
       case RoutesConstant.elm16:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm16Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm16Page(initialPage: args));
 
       case RoutesConstant.elm17:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm17Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm17Page(initialPage: args));
 
       case RoutesConstant.elm18:
         final elm18Args = settings.arguments as int?;
@@ -139,68 +122,59 @@ class RouteApp {
 
       case RoutesConstant.elm19:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm19Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm19Page(initialPage: args));
 
       case RoutesConstant.elm20:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm20Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm20Page(initialPage: args));
 
       case RoutesConstant.elm21:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm21Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm21Page(initialPage: args));
 
       case RoutesConstant.elm22:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm22Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm22Page(initialPage: args));
 
       case RoutesConstant.elm23:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm23Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm23Page(initialPage: args));
 
       case RoutesConstant.elm24:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm24Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm24Page(initialPage: args));
 
       case RoutesConstant.elm25:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm25Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm25Page(initialPage: args));
 
       case RoutesConstant.elm26:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm26Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm26Page(initialPage: args));
 
       case RoutesConstant.elm27:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm27Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm27Page(initialPage: args));
 
       case RoutesConstant.elm28:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm28Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm28Page(initialPage: args));
 
       case RoutesConstant.elm29:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm29Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm29Page(initialPage: args));
 
       case RoutesConstant.elm30:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm30Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm30Page(initialPage: args));
 
       case RoutesConstant.elm31:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(
-            builder: (_) => Elm31Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Elm31Page(initialPage: args));
+
+      case RoutesConstant.elm32:
+        final args = settings.arguments as int?;
+        return MaterialPageRoute(builder: (_) => Elm32Page(initialPage: args));
 
       case RoutesConstant.elmFinal:
         final args = settings.arguments as int?;
