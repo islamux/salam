@@ -478,52 +478,9 @@ class ElmTextDersEighteen {
 ️إن فتحت لك أبواب السماء ألقى الله محبتك في قلوب الخلق
 """;
 
-  // page 29
-  static const String titleEighteenTwentyNine_1 = """
-الاحساس بالنذالة شيء لا يطاق
-""";
-  static const String textEighteenTwentyNine_1 = """
-وأنا استمع لسورة يوسف بصوت الشيخ خالد الجليل بأسلوبه الرائع في التلاوة والسرد وكأني ارى القصة امامي عندما عاد إخوة يوسف بدون اخاهم الثاني قال لهم ابوهم
-""";
-  static const String ayahEighteenTwentyNine_1 = """
-{إنما أشكو بثي وحزني إلى الله وأعلم من الله ما لا تعلمون}
-""";
-  static const String textEighteenTwentyNine_2 = """
-وقبل نهاية القصة
-""";
-  static const String ayahEighteenTwentyNine_2 = """
-{فلما جاء البشير القاه على وجهه فارتد بصيرا قال ألم أقل لكم إني أعلم من الله ما لا تعلمون}
-""";
-  static const String textEighteenTwentyNine_3 = """
-بكى قلبي قبل عيني التي ذرفت دموعها لتسطر على خدي اعذب عبارات الحب والحزن والخجل من الله سبحانه وتعالى في آن واحد
-""";
-  static const String textEighteenTwentyNine_4 = """
-لم ابكي متأثرا بقصة قد وقعت ومات جميع ابطالها، ما ابكاني هو كيف جبر بخاطر عبده الذي قال بكل ثقة {واعلم من الله ما لا تعلمون}
-""";
-  static const String textEighteenTwentyNine_5 = """
-بكيت ولسان حالي يقول هذا كلام الله العظيم الذي لم ولن يخيب ظن من احسن الظن به ولجأ اليه وشكا بثه وحزنه اليه، ومع ذلك نعصيه بنعمه
-""";
-  static const String textEighteenTwentyNine_6 = """
-ما ابكاني هو ان خيره الينا نازل وشرنا اليه صاعد
-""";
-  static const String textEighteenTwentyNine_7 = """
-بكيت ولسان حالي يقول سبحانك ربي ما اعظمك سبحانك ربي ما اكرمك سبحانك ربي ما اعدلك سبحانك ربي ما ارحمك سبحانك ربي ما الطفك وما ارأفك
-""";
-  static const String textEighteenTwentyNine_8 = """
-سبحانك ماعبدناك حق عبادتك سبحانك ما قدرناك حق قدرك سبحانك ما شكرناك حق شكرك
-""";
-  static const String textEighteenTwentyNine_9 = """
-سبحانك ربنا والسماوات يوم القيامة مطويات بيمينك لا اله الا انت سبحانك إني كنت من الظالمين
-""";
-
   // page 30
   static const String textEighteenThirty_1 = """
 في المظهر العام، من الواجب أن نحترم الجميع، والخبايا نتركها لرب العباد، وليس بالضرورة أن ندخل إلى قلوب الخلق لنتأكد من نياتهم.
-""";
-
-  // page 31
-  static const String textEighteenThirtyOne_1 = """
-(Placeholder content for page 31 - to be added)
 """;
 
   // page 32
