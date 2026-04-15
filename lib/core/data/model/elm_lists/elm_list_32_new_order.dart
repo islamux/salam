@@ -43,9 +43,13 @@ List<ElmModelNewOrder> elmList32NewOrder = [
       ElmTextDersThirtyTwo.textThirtyTwoFive,
       ElmTextDersThirtyTwo.textThirtyTwoSix,
     ],
+    ayahs: [
+      ElmTextDersThirtyTwo.ayahThirtyTwoFour,
+    ],
     order: [
       EnOrder.texts,
       EnOrder.texts,
+      EnOrder.ayahs,
       EnOrder.texts,
       EnOrder.texts,
     ],

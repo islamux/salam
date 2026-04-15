@@ -485,4 +485,20 @@ List<ElmModelNewOrder> elmList23NewOrder = [
       EnOrder.texts,
     ],
   ),
+
+  // PageTwenty (from yodaber.md)
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextTwentyThree.ayahTwentyThreePageTwenty_1,
+    ],
+    texts: [
+      ElmTextTwentyThree.textTwentyThreePageTwenty_1,
+      ElmTextTwentyThree.textTwentyThreePageTwenty_2,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
 ];

@@ -1,3 +1,7 @@
+# Split pages that is too long using ai. 
+# Ayah from site.
+# Merge small pages.
+
 # Review
 1- review the original text with its ready class.
 2- review the class with its list.
