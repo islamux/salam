@@ -77,10 +77,12 @@ class ElmTextDersTwentyEight {
 طه (46)
 """;
 
-  // Page 6 + old 7
+  // Page 6 
   static const String textTwentyEightPageSix_1 = """
 عندما يكون يقينك كلا إن معي ربي سيهدين فلا تخاف دركا ولا تخشى
 """;
+
+// page 7
   static const String textTwentyEightPageSeven_1 = """
 فمن شق لموسى في البحر طريقا يبسا فإنه حتما سيشق لك طريق النجاة والنصر فرب موسى هو ربك وهو القائل
 """;
@@ -98,7 +100,7 @@ class ElmTextDersTwentyEight {
 يونس (103)
 """;
 
-  // Page 7 (formaly page 8)
+  // Page  8)
   static const String textTwentyEightPageEight_1 = """
 ما عليك إلا أن تثق بربك العظيم وأن تصبر فربك العظيم القائل
 """;
@@ -120,7 +122,7 @@ class ElmTextDersTwentyEight {
 الطور (48)
 """;
 
-  // Page 8 (formaly page 9)
+  // Page  9)
   static const String textTwentyEightPageNine_1 = """
 لا تخف وما يجب عليك هو أن تأخذ الكتاب بقوة وأن يقشعر جلدك لأحسن الحديث ثم يلين قلبك
 
@@ -136,7 +138,7 @@ class ElmTextDersTwentyEight {
 ال عمران (139)
 """;
 
-  // Page 9 (formaly page 10)
+  // Page  10)
   static const String textTwentyEightPageTen_1 = """
 واعلم يقينا بأن
 """;
@@ -151,7 +153,7 @@ class ElmTextDersTwentyEight {
 الحج (38)
 """;
 
-  // Page 10 (formaly page 11)
+  // Page  11)
   static const String titleTwentyEightPageEleven_1 = """
 لا تخف
 """;

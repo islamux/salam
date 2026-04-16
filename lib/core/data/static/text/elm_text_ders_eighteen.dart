@@ -487,11 +487,17 @@ class ElmTextDersEighteen {
 """;
 
   // page 32
+  static const String titleEighteenThirtyTwo_1 = """
+في صالة الانتظار
+""";
   static const String textEighteenThirtyTwo_1 = """
  أنتظر دوري لأنتقل إلى الرفيق الأعلى، والزاد قليل لا أظن بأنه سيكفي لساعة، هذا ما لم نكن نعمل له حساب فتصدقوا عليّ بدعوة، لعلّ أن الله يرحم ضعفي وقلة حيلتي.
-""";
+  """;
 
   // page 33
+  static const String titleEighteenThirtyThree_1 = """
+مشكلتنا
+""";
   static const String textEighteenThirtyThree_1 = """
  أننا لم نحضر كل دروس معلم البشرية منذ الصغر، وأن حضرنا بعض دروسه لم نصغ لها جيدًا.
 """;
@@ -500,6 +506,9 @@ class ElmTextDersEighteen {
 """;
 
   // page 34
+  static const String titleEighteenThirtyFour_1 = """
+{ له ما في السماوات وما في الأرض }
+""";
   static const String textEighteenThirtyFour_1 = """
 { له ما في السماوات وما في الأرض }
 """;
@@ -533,6 +542,9 @@ class ElmTextDersEighteen {
 """;
 
   // page 37
+  static const String titleEighteenThirtySeven_1 = """
+"إذا أحبك الله خدمك أعداؤك"
+""";
   static const String textEighteenThirtySeven_1 = """
 "إذا أحبك الله خدمك أعداؤك"
 """;
@@ -543,6 +555,9 @@ class ElmTextDersEighteen {
 """;
 
   // page 38
+  static const String titleEighteenThirtyEight_1 = """
+{يعكفون على أصنام لهم}
+""";
   static const String textEighteenThirtyEight_1 = """
 {يعكفون على أصنام لهم}
 """;
@@ -567,6 +582,9 @@ class ElmTextDersEighteen {
 """;
 
   // page 40
+  static const String titleEighteenForty_1 = """
+الأعداء
+""";
   static const String textEighteenForty_1 = """
 كل الأعداء لم يتغلبوا علينا إلا بمساعدة عدونا الأول، الذي حذرنا الله منه مرارًا وتكرارًا.
 """;
@@ -622,6 +640,9 @@ class ElmTextDersEighteen {
 """;
 
   // page 42
+  static const String titleEighteenFortyTwo_1 = """
+ذنبُنا الوحيد
+""";
   static const String textEighteenFortyTwo_1 = """
  أننا تركنا اتصالنا مع الخالق، وتواصلنا مع الخلق الذين لا يملكون نفعًا ولا ضرًّا لأنفسهم. كان يجب أن يكون لنا خطٌّ ساخن مع ملك الملوك منذ البداية.
 """;
