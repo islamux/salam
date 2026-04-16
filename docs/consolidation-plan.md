@@ -12,6 +12,12 @@ Consolidate duplicate/split page entries across all `elm_list_X_new_order.dart` 
 - ✅ Consolidated Page 39 (2 entries → 1)
 - ✅ Fixed page comments (15-25) to consistent format `// page X`
 - ✅ Removed internal `// 1, // 2...` comments in order lists
+- ✅ Renumbered pages 1-40 (sequential, replaced 1-28, 30, 32-42)
+- ✅ Added title constants: titleEighteenThirtyTwo_1, titleEighteenThirtyThree_1,
+  titleEighteenThirtyFour_1, titleEighteenThirtySeven_1,
+  titleEighteenThirtyEight_1, titleEighteenForty_1, titleEighteenFortyTwo_1
+- ✅ Fixed hardcoded titles (pages 32, 33, 34, 37, 38, 40, 42)
+- ✅ Fixed Page 41 order sequence to match text source
 
 ---
 
@@ -111,6 +117,8 @@ git commit -m "refactor: consolidate duplicate/split page entries in elm_lists
 | 2 | Fix issues per-file (user approval) | Pending |
 | 3 | Verification (analyze + build) | Pending |
 | 4 | Git commit | Pending |
+
+### elm_list_18 Status: ✅ COMPLETE (40 pages)
 
 ---
 

@@ -9,10 +9,12 @@ This is a Flutter application called **elm** - a Muslim devotional app (Arabic: 
 **Current Flutter Version**: 3.35.1
 **Dart Version**: 3.9.0
 **State Management**: Flutter BLoC
-**Current Branch**: `feat/text-to-json-migration` (migrating from Dart class-based data to JSON)
+**Current Branch**: `refactor/consolidate-elm-lists` (consolidating duplicate/split page entries)
 
 ### Current Development Focus
-The project is actively undergoing a **text-to-JSON migration** (Phase 1-4 completed as of the latest commit). This involves:
+The project is actively consolidating **elm_list** files to fix duplicate and split page entries:
+- elm_list_18: ✅ COMPLETE (40 pages, pages renumbered 1-40)
+- elm_list_1 to elm_list_17, elm_list_19 to elm_list_27: PENDING AUDIT
 - Converting static text data from Dart class files to JSON format
 - Implementing JSON-based data loading with schema validation
 - Generated JSON data file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items across 29 lists)
@@ -141,6 +143,7 @@ docs/                          # Project documentation
 │   ├── data-inventory.md      # Complete file inventory
 │   ├── schema-design.md       # JSON schema documentation
 │   └── usage-analysis.md      # Data flow analysis
+├── consolidation-plan.md        # Elm lists consolidation plan (Phase 1-2 in progress)
 └── IMPROVEMENT_PLAN.md        # Overall project improvement plan
 ```
 
@@ -270,13 +273,14 @@ From project rules and current implementation:
 
 ## Current Status
 
-**Branch**: `feat/text-to-json-migration`
-**Latest Commit**: "Complete Phases 1-4 of JSON Migration - Dart to JSON Conversion"
+**Branch**: `refactor/consolidate-elm-lists` (consolidating duplicate/split page entries)
+
+**Latest Commit**: "refactor(elm18): consolidate duplicate/split page entries, fix hardcoded titles"
 
 **Current Focus**:
-1. Complete Phase 5: Data service layer implementation
-2. Text coloring improvements (as mentioned in Arabic README)
-3. Font management consolidation (resolve FontCubit vs BasePageCubit duplication)
+1. Phase 1: Audit remaining 26 list files (elm_list_1 to elm_list_17, elm_list_19 to elm_list_27)
+2. Phase 2: Fix issues per-file (consolidation, renumbering, hardcoded titles)
+3. Phase 3: Verification (analyze + build)
 
 **App Status**:
 - ✅ Builds successfully (verified with `flutter build apk` and `flutter build linux`)
