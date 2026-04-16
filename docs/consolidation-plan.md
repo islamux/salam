@@ -1,5 +1,12 @@
 # Elm Lists Consolidation Plan
 
+## QUICK STATUS (for AI Resume)
+<!--BRANCH: refactor/consolidate-elm-lists-->
+<!--NEXT: Phase 1 - Audit remaining 26 files (1-17, 19-27)-->
+<!--DONE: elm_list_18 (40 pages, renumbered 1-40, hardcoded titles fixed)-->
+<!--TODO: audit 26 files → fix issues → verify → commit-->
+<!--PLAN: Continue with audit. For each file: check duplicates, splits, comments. Then fix file by file.-->
+
 ## Overview
 Consolidate duplicate/split page entries across all `elm_list_X_new_order.dart` files (1-27, excluding 18 which is done).
 
