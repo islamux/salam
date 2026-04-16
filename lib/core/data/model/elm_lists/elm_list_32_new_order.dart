@@ -3,7 +3,7 @@ import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_thirty_two.dart';
 
 List<ElmModelNewOrder> elmList32NewOrder = [
-  // page 1 - from elm 18 page 29
+  // page 1
   ElmModelNewOrder(
     titles: [
       ElmTextDersThirtyTwo.titleThirtyTwoOne,
@@ -21,7 +21,7 @@ List<ElmModelNewOrder> elmList32NewOrder = [
     ],
   ),
 
-  // page 2 - from elm 18 page 30
+  // page 2
   ElmModelNewOrder(
     texts: [
       ElmTextDersThirtyTwo.textThirtyTwoTwo,
@@ -35,27 +35,51 @@ List<ElmModelNewOrder> elmList32NewOrder = [
     ],
   ),
 
-  // page 3 - from elm 18 page 31
+  // page 3 
   ElmModelNewOrder(
     texts: [
       ElmTextDersThirtyTwo.textThirtyTwoThree,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 4 
+  ElmModelNewOrder(
+    texts: [
       ElmTextDersThirtyTwo.textThirtyTwoFour,
-      ElmTextDersThirtyTwo.textThirtyTwoFive,
-      ElmTextDersThirtyTwo.textThirtyTwoSix,
     ],
     ayahs: [
       ElmTextDersThirtyTwo.ayahThirtyTwoFour,
     ],
     order: [
       EnOrder.texts,
-      EnOrder.texts,
       EnOrder.ayahs,
-      EnOrder.texts,
+    ],
+  ),
+
+  // page 5 
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersThirtyTwo.textThirtyTwoFive,
+    ],
+    order: [
       EnOrder.texts,
     ],
   ),
 
-  // page 4 - from elm 18 page 32
+  // page 6
+  ElmModelNewOrder(
+    texts: [
+      ElmTextDersThirtyTwo.textThirtyTwoSix,
+    ],
+    order: [
+      EnOrder.texts,
+    ],
+  ),
+
+  // page 7
   ElmModelNewOrder(
     texts: [
       ElmTextDersThirtyTwo.textThirtyTwoSeven,
@@ -65,7 +89,7 @@ List<ElmModelNewOrder> elmList32NewOrder = [
     ],
   ),
 
-  // page 5 - from elm 18 page 33
+  // page 8
   ElmModelNewOrder(
     texts: [
       ElmTextDersThirtyTwo.textThirtyTwoEight,
@@ -75,7 +99,7 @@ List<ElmModelNewOrder> elmList32NewOrder = [
     ],
   ),
 
-  // page 6 - from elm 18 page 34
+  // page 9
   ElmModelNewOrder(
     texts: [
       ElmTextDersThirtyTwo.textThirtyTwoNine,
