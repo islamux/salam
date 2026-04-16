@@ -91,7 +91,7 @@ class ElmTextDersThirtyOne {
   static const String ayahHadithThirtyOnePageNine_1 = """
 يَا بُنَيَّ ارْكَب مَّعَنَا وَلَا تَكُن مَّعَ الْكَافِرِينَ
 """;
-  static const String textThirtyOnePageTen_1 = """
+  static const String textThirtyOnePageNine_3 = """
 مواساة لقلبي.
 """;
   static const String footerThirtyOnePageNine_1 = """

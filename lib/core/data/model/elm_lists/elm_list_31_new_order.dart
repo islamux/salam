@@ -132,7 +132,7 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     texts: [
       ElmTextDersThirtyOne.textThirtyOnePageNine_1,
       ElmTextDersThirtyOne.textThirtyOnePageNine_2,
-      ElmTextDersThirtyOne.textThirtyOnePageTen_1,
+      ElmTextDersThirtyOne.textThirtyOnePageNine_3,
     ],
     ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageNine_1,
