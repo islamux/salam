@@ -242,13 +242,43 @@ flutter build appbundle --release
 
 | Phase | Duration | Priority | Status |
 |-------|----------|----------|--------|
-| 1. Code Cleanup | 1 day | High | Pending |
-| 2. Testing Infrastructure | 2 days | High | Pending |
+| 1. Code Cleanup | 1 day | High | ✅ COMPLETE |
+| 2. Testing Infrastructure | 2 days | High | ✅ COMPLETE |
 | 3. Architecture Refactoring | 3 days | Medium | Pending |
 | 4. Performance & Caching | 2 days | Medium | Pending |
 | 5. New Features | 3 days | Low | Pending |
 | 6. Polish & Release | 2 days | Medium | Pending |
 | **Total** | **13 days** | | |
+
+---
+
+## Known Issues & Solutions
+
+### Gradle/SDK Version Warnings
+**Problem**: Flutter warnings about outdated Gradle, AGP, Kotlin, and SDK versions when building.
+
+**Solution**: Use `--android-skip-build-dependency-validation` flag to bypass version checks.
+
+```bash
+# Debug build
+flutter build apk --debug --android-skip-build-dependency-validation
+
+# Release build
+flutter build apk --release --android-skip-build-dependency-validation
+
+# App bundle (for Play Store)
+flutter build appbundle --release --android-skip-build-dependency-validation
+```
+
+**Alternative**: Upgrade Gradle/AGP/Kotlin manually (takes time on first build).
+
+### Manual Gradle Upgrade (Optional)
+| File | Current | Recommended |
+|------|---------|-------------|
+| `gradle-wrapper.properties` | Gradle 8.6 | 8.10.2 |
+| `settings.gradle` (AGP) | 8.4.0 | 8.7.0 |
+| `settings.gradle` (Kotlin) | 2.0.21 | 2.1.0 |
+| `app/build.gradle` | compileSdk 35 | 36 |
 
 ---
 
