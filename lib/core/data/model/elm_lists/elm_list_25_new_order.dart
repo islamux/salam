@@ -524,7 +524,6 @@ List<ElmModelNewOrder> elmList25NewOrder = <ElmModelNewOrder>[
 
   // PageNineteen
   ElmModelNewOrder(
-    subtitles: <String>[],
     texts: <String>[
       ElmTextTwentyFive.elmTextTwentyFivePageNineteen_1,
       ElmTextTwentyFive.elmTextTwentyFivePageNineteen_2,

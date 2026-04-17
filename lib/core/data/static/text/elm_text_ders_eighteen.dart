@@ -478,7 +478,7 @@ class ElmTextDersEighteen {
 ️إن فتحت لك أبواب السماء ألقى الله محبتك في قلوب الخلق
 """;
 
-  // page 30
+  // page 29
   static const String titleEighteenThirty_1 = """
 في المظهر العام
 """;
@@ -486,7 +486,7 @@ class ElmTextDersEighteen {
 في المظهر العام، من الواجب أن نحترم الجميع، والخبايا نتركها لرب العباد، وليس بالضرورة أن ندخل إلى قلوب الخلق لنتأكد من نياتهم.
 """;
 
-  // page 32
+  // page 30
   static const String titleEighteenThirtyTwo_1 = """
 في صالة الانتظار
 """;
@@ -494,7 +494,7 @@ class ElmTextDersEighteen {
  أنتظر دوري لأنتقل إلى الرفيق الأعلى، والزاد قليل لا أظن بأنه سيكفي لساعة، هذا ما لم نكن نعمل له حساب فتصدقوا عليّ بدعوة، لعلّ أن الله يرحم ضعفي وقلة حيلتي.
   """;
 
-  // page 33
+  // page 31
   static const String titleEighteenThirtyThree_1 = """
 مشكلتنا
 """;
@@ -505,7 +505,7 @@ class ElmTextDersEighteen {
 وأن اكتسبنا بعض معلومات من بعض دروسه لم نطبق حتى ربع ربعها، هذه هي مشكلتنا ومأساتنا.
 """;
 
-  // page 34
+  // page 32
   static const String titleEighteenThirtyFour_1 = """
 { له ما في السماوات وما في الأرض }
 """;
@@ -525,7 +525,7 @@ class ElmTextDersEighteen {
 وهو القائل { فما ظنكم برب العالمين }
 """;
 
-  // page 35
+  // page 33
   static const String titleEighteenThirtyFive_1 = """
 سياسة الدول
 """;
@@ -533,7 +533,7 @@ class ElmTextDersEighteen {
  لعبة قذرة، وسياسة الأسر أقذر، وتسييس الخلافات الأسرية أحقر.
 """;
 
-  // page 36
+  // page 34
   static const String textEighteenThirtySix_1 = """
 له جنود لا نراها ولا نعرفها، ويد الله تعمل في الخفاء، ومن لطفه الخفي انه يسوق العطايا فوق اجنحة البلايا. فلماذا القلق؟ ولِمَ الحزن؟
 """;
@@ -541,7 +541,7 @@ class ElmTextDersEighteen {
 إن تدبرنا قوله سبحانه وتعالى { يد الله فوق ايديهم } وقرأناها بقلوبنا قبل ان تنطق بها السنتنا.
 """;
 
-  // page 37
+  // page 35
   static const String titleEighteenThirtySeven_1 = """
 "إذا أحبك الله خدمك أعداؤك"
 """;
@@ -554,7 +554,7 @@ class ElmTextDersEighteen {
 ﻷجل ذاكل وقبل أن أموت الف مليون شكر لك من قدم لنا خدمة بالمجان وكل ممن ساهم وشارك
 """;
 
-  // page 38
+  // page 36
   static const String titleEighteenThirtyEight_1 = """
 {يعكفون على أصنام لهم}
 """;
@@ -569,7 +569,7 @@ class ElmTextDersEighteen {
 هذه الآيات العظيمة جعلتني أتفكر في حال بعض شباب هذه الأمة البائسة { من يعكفون على جوالاتهم لساعات طويلة في اللعب والّهو، ولا يلتفتون لكتاب الله سبحانه وتعالى ولو لربع ساعة في اليوم }.
 """;
 
-  // page 39
+  // page 37
   static const String textEighteenThirtyNine_1 = """
 لا زلت في صراع مع نفسي ولم أنتصر بعد، وأحتاج لمن يأخذ بيدي إلى الله، فالنفس أمارة بالسوء وشياطين الجن والإنس يكثفون جهودهم.
 """;
@@ -581,7 +581,7 @@ class ElmTextDersEighteen {
 العنكبوت
 """;
 
-  // page 40
+  // page 38
   static const String titleEighteenForty_1 = """
 الأعداء
 """;
@@ -597,7 +597,7 @@ class ElmTextDersEighteen {
 النساء
 """;
 
-  // page 41
+  // page 39
   static const String titleEighteenFortyOne_1 = """
 إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا
 """;
@@ -639,7 +639,7 @@ class ElmTextDersEighteen {
 ذلك، أنصح أبنائي الأعزاء على قلبي بأن يروضوا أنفسهم، وينتصروا عليها وعلى وسوسة الشيطان بإرادة فولاذية صلبة، لكي يستحقوا أن يكونوا ممن يتولاهم الله في الدنيا والآخرة، لأنهم ما زالوا في مقتبل العمر، كي لا يصلوا إلى العجز والوهن الذي وصلت إليه أنفسنا.
 """;
 
-  // page 42
+  // page 40
   static const String titleEighteenFortyTwo_1 = """
 ذنبُنا الوحيد
 """;

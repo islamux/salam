@@ -20,6 +20,7 @@ List<ElmModelNewOrder> elmList26NewOrder = <ElmModelNewOrder>[
       EnOrder.ayahs,
     ],
   ),
+
   // pageTwo
   ElmModelNewOrder(
     subtitles: [

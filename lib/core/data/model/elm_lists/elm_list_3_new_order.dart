@@ -4,7 +4,7 @@ import 'package:elm/core/data/model/enum_order.dart';
 import 'package:elm/core/data/static/text/elm_text_ders_three.dart';
 
 List<ElmModelNewOrder> elmList3NewOrder = [
-  // Page 1
+  // page 1
   ElmModelNewOrder(
     titles: [
       ElmTextDersThree.titleThreeOne,
@@ -21,7 +21,6 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
       EnOrder.ayahs,
-      //
       EnOrder.texts,
       EnOrder.ayahs,
     ],
@@ -70,6 +69,7 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.texts,
     ],
   ),
+
   // page 5
   ElmModelNewOrder(
     ayahs: [
@@ -83,11 +83,11 @@ List<ElmModelNewOrder> elmList3NewOrder = [
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
-      //
       EnOrder.ayahs,
       EnOrder.texts,
     ],
   ),
+
   // page 6
   ElmModelNewOrder(
     texts: [
@@ -101,12 +101,10 @@ List<ElmModelNewOrder> elmList3NewOrder = [
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
-      //
       EnOrder.ayahs,
       EnOrder.texts,
     ],
   ),
-  // ...existing code...
 
   // page 7
   ElmModelNewOrder(
@@ -121,15 +119,16 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.texts,
     ],
   ),
+  // page 8
   ElmModelNewOrder(
     subtitles: [
-      ElmTextDersThree.subtitleThreeSeven_2,
+      ElmTextDersThree.subtitleThreeEight_1,
     ],
     texts: [
-      ElmTextDersThree.elmTextThreeSeven_2,
+      ElmTextDersThree.elmTextThreeEight_1,
     ],
     ayahs: [
-      ElmTextDersThree.ayahHadithThreeSeven_1,
+      ElmTextDersThree.ayahHadithThreeEight_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -137,16 +136,17 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.ayahs,
     ],
   ),
+  // page 9
   ElmModelNewOrder(
     subtitles: [
-      ElmTextDersThree.subtitleThreeSeven_3,
+      ElmTextDersThree.subtitleThreeNine_1,
     ],
     texts: [
-      ElmTextDersThree.elmTextThreeSeven_3,
+      ElmTextDersThree.elmTextThreeNine_1,
     ],
     ayahs: [
-      ElmTextDersThree.ayahHadithThreeSeven_2,
-      ElmTextDersThree.ayahHadithThreeSeven_3,
+      ElmTextDersThree.ayahHadithThreeNine_1,
+      ElmTextDersThree.ayahHadithThreeNine_2,
     ],
     order: [
       EnOrder.subtitles,
@@ -155,28 +155,30 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.ayahs,
     ],
   ),
+  // page 10
   ElmModelNewOrder(
     subtitles: [
-      ElmTextDersThree.subtitleThreeSeven_4,
+      ElmTextDersThree.subtitleThreeTen_1,
     ],
     texts: [
-      ElmTextDersThree.elmTextThreeSeven_4,
+      ElmTextDersThree.elmTextThreeTen_1,
     ],
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
   ),
+  // page 11
   ElmModelNewOrder(
     subtitles: [
-      ElmTextDersThree.subtitleThreeSeven_5,
+      ElmTextDersThree.subtitleThreeEleven_1,
     ],
     texts: [
-      ElmTextDersThree.elmTextThreeSeven_5,
-      ElmTextDersThree.elmTextThreeSeven_6,
+      ElmTextDersThree.elmTextThreeEleven_1,
+      ElmTextDersThree.elmTextThreeEleven_2,
     ],
     ayahs: [
-      ElmTextDersThree.ayahHadithThreeSeven_4,
+      ElmTextDersThree.ayahHadithThreeEleven_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -185,15 +187,16 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.texts,
     ],
   ),
+  // page 12
   ElmModelNewOrder(
     subtitles: [
-      ElmTextDersThree.subtitleThreeSeven_6,
+      ElmTextDersThree.subtitleThreeTwelve_1,
     ],
     ayahs: [
-      ElmTextDersThree.ayahHadithThreeSeven_5,
+      ElmTextDersThree.ayahHadithThreeTwelve_1,
     ],
     texts: [
-      ElmTextDersThree.elmTextThreeSeven_7,
+      ElmTextDersThree.elmTextThreeTwelve_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -201,18 +204,17 @@ List<ElmModelNewOrder> elmList3NewOrder = [
       EnOrder.texts,
     ],
   ),
+  // page 13
   ElmModelNewOrder(
     subtitles: [
-      ElmTextDersThree.subtitleThreeSeven_7,
+      ElmTextDersThree.subtitleThreeThirteen_1,
     ],
     texts: [
-      ElmTextDersThree.elmTextThreeSeven_8,
+      ElmTextDersThree.elmTextThreeThirteen_1,
     ],
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
     ],
   ),
-
-// ...existing code...
 ];

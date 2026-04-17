@@ -262,7 +262,7 @@ List<ElmModelNewOrder> elmList12NewOrder = [
   // 16
   ElmModelNewOrder(
     titles: [
-      ElmTextDersTwelve.titleTwelveSixteewn,
+      ElmTextDersTwelve.titleTwelveSixteen,
     ],
     ayahs: [
       ElmTextDersTwelve.ayahHadithTwelveSixteen_1,

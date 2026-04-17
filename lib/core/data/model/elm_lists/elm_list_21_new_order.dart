@@ -381,7 +381,7 @@ List<ElmModelNewOrder> elmList21NewOrder = [
   // page 17
   ElmModelNewOrder(
     subtitles: [
-      ElmTextTwentyOne.subtitleTwentyOnSeventeen_1,
+      ElmTextTwentyOne.subtitleTwentyOneSeventeen_1,
     ],
     texts: [
       ElmTextTwentyOne.elmTextTwentyOneSeventeen_1,

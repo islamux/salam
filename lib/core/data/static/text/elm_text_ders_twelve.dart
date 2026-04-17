@@ -261,7 +261,7 @@ class ElmTextDersTwelve {
   """;
 
   // page 16
-  static const String titleTwelveSixteewn = """
+  static const String titleTwelveSixteen = """
 حلمه صل الله عليه وسلم
 -------------------
 """;

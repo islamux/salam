@@ -390,7 +390,7 @@ class ElmTextTwentyOne {
 ياايها الذين امنوا اصبروا وصابروا 
 
 """;
-  static const String subtitleTwentyOnSeventeen_1 = """
+  static const String subtitleTwentyOneSeventeen_1 = """
 الحكمة من بدء الآية بالنداء بلفظ الإيمان 
 """;
 // 2

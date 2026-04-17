@@ -70,7 +70,7 @@ List<ElmModelNewOrder> elmList8NewOrder = [
       ElmTextDersEight.elmTextEightFive_1,
     ],
     ayahs: [
-      ElmTextDersEight.ayhaHadithFive_1,
+      ElmTextDersEight.ayahaHadithFive_1,
     ],
     order: [
       EnOrder.texts,

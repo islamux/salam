@@ -16,10 +16,6 @@ The project is actively consolidating **elm_list** files to fix duplicate and sp
 - elm_list_17: ✅ COMPLETE (21 pages, variables renamed to match slider)
 - elm_list_18: ✅ COMPLETE (40 pages, pages renumbered 1-40)
 - elm_list_1 to elm_list_16, elm_list_19 to elm_list_27: PENDING AUDIT
-- Converting static text data from Dart class files to JSON format
-- Implementing JSON-based data loading with schema validation
-- Generated JSON data file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items across 29 lists)
-- Migration plan and documentation available in `/docs` directory
 
 ## Common Commands
 
@@ -101,15 +97,10 @@ lib/
 ├── core/                       # Core functionality
 │   ├── data/
 │   │   ├── model/
-│   │   │   ├── elm_model_new_order.dart    # Base data model with JSON serialization
+│   │   │   ├── elm_model_new_order.dart    # Base data model
 │   │   │   ├── enum_order.dart             # EnOrder enum for rendering sequence
 │   │   │   └── elm_lists/                  # 27 data files (elm_list_1_new_order.dart
 │   │   │                                     through elm_list_27_new_order.dart)
-│   │   ├── json/                          # JSON-based data (migration in progress)
-│   │   │   ├── data/
-│   │   │   │   └── elm_all_data.json      # 240KB JSON with 504 content items
-│   │   │   └── schemas/
-│   │   │       └── elm_data_schema.json   # JSON schema for validation
 │   │   └── static/
 │   │       ├── routes_constant.dart       # Route constants (all 27+ routes)
 │   │       ├── theme/                     # App themes and colors
@@ -139,11 +130,6 @@ lib/
 │   └── search/                            # Search utilities
 
 docs/                          # Project documentation
-├── json-migration/             # JSON migration documentation
-│   ├── conversion-report.md   # Migration results and statistics
-│   ├── data-inventory.md      # Complete file inventory
-│   ├── schema-design.md       # JSON schema documentation
-│   └── usage-analysis.md      # Data flow analysis
 ├── consolidation-plan.md        # Elm lists consolidation plan (Phase 1-2 in progress)
 └── IMPROVEMENT_PLAN.md        # Overall project improvement plan
 ```
@@ -161,16 +147,12 @@ docs/                          # Project documentation
    - Share functionality handled in `cubit/share/`
 
 2. **Data Models**: `/lib/core/data/model/`
-   - **ElmModelNewOrder**: Base data model with JSON serialization support
-     - Fields: `titles?`, `subtitles?`, `texts?`, `ayahs?`, `footer?`, `order` (required)
-     - `order`: List defining rendering sequence using `EnOrder` enum
-     - Supports `fromJson()`, `toJson()`, and `copyWith()` methods
+   - **ElmModelNewOrder**: Base data model
+      - Fields: `titles?`, `subtitles?`, `texts?`, `ayahs?`, `footer?`, `order` (required)
+      - `order`: List defining rendering sequence using `EnOrder` enum
+      - Supports `copyWith()` method
    - **EnOrder enum**: Defines rendering order (titles, subtitles, texts, ayahs, footer)
    - Individual data files: `elm_list_1_new_order.dart` through `elm_list_27_new_order.dart`
-   - **JSON Data Migration** (Phase 1-4 complete):
-     - Raw data in `core/data/static/text/` (ElmTextDers*.dart files)
-     - JSON file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items)
-     - Schema: `lib/core/data/json/schemas/elm_data_schema.json`
 
 3. **Navigation**: Centralized in `app_routes.dart`
    - Uses `RoutesConstant` from `core/data/static/routes_constant.dart`
@@ -210,7 +192,6 @@ docs/                          # Project documentation
    - Static Dart files → ElmTextDers*.dart (raw text constants)
    - ElmList*.dart → List<ElmModelNewOrder> (data models)
    - Pages → Load ElmList data → Render via PageView
-   - **Migration in progress**: Dart files → JSON (elm_all_data.json)
 
 ## Testing
 
@@ -235,8 +216,6 @@ Located in `/assets/`:
 ## Important Files to Know
 
 ### Core Data Files
-- `lib/core/data/model/elm_model_new_order.dart:51-67`: `fromJson()` factory - JSON deserialization
-- `lib/core/data/model/elm_model_new_order.dart:83-92`: `toJson()` method - JSON serialization
 - `lib/cubit/base_cubit/base_page_cubit.dart:68-89`: `searchContent()` - Built-in search functionality
 - `lib/app_routes.dart:36-145`: Route generator - All 37 routes defined here
 
@@ -249,16 +228,6 @@ ElmModelNewOrder(
   order: [EnOrder.titles, EnOrder.texts, EnOrder.ayahs]
 )
 ```
-
-### Current Migration Status
-**Phases 1-4 Complete** (as of latest commit):
-- ✅ Phase 1: Data inventory and analysis
-- ✅ Phase 2: JSON schema design
-- ✅ Phase 3: Migration script development
-- ✅ Phase 4: JSON generation (240KB, 504 items)
-- 🔄 Phase 5: Data service layer implementation (pending)
-
-See `/docs/json-migration/` for detailed migration documentation.
 
 ## Development Guidelines
 

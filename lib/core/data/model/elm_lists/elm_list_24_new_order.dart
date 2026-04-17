@@ -328,21 +328,21 @@ List<ElmModelNewOrder> elmList24NewOrder = [
   // PageEighteen
   ElmModelNewOrder(
     texts: [
-      ElmTextTwentyFour.elmTextTwentyFourNinteen_1,
+      ElmTextTwentyFour.elmTextTwentyFourNineteen_1,
     ],
     order: [
       EnOrder.texts,
     ],
   ),
 
-  // PageNinteen
+  // PageNineteen
   ElmModelNewOrder(
     texts: [
-      ElmTextTwentyFour.elmTextTwentyFourNinteen_1,
-      ElmTextTwentyFour.elmTextTwentyFourNinteen_2,
+      ElmTextTwentyFour.elmTextTwentyFourNineteen_1,
+      ElmTextTwentyFour.elmTextTwentyFourNineteen_2,
     ],
     ayahs: [
-      ElmTextTwentyFour.ayahHadithTwentyFourNinteen_1,
+      ElmTextTwentyFour.ayahHadithTwentyFourNineteen_1,
     ],
     order: [
       EnOrder.texts,

@@ -45,7 +45,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersFour.elmTextFourFour_1,
-      ElmTextDersFour.elmTextFourFive_1,
     ],
     order: [
       EnOrder.texts,
