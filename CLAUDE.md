@@ -13,8 +13,9 @@ This is a Flutter application called **elm** - a Muslim devotional app (Arabic: 
 
 ### Current Development Focus
 The project is actively consolidating **elm_list** files to fix duplicate and split page entries:
+- elm_list_17: ✅ COMPLETE (21 pages, variables renamed to match slider)
 - elm_list_18: ✅ COMPLETE (40 pages, pages renumbered 1-40)
-- elm_list_1 to elm_list_17, elm_list_19 to elm_list_27: PENDING AUDIT
+- elm_list_1 to elm_list_16, elm_list_19 to elm_list_27: PENDING AUDIT
 - Converting static text data from Dart class files to JSON format
 - Implementing JSON-based data loading with schema validation
 - Generated JSON data file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items across 29 lists)
