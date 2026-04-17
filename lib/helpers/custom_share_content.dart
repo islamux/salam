@@ -9,7 +9,7 @@ String customShareContent(var controller) {
   var shareText = controller.getShareText(index);
 
   // share the text
-  shareText = Share.share(shareText) as String;
+  SharePlus.instance.share(ShareParams(text: shareText.toString()));
 
-  return shareText;
+  return shareText.toString();
 }

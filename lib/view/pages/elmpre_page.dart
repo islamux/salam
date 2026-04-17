@@ -36,7 +36,6 @@ class ElmPrePage extends StatelessWidget {
                   IconButton(
                     // Share content with cubit
                     onPressed: () {
-                      print("share button pressed ...........\n");
                       final currentPageIndex =
                           context.read<ElmPreCubit>().currentPageIndex;
                       context.read<ElmPreCubit>().customShareContent(

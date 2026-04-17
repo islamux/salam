@@ -85,7 +85,7 @@ class GenericCustomTextSlider extends StatelessWidget {
               child: Column(
                 children: [
                   Slider(
-                    value: (cubit.currentPageIndex ?? 0).toDouble(),
+                    value: cubit.currentPageIndex.toDouble(),
                     onChanged: (double value) => cubit.goToPage(value.toInt()),
                     min: 0,
                     max: dataList.isEmpty ? 0 : dataList.length.toDouble() - 1,
@@ -93,7 +93,7 @@ class GenericCustomTextSlider extends StatelessWidget {
                     inactiveColor: AppColor.grey, // Corrected inactiveColor
                   ),
                   Text(
-                    '${(cubit.currentPageIndex ?? 0) + 1} / ${dataList.length}',
+                    '${cubit.currentPageIndex + 1} / ${dataList.length}',
                     style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold), // Corrected style

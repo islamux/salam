@@ -61,7 +61,7 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
           .map((text) => text.data)
           .join('\n'); // Join text elements with newline separator
 
-      Share.share(joinedText);
+      SharePlus.instance.share(ShareParams(text: joinedText));
       emit(PageShareSuccess()); // Optionally handle the success case
     } catch (e) {
       emit(PageShareFailure(errorMessage: 'Failed to share!'));
