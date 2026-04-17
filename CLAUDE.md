@@ -9,7 +9,7 @@ This is a Flutter application called **elm** - a Muslim devotional app (Arabic: 
 **Current Flutter Version**: 3.35.1
 **Dart Version**: 3.9.0
 **State Management**: Flutter BLoC
-**Current Branch**: `refactor/consolidate-elm-lists` (consolidating duplicate/split page entries)
+**Current Branch**: `feat/project-improvements` (implementing improvement plan)
 
 ### Current Development Focus
 The project is actively consolidating **elm_list** files to fix duplicate and split page entries:
@@ -111,7 +111,6 @@ lib/
 │   │   └── base_page_state.dart           # Base state definitions
 │   ├── elm_cubits/
 │   │   └── home_cubit.dart                # Home page BLoC
-│   ├── font_cubit.dart                    # Font settings management
 │   └── share/                             # Share functionality
 ├── view/                       # UI layer
 │   ├── pages/
@@ -143,7 +142,6 @@ docs/                          # Project documentation
      - `PageController` for horizontal navigation
      - `searchContent()`: Searches across titles, subtitles, texts, ayahs, and footer
      - `customShareContent()`: Shares page content using share_plus
-   - `FontCubit` manages font settings (note: also managed in BasePageCubit)
    - Share functionality handled in `cubit/share/`
 
 2. **Data Models**: `/lib/core/data/model/`
@@ -235,7 +233,6 @@ From project rules and current implementation:
 - **Always create a phase-by-phase plan** before implementing changes
 - Follow clean architecture with separation of concerns
 - Use `BasePageCubit` for common page functionality (don't duplicate code)
-- **Font management**: Currently in both `FontCubit` and `BasePageCubit` - consider consolidation
 - **Search**: Use `BasePageCubit.searchContent()` for consistent search behavior
 - **Share**: Use `BasePageCubit.customShareContent()` for consistent sharing
 - Keep responses simple while respecting best practices
@@ -243,14 +240,12 @@ From project rules and current implementation:
 
 ## Current Status
 
-**Branch**: `refactor/consolidate-elm-lists` (consolidating duplicate/split page entries)
+**Branch**: `feat/project-improvements` (implementing improvement plan)
 
-**Latest Commit**: "refactor(elm18): consolidate duplicate/split page entries, fix hardcoded titles"
-
-**Current Focus**:
-1. Phase 1: Audit remaining 26 list files (elm_list_1 to elm_list_17, elm_list_19 to elm_list_27)
-2. Phase 2: Fix issues per-file (consolidation, renumbering, hardcoded titles)
-3. Phase 3: Verification (analyze + build)
+**Phase 1 Complete**: Code cleanup
+- Removed unused `custom_share_content.dart`
+- Removed duplicate `font_cubit.dart`
+- Cleaned up untracked files
 
 **App Status**:
 - ✅ Builds successfully (verified with `flutter build apk` and `flutter build linux`)
