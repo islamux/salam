@@ -22,7 +22,7 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   }
 
   void increaseFontSize() {
-    if (fontSize <= 37.0) {
+    if (fontSize < 37.0) {
       fontSize += 2.0;
       emit(PageFontSizeChanged(fontSize));
     }
