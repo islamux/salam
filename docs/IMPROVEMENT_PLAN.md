@@ -302,6 +302,69 @@ flutter build apk --release --android-skip-build-dependency-validation
 | Missing icons | Check all required sizes |
 | Review rejected | Fix issues and resubmit |
 
+---
+
+### 6.6 Alternative App Stores
+
+Since Google Play may not be available in all regions, consider these alternatives:
+
+#### Aptoide (Recommended Alternative)
+- **URL**: https://connect.aptoide.com
+- **Cost**: Free developer account
+- **Works in Yemen**: ✅ Yes
+- **Requirements**:
+  - Upload APK (not AAB - must use bundletool if converting)
+  - Same signing key as Google Play (recommended)
+  - App icon and screenshots
+
+**Upload Steps**:
+1. Create account at https://connect.aptoide.com
+2. Click "Add App"
+3. If on Google Play: enter package name
+4. Upload app-release.apk (max 4GB)
+5. Wait for review (usually fast)
+6. Set release mode (Immediate/Manual)
+
+#### Uptodown
+- **URL**: https://en.uptodown.com/android/developers
+- **Cost**: Free
+- **Works in Yemen**: ✅ Yes
+- **Notes**: Popular in Spanish-speaking countries
+
+#### Amazon Appstore
+- **URL**: https://developer.amazon.com
+- **Cost**: Free
+- **Works in Yemen**: ✅ Yes
+- **Notes**: Can auto-import from Google Play
+
+#### Samsung Galaxy Store
+- **URL**: https://seller.samsung.com
+- **Cost**: Free registration
+- **Works in Yemen**: ✅ Yes
+- **Notes**: For Samsung device users
+
+#### Direct APK Distribution
+- **Website**: Host APK on your own website
+- **GitHub Releases**: Upload to GitHub repo releases
+- **APKMirror**: Upload after Google Play approval
+
+**Build for Alternative Stores**:
+```bash
+flutter build apk --release --android-skip-build-dependency-validation
+# Note: Use APK, NOT appbundle (.aab) for Aptoide
+```
+
+#### Store Comparison
+
+| Store | Countries | Cost | Works in Yemen |
+|-------|-----------|------|----------------|
+| Google Play | Global | $25 | ⚠️ Limited |
+| Aptoide | Global | Free | ✅ Yes |
+| Uptodown | Global | Free | ✅ Yes |
+| Amazon | Global | Free | ✅ Yes |
+| Samsung | Global | Free | ✅ Yes |
+| Direct APK | Everywhere | Free | ✅ Yes |
+
 **Final Verification**:
 ```bash
 flutter analyze
