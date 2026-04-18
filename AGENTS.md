@@ -22,9 +22,9 @@ dart format .
 ## Project Structure
 
 - `lib/main.dart` - App entry point
-- `lib/cubit/base_cubit/` - BasePageCubit (all 27 pages extend this)
-- `lib/core/data/model/elm_lists/` - 27 ElmList data files
-- `lib/view/pages/elm*.dart` - 27 content pages (elm1-elm27)
+- `lib/cubit/base_cubit/` - BasePageCubit (all 32+ pages extend this)
+- `lib/core/data/model/elm_lists/` - 34 ElmList data files (1-32 + pre + final)
+- `lib/view/pages/elm*.dart` - 34 content pages (elm1-elm32 + pre + final)
 
 ## Shared Patterns
 

@@ -71,7 +71,7 @@ flutter test --coverage
 **Duration**: 3 days | **Priority**: Medium
 
 ### 3.1 Generic Content Page Widget
-**Current**: 27 near-identical `elm1.dart` - `elm27.dart` files
+**Current**: 32 near-identical `elm1.dart` - `elm32.dart` files (+ pre/final pages = 34 total)
 
 **Target**: Single reusable widget
 
@@ -88,8 +88,8 @@ class ElmContentPage extends StatelessWidget {
 
 **Tasks**:
 - [ ] Create `ElmContentPage` generic widget
-- [ ] Refactor `elm1.dart` - `elm27.dart` to use generic widget
-- [ ] Reduce code from ~2700 lines to ~300 lines
+- [ ] Refactor `elm1.dart` - `elm32.dart` to use generic widget
+- [ ] Reduce code from ~3,700 lines to ~300 lines
 
 ### 3.2 Extract Arabic Strings
 **Current**: Hardcoded Arabic text in widget files

@@ -99,8 +99,8 @@ lib/
 │   │   ├── model/
 │   │   │   ├── elm_model_new_order.dart    # Base data model
 │   │   │   ├── enum_order.dart             # EnOrder enum for rendering sequence
-│   │   │   └── elm_lists/                  # 27 data files (elm_list_1_new_order.dart
-│   │   │                                     through elm_list_27_new_order.dart)
+│   │   │   └── elm_lists/                  # 34 data files (elm_list_1_new_order.dart
+│   │   │                                     through elm_list_32_new_order.dart + pre + final)
 │   │   └── static/
 │   │       ├── routes_constant.dart       # Route constants (all 27+ routes)
 │   │       ├── theme/                     # App themes and colors
