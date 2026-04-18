@@ -228,12 +228,86 @@ flutter test
 - [ ] Update CHANGELOG
 - [ ] Create release notes
 
+### 6.5 Upload to Google Play
+**Duration**: 1 day | **Priority**: High
+
+#### Pre-requisites
+- [ ] Google Play Developer Account ($25 one-time fee)
+- [ ] App icon (512x512 PNG)
+- [ ] Feature graphic (1024x500 PNG)
+- [ ] Screenshots (3-5 phone images, 1080x1920 PNG each)
+
+#### Build Release APK
+```bash
+# Clean and build release APK
+flutter clean
+flutter pub get
+flutter build apk --release --android-skip-build-dependency-validation
+# Output: build/app/outputs/flutter-apk/app-release.apk
+```
+
+#### Google Play Console Steps
+
+**Step 1: Create App**
+1. Go to https://play.google.com/console
+2. Click "Create app"
+3. Select "Android"
+4. Fill:
+   - App name: خواطر إيمانية (Khatir)
+   - Default language: Arabic
+   - App or game: App
+   - Free or Paid: Free
+
+**Step 2: App Listings**
+| Field | What to Fill | Example |
+|-------|-------------|---------|
+| App title | Arabic name | خواطر إيمانية |
+| Short description | 80 chars max | تطبيقات إسلامية للتقرب إلى الله |
+| Full description | 4000 chars max | تطبيق يحتوي على الخواطر والمقالات الإسلامية... |
+| App icon | 512x512 PNG | app_icon.png |
+| Feature graphic | 1024x500 PNG | feature_graphic.png |
+| Phone screenshots | 3-5 images | screenshot1.png, screenshot2.png... |
+
+**Step 3: Content Rating**
+1. Go to "Content rating"
+2. Click "Get started"
+3. Select "Islamic" content category
+4. Answer all questions honestly
+5. Get rating (usually "Everyone" or "6+")
+
+**Step 4: Pricing & Distribution**
+- Pricing: Free
+- Countries: Select all available countries
+- Enable "App in Amazon Appstore" if desired
+
+**Step 5: App Releases**
+1. Go to "App releases"
+2. Click "Production" track
+3. Click "Create release"
+4. Upload APK: Drag `app-release.apk`
+5. Release name: 1.0.0
+6. Release notes (AR): إصدار inaugural
+
+**Step 6: Review & Submit**
+1. Click "Submit for review"
+2. Wait 1-24 hours for approval
+3. App goes live automatically
+
+#### Common Issues & Fixes
+
+| Issue | Fix |
+|------|-----|
+| APK too large | Enable R8 minification in build.gradle |
+| Policy violation | Ensure content follows guidelines |
+| Missing icons | Check all required sizes |
+| Review rejected | Fix issues and resubmit |
+
 **Final Verification**:
 ```bash
 flutter analyze
 flutter test --coverage
-flutter build apk --release
-flutter build appbundle --release
+flutter build apk --release --android-skip-build-dependency-validation
+flutter build appbundle --release --android-skip-build-dependency-validation
 ```
 
 ---
