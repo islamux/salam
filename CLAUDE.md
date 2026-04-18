@@ -42,14 +42,14 @@ flutter run --release
 
 ### Building
 ```bash
-# Build APK for Android
-flutter build apk --release
+# Build APK for Android (REQUIRED FLAG to bypass version warnings)
+flutter build apk --release --android-skip-build-dependency-validation
 
 # Build App Bundle for Android Play Store
-flutter build appbundle --release
+flutter build appbundle --release --android-skip-build-dependency-validation
 
 # Build for specific platform
-flutter build apk --release --platform=android-arm64
+flutter build apk --release --platform=android-arm64 --android-skip-build-dependency-validation
 
 # Build iOS (requires macOS)
 flutter build ios --release
