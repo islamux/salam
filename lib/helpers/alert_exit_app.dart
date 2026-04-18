@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:elm/view/widget/custom_botton.dart';
+import 'package:khatir/view/widget/custom_botton.dart';
 import 'package:flutter/material.dart';
 
 Future<bool> alertExitApp(BuildContext context) async {

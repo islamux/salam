@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/cubit/base_cubit/base_page_cubit.dart';
-import 'package:elm/cubit/base_cubit/base_page_state.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
+import 'package:khatir/cubit/base_cubit/base_page_state.dart';
 import 'package:flutter/material.dart';
 
 class TestPageCubit extends BasePageCubit {

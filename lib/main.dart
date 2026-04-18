@@ -1,10 +1,10 @@
-import 'package:elm/cubit/elm_cubits/home_cubit.dart';
+import 'package:khatir/cubit/elm_cubits/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:elm/app_routes.dart';
-import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/theme/app_them.dart';
+import 'package:khatir/app_routes.dart';
+import 'package:khatir/core/data/static/routes_constant.dart';
+import 'package:khatir/core/data/static/theme/app_them.dart';
 
 void main() {
   // Splash screen

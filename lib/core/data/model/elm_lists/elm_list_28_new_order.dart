@@ -1,7 +1,7 @@
 // ElmList28 - لا تخف إنك انت الأعلى
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_twenty_eight.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/text/elm_text_ders_twenty_eight.dart';
 
 List<ElmModelNewOrder> elmList28NewOrder = <ElmModelNewOrder>[
   // Page 1

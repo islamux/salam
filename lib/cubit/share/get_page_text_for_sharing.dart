@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
 
 List<Text> getPageTextsForSharing(
     int pageIndex, List<ElmModelNewOrder> elmList) {

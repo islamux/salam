@@ -1,5 +1,5 @@
-import 'package:elm/cubit/base_cubit/base_page_cubit.dart';
-import 'package:elm/cubit/base_cubit/base_page_state.dart';
+import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
+import 'package:khatir/cubit/base_cubit/base_page_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

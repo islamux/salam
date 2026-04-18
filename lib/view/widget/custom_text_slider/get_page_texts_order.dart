@@ -1,6 +1,6 @@
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/theme/app_them.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
@@ -62,10 +62,10 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   return spans;
 }
 
-// import 'package:elm/core/data/model/elm_model_new_order.dart';
-// import 'package:elm/core/data/model/enum_order.dart';
+// import 'package:khatir/core/data/model/elm_model_new_order.dart';
+// import 'package:khatir/core/data/model/enum_order.dart';
 // import 'package:flutter/material.dart';
-// import 'package:elm/core/data/static/theme/app_them.dart';
+// import 'package:khatir/core/data/static/theme/app_them.dart';
 
 // List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 //   final elm = elmList[pageIndex];
@@ -117,8 +117,8 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 //   return spans;
 // }
 
-// import 'package:elm/core/data/model/elm_model_new_order.dart';
-// import 'package:elm/core/data/static/theme/app_them.dart';
+// import 'package:khatir/core/data/model/elm_model_new_order.dart';
+// import 'package:khatir/core/data/static/theme/app_them.dart';
 // import 'package:flutter/material.dart';
 
 // List<TextSpan> getPageTexts(int i, List<ElmModelNewOrder> elmList) {
@@ -207,8 +207,8 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 //   return textSpans;
 // }
 
-// import 'package:elm/core/data/model/elm_model_new.dart';
-// import 'package:elm/core/data/static/theme/app_them.dart';
+// import 'package:khatir/core/data/model/elm_model_new.dart';
+// import 'package:khatir/core/data/static/theme/app_them.dart';
 // import 'package:flutter/material.dart';
 
 // List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
