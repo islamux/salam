@@ -146,6 +146,115 @@ class ElmContentPage extends StatelessWidget {
 
 ---
 
+### Alternative: Single Return Pattern
+
+If you find multiple `return` keywords confusing, here's the same widget using **one return** at the end:
+
+```dart
+class ElmContentPage extends StatelessWidget {
+  final BasePageCubit cubit;
+  final List<ElmModelNewOrder> dataList;
+  final String title;
+  final String backgroundImagePath;
+  final int? initialPage;
+
+  const ElmContentPage({
+    super.key,
+    required this.cubit,
+    required this.dataList,
+    required this.title,
+    this.backgroundImagePath = '',
+    this.initialPage,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // Step 1: Initialize page if needed
+    if (initialPage != null && initialPage! > 0) {
+      cubit.goToPageAfterBuild(initialPage!);
+    }
+
+    // Step 2: Build the slider content first
+    Widget sliderContent = GenericCustomTextSlider(
+      cubit: cubit,
+      dataList: dataList,
+      backgroundImagePath: backgroundImagePath,
+    );
+
+    // Step 3: Build the body
+    Widget body = SafeArea(
+      child: Column(
+        children: [
+          Expanded(child: sliderContent),
+        ],
+      ),
+    );
+
+    // Step 4: Build the Scaffold (the whole screen)
+    Widget screen = Scaffold(
+      appBar: AppBar(
+        backgroundColor: AppColor.black,
+        foregroundColor: AppColor.amber,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            IconButton(
+              onPressed: () {
+                final currentPageIndex = cubit.currentPageIndex;
+                cubit.customShareContent(currentPageIndex, dataList);
+              },
+              icon: const Icon(Icons.share),
+            ),
+            Text(title),
+          ],
+        ),
+        centerTitle: true,
+        leading: GestureDetector(
+          onTap: () {
+            cubit.resetCounter();
+            context.pushNamed(RoutesConstant.home);
+          },
+          child: const Icon(Icons.arrow_back),
+        ),
+        actions: [
+          IconButton(
+            onPressed: cubit.decreaseFontSize,
+            icon: const Icon(Icons.remove),
+          ),
+          const Text('الخط'),
+          IconButton(
+            onPressed: cubit.increaseFontSize,
+            icon: const Icon(Icons.add),
+          ),
+          IconButton(
+            onPressed: () {
+              showSearch(context: context, delegate: DataSearch());
+            },
+            icon: const Icon(Icons.search),
+          ),
+        ],
+      ),
+      body: body,
+    );
+
+    // Step 5: Single return with BlocProvider
+    return BlocProvider.value(
+      value: cubit,
+      child: screen,
+    );
+  }
+}
+```
+
+**Key differences:**
+| Multiple Returns | Single Return |
+|-------------------|----------------|
+| `return` in each nested builder | Create parts first, return once at end |
+| Hard to follow flow | Easy to see step-by-step |
+| More common in Flutter | Easier for beginners |
+
+---
+
 ### Step 3: Update Route Generator (15 min)
 Edit `lib/app_routes.dart`:
 - Import the new `ElmContentPage`
