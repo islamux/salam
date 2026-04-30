@@ -49,4 +49,6 @@ app.*.map.json
 /windows
 todo.txt
 women.txt
+/node_modules/
+**/node_modules/
 /lib/core/data/static/newtexts
