@@ -1,0 +1,22 @@
+{
+  "name": "command-center-mcp",
+  "version": "1.0.0",
+  "description": "MCP server + CLI for the project Command Center",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "command-center": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "project": {
+    "name": "Salam Flutter App",
+    "start_date": "2026-01-01",
+    "target_date": "2026-12-31",
+    "current_week": 1,
+    "schedule_status": "on_track",
+    "overall_progress": 0
+  },
+  "milestones": [
+    {
+      "id": "architecture_refactoring",
+      "title": "Architecture Refactoring",
+      "domain": "refactoring",
+      "week": 1,
+      "phase": "refactoring",
+      "planned_start": "2026-01-01",
+      "planned_end": "2026-01-21",
+      "actual_start": null,
+      "actual_end": null,
+      "drift_days": 0,
+      "is_key_milestone": true,
+      "key_milestone_label": "Architecture Refactor",
+      "subtasks": [
+        {
+          "id": "refactor_generic_widget",
+          "label": "Create generic content page widget",
+          "status": "todo",
+          "done": false,
+          "assignee": null,
+          "blocked_by": null,
+          "blocked_reason": null,
+          "completed_at": null,
+          "completed_by": null,
+          "priority": "P1",
+          "notes": null,
+          "prompt": "Create a single reusable widget in lib/view/pages/elm_content_page.dart that can render all 34 content pages instead of the current 34 near-identical files. The widget should accept a BasePageCubit, dataList, and backgroundImagePath as parameters.",
+          "context_files": [
+            "lib/view/pages/elm1.dart",
+            "lib/view/pages/elm2.dart",
+            "lib/view/pages/elm3.dart"
+          ],
+          "acceptance_criteria": [
+            "Single ElmContentPage widget created",
+            "All 34 elm pages refactored to use the generic widget",
+            "Code reduction from ~3,700 lines to ~300 lines"
+          ],
+          "constraints": [
+            "Must extend StatelessWidget",
+            "Must accept BasePageCubit, dataList, and backgroundImagePath parameters"
+          ],
+          "agent_target": "builder",
+          "execution_mode": "agent",
+          "depends_on": [],
+          "last_run_id": null,
+          "builder_prompt": null
+        }
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "id": "claude_code",
+      "name": "Claude Code",
+      "type": "orchestrator",
+      "color": "#22c55e",
+      "status": "active",
+      "permissions": ["read", "write"],
+      "last_action_at": null,
+      "session_action_count": 0
+    }
+  ],
+  "agent_log": [],
+  "schedule": {
+    "phases": [
+      {
+        "id": "refactoring",
+        "title": "Architecture Refactoring",
+        "start_week": 1,
+        "end_week": 4
+      },
+      {
+        "id": "performance",
+        "title": "Performance & Caching",
+        "start_week": 5,
+        "end_week": 8
+      },
+      {
+        "id": "features",
+        "title": "New Features",
+        "start_week": 9,
+        "end_week": 12
+      }
+    ]
+  }
+}
