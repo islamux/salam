@@ -1,4 +1,5 @@
 {
+  "schemaVersion": 1,
   "project": {
     "name": "Salam Flutter App",
     "start_date": "2026-01-01",
@@ -23,7 +24,7 @@
       "key_milestone_label": "Architecture Refactor",
       "subtasks": [
         {
-          "id": "refactor_generic_widget",
+          "id": "architecture_refactoring_001",
           "label": "Create generic content page widget",
           "status": "todo",
           "done": false,

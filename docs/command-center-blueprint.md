@@ -14,18 +14,18 @@ Two deliverables:
 
 1. **MCP Server** — A globally-installed Node.js package exposing 24 tools over stdio. AI agents call these tools to read project state, manage tasks, dispatch sub-agents, and log activity. Also includes a CLI for shell access to the same tools.
 
-2. **Electron Desktop App** — A cross-platform (macOS, Windows, Linux) dashboard with 4 tabs: Swim Lane (strategic timeline), Task Board (tactical Kanban), Agent Hub (real-time agent monitoring), and Calendar (completion history). The app watches a single JSON tracker file for changes and renders project state in real time.
+2. **TUI Dashboard** — A terminal-based dashboard (using blessed + blessed-contrib) with 4 tabs: Swim Lane (strategic timeline), Task Board (tactical Kanban), Agent Hub (real-time agent monitoring), and Calendar (completion history). The dashboard watches a single JSON tracker file for changes and renders project state in real time.
 
-Both deliverables share a single source of truth: `project-tracker.json`, a JSON file that lives at the root of the user's project. The MCP server reads/writes it via tool calls. The Electron app watches it via `fs.watch` and renders it. External agents update it through the MCP server. The Electron app also writes back when the operator makes changes in the UI (dragging tasks, editing dates, etc.).
+Both deliverables share a single source of truth: `project-tracker.json`, a JSON file that lives at the root of the user's project. The MCP server reads/writes it via tool calls. The TUI dashboard watches it via `fs.watch` and renders it. External agents update it through the MCP server. The TUI dashboard also writes back when the operator makes changes in the UI (editing dates, changing task status, etc.).
 
 ### Architecture
 
 ```
 ┌────────────────────────────────────────────────┐
 │              Operator (Human)                  │
-│           Electron Desktop App                 │
+│           TUI Dashboard (terminal)             │
 └───────────────────┬────────────────────────────┘
-                    │ fs.watch + IPC
+                    │ fs.watch
 ┌───────────────────▼────────────────────────────┐
 │            project-tracker.json                │
 │          (Single Source of Truth)               │
@@ -49,22 +49,23 @@ Both deliverables share a single source of truth: `project-tracker.json`, a JSON
 
 | Layer | Technology |
 |-------|-----------|
-| Desktop App | Electron 41+ with electron-vite |
-| UI Framework | React 19 |
-| State Management | Zustand 5 |
-| Styling | Tailwind CSS v4 |
-| Drag & Drop | @dnd-kit/core + @dnd-kit/sortable |
-| Fonts | Inter (UI) + JetBrains Mono (code/numbers) |
+| TUI Framework | blessed + blessed-contrib |
+| UI Layout | blessed grid system (no browser DOM) |
+| Interactive Widgets | blessed-contrib (tables, bars, gauges, sparkline) |
+| Colors & Styling | ANSI 256-color + truecolor (terminal-native) |
+| Input Validation | Zod |
+| Structured Logging | pino + pino-transport |
+| Testing | Vitest |
 | MCP Server | Node.js + @modelcontextprotocol/sdk |
 | Language | TypeScript (strict mode, ES modules) |
 
 ### How to Use This Document
 
-This document is organized into 10 sequential phases. Each phase builds on the previous one and ends with a checkpoint describing what should work at that point. An implementing agent should:
+This document is organized into 11 sequential phases. Each phase builds on the previous one and ends with a checkpoint describing what should work at that point. An implementing agent should:
 
 1. Read the entire document first to understand the full scope
-2. Execute phases 1-9 in order (each produces working artifacts)
-3. Execute phase 10 to create workflow documentation and agent role templates
+2. Execute phases 1-10 in order (each produces working artifacts)
+3. Execute phase 11 to create workflow documentation and agent role templates
 4. After all phases complete, tell the user: "The Command Center skeleton is built. Provide your project manifesto and roadmap to populate it with your project data."
 
 ### What Happens After Building (Hydration)
@@ -81,7 +82,7 @@ The agent then reads these documents and populates the tracker by calling MCP to
 - Extract timeline → set `planned_start` / `planned_end` dates
 - Map dependencies → set milestone `dependencies` arrays
 - Register the user's agent roster → call `register_agent()` for each
-- Assign domain colors from the palette (see Phase 9)
+- Assign domain colors from the palette (see Phase 10)
 
 This hydration process is NOT part of this blueprint. The implementing agent should be aware it will happen after the build.
 
@@ -89,7 +90,7 @@ This hydration process is NOT part of this blueprint. The implementing agent sho
 
 ## PHASE 1: TRACKER SCHEMA
 
-The tracker is a single JSON file (`project-tracker.json`) at the project root. All consumers (MCP server, Electron app, external agents) read and write this file. This phase defines its exact schema.
+The tracker is a single JSON file (`project-tracker.json`) at the project root. All consumers (MCP server, TUI dashboard, external agents) read and write this file. This phase defines its exact schema.
 
 ### TypeScript Interfaces
 
@@ -97,6 +98,7 @@ The tracker is a single JSON file (`project-tracker.json`) at the project root. 
 // ─── Root State ───────────────────────────────────────────────
 
 interface TrackerState {
+  schemaVersion: number            // Increment on breaking schema changes; starts at 1
   project: ProjectMeta
   milestones: Milestone[]
   agents: Agent[]
@@ -185,7 +187,7 @@ interface AgentLogEntry {
   id: string                      // Unique log entry ID (e.g., 'log_{timestamp}_{random}')
   agent_id: string                // Which agent performed the action
   action: string                  // Action type (e.g., 'task_started', 'task_blocked',
-                                  //   'exploration_complete', 'audit_complete')
+                                   //   'exploration_complete', 'audit_complete')
   target_type: string             // 'subtask' | 'milestone' | 'agent'
   target_id: string               // ID of the affected entity
   description: string             // Human-readable description of what happened
@@ -203,12 +205,24 @@ interface Phase {
 }
 ```
 
+### Schema Versioning
+
+Every tracker includes `schemaVersion`. When the schema changes:
+
+1. Increment `schemaVersion` in the TypeScript interface
+2. Write a `migrate(version, state) → state` function in `tracker.ts`
+3. `readTracker()` checks `schemaVersion` and applies all pending migrations
+4. `writeTracker()` always writes with the current (latest) schema version
+
+This ensures backward compatibility when the tracker format evolves.
+
 ### Empty Initial Tracker
 
 Create this file at `{PROJECT_ROOT}/project-tracker.json`:
 
 ```json
 {
+  "schemaVersion": 1,
   "project": {
     "name": "My Project",
     "start_date": "2026-01-01",
@@ -226,7 +240,7 @@ Create this file at `{PROJECT_ROOT}/project-tracker.json`:
 }
 ```
 
-> **Checkpoint:** The tracker file exists at the project root with valid JSON matching the schema. No milestones or agents yet — those come from hydration.
+> **Checkpoint:** The tracker file exists at the project root with valid JSON matching the schema, including `schemaVersion: 1`. No milestones or agents yet — those come from hydration.
 
 ---
 
@@ -240,12 +254,21 @@ A globally-installed Node.js package that exposes 24 tools over MCP stdio transp
 command-center-mcp/
 ├── package.json
 ├── tsconfig.json
+├── vitest.config.ts
 ├── src/
 │   ├── index.ts          # MCP server entry (stdio transport)
 │   ├── tools.ts          # Tool definitions + handlers
 │   ├── tracker.ts        # TypeScript types + read/write utilities
+│   ├── schemas.ts        # Zod validation schemas for all tool inputs
+│   ├── backup.ts         # Auto-backup + undo log utilities
+│   ├── logger.ts         # pino structured logging setup
 │   ├── context.ts        # Context builder functions (Markdown output)
 │   └── cli.ts            # CLI interface (maps shell commands to tool handlers)
+├── tests/
+│   ├── tracker.test.ts   # Tracker read/write/migrate tests
+│   ├── schemas.test.ts   # Zod schema validation tests
+│   ├── tools.test.ts     # Tool handler integration tests
+│   └── backup.test.ts    # Backup + undo log tests
 ```
 
 ### package.json
@@ -262,14 +285,20 @@ command-center-mcp/
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1"
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.0",
+    "pino": "^9.0.0",
+    "pino-transport": "^1.0.0"
   },
   "devDependencies": {
     "typescript": "^5.7.0",
-    "@types/node": "^22.0.0"
+    "@types/node": "^22.0.0",
+    "vitest": "^3.0.0"
   }
 }
 ```
@@ -294,6 +323,216 @@ command-center-mcp/
 }
 ```
 
+### vitest.config.ts
+
+```typescript
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    globals: true,
+    environment: 'node',
+    include: ['tests/**/*.test.ts'],
+  },
+})
+```
+
+### Logger (src/logger.ts)
+
+Structured logging via pino. All logs go to `~/.command-center/logs/` with daily rotation.
+
+```typescript
+import pino from 'pino'
+
+const LOG_DIR = path.join(os.homedir(), '.command-center', 'logs')
+
+const logger = pino({
+  level: process.env.LOG_LEVEL ?? 'info',
+  transport: {
+    targets: [
+      {
+        target: 'pino-transport/file',
+        options: { destination: path.join(LOG_DIR, 'command-center.log') },
+      },
+    ],
+  },
+})
+
+export default logger
+```
+
+Log rotation: keep 7 days of logs. Create `LOG_DIR` on startup if it doesn't exist.
+
+### Zod Schemas (src/schemas.ts)
+
+Validate every tool input before it touches the tracker. These schemas also serve as TypeScript type generators.
+
+```typescript
+import { z } from 'zod'
+
+export const CreateMilestoneSchema = z.object({
+  id: z.string().regex(/^[a-z][a-z0-9_]*$/, 'Must be snake_case'),
+  title: z.string().min(1).max(200),
+  domain: z.string().optional().default('general'),
+  phase: z.string().optional(),
+  planned_start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  planned_end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+})
+
+export const AddMilestoneTaskSchema = z.object({
+  milestone_id: z.string().min(1),
+  label: z.string().min(1).max(500),
+  priority: z.enum(['P1', 'P2', 'P3', 'P4']).optional().default('P2'),
+  acceptance_criteria: z.array(z.string()).optional(),
+  constraints: z.array(z.string()).optional(),
+  depends_on: z.array(z.string()).optional(),
+  execution_mode: z.enum(['human', 'agent', 'pair']).optional().default('agent'),
+})
+
+export const StartTaskSchema = z.object({
+  task_id: z.string().min(1),
+  agent_id: z.string().optional().default('orchestrator'),
+})
+
+export const CompleteTaskSchema = z.object({
+  task_id: z.string().min(1),
+  summary: z.string().min(1).max(1000),
+  agent_id: z.string().optional().default('orchestrator'),
+})
+
+export const ApproveTaskSchema = z.object({
+  task_id: z.string().min(1),
+  feedback: z.string().max(500).optional(),
+})
+
+export const RejectTaskSchema = z.object({
+  task_id: z.string().min(1),
+  feedback: z.string().min(1).max(1000),
+})
+
+export const BlockTaskSchema = z.object({
+  task_id: z.string().min(1),
+  reason: z.string().min(1).max(500),
+})
+
+export const UnblockTaskSchema = z.object({
+  task_id: z.string().min(1),
+  resolution: z.string().max(500).optional(),
+})
+
+export const UpdateTaskSchema = z.object({
+  task_id: z.string().min(1),
+  priority: z.enum(['P1', 'P2', 'P3', 'P4']).optional(),
+  assignee: z.string().optional(),
+  execution_mode: z.enum(['human', 'agent', 'pair']).optional(),
+  notes: z.string().optional(),
+})
+
+export const EnrichTaskSchema = z.object({
+  task_id: z.string().min(1),
+  prompt: z.string().optional(),
+  builder_prompt: z.string().optional(),
+  acceptance_criteria: z.array(z.string()).optional(),
+  constraints: z.array(z.string()).optional(),
+  context_files: z.array(z.string()).optional(),
+  reference_docs: z.array(z.string()).optional(),
+})
+
+export const LogActionSchema = z.object({
+  task_id: z.string().min(1),
+  action: z.string().min(1).max(100),
+  description: z.string().min(1).max(1000),
+  tags: z.array(z.string()).optional(),
+  agent_id: z.string().optional().default('orchestrator'),
+})
+
+export const RegisterAgentSchema = z.object({
+  agent_id: z.string().min(1),
+  name: z.string().min(1).max(100),
+  type: z.enum(['orchestrator', 'sub-agent', 'human', 'external']),
+  permissions: z.array(z.enum(['read', 'write'])).min(1),
+  color: z.string().regex(/^#[0-9a-fA-F]{6}$/).optional().default('#9B9BAA'),
+  parent_id: z.string().optional(),
+})
+
+export const SetMilestoneDatesSchema = z.object({
+  milestone_id: z.string().min(1),
+  actual_start: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  actual_end: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+})
+
+export const UpdateDriftSchema = z.object({
+  milestone_id: z.string().min(1),
+  drift_days: z.number().int(),
+})
+
+export const AddMilestoneNoteSchema = z.object({
+  milestone_id: z.string().min(1),
+  note: z.string().min(1).max(500),
+})
+
+export const ListTasksSchema = z.object({
+  milestone_id: z.string().optional(),
+  status: z.enum(['todo', 'in_progress', 'review', 'done', 'blocked']).optional(),
+  domain: z.string().optional(),
+})
+
+export const GetActivityFeedSchema = z.object({
+  agent_id: z.string().optional(),
+  limit: z.number().int().min(1).max(200).optional().default(30),
+})
+
+export const GetTaskContextSchema = z.object({
+  task_id: z.string().min(1),
+})
+
+export const GetMilestoneOverviewSchema = z.object({
+  milestone_id: z.string().min(1),
+})
+
+export const GetTaskHistorySchema = z.object({
+  task_id: z.string().min(1),
+})
+```
+
+### Backup & Undo (src/backup.ts)
+
+Protects the tracker from corruption. Every write operation is preceded by a backup and logged for undo.
+
+**Backup:**
+```typescript
+const BACKUP_DIR = path.join(os.homedir(), '.command-center', 'backups')
+const MAX_BACKUPS = 20
+
+function backupTracker(trackerPath: string): void {
+  // Create BACKUP_DIR if it doesn't exist
+  // Copy tracker to BACKUP_DIR/tracker_{timestamp}.json
+  // Prune oldest backups if count > MAX_BACKUPS
+}
+```
+
+**Undo Log:**
+```typescript
+const UNDO_LOG_PATH = path.join(os.homedir(), '.command-center', 'undo-log.jsonl')
+const MAX_UNDO_ENTRIES = 50
+
+interface UndoEntry {
+  timestamp: string       // ISO 8601
+  tool: string            // Which MCP tool caused the change
+  before: string          // JSON snapshot of the affected entity before the change
+  after: string           // JSON snapshot of the affected entity after the change
+}
+
+function appendUndoEntry(entry: UndoEntry): void {
+  // Append JSONL line to UNDO_LOG_PATH
+  // Prune oldest entries if count > MAX_UNDO_ENTRIES
+}
+
+function readUndoLog(): UndoEntry[] {
+  // Read and parse all JSONL lines from UNDO_LOG_PATH
+}
+```
+
 ### Server Entry (src/index.ts)
 
 Set up an MCP server with stdio transport:
@@ -302,7 +541,7 @@ Set up an MCP server with stdio transport:
 - Transport: `StdioServerTransport` from `@modelcontextprotocol/sdk/server/stdio`
 - Register `ListToolsRequestSchema` handler → returns all tool definitions
 - Register `CallToolRequestSchema` handler → routes to `handleTool(name, args)`
-- Log startup message to stderr: `"Command Center MCP server running on stdio"`
+- Log startup message via pino: `"Command Center MCP server running on stdio"`
 
 ### Tracker Utilities (src/tracker.ts)
 
@@ -315,16 +554,45 @@ PROJECT_ROOT = process.env.PROJECT_ROOT
 TRACKER_PATH = path.join(PROJECT_ROOT, 'project-tracker.json')
 ```
 
+**Schema Migration:**
+```typescript
+const CURRENT_SCHEMA_VERSION = 1
+
+function migrateTracker(state: any): TrackerState {
+  let version = state.schemaVersion ?? 0
+  while (version < CURRENT_SCHEMA_VERSION) {
+    switch (version) {
+      case 0:
+        // Migration from unversioned to v1: add schemaVersion field
+        state.schemaVersion = 1
+        break
+      // Future migrations go here:
+      // case 1:
+      //   // Migration from v1 to v2: ...
+      //   state.schemaVersion = 2
+      //   break
+    }
+    version++
+  }
+  return state as TrackerState
+}
+```
+
 **readTracker(): TrackerState**
 - Read and parse TRACKER_PATH
+- Check `schemaVersion` — call `migrateTracker()` if behind current version
 - Return parsed state
 
-**writeTracker(state: TrackerState): void**
+**writeTracker(state: TrackerState, toolName?: string): void**
+- Validate `state` matches TrackerState shape (Zod parse or manual check)
 - Recompute derived fields before writing:
   - `overall_progress = done_count / total_count` across all milestones
   - `current_week` = live calculation (see selector formula in Phase 4)
   - `schedule_status` = recalculate from milestone drift (see below)
+  - `schemaVersion` = CURRENT_SCHEMA_VERSION
+- Call `backupTracker(TRACKER_PATH)` before writing
 - Write JSON with 2-space indent to TRACKER_PATH
+- Log write via pino (level: 'debug', tool name, milestone/task counts)
 
 **findTask(state, taskId): { subtask, milestone } | null**
 - Search all milestones' subtasks for matching ID
@@ -409,7 +677,12 @@ Returns Markdown with:
 
 ### Tool Definitions (src/tools.ts)
 
-24 tools organized into 4 categories. Every write tool calls `touchAgent()` and pushes an entry to `agent_log`.
+24 tools organized into 4 categories. Every write tool:
+1. Validates input with the corresponding Zod schema
+2. Calls `backupTracker()` + `appendUndoEntry()` via `writeTracker()`
+3. Calls `touchAgent()`
+4. Pushes an entry to `agent_log`
+5. Logs the action via pino
 
 ---
 
@@ -422,9 +695,10 @@ Returns Markdown with:
 | task_id | string | yes | The subtask ID |
 
 Handler:
-1. Call `findTask(state, task_id)` — return error if not found
-2. Call `buildTaskContext(state, subtask, milestone)`
-3. Return Markdown text
+1. Validate input with `GetTaskContextSchema`
+2. Call `findTask(state, task_id)` — return error if not found
+3. Call `buildTaskContext(state, subtask, milestone)`
+4. Return Markdown text
 
 ---
 
@@ -435,9 +709,10 @@ Handler:
 | task_id | string | yes | The subtask ID |
 
 Handler:
-1. Call `findTask(state, task_id)` — return error if not found
-2. Call `buildTaskSummary(state, subtask, milestone)`
-3. Return Markdown text
+1. Validate input with `GetTaskContextSchema`
+2. Call `findTask(state, task_id)` — return error if not found
+3. Call `buildTaskSummary(state, subtask, milestone)`
+4. Return Markdown text
 
 ---
 
@@ -458,9 +733,10 @@ Handler:
 | milestone_id | string | yes | The milestone ID |
 
 Handler:
-1. Find milestone by ID — return error if not found
-2. Call `buildMilestoneOverview(milestone, state)`
-3. Return Markdown text
+1. Validate input with `GetMilestoneOverviewSchema`
+2. Find milestone by ID — return error if not found
+3. Call `buildMilestoneOverview(milestone, state)`
+4. Return Markdown text
 
 ---
 
@@ -473,9 +749,10 @@ Handler:
 | domain | string | no | Filter by domain name |
 
 Handler:
-1. Collect all subtasks across milestones, applying filters
-2. Group by milestone
-3. Return Markdown list with status icons and priority badges
+1. Validate input with `ListTasksSchema`
+2. Collect all subtasks across milestones, applying filters
+3. Group by milestone
+4. Return Markdown list with status icons and priority badges
 
 ---
 
@@ -486,9 +763,10 @@ Handler:
 | task_id | string | yes | The subtask ID |
 
 Handler:
-1. Filter `agent_log` entries where `target_id === task_id`
-2. Return chronological Markdown list with action, description, agent, timestamp, tags
-3. Return "No history found" if empty
+1. Validate input with `GetTaskHistorySchema`
+2. Filter `agent_log` entries where `target_id === task_id`
+3. Return chronological Markdown list with action, description, agent, timestamp, tags
+4. Return "No history found" if empty
 
 ---
 
@@ -512,11 +790,12 @@ Handler:
 | limit | number | no | Max entries (default: 30) |
 
 Handler:
-1. Sort `agent_log` by timestamp descending
-2. Apply agent_id filter if provided
-3. Take first `limit` entries
-4. Group by date
-5. Return Markdown with day headers and per-entry details (agent name, action, description, target, tags, time)
+1. Validate input with `GetActivityFeedSchema`
+2. Sort `agent_log` by timestamp descending
+3. Apply agent_id filter if provided
+4. Take first `limit` entries
+5. Group by date
+6. Return Markdown with day headers and per-entry details (agent name, action, description, target, tags, time)
 
 ---
 
@@ -530,15 +809,16 @@ Handler:
 | agent_id | string | no | Who is starting (default: 'orchestrator') |
 
 Handler:
-1. Find task — error if not found
-2. Set `task.status = 'in_progress'`
-3. Set `task.assignee = agent_id` (if not already assigned)
-4. Set `task.last_run_id = 'run_' + Date.now()`
-5. **Auto-stamp milestone**: If `milestone.actual_start` is null, set it to today's date. Calculate drift: `drift_days = (actual_start - planned_start) in days`
-6. Push `agent_log` entry: action `'task_started'`, tags `['start', 'mcp']`
-7. Call `touchAgent(state, agent_id)`
-8. Call `writeTracker(state)`
-9. Return confirmation with milestone/task names
+1. Validate input with `StartTaskSchema`
+2. Find task — error if not found
+3. Set `task.status = 'in_progress'`
+4. Set `task.assignee = agent_id` (if not already assigned)
+5. Set `task.last_run_id = 'run_' + Date.now()`
+6. **Auto-stamp milestone**: If `milestone.actual_start` is null, set it to today's date. Calculate drift: `drift_days = (actual_start - planned_start) in days`
+7. Push `agent_log` entry: action `'task_started'`, tags `['start', 'mcp']`
+8. Call `touchAgent(state, agent_id)`
+9. Call `writeTracker(state, 'start_task')`
+10. Return confirmation with milestone/task names
 
 ---
 
@@ -551,13 +831,14 @@ Handler:
 | agent_id | string | no | Who completed (default: 'orchestrator') |
 
 Handler:
-1. Find task — error if not found
-2. Set `task.status = 'review'` (NOT done — requires operator approval)
-3. Clear `blocked_by` and `blocked_reason`
-4. Push `agent_log` entry: action `'task_submitted_for_review'`, description = summary
-5. Call `touchAgent(state, agent_id)`
-6. Call `writeTracker(state)`
-7. Return confirmation with summary and milestone progress (done/total)
+1. Validate input with `CompleteTaskSchema`
+2. Find task — error if not found
+3. Set `task.status = 'review'` (NOT done — requires operator approval)
+4. Clear `blocked_by` and `blocked_reason`
+5. Push `agent_log` entry: action `'task_submitted_for_review'`, description = summary
+6. Call `touchAgent(state, agent_id)`
+7. Call `writeTracker(state, 'complete_task')`
+8. Return confirmation with summary and milestone progress (done/total)
 
 ---
 
@@ -569,17 +850,18 @@ Handler:
 | feedback | string | no | Optional approval feedback |
 
 Handler:
-1. Find task — error if not found
-2. Verify `task.status === 'review'` — error if not
-3. Set `task.status = 'done'`, `task.done = true`
-4. Set `task.completed_at = new Date().toISOString()`
-5. Set `task.completed_by` to operator name
-6. **Auto-stamp milestone**: If ALL subtasks in the milestone are now done, set `milestone.actual_end` to today
-7. Call `autoUnblockDependents(state, task_id, milestone_id)` — cascade unblocking
-8. Push `agent_log` entry: action `'task_approved'`, agent_id = operator
-9. Call `touchAgent(state, operator_id)`
-10. Call `writeTracker(state)`
-11. Return confirmation with milestone progress + auto-unblock details
+1. Validate input with `ApproveTaskSchema`
+2. Find task — error if not found
+3. Verify `task.status === 'review'` — error if not
+4. Set `task.status = 'done'`, `task.done = true`
+5. Set `task.completed_at = new Date().toISOString()`
+6. Set `task.completed_by` to operator name
+7. **Auto-stamp milestone**: If ALL subtasks in the milestone are now done, set `milestone.actual_end` to today
+8. Call `autoUnblockDependents(state, task_id, milestone_id)` — cascade unblocking
+9. Push `agent_log` entry: action `'task_approved'`, agent_id = operator
+10. Call `touchAgent(state, operator_id)`
+11. Call `writeTracker(state, 'approve_task')`
+12. Return confirmation with milestone progress + auto-unblock details
 
 ---
 
@@ -591,14 +873,15 @@ Handler:
 | feedback | string | yes | What needs to change |
 
 Handler:
-1. Find task — error if not found
-2. Verify `task.status === 'review'` — error if not
-3. Set `task.status = 'in_progress'`
-4. Count prior revisions: count `agent_log` entries where `target_id === task_id` AND `action === 'revision_requested'`
-5. Push `agent_log` entry: action `'revision_requested'`, description includes revision number and feedback text
-6. Call `touchAgent(state, operator_id)`
-7. Call `writeTracker(state)`
-8. Return confirmation with revision number and feedback
+1. Validate input with `RejectTaskSchema`
+2. Find task — error if not found
+3. Verify `task.status === 'review'` — error if not
+4. Set `task.status = 'in_progress'`
+5. Count prior revisions: count `agent_log` entries where `target_id === task_id` AND `action === 'revision_requested'`
+6. Push `agent_log` entry: action `'revision_requested'`, description includes revision number and feedback text
+7. Call `touchAgent(state, operator_id)`
+8. Call `writeTracker(state, 'reject_task')`
+9. Return confirmation with revision number and feedback
 
 ---
 
@@ -609,12 +892,13 @@ Handler:
 | task_id | string | yes | The subtask ID |
 
 Handler:
-1. Find task — error if not found
-2. Set `status = 'todo'`, `done = false`
-3. Clear: `assignee`, `blocked_by`, `blocked_reason`, `completed_at`, `completed_by`, `last_run_id`
-4. Push `agent_log` entry: action `'task_reset'`
-5. Call `writeTracker(state)`
-6. Return confirmation with previous status
+1. Validate input with `GetTaskContextSchema`
+2. Find task — error if not found
+3. Set `status = 'todo'`, `done = false`
+4. Clear: `assignee`, `blocked_by`, `blocked_reason`, `completed_at`, `completed_by`, `last_run_id`
+5. Push `agent_log` entry: action `'task_reset'`
+6. Call `writeTracker(state, 'reset_task')`
+7. Return confirmation with previous status
 
 ---
 
@@ -626,14 +910,15 @@ Handler:
 | reason | string | yes | Why the task is blocked |
 
 Handler:
-1. Find task — error if not found
-2. Set `task.status = 'blocked'`
-3. Set `task.blocked_reason = reason`
-4. Set `task.blocked_by` to agent_id (default 'orchestrator')
-5. Push `agent_log` entry: action `'task_blocked'`
-6. Call `touchAgent(state, agent_id)`
-7. Call `writeTracker(state)`
-8. Return confirmation
+1. Validate input with `BlockTaskSchema`
+2. Find task — error if not found
+3. Set `task.status = 'blocked'`
+4. Set `task.blocked_reason = reason`
+5. Set `task.blocked_by` to agent_id (default 'orchestrator')
+6. Push `agent_log` entry: action `'task_blocked'`
+7. Call `touchAgent(state, agent_id)`
+8. Call `writeTracker(state, 'block_task')`
+9. Return confirmation
 
 ---
 
@@ -645,14 +930,15 @@ Handler:
 | resolution | string | no | How the block was resolved |
 
 Handler:
-1. Find task — error if not found
-2. Verify `task.status === 'blocked'` — error if not
-3. Set `task.status` to `'in_progress'` if `last_run_id` exists, else `'todo'`
-4. Clear `blocked_by` and `blocked_reason`
-5. Push `agent_log` entry: action `'task_unblocked'`, description includes resolution
-6. Call `touchAgent(state, agent_id)`
-7. Call `writeTracker(state)`
-8. Return confirmation with previous blocker reason and new status
+1. Validate input with `UnblockTaskSchema`
+2. Find task — error if not found
+3. Verify `task.status === 'blocked'` — error if not
+4. Set `task.status` to `'in_progress'` if `last_run_id` exists, else `'todo'`
+5. Clear `blocked_by` and `blocked_reason`
+6. Push `agent_log` entry: action `'task_unblocked'`, description includes resolution
+7. Call `touchAgent(state, agent_id)`
+8. Call `writeTracker(state, 'unblock_task')`
+9. Return confirmation with previous blocker reason and new status
 
 ---
 
@@ -667,12 +953,13 @@ Handler:
 | notes | string | no | Updated notes |
 
 Handler:
-1. Find task — error if not found
-2. Only update fields that are provided (non-undefined)
-3. Push `agent_log` entry: action `'task_updated'`, description lists all changes
-4. Call `touchAgent(state, agent_id)`
-5. Call `writeTracker(state)`
-6. Return confirmation with change list
+1. Validate input with `UpdateTaskSchema`
+2. Find task — error if not found
+3. Only update fields that are provided (non-undefined)
+4. Push `agent_log` entry: action `'task_updated'`, description lists all changes
+5. Call `touchAgent(state, agent_id)`
+6. Call `writeTracker(state, 'update_task')`
+7. Return confirmation with change list
 
 ---
 
@@ -687,12 +974,13 @@ Handler:
 | agent_id | string | no | Who performed (default: 'orchestrator') |
 
 Handler:
-1. Create `AgentLogEntry` with unique ID, timestamp, provided fields
-2. Append `'mcp'` to tags array
-3. Push to `state.agent_log`
-4. Call `touchAgent(state, agent_id)`
-5. Call `writeTracker(state)`
-6. Return confirmation
+1. Validate input with `LogActionSchema`
+2. Create `AgentLogEntry` with unique ID, timestamp, provided fields
+3. Append `'mcp'` to tags array
+4. Push to `state.agent_log`
+5. Call `touchAgent(state, agent_id)`
+6. Call `writeTracker(state, 'log_action')`
+7. Return confirmation
 
 ---
 
@@ -711,13 +999,14 @@ Handler:
 | reference_docs | string[] | no | Replaces existing doc list |
 
 Handler:
-1. Find task — error if not found
-2. Only update fields that are provided (non-undefined)
-3. Arrays REPLACE existing values (not merge)
-4. Push `agent_log` entry: action `'task_enriched'`, description lists changes
-5. Call `touchAgent(state, agent_id)`
-6. Call `writeTracker(state)`
-7. Return confirmation
+1. Validate input with `EnrichTaskSchema`
+2. Find task — error if not found
+3. Only update fields that are provided (non-undefined)
+4. Arrays REPLACE existing values (not merge)
+5. Push `agent_log` entry: action `'task_enriched'`, description lists changes
+6. Call `touchAgent(state, agent_id)`
+7. Call `writeTracker(state, 'enrich_task')`
+8. Return confirmation
 
 ---
 
@@ -731,11 +1020,12 @@ Handler:
 | note | string | yes | Exit criterion or note text |
 
 Handler:
-1. Find milestone — error if not found
-2. Append `note` to `milestone.notes[]`
-3. Push `agent_log` entry: action `'milestone_note_added'`
-4. Call `writeTracker(state)`
-5. Return confirmation with total note count
+1. Validate input with `AddMilestoneNoteSchema`
+2. Find milestone — error if not found
+3. Append `note` to `milestone.notes[]`
+4. Push `agent_log` entry: action `'milestone_note_added'`
+5. Call `writeTracker(state, 'add_milestone_note')`
+6. Return confirmation with total note count
 
 ---
 
@@ -748,13 +1038,14 @@ Handler:
 | actual_end | string | no | YYYY-MM-DD |
 
 Handler:
-1. Find milestone — error if not found
-2. Update `actual_start` and/or `actual_end` if provided
-3. **Auto-calculate drift**: `drift_days = (actual_start - planned_start)` in calendar days (positive = behind, negative = ahead)
-4. **Recalculate schedule_status** using the formula in Tracker Utilities
-5. Push `agent_log` entry: action `'milestone_dates_set'`
-6. Call `writeTracker(state)`
-7. Return confirmation with changes and schedule status
+1. Validate input with `SetMilestoneDatesSchema`
+2. Find milestone — error if not found
+3. Update `actual_start` and/or `actual_end` if provided
+4. **Auto-calculate drift**: `drift_days = (actual_start - planned_start)` in calendar days (positive = behind, negative = ahead)
+5. **Recalculate schedule_status** using the formula in Tracker Utilities
+6. Push `agent_log` entry: action `'milestone_dates_set'`
+7. Call `writeTracker(state, 'set_milestone_dates')`
+8. Return confirmation with changes and schedule status
 
 ---
 
@@ -766,12 +1057,13 @@ Handler:
 | drift_days | number | yes | Positive = behind, negative = ahead |
 
 Handler:
-1. Find milestone — error if not found
-2. Set `milestone.drift_days` to provided value
-3. **Recalculate schedule_status**
-4. Push `agent_log` entry: action `'drift_updated'`, description shows old → new
-5. Call `writeTracker(state)`
-6. Return confirmation
+1. Validate input with `UpdateDriftSchema`
+2. Find milestone — error if not found
+3. Set `milestone.drift_days` to provided value
+4. **Recalculate schedule_status**
+5. Push `agent_log` entry: action `'drift_updated'`, description shows old → new
+6. Call `writeTracker(state, 'update_drift')`
+7. Return confirmation
 
 ---
 
@@ -787,12 +1079,13 @@ Handler:
 | planned_end | string | no | YYYY-MM-DD |
 
 Handler:
-1. Check if milestone ID already exists — error if duplicate
-2. Create new Milestone with empty subtasks, dependencies, notes
-3. Set defaults for all optional fields
-4. Append to `state.milestones`
-5. Call `writeTracker(state)`
-6. Return confirmation
+1. Validate input with `CreateMilestoneSchema`
+2. Check if milestone ID already exists — error if duplicate
+3. Create new Milestone with empty subtasks, dependencies, notes
+4. Set defaults for all optional fields
+5. Append to `state.milestones`
+6. Call `writeTracker(state, 'create_milestone')`
+7. Return confirmation
 
 ---
 
@@ -809,12 +1102,13 @@ Handler:
 | execution_mode | string | no | Default: 'agent' |
 
 Handler:
-1. Find milestone — error if not found
-2. Generate task ID: `{milestone_id}_{NNN}` where NNN is zero-padded count + 1
-3. Create Subtask with `status = 'todo'`, `done = false`, all optional fields set to defaults
-4. Append to `milestone.subtasks`
-5. Call `writeTracker(state)`
-6. Return confirmation with new task ID
+1. Validate input with `AddMilestoneTaskSchema`
+2. Find milestone — error if not found
+3. Generate task ID: `{milestone_id}_{NNN}` where NNN is zero-padded count + 1
+4. Create Subtask with `status = 'todo'`, `done = false`, all optional fields set to defaults
+5. Append to `milestone.subtasks`
+6. Call `writeTracker(state, 'add_milestone_task')`
+7. Return confirmation with new task ID
 
 ---
 
@@ -832,11 +1126,12 @@ Handler:
 | parent_id | string | no | Parent orchestrator ID (for sub-agents) |
 
 Handler:
-1. If agent exists: update all fields, set `status = 'active'`, set `last_action_at = now`
-2. If new: create Agent with `session_action_count = 0`, `status = 'active'`
-3. Push `agent_log` entry: action `'agent_registered'` or `'agent_updated'`
-4. Call `writeTracker(state)`
-5. Return confirmation
+1. Validate input with `RegisterAgentSchema`
+2. If agent exists: update all fields, set `status = 'active'`, set `last_action_at = now`
+3. If new: create Agent with `session_action_count = 0`, `status = 'active'`
+4. Push `agent_log` entry: action `'agent_registered'` or `'agent_updated'`
+5. Call `writeTracker(state, 'register_agent')`
+6. Return confirmation
 
 ---
 
@@ -881,226 +1176,99 @@ Common errors:
 - Task not found: `"Task '{id}' not found in any milestone"`
 - Milestone not found: `"Milestone '{id}' not found"`
 - Invalid status transition: `"Task '{id}' is in status '{status}', expected 'review'"`
+- Validation error: `"Invalid input: {zod_error_message}"`
 
-> **Checkpoint:** After building and running `npm run build`, the CLI should work. Test with `command-center get-project-status` — it should return the empty project status from the initial tracker. Test `command-center create-milestone test_milestone "Test Milestone"` — it should create a milestone in the tracker JSON.
+### Test Structure (tests/)
+
+**tests/tracker.test.ts:**
+- `readTracker()` parses valid JSON and returns TrackerState
+- `readTracker()` migrates unversioned tracker to schemaVersion 1
+- `writeTracker()` recomputes `overall_progress` correctly
+- `writeTracker()` creates a backup before writing
+- `findTask()` returns null for non-existent task IDs
+- `autoUnblockDependents()` unblocks downstream tasks when dependencies are met
+- `migrateTracker()` applies all pending migrations in sequence
+
+**tests/schemas.test.ts:**
+- Each Zod schema accepts valid input
+- Each Zod schema rejects invalid input with clear error messages
+- Edge cases: empty strings, too-long strings, invalid date formats
+
+**tests/tools.test.ts:**
+- `create_milestone` creates a milestone and persists to tracker
+- `start_task` sets status and auto-stamps milestone actual_start
+- `complete_task` moves to review (not done)
+- `approve_task` moves to done and triggers auto-unblock cascade
+- `reject_task` moves back to in_progress with revision count
+- `block_task` / `unblock_task` cycle works correctly
+- Invalid tool inputs are rejected by Zod schemas
+
+**tests/backup.test.ts:**
+- `backupTracker()` creates a backup file
+- `backupTracker()` prunes oldest backups beyond MAX_BACKUPS
+- `appendUndoEntry()` writes JSONL entries
+- `appendUndoEntry()` prunes oldest entries beyond MAX_UNDO_ENTRIES
+
+> **Checkpoint:** After building and running `npm run build`, the CLI should work. Test with `command-center get-project-status` — it should return the empty project status from the initial tracker. Test `command-center create-milestone test_milestone "Test Milestone"` — it should create a milestone in the tracker JSON. Run `npm test` — all tests pass. Check `~/.command-center/backups/` for backup files. Check `~/.command-center/logs/` for log output.
 
 ---
 
-## PHASE 3: ELECTRON SHELL
+## PHASE 3: TUI SHELL
 
-A cross-platform desktop app that watches the tracker file and renders project state.
+A terminal-based dashboard that watches the tracker file and renders project state using blessed.
 
 ### Project Structure
 
 ```
-command-center/
+command-center-tui/
 ├── package.json
-├── electron.vite.config.ts
 ├── tsconfig.json
-├── postcss.config.mjs
-├── .env                          # PROJECT_ROOT path
 ├── src/
-│   ├── main/
-│   │   ├── index.ts              # Electron main process
-│   │   └── config.ts             # Project root resolution
-│   ├── preload/
-│   │   └── index.ts              # Context isolation bridge
-│   └── renderer/
-│       ├── index.html
-│       ├── main.tsx              # React entry point
-│       ├── App.tsx               # Root component
-│       ├── store.ts              # Zustand store
-│       ├── styles.css            # Tailwind + theme variables
-│       └── env.d.ts              # Window type augmentation
+│   ├── index.ts          # TUI entry point + blessed screen
+│   ├── store.ts          # In-memory state + read/write tracker with debounce
+│   ├── theme.ts          # ANSI color scheme + blessed widget style definitions
+│   ├── config.ts         # PROJECT_ROOT resolution
+│   └── widgets/          # Reusable blessed widget factories
 ```
 
 ### Dependencies
 
 ```json
 {
+  "name": "command-center-tui",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "zustand": "^5.0.0",
-    "@dnd-kit/core": "^6.0.0",
-    "@dnd-kit/sortable": "^8.0.0",
-    "@dnd-kit/utilities": "^3.0.0",
-    "@fontsource/inter": "^5.0.0",
-    "@fontsource/jetbrains-mono": "^5.0.0"
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "chokidar": "^4.0.0"
   },
   "devDependencies": {
-    "electron": "^41.0.0",
-    "electron-vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/vite": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
     "typescript": "^5.7.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@types/node": "^22.0.0"
-  },
-  "scripts": {
-    "dev": "electron-vite dev",
-    "build": "electron-vite build",
-    "preview": "electron-vite preview"
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0"
   }
 }
 ```
 
-### electron.vite.config.ts
-
-```typescript
-import { defineConfig } from 'electron-vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  main: { build: { outDir: 'out/main' } },
-  preload: { build: { outDir: 'out/preload' } },
-  renderer: {
-    plugins: [react()],
-    build: { outDir: 'out/renderer' }
-  }
-})
-```
-
-### Main Process (src/main/index.ts)
-
-**Window Creation:**
-```typescript
-const mainWindow = new BrowserWindow({
-  width: 1400,
-  height: 900,
-  minWidth: 1200,
-  minHeight: 800,
-  backgroundColor: '#0A0A10',
-  titleBarStyle: 'hiddenInset',                   // macOS frameless
-  trafficLightPosition: { x: 16, y: 16 },         // macOS traffic lights
-  show: false,                                     // Show when ready
-  webPreferences: {
-    preload: path.join(__dirname, '../preload/index.js'),
-    contextIsolation: true,
-    nodeIntegration: false
-  }
-})
-
-mainWindow.once('ready-to-show', () => mainWindow.show())
-```
-
-Note: On Windows/Linux, `titleBarStyle: 'hiddenInset'` and `trafficLightPosition` are ignored. The default frame is used instead. The app works cross-platform without OS-specific branching.
-
-**IPC Handlers (4 total):**
-
-| Channel | Direction | Description |
-|---------|-----------|-------------|
-| `tracker:read` | renderer → main | Returns tracker JSON string or null |
-| `tracker:write` | renderer → main | Writes JSON string to disk, returns `{success, error?}` |
-| `tracker:path` | renderer → main | Returns absolute tracker file path |
-| `tracker:fileInfo` | renderer → main | Returns `{exists, size, lastModified, watcherActive}` |
-
-**File Watcher:**
-```
-let lastWriteTime = 0
-
-fs.watch(TRACKER_PATH, (eventType) => {
-  if (eventType !== 'change') return
-  // Skip if we wrote within the last 1000ms (avoids reacting to own writes)
-  if (Date.now() - lastWriteTime < 1000) return
-
-  const content = fs.readFileSync(TRACKER_PATH, 'utf-8')
-  try {
-    JSON.parse(content)  // Validate before sending
-    mainWindow.webContents.send('tracker:updated', content)
-  } catch {
-    // Ignore corrupt JSON (file might be mid-write)
-  }
-})
-```
-
-The `tracker:write` IPC handler sets `lastWriteTime = Date.now()` before writing, creating a 1-second window where the file watcher ignores changes (preventing infinite loops from own writes).
-
-**App Lifecycle:**
-- `app.whenReady()` → create window + start file watcher
-- `app.on('activate')` → recreate window if none exist (macOS)
-- `app.on('window-all-closed')` → quit (except macOS)
-- `app.on('before-quit')` → close file watcher
-
-### Config (src/main/config.ts)
+### Config (src/config.ts)
 
 Resolve the project root:
 1. Check `PROJECT_ROOT` environment variable
 2. Fallback: read `.env` file for `PROJECT_ROOT=...`
 3. Export `TRACKER_PATH = path.join(PROJECT_ROOT, 'project-tracker.json')`
+4. Use `path.resolve()` for all path operations (cross-platform safety)
 
-### Preload Bridge (src/preload/index.ts)
-
-```typescript
-contextBridge.exposeInMainWorld('api', {
-  platform: process.platform,
-  tracker: {
-    read: ()              => ipcRenderer.invoke('tracker:read'),
-    write: (json: string) => ipcRenderer.invoke('tracker:write', json),
-    getPath: ()           => ipcRenderer.invoke('tracker:path'),
-    getFileInfo: ()       => ipcRenderer.invoke('tracker:fileInfo'),
-    onUpdated: (cb: (json: string) => void) => {
-      const handler = (_event: any, json: string) => cb(json)
-      ipcRenderer.on('tracker:updated', handler)
-      return () => ipcRenderer.removeListener('tracker:updated', handler)
-    }
-  }
-})
-```
-
-### Window Type Augmentation (src/renderer/env.d.ts)
-
-```typescript
-interface TrackerAPI {
-  read(): Promise<string | null>
-  write(json: string): Promise<{ success: boolean; error?: string }>
-  getPath(): Promise<string>
-  getFileInfo(): Promise<{ exists: boolean; size: number; lastModified: string; watcherActive: boolean }>
-  onUpdated(callback: (json: string) => void): () => void
-}
-
-interface Window {
-  api: {
-    platform: string
-    tracker: TrackerAPI
-  }
-}
-```
-
-### Renderer Entry (src/renderer/main.tsx)
-
-```typescript
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import '@fontsource/inter/300.css'
-import '@fontsource/inter/400.css'
-import '@fontsource/inter/500.css'
-import '@fontsource/inter/600.css'
-import '@fontsource/inter/700.css'
-import '@fontsource/jetbrains-mono/400.css'
-import '@fontsource/jetbrains-mono/500.css'
-import App from './App'
-import './styles.css'
-
-createRoot(document.getElementById('root')!).render(
-  <React.StrictMode><App /></React.StrictMode>
-)
-```
-
-> **Checkpoint:** Run `npm run dev`. The Electron app should launch, show a loading screen, read the tracker JSON, and display an empty state. The file watcher should be active. No views yet — just the shell.
-
----
-
-## PHASE 4: STORE & TAB SYSTEM
-
-### Zustand Store (src/renderer/store.ts)
+### Store (src/store.ts)
 
 **State Interface:**
 ```typescript
-interface AppState {
+interface TUIState {
   tracker: TrackerState | null
   loading: boolean
   error: string | null
@@ -1108,39 +1276,16 @@ interface AppState {
   activeTab: TabId
   selectedMilestoneId: string | null
   theme: 'dark' | 'light'
-
-  // Actions
-  setTracker: (data: TrackerState) => void      // External updates (no write-back)
-  updateTracker: (updater: (draft: TrackerState) => void) => void  // UI mutations (triggers write-back)
-  setActiveTab: (tab: TabId) => void
-  setSelectedMilestoneId: (id: string | null) => void
-  setLoading: (v: boolean) => void
-  setError: (err: string | null) => void
-  setSynced: (v: boolean) => void
-  toggleTheme: () => void
 }
 
 type TabId = 'swim-lane' | 'task-board' | 'agent-hub' | 'calendar'
 ```
 
-**updateTracker Action (Mutation + Write-Back):**
+**Read Tracker:**
 ```typescript
-updateTracker: (updater) => {
-  const tracker = get().tracker
-  if (!tracker) return
-  const next = JSON.parse(JSON.stringify(tracker))  // Deep clone
-  updater(next)                                      // Apply mutations
-
-  // Recompute derived fields
-  const total = next.milestones.reduce((s, m) => s + m.subtasks.length, 0)
-  const done = next.milestones.reduce((s, m) =>
-    s + m.subtasks.filter(t => t.done).length, 0)
-  next.project.overall_progress = total > 0 ? parseFloat((done / total).toFixed(4)) : 0
-  next.project.current_week = selectCurrentWeek(next)
-  next.project.schedule_status = selectScheduleStatus(next)
-
-  set({ tracker: next })
-  scheduleWriteBack(next)
+function readTrackerFromDisk(): TrackerState | null {
+  const raw = fs.readFileSync(TRACKER_PATH, 'utf-8')
+  return JSON.parse(raw)
 }
 ```
 
@@ -1153,28 +1298,168 @@ function scheduleWriteBack(tracker: TrackerState) {
   if (writeTimer) clearTimeout(writeTimer)
   writeTimer = setTimeout(() => {
     suppressExternalRefresh = true
-    window.api.tracker.write(JSON.stringify(tracker, null, 2))
+    fs.writeFileSync(TRACKER_PATH, JSON.stringify(tracker, null, 2))
     setTimeout(() => { suppressExternalRefresh = false }, 700)
   }, 500)
 }
 ```
 
-**External Change Listener:**
+**File Watcher:**
 ```typescript
-// Registered once on App mount
-window.api.tracker.onUpdated((json) => {
-  if (suppressExternalRefresh) return  // Skip own writes
+chokidar.watch(TRACKER_PATH).on('change', () => {
+  if (suppressExternalRefresh) return
   try {
-    const data = JSON.parse(json)
-    data.project.current_week = selectCurrentWeek(data)
-    useStore.getState().setTracker(data)  // setTracker does NOT trigger write-back
-  } catch { /* ignore corrupt JSON */ }
+    const data = JSON.parse(fs.readFileSync(TRACKER_PATH, 'utf-8'))
+    state.tracker = data
+    render()
+  } catch { /* ignore corrupt JSON (file mid-write) */ }
 })
 ```
 
-**Theme Persistence:**
-- Read from `localStorage.getItem('command-center-theme')` on init, default `'dark'`
-- Write to `localStorage` on toggle
+### Theme (src/theme.ts)
+
+ANSI color definitions for blessed widgets. All views reference these constants.
+
+```typescript
+export const COLORS = {
+  accent:     { hex: '#585CF0', ansi: 63  },
+  accentLt:   { hex: '#8286FF', ansi: 105 },
+  onTrack:    { hex: '#22c55e', ansi: 35  },
+  behind:     { hex: '#ef4444', ansi: 196 },
+  review:     { hex: '#f59e0b', ansi: 214 },
+  muted:      { hex: '#9B9BAA', ansi: 247 },
+  surface:    { hex: '#111118', ansi: 233 },
+  dark:       { hex: '#0A0A10', ansi: 16  },
+  border:     { hex: '#1a1a2e', ansi: 234 },
+  white:      { hex: '#FFFFFF', ansi: 255 },
+  black:      { hex: '#000000', ansi: 0   },
+
+  domainPalette: [
+    { hex: '#f59e0b', ansi: 214 },  // amber
+    { hex: '#22c55e', ansi: 35  },  // green
+    { hex: '#8286FF', ansi: 105 },  // indigo
+    { hex: '#ef4444', ansi: 196 },  // red
+    { hex: '#14B8A6', ansi: 37  },  // teal
+    { hex: '#EC4899', ansi: 199 },  // pink
+    { hex: '#F97316', ansi: 208 },  // orange
+    { hex: '#6366F1', ansi: 63  },  // violet
+    { hex: '#06B6D4', ansi: 38  },  // cyan
+    { hex: '#9B9BAA', ansi: 247 },  // muted (fallback)
+  ],
+} as const
+
+export function domainColor(domain: string, domains: string[]): number {
+  const idx = domains.indexOf(domain)
+  return COLORS.domainPalette[idx % COLORS.domainPalette.length].ansi
+}
+
+export const WIDGET_STYLES = {
+  screen: {
+    bg: COLORS.dark.ansi,
+    fg: COLORS.white.ansi,
+  },
+  box: {
+    bg: COLORS.surface.ansi,
+    fg: COLORS.white.ansi,
+    border: { fg: COLORS.border.ansi },
+  },
+  list: {
+    bg: COLORS.surface.ansi,
+    fg: COLORS.white.ansi,
+    selectedBg: COLORS.accent.ansi,
+    selectedFg: COLORS.white.ansi,
+    border: { fg: COLORS.border.ansi },
+  },
+  table: {
+    bg: COLORS.surface.ansi,
+    fg: COLORS.white.ansi,
+    selectedBg: COLORS.accent.ansi,
+    selectedFg: COLORS.white.ansi,
+    border: { fg: COLORS.border.ansi },
+    headerBg: COLORS.border.ansi,
+    headerFg: COLORS.white.ansi,
+  },
+  tabBar: {
+    bg: COLORS.dark.ansi,
+    fg: COLORS.muted.ansi,
+    activeBg: COLORS.accent.ansi,
+    activeFg: COLORS.white.ansi,
+  },
+  statusBar: {
+    bg: COLORS.surface.ansi,
+    fg: COLORS.muted.ansi,
+  },
+}
+```
+
+### Entry Point (src/index.ts)
+
+```typescript
+import blessed from 'blessed'
+
+const screen = blessed.screen({
+  smartCSR: true,
+  title: 'Command Center',
+  fullUnicode: true,
+})
+
+screen.key(['q', 'C-c'], () => process.exit(0))
+screen.key(['1'], () => switchTab('swim-lane'))
+screen.key(['2'], () => switchTab('task-board'))
+screen.key(['3'], () => switchTab('agent-hub'))
+screen.key(['4'], () => switchTab('calendar'))
+
+// Layout: tab bar (top), status bar (bottom), view area (center)
+// Start file watcher
+// Initial render
+```
+
+> **Checkpoint:** Run `npm run dev`. The TUI dashboard launches in the terminal with an empty state, reads the tracker file, and shows tab labels. Pressing 1-4 switches tabs (can be placeholder areas). File watcher is active. Press `q` to quit.
+
+---
+
+## PHASE 4: TUI NAVIGATION & LAYOUT
+
+### Dashboard Layout (src/dashboard.ts)
+
+```
+┌─────────────────────────────────────────────────────────┐
+│ [1] Swim Lane │ [2] Task Board │ [3] Hub │ [4] Calendar│  ← Tab Bar
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│                                                         │
+│                  [Active View - flex: 1]                 │
+│                                                         │
+│                                                         │
+├─────────────────────────────────────────────────────────┤
+│ WEEK 3 · Core Features │ 12/27 (44%) │ ON TRACK │ ● Sync│  ← Status Bar
+└─────────────────────────────────────────────────────────┘
+```
+
+### TabBar Widget
+
+4 tabs rendered as blessed box elements in a horizontal row:
+
+| Tab | ID | Key |
+|-----|----|-----|
+| Swim Lane | `swim-lane` | `1` |
+| Task Board | `task-board` | `2` |
+| Agent Hub | `agent-hub` | `3` |
+| Calendar | `calendar` | `4` |
+
+- Active tab: accent background, white text
+- Inactive tabs: dark background, muted text
+- Agent Hub tab: show `*` indicator if any `agent_log` entry has timestamp within last 30 minutes
+- Keyboard: press number key (1-4) to switch
+
+### StatusBar Widget
+
+Rendered as a blessed box at the bottom of the screen, showing:
+
+1. **Week + Phase** — "WEEK 3 · Core Features"
+2. **Progress** — "12/27 (44%)"
+3. **Schedule chip** — "ON TRACK" (green), "BEHIND" (red), or "AHEAD" (green)
+4. **Sync indicator** — "● Sync" (green) if `synced`, "● Desync" (red) if not
 
 ### Derived Selectors (Pure Functions)
 
@@ -1192,13 +1477,11 @@ function selectCurrentWeek(tracker: TrackerState | null): number {
 }
 
 function selectCurrentWeekFractional(tracker: TrackerState | null): number {
-  // Same as above but returns decimal (e.g., 3.4 = day 3 of week 3)
-  // Used for NOW marker positioning on swim lane
   if (!tracker) return 1
   const start = new Date(tracker.project.start_date)
   const now = new Date()
   const diffDays = (now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
-  const totalWeeks = /* same calculation */
+  const totalWeeks = /* same calculation as above */
   return Math.max(1, Math.min(totalWeeks + 0.99, diffDays / 7 + 1))
 }
 
@@ -1229,60 +1512,24 @@ function selectMilestoneProgress(milestone: Milestone): { done: number; total: n
 }
 ```
 
-### Root Component (src/renderer/App.tsx)
+### Keyboard Shortcuts
 
-**Layout:**
-```
-┌─────────────────────────────────────────────┐
-│ [Draggable Title Bar - 12px]                │  ← WebkitAppRegion: 'drag'
-├────────────────────────┬────────────────────┤
-│ [TabBar]               │ [StatusBar]        │  ← WebkitAppRegion: 'no-drag'
-├────────────────────────┴────────────────────┤
-│                                             │
-│ [Active View - flex-1]                      │
-│                                             │
-└─────────────────────────────────────────────┘
-```
+| Key | Action |
+|-----|--------|
+| `1` | Switch to Swim Lane tab |
+| `2` | Switch to Task Board tab |
+| `3` | Switch to Agent Hub tab |
+| `4` | Switch to Calendar tab |
+| `q` / `Ctrl+C` | Quit dashboard |
+| `t` | Toggle theme (dark/light) |
+| `r` | Force refresh from tracker file |
+| `?` | Show help overlay with all shortcuts |
+| `Escape` | Close any open detail panel/modal |
+| `j` / `k` / `↑` / `↓` | Navigate items in current view |
+| `Enter` | Select/open focused item |
+| `h` / `l` / `←` / `→` | Navigate horizontally (weeks, milestones) |
 
-**States:**
-- Loading: centered spinner with "Loading tracker..." message
-- Error: error message with instructions
-- Loaded: TabBar + StatusBar + active view
-
-**Theme Application:**
-```typescript
-useEffect(() => {
-  document.documentElement.dataset.theme = theme
-}, [theme])
-```
-
-### TabBar Component
-
-4 tabs with icons and labels:
-
-| Tab | ID | Icon |
-|-----|----|------|
-| Swim Lane | `swim-lane` | Timeline/hexagon icon |
-| Task Board | `task-board` | Grid/kanban icon |
-| Agent Hub | `agent-hub` | Lightning/bolt icon |
-| Calendar | `calendar` | Calendar grid icon |
-
-**Activity indicator:** The Agent Hub tab shows a small pulsing dot if any `agent_log` entry has a timestamp within the last 30 minutes.
-
-**Visual:** Pill-shaped buttons, active tab has accent background. Non-draggable region (clicks must work).
-
-### StatusBar Component
-
-Renders in the top-right area, left to right:
-
-1. **Week + Phase** — "WEEK 3 · Core Features" (from selectors)
-2. **Progress bar** — Small horizontal bar, accent color fill proportional to `overall_progress`
-3. **Progress text** — "12/27 (44%)" in monospace font
-4. **Schedule chip** — "ON TRACK" (green), "BEHIND" (red), or "AHEAD" (green)
-5. **Sync indicator** — Green dot if `synced`, red if not + label
-6. **Theme toggle** — Sun/moon icon button
-
-> **Checkpoint:** All 4 tabs render (can be placeholder divs). Clicking tabs switches the active view. StatusBar shows project metadata. Theme toggle works. Store syncs with tracker file.
+> **Checkpoint:** Tab switching works via number keys (1-4). StatusBar shows project metadata. Theme toggle works. Store syncs with tracker file changes. All keyboard shortcuts function correctly.
 
 ---
 
@@ -1291,187 +1538,126 @@ Renders in the top-right area, left to right:
 ### Wireframe
 
 ```
-┌──────────┬──────────────────────────────────────────────────────────────────┐
-│          │  W1       W2       W3    ▎  W4       W5       W6       W7       │
-│          │  01-01    01-08    01-15 ▎  01-22    01-29    02-05    02-12    │
-├──────────┼─ Phase A (tinted bg) ───▎── Phase B (tinted bg) ───────────────┤
-│          │                         ▎                                       │
-│ Domain A │    (●6/11)────(●3/8)    ▎                                       │
-│ ████████ │                         ▎                                       │
-│          │                         ▎                                       │
-├──────────┤                         ▎                                       │
-│          │                         ▎                                       │
-│ Domain B │       (●4/4)            ▎     (●2/7)────(●0/5)                  │
-│ ████████ │                         ▎                                       │
-│          │                         ▎                                       │
-├──────────┤                         ▎                                       │
-│          │                         ▎                                       │
-│ Domain C │                    (●1/3) ▎         (●0/6)                      │
-│ ████████ │                         ▎                                       │
-│          │                         ▎                                       │
-├──────────┤                         ▎                                       │
-│          │      ◆ Beta Release     ▎                    ◆ V1.0 Launch     │
-└──────────┴─────────────────────────┴───────────────────────────────────────┘
-                                     ▎
+┌──────────┬──────────────────────────────────────────────────────────────┐
+│          │  W1       W2       W3   │  W4       W5       W6       W7   │
+│          │  01-01    01-08    01-15│  01-22    01-29    02-05    02-12 │
+├──────────┼──────────── Phase A ────┼──────────── Phase B ─────────────┤
+│          │                         │                                   │
+│ Domain A │    [6/11]──[3/8]        │                                   │
+│ ████████ │                         │                                   │
+│          │                         │                                   │
+├──────────┤                         │                                   │
+│ Domain B │       [4/4]             │     [2/7]────[0/5]                │
+│ ████████ │                         │                                   │
+│          │                         │                                   │
+├──────────┤                         │                                   │
+│ Domain C │                    [1/3]│         [0/6]                     │
+│ ████████ │                         │                                   │
+│          │                         │                                   │
+├──────────┤       ◆ Beta Release    │                  ◆ V1.0 Launch   │
+└──────────┴─────────────────────────┴──────────────────────────────────┘
+                                     │
                                    NOW marker (vertical line + date label)
 ```
 
 Legend:
-- `(●6/11)` = Milestone node (progress ring with done/total)
+- `[6/11]` = Milestone node with done/total progress
 - `────` = Connection line between adjacent milestones in same lane
 - `◆` = Major milestone marker (at bottom)
 - `████████` = Domain color bar (left label area)
-- `▎` = NOW marker (vertical line at fractional week position)
-- Phase backgrounds are translucent tinted rectangles spanning their week range
+- `│` = NOW marker (vertical line at fractional week position)
 
 ### Constants
 
 | Constant | Value | Description |
 |----------|-------|-------------|
-| `WEEK_W` | 100 | Width of each week column in pixels |
-| `LANE_H` | 200 | Height of each swim lane |
-| `LABEL_W` | 140 | Width of sticky left domain labels |
-| `HEADER_H` | 44 | Height of week header row |
-| `NODE_R` | 20 | Radius of normal milestone nodes |
-| `KEY_NODE_R` | 26 | Radius of key milestone nodes |
-| `PANEL_W` | 480 | Width of detail panel slide-out |
-| `TOTAL_W` | `WEEK_W * totalWeeks` | Total scrollable width |
+| `WEEK_W` | 12 | Characters width per week column |
+| `LANE_H` | 3 | Lines per swim lane |
+| `LABEL_W` | 10 | Characters for sticky left domain labels |
+| `NODE_FMT` | `{done}/{total}` | Format string for milestone nodes |
 
 `totalWeeks` is calculated dynamically from `project.start_date` and `project.target_date`.
 
-### Layout Sections (rendered in order, back to front)
+### Layout Sections (rendered top to bottom)
 
-**1. Phase Background Bands**
-- For each phase in `schedule.phases`: render a translucent rectangle
-- X position: `(phase.start_week - 1) * WEEK_W`
-- Width: `(phase.end_week - phase.start_week + 1) * WEEK_W`
-- Height: full swim lane area
-- Color: use phase color at ~5% opacity
-
-**2. Week Grid Lines**
-- Vertical lines at each week boundary
-- Style: 1px, `rgba(255,255,255,0.03)` (dark theme)
-
-**3. NOW Marker**
-- Vertical line at fractional week position
-- X position: `(selectCurrentWeekFractional(tracker) - 1) * WEEK_W + LABEL_W`
-- Style: 2px solid accent color
-- Label at top: "NOW" + current date in small text
-- Auto-scroll the container to center on the NOW marker on initial load
-
-**4. Week Headers**
+**1. Week Headers**
 - Row of week labels: "W1", "W2", etc.
 - Below each: date string (start date of that week, formatted as MM-DD)
 
-**5. Swim Lanes**
+**2. Phase Bands**
+- For each phase in `schedule.phases`: render a horizontal band spanning week columns
+- Label with phase title, tinted with phase color
+
+**3. NOW Marker**
+- Vertical line at fractional week position
+- Character: `│` in accent color
+- Label: "NOW" + current date
+- Auto-scroll to center on NOW marker on initial render
+
+**4. Swim Lanes**
 - One lane per unique domain in `milestones[].domain`
 - Each lane has:
-  - **Left label**: Domain name, rotated 90° vertically, colored background matching domain color
-  - **Milestone nodes**: Positioned at `(milestone.week - 1) * WEEK_W` horizontally, centered vertically in lane
-  - **Stacking**: When multiple milestones share the same week in the same lane, stack them vertically with 56px spacing
-  - **Connection lines**: Horizontal lines between adjacent milestones in the same domain, sorted by week
+  - **Left label**: Domain name, colored background
+  - **Milestone nodes**: `[done/total]` text positioned at milestone's week column
+  - **Connection lines**: `────` between adjacent milestones in same domain, sorted by week
 
-**6. Major Milestone Markers**
-- Below the swim lanes, render markers for milestones where `is_key_milestone === true`
-- Each marker: diamond shape + `key_milestone_label` text
-- Dashed vertical line extending up through all lanes at that week position
+**5. Major Milestone Markers**
+- Below swim lanes, render `◆` markers for milestones where `is_key_milestone === true`
+- Show `key_milestone_label` text next to marker
 
-### Milestone Node Rendering (SVG)
+### Milestone Node Rendering (Text)
 
-Each node is an SVG group:
+Each node renders as: `[done/total]` in domain color.
 
-```
-<g transform="translate(cx, cy)">
-  <!-- Background circle -->
-  <circle r={NODE_R} fill="rgba(17,17,24,0.95)" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+Drift visualization:
+- When `milestone.drift_days !== 0`:
+  - Show drift indicator: `+3d` (red, behind) or `-2d` (green, ahead) next to the node
+  - Ghost position shown in parentheses: `(3/8)` in muted color at planned position
 
-  <!-- Progress arc -->
-  <circle r={NODE_R - 2}
-    fill="none"
-    stroke={domainColor}
-    stroke-width="2.5"
-    stroke-dasharray={`${(done/total) * circumference} ${circumference}`}
-    transform="rotate(-90)"  <!-- Start from 12 o'clock -->
-  />
+### Detail Panel (blessed box overlay)
 
-  <!-- Center text -->
-  <text font-family="JetBrains Mono" font-size="9" fill="white" text-anchor="middle" dy="3">
-    {done}/{total}
-  </text>
-</g>
-```
-
-Where `circumference = 2 * Math.PI * (NODE_R - 2)`.
-
-**Key milestone glow:** For nodes where `is_key_milestone === true`, use `KEY_NODE_R` instead of `NODE_R`, and add a CSS `box-shadow: 0 0 16px 3px {domainColor}30`.
-
-**Selection indicator:** When a node is selected (clicked), add a 2px border ring at `NODE_R + 2`.
-
-### Drift Visualization
-
-When `milestone.drift_days !== 0`:
-
-1. **Ghost node**: Render a dashed-outline circle at the PLANNED position (where the node would be if on schedule)
-   - Same radius as the actual node
-   - Dashed stroke, low opacity (30%)
-
-2. **Actual node**: Render at the ACTUAL position (shifted by drift)
-   - Shift amount: `drift_days * (WEEK_W / 7)` pixels
-
-3. **Connecting bar**: Horizontal bar between ghost and actual positions
-   - Color: red if `drift_days > 0` (behind), green if `drift_days < 0` (ahead)
-   - Height: 4px
-
-4. **Drift badge**: Below the actual node, show "X DAYS BEHIND" (red) or "X DAYS AHEAD" (green)
-
-### Milestone Detail Panel
-
-A slide-out panel from the right side, width `PANEL_W` (480px):
+When a milestone node is selected (via `Enter` key), show a detail panel as a blessed box overlay.
 
 **Header:**
 - Domain color tag + "W{week}" badge + key milestone label (if any)
 - Milestone title
-- First note (line-clamp-2)
-- Close button (×)
-- Progress bar: done/total with percentage, colored by domain
+- Progress: done/total with percentage
 
 **Sections:**
 
-1. **Schedule** — 2×2 grid:
-   - Planned Start / Planned End (date inputs, editable)
+1. **Schedule** — 2-column layout:
+   - Planned Start / Planned End (editable via blessed input)
    - Actual Start / Actual End (read-only, auto-calculated)
    - Drift label if non-zero: "X DAYS BEHIND/AHEAD"
-   - Save button (calls `updateTracker` to persist date changes)
+   - Save button (calls `scheduleWriteBack` to persist date changes)
 
-2. **Subtasks Checklist** — Scrollable list:
-   - Per task: checkbox toggle, label, assignee badge, status color dot, priority badge
-   - Clicking checkbox toggles `task.done` and sets `completed_at`
-   - Shows done/total count in section header
+2. **Subtasks List** — blessed list widget:
+   - Per task: `[x]` or `[ ]` + label + assignee + status color + priority
+   - Arrow keys to navigate, `Enter` to toggle done status
 
 3. **Dependencies** — If `milestone.dependencies` is non-empty:
-   - List upstream milestones with mini progress rings (24px SVG)
-   - Show title, done/total, week number for each
+   - List upstream milestones with progress: `[3/5] Title`
 
 4. **Notes** — Exit criteria:
-   - Existing notes displayed as read-only cards
-   - Textarea + Add button to append new notes
-   - Adding a note calls `updateTracker` to append to `milestone.notes[]`
+   - Existing notes displayed as text lines
+   - Input + `Enter` to append new notes
 
 ### Interactions
 
-- **Click milestone node** → open detail panel (set `panelTarget` state)
-- **Horizontal scroll** → pan timeline left/right
-- **Close panel** → click × button or backdrop
-- **Auto-scroll on load** → scroll to center the NOW marker
+- **`j`/`k` or arrow keys** → navigate between milestone nodes
+- **`Enter`** → open detail panel for focused node
+- **`Escape`** → close detail panel
+- **`h`/`l`** → scroll timeline horizontally (week-by-week)
+- **`n`** → scroll to NOW marker
 
 ### Empty State
 
 When `milestones[]` is empty:
 - Show the week grid and NOW marker
-- Show empty lanes with placeholder text: "Milestones will appear here after hydration"
+- Show empty lanes with text: "Milestones will appear here after hydration"
 - No detail panel available
 
-> **Checkpoint:** Swim Lane renders with week grid, NOW marker at the correct fractional week, and empty lane placeholders. If you manually add a milestone to the tracker JSON, it should appear as a node in the correct lane and week position.
+> **Checkpoint:** Swim Lane renders with week grid, NOW marker at the correct fractional week, and empty lane placeholders. If you manually add a milestone to the tracker JSON, it should appear as a node in the correct lane and week position. Arrow keys navigate nodes. Enter opens detail panel. Escape closes it.
 
 ---
 
@@ -1481,49 +1667,43 @@ When `milestones[]` is empty:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│  ◐ 6/11  Domain · W3 · Milestone Title         ← [Select ▼] →   Next ▸   │
+│  [6/11]  Domain · W3 · Milestone Title                    ← [Select] → →  │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │  [All: 11]   [My Tasks: 3]   [Agent Tasks: 5]   [Blocked: 1]              │
 ├──────────────┬──────────────┬──────────────┬──────────────┬────────────────┤
-│  ▎ TO DO (5) │▎IN PROGRESS 3│▎ REVIEW (2)  │▎  DONE (1)   │▎ BLOCKED (1)  │
-│  ───────────-│  ──────────  │  ──────────  │  ──────────  │  ───────────  │
-│ ┌──────────┐ │ ┌──────────┐ │ ┌──────────┐ │ ┌──────────┐ │ ┌──────────┐ │
-│ │▌P2 domain│ │ │▌P1 domain│ │ │▌P1 domain│ │ │▌✓ domain │ │ │▌⊘ domain │ │
-│ │ Title    │ │ │ Title    │ │ │ Title    │ │ │ Title    │ │ │ Title    │ │
-│ │ desc...  │ │ │ desc...  │ │ │          │ │ │ 04/10    │ │ │ Reason:  │ │
-│ │    @agent│ │ │    @agent│ │ │  @human  │ │ │          │ │ │ dep...   │ │
-│ └──────────┘ │ └──────────┘ │ └──────────┘ │ └──────────┘ │ └──────────┘ │
-│ ┌──────────┐ │ ┌──────────┐ │              │              │              │
-│ │▌P3 domain│ │ │▌P2 domain│ │              │              │              │
-│ │ Title    │ │ │ Title    │ │              │              │              │
-│ └──────────┘ │ └──────────┘ │              │              │              │
-│              │              │              │              │              │
-│  ··DROP··    │              │              │              │              │
-└──────────────┴──────────────┴──────────────┴──────────────┴──────────────┘
+│  TO DO (5)   │ IN PROGRESS  │ REVIEW (2)   │  DONE (1)    │ BLOCKED (1)   │
+│  ──────────  │  ──────────  │  ──────────  │  ──────────  │  ──────────   │
+│  P2 domain   │  P1 domain   │  P1 domain   │  ✓ domain   │  ⊘ domain    │
+│  Title       │  Title       │              │  Title       │  Reason:      │
+│  desc...     │  desc...     │              │  04/10       │  dep...       │
+│    @agent    │    @agent    │   @human     │              │               │
+│              │              │              │              │               │
+│  P3 domain   │  P2 domain   │              │              │               │
+│  Title       │  Title       │              │              │               │
+│──────────────│──────────────│──────────────│──────────────│───────────────│
+│              │              │              │              │               │
+│  ↑↓ navigate│  Tab: next   │  Enter: open │              │               │
+└──────────────┴──────────────┴──────────────┴──────────────┴───────────────┘
 ```
 
 ### Column Definitions
 
-| Column ID | Label | Color | Description |
-|-----------|-------|-------|-------------|
-| `todo` | TO DO | `#9B9BAA` (muted) | New tasks |
-| `in_progress` | IN PROGRESS | `#585CF0` (accent) | Currently being worked |
-| `review` | REVIEW | `#f59e0b` (amber) | Awaiting operator approval |
-| `done` | DONE | `#22c55e` (green) | Completed |
-| `blocked` | BLOCKED | `#ef4444` (red) | Blocked by dependency or issue |
+| Column ID | Label | ANSI Color | Description |
+|-----------|-------|-----------|-------------|
+| `todo` | TO DO | 247 (muted) | New tasks |
+| `in_progress` | IN PROGRESS | 63 (accent) | Currently being worked |
+| `review` | REVIEW | 214 (amber) | Awaiting operator approval |
+| `done` | DONE | 35 (green) | Completed |
+| `blocked` | BLOCKED | 196 (red) | Blocked by dependency or issue |
 
-### ContextBar Component
-
-**Props:** `milestones: Milestone[]`, `activeMilestoneIndex: number`, `onMilestoneChange: (index) => void`
+### ContextBar Component (blessed box)
 
 **Layout (left to right):**
-1. Progress ring (36px SVG, same rendering as swim lane nodes)
-2. Info block: domain tag + "W{week}" badge, milestone title, "Week X · done/total tasks"
-3. Navigation: ← button, select dropdown, → button (disabled at boundaries)
-4. Separator: vertical border
-5. Next-up section: if next milestone exists, show small progress ring (24px) + title. Otherwise "FINAL MILESTONE"
+1. Progress indicator: `[done/total]` in domain color
+2. Info: domain tag + "W{week}" + milestone title
+3. Navigation: `←` / `→` keys to switch between milestones, select dropdown via `Tab`
 
-### FilterBar Component
+### FilterBar Component (blessed box)
 
 **Filters:**
 
@@ -1534,86 +1714,71 @@ When `milestones[]` is empty:
 | `agent_tasks` | Agent Tasks | `assignee !== null && assignee !== operator_name` |
 | `blocked` | Blocked | `status === 'blocked'` |
 
-Render as pill buttons with count badges. Active filter has accent background.
+Render as horizontal text: `[F1:All 11] [F2:My 3] [F3:Agent 5] [F4:Blocked 1]`
+Active filter highlighted in accent color. Toggle via `F1`-`F4` keys.
 
-### KanbanColumn Component
+### KanbanColumn Component (blessed list)
 
-**Props:** `column: {id, label, color}`, `subtasks: Subtask[]`, `domain: string`, `onCardClick: (subtask) => void`
+Each column is a blessed list widget:
+
+- Column header: colored label + count
+- Each task is a list item, formatted as:
+  ```
+  P{priority} {domain} — {title}
+    @{assignee} | {status_color_indicator}
+  ```
+- Blocked tasks show: `⊘ {blocked_reason}`
+- In-progress tasks show pulsing-style indicator: `●` (bright)
+
+**Keyboard Navigation:**
+- `j`/`k` or `↑`/`↓` — move focus between tasks within a column
+- `Tab` / `Shift+Tab` — move focus between columns
+- `s` — move selected task to next status (todo → in_progress → review → done)
+- `b` — move selected task to blocked status (prompts for reason)
+- `Enter` — open TaskDetailModal for focused task
+
+### TaskDetailModal Component (blessed box overlay)
+
+Full-screen overlay opened when pressing `Enter` on a task.
 
 **Layout:**
-1. Column header: 4px-wide color bar on left + label (10px bold uppercase) + count badge
-2. Drop zone: `useDroppable` from @dnd-kit/core, highlights with accent background when an item is dragged over
-3. `SortableContext` with `verticalListSortingStrategy`, containing `TaskCard` components
-4. Empty state: "DROP HERE" placeholder with dashed border, minimum height 120px
+```
+┌─────────────────────────────────────────────────────────────┐
+│ [domain] P2 · agent · {task_id}                    [ESC] × │
+├─────────────────────────────────────────────────────────────┤
+│ Status: in_progress     Priority: P2     Mode: agent       │
+│ Assignee: claude_code                                       │
+│ Blocked: No                                                 │
+├─────────────────────────────────────────────────────────────┤
+│ Label:                                                      │
+│ {task_label}                                                │
+├─────────────────────────────────────────────────────────────┤
+│ Notes:                                                      │
+│ {task_notes}                                                │
+├─────────────────────────────────────────────────────────────┤
+│ Acceptance Criteria:                                        │
+│ - [ ] criterion 1                                           │
+│ - [ ] criterion 2                                           │
+├─────────────────────────────────────────────────────────────┤
+│ Dependencies: task_001 ✓, task_003 ○                        │
+│ Siblings: 3/8 done in milestone                             │
+├─────────────────────────────────────────────────────────────┤
+│ [Tab: History] [s:Status] [p:Priority] [a:Assignee] [ESC]  │
+└─────────────────────────────────────────────────────────────┘
+```
 
-### TaskCard Component
-
-**Props:** `subtask: Subtask`, `domain: string`, `onClick: () => void`
-
-Uses `useSortable` hook from @dnd-kit/sortable for drag behavior.
-
-**Layout:**
-1. **Left border**: 3px wide, colored by `execution_mode`:
-   - `agent` → `#ef4444` (red)
-   - `human` → `#22c55e` (green)
-   - `pair` → `#3b82f6` (blue)
-   - In-progress tasks: add a subtle pulsing animation to the border
-2. **Top row**: domain color tag (small pill) + priority badge ("P1", "P2", etc.)
-3. **Title**: first segment of label (split at first colon or dash)
-4. **Description**: remainder of label after the split, line-clamp-2, muted color
-5. **Blocker bar**: if `status === 'blocked'`, show red-tinted bar with `blocked_reason` text
-6. **Assignee chip**: right-aligned at bottom, agent name. If assigned to an agent (not human), show a small pulsing dot indicator
-
-### TaskDetailModal Component
-
-Full-screen overlay modal opened when clicking a task card.
-
-**Header (sticky):**
-- Domain tag + priority badge + execution mode tag
-- Task title + task ID (with copy button)
-- Close button (×)
-- Tab navigation: [Details] | [History]
-
-**Details Tab:**
-- 2-column grid: Status select dropdown, Priority select
-- 2-column grid: Assignee select (agents + operator), Execution mode toggle (human/agent/pair)
-- Blocked checkbox + reason text input
-- Dependencies section (if `depends_on` is non-empty): list with progress indicators
-- Sibling tasks section: scrollable list of other tasks in the same milestone with status dots
-- Notes textarea (free-form)
-- Parent milestone link: "Part of {milestone title}" with optional "View in Swim Lane" button (switches tab)
-
-**History Tab:**
+**History Tab** (`Tab` key to switch):
 - Chronological log from `agent_log` where `target_id === task.id`
-- Per entry: agent ID, action, description, tags (styled pills), timestamp
-- Focus on review cycle: `task_submitted_for_review`, `revision_requested`, `task_approved` entries
+- Per entry: timestamp, agent, action, description, tags
+- Focus on review cycle: `task_submitted_for_review`, `revision_requested`, `task_approved`
 
-**Footer (sticky):**
-- Status display: "Status: {current_status}"
-- Cancel button + Save Changes button (accent color)
-- Save writes changes via `updateTracker()`
-
-**Interactions:**
-- Escape key closes modal
-- If blocked checkbox toggled ON: set status to blocked
-- If blocked checkbox toggled OFF: set status to todo
-- Assignee dropdown includes: "Unassigned", operator name, + all agents from `state.agents[]`
-
-### Drag-Drop Logic
-
-Using @dnd-kit/core with `PointerSensor` (5px activation distance) and `KeyboardSensor`:
-
-**On drag end:**
-1. Identify source column (find which column contains the dragged task ID)
-2. Identify target column (the droppable zone the task was dropped on)
-3. If same column: do nothing
-4. Update `task.status` to the target column ID
-5. Side effects by target column:
-   - `done` → set `completed_at = now`, `completed_by = operator`, clear `blocked_*`
-   - `blocked` → set `blocked_by = 'manual'`, clear `completed_*`
-   - Any other → clear `blocked_*` if moving FROM blocked
-
-Collision detection: `closestCorners` strategy from @dnd-kit.
+**Keyboard:**
+- `Escape` — close modal
+- `Tab` — toggle between Details and History tabs
+- `s` — cycle status (prompted)
+- `p` — cycle priority (P1→P2→P3→P4)
+- `a` — change assignee (show agent list)
+- Save writes changes via `scheduleWriteBack()`
 
 ### Empty State
 
@@ -1621,7 +1786,7 @@ When no subtasks exist in the selected milestone:
 - Show 5 empty columns with headers
 - Center text: "No tasks yet — tasks will appear after hydration"
 
-> **Checkpoint:** Task board renders with 5 columns and milestone carousel. Drag-drop works between columns. If you manually add subtasks to a milestone in the tracker JSON, they appear as cards in the correct columns. Clicking a card opens the detail modal.
+> **Checkpoint:** Task board renders with 5 columns and milestone carousel. Keyboard navigation works between columns and cards. `s` key changes task status. `Enter` opens detail modal. If you manually add subtasks to a milestone in the tracker JSON, they appear as cards in the correct columns.
 
 ---
 
@@ -1631,83 +1796,72 @@ When no subtasks exist in the selected milestone:
 
 ```
 ┌───────────────────────────┬─────────────────────────────────────────────────┐
-│  CONNECTED AGENTS         │  ACTIVITY FEED                                  │
-│  ─────────────────────    │  [All] [Agent1] [Agent2] [Manual] [System]      │
-│                           │  [🔍 Search...]                                 │
-│  ▼ Orchestrator Name      │  ─────────────────────────────────────────────   │
-│    ● Agent Name           │  TODAY                                          │
-│      ACTIVE · 2m ago      │  ● agent · started task_005 · [START] [MCP]     │
-│      [READ] [WRITE]       │    10:30 AM                                     │
-│                           │                                                 │
-│    ○ Sub-Agent Name       │  ● agent · completed build · [WRITE]            │
-│      IDLE · 2h ago        │    10:15 AM                                     │
-│      [READ]               │  ─────────────────────────────────────────────   │
-│                           │  YESTERDAY                                      │
-│  ─────────────────────    │  ● agent · exploration_complete · [MCP]         │
-│  SHARED STATE FILE        │    04:30 PM                                     │
-│  ─────────────────────    │                                                 │
-│  Path: project-tracker    │  [Load More]                                    │
-│  Watcher: ● Active        │                                                 │
-│  Milestones: 9            │  ─────────────────────────────────────────────   │
-│  Subtasks: 0              │  AGENT PERFORMANCE (THIS WEEK)                  │
-│  Log entries: 0           │  ┌──────────┐ ┌──────────┐ ┌──────────┐        │
-│                           │  │ ● Agent1 │ │ ● Agent2 │ │ ● Agent3 │        │
-│  ─────────────────────    │  │ 24 acts  │ │ 12 acts  │ │ 3 acts   │        │
-│  CONTEXT INJECTION        │  └──────────┘ └──────────┘ └──────────┘        │
-│  ─────────────────────    │                                                 │
-│  WEEK 3, Phase: Core      │                                                 │
-│  Progress: 45% (12/27)    │                                                 │
-│  Schedule: ON TRACK       │                                                 │
-│  Blocked: 2               │                                                 │
-│  [Copy to Clipboard]      │                                                 │
-│                           │                                                 │
-│  ─────────────────────    │                                                 │
-│  TODAY'S SUMMARY          │                                                 │
-│  ─────────────────────    │                                                 │
-│  Completed: 3             │                                                 │
-│  In Progress: 5           │                                                 │
-│  Blocked: 1               │                                                 │
-│  ─── Contributions ───    │                                                 │
-│  ● Agent1: 5 actions      │                                                 │
-│  ● Agent2: 2 actions      │                                                 │
+│  CONNECTED AGENTS          │  ACTIVITY FEED                                  │
+│  ─────────────────────    │  [F1:All] [F2:Agent1] [F3:Agent2] [F4:System]  │
+│                            │  [/:Search...]                                  │
+│  ▼ Orchestrator            │  ─────────────────────────────────────────────  │
+│    ● Agent1  ACTIVE 2m ago │  TODAY                                          │
+│      [READ] [WRITE]  24act │  ● agent1 · started task_005 · [START] [MCP]  │
+│                            │    10:30 AM                                     │
+│    ○ Agent2  IDLE   2h ago │  ● agent1 · completed build · [WRITE]          │
+│      [READ]         12act  │    10:15 AM                                     │
+│                            │  ─────────────────────────────────────────────  │
+│  ─────────────────────    │  YESTERDAY                                      │
+│  SHARED STATE              │  ● agent2 · exploration_complete · [MCP]       │
+│  ─────────────────────    │    04:30 PM                                     │
+│  File: project-tracker     │                                                │
+│  Watcher: ● Active         │  [Load More: m]                                │
+│  Milestones: 9             │                                                │
+│  Subtasks: 27              │  ─────────────────────────────────────────────  │
+│  Log entries: 142          │  AGENT PERFORMANCE (THIS WEEK)                 │
+│                            │  Agent1: ████████████ 24 actions               │
+│  ─────────────────────    │  Agent2: ██████ 12 actions                     │
+│  CONTEXT INJECTION         │  Agent3: █ 3 actions                           │
+│  ─────────────────────    │                                                │
+│  WEEK 3, Phase: Core       │                                                │
+│  Progress: 45% (12/27)     │                                                │
+│  Schedule: ON TRACK        │                                                │
+│  Blocked: 2                │                                                │
+│  [c:Copy]                  │                                                │
+│                            │                                                │
+│  ─────────────────────    │                                                │
+│  TODAY'S SUMMARY           │                                                │
+│  ─────────────────────    │                                                │
+│  Done: 3  InProg: 5  Block │                                                │
+│  Agent1: 5 · Agent2: 2     │                                                │
 └───────────────────────────┴─────────────────────────────────────────────────┘
 ```
 
-### Left Column (fixed width: 340px)
+### Left Column (fixed width: 30 chars)
 
-#### Panel 1: Connected Agents
+#### Panel 1: Connected Agents (blessed list)
 
 - Read `state.agents[]`
 - Group agents hierarchically:
   - Orchestrators (type === 'orchestrator') at top level
   - Sub-agents nested under their parent (matched by `parent_id`)
   - Standalone agents (no parent, not orchestrator) listed separately
-- Per agent card:
-  - Color dot (agent.color) + name
-  - Status: "ACTIVE" with pulsing green dot if `isAgentActive(agent)`, "IDLE" with gray dot otherwise
-  - Time since last action: "2m ago", "1h ago", etc. (from `last_action_at`)
-  - Permission badges: small pills showing each permission (e.g., [READ], [WRITE])
+- Per agent item:
+  - `●` (green) if active, `○` (gray) if idle — based on `isAgentActive(agent)`
+  - Name + status + time since last action
+  - Permission badges: `[R]` `[W]` shorthand
   - Session action count
-- Orchestrator sections are collapsible (toggle arrow)
-- "Connect New Agent" button at bottom — shows a tooltip explaining how to register agents via the MCP `register_agent` tool
 
 **isAgentActive(agent):**
 ```typescript
 return agent.last_action_at != null &&
-  (Date.now() - new Date(agent.last_action_at).getTime()) < 30 * 60 * 1000  // 30 minutes
+  (Date.now() - new Date(agent.last_action_at).getTime()) < 30 * 60 * 1000
 ```
 
-#### Panel 2: Shared State File Info
+**Keyboard:** `j`/`k` to navigate, `Enter` to expand/collapse orchestrator sections.
+
+#### Panel 2: Shared State File Info (blessed box)
 
 - File path: "project-tracker.json"
-- Watcher status: green dot "Active" if `synced`, red "Inactive" otherwise
-- Counts (computed from tracker):
-  - Milestones: `state.milestones.length`
-  - Subtasks: sum of all `milestone.subtasks.length`
-  - Log entries: `state.agent_log.length`
-- Schema validation indicator (always "Valid" if tracker loaded successfully)
+- Watcher status: `● Active` (green) if `synced`, `● Inactive` (red) otherwise
+- Counts: milestones, subtasks, log entries
 
-#### Panel 3: Context Injection Preview
+#### Panel 3: Context Injection Preview (blessed box)
 
 Auto-generated one-line context string:
 
@@ -1715,72 +1869,60 @@ Auto-generated one-line context string:
 WEEK {current_week}, Phase: {current_phase}, Progress: {pct}% ({done}/{total}), Schedule: {schedule_status}, Blocked: {blocked_count}
 ```
 
-- "Copy to Clipboard" button → copies the string, shows checkmark feedback for 2 seconds
+- `c` key copies the string to clipboard (using `child_process` to call `xclip`/`pbcopy`)
 
-#### Panel 4: Today's Summary
+#### Panel 4: Today's Summary (blessed box)
 
-- Three stat boxes in a row: Completed (count), In Progress (count), Blocked (count)
-  - Computed by filtering ALL subtasks by status
-- Contribution breakdown:
-  - Filter `agent_log` where timestamp is today
-  - Group by `agent_id`, count actions per agent
-  - Sort by count descending
-  - Show: agent color dot + agent name + action count
+- Three stats: Done (count), In Progress (count), Blocked (count)
+- Contribution breakdown: agent color dot + name + action count (sorted descending)
 
 ### Right Column (flex-1)
 
-#### Activity Feed
+#### Activity Feed (blessed list)
 
-**Filter tabs:** "All" + one tab per registered agent (using agent name and color dot) + "Manual" (agent_id matches operator) + "System" (automated/MCP actions)
+**Filter tabs:** `F1` through `Fn` keys — "All" + one per registered agent + "Manual" + "System"
 
-**Search box:** Filters entries where description contains the search string (case-insensitive)
+**Search:** `/` key activates search input, filters by description (case-insensitive)
 
 **Feed entries:**
 - Sorted by timestamp descending
-- Grouped by day with headers:
-  - "TODAY" if same date
-  - "YESTERDAY" if previous date
-  - Otherwise: "MON APR 14" (abbreviated day + month + date)
+- Grouped by day with headers: "TODAY", "YESTERDAY", "MON APR 14"
 - Per entry:
-  - Agent color dot + bold agent name (in agent's color)
-  - Description text
-  - Target ID reference (e.g., "task_005")
-  - Tag pills (styled, see below)
+  - Agent name (colored) + action + description + target ID
+  - Tags as styled text: `[WRITE]` `[START]` `[MCP]`
   - Timestamp right-aligned: "10:30 AM"
 
-**Tag Pill Styles:**
+**Tag Styles (ANSI):**
 
-| Tag | Background | Text Color |
-|-----|-----------|------------|
-| WRITE | green/10 | green |
-| COMMIT | accent/10 | accent |
-| START | blue/10 | blue |
-| ALERT | red/10 | red |
-| NOTE | muted/10 | muted |
-| MCP | accent/10 | accent |
+| Tag | ANSI Color |
+|-----|-----------|
+| WRITE | 35 (green) |
+| COMMIT | 63 (accent) |
+| START | 38 (cyan) |
+| ALERT | 196 (red) |
+| NOTE | 247 (muted) |
+| MCP | 105 (accent light) |
 
-**Pagination:** Show 30 entries initially. "Load More" button at bottom loads next 30.
+**Pagination:** Show 30 entries initially. `m` key loads next 30.
 
-#### Agent Performance Stats
+#### Agent Performance Stats (blessed-contrib bar chart)
 
 Below the activity feed:
 
 - **Scope:** This calendar week only (filter `agent_log` by timestamp)
-- Per agent: horizontal card with:
-  - Agent color dot + name
-  - Total actions count
-  - Breakdown by common tags (count of entries tagged 'write', 'start', 'alert')
-- Horizontal scroll if many agents
+- blessed-contrib horizontal bar chart
+- Per agent: bar length = total actions, color = agent color
+- Legend below chart: agent name + action count
 
 ### Empty State
 
 When `agents[]` is empty and `agent_log[]` is empty:
-- Connected Agents: "No agents registered yet. Agents register via the MCP register_agent tool."
-- Activity Feed: icon + "No activity recorded yet"
+- Connected Agents: "No agents registered. Agents register via MCP register_agent tool."
+- Activity Feed: "No activity recorded yet"
 - Performance Stats: hidden
 - Context Injection + Today's Summary: still functional (computed from tracker)
 
-> **Checkpoint:** Agent Hub renders with 4 left panels and the activity feed. Context Injection shows correct project stats. Copy button works. If you manually add an agent and log entries to the tracker JSON, they appear in the Connected Agents panel and Activity Feed.
+> **Checkpoint:** Agent Hub renders with 4 left panels and the activity feed. Context Injection shows correct project stats. `c` key copies context string. If you manually add an agent and log entries to the tracker JSON, they appear in the Connected Agents panel and Activity Feed. Filter keys work. Search works.
 
 ---
 
@@ -1790,30 +1932,25 @@ When `agents[]` is empty and `agent_log[]` is empty:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│  ◀ Prev     Week 3 · Jan 15 – Jan 21, 2026 · 3 completed      Today Next ▶ │
+│  [h:Prev]   Week 3 · Jan 15 – Jan 21, 2026 · 3 completed   [t:Today] [l:Next] │
 ├──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬───────────┤
 │   MON    │   TUE    │   WED    │   THU    │   FRI    │   SAT    │   SUN     │
 │   15     │   16     │   17     │   18     │   19     │   20     │   21      │
 │  ═══     │          │  ═══     │          │          │          │           │
-│ ┌──────┐ │          │ ┌──────┐ │          │          │          │           │
-│ │█ Task│ │          │ │█ Task│ │          │          │          │           │
-│ │ ✓    │ │          │ │ ✓    │ │          │          │          │           │
-│ │domain│ │          │ │domain│ │          │          │          │           │
-│ └──────┘ │          │ └──────┘ │          │          │          │           │
-│ ┌──────┐ │          │          │          │          │          │           │
-│ │█ Task│ │          │          │          │          │          │           │
-│ │ ✓    │ │          │          │          │          │          │           │
-│ └──────┘ │          │          │          │          │          │           │
+│  ✓ Task  │          │  ✓ Task  │          │          │          │           │
+│  [domain]│          │  [domain]│          │          │          │           │
+│  ✓ Task  │          │          │          │          │          │           │
+│  [domain]│          │          │          │          │          │           │
 └──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴───────────┘
-         ▲
-         Today indicator (colored bar under header)
+                 ▲
+                 Today indicator (colored bar under header)
 ```
 
-### Week Grid Layout
+### Week Grid Layout (blessed grid)
 
 - **7 columns** (Mon–Sun), equal width
-- **Header per column:** Day abbreviation (MON, TUE, etc.) + date number + month name if 1st of month or first day of week
-- **Today indicator:** Accent-colored bar below the header of today's column
+- **Header per column:** Day abbreviation (MON, TUE, etc.) + date number
+- **Today indicator:** accent-colored bar below the header of today's column
 - **Task chips:** Stacked vertically in the column of their completion date
 
 ### Task Placement Logic
@@ -1825,20 +1962,23 @@ This calendar shows ONLY completed tasks:
 3. Place each task chip in the column matching that date
 4. If a task's `completed_at` falls outside the currently displayed week, it doesn't appear
 
-### Task Chip Component
+### Task Chip Rendering (Text)
 
-Small card for each completed task:
+Small formatted line for each completed task:
 
-- **Left border:** 3px, colored by domain
-- **Label:** Task label (truncated to one line)
-- **Domain tag:** Small colored pill with domain name
-- **Checkmark:** Green checkmark icon indicating completion
-- **Style:** Muted background, slightly transparent to avoid visual heaviness
+```
+✓ {truncated_label} [{domain_tag}]
+```
+
+- `✓` in green (ANSI 35)
+- Label truncated to fit column width
+- Domain tag in domain color
 
 ### Navigation
 
-- **Prev/Next buttons:** Move to previous/next week
-- **Today button:** Jump to the week containing today's date
+- **`h` / `←`**: Previous week
+- **`l` / `→`**: Next week
+- **`t`**: Jump to today's week
 - **Header:** "Week {N} · {start_date} – {end_date} · {count} completed"
 
 ### Week Calculation
@@ -1851,140 +1991,105 @@ Small card for each completed task:
 
 When no completed tasks exist:
 - Show the week grid with headers
-- Center text in the grid: "Completed tasks will appear here as work is finished"
+- Center text: "Completed tasks will appear here as work is finished"
 
-> **Checkpoint:** Calendar renders with 7-column week grid. Today indicator highlights the correct day. Week navigation works. If you manually set a subtask's `status` to `done` and add a `completed_at` timestamp in the tracker JSON, it appears as a chip in the correct day column.
+> **Checkpoint:** Calendar renders with 7-column week grid. Today indicator highlights the correct day. `h`/`l` navigation works. `t` jumps to today. If you manually set a subtask's `status` to `done` and add a `completed_at` timestamp in the tracker JSON, it appears as a chip in the correct day column.
 
 ---
 
 ## PHASE 9: DESIGN SYSTEM
 
-### Color Palette
+### ANSI Color Palette
 
 **Dark Theme (default):**
 
-| Token | CSS Variable | Value | Usage |
-|-------|-------------|-------|-------|
-| Dark | `--theme-dark` | `#0A0A10` | App background |
-| Surface | `--theme-surface` | `#111118` | Card/panel backgrounds |
-| Border | `--theme-border` | `#1a1a2e` | Borders, dividers |
-| Muted | `--theme-muted` | `#9B9BAA` | Secondary text, inactive elements |
-| Primary Text | `--theme-primary-text` | `#FFFFFF` | Primary text |
-| Scrollbar Thumb | `--theme-scrollbar-thumb` | `rgba(255,255,255,0.08)` | Scrollbar |
-| Selection | `--theme-selection` | `rgba(88,92,240,0.3)` | Text selection |
-| Progress Track | `--theme-progress-track` | `rgba(255,255,255,0.1)` | Progress bar background |
+| Token | ANSI 256 | Hex | Usage |
+|-------|---------|-----|-------|
+| Dark | 16 | `#0A0A10` | App background |
+| Surface | 233 | `#111118` | Card/panel backgrounds |
+| Border | 234 | `#1a1a2e` | Borders, dividers |
+| Muted | 247 | `#9B9BAA` | Secondary text, inactive |
+| Primary Text | 255 | `#FFFFFF` | Primary text |
+| Accent | 63 | `#585CF0` | Primary action, active states |
+| Accent Light | 105 | `#8286FF` | Hover, secondary accent |
+| On Track | 35 | `#22c55e` | Schedule on track, done |
+| Behind | 196 | `#ef4444` | Behind, blocked, errors |
+| Review | 214 | `#f59e0b` | Review/pending |
 
 **Light Theme:**
 
-| Token | CSS Variable | Value |
-|-------|-------------|-------|
-| Dark | `--theme-dark` | `#F8F9FA` |
-| Surface | `--theme-surface` | `#FFFFFF` |
-| Border | `--theme-border` | `#E5E7EB` |
-| Muted | `--theme-muted` | `#6B7280` |
-| Primary Text | `--theme-primary-text` | `#1A1A2E` |
+| Token | ANSI 256 | Hex |
+|-------|---------|-----|
+| Dark | 231 | `#F8F9FA` |
+| Surface | 255 | `#FFFFFF` |
+| Border | 252 | `#E5E7EB` |
+| Muted | 243 | `#6B7280` |
+| Primary Text | 234 | `#1A1A2E` |
 
 **Fixed Colors (same in both themes):**
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| Accent | `#585CF0` | Primary action color, active states |
-| Accent Light | `#8286FF` | Hover states, secondary accent |
-| On Track | `#22c55e` | Schedule on track, done status |
-| Behind | `#ef4444` | Schedule behind, blocked status, errors |
-| Review | `#f59e0b` | Review/pending status |
+| Token | ANSI 256 | Hex | Usage |
+|-------|---------|-----|-------|
+| Accent | 63 | `#585CF0` | Active states |
+| On Track | 35 | `#22c55e` | Done, on schedule |
+| Behind | 196 | `#ef4444` | Blocked, behind |
+| Review | 214 | `#f59e0b` | Pending review |
 
 **Domain Color Palette (assigned during hydration):**
 
 When the user's manifesto is processed, each domain gets the next color from this list:
 
 ```
-1. #f59e0b  (amber)
-2. #22c55e  (green)
-3. #8286FF  (indigo)
-4. #ef4444  (red)
-5. #14B8A6  (teal)
-6. #EC4899  (pink)
-7. #F97316  (orange)
-8. #6366F1  (violet)
-9. #06B6D4  (cyan)
-10. #9B9BAA (muted gray — fallback)
+1. 214  #f59e0b  (amber)
+2. 35   #22c55e  (green)
+3. 105  #8286FF  (indigo)
+4. 196  #ef4444  (red)
+5. 37   #14B8A6  (teal)
+6. 199  #EC4899  (pink)
+7. 208  #F97316  (orange)
+8. 63   #6366F1  (violet)
+9. 38   #06B6D4  (cyan)
+10. 247 #9B9BAA  (muted — fallback)
 ```
 
-Store the domain → color mapping in the tracker (e.g., as a field on each milestone's domain, or as a separate config object). All views reference this mapping for consistent domain coloring.
+Store the domain → color mapping in the tracker. All views reference this mapping via `domainColor()` in `theme.ts`.
+
+### Widget Style Patterns
+
+**Tag/Badge:** Colored text using ANSI escape codes. Format: `[{tag_text}]` in tag color.
+
+**Progress Bar:** Horizontal bar using Unicode block characters: `████░░░░` where `█` = filled, `░` = track. Filled portion in domain color.
+
+**Status Indicator:**
+- `●` green (active/on-track)
+- `○` gray (idle/inactive)
+- `⊘` red (blocked/error)
+- `✓` green (done)
+
+**Modal Backdrop:** blessed overlay with darkened background. All key events captured by modal until `Escape`.
+
+**Panel Layout:** blessed-contrib grid with configurable rows/columns. Panels separated by 1-char border lines.
 
 ### Typography
 
-| Role | Font | Weights | Usage |
-|------|------|---------|-------|
-| UI Text | Inter | 300, 400, 500, 600, 700 | All labels, descriptions, buttons |
-| Code/Numbers | JetBrains Mono | 400, 500 | Task IDs, progress counts, timestamps, JSON |
+All text uses the terminal's default monospace font. No font loading needed.
 
-### CSS Structure (src/renderer/styles.css)
+**Conventions:**
+- Headers: UPPERCASE, accent color
+- Labels: Title Case, primary text color
+- Values: lowercase or original case, muted color
+- Numbers: right-aligned in columns
+- Status text: colored using status ANSI color
 
-```css
-@import "tailwindcss";
+### Terminal Compatibility
 
-@theme {
-  --color-dark: var(--theme-dark);
-  --color-surface: var(--theme-surface);
-  --color-border: var(--theme-border);
-  --color-accent: #585CF0;
-  --color-accent-light: #8286FF;
-  --color-muted: var(--theme-muted);
-  --color-primary-text: var(--theme-primary-text);
-  --color-on-track: #22c55e;
-  --color-behind: #ef4444;
-  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-}
+- **Truecolor terminals** (iTerm2, Windows Terminal, Kitty): Use hex colors via blessed's `style.fg`/`style.bg`
+- **256-color terminals**: Fall back to ANSI 256 palette (mapped in `theme.ts`)
+- **16-color terminals**: Fall back to basic ANSI colors (red, green, blue, yellow, etc.)
+- Detect capability at startup using `process.env.TERM` and `process.env.COLORTERM`
+- Store detection result in `theme.ts` and use appropriate color tier throughout
 
-:root, [data-theme="dark"] {
-  --theme-dark: #0A0A10;
-  --theme-surface: #111118;
-  --theme-border: #1a1a2e;
-  --theme-muted: #9B9BAA;
-  --theme-primary-text: #FFFFFF;
-  --theme-scrollbar-thumb: rgba(255,255,255,0.08);
-  --theme-scrollbar-thumb-hover: rgba(255,255,255,0.15);
-}
-
-[data-theme="light"] {
-  --theme-dark: #F8F9FA;
-  --theme-surface: #FFFFFF;
-  --theme-border: #E5E7EB;
-  --theme-muted: #6B7280;
-  --theme-primary-text: #1A1A2E;
-  --theme-scrollbar-thumb: rgba(0,0,0,0.12);
-  --theme-scrollbar-thumb-hover: rgba(0,0,0,0.25);
-}
-```
-
-### Custom Scrollbar
-
-```css
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb {
-  background: var(--theme-scrollbar-thumb);
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--theme-scrollbar-thumb-hover);
-}
-```
-
-### Component Patterns
-
-**Tag/Badge:** Small pill with colored background at 10% opacity, colored text. Border-radius: 4px. Padding: 2px 6px. Font-size: 10px. Font-weight: 500.
-
-**Progress Ring (SVG):** Reusable across views. Props: `size` (diameter), `done`, `total`, `color`. Renders background track circle + colored arc using stroke-dasharray.
-
-**Modal Backdrop:** Fixed inset, z-index 50, `bg-black/50`. Click backdrop to close.
-
-**Panel Slide-in:** Absolute positioned, right: 0, z-index 40. Slides in from right with CSS transform transition (200ms ease-out).
-
-> **Checkpoint:** All views use consistent colors, fonts, and component patterns. Theme toggle switches between dark and light modes. Scrollbars are styled. Tags, badges, and progress rings are consistent across all views.
+> **Checkpoint:** All views use consistent colors from the theme. Theme toggle (`t` key) switches between dark and light modes. Domain colors are consistent across all views. Terminal color detection works and falls back gracefully.
 
 ---
 
@@ -2217,9 +2322,64 @@ Phase 10 should produce these files in the user's project:
 
 ---
 
+## PHASE 11: TESTING INFRASTRUCTURE
+
+### MCP Server Tests
+
+Already defined in Phase 2 (`tests/` directory). Ensure all tests pass:
+
+```bash
+cd command-center-mcp && npm test
+```
+
+Test coverage targets:
+- `tracker.ts`: 90%+ (all utility functions, migrations, validation)
+- `schemas.ts`: 95%+ (all Zod schemas, edge cases)
+- `tools.ts`: 80%+ (all 24 tool handlers, happy path + error cases)
+- `backup.ts`: 90%+ (backup, undo, pruning)
+
+### TUI Dashboard Tests
+
+TUI testing uses blessed's programmatic API to simulate user interactions:
+
+```typescript
+// tests/dashboard.test.ts
+import { createTestScreen } from './helpers'
+
+test('tab switching via number keys', () => {
+  const { screen, getState } = createTestScreen()
+  screen.program.emit('keypress', '2')
+  expect(getState().activeTab).toBe('task-board')
+})
+
+test('status bar shows project metadata', () => {
+  const { getContent } = createTestScreen(trackerWithMilestones)
+  expect(getContent('statusBar')).toContain('WEEK 3')
+  expect(getContent('statusBar')).toContain('ON TRACK')
+})
+```
+
+### Integration Test
+
+End-to-end test that verifies the full cycle:
+
+1. Create tracker file
+2. Start MCP server
+3. Call `create_milestone` via CLI
+4. Call `add_milestone_task` via CLI
+5. Call `start_task` via CLI
+6. Verify tracker JSON updated
+7. Verify backup created
+8. Verify undo log entry exists
+9. Verify pino log output
+
+> **Checkpoint:** All tests pass. `npm test` in `command-center-mcp/` runs without errors. Integration test verifies full create-start cycle.
+
+---
+
 ## POST-BUILD: HYDRATION NOTICE
 
-After all 10 phases are complete, the implementing agent should tell the user:
+After all phases are complete, the implementing agent should tell the user:
 
 ---
 
@@ -2231,7 +2391,7 @@ All four views render with empty states:
 - **Agent Hub** — Connected Agents panel, Activity Feed, Context Injection (showing project metadata)
 - **Calendar** — Week grid with day headers, no completed tasks
 
-The MCP server is installed and operational. All 24 tools respond correctly.
+The MCP server is installed and operational. All 24 tools respond correctly. Zod validation protects all inputs. Auto-backups and undo log are active. Structured logging writes to `~/.command-center/logs/`.
 
 **To populate the command center with your project data, provide:**
 
