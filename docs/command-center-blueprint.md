@@ -1209,7 +1209,7 @@ Common errors:
 - `appendUndoEntry()` writes JSONL entries
 - `appendUndoEntry()` prunes oldest entries beyond MAX_UNDO_ENTRIES
 
-> **Checkpoint:** After building and running `npm run build`, the CLI should work. Test with `command-center get-project-status` — it should return the empty project status from the initial tracker. Test `command-center create-milestone test_milestone "Test Milestone"` — it should create a milestone in the tracker JSON. Run `npm test` — all tests pass. Check `~/.command-center/backups/` for backup files. Check `~/.command-center/logs/` for log output.
+> **Checkpoint:** After building and running `pnpm run build`, the CLI should work. Test with `command-center get-project-status` — it should return the empty project status from the initial tracker. Test `command-center create-milestone test_milestone "Test Milestone"` — it should create a milestone in the tracker JSON. Run `pnpm test` — all tests pass. Check `~/.command-center/backups/` for backup files. Check `~/.command-center/logs/` for log output.
 
 ---
 
@@ -1414,7 +1414,7 @@ screen.key(['4'], () => switchTab('calendar'))
 // Initial render
 ```
 
-> **Checkpoint:** Run `npm run dev`. The TUI dashboard launches in the terminal with an empty state, reads the tracker file, and shows tab labels. Pressing 1-4 switches tabs (can be placeholder areas). File watcher is active. Press `q` to quit.
+> **Checkpoint:** Run `pnpm run dev`. The TUI dashboard launches in the terminal with an empty state, reads the tracker file, and shows tab labels. Pressing 1-4 switches tabs (can be placeholder areas). File watcher is active. Press `q` to quit.
 
 ---
 
@@ -2329,7 +2329,7 @@ Phase 10 should produce these files in the user's project:
 Already defined in Phase 2 (`tests/` directory). Ensure all tests pass:
 
 ```bash
-cd command-center-mcp && npm test
+cd command-center-mcp && pnpm test
 ```
 
 Test coverage targets:
@@ -2373,7 +2373,7 @@ End-to-end test that verifies the full cycle:
 8. Verify undo log entry exists
 9. Verify pino log output
 
-> **Checkpoint:** All tests pass. `npm test` in `command-center-mcp/` runs without errors. Integration test verifies full create-start cycle.
+> **Checkpoint:** All tests pass. `pnpm test` in `command-center-mcp/` runs without errors. Integration test verifies full create-start cycle.
 
 ---
 

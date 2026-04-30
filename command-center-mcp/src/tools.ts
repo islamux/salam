@@ -1,1106 +1,639 @@
-// src/tools.ts
-// src/tools.ts
-import { 
-  TrackerState, 
-  readTracker, 
-  writeTracker, 
-  findTask,
-  touchAgent,
-  autoUnblockDependents 
-} from './tracker.js';
-import { 
-  buildTaskContext, 
-  buildTaskSummary, 
-  buildProjectStatus,
-  buildMilestoneOverview 
-} from './context.js';
+import type { TrackerState, Subtask, Milestone, AgentLogEntry, Agent } from './tracker.js'
+import {
+  readTracker, writeTracker, findTask, touchAgent, autoUnblockDependents,
+  generateTaskId, generateLogId, todayDateString, selectMilestoneProgress,
+  logger,
+} from './tracker.js'
+import { appendUndoEntry } from './backup.js'
+import {
+  buildTaskContext, buildTaskSummary, buildProjectStatus, buildMilestoneOverview,
+} from './context.js'
+import {
+  GetTaskContextSchema, GetTaskHistorySchema, GetMilestoneOverviewSchema,
+  ListTasksSchema, GetActivityFeedSchema,
+  StartTaskSchema, CompleteTaskSchema, ApproveTaskSchema, RejectTaskSchema,
+  BlockTaskSchema, UnblockTaskSchema, UpdateTaskSchema, LogActionSchema,
+  EnrichTaskSchema,
+  CreateMilestoneSchema, AddMilestoneTaskSchema, SetMilestoneDatesSchema,
+  UpdateDriftSchema, AddMilestoneNoteSchema, RegisterAgentSchema,
+} from './schemas.js'
 
-// Error response format
-interface ToolResponse {
-  content: { type: string; text: string }[];
-  isError?: boolean;
+function snapshotEntity(entity: any): string {
+  return JSON.stringify(entity)
 }
 
-export function createErrorResponse(message: string): ToolResponse {
-  return {
-    content: [{ type: 'text', text: message }],
-    isError: true
-  };
+function logAndWrite(state: TrackerState, toolName: string, before: string, after: string): void {
+  appendUndoEntry({
+    timestamp: new Date().toISOString(),
+    tool: toolName,
+    before,
+    after,
+  })
+  writeTracker(state, toolName)
 }
 
-// READ TOOLS (8 tools)
-
-export function get_task_context(task_id: string): ToolResponse {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    const { subtask, milestone } = result;
-    const context = buildTaskContext(state, subtask, milestone);
-    return {
-      content: [{ type: 'text', text: context }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error reading task context: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function get_task_summary(task_id: string): ToolResponse {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    const { subtask, milestone } = result;
-    const summary = buildTaskSummary(state, subtask, milestone);
-    return {
-      content: [{ type: 'text', text: summary }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error reading task summary: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function get_project_status(): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const status = buildProjectStatus(state);
-    return {
-      content: [{ type: 'text', text: status }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error reading project status: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function get_milestone_overview(milestone_id: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const milestone = state.milestones.find(m => m.id === milestone_id);
-    if (!milestone) {
-      return createErrorResponse(`Milestone '${milestone_id}' not found`);
-    }
-    const overview = buildMilestoneOverview(milestone, state);
-    return {
-      content: [{ type: 'text', text: overview }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error reading milestone overview: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function list_tasks(milestone_id?: string, status?: string, domain?: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    let subtasks = state.milestones.flatMap(m => m.subtasks);
-    
-    // Apply filters
-    if (milestone_id) {
-      subtasks = subtasks.filter(t => t.id.startsWith(`${milestone_id}_`));
-    }
-    if (status) {
-      subtasks = subtasks.filter(t => t.status === status);
-    }
-    if (domain) {
-      const domainMilestones = state.milestones.filter(m => m.domain === domain);
-      const domainTaskIds = domainMilestones.flatMap(m => m.subtasks.map(t => t.id));
-      subtasks = subtasks.filter(t => domainTaskIds.includes(t.id));
-    }
-    
-    // Group by milestone
-    const grouped: Record<string, Subtask[]> = {};
-    for (const task of subtasks) {
-      const milestoneId = task.id.split('_')[0];
-      if (!grouped[milestoneId]) {
-        grouped[milestoneId] = [];
-      }
-      grouped[milestoneId].push(task);
-    }
-    
-    // Build Markdown output
-    const lines: string[] = [];
-    for (const [milestoneId, tasks] of Object.entries(grouped)) {
-      const milestone = state.milestones.find(m => m.id === milestoneId);
-      if (milestone) {
-        lines.push(`## ${milestone.title} (${milestone.domain})`);
-        lines.push('');
-        lines.push('| ID | Status | Priority | Label |');
-        lines.push('|----|--------|----------|-------|');
-        for (const task of tasks) {
-          lines.push(`| ${task.id} | ${task.status} | ${task.priority} | ${task.label} |`);
-        }
-        lines.push('');
-      }
-    }
-    
-    return {
-      content: [{ type: 'text', text: lines.join('\n') }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error listing tasks: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function get_task_history(task_id: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const logs = state.agent_log.filter(log => log.target_id === task_id);
-    
-    if (logs.length === 0) {
-      return {
-        content: [{ type: 'text', text: 'No history found for this task.' }]
-      };
-    }
-    
-    // Sort by timestamp descending
-    logs.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
-    
-    const lines: string[] = [];
-    lines.push(`## Task History: ${task_id}`);
-    lines.push('');
-    
-    for (const log of logs) {
-      lines.push(`### ${new Date(log.timestamp).toLocaleString()}`);
-      lines.push(`- **Agent**: ${log.agent_id}`);
-      lines.push(`- **Action**: ${log.action}`);
-      lines.push(`- **Description**: ${log.description}`);
-      if (log.tags.length > 0) {
-        lines.push(`- **Tags**: ${log.tags.join(', ')}`);
-      }
-      lines.push('');
-    }
-    
-    return {
-      content: [{ type: 'text', text: lines.join('\n') }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error reading task history: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function list_agents(): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    
-    if (state.agents.length === 0) {
-      return {
-        content: [{ type: 'text', text: 'No agents registered.' }]
-      };
-    }
-    
-    const lines: string[] = [];
-    lines.push('# Registered Agents');
-    lines.push('');
-    
-    for (const agent of state.agents) {
-      lines.push(`## ${agent.name} (${agent.id})`);
-      lines.push(`- **Type**: ${agent.type}`);
-      lines.push(`- **Status**: ${Date.now() - new Date(agent.last_action_at || '').getTime() < 30 * 60 * 1000 ? 'ACTIVE' : 'IDLE'}`);
-      lines.push(`- **Permissions**: ${agent.permissions.join(', ')}`);
-      lines.push(`- **Actions (session)**: ${agent.session_action_count}`);
-      lines.push(`- **Last Action**: ${agent.last_action_at || 'Never'}`);
-      lines.push('');
-    }
-    
-    return {
-      content: [{ type: 'text', text: lines.join('\n') }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error listing agents: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function get_activity_feed(agent_id?: string, limit: number = 30): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    let logs = [...state.agent_log];
-    
-    // Filter by agent if provided
-    if (agent_id) {
-      logs = logs.filter(log => log.agent_id === agent_id);
-    }
-    
-    // Sort by timestamp descending
-    logs.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
-    
-    // Apply limit
-    logs = logs.slice(0, limit);
-    
-    // Group by date
-    const grouped: Record<string, typeof logs> = {};
-    for (const log of logs) {
-      const date = new Date(log.timestamp).toLocaleDateString();
-      if (!grouped[date]) {
-        grouped[date] = [];
-      }
-      grouped[date].push(log);
-    }
-    
-    const lines: string[] = [];
-    lines.push('# Activity Feed');
-    lines.push('');
-    
-    for (const [date, dayLogs] of Object.entries(grouped)) {
-      lines.push(`## ${date}`);
-      for (const log of dayLogs) {
-        const time = new Date(log.timestamp).toLocaleTimeString();
-        lines.push(`- **${time}** ${log.agent_id} ${log.action} ${log.target_id}`);
-        lines.push(`  ${log.description}`);
-        if (log.tags.length > 0) {
-          lines.push(`  Tags: ${log.tags.join(', ')}`);
-        }
-      }
-      lines.push('');
-    }
-    
-    return {
-      content: [{ type: 'text', text: lines.join('\n') }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error reading activity feed: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-// WRITE TOOLS — Task Lifecycle (9 tools)
-
-export function start_task(task_id: string, agent_id: string = 'orchestrator'): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask, milestone } = result;
-    
-    // Update task
-    subtask.status = 'in_progress';
-    if (!subtask.assignee) {
-      subtask.assignee = agent_id;
-    }
-    subtask.last_run_id = 'run_' + Date.now();
-    
-    // Auto-stamp milestone
-    if (!milestone.actual_start) {
-      milestone.actual_start = new Date().toISOString().split('T')[0];
-      // Calculate drift
-      if (milestone.planned_start) {
-        const planned = new Date(milestone.planned_start);
-        const actual = new Date(milestone.actual_start);
-        const diffDays = (actual.getTime() - planned.getTime()) / (1000 * 60 * 60 * 24);
-        milestone.drift_days = Math.round(diffDays);
-      }
-    }
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action: 'task_started',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: `Task started by ${agent_id}`,
-      timestamp: new Date().toISOString(),
-      tags: ['start', 'mcp']
-    });
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Started task ${task_id} in milestone ${milestone.id}. Milestone progress: ${milestone.subtasks.filter(t => t.done).length}/${milestone.subtasks.length}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error starting task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function complete_task(task_id: string, summary: string, agent_id: string = 'orchestrator'): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask, milestone } = result;
-    
-    // Update task - move to review, not done (requires operator approval)
-    subtask.status = 'review';
-    subtask.blocked_by = null;
-    subtask.blocked_reason = null;
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action: 'task_submitted_for_review',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: summary,
-      timestamp: new Date().toISOString(),
-      tags: ['review', 'mcp']
-    });
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    const doneCount = milestone.subtasks.filter(t => t.done).length;
-    const totalCount = milestone.subtasks.length;
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} submitted for review. Summary: ${summary}. Milestone progress: ${doneCount}/${totalCount}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error completing task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function approve_task(task_id: string, feedback?: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask, milestone } = result;
-    
-    // Verify status
-    if (subtask.status !== 'review') {
-      return createErrorResponse(`Task '${task_id}' is in status '${subtask.status}', expected 'review'`);
-    }
-    
-    // Update task - mark as done
-    subtask.status = 'done';
-    subtask.done = true;
-    subtask.completed_at = new Date().toISOString();
-    subtask.completed_by = 'operator';
-    
-    // Auto-stamp milestone if all tasks done
-    if (milestone.subtasks.every(t => t.done)) {
-      milestone.actual_end = new Date().toISOString().split('T')[0];
-    }
-    
-    // Auto-unblock dependents
-    const unblocked = autoUnblockDependents(state, task_id, milestone.id);
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: 'task_approved',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: feedback ? `Approved with feedback: ${feedback}` : 'Approved',
-      timestamp: new Date().toISOString(),
-      tags: ['approve', 'mcp']
-    });
-    
-    touchAgent(state, 'operator');
-    writeTracker(state);
-    
-    const doneCount = milestone.subtasks.filter(t => t.done).length;
-    const totalCount = milestone.subtasks.length;
-    const unblockMsg = unblocked.length > 0 ? `\nAuto-unblocked: ${unblocked.join('; ')}` : '';
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} approved. Milestone progress: ${doneCount}/${totalCount}.${unblockMsg}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error approving task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function reject_task(task_id: string, feedback: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask } = result;
-    
-    // Verify status
-    if (subtask.status !== 'review') {
-      return createErrorResponse(`Task '${task_id}' is in status '${subtask.status}', expected 'review'`);
-    }
-    
-    // Update task - back to in_progress
-    subtask.status = 'in_progress';
-    
-    // Count prior revisions
-    const priorRevisions = state.agent_log.filter(log => 
-      log.target_id === task_id && log.action === 'revision_requested'
-    ).length;
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: 'revision_requested',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: `Revision ${priorRevisions + 1}: ${feedback}`,
-      timestamp: new Date().toISOString(),
-      tags: ['revision', 'mcp']
-    });
-    
-    touchAgent(state, 'operator');
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} rejected. Revision ${priorRevisions + 1} requested. Feedback: ${feedback}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error rejecting task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function reset_task(task_id: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask } = result;
-    const previousStatus = subtask.status;
-    
-    // Reset task
-    subtask.status = 'todo';
-    subtask.done = false;
-    subtask.assignee = null;
-    subtask.blocked_by = null;
-    subtask.blocked_reason = null;
-    subtask.completed_at = null;
-    subtask.completed_by = null;
-    subtask.last_run_id = null;
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: 'task_reset',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: `Task reset from ${previousStatus} to todo`,
-      timestamp: new Date().toISOString(),
-      tags: ['reset', 'mcp']
-    });
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} reset from ${previousStatus} to todo`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error resetting task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function block_task(task_id: string, reason: string, agent_id: string = 'orchestrator'): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask } = result;
-    
-    // Update task
-    subtask.status = 'blocked';
-    subtask.blocked_reason = reason;
-    subtask.blocked_by = agent_id;
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action: 'task_blocked',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: `Blocked: ${reason}`,
-      timestamp: new Date().toISOString(),
-      tags: ['block', 'mcp']
-    });
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} blocked. Reason: ${reason}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error blocking task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function unblock_task(task_id: string, resolution?: string, agent_id: string = 'orchestrator'): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask } = result;
-    
-    // Verify status
-    if (subtask.status !== 'blocked') {
-      return createErrorResponse(`Task '${task_id}' is not blocked (current status: ${subtask.status})`);
-    }
-    
-    // Determine new status
-    const newStatus = subtask.last_run_id ? 'in_progress' : 'todo';
-    
-    // Update task
-    subtask.status = newStatus;
-    subtask.blocked_by = null;
-    subtask.blocked_reason = null;
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action: 'task_unblocked',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: resolution ? `Unblocked: ${resolution}` : 'Unblocked',
-      timestamp: new Date().toISOString(),
-      tags: ['unblock', 'mcp']
-    });
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} unblocked. Previous blocker: ${subtask.blocked_reason}. New status: ${newStatus}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error unblocking task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function update_task(
-  task_id: string,
-  priority?: string,
-  assignee?: string,
-  execution_mode?: string,
-  notes?: string,
-  agent_id: string = 'orchestrator'
-): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
-    }
-    
-    const { subtask } = result;
-    const changes: string[] = [];
-    
-    // Update fields that are provided
-    if (priority !== undefined) {
-      subtask.priority = priority;
-      changes.push(`priority: ${priority}`);
-    }
-    if (assignee !== undefined) {
-      subtask.assignee = assignee || null;
-      changes.push(`assignee: ${assignee || 'Unassigned'}`);
-    }
-    if (execution_mode !== undefined) {
-      subtask.execution_mode = execution_mode as 'human' | 'agent' | 'pair';
-      changes.push(`execution_mode: ${execution_mode}`);
-    }
-    if (notes !== undefined) {
-      subtask.notes = notes || null;
-      changes.push(`notes: ${notes || 'Cleared'}`);
-    }
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action: 'task_updated',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: `Updated: ${changes.join(', ')}`,
-      timestamp: new Date().toISOString(),
-      tags: ['update', 'mcp']
-    });
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} updated. Changes: ${changes.join(', ')}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error updating task: ${error instanceof Error ? error.message : String(error)}`);
-  }
-}
-
-export function log_action(
-  target_id: string,
+function makeLogEntry(
+  agentId: string,
   action: string,
+  targetType: string,
+  targetId: string,
   description: string,
   tags: string[] = [],
-  agent_id: string = 'orchestrator'
-): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    
-    // Create log entry
-    const logEntry = {
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action,
-      target_type: target_id.startsWith('milestone_') ? 'milestone' : 'subtask',
-      target_id,
-      description,
-      timestamp: new Date().toISOString(),
-      tags: [...tags, 'mcp']
-    };
-    
-    state.agent_log.push(logEntry);
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Logged action '${action}' for ${target_id}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error logging action: ${error instanceof Error ? error.message : String(error)}`);
+): AgentLogEntry {
+  return {
+    id: generateLogId(),
+    agent_id: agentId,
+    action,
+    target_type: targetType,
+    target_id: targetId,
+    description,
+    timestamp: new Date().toISOString(),
+    tags,
   }
 }
 
-// WRITE TOOLS — Task Enrichment (1 tool)
+type ToolResult = { content: { type: string; text: string }[]; isError?: boolean }
 
-export function enrich_task(
-  task_id: string,
-  prompt?: string,
-  builder_prompt?: string,
-  acceptance_criteria?: string[],
-  constraints?: string[],
-  context_files?: string[],
-  reference_docs?: string[],
-  agent_id: string = 'orchestrator'
-): { content: { type: string; text: string }[] } {
+function ok(text: string): ToolResult {
+  return { content: [{ type: 'text', text }] }
+}
+
+function err(text: string): ToolResult {
+  return { content: [{ type: 'text', text }], isError: true }
+}
+
+function validate(schema: any, args: any): { data?: any; error?: string } {
+  const result = schema.safeParse(args)
+  if (result.success) return { data: result.data }
+  const messages = result.error.issues.map((i: any) => `${i.path.join('.')}: ${i.message}`).join('; ')
+  return { error: `Invalid input: ${messages}` }
+}
+
+export const toolDefinitions = [
+  { name: 'get_task_context', description: 'Get full context for a task (~8K tokens)', inputSchema: { type: 'object', properties: { task_id: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'get_task_summary', description: 'Get slim summary of a task (~500 tokens)', inputSchema: { type: 'object', properties: { task_id: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'get_project_status', description: 'Get current project status overview', inputSchema: { type: 'object', properties: {} } },
+  { name: 'get_milestone_overview', description: 'Get milestone details with task list', inputSchema: { type: 'object', properties: { milestone_id: { type: 'string' } }, required: ['milestone_id'] } },
+  { name: 'list_tasks', description: 'List tasks with optional filters', inputSchema: { type: 'object', properties: { milestone_id: { type: 'string' }, status: { type: 'string', enum: ['todo', 'in_progress', 'review', 'done', 'blocked'] }, domain: { type: 'string' } } } },
+  { name: 'get_task_history', description: 'Get chronological history for a task', inputSchema: { type: 'object', properties: { task_id: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'list_agents', description: 'List all registered agents with status', inputSchema: { type: 'object', properties: {} } },
+  { name: 'get_activity_feed', description: 'Get recent activity feed', inputSchema: { type: 'object', properties: { agent_id: { type: 'string' }, limit: { type: 'number' } } } },
+  { name: 'start_task', description: 'Move a task to in_progress', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, agent_id: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'complete_task', description: 'Submit task for review', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, summary: { type: 'string' }, agent_id: { type: 'string' } }, required: ['task_id', 'summary'] } },
+  { name: 'approve_task', description: 'Approve a task in review (operator only)', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, feedback: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'reject_task', description: 'Reject a task in review (operator only)', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, feedback: { type: 'string' } }, required: ['task_id', 'feedback'] } },
+  { name: 'reset_task', description: 'Reset a task to todo (operator only)', inputSchema: { type: 'object', properties: { task_id: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'block_task', description: 'Block a task with a reason', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, reason: { type: 'string' } }, required: ['task_id', 'reason'] } },
+  { name: 'unblock_task', description: 'Unblock a blocked task', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, resolution: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'update_task', description: 'Update task fields', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, priority: { type: 'string', enum: ['P1', 'P2', 'P3', 'P4'] }, assignee: { type: 'string' }, execution_mode: { type: 'string', enum: ['human', 'agent', 'pair'] }, notes: { type: 'string' } }, required: ['task_id'] } },
+  { name: 'log_action', description: 'Log a custom action', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, action: { type: 'string' }, description: { type: 'string' }, tags: { type: 'array', items: { type: 'string' } }, agent_id: { type: 'string' } }, required: ['task_id', 'action', 'description'] } },
+  { name: 'enrich_task', description: 'Enrich a task with context', inputSchema: { type: 'object', properties: { task_id: { type: 'string' }, prompt: { type: 'string' }, builder_prompt: { type: 'string' }, acceptance_criteria: { type: 'array', items: { type: 'string' } }, constraints: { type: 'array', items: { type: 'string' } }, context_files: { type: 'array', items: { type: 'string' } }, reference_docs: { type: 'array', items: { type: 'string' } } }, required: ['task_id'] } },
+  { name: 'add_milestone_note', description: 'Add a note to a milestone', inputSchema: { type: 'object', properties: { milestone_id: { type: 'string' }, note: { type: 'string' } }, required: ['milestone_id', 'note'] } },
+  { name: 'set_milestone_dates', description: 'Set actual dates for a milestone', inputSchema: { type: 'object', properties: { milestone_id: { type: 'string' }, actual_start: { type: 'string' }, actual_end: { type: 'string' } }, required: ['milestone_id'] } },
+  { name: 'update_drift', description: 'Update milestone drift', inputSchema: { type: 'object', properties: { milestone_id: { type: 'string' }, drift_days: { type: 'number' } }, required: ['milestone_id', 'drift_days'] } },
+  { name: 'create_milestone', description: 'Create a new milestone', inputSchema: { type: 'object', properties: { id: { type: 'string' }, title: { type: 'string' }, domain: { type: 'string' }, phase: { type: 'string' }, planned_start: { type: 'string' }, planned_end: { type: 'string' } }, required: ['id', 'title'] } },
+  { name: 'add_milestone_task', description: 'Add a task to a milestone', inputSchema: { type: 'object', properties: { milestone_id: { type: 'string' }, label: { type: 'string' }, priority: { type: 'string', enum: ['P1', 'P2', 'P3', 'P4'] }, acceptance_criteria: { type: 'array', items: { type: 'string' } }, constraints: { type: 'array', items: { type: 'string' } }, depends_on: { type: 'array', items: { type: 'string' } }, execution_mode: { type: 'string', enum: ['human', 'agent', 'pair'] } }, required: ['milestone_id', 'label'] } },
+  { name: 'register_agent', description: 'Register or update an agent', inputSchema: { type: 'object', properties: { agent_id: { type: 'string' }, name: { type: 'string' }, type: { type: 'string', enum: ['orchestrator', 'sub-agent', 'human', 'external'] }, permissions: { type: 'array', items: { type: 'string', enum: ['read', 'write'] } }, color: { type: 'string' }, parent_id: { type: 'string' } }, required: ['agent_id', 'name', 'type', 'permissions'] } },
+]
+
+const ResetTaskSchema = GetTaskContextSchema
+
+export async function handleTool(name: string, args: any): Promise<ToolResult> {
   try {
-    const state = readTracker();
-    const result = findTask(state, task_id);
-    if (!result) {
-      return createErrorResponse(`Task '${task_id}' not found in any milestone`);
+    switch (name) {
+      case 'get_task_context': return handleGetTaskContext(args)
+      case 'get_task_summary': return handleGetTaskSummary(args)
+      case 'get_project_status': return handleGetProjectStatus()
+      case 'get_milestone_overview': return handleGetMilestoneOverview(args)
+      case 'list_tasks': return handleListTasks(args)
+      case 'get_task_history': return handleGetTaskHistory(args)
+      case 'list_agents': return handleListAgents()
+      case 'get_activity_feed': return handleGetActivityFeed(args)
+      case 'start_task': return handleStartTask(args)
+      case 'complete_task': return handleCompleteTask(args)
+      case 'approve_task': return handleApproveTask(args)
+      case 'reject_task': return handleRejectTask(args)
+      case 'reset_task': return handleResetTask(args)
+      case 'block_task': return handleBlockTask(args)
+      case 'unblock_task': return handleUnblockTask(args)
+      case 'update_task': return handleUpdateTask(args)
+      case 'log_action': return handleLogAction(args)
+      case 'enrich_task': return handleEnrichTask(args)
+      case 'add_milestone_note': return handleAddMilestoneNote(args)
+      case 'set_milestone_dates': return handleSetMilestoneDates(args)
+      case 'update_drift': return handleUpdateDrift(args)
+      case 'create_milestone': return handleCreateMilestone(args)
+      case 'add_milestone_task': return handleAddMilestoneTask(args)
+      case 'register_agent': return handleRegisterAgent(args)
+      default: return err(`Unknown tool: ${name}`)
     }
-    
-    const { subtask } = result;
-    const changes: string[] = [];
-    
-    // Update fields that are provided (arrays REPLACE existing values)
-    if (prompt !== undefined) {
-      subtask.prompt = prompt || null;
-      changes.push('prompt');
-    }
-    if (builder_prompt !== undefined) {
-      subtask.builder_prompt = builder_prompt || null;
-      changes.push('builder_prompt');
-    }
-    if (acceptance_criteria !== undefined) {
-      subtask.acceptance_criteria = acceptance_criteria || [];
-      changes.push('acceptance_criteria');
-    }
-    if (constraints !== undefined) {
-      subtask.constraints = constraints || [];
-      changes.push('constraints');
-    }
-    if (context_files !== undefined) {
-      subtask.context_files = context_files || [];
-      changes.push('context_files');
-    }
-    if (reference_docs !== undefined) {
-      subtask.reference_docs = reference_docs || [];
-      changes.push('reference_docs');
-    }
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id,
-      action: 'task_enriched',
-      target_type: 'subtask',
-      target_id: task_id,
-      description: `Enriched: ${changes.join(', ')}`,
-      timestamp: new Date().toISOString(),
-      tags: ['enrich', 'mcp']
-    });
-    
-    touchAgent(state, agent_id);
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${task_id} enriched. Updated fields: ${changes.join(', ')}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error enriching task: ${error instanceof Error ? error.message : String(error)}`);
+  } catch (error: any) {
+    logger.error({ tool: name, error: error.message }, 'tool handler error')
+    return err(`Internal error: ${error.message}`)
   }
 }
 
-// WRITE TOOLS — Milestone Management (5 tools)
+// ─── READ TOOLS ───────────────────────────────────────────────
 
-export function add_milestone_note(milestone_id: string, note: string): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const milestone = state.milestones.find(m => m.id === milestone_id);
-    if (!milestone) {
-      return createErrorResponse(`Milestone '${milestone_id}' not found`);
-    }
-    
-    milestone.notes.push(note);
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: 'milestone_note_added',
-      target_type: 'milestone',
-      target_id: milestone_id,
-      description: `Added note: ${note}`,
-      timestamp: new Date().toISOString(),
-      tags: ['note', 'mcp']
-    });
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Note added to milestone ${milestone_id}. Total notes: ${milestone.notes.length}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error adding milestone note: ${error instanceof Error ? error.message : String(error)}`);
-  }
+function handleGetTaskContext(args: any): ToolResult {
+  const v = validate(GetTaskContextSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  return ok(buildTaskContext(state, found.subtask, found.milestone))
 }
 
-export function set_milestone_dates(
-  milestone_id: string,
-  actual_start?: string,
-  actual_end?: string
-): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const milestone = state.milestones.find(m => m.id === milestone_id);
-    if (!milestone) {
-      return createErrorResponse(`Milestone '${milestone_id}' not found`);
-    }
-    
-    const changes: string[] = [];
-    
-    if (actual_start !== undefined) {
-      milestone.actual_start = actual_start;
-      changes.push(`actual_start: ${actual_start}`);
-    }
-    if (actual_end !== undefined) {
-      milestone.actual_end = actual_end;
-      changes.push(`actual_end: ${actual_end}`);
-    }
-    
-    // Recalculate drift
-    if (milestone.planned_start && milestone.actual_start) {
-      const planned = new Date(milestone.planned_start);
-      const actual = new Date(milestone.actual_start);
-      const diffDays = (actual.getTime() - planned.getTime()) / (1000 * 60 * 60 * 24);
-      milestone.drift_days = Math.round(diffDays);
-    }
-    
-    // Recalculate schedule status
-    if (state.milestones.length > 0) {
-      const drifts = state.milestones.map(m => m.drift_days);
-      const maxDrift = Math.max(...drifts);
-      const minDrift = Math.min(...drifts);
-      if (maxDrift > 3) {
-        state.project.schedule_status = 'behind';
-      } else if (minDrift < -3) {
-        state.project.schedule_status = 'ahead';
-      } else {
-        state.project.schedule_status = 'on_track';
-      }
-    }
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: 'milestone_dates_set',
-      target_type: 'milestone',
-      target_id: milestone_id,
-      description: `Set dates: ${changes.join(', ')}`,
-      timestamp: new Date().toISOString(),
-      tags: ['dates', 'mcp']
-    });
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Milestone ${milestone_id} dates updated. Changes: ${changes.join(', ')}. Schedule status: ${state.project.schedule_status}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error setting milestone dates: ${error instanceof Error ? error.message : String(error)}`);
-  }
+function handleGetTaskSummary(args: any): ToolResult {
+  const v = validate(GetTaskContextSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  return ok(buildTaskSummary(state, found.subtask, found.milestone))
 }
 
-export function update_drift(milestone_id: string, drift_days: number): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const milestone = state.milestones.find(m => m.id === milestone_id);
-    if (!milestone) {
-      return createErrorResponse(`Milestone '${milestone_id}' not found`);
-    }
-    
-    const oldDrift = milestone.drift_days;
-    milestone.drift_days = drift_days;
-    
-    // Recalculate schedule status
-    if (state.milestones.length > 0) {
-      const drifts = state.milestones.map(m => m.drift_days);
-      const maxDrift = Math.max(...drifts);
-      const minDrift = Math.min(...drifts);
-      if (maxDrift > 3) {
-        state.project.schedule_status = 'behind';
-      } else if (minDrift < -3) {
-        state.project.schedule_status = 'ahead';
-      } else {
-        state.project.schedule_status = 'on_track';
-      }
-    }
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: 'drift_updated',
-      target_type: 'milestone',
-      target_id: milestone_id,
-      description: `Drift updated: ${oldDrift} → ${drift_days}`,
-      timestamp: new Date().toISOString(),
-      tags: ['drift', 'mcp']
-    });
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Milestone ${milestone_id} drift updated: ${oldDrift} → ${drift_days}. Schedule status: ${state.project.schedule_status}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error updating drift: ${error instanceof Error ? error.message : String(error)}`);
-  }
+function handleGetProjectStatus(): ToolResult {
+  const state = readTracker()
+  return ok(buildProjectStatus(state))
 }
 
-export function create_milestone(
-  id: string,
-  title: string,
-  domain: string = 'general',
-  phase: string = id,
-  planned_start?: string,
-  planned_end?: string
-): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    
-    // Check for duplicate
-    if (state.milestones.some(m => m.id === id)) {
-      return createErrorResponse(`Milestone with ID '${id}' already exists`);
-    }
-    
-    // Create new milestone
-    const milestone: any = {
-      id,
-      title,
-      domain,
-      phase,
-      planned_start: planned_start || null,
-      planned_end: planned_end || null,
-      actual_start: null,
-      actual_end: null,
-      drift_days: 0,
-      is_key_milestone: false,
-      key_milestone_label: null,
-      subtasks: [],
-      dependencies: [],
-      notes: []
-    };
-    
-    state.milestones.push(milestone);
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Milestone ${id} created: ${title}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error creating milestone: ${error instanceof Error ? error.message : String(error)}`);
-  }
+function handleGetMilestoneOverview(args: any): ToolResult {
+  const v = validate(GetMilestoneOverviewSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const milestone = state.milestones.find(m => m.id === v.data!.milestone_id)
+  if (!milestone) return err(`Milestone '${v.data!.milestone_id}' not found`)
+  return ok(buildMilestoneOverview(milestone, state))
 }
 
-export function add_milestone_task(
-  milestone_id: string,
-  label: string,
-  priority: string = 'P2',
-  acceptance_criteria: string[] = [],
-  constraints: string[] = [],
-  depends_on: string[] = [],
-  execution_mode: string = 'agent'
-): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const milestone = state.milestones.find(m => m.id === milestone_id);
-    if (!milestone) {
-      return createErrorResponse(`Milestone '${milestone_id}' not found`);
+function handleListTasks(args: any): ToolResult {
+  const v = validate(ListTasksSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const { milestone_id, status, domain } = v.data!
+  let tasks: { task: Subtask; milestone: Milestone }[] = []
+  for (const m of state.milestones) {
+    if (milestone_id && m.id !== milestone_id) continue
+    if (domain && m.domain !== domain) continue
+    for (const t of m.subtasks) {
+      if (status && t.status !== status) continue
+      tasks.push({ task: t, milestone: m })
     }
-    
-    // Generate task ID
-    const taskId = `${milestone_id}_${(milestone.subtasks.length + 1).toString().padStart(3, '0')}`;
-    
-    // Create subtask
-    const subtask: any = {
-      id: taskId,
-      label,
-      status: 'todo',
-      done: false,
-      assignee: null,
-      blocked_by: null,
-      blocked_reason: null,
-      completed_at: null,
-      completed_by: null,
-      priority,
-      notes: null,
-      prompt: null,
-      context_files: [],
-      reference_docs: [],
-      acceptance_criteria,
-      constraints,
-      agent_target: null,
-      execution_mode,
-      depends_on,
-      last_run_id: null,
-      builder_prompt: null
-    };
-    
-    milestone.subtasks.push(subtask);
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Task ${taskId} added to milestone ${milestone_id}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error adding milestone task: ${error instanceof Error ? error.message : String(error)}`);
   }
+  if (tasks.length === 0) return ok('No tasks found matching filters.')
+  const lines = tasks.map(({ task: t, milestone: m }) => {
+    const icon = t.status === 'done' ? 'done' : t.status === 'in_progress' ? 'in progress' : t.status === 'blocked' ? 'blocked' : t.status === 'review' ? 'review' : 'todo'
+    return `- ${icon} \`${t.id}\` [${t.priority}] ${t.label} (milestone: ${m.id})${t.assignee ? ` @${t.assignee}` : ''}`
+  })
+  return ok(`## Tasks (${tasks.length})\n\n${lines.join('\n')}`)
 }
 
-// WRITE TOOLS — Agent Management (1 tool)
+function handleGetTaskHistory(args: any): ToolResult {
+  const v = validate(GetTaskHistorySchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const entries = state.agent_log
+    .filter(e => e.target_id === v.data!.task_id)
+    .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
+  if (entries.length === 0) return ok('No history found.')
+  const lines = entries.map(e => {
+    const tags = e.tags.length > 0 ? ` [${e.tags.join(', ')}]` : ''
+    return `- **${e.action}** by ${e.agent_id}: ${e.description}${tags} (_${e.timestamp}_)`
+  })
+  return ok(`## Task History: ${v.data!.task_id}\n\n${lines.join('\n')}`)
+}
 
-export function register_agent(
-  agent_id: string,
-  name: string,
-  type: 'orchestrator' | 'sub-agent' | 'human' | 'external',
-  permissions: string[],
-  color: string = '#9B9BAA',
-  parent_id?: string
-): { content: { type: string; text: string }[] } {
-  try {
-    const state = readTracker();
-    const existingIndex = state.agents.findIndex(a => a.id === agent_id);
-    
+function handleListAgents(): ToolResult {
+  const state = readTracker()
+  if (state.agents.length === 0) return ok('No agents registered.')
+  const now = Date.now()
+  const lines = state.agents.map(a => {
+    const isActive = a.last_action_at && (now - new Date(a.last_action_at).getTime()) < 30 * 60 * 1000
+    const status = isActive ? 'ACTIVE' : 'IDLE'
+    const ago = a.last_action_at ? timeAgo(new Date(a.last_action_at)) : 'never'
+    const perms = a.permissions.map(p => `[${p.toUpperCase()}]`).join(' ')
+    return `- **${a.name}** (${a.id}) — ${status} · ${ago} · ${perms} · ${a.session_action_count} actions`
+  })
+  return ok(`## Agents (${state.agents.length})\n\n${lines.join('\n')}`)
+}
+
+function handleGetActivityFeed(args: any): ToolResult {
+  const v = validate(GetActivityFeedSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  let entries = [...state.agent_log].sort((a, b) =>
+    new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+  )
+  if (v.data!.agent_id) {
+    entries = entries.filter(e => e.agent_id === v.data!.agent_id)
+  }
+  entries = entries.slice(0, v.data!.limit)
+  if (entries.length === 0) return ok('No activity recorded.')
+  const lines = entries.map(e => {
+    const tags = e.tags.length > 0 ? ` [${e.tags.join(', ')}]` : ''
+    const time = new Date(e.timestamp).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })
+    return `- **${e.agent_id}** · ${e.action}: ${e.description}${tags} — ${time}`
+  })
+  return ok(`## Activity Feed\n\n${lines.join('\n')}`)
+}
+
+// ─── WRITE TOOLS — Task Lifecycle ─────────────────────────────
+
+function handleStartTask(args: any): ToolResult {
+  const v = validate(StartTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task, milestone } = found
+  const before = snapshotEntity(task)
+
+  task.status = 'in_progress'
+  if (!task.assignee) task.assignee = v.data!.agent_id
+  task.last_run_id = `run_${Date.now()}`
+
+  if (!milestone.actual_start) {
+    milestone.actual_start = todayDateString()
+    if (milestone.planned_start) {
+      const planned = new Date(milestone.planned_start)
+      const actual = new Date(milestone.actual_start)
+      milestone.drift_days = Math.round((actual.getTime() - planned.getTime()) / (1000 * 60 * 60 * 24))
+    }
+  }
+
+  state.agent_log.push(makeLogEntry(v.data!.agent_id, 'task_started', 'subtask', task.id, `Started task: ${task.label}`, ['start', 'mcp']))
+  touchAgent(state, v.data!.agent_id)
+
+  const progress = selectMilestoneProgress(milestone)
+  logAndWrite(state, 'start_task', before, snapshotEntity(task))
+  return ok(`Started task \`${task.id}\` in milestone \`${milestone.id}\`. Milestone progress: ${progress.done}/${progress.total}`)
+}
+
+function handleCompleteTask(args: any): ToolResult {
+  const v = validate(CompleteTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task, milestone } = found
+  const before = snapshotEntity(task)
+
+  task.status = 'review'
+  task.blocked_by = null
+  task.blocked_reason = null
+
+  state.agent_log.push(makeLogEntry(v.data!.agent_id, 'task_submitted_for_review', 'subtask', task.id, v.data!.summary, ['review', 'mcp']))
+  touchAgent(state, v.data!.agent_id)
+
+  const progress = selectMilestoneProgress(milestone)
+  logAndWrite(state, 'complete_task', before, snapshotEntity(task))
+  return ok(`Submitted task \`${task.id}\` for review. Summary: ${v.data!.summary}. Milestone progress: ${progress.done}/${progress.total}`)
+}
+
+function handleApproveTask(args: any): ToolResult {
+  const v = validate(ApproveTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task, milestone } = found
+  if (task.status !== 'review') return err(`Task '${task.id}' is in status '${task.status}', expected 'review'`)
+  const before = snapshotEntity(task)
+
+  task.status = 'done'
+  task.done = true
+  task.completed_at = new Date().toISOString()
+  task.completed_by = 'operator'
+
+  const allDone = milestone.subtasks.every(t => t.done)
+  if (allDone) milestone.actual_end = todayDateString()
+
+  const unblocked = autoUnblockDependents(state, task.id, milestone.id)
+  state.agent_log.push(makeLogEntry('operator', 'task_approved', 'subtask', task.id, v.data!.feedback ?? 'Approved', ['approve', 'mcp']))
+  touchAgent(state, 'operator')
+
+  const progress = selectMilestoneProgress(milestone)
+  logAndWrite(state, 'approve_task', before, snapshotEntity(task))
+
+  let msg = `Approved task \`${task.id}\`. Milestone progress: ${progress.done}/${progress.total}`
+  if (unblocked.length > 0) msg += `\n\nAuto-unblocked:\n${unblocked.map(u => `- ${u}`).join('\n')}`
+  return ok(msg)
+}
+
+function handleRejectTask(args: any): ToolResult {
+  const v = validate(RejectTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task } = found
+  if (task.status !== 'review') return err(`Task '${task.id}' is in status '${task.status}', expected 'review'`)
+  const before = snapshotEntity(task)
+
+  task.status = 'in_progress'
+  const revisionCount = state.agent_log.filter(
+    e => e.target_id === task.id && e.action === 'revision_requested'
+  ).length + 1
+  state.agent_log.push(makeLogEntry('operator', 'revision_requested', 'subtask', task.id, `Revision #${revisionCount}: ${v.data!.feedback}`, ['review', 'mcp']))
+  touchAgent(state, 'operator')
+
+  logAndWrite(state, 'reject_task', before, snapshotEntity(task))
+  return ok(`Rejected task \`${task.id}\` (revision #${revisionCount}). Feedback: ${v.data!.feedback}`)
+}
+
+function handleResetTask(args: any): ToolResult {
+  const v = validate(ResetTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task } = found
+  const before = snapshotEntity(task)
+  const prevStatus = task.status
+
+  task.status = 'todo'
+  task.done = false
+  task.assignee = null
+  task.blocked_by = null
+  task.blocked_reason = null
+  task.completed_at = null
+  task.completed_by = null
+  task.last_run_id = null
+
+  state.agent_log.push(makeLogEntry('operator', 'task_reset', 'subtask', task.id, `Reset from ${prevStatus}`, ['reset', 'mcp']))
+  logAndWrite(state, 'reset_task', before, snapshotEntity(task))
+  return ok(`Reset task \`${task.id}\` from ${prevStatus} to todo.`)
+}
+
+function handleBlockTask(args: any): ToolResult {
+  const v = validate(BlockTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task } = found
+  const before = snapshotEntity(task)
+
+  task.status = 'blocked'
+  task.blocked_reason = v.data!.reason
+  task.blocked_by = 'orchestrator'
+
+  state.agent_log.push(makeLogEntry('orchestrator', 'task_blocked', 'subtask', task.id, `Blocked: ${v.data!.reason}`, ['block', 'mcp']))
+  touchAgent(state, 'orchestrator')
+  logAndWrite(state, 'block_task', before, snapshotEntity(task))
+  return ok(`Blocked task \`${task.id}\`: ${v.data!.reason}`)
+}
+
+function handleUnblockTask(args: any): ToolResult {
+  const v = validate(UnblockTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task } = found
+  if (task.status !== 'blocked') return err(`Task '${task.id}' is in status '${task.status}', expected 'blocked'`)
+  const before = snapshotEntity(task)
+  const prevReason = task.blocked_reason
+
+  task.status = task.last_run_id ? 'in_progress' : 'todo'
+  task.blocked_by = null
+  task.blocked_reason = null
+
+  const resolution = v.data!.resolution ?? 'Resolved'
+  state.agent_log.push(makeLogEntry('orchestrator', 'task_unblocked', 'subtask', task.id, `Unblocked: ${resolution}. Was blocked by: ${prevReason}`, ['unblock', 'mcp']))
+  touchAgent(state, 'orchestrator')
+  logAndWrite(state, 'unblock_task', before, snapshotEntity(task))
+  return ok(`Unblocked task \`${task.id}\`. New status: ${task.status}. Previous blocker: ${prevReason}`)
+}
+
+function handleUpdateTask(args: any): ToolResult {
+  const v = validate(UpdateTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task } = found
+  const before = snapshotEntity(task)
+
+  const changes: string[] = []
+  if (v.data!.priority !== undefined) { changes.push(`priority: ${task.priority} → ${v.data!.priority}`); task.priority = v.data!.priority }
+  if (v.data!.assignee !== undefined) { changes.push(`assignee: ${task.assignee} → ${v.data!.assignee || 'unassigned'}`); task.assignee = v.data!.assignee || null }
+  if (v.data!.execution_mode !== undefined) { changes.push(`execution_mode: ${task.execution_mode} → ${v.data!.execution_mode}`); task.execution_mode = v.data!.execution_mode }
+  if (v.data!.notes !== undefined) { changes.push('notes updated'); task.notes = v.data!.notes }
+
+  if (changes.length === 0) return ok('No changes specified.')
+  state.agent_log.push(makeLogEntry('orchestrator', 'task_updated', 'subtask', task.id, changes.join('; '), ['update', 'mcp']))
+  touchAgent(state, 'orchestrator')
+  logAndWrite(state, 'update_task', before, snapshotEntity(task))
+  return ok(`Updated task \`${task.id}\`: ${changes.join(', ')}`)
+}
+
+function handleLogAction(args: any): ToolResult {
+  const v = validate(LogActionSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const tags = [...(v.data!.tags ?? []), 'mcp']
+  state.agent_log.push(makeLogEntry(v.data!.agent_id, v.data!.action, 'subtask', v.data!.task_id, v.data!.description, tags))
+  touchAgent(state, v.data!.agent_id)
+  logAndWrite(state, 'log_action', '{}', '{}')
+  return ok(`Logged action '${v.data!.action}' on ${v.data!.task_id}`)
+}
+
+// ─── WRITE TOOLS — Enrichment ─────────────────────────────────
+
+function handleEnrichTask(args: any): ToolResult {
+  const v = validate(EnrichTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const found = findTask(state, v.data!.task_id)
+  if (!found) return err(`Task '${v.data!.task_id}' not found in any milestone`)
+  const { subtask: task } = found
+  const before = snapshotEntity(task)
+
+  const changes: string[] = []
+  if (v.data!.prompt !== undefined) { task.prompt = v.data!.prompt; changes.push('prompt') }
+  if (v.data!.builder_prompt !== undefined) { task.builder_prompt = v.data!.builder_prompt; changes.push('builder_prompt') }
+  if (v.data!.acceptance_criteria !== undefined) { task.acceptance_criteria = v.data!.acceptance_criteria; changes.push('acceptance_criteria') }
+  if (v.data!.constraints !== undefined) { task.constraints = v.data!.constraints; changes.push('constraints') }
+  if (v.data!.context_files !== undefined) { task.context_files = v.data!.context_files; changes.push('context_files') }
+  if (v.data!.reference_docs !== undefined) { task.reference_docs = v.data!.reference_docs; changes.push('reference_docs') }
+
+  if (changes.length === 0) return ok('No enrichment fields specified.')
+  state.agent_log.push(makeLogEntry('orchestrator', 'task_enriched', 'subtask', task.id, `Enriched: ${changes.join(', ')}`, ['enrich', 'mcp']))
+  touchAgent(state, 'orchestrator')
+  logAndWrite(state, 'enrich_task', before, snapshotEntity(task))
+  return ok(`Enriched task \`${task.id}\`: ${changes.join(', ')}`)
+}
+
+// ─── WRITE TOOLS — Milestone Management ───────────────────────
+
+function handleAddMilestoneNote(args: any): ToolResult {
+  const v = validate(AddMilestoneNoteSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const milestone = state.milestones.find(m => m.id === v.data!.milestone_id)
+  if (!milestone) return err(`Milestone '${v.data!.milestone_id}' not found`)
+
+  milestone.notes.push(v.data!.note)
+  state.agent_log.push(makeLogEntry('orchestrator', 'milestone_note_added', 'milestone', milestone.id, `Added note: ${v.data!.note}`, ['note', 'mcp']))
+  logAndWrite(state, 'add_milestone_note', '{}', '{}')
+  return ok(`Added note to milestone \`${milestone.id}\`. Total notes: ${milestone.notes.length}`)
+}
+
+function handleSetMilestoneDates(args: any): ToolResult {
+  const v = validate(SetMilestoneDatesSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const milestone = state.milestones.find(m => m.id === v.data!.milestone_id)
+  if (!milestone) return err(`Milestone '${v.data!.milestone_id}' not found`)
+
+  const changes: string[] = []
+  if (v.data!.actual_start !== undefined) { milestone.actual_start = v.data!.actual_start; changes.push(`actual_start: ${v.data!.actual_start}`) }
+  if (v.data!.actual_end !== undefined) { milestone.actual_end = v.data!.actual_end; changes.push(`actual_end: ${v.data!.actual_end}`) }
+
+  if (milestone.actual_start && milestone.planned_start) {
+    const planned = new Date(milestone.planned_start)
+    const actual = new Date(milestone.actual_start)
+    milestone.drift_days = Math.round((actual.getTime() - planned.getTime()) / (1000 * 60 * 60 * 24))
+  }
+
+  state.agent_log.push(makeLogEntry('orchestrator', 'milestone_dates_set', 'milestone', milestone.id, `Dates updated: ${changes.join(', ')}`, ['schedule', 'mcp']))
+  logAndWrite(state, 'set_milestone_dates', '{}', '{}')
+  return ok(`Updated milestone \`${milestone.id}\` dates: ${changes.join(', ')}. Schedule: ${state.project.schedule_status}`)
+}
+
+function handleUpdateDrift(args: any): ToolResult {
+  const v = validate(UpdateDriftSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const milestone = state.milestones.find(m => m.id === v.data!.milestone_id)
+  if (!milestone) return err(`Milestone '${v.data!.milestone_id}' not found`)
+
+  const oldDrift = milestone.drift_days
+  milestone.drift_days = v.data!.drift_days
+
+  state.agent_log.push(makeLogEntry('orchestrator', 'drift_updated', 'milestone', milestone.id, `Drift: ${oldDrift} → ${v.data!.drift_days} days`, ['drift', 'mcp']))
+  logAndWrite(state, 'update_drift', '{}', '{}')
+  return ok(`Updated drift for \`${milestone.id}\`: ${oldDrift} → ${v.data!.drift_days} days`)
+}
+
+function handleCreateMilestone(args: any): ToolResult {
+  const v = validate(CreateMilestoneSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  if (state.milestones.find(m => m.id === v.data!.id)) return err(`Milestone '${v.data!.id}' already exists`)
+
+  const milestone: Milestone = {
+    id: v.data!.id,
+    title: v.data!.title,
+    domain: v.data!.domain ?? 'general',
+    week: 1,
+    phase: v.data!.phase ?? v.data!.id,
+    planned_start: v.data!.planned_start ?? null,
+    planned_end: v.data!.planned_end ?? null,
+    actual_start: null,
+    actual_end: null,
+    drift_days: 0,
+    is_key_milestone: false,
+    key_milestone_label: null,
+    subtasks: [],
+    dependencies: [],
+    notes: [],
+  }
+
+  if (milestone.planned_start && state.project.start_date) {
+    const projectStart = new Date(state.project.start_date)
+    const msStart = new Date(milestone.planned_start)
+    milestone.week = Math.max(1, Math.floor((msStart.getTime() - projectStart.getTime()) / (1000 * 60 * 60 * 24 * 7)) + 1)
+  }
+
+  state.milestones.push(milestone)
+  logAndWrite(state, 'create_milestone', '{}', snapshotEntity(milestone))
+  return ok(`Created milestone \`${milestone.id}\`: ${milestone.title} (domain: ${milestone.domain}, week: ${milestone.week})`)
+}
+
+function handleAddMilestoneTask(args: any): ToolResult {
+  const v = validate(AddMilestoneTaskSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const milestone = state.milestones.find(m => m.id === v.data!.milestone_id)
+  if (!milestone) return err(`Milestone '${v.data!.milestone_id}' not found`)
+
+  const taskId = generateTaskId(milestone.id, milestone.subtasks)
+  const subtask: Subtask = {
+    id: taskId,
+    label: v.data!.label,
+    status: 'todo',
+    done: false,
+    assignee: null,
+    blocked_by: null,
+    blocked_reason: null,
+    completed_at: null,
+    completed_by: null,
+    priority: v.data!.priority ?? 'P2',
+    notes: null,
+    prompt: null,
+    context_files: [],
+    reference_docs: [],
+    acceptance_criteria: v.data!.acceptance_criteria ?? [],
+    constraints: v.data!.constraints ?? [],
+    agent_target: null,
+    execution_mode: v.data!.execution_mode ?? 'agent',
+    depends_on: v.data!.depends_on ?? [],
+    last_run_id: null,
+    builder_prompt: null,
+  }
+
+  milestone.subtasks.push(subtask)
+  logAndWrite(state, 'add_milestone_task', '{}', snapshotEntity(subtask))
+  return ok(`Created task \`${taskId}\` in milestone \`${milestone.id}\`: ${v.data!.label}`)
+}
+
+function handleRegisterAgent(args: any): ToolResult {
+  const v = validate(RegisterAgentSchema, args)
+  if (v.error) return err(v.error)
+  const state = readTracker()
+  const existing = state.agents.find(a => a.id === v.data!.agent_id)
+  const isUpdate = !!existing
+
+  if (existing) {
+    existing.name = v.data!.name
+    existing.type = v.data!.type
+    existing.permissions = v.data!.permissions
+    existing.color = v.data!.color
+    existing.status = 'active'
+    existing.last_action_at = new Date().toISOString()
+    if (v.data!.parent_id !== undefined) existing.parent_id = v.data!.parent_id
+  } else {
     const agent: Agent = {
-      id: agent_id,
-      name,
-      type,
-      parent_id,
-      color,
+      id: v.data!.agent_id,
+      name: v.data!.name,
+      type: v.data!.type,
+      color: v.data!.color,
       status: 'active',
-      permissions,
+      permissions: v.data!.permissions,
       last_action_at: new Date().toISOString(),
-      session_action_count: existingIndex >= 0 ? state.agents[existingIndex].session_action_count + 1 : 1
-    };
-    
-    if (existingIndex >= 0) {
-      state.agents[existingIndex] = agent;
-    } else {
-      state.agents.push(agent);
+      session_action_count: 0,
     }
-    
-    // Log action
-    state.agent_log.push({
-      id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-      agent_id: 'operator',
-      action: existingIndex >= 0 ? 'agent_updated' : 'agent_registered',
-      target_type: 'agent',
-      target_id: agent_id,
-      description: existingIndex >= 0 ? `Agent updated: ${name}` : `Agent registered: ${name}`,
-      timestamp: new Date().toISOString(),
-      tags: ['agent', 'mcp']
-    });
-    
-    writeTracker(state);
-    
-    return {
-      content: [{ 
-        type: 'text', 
-        text: `Agent ${agent_id} ${existingIndex >= 0 ? 'updated' : 'registered'}`
-      }]
-    };
-  } catch (error) {
-    return createErrorResponse(`Error registering agent: ${error instanceof Error ? error.message : String(error)}`);
+    if (v.data!.parent_id !== undefined) agent.parent_id = v.data!.parent_id
+    state.agents.push(agent)
   }
+
+  state.agent_log.push(makeLogEntry(v.data!.agent_id, isUpdate ? 'agent_updated' : 'agent_registered', 'agent', v.data!.agent_id, `${isUpdate ? 'Updated' : 'Registered'} agent: ${v.data!.name}`, ['agent', 'mcp']))
+  logAndWrite(state, 'register_agent', '{}', '{}')
+  return ok(`${isUpdate ? 'Updated' : 'Registered'} agent \`${v.data!.agent_id}\`: ${v.data!.name}`)
+}
+
+// ─── HELPERS ──────────────────────────────────────────────────
+
+function timeAgo(date: Date): string {
+  const seconds = Math.floor((Date.now() - date.getTime()) / 1000)
+  if (seconds < 60) return `${seconds}s ago`
+  const minutes = Math.floor(seconds / 60)
+  if (minutes < 60) return `${minutes}m ago`
+  const hours = Math.floor(minutes / 60)
+  if (hours < 24) return `${hours}h ago`
+  const days = Math.floor(hours / 24)
+  return `${days}d ago`
 }

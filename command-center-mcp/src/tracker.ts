@@ -1,265 +1,306 @@
-// src/tracker.ts
-import path from 'path';
-import fs from 'fs';
-import { fileURLToPath } from 'url';
+import path from 'node:path'
+import fs from 'node:fs'
+import os from 'node:os'
+import pino from 'pino'
+import { backupTracker } from './backup.js'
+import { appendUndoEntry } from './backup.js'
 
-// TypeScript Interfaces from Phase 1
+const CURRENT_SCHEMA_VERSION = 1
 
-export interface ProjectMeta {
-  name: string;                    // Project display name
-  start_date: string;              // YYYY-MM-DD, first day of work
-  target_date: string;             // YYYY-MM-DD, target completion
-  current_week: number;            // Live-calculated: 1-based week number
-  schedule_status: 'on_track' | 'behind' | 'ahead';
-  overall_progress: number;        // 0.0 to 1.0 (done / total tasks)
+export interface TrackerState {
+  schemaVersion: number
+  project: ProjectMeta
+  milestones: Milestone[]
+  agents: Agent[]
+  agent_log: AgentLogEntry[]
+  schedule: { phases: Phase[] }
 }
 
-export interface Subtask {
-  id: string;                      // Format: {milestone_id}_{NNN} (zero-padded)
-  label: string;                   // Task description
-  status: 'todo' | 'in_progress' | 'review' | 'done' | 'blocked';
-  done: boolean;                   // Completion flag (mirrors status === 'done')
-  assignee: string | null;         // Agent ID or human name
-  blocked_by: string | null;       // Who/what blocked this task
-  blocked_reason: string | null;   // Why it's blocked
-  completed_at: string | null;     // ISO 8601 timestamp
-  completed_by: string | null;     // Who completed it
-  priority: string;                // "P1" | "P2" | "P3" | "P4"
-  notes: string | null;            // Free-form notes
-
-  // Agent enrichment fields
-  prompt: string | null;           // Task description/prompt
-  context_files: string[];         // File paths the agent should read first
-  reference_docs: string[];        // URLs or doc paths for research
-  acceptance_criteria: string[];   // Checklist of what "done" means
-  constraints: string[];           // Rules the implementation must follow
-
-  // Execution configuration
-  agent_target: string | null;     // Suggested agent role (e.g., 'explorer', 'builder')
-  execution_mode: 'human' | 'agent' | 'pair';
-  depends_on: string[];            // IDs of subtasks that must complete first
-  last_run_id: string | null;      // Unique run identifier for the last execution
-  builder_prompt: string | null;   // Path to per-task prompt file
+export interface ProjectMeta {
+  name: string
+  start_date: string
+  target_date: string
+  current_week: number
+  schedule_status: 'on_track' | 'behind' | 'ahead'
+  overall_progress: number
 }
 
 export interface Milestone {
-  id: string;                      // snake_case unique identifier
-  title: string;                   // Human-readable name
-  domain: string;                  // Category
-  week: number;                    // Start week (1-based)
-  phase: string;                   // Phase this milestone belongs to
-  planned_start: string | null;    // YYYY-MM-DD
-  planned_end: string | null;      // YYYY-MM-DD
-  actual_start: string | null;     // YYYY-MM-DD (auto-set when first task starts)
-  actual_end: string | null;       // YYYY-MM-DD (auto-set when all tasks done)
-  drift_days: number;              // Positive = behind, negative = ahead, 0 = on track
-  is_key_milestone: boolean;       // True for major release/deadline milestones
-  key_milestone_label: string | null;  // e.g., "V1.0 Launch", "Beta Release"
-  subtasks: Subtask[];             // Ordered list of tasks within this milestone
-  dependencies: string[];          // IDs of milestones that must complete first
-  notes: string[];                 // Exit criteria and notes
+  id: string
+  title: string
+  domain: string
+  week: number
+  phase: string
+  planned_start: string | null
+  planned_end: string | null
+  actual_start: string | null
+  actual_end: string | null
+  drift_days: number
+  is_key_milestone: boolean
+  key_milestone_label: string | null
+  subtasks: Subtask[]
+  dependencies: string[]
+  notes: string[]
+}
+
+export interface Subtask {
+  id: string
+  label: string
+  status: 'todo' | 'in_progress' | 'review' | 'done' | 'blocked'
+  done: boolean
+  assignee: string | null
+  blocked_by: string | null
+  blocked_reason: string | null
+  completed_at: string | null
+  completed_by: string | null
+  priority: string
+  notes: string | null
+  prompt: string | null
+  context_files: string[]
+  reference_docs: string[]
+  acceptance_criteria: string[]
+  constraints: string[]
+  agent_target: string | null
+  execution_mode: 'human' | 'agent' | 'pair'
+  depends_on: string[]
+  last_run_id: string | null
+  builder_prompt: string | null
 }
 
 export interface Agent {
-  id: string;                      // Unique identifier (e.g., 'claude_code', 'codex')
-  name: string;                    // Display name
-  type: 'orchestrator' | 'sub-agent' | 'human' | 'external';
-  parent_id?: string;              // For sub-agents: ID of parent orchestrator
-  color: string;                   // Hex color for UI display (e.g., '#22c55e')
-  status: string;                  // 'active' | 'idle'
-  permissions: string[];           // e.g., ['read', 'write']
-  last_action_at: string | null;   // ISO 8601 timestamp of last MCP tool call
-  session_action_count: number;    // Running count of actions in current session
+  id: string
+  name: string
+  type: 'orchestrator' | 'sub-agent' | 'human' | 'external'
+  parent_id?: string
+  color: string
+  status: string
+  permissions: string[]
+  last_action_at: string | null
+  session_action_count: number
 }
 
 export interface AgentLogEntry {
-  id: string;                      // Unique log entry ID (e.g., 'log_{timestamp}_{random}')
-  agent_id: string;                // Which agent performed the action
-  action: string;                  // Action type
-  target_type: string;             // 'subtask' | 'milestone' | 'agent'
-  target_id: string;               // ID of the affected entity
-  description: string;             // Human-readable description of what happened
-  timestamp: string;                // ISO 8601 timestamp
-  tags: string[];                  // Categorization (e.g., ['start', 'mcp'], ['write', 'commit'])
+  id: string
+  agent_id: string
+  action: string
+  target_type: string
+  target_id: string
+  description: string
+  timestamp: string
+  tags: string[]
 }
 
 export interface Phase {
-  id: string;                      // Unique phase identifier
-  title: string;                   // Display name (e.g., "Foundation", "Core Features")
-  start_week: number;              // First week of this phase (1-based)
-  end_week: number;                // Last week of this phase (inclusive)
+  id: string
+  title: string
+  start_week: number
+  end_week: number
 }
 
-export interface TrackerState {
-  project: ProjectMeta;
-  milestones: Milestone[];
-  agents: Agent[];
-  agent_log: AgentLogEntry[];
-  schedule: { phases: Phase[] };
+export interface FindTaskResult {
+  subtask: Subtask
+  milestone: Milestone
 }
 
-// Path Resolution
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-function getProjectRoot(): string {
-  // Try PROJECT_ROOT env var first
-  if (process.env.PROJECT_ROOT) {
-    return process.env.PROJECT_ROOT;
-  }
-  
-  // Fallback: read from .env file
-  try {
-    const envPath = path.join(__dirname, '..', '..', '.env');
-    if (fs.existsSync(envPath)) {
-      const envContent = fs.readFileSync(envPath, 'utf-8');
-      const match = envContent.match(/PROJECT_ROOT=(.+)/);
-      if (match) {
-        return match[1].trim();
-      }
+export const PROJECT_ROOT = process.env.PROJECT_ROOT
+  ?? (() => {
+    try {
+      const envPath = path.resolve('.env')
+      const content = fs.readFileSync(envPath, 'utf-8')
+      const match = content.match(/^PROJECT_ROOT=(.+)$/m)
+      return match ? match[1].trim() : process.cwd()
+    } catch {
+      return process.cwd()
     }
-  } catch {
-    // Ignore errors
+  })()
+
+export const TRACKER_PATH = path.resolve(path.join(PROJECT_ROOT, 'project-tracker.json'))
+
+const logger = pino({
+  level: process.env.LOG_LEVEL ?? 'info',
+  transport: {
+    targets: [
+      {
+        target: 'pino/file',
+        options: {
+          destination: path.join(os.homedir(), '.command-center', 'logs', 'command-center.log'),
+          mkdir: true,
+        },
+      },
+    ],
+  },
+})
+
+export { logger }
+
+export function migrateTracker(state: any): TrackerState {
+  let version = state.schemaVersion ?? 0
+  while (version < CURRENT_SCHEMA_VERSION) {
+    switch (version) {
+      case 0:
+        state.schemaVersion = 1
+        break
+    }
+    version++
   }
-  
-  // Final fallback: current working directory
-  return process.cwd();
+  return state as TrackerState
 }
-
-const PROJECT_ROOT = getProjectRoot();
-export const TRACKER_PATH = path.join(PROJECT_ROOT, 'project-tracker.json');
-
-// Tracker Utilities
 
 export function readTracker(): TrackerState {
-  const content = fs.readFileSync(TRACKER_PATH, 'utf-8');
-  return JSON.parse(content) as TrackerState;
+  const raw = fs.readFileSync(TRACKER_PATH, 'utf-8')
+  const parsed = JSON.parse(raw)
+  return migrateTracker(parsed)
 }
 
-export function writeTracker(state: TrackerState): void {
-  // Recompute derived fields
-  const totalTasks = state.milestones.reduce((sum, m) => sum + m.subtasks.length, 0);
-  const doneTasks = state.milestones.reduce((sum, m) => 
-    sum + m.subtasks.filter(t => t.done).length, 0);
-  state.project.overall_progress = totalTasks > 0 ? doneTasks / totalTasks : 0;
-  
-  // Recalculate current week
-  const startDate = new Date(state.project.start_date);
-  const now = new Date();
-  const diffDays = (now.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24);
-  const totalWeeks = Math.ceil(
-    (new Date(state.project.target_date).getTime() - startDate.getTime())
-    / (1000 * 60 * 60 * 24 * 7)
-  );
-  state.project.current_week = Math.max(1, Math.min(totalWeeks, Math.floor(diffDays / 7) + 1));
-  
-  // Recalculate schedule status
-  if (state.milestones.length > 0) {
-    const drifts = state.milestones.map(m => m.drift_days);
-    const maxDrift = Math.max(...drifts);
-    const minDrift = Math.min(...drifts);
-    if (maxDrift > 3) {
-      state.project.schedule_status = 'behind';
-    } else if (minDrift < -3) {
-      state.project.schedule_status = 'ahead';
-    } else {
-      state.project.schedule_status = 'on_track';
-    }
-  }
-  
-  // Write with 2-space indent
-  fs.writeFileSync(TRACKER_PATH, JSON.stringify(state, null, 2), 'utf-8');
+export function writeTracker(state: TrackerState, toolName?: string): void {
+  const total = state.milestones.reduce((s, m) => s + m.subtasks.length, 0)
+  const done = state.milestones.reduce((s, m) =>
+    s + m.subtasks.filter(t => t.done).length, 0)
+  state.project.overall_progress = total > 0
+    ? parseFloat((done / total).toFixed(4))
+    : 0
+  state.project.current_week = selectCurrentWeek(state)
+  state.project.schedule_status = selectScheduleStatus(state)
+  state.schemaVersion = CURRENT_SCHEMA_VERSION
+
+  backupTracker(TRACKER_PATH)
+  fs.writeFileSync(TRACKER_PATH, JSON.stringify(state, null, 2))
+  logger.debug({ tool: toolName, milestones: state.milestones.length, tasks: total }, 'tracker written')
 }
 
-export function findTask(state: TrackerState, taskId: string): { subtask: Subtask; milestone: Milestone } | null {
+export function findTask(state: TrackerState, taskId: string): FindTaskResult | null {
   for (const milestone of state.milestones) {
-    for (const subtask of milestone.subtasks) {
-      if (subtask.id === taskId) {
-        return { subtask, milestone };
-      }
-    }
+    const subtask = milestone.subtasks.find(t => t.id === taskId)
+    if (subtask) return { subtask, milestone }
   }
-  return null;
+  return null
 }
 
 export function touchAgent(state: TrackerState, agentId: string = 'orchestrator'): void {
-  const agent = state.agents.find(a => a.id === agentId);
+  const agent = state.agents.find(a => a.id === agentId)
   if (agent) {
-    agent.last_action_at = new Date().toISOString();
-    agent.session_action_count++;
-    agent.status = 'active';
+    agent.last_action_at = new Date().toISOString()
+    agent.session_action_count += 1
+    agent.status = 'active'
   }
 }
 
-export function autoUnblockDependents(state: TrackerState, completedTaskId: string, completedMilestoneId: string): string[] {
-  const results: string[] = [];
-  
-  // Find all subtasks that depend on the completed task
+export function autoUnblockDependents(
+  state: TrackerState,
+  completedTaskId: string,
+  completedMilestoneId: string,
+): string[] {
+  const unblocked: string[] = []
+
   for (const milestone of state.milestones) {
     for (const subtask of milestone.subtasks) {
-      if (subtask.depends_on.includes(completedTaskId)) {
-        // Check if ALL dependencies are now done
-        const allDepsDone = subtask.depends_on.every(depId => {
-          const depTask = findTask(state, depId);
-          return depTask && depTask.subtask.status === 'done';
-        });
-        
-        if (allDepsDone && subtask.status === 'blocked') {
-          subtask.status = 'todo';
-          subtask.blocked_by = null;
-          subtask.blocked_reason = null;
-          results.push(`Unblocked task ${subtask.id} (all dependencies complete)`);
-          
-          // Log the unblock action
-          state.agent_log.push({
-            id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-            agent_id: 'system',
-            action: 'task_unblocked',
-            target_type: 'subtask',
-            target_id: subtask.id,
-            description: `Auto-unblocked: all dependencies complete`,
-            timestamp: new Date().toISOString(),
-            tags: ['auto', 'unblock']
-          });
-        }
+      if (!subtask.depends_on.includes(completedTaskId)) continue
+      if (subtask.status !== 'blocked') continue
+
+      const allDepsDone = subtask.depends_on.every(depId => {
+        const found = findTask(state, depId)
+        return found && found.subtask.status === 'done'
+      })
+
+      if (allDepsDone) {
+        subtask.status = 'todo'
+        subtask.blocked_by = null
+        subtask.blocked_reason = null
+        unblocked.push(`Unblocked task ${subtask.id} in milestone ${milestone.id}`)
+        state.agent_log.push({
+          id: `log_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+          agent_id: 'system',
+          action: 'task_auto_unblocked',
+          target_type: 'subtask',
+          target_id: subtask.id,
+          description: `Auto-unblocked after task ${completedTaskId} completed`,
+          timestamp: new Date().toISOString(),
+          tags: ['auto-unblock', 'system'],
+        })
       }
     }
   }
-  
-  // Check if the completed milestone's completion unblocks downstream milestones
-  const completedMilestone = state.milestones.find(m => m.id === completedMilestoneId);
-  if (completedMilestone && completedMilestone.subtasks.every(t => t.done)) {
-    for (const downstreamMilestone of state.milestones) {
-      if (downstreamMilestone.dependencies.includes(completedMilestoneId)) {
-        const allDepsComplete = downstreamMilestone.dependencies.every(depId => {
-          const depMilestone = state.milestones.find(m => m.id === depId);
-          return depMilestone && depMilestone.subtasks.every(t => t.done);
-        });
-        
-        if (allDepsComplete) {
-          for (const subtask of downstreamMilestone.subtasks) {
+
+  const completedMilestone = state.milestones.find(m => m.id === completedMilestoneId)
+  if (completedMilestone) {
+    const allDone = completedMilestone.subtasks.every(t => t.done)
+    if (allDone) {
+      for (const milestone of state.milestones) {
+        if (!milestone.dependencies.includes(completedMilestoneId)) continue
+        const allDepsDone = milestone.dependencies.every(depId => {
+          const dep = state.milestones.find(m => m.id === depId)
+          return dep && dep.subtasks.every(t => t.done)
+        })
+        if (allDepsDone) {
+          for (const subtask of milestone.subtasks) {
             if (subtask.status === 'blocked') {
-              subtask.status = 'todo';
-              subtask.blocked_by = null;
-              subtask.blocked_reason = null;
-              results.push(`Unblocked task ${subtask.id} in milestone ${downstreamMilestone.id}`);
-              
-              state.agent_log.push({
-                id: `log_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
-                agent_id: 'system',
-                action: 'task_unblocked',
-                target_type: 'subtask',
-                target_id: subtask.id,
-                description: `Auto-unblocked: milestone dependency ${completedMilestoneId} completed`,
-                timestamp: new Date().toISOString(),
-                tags: ['auto', 'unblock']
-              });
+              subtask.status = 'todo'
+              subtask.blocked_by = null
+              subtask.blocked_reason = null
+              unblocked.push(`Unblocked task ${subtask.id} in downstream milestone ${milestone.id}`)
             }
           }
         }
       }
     }
   }
-  
-  return results;
+
+  return unblocked
+}
+
+export function selectCurrentWeek(tracker: TrackerState): number {
+  const start = new Date(tracker.project.start_date)
+  const now = new Date()
+  const diffDays = (now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+  const totalWeeks = Math.ceil(
+    (new Date(tracker.project.target_date).getTime() - start.getTime())
+    / (1000 * 60 * 60 * 24 * 7)
+  )
+  return Math.max(1, Math.min(totalWeeks, Math.floor(diffDays / 7) + 1))
+}
+
+export function selectCurrentWeekFractional(tracker: TrackerState): number {
+  const start = new Date(tracker.project.start_date)
+  const now = new Date()
+  const diffDays = (now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
+  const totalWeeks = Math.ceil(
+    (new Date(tracker.project.target_date).getTime() - start.getTime())
+    / (1000 * 60 * 60 * 24 * 7)
+  )
+  return Math.max(1, Math.min(totalWeeks + 0.99, diffDays / 7 + 1))
+}
+
+export function selectCurrentPhase(tracker: TrackerState): string {
+  const week = selectCurrentWeek(tracker)
+  const phase = tracker.schedule.phases.find(
+    p => week >= p.start_week && week <= p.end_week
+  )
+  return phase?.title ?? ''
+}
+
+export function selectScheduleStatus(tracker: TrackerState): 'on_track' | 'behind' | 'ahead' {
+  if (tracker.milestones.length === 0) return 'on_track'
+  const drifts = tracker.milestones.map(m => m.drift_days)
+  if (Math.max(...drifts) > 3) return 'behind'
+  if (Math.min(...drifts) < -3) return 'ahead'
+  return 'on_track'
+}
+
+export function selectMilestoneProgress(milestone: Milestone): { done: number; total: number; pct: number } {
+  const total = milestone.subtasks.length
+  const done = milestone.subtasks.filter(t => t.done).length
+  return { done, total, pct: total > 0 ? Math.round((done / total) * 100) : 0 }
+}
+
+export function generateTaskId(milestoneId: string, existingSubtasks: Subtask[]): string {
+  const nnn = String(existingSubtasks.length + 1).padStart(3, '0')
+  return `${milestoneId}_${nnn}`
+}
+
+export function generateLogId(): string {
+  return `log_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`
+}
+
+export function todayDateString(): string {
+  return new Date().toISOString().split('T')[0]
 }

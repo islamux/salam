@@ -4,7 +4,7 @@
     "name": "Salam Flutter App",
     "start_date": "2026-01-01",
     "target_date": "2026-12-31",
-    "current_week": 1,
+    "current_week": 18,
     "schedule_status": "on_track",
     "overall_progress": 0
   },
@@ -41,6 +41,7 @@
             "lib/view/pages/elm2.dart",
             "lib/view/pages/elm3.dart"
           ],
+          "reference_docs": [],
           "acceptance_criteria": [
             "Single ElmContentPage widget created",
             "All 34 elm pages refactored to use the generic widget",
@@ -66,7 +67,10 @@
       "type": "orchestrator",
       "color": "#22c55e",
       "status": "active",
-      "permissions": ["read", "write"],
+      "permissions": [
+        "read",
+        "write"
+      ],
       "last_action_at": null,
       "session_action_count": 0
     }

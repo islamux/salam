@@ -56,8 +56,8 @@ Operator ────── TUI Dashboard (terminal)
 |------|---------|----------|------------|
 | **blessed maintenance** | Core `blessed` is stable but low-activity; `blessed-contrib` similar | Low | Fork-friendly MIT license; stable API |
 | **Terminal compatibility** | Truecolor/256-color support varies by terminal | Low | Graceful fallback to 16-color; detect with `supports-color` |
-| **MCP SDK version** | `^1.12.1` specified — verify on npm | None | Check npm for current version |
-| **Global install** | MCP server is "globally installed" — may need permissions | Low | Document `npm link` or `-g` install step |
+| **MCP SDK version** | `^1.12.1` specified — verify on pnpm/npm | None | Check pnpm/npm for current version |
+| **Global install** | MCP server is "globally installed" — may need permissions | Low | Document `pnpm link` or `-g` install step |
 | **Path resolution** | `PROJECT_ROOT` env var + `.env` fallback — cross-platform path issues possible | Low | Use `path.resolve()` consistently |
 | **TUI interaction limits** | No mouse drag-and-drop in terminal; keyboard-driven workflow required | Medium | Design keyboard-first UX; use arrow keys / shortcuts for all interactions |
 | **No schema versioning** | `project-tracker.json` has no version field; schema changes break existing data | High | Add `schemaVersion` field; write migrator functions for each version bump |
@@ -118,7 +118,7 @@ Also creates `project-tracker.json` at project root with empty schema.
 
 **Complexity:** Low — blessed setup is straightforward, no build step required
 
-**Checkpoint:** `npm run dev` launches TUI dashboard in terminal with empty state, reads tracker file.
+**Checkpoint:** `pnpm run dev` launches TUI dashboard in terminal with empty state, reads tracker file.
 
 ---
 

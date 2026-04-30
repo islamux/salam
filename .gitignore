@@ -51,4 +51,6 @@ todo.txt
 women.txt
 /node_modules/
 **/node_modules/
+**/dist/
+command-center-mcp/package-lock.json
 /lib/core/data/static/newtexts
