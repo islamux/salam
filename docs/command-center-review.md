@@ -9,29 +9,31 @@
 The blueprint specifies two deliverables sharing a single JSON file (`project-tracker.json`) as source of truth:
 
 1. **MCP Server** (`command-center-mcp/`) — Globally-installed Node.js package exposing 24 tools over stdio + CLI
-2. **Electron Desktop App** (`command-center/`) — Cross-platform dashboard with 4 tabs: Swim Lane, Task Board, Agent Hub, Calendar
+2. **TUI Dashboard** (`command-center-tui/`) — Terminal-based dashboard with 4 tabs: Swim Lane, Task Board, Agent Hub, Calendar
+
+**Note:** Single-operator setup — no team collaboration features. Operator name is configured once. Task assignment targets AI agents only (gemini-cli, opencode, etc.), not humans.
 
 ### Architecture
 
 ```
-Operator ────── Electron Desktop App
-                     │ fs.watch + IPC
-            project-tracker.json (SSOT)
-                     │ readTracker / writeTracker
-               MCP Server (stdio)
-                     │ MCP protocol
-           ┌─────────┴──────────┐
-       Claude Code            Codex
+Operator ────── TUI Dashboard (terminal)
+                      │ fs.watch
+             project-tracker.json (SSOT)
+                      │ readTracker / writeTracker
+                MCP Server (stdio)
+                      │ MCP protocol
+            ┌─────────┴──────────┐
+        Claude Code            Codex
 ```
 
 ### Stack
 
 | Layer | Technology |
 |-------|-----------|
-| Desktop App | Electron + electron-vite |
-| UI | React 19 + Zustand + Tailwind CSS v4 |
-| Drag & Drop | @dnd-kit/core + @dnd-kit/sortable |
-| Fonts | Inter (UI) + JetBrains Mono (code) |
+| TUI Framework | blessed + blessed-contrib |
+| UI Layout | blessed grid system (no browser DOM) |
+| Interactive Widgets | blessed-contrib (tables, bars, gauges, sparkline) |
+| Colors & Styling | ANSI 256-color + truecolor (terminal-native) |
 | MCP Server | Node.js + @modelcontextprotocol/sdk |
 | Language | TypeScript (strict, ES modules) |
 
@@ -41,27 +43,27 @@ Operator ────── Electron Desktop App
 
 ### Strengths
 
-- **Single source of truth** — Clean architecture; both MCP server and Electron app read/write the same JSON file
+- **Single source of truth** — Clean architecture; both MCP server and TUI dashboard read/write the same JSON file
 - **Phase ordering** is logical and each phase has a clear checkpoint
 - **24 MCP tools** are specified with exact parameters, handlers, side effects, and error patterns
-- **Each view** has ASCII wireframes, component hierarchy, props, and interaction specs
-- **Write-back debounce** pattern prevents infinite loops between Electron and file watcher
 - **Task lifecycle state machine** is well-defined with clear transitions and agent dispatch points
 - **Agent role templates** (Explorer, Researcher, Post-Build Auditor) have clear responsibilities
+- **TUI over Electron** — Zero browser overhead, instant startup, runs in any terminal, no GUI dependencies
 
 ### Concerns & Risks
 
 | Area | Concern | Severity | Mitigation |
 |------|---------|----------|------------|
-| **Electron 41** | Latest stable is ~33-35. `electron@41` may not exist | Medium | Use latest stable (e.g., `^33.0.0`) |
-| **electron-vite 5** | Latest is ~2.x. Version may not exist | Medium | Use `^2.0.0` or latest available |
-| **Zustand 5** | Currently at 4.x stable. API differences possible | Low | Use `^4.0.0`, check API on install |
-| **@dnd-kit versions** | Blueprint says `sortable@8`, current is `@7` | Low | Use latest available versions |
-| **Tailwind v4** | CSS-first config (`@theme` directive) is new approach | Low | Blueprint's CSS structure is correct for v4 |
+| **blessed maintenance** | Core `blessed` is stable but low-activity; `blessed-contrib` similar | Low | Fork-friendly MIT license; stable API |
+| **Terminal compatibility** | Truecolor/256-color support varies by terminal | Low | Graceful fallback to 16-color; detect with `supports-color` |
 | **MCP SDK version** | `^1.12.1` specified — verify on npm | None | Check npm for current version |
-| **No tests specified** | Blueprint has no test infrastructure for MCP or Electron | Medium | Add unit tests for tracker utilities, integration tests for tools |
 | **Global install** | MCP server is "globally installed" — may need permissions | Low | Document `npm link` or `-g` install step |
 | **Path resolution** | `PROJECT_ROOT` env var + `.env` fallback — cross-platform path issues possible | Low | Use `path.resolve()` consistently |
+| **TUI interaction limits** | No mouse drag-and-drop in terminal; keyboard-driven workflow required | Medium | Design keyboard-first UX; use arrow keys / shortcuts for all interactions |
+| **No schema versioning** | `project-tracker.json` has no version field; schema changes break existing data | High | Add `schemaVersion` field; write migrator functions for each version bump |
+| **No input validation** | AI agents write to tracker via MCP tools; one bad write corrupts the SSOT | High | Validate every write against schema; reject malformed data; use Zod or hand-rolled validators |
+| **No backup/undo** | An AI agent can accidentally wipe or corrupt the tracker with no recovery path | High | Auto-backup tracker before every write (keep last N copies); implement undo log for last 50 mutations |
+| **No error logging** | MCP server and TUI have no logging; debugging silent failures is impossible | Medium | Add structured logging to `~/.command-center/logs/` with rotation (7-day retention) |
 
 ---
 
@@ -83,53 +85,60 @@ Operator ────── Electron Desktop App
 
 Also creates `project-tracker.json` at project root with empty schema.
 
-**Complexity:** High — 24 tools with full logic, context builders, auto-unblock cascading, drift calculation
+**Key patterns to include from day one:**
+- `schemaVersion: 1` field in tracker JSON — all reads check version first, migrate if needed
+- Zod schemas for every tool input — reject invalid data before it touches the tracker
+- Auto-backup: copy tracker to `.command-center/backups/` before every write (keep last 20)
+- Undo log: append-only `.command-center/undo-log.jsonl` — stores `{timestamp, tool, before, after}` for last 50 mutations
+- Structured logging: `.command-center/logs/` with daily rotation
+
+**Complexity:** High — 24 tools with full logic, context builders, auto-unblock cascading, drift calculation, input validation, backup/undo
 
 **Checkpoint:** `command-center get-project-status` returns empty project status. `command-center create-milestone test "Test"` creates a milestone in the tracker.
 
 ---
 
-### Batch 2 — Desktop Shell (Phase 3)
+### Batch 2 — TUI Shell (Phase 3)
 
-**Files:** ~7 files in `command-center/`
+**Files:** ~5 files in `command-center-tui/`
 
 | File | Purpose |
 |------|---------|
-| `command-center/package.json` | Dependencies (Electron, React, etc.) |
-| `command-center/electron.vite.config.ts` | Build config for main/preload/renderer |
-| `command-center/tsconfig.json` | TypeScript config |
-| `command-center/postcss.config.mjs` | PostCSS for Tailwind |
-| `command-center/src/main/index.ts` | Electron main process + file watcher |
-| `command-center/src/main/config.ts` | PROJECT_ROOT resolution |
-| `command-center/src/preload/index.ts` | Context isolation bridge (4 IPC channels) |
-| `command-center/src/renderer/index.html` | HTML entry |
-| `command-center/src/renderer/main.tsx` | React entry |
-| `command-center/src/renderer/env.d.ts` | Window type augmentation |
+| `command-center-tui/package.json` | Dependencies (blessed, blessed-contrib, etc.) |
+| `command-center-tui/tsconfig.json` | TypeScript config |
+| `command-center-tui/src/index.ts` | TUI entry point + blessed screen + file watcher |
+| `command-center-tui/src/store.ts` | In-memory state + read/write tracker with debounce |
+| `command-center-tui/src/theme.ts` | Color scheme + widget style definitions |
 
-**Complexity:** Medium — standard Electron + electron-vite setup
+**Key features:**
+- blessed screen with full terminal layout
+- File watcher (fs.watch) → store sync
+- Write-back debounce (500ms) with external change suppression
+- Keyboard shortcuts for all navigation (Tab switching, quit, etc.)
 
-**Checkpoint:** `npm run dev` launches Electron window with loading state, reads tracker file.
+**Complexity:** Low — blessed setup is straightforward, no build step required
+
+**Checkpoint:** `npm run dev` launches TUI dashboard in terminal with empty state, reads tracker file.
 
 ---
 
-### Batch 3 — Store & Navigation (Phase 4)
+### Batch 3 — Navigation & Layout (Phase 4)
 
-**Files:** ~5 files in `command-center/src/renderer/`
+**Files:** ~3 files in `command-center-tui/src/`
 
 | File | Purpose |
 |------|---------|
-| `store.ts` | Zustand store with write-back debounce |
-| `App.tsx` | Root layout (title bar + tabs + status bar + views) |
-| `styles.css` | Tailwind + theme CSS variables |
-| Components for TabBar + StatusBar | Navigation + project metadata display |
+| `dashboard.ts` | Root layout (tab bar + status bar + view area) |
+| `components/tab-bar.ts` | Keyboard-driven tab switcher |
+| `components/status-bar.ts` | Project metadata footer |
 
 **Key features:**
-- 5 derived selectors (`selectCurrentWeek`, `selectScheduleStatus`, etc.)
-- Write-back debounce (500ms) with external change suppression
-- Theme persistence via localStorage
-- File watcher → store sync
+- 4-tab navigation via number keys (1-4) or arrow keys
+- Status bar showing project name, current week, task count
+- Derived selectors (`selectCurrentWeek`, `selectScheduleStatus`, etc.)
+- Theme toggle (light/dark via terminal color inversion)
 
-**Complexity:** Medium
+**Complexity:** Low
 
 **Checkpoint:** Tab switching works. StatusBar shows project metadata. Theme toggle works. Store syncs with file changes.
 
@@ -137,53 +146,54 @@ Also creates `project-tracker.json` at project root with empty schema.
 
 ### Batch 4 — Views (Phases 5-8)
 
-This is the largest batch — approximately 20+ component files.
+This is the largest batch — approximately 15+ component files.
 
 #### Phase 5: Swim Lane View
 
-**Complexity:** Very High
+**Complexity:** High
 
-- SVG-based timeline with week grid, phase bands, NOW marker
-- Milestone nodes with progress arcs (SVG circles)
-- Drift visualization (ghost nodes, connecting bars)
-- Detail panel slide-out with schedule editing
+- ASCII/Unicode timeline with week grid, phase bands, NOW marker (vertical line)
+- Milestone markers with progress bars (Unicode block characters)
+- Drift visualization (offset markers with distance indicators)
+- Detail panel (blessed box) toggled on milestone selection
 - Auto-scroll to NOW marker on load
 
-Key components: `SwimLaneView`, `WeekGrid`, `MilestoneNode`, `DriftVisualization`, `DetailPanel`, `MajorMilestoneMarker`
+Key components: `SwimLaneView`, `WeekGrid`, `MilestoneNode`, `DriftVisualization`, `DetailPanel`
 
 #### Phase 6: Task Board View
 
 **Complexity:** High
 
-- 5-column Kanban (todo, in_progress, review, done, blocked)
-- Drag-and-drop with @dnd-kit (PointerSensor + KeyboardSensor)
-- Milestone carousel (ContextBar with prev/next navigation)
-- Filter bar (All, My Tasks, Agent Tasks, Blocked)
-- Task detail modal with tabs (Details + History)
+- 5-column Kanban (todo, in_progress, review, done, blocked) — blessed-contrib table/grid
+- Keyboard navigation (arrow keys to move between cards, Enter to select)
+- Milestone carousel (ContextBar with prev/next via `[` `]` keys)
+- Filter bar (toggle filters via number keys: All, Agent Tasks, Blocked)
+- Task detail modal (blessed modal overlay with tab switching)
 
 Key components: `TaskBoardView`, `ContextBar`, `FilterBar`, `KanbanColumn`, `TaskCard`, `TaskDetailModal`
 
 #### Phase 7: Agent Hub View
 
-**Complexity:** Medium-High
+**Complexity:** Medium
 
-- 4 left panels: Connected Agents, Shared State, Context Injection, Today's Summary
-- Activity feed with filtering, search, pagination (30 entries)
-- Agent performance stats (weekly breakdown)
-- Agent active status (30-minute window)
+- Left panel: Connected Agents list (blessed list widget)
+- Shared State panel, Context Injection panel, Today's Summary panel
+- Activity feed (blessed log widget with filtering, search, pagination)
+- Agent performance stats (blessed-contrib bar chart — weekly breakdown)
+- Agent active status (30-minute window indicator)
 
 Key components: `AgentHubView`, `ConnectedAgents`, `SharedStatePanel`, `ContextInjection`, `ActivityFeed`, `AgentPerformanceStats`
 
 #### Phase 8: Calendar View
 
-**Complexity:** Medium
+**Complexity:** Low-Medium
 
-- 7-column week grid (Mon-Sun)
+- 7-column week grid (Mon-Sun) using blessed grid
 - Only shows completed tasks (filtered by `completed_at`)
-- Week navigation (prev/next/today)
-- Task chips with domain coloring
+- Week navigation (prev/next via `h` `l` keys, `t` for today)
+- Task entries with domain-colored labels (ANSI colors)
 
-Key components: `CalendarView`, `WeekGrid`, `DayColumn`, `TaskChip`, `CalendarNavigation`
+Key components: `CalendarView`, `WeekGrid`, `DayColumn`, `CalendarNavigation`
 
 ---
 
@@ -193,12 +203,13 @@ Key components: `CalendarView`, `WeekGrid`, `DayColumn`, `TaskChip`, `CalendarNa
 
 | File | Purpose |
 |------|---------|
-| CSS updates to `styles.css` | Full design system (colors, scrollbar, typography) |
+| Theme updates to `theme.ts` | Full color palette (ANSI 256-color mapping) |
 | `docs/workflow.md` | Task lifecycle state machine documentation |
 | Agent role files | Explorer, Researcher, Post-Build Auditor definitions |
 | `.mcp.json` | MCP server configuration |
+| `command-center-tui/README.md` | Keyboard shortcuts reference |
 
-**Complexity:** Low — mostly documentation and CSS refinement
+**Complexity:** Low — mostly documentation and theme refinement
 
 ---
 
@@ -207,32 +218,48 @@ Key components: `CalendarView`, `WeekGrid`, `DayColumn`, `TaskChip`, `CalendarNa
 | Batch | Files | Key Risk | Estimated LOC |
 |-------|-------|----------|--------------|
 | Batch 1 (MCP Server) | ~7 | 24 tools with full logic | ~1,500 |
-| Batch 2 (Electron Shell) | ~10 | electron-vite config | ~400 |
-| Batch 3 (Store/Tabs) | ~5 | Write-back debounce edge cases | ~500 |
-| Batch 4 (4 Views) | ~20+ | Swim Lane SVG rendering | ~3,000 |
-| Batch 5 (Polish) | ~5 | None | ~300 |
-| **Total** | **~40+** | | **~5,700** |
+| Batch 2 (TUI Shell) | ~5 | blessed file watcher integration | ~300 |
+| Batch 3 (Nav/Layout) | ~3 | Keyboard-driven navigation UX | ~250 |
+| Batch 4 (4 Views) | ~15+ | Swim Lane ASCII timeline rendering | ~2,000 |
+| Batch 5 (Polish) | ~5 | None | ~200 |
+| **Total** | **~30+** | | **~4,250** |
 
 ---
 
 ## Recommended Build Order
 
 1. **Start with Batch 1** — The MCP server is the backbone. Everything else depends on the tracker schema and tool logic being correct.
-2. **Then Batch 2 + 3** — Electron shell and store can be done together since they're tightly coupled.
-3. **Then Batch 4 views** — These can potentially be parallelized (each view is independent). Start with Task Board (most standard UI pattern), then Swim Lane (most complex), then Agent Hub, then Calendar.
-4. **Finish with Batch 5** — Design system refinement and documentation.
+2. **Then Batch 2 + 3** — TUI shell and navigation can be done together since they're tightly coupled.
+3. **Then Batch 4 views** — Build sequentially: Task Board first (most natural TUI pattern — tables/lists), then Calendar, then Agent Hub, then Swim Lane (most complex ASCII rendering).
+4. **Finish with Batch 5** — Theme refinement and documentation.
 
 ---
 
-## Open Questions
+## Decisions (Resolved)
 
-1. **Where should the two projects live?** The blueprint suggests `command-center-mcp/` and `command-center/` at the project root. Should they be subdirectories of this Flutter project, or separate repositories?
-2. **Who is the "operator"?** The blueprint references an operator name for task assignment. Should this be configurable?
-3. **Node.js version?** The blueprint uses ES2022 features. Node.js 18+ is required.
-4. **Testing strategy?** The blueprint has no test infrastructure. Should we add Jest/Vitest for the MCP server utilities?
+| Decision | Choice | Rationale |
+|----------|--------|-----------|
+| **TUI Library** | `blessed` + `blessed-contrib` | Richer widget set (tables, bar charts, grids, logs) than Ink. Stable API, MIT license. |
+| **Testing** | Vitest | Fast, native ESM/TypeScript support, zero config. Add to Batch 1. |
+| **Node.js** | 18+ required | ES2022 features (top-level await, `.at()`, etc.) |
+| **Validation** | Zod | Schema validation for all MCP tool inputs; generate types from same schemas |
+| **Logging** | pino | Structured JSON logging, low overhead, built-in rotation via `pino-transport` |
+
+---
+
+## MVP Definition
+
+**Minimum viable product** = Batch 1 + Batch 2 + Batch 3 + Phase 6 (Task Board) only.
+
+This gives you:
+- MCP server with all 24 tools
+- TUI dashboard with task management
+- Ability to create milestones, manage tasks, track progress via CLI/TUI
+
+The other 3 views (Swim Lane, Agent Hub, Calendar) are enhancements that can be added incrementally. Ship MVP first, use it daily, then build the rest based on actual usage patterns.
 
 ---
 
 ## Conclusion
 
-The blueprint is thorough and well-structured with clear phase boundaries and checkpoints. The main risks are version mismatches (Electron 41, electron-vite 5, Zustand 5) and the complexity of the Swim Lane SVG rendering. The MCP server (Phase 2) is the most code-dense piece and should be built first to establish a solid foundation.
+The blueprint is thorough and well-structured with clear phase boundaries and checkpoints. Replacing Electron with a TUI (blessed) dashboard eliminates all GUI version risks, removes ~1,450 LOC, drops 10+ config files, and produces a tool that starts instantly in any terminal. The MCP server (Phase 2) remains the most code-dense piece and should be built first to establish a solid foundation.
