@@ -11,6 +11,10 @@ let viewArea: blessed.Widgets.BoxElement
 let currentView: blessed.Widgets.BlessedElement | null = null
 let viewFactories: Record<TabId, (parent: blessed.Widgets.BoxElement) => blessed.Widgets.BlessedElement>
 
+export function getViewArea(): blessed.Widgets.BoxElement {
+  return viewArea
+}
+
 export function initDashboard(
   blessedScreen: blessed.Widgets.Screen,
   factories: Record<TabId, (parent: blessed.Widgets.BoxElement) => blessed.Widgets.BlessedElement>,
@@ -22,25 +26,24 @@ export function initDashboard(
 
   viewArea = blessed.box({
     parent: screen,
-    top: 1,
-    left: 0,
-    right: 0,
-    bottom: 1,
+    top: 1, left: 0, right: 0, bottom: 1,
   })
 
   statusBar = createStatusBar(screen)
-
   renderActiveView()
 }
 
 export function renderDashboard(): void {
+  // Rebuild tab bar
+  if (tabBar) tabBar.detach()
   tabBar = createTabBar(screen, state.activeTab)
+
   updateStatusBar(statusBar)
   renderActiveView()
   screen.render()
 }
 
-function renderActiveView(): void {
+export function renderActiveView(): void {
   if (currentView) {
     currentView.detach()
     currentView = null
@@ -60,4 +63,5 @@ export function setupKeys(blessedScreen: blessed.Widgets.Screen): void {
   blessedScreen.key(['4'], () => switchTab('calendar'))
   blessedScreen.key(['t'], () => { toggleTheme(); renderDashboard() })
   blessedScreen.key(['r'], () => { refreshTracker(); renderDashboard() })
+  blessedScreen.key(['escape'], () => { renderDashboard() })
 }
