@@ -73,9 +73,62 @@
       ],
       "last_action_at": null,
       "session_action_count": 0
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "type": "orchestrator",
+      "color": "#9B9BAA",
+      "status": "active",
+      "permissions": [
+        "read",
+        "write"
+      ],
+      "last_action_at": "2026-05-01T05:25:14.182Z",
+      "session_action_count": 0
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "type": "orchestrator",
+      "color": "#9B9BAA",
+      "status": "active",
+      "permissions": [
+        "read",
+        "write"
+      ],
+      "last_action_at": "2026-05-01T05:25:21.916Z",
+      "session_action_count": 0
     }
   ],
-  "agent_log": [],
+  "agent_log": [
+    {
+      "id": "log_1777613114183_8f1da9",
+      "agent_id": "opencode",
+      "action": "agent_registered",
+      "target_type": "agent",
+      "target_id": "opencode",
+      "description": "Registered agent: OpenCode",
+      "timestamp": "2026-05-01T05:25:14.183Z",
+      "tags": [
+        "agent",
+        "mcp"
+      ]
+    },
+    {
+      "id": "log_1777613121918_10gf2k",
+      "agent_id": "gemini-cli",
+      "action": "agent_registered",
+      "target_type": "agent",
+      "target_id": "gemini-cli",
+      "description": "Registered agent: Gemini CLI",
+      "timestamp": "2026-05-01T05:25:21.918Z",
+      "tags": [
+        "agent",
+        "mcp"
+      ]
+    }
+  ],
   "schedule": {
     "phases": [
       {
