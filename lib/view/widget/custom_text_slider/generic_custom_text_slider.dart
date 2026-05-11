@@ -62,7 +62,7 @@ class GenericCustomTextSlider extends StatelessWidget {
                                 children: getPageTexts(i, dataList),
                                 // Corrected getPageTexts call
                                 style: TextStyle(
-                                  fontFamily: "AmiriQ",
+                                  fontFamily: "Amiri",
                                   fontSize: cubit.fontSize,
                                   color: Colors.black, // Corrected color
                                   // height: 1.8, // Removed height

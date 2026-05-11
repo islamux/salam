@@ -10,6 +10,7 @@ class AppTheme {
   );
 
   static TextStyle customTextStyleHadith = const TextStyle(
+    fontFamily: "Amiri",
     color: AppColor.ayahHadith,
     fontWeight: FontWeight.bold,
   );
