@@ -71,9 +71,11 @@ ElmModelNewOrder(
 
 Source of truth: `project-tracker.json` | Agents: **opencode**, **gemini-cli**
 
+⚠️ **Tracker is manual** — After completing any subtask, update `command-center/project-tracker.json` (e.g. `"status": "done"`). Git commits do NOT auto-update the tracker.
+
 ```bash
-export PROJECT_ROOT=/media/islamux/Variety/Flutter_Projects/salam
-alias cc="node $PROJECT_ROOT/command-center-mcp/dist/cli.js"
+export CC_ROOT=/media/islamux/Variety/Flutter_Projects/salam/command-center
+alias cc="PROJECT_ROOT=$CC_ROOT node $CC_ROOT/packages/mcp/dist/cli.js"
 ```
 
 ### Read

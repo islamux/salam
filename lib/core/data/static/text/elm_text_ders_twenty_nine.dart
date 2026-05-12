@@ -162,7 +162,7 @@ class ElmTextDersTwentyNine {
 20 الانسان
 """;
   static const String ayahHadithTwentyNinePageFifteen_1 = """
-والقائل: {وإذا رأيت ثم رأيت نعيماً وملكا كبيراً}.
+والقائل: {وَإِذَا رَأَيْتَ ثَمَّ رَأَيْتَ نَعِيمًۭا وَمُلْكًۭا كَبِيرًا}.
 """;
 
   // Page 16
