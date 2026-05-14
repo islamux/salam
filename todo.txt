@@ -6,30 +6,9 @@
 1- review the original text with its ready class.
 2- review the class with its list.
 
-
 // clean comments 
 // Try to change functions to widgets --> make project more effecient
 
 // local notification 
-// change elm --> salam
-// add extensions: 1- navigation 
 // remove multiBlocProvider from main 
 
-// -- Search 
-// go to search page when press on the result
-// highlight search word
-
-
-// Because java is 21 based on doctor -v it must upgrade to 8.4 at least
-// upgrade gradle to 8.4 
-1- Update gradle-wrapper.properties:
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
-
-2- Update android/build.gradle:
-classpath 'com.android.tools.build:gradle:8.2.2'
-
-3- cd android
-./gradlew wrapper // maybe not necessary
-./gradlew clean build
-sdkmanager --update to fix:n Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
-renumbering the elm_text fix issues in numbring
