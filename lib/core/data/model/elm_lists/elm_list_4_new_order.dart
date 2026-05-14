@@ -1,6 +1,6 @@
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_four.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/text/elm_text_ders_four.dart';
 
 List<ElmModelNewOrder> elmList4NewOrder = [
   // page 1
@@ -45,7 +45,6 @@ List<ElmModelNewOrder> elmList4NewOrder = [
   ElmModelNewOrder(
     texts: [
       ElmTextDersFour.elmTextFourFour_1,
-      ElmTextDersFour.elmTextFourFive_1,
     ],
     order: [
       EnOrder.texts,

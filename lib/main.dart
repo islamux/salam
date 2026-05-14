@@ -1,11 +1,10 @@
-import 'package:elm/cubit/elm_cubits/home_cubit.dart';
+import 'package:khatir/cubit/elm_cubits/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:elm/app_routes.dart';
-import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/theme/app_them.dart';
-import 'package:elm/cubit/font_cubit.dart'; // Import your FontCubit
+import 'package:khatir/app_routes.dart';
+import 'package:khatir/core/data/static/routes_constant.dart';
+import 'package:khatir/core/data/static/theme/app_them.dart';
 
 void main() {
   // Splash screen
@@ -28,9 +27,7 @@ class ElmApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => HomeCubit()), // Initialize HomeCubit
-        BlocProvider(create: (_) => FontCubit()), // Initialize FontCubit
-        // Add more Cubits/Blocs here as needed
+        BlocProvider(create: (_) => HomeCubit()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

@@ -1,0 +1,5 @@
+node_modules/
+dist/
+*.map
+.cc-backups/
+.DS_Store

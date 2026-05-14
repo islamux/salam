@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings
 
-import 'package:elm/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:share_plus/share_plus.dart';
 
-import 'package:elm/cubit/base_cubit/base_page_state.dart';
+import 'package:khatir/cubit/base_cubit/base_page_state.dart';
 
 // BaseCubit: يحتوي على كل الدوال الأساسية
 abstract class BasePageCubit extends Cubit<BasePageState> {
@@ -22,7 +22,7 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   }
 
   void increaseFontSize() {
-    if (fontSize <= 37.0) {
+    if (fontSize < 37.0) {
       fontSize += 2.0;
       emit(PageFontSizeChanged(fontSize));
     }
@@ -61,7 +61,7 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
           .map((text) => text.data)
           .join('\n'); // Join text elements with newline separator
 
-      Share.share(joinedText);
+      SharePlus.instance.share(ShareParams(text: joinedText));
       emit(PageShareSuccess()); // Optionally handle the success case
     } catch (e) {
       emit(PageShareFailure(errorMessage: 'Failed to share!'));

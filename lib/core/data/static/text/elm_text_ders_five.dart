@@ -6,7 +6,7 @@ class ElmTextDersFive {
   """;
   static const String ayahHadithFiveOne_1 = """
 إِنَّاۤ أَنزَلۡنَاۤ إِلَیۡكَ ٱلۡكِتَـٰبَ بِٱلۡحَقِّ لِتَحۡكُمَ بَیۡنَ ٱلنَّاسِ بِمَاۤ أَرَىٰكَ ٱللَّهُۚ وَلَا تَكُن لِّلۡخَاۤئِنِینَ خَصِیمࣰا ۝١٠٥  
-النساء 105 العدل
+النساء العدل
 
 """;
 
@@ -22,7 +22,7 @@ class ElmTextDersFive {
   static const String ayahHadithFiveTwo_1 = """
 قال تعالى 
 وَقُلۡ جَاۤءَ ٱلۡحَقُّ وَزَهَقَ ٱلۡبَـٰطِلُۚ إِنَّ ٱلۡبَـٰطِلَ كَانَ زَهُوقࣰا ۝٨١
-الاسراء 81 
+الإسراء 
 """;
 
   static const String elmTextFiveTwo_1 = """
@@ -31,7 +31,7 @@ class ElmTextDersFive {
   static const String ayahHadithFiveTwo_2 = """
 قال تعالى 
 إِنَّاۤ أَنزَلۡنَاۤ إِلَیۡكَ ٱلۡكِتَـٰبَ بِٱلۡحَقِّ
-النساء 105 
+النساء 
 """;
 
 //page 3
@@ -41,7 +41,7 @@ class ElmTextDersFive {
 
   static const String ayahHadithFiveThree_1 = """
   لِتَحۡكُمَ بَیۡنَ ٱلنَّاسِ 
-النساء 105 
+النساء 
 """;
 
   static const String elmTextFiveThree_2 = """
@@ -61,7 +61,7 @@ class ElmTextDersFive {
   static const String ayahHadithFiveFive_1 = """
 قال سبحانه وتعالى 
 وَلَا یَجۡرِمَنَّكُمۡ شَنَءَانُ قَوۡمٍ عَلَىٰۤ أَلَّا تَعۡدِلُوا۟ۚ ٱعۡدِلُوا۟ هُوَ أَقۡرَبُ لِلتَّقۡوَىٰۖ
-المائدة 8 
+المائدة 
 """;
 
   static const String elmTextsFiveFive_2 = """
@@ -93,7 +93,7 @@ class ElmTextDersFive {
   static const String ayahHadithFiveNine_1 = """
 :قال تعالى 
 قُلۡ إِن كُنتُمۡ تُحِبُّونَ ٱللَّهَ فَٱتَّبِعُونِی یُحۡبِبۡكُمُ ٱللَّهُ وَیَغۡفِرۡ لَكُمۡ ذُنُوبَكُمۡۚ وَٱللَّهُ غَفُورࣱ رَّحِیمࣱ ۝٣١
-ال عمران 31 
+آل عمران 
  """;
 
 // page 10
@@ -104,7 +104,7 @@ class ElmTextDersFive {
 قال تعالى 
 فَأَیُّ ٱلۡفَرِیقَیۡنِ أَحَقُّ بِٱلۡأَمۡنِۖ إِن كُنتُمۡ تَعۡلَمُونَ ۝٨١
 ٱلَّذِینَ ءَامَنُوا۟ وَلَمۡ یَلۡبِسُوۤا۟ إِیمَـٰنَهُم بِظُلۡمٍ أُو۟لَـٰۤئِكَ لَهُمُ ٱلۡأَمۡنُ وَهُم مُّهۡتَدُونَ ۝٨٢
-الانعام 82 
+الأنعام 
 """;
 
   static const String elmTextFiveTen_2 = """
@@ -113,7 +113,7 @@ class ElmTextDersFive {
   static const String ayahHadithFiveTen_2 = """
    قال تعالى 
 وَتِلۡكَ ٱلۡقُرَىٰۤ أَهۡلَكۡنَـٰهُمۡ لَمَّا ظَلَمُوا۟ وَجَعَلۡنَا لِمَهۡلِكِهِم مَّوۡعِدࣰا ۝٥٩
-الكهف 59 
+الكهف 
 """;
 
 // page 11
@@ -127,11 +127,11 @@ class ElmTextDersFive {
   static const String ayahHadithFiveEleven_1 = """
    قال تعالى 
 وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠
-الشورى 31 
+الشورى 
 
    قال تعالى 
 وَلَنُذِیقَنَّهُم مِّنَ ٱلۡعَذَابِ ٱلۡأَدۡنَىٰ دُونَ ٱلۡعَذَابِ ٱلۡأَكۡبَرِ لَعَلَّهُمۡ یَرۡجِعُونَ ۝٢١
- السجدة 21 
+ السجدة 
 """;
   static const String elmTextFiveEleven_2 = """
 والعذاب الادنى أي البلاء والمحن والمصائب في الدنيا قبل الاخرة وهناك من يظن أن مايحصل له إبتلاء من الله وأن الله يحبه 
@@ -144,7 +144,7 @@ class ElmTextDersFive {
 """;
   static const String ayahHadithFiveTwelve_1 = """
  ۞ إِنَّ ٱللَّهَ یَأۡمُرُ بِٱلۡعَدۡلِ وَٱلۡإِحۡسَـٰنِ 
-النحل 90 
+النحل 
 """;
   static const String elmTextFiveTwelve_1 = """
 كما انك مأمور بالعدل فأنت مأمور بالإحسان، العدل: توزيع الأموال وفق النصيب المفروض، والإحسان 
@@ -152,7 +152,7 @@ class ElmTextDersFive {
   static const String ayahHadithFiveTwelve_2 = """
 قال تعالى 
 وَإِذَا حَضَرَ ٱلۡقِسۡمَةَ أُو۟لُوا۟ ٱلۡقُرۡبَىٰ وَٱلۡیَتَـٰمَىٰ وَٱلۡمَسَـٰكِینُ فَٱرۡزُقُوهُم مِّنۡهُ 
-النساء 8 
+النساء 
 """;
 
   static const String elmTextFiveTwelve_2 = """

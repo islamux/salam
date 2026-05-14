@@ -1,13 +1,13 @@
-import 'package:elm/core/data/model/elm_lists/elm_list_1_new_order.dart';
-import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/elm_cubits/elm_1_cubit.dart';
-import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/view/widget/custom_text_slider/generic_custom_text_slider.dart';
-import 'package:elm/core/data/static/imagelink/image_link.dart'; // Added import
+import 'package:khatir/core/data/model/elm_lists/elm_list_1_new_order.dart';
+import 'package:khatir/core/data/static/routes_constant.dart';
+import 'package:khatir/core/data/static/theme/app_color_constant.dart';
+import 'package:khatir/cubit/elm_cubits/elm_1_cubit.dart';
+import 'package:khatir/helpers/extensions/navigation_helper.dart';
+import 'package:khatir/view/widget/custom_text_slider/generic_custom_text_slider.dart';
+import 'package:khatir/core/data/static/imagelink/image_link.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:elm/helpers/search/data_search.dart';
+import 'package:khatir/helpers/search/data_search.dart';
 
 class Elm1Page extends StatelessWidget {
   final int? initialPage;
@@ -16,98 +16,91 @@ class Elm1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) {
-        final cubit = Elm1Cubit();
-        if (initialPage != null && initialPage! > 0) {
-          cubit.goToPageAfterBuild(initialPage!);
-        }
-        return cubit;
-      }, // Provide the Elm1Cubit
+    // Step 1: Create the cubit
+    final cubit = Elm1Cubit();
+    if (initialPage != null && initialPage! > 0) {
+      cubit.goToPageAfterBuild(initialPage!);
+    }
 
-      child: Builder(
-        builder: (context) {
-          return Scaffold(
-            appBar: AppBar(
-              backgroundColor: AppColor.black,
-              foregroundColor: AppColor.amber,
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                    // Share content using cubit
-                    onPressed: () {
-                      final currentPageIndex =
-                          context.read<Elm1Cubit>().currentPageIndex;
-                      context.read<Elm1Cubit>().customShareContent(
-                          currentPageIndex, elmList1NewOrder);
-                    },
-                    icon: const Icon(Icons.share),
-                  ),
-                  const Text(
-                    "الخاطرة 1", // Update title
-                  ),
-                ],
-              ),
-              centerTitle: true,
-              leading: GestureDetector(
-                onTap: () {
-                  // Reset counter and navigate back
-                  context.read<Elm1Cubit>().resetCounter();
-                  // todo apply extensions
-                  context.pushNamed(RoutesConstant.home);
-//                  Navigator.pushNamed(context, RoutesConstant.home);
-                },
-                child: const Icon(Icons.arrow_back),
-              ),
-              actions: [
-                IconButton(
-                  onPressed: () {
-                    context
-                        .read<Elm1Cubit>()
-                        .decreaseFontSize(); // Decrease font size
-                  },
-                  icon: const Icon(Icons.remove),
-                ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text("الخط"), // Font label
-                  ],
-                ),
-                IconButton(
-                  onPressed: () {
-                    context
-                        .read<Elm1Cubit>()
-                        .increaseFontSize(); // Increase font size
-                  },
-                  icon: const Icon(Icons.add),
-                ),
-                IconButton(
-                  onPressed: () {
-                    showSearch(context: context, delegate: DataSearch());
-                  },
-                  icon: const Icon(Icons.search),
-                ),
-              ],
-            ),
-            body: SafeArea(
-              // Removed const
-              child: Column(
-                children: [
-                  Expanded(
-                    child: GenericCustomTextSlider(
-                      cubit: context.read<Elm1Cubit>(),
-                      dataList: elmList1NewOrder,
-                      backgroundImagePath: ImageLink.image12,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
+    // Step 2: Build the slider content first
+    Widget sliderContent = GenericCustomTextSlider(
+      cubit: cubit,
+      dataList: elmList1NewOrder,
+      backgroundImagePath: ImageLink.image12,
+    );
+
+    // Step 3: Build the body
+    Widget body = SafeArea(
+      child: Column(
+        children: [
+          Expanded(child: sliderContent),
+        ],
       ),
+    );
+
+    // Step 5: Build the Scaffold
+    PreferredSizeWidget appBar = AppBar(
+      backgroundColor: AppColor.black,
+      foregroundColor: AppColor.amber,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          IconButton(
+            onPressed: () {
+              final currentPageIndex = cubit.currentPageIndex;
+              cubit.customShareContent(currentPageIndex, elmList1NewOrder);
+            },
+            icon: const Icon(Icons.share),
+          ),
+          const Text("الخاطرة 1"),
+        ],
+      ),
+      centerTitle: true,
+      leading: GestureDetector(
+        onTap: () {
+          cubit.resetCounter();
+          context.pushNamed(RoutesConstant.home);
+        },
+        child: const Icon(Icons.arrow_back),
+      ),
+      actions: [
+        IconButton(
+          onPressed: () {
+            cubit.decreaseFontSize();
+          },
+          icon: const Icon(Icons.remove),
+        ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text("الخط"),
+          ],
+        ),
+        IconButton(
+          onPressed: () {
+            cubit.increaseFontSize();
+          },
+          icon: const Icon(Icons.add),
+        ),
+        IconButton(
+          onPressed: () {
+            showSearch(context: context, delegate: DataSearch());
+          },
+          icon: const Icon(Icons.search),
+        ),
+      ],
+    );
+
+    // Step 5: Build the Scaffold
+    Widget screen = Scaffold(
+      appBar: appBar,
+      body: body,
+    );
+
+    // Step 6: Single return with BlocProvider
+    return BlocProvider.value(
+      value: cubit,
+      child: screen,
     );
   }
 }

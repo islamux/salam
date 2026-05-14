@@ -1,4 +1,4 @@
-import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:khatir/core/data/static/theme/app_color_constant.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -10,6 +10,7 @@ class AppTheme {
   );
 
   static TextStyle customTextStyleHadith = const TextStyle(
+    fontFamily: "Amiri",
     color: AppColor.ayahHadith,
     fontWeight: FontWeight.bold,
   );

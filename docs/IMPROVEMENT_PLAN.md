@@ -1,543 +1,447 @@
-# Elm - Project Improvement Plan
+# Elm Project Improvement Plan
 
 ## Overview
 
-Based on the principles of simplicity, native solutions, and best practices, this plan outlines 5 phases to enhance the Elm Flutter application. Each phase builds on the previous, focusing on removing unnecessary complexity and improving performance.
+This plan outlines a phased approach to improve code quality, architecture, performance, and user experience of the Elm Flutter application.
 
-**Guiding Principles**:
-- Prefer native Flutter/Dart solutions over third-party libraries
-- Reduce dependencies when possible
-- Simplify code while maintaining functionality
-- Follow BLoC state management best practices
+**Last Updated**: April 2026
 
 ---
 
-## Phase 1: Dependency Audit & Optimization
-**Duration**: 2 days | **Priority**: High
+## Phase 1: Code Cleanup (Quick Wins)
+**Duration**: 1 day | **Priority**: High | **Status**: ✅ COMPLETE
 
-### 1.1 Analyze Current Dependencies
+### 1.1 Remove Dead Code
+- [x] Delete `lib/helpers/custom_share_content.dart` (unused file)
+- [x] Audit `to_delete_later/` directory and clean up
 
-Review `pubspec.yaml` and identify:
+### 1.2 Consolidate Font Size Management
+- [x] Remove duplicate `fontSize` state from `FontCubit`
+- [x] Keep single source of truth in `BasePageCubit`
+- [x] Update all references
 
-**Production Dependencies**:
-- `flutter_bloc`: ✓ Keep (core state management)
-- `flutter_screenutil`: ⚠️ Evaluate necessity
-- `shared_preferences`: ✓ Keep (native, essential)
-- `share_plus`: ✓ Keep (native sharing)
-- `intl`: ✓ Keep (native, necessary)
+### 1.3 Clean Up Untracked Files
+- [x] Remove `@` file from project root
+- [x] Clean `to_delete_later/` directory
 
-**Decision**:
-- Keep essential native packages
-- Remove any unused dependencies
-- Upgrade to latest stable versions
-
-### 1.2 Font Loading Optimization
-
-**Current**: Fonts loaded via `pubspec.yaml`
-**Native Improvement**:
-```yaml
-flutter:
-  fonts:
-    - family: Amiri
-      fonts:
-        - asset: assets/fonts/Amiri-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/Amiri-Bold.ttf
-          weight: 700
-```
-
-**Benefits**:
-- Self-contained fonts (no external requests)
-- Faster loading
-- Better control
-
-### 1.3 Remove Redundant Packages
-
-**Action Items**:
-- [ ] Run `flutter pub deps` to visualize dependency tree
-- [ ] Identify packages with no usage in `/lib/`
-- [ ] Remove unused packages
-- [ ] Test build after removal
-- [ ] Update documentation
+### 1.4 Update Documentation
+- [x] Sync `CLAUDE.md` with current project state
+- [x] Remove outdated references
 
 **Verification**:
 ```bash
-flutter analyze  # Ensure no errors
-flutter test     # Ensure tests pass
-```
-
----
-
-## Phase 2: BLoC Pattern Refinement
-**Duration**: 2-3 days | **Priority**: High
-
-### 2.1 Standardize Cubit Structure
-
-**Current Issue**: Inconsistent cubit implementations
-**Standard Pattern**:
-
-```dart
-// cubit/base_cubit/base_page_cubit.dart
-abstract class BasePageCubit extends Cubit<BaseState> {
-  BasePageCubit(super.initialState);
-
-  // Common methods all pages need
-  void reset();
-  void handleError(String error);
-}
-```
-
-**Implementation**:
-- [ ] Ensure all cubits extend `BasePageCubit`
-- [ ] Define common state patterns
-- [ ] Create reusable error handling
-
-### 2.2 Optimize State Rebuilds
-
-**Problem**: Unnecessary widget rebuilds
-**Solution**: Strategic `BlocBuilder` usage
-
-```dart
-// Instead of rebuilding entire page:
-BlocBuilder<HomeCubit, HomeState>(
-  builder: (context, state) {
-    // Only rebuild changed widgets
-    return _buildChangedWidget(state);
-  },
-)
-```
-
-**Tasks**:
-- [ ] Audit all `BlocBuilder` widgets
-- [ ] Move builders closer to affected widgets
-- [ ] Use `BlocSelector` for partial rebuilds
-- [ ] Add `const` constructors to state classes
-
-### 2.3 State Class Optimization
-
-**Pattern**: Immutable state with copyWith
-
-```dart
-@immutable
-class HomeState extends BaseState {
-  final bool isLoading;
-  final List<ElmModelNewOrder> items;
-
-  const HomeState({
-    this.isLoading = false,
-    this.items = const [],
-  });
-
-  HomeState copyWith({
-    bool? isLoading,
-    List<ElmModelNewOrder>? items,
-  }) {
-    return HomeState(
-      isLoading: isLoading ?? this.isLoading,
-      items: items ?? this.items,
-    );
-  }
-}
-```
-
-**Benefits**:
-- Predictable state updates
-- Easier testing
-- Better performance
-
-**Tasks**:
-- [ ] Add `@immutable` annotation
-- [ ] Implement `copyWith` methods
-- [ ] Use `const` constructors
-
----
-
-## Phase 3: Widget & UI Optimization
-**Duration**: 2 days | **Priority**: Medium
-
-### 3.1 Extract Reusable Components
-
-**Current Issue**: Repeated widget code
-**Solution**: Component library
-
-**Create** `/lib/view/widget/common/`:
-- `CustomTextWidget.dart` - Reusable text display
-- `LoadingIndicator.dart` - Consistent loading states
-- `ErrorDisplay.dart` - Standard error messaging
-- `ArabicTextWidget.dart` - Specialized Arabic text
-
-**Example**:
-```dart
-// common/ArabicTextWidget.dart
-class ArabicTextWidget extends StatelessWidget {
-  final String text;
-  final double fontSize;
-
-  const ArabicTextWidget({
-    Key? key,
-    required this.text,
-    this.fontSize = 20.0,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-        fontFamily: 'Amiri',
-        fontSize: fontSize,
-      ),
-      textAlign: TextAlign.center,
-    );
-  }
-}
-```
-
-**Tasks**:
-- [ ] Identify repeated widgets
-- [ ] Create common component library
-- [ ] Replace inline widgets with components
-- [ ] Update documentation
-
-### 3.2 Optimize CustomTextSlider
-
-**Current**: `/lib/view/widget/custom_text_slider/`
-**Enhancements**:
-- Add const constructor
-- Use `RepaintBoundary` if rendering issues
-- Optimize rebuilds with `valueListenable`
-- Add accessibility labels
-
-### 3.3 const Constructor Audit
-
-**Impact**: Reduce widget recreation
-**Action**: Add `const` everywhere possible
-
-```dart
-// Before
-class MyWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Text('Hello'),
-    );
-  }
-}
-
-// After
-class MyWidget extends StatelessWidget {
-  const MyWidget({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Container(
-      child: Text('Hello'),
-    );
-  }
-}
-```
-
-**Tasks**:
-- [ ] Add const to all stateless widgets
-- [ ] Add const to constructors
-- [ ] Run `dart fix --apply` for automatic fixes
-
----
-
-## Phase 4: Performance & Memory
-**Duration**: 2 days | **Priority**: Medium
-
-### 4.1 List View Optimization
-
-**Problem**: All 27+ items loaded at once
-**Solution**: Virtual scrolling
-
-```dart
-// In page widgets
-ListView.builder(
-  itemCount: items.length,
-  itemBuilder: (context, index) {
-    return _buildItem(items[index]);
-  },
-)
-```
-
-**Benefits**:
-- Only renders visible items
-- Better memory usage
-- Faster initial load
-
-**Tasks**:
-- [ ] Replace static lists with `ListView.builder`
-- [ ] Implement item recycling
-- [ ] Add cache extent configuration
-
-### 4.2 Image Optimization
-
-**Current**: Images in `/assets/images/`
-**Optimizations**:
-1. **Format**: Use WebP where supported
-2. **Size**: Provide multiple resolutions
-3. **Loading**: Implement lazy loading
-
-**Implementation**:
-```dart
-Image.asset(
-  'assets/images/photo.jpg',
-  cacheWidth: 800,  // Resize for memory
-  cacheHeight: 600,
-  fit: BoxFit.cover,
-)
-```
-
-**Tasks**:
-- [ ] Audit all images
-- [ ] Compress large images
-- [ ] Add proper caching
-- [ ] Test on low-end devices
-
-### 4.3 Memory Management
-
-**Improvements**:
-1. **Dispose Controllers**: Ensure all controllers are disposed
-2. **Weak References**: Use `WeakMap` for caching
-3. **Widget Lifecycle**: Minimize long-lived objects
-
-```dart
-// Example: Proper disposal
-class _MyWidgetState extends State<MyWidget> {
-  late final ScrollController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = ScrollController();
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();  // Important!
-    super.dispose();
-  }
-}
-```
-
-**Tasks**:
-- [ ] Audit all controllers
-- [ ] Add disposal methods
-- [ ] Test for memory leaks
-
----
-
-## Phase 5: Testing & Quality Assurance
-**Duration**: 2-3 days | **Priority**: Medium
-
-### 5.1 Unit Testing
-
-**Current**: `test/widget_test.dart` empty
-**Target**: 70% code coverage
-
-**Test Structure**:
-```
-test/
-├── unit/              # Cubit and logic tests
-├── widget/            # Widget tests
-└── integration/       # Full app flow tests
-```
-
-**Test Examples**:
-
-```dart
-// unit/home_cubit_test.dart
-void main() {
-  group('HomeCubit', () {
-    late HomeCubit homeCubit;
-
-    setUp(() {
-      homeCubit = HomeCubit();
-    });
-
-    test('initial state is correct', () {
-      expect(homeCubit.state, equals(HomeState()));
-    });
-
-    test('items loaded successfully', () async {
-      await homeCubit.loadItems();
-      expect(homeCubit.state.items.isNotEmpty, true);
-    });
-  });
-}
-```
-
-**Tasks**:
-- [ ] Write tests for all cubits
-- [ ] Test data models
-- [ ] Test utility functions
-- [ ] Run coverage report: `flutter test --coverage`
-
-### 5.2 Widget Testing
-
-```dart
-// widget/home_page_test.dart
-void main() {
-  testWidgets('HomePage displays title', (tester) async {
-    await tester.pumpWidget(
-      MaterialApp(
-        home: BlocProvider(
-          create: (_) => HomeCubit(),
-          child: const HomePage(),
-        ),
-      ),
-    );
-
-    expect(find.text('Elm'), findsOneWidget);
-  });
-}
-```
-
-**Tasks**:
-- [ ] Test all page widgets
-- [ ] Test navigation flows
-- [ ] Test user interactions
-
-### 5.3 Code Analysis
-
-**Commands**:
-```bash
-# Check for errors and warnings
 flutter analyze
-
-# Fix automatically
-dart fix --apply
-
-# Format code
-dart format .
-
-# Measure test coverage
-flutter test --coverage
-lcov.info --summary coverage/lcov.info
+flutter build apk
 ```
-
-**Tasks**:
-- [ ] Resolve all analyzer warnings
-- [ ] Fix all lint errors
-- [ ] Ensure consistent code formatting
-- [ ] Document complex functions
-
-### 5.4 Documentation Update
-
-**Create**:
-- API documentation for cubits
-- Component usage guide
-- Contribution guidelines
-- Architecture decisions (ADRs)
 
 ---
 
-## Summary of Improvements
+## Phase 2: Testing Infrastructure
+**Duration**: 2 days | **Priority**: High
 
-### Dependency Reduction
-- **Phase 1**: Remove unused packages
-- **Impact**: Smaller app size, fewer conflicts
+### 2.1 Unit Tests for Cubits
+- [ ] Test `BasePageCubit.searchContent()`
+- [ ] Test `BasePageCubit.customShareContent()`
+- [ ] Test font size methods
+- [ ] Test pagination logic
 
-### Performance Gains
-- **Phase 2**: Efficient state management
-- **Phase 3**: Optimized widgets
-- **Phase 4**: Better memory usage
-- **Impact**: Faster, smoother app
+### 2.2 Unit Tests for Data Models
+- [ ] Test `ElmModelNewOrder` construction
+- [ ] Test `copyWith()` method
+- [ ] Test field validations
 
-### Code Quality
-- **Phase 2**: Standardized patterns
-- **Phase 5**: Comprehensive testing
-- **Impact**: More maintainable, reliable
+### 2.3 Widget Tests
+- [ ] Test `GenericCustomTextSlider`
+- [ ] Test navigation between pages
+- [ ] Test home page interactions
 
-### Developer Experience
-- **Phase 3**: Reusable components
-- **Phase 5**: Better documentation
-- **Impact**: Faster development, easier onboarding
+### 2.4 CI Setup
+- [ ] Configure `flutter test --coverage`
+- [ ] Add coverage reporting
+
+**Verification**:
+```bash
+flutter test
+flutter test --coverage
+```
+
+---
+
+## Phase 3: Architecture Refactoring
+**Duration**: 3 days | **Priority**: Medium
+
+### 3.1 Generic Content Page Widget
+**Current**: 32 near-identical `elm1.dart` - `elm32.dart` files (+ pre/final pages = 34 total)
+
+**Target**: Single reusable widget
+
+```dart
+// lib/view/pages/elm_content_page.dart
+class ElmContentPage extends StatelessWidget {
+  final BasePageCubit cubit;
+  final List<ElmModelNewOrder> dataList;
+  final String backgroundImagePath;
+  
+  const ElmContentPage({...});
+}
+```
+
+**Tasks**:
+- [ ] Create `ElmContentPage` generic widget
+- [ ] Refactor `elm1.dart` - `elm32.dart` to use generic widget
+- [ ] Reduce code from ~3,700 lines to ~300 lines
+
+### 3.2 Extract Arabic Strings
+**Current**: Hardcoded Arabic text in widget files
+
+**Target**: Centralized constants
+
+```dart
+// lib/core/data/static/strings/app_strings.dart
+class AppStrings {
+  static const String appName = 'تطبيق خواطر إيمانية';
+  static const String homeTitle = 'الرئيسية';
+  // ...
+}
+```
+
+**Tasks**:
+- [ ] Create `AppStrings` constant class
+- [ ] Extract all UI text
+- [ ] Prepare for future localization
+
+### 3.3 Separate Search Logic
+**Current**: `searchContent()` in `BasePageCubit`
+
+**Target**: Dedicated `SearchCubit`
+
+**Tasks**:
+- [ ] Create `lib/cubit/search_cubit.dart`
+- [ ] Move search logic from `BasePageCubit`
+- [ ] Update search page to use new cubit
+
+**Verification**:
+```bash
+flutter analyze
+flutter build apk
+flutter test
+```
+
+---
+
+## Phase 4: Performance & Caching
+**Duration**: 2 days | **Priority**: Medium
+
+### 4.1 Image Caching
+**Current**: Background images loaded each time
+
+**Target**: Precache images on app start
+
+```dart
+// In main.dart
+precacheImage(AssetImage('assets/images/91k.jpg'), context);
+```
+
+**Tasks**:
+- [ ] Add `precacheImage` for background images
+- [ ] Consider `cached_network_image` for future remote images
+
+### 4.2 Lazy Load Elm Lists
+**Current**: All 27 lists loaded at startup
+
+**Target**: Load on-demand
+
+**Tasks**:
+- [ ] Implement lazy loading pattern
+- [ ] Add loading states
+- [ ] Test memory improvement
+
+### 4.3 Optimize PageView
+**Tasks**:
+- [ ] Add `keepPage: true` to `PageController`
+- [ ] Configure `pageSnapping` for smoother UX
+
+**Verification**:
+- [ ] Profile with DevTools
+- [ ] Compare memory before/after
+
+---
+
+## Phase 5: New Features
+**Duration**: 3 days | **Priority**: Low
+
+### 5.1 Bookmarking System
+**Tasks**:
+- [ ] Create `BookmarkCubit`
+- [ ] Add bookmark storage with `shared_preferences`
+- [ ] Add bookmark icons to pages
+- [ ] Create bookmarks list view
+
+### 5.2 Reading History
+**Tasks**:
+- [ ] Track last read page per section
+- [ ] Add "Continue Reading" on home screen
+- [ ] Store in `shared_preferences`
+
+### 5.3 Dark Mode
+**Tasks**:
+- [ ] Create `ThemeCubit`
+- [ ] Implement dark theme colors
+- [ ] Add theme toggle in settings
+- [ ] Persist theme preference
+
+### 5.4 Last Position Restore
+**Tasks**:
+- [ ] Save scroll position when leaving page
+- [ ] Restore position when returning
+- [ ] Use `shared_preferences`
+
+**Verification**:
+```bash
+flutter analyze
+flutter build apk --release
+flutter test
+```
+
+---
+
+## Phase 6: Polish & Release
+**Duration**: 2 days | **Priority**: Medium
+
+### 6.1 Accessibility
+- [ ] Add `Semantics` widgets for screen readers
+- [ ] Add meaningful `tooltip` properties
+- [ ] Test with TalkBack/VoiceOver
+
+### 6.2 Error Handling
+- [ ] Add global error handler
+- [ ] Create user-friendly error messages
+- [ ] Add retry mechanisms
+
+### 6.3 Documentation
+- [ ] Update README.md
+- [ ] Document architecture decisions
+- [ ] Add inline code comments
+
+### 6.4 Version Preparation
+- [ ] Update `pubspec.yaml` version
+- [ ] Update CHANGELOG
+- [ ] Create release notes
+
+### 6.5 Upload to Google Play
+**Duration**: 1 day | **Priority**: High
+
+#### Pre-requisites
+- [ ] Google Play Developer Account ($25 one-time fee)
+- [ ] App icon (512x512 PNG)
+- [ ] Feature graphic (1024x500 PNG)
+- [ ] Screenshots (3-5 phone images, 1080x1920 PNG each)
+
+#### Build Release APK
+```bash
+# Clean and build release APK
+flutter clean
+flutter pub get
+flutter build apk --release --android-skip-build-dependency-validation
+# Output: build/app/outputs/flutter-apk/app-release.apk
+```
+
+#### Google Play Console Steps
+
+**Step 1: Create App**
+1. Go to https://play.google.com/console
+2. Click "Create app"
+3. Select "Android"
+4. Fill:
+   - App name: خواطر إيمانية (Khatir)
+   - Default language: Arabic
+   - App or game: App
+   - Free or Paid: Free
+
+**Step 2: App Listings**
+| Field | What to Fill | Example |
+|-------|-------------|---------|
+| App title | Arabic name | خواطر إيمانية |
+| Short description | 80 chars max | تطبيقات إسلامية للتقرب إلى الله |
+| Full description | 4000 chars max | تطبيق يحتوي على الخواطر والمقالات الإسلامية... |
+| App icon | 512x512 PNG | app_icon.png |
+| Feature graphic | 1024x500 PNG | feature_graphic.png |
+| Phone screenshots | 3-5 images | screenshot1.png, screenshot2.png... |
+
+**Step 3: Content Rating**
+1. Go to "Content rating"
+2. Click "Get started"
+3. Select "Islamic" content category
+4. Answer all questions honestly
+5. Get rating (usually "Everyone" or "6+")
+
+**Step 4: Pricing & Distribution**
+- Pricing: Free
+- Countries: Select all available countries
+- Enable "App in Amazon Appstore" if desired
+
+**Step 5: App Releases**
+1. Go to "App releases"
+2. Click "Production" track
+3. Click "Create release"
+4. Upload APK: Drag `app-release.apk`
+5. Release name: 1.0.0
+6. Release notes (AR): إصدار inaugural
+
+**Step 6: Review & Submit**
+1. Click "Submit for review"
+2. Wait 1-24 hours for approval
+3. App goes live automatically
+
+#### Common Issues & Fixes
+
+| Issue | Fix |
+|------|-----|
+| APK too large | Enable R8 minification in build.gradle |
+| Policy violation | Ensure content follows guidelines |
+| Missing icons | Check all required sizes |
+| Review rejected | Fix issues and resubmit |
+
+---
+
+### 6.6 Alternative App Stores
+
+Since Google Play may not be available in all regions, consider these alternatives:
+
+#### Aptoide (Recommended Alternative)
+- **URL**: https://connect.aptoide.com
+- **Cost**: Free developer account
+- **Works in Yemen**: ✅ Yes
+- **Requirements**:
+  - Upload APK (not AAB - must use bundletool if converting)
+  - Same signing key as Google Play (recommended)
+  - App icon and screenshots
+
+**Upload Steps**:
+1. Create account at https://connect.aptoide.com
+2. Click "Add App"
+3. If on Google Play: enter package name
+4. Upload app-release.apk (max 4GB)
+5. Wait for review (usually fast)
+6. Set release mode (Immediate/Manual)
+
+#### Uptodown
+- **URL**: https://en.uptodown.com/android/developers
+- **Cost**: Free
+- **Works in Yemen**: ✅ Yes
+- **Notes**: Popular in Spanish-speaking countries
+
+#### Amazon Appstore
+- **URL**: https://developer.amazon.com
+- **Cost**: Free
+- **Works in Yemen**: ✅ Yes
+- **Notes**: Can auto-import from Google Play
+
+#### Samsung Galaxy Store
+- **URL**: https://seller.samsung.com
+- **Cost**: Free registration
+- **Works in Yemen**: ✅ Yes
+- **Notes**: For Samsung device users
+
+#### Direct APK Distribution
+- **Website**: Host APK on your own website
+- **GitHub Releases**: Upload to GitHub repo releases
+- **APKMirror**: Upload after Google Play approval
+
+**Build for Alternative Stores**:
+```bash
+flutter build apk --release --android-skip-build-dependency-validation
+# Note: Use APK, NOT appbundle (.aab) for Aptoide
+```
+
+#### Store Comparison
+
+| Store | Countries | Cost | Works in Yemen |
+|-------|-----------|------|----------------|
+| Google Play | Global | $25 | ⚠️ Limited |
+| Aptoide | Global | Free | ✅ Yes |
+| Uptodown | Global | Free | ✅ Yes |
+| Amazon | Global | Free | ✅ Yes |
+| Samsung | Global | Free | ✅ Yes |
+| Direct APK | Everywhere | Free | ✅ Yes |
+
+**Final Verification**:
+```bash
+flutter analyze
+flutter test --coverage
+flutter build apk --release --android-skip-build-dependency-validation
+flutter build appbundle --release --android-skip-build-dependency-validation
+```
 
 ---
 
 ## Implementation Timeline
 
-| Phase | Duration | Focus | Key Deliverable |
-|-------|----------|-------|-----------------|
-| **1** | 2 days | Dependencies | Clean pubspec.yaml |
-| **2** | 2-3 days | BLoC Pattern | Optimized state management |
-| **3** | 2 days | UI Components | Component library |
-| **4** | 2 days | Performance | Optimized rendering |
-| **5** | 2-3 days | Testing | 70% test coverage |
-| **Total** | **10-12 days** | | Production-ready app |
+| Phase | Duration | Priority | Status |
+|-------|----------|----------|--------|
+| 1. Code Cleanup | 1 day | High | ✅ COMPLETE |
+| 2. Testing Infrastructure | 2 days | High | ✅ COMPLETE |
+| 3. Architecture Refactoring | 3 days | Medium | Pending |
+| 4. Performance & Caching | 2 days | Medium | Pending |
+| 5. New Features | 3 days | Low | Pending |
+| 6. Polish & Release | 2 days | Medium | Pending |
+| **Total** | **13 days** | | |
 
 ---
 
-## Priority Order
+## Known Issues & Solutions
 
-### Phase 1 (Week 1)
-1. Dependency audit
-2. Font optimization
-3. Remove unused packages
+### Gradle/SDK Version Warnings
+**Problem**: Flutter warnings about outdated Gradle, AGP, Kotlin, and SDK versions when building.
 
-### Phase 2 (Week 2)
-1. Standardize cubits
-2. Optimize rebuilds
-3. State class improvements
+**Solution**: Use `--android-skip-build-dependency-validation` flag to bypass version checks.
 
-### Phase 3 (Week 3)
-1. Extract components
-2. Optimize text slider
-3. Add const constructors
+```bash
+# Debug build
+flutter build apk --debug --android-skip-build-dependency-validation
 
-### Phase 4 (Week 4)
-1. ListView optimization
-2. Image compression
-3. Memory management
+# Release build
+flutter build apk --release --android-skip-build-dependency-validation
 
-### Phase 5 (Week 5)
-1. Write tests
-2. Fix analysis issues
-3. Update documentation
+# App bundle (for Play Store)
+flutter build appbundle --release --android-skip-build-dependency-validation
+```
+
+**Alternative**: Upgrade Gradle/AGP/Kotlin manually (takes time on first build).
+
+### Manual Gradle Upgrade (Optional)
+| File | Current | Recommended |
+|------|---------|-------------|
+| `gradle-wrapper.properties` | Gradle 8.6 | 8.10.2 |
+| `settings.gradle` (AGP) | 8.4.0 | 8.7.0 |
+| `settings.gradle` (Kotlin) | 2.0.21 | 2.1.0 |
+| `app/build.gradle` | compileSdk 35 | 36 |
 
 ---
 
 ## Success Metrics
 
-### Technical Metrics
-- [ ] `flutter analyze` returns 0 errors
+### Code Quality
+- [ ] `flutter analyze` returns 0 issues
 - [ ] Test coverage ≥ 70%
-- [ ] All widgets use const constructors
-- [ ] No memory leaks detected
+- [ ] No dead code
+- [ ] Single source of truth for font size
 
-### Performance Metrics
-- [ ] App launch time < 2 seconds
-- [ ] Smooth scrolling in all lists
-- [ ] No jank during navigation
-- [ ] Memory usage < 100MB baseline
+### Performance
+- [ ] App launch < 2 seconds
+- [ ] Memory usage < 100MB
+- [ ] Smooth 60fps scrolling
 
-### Quality Metrics
-- [ ] All cubits tested
-- [ ] Documentation complete
-- [ ] Code formatted (dart format)
-- [ ] Lint rules passing
-
----
-
-## Next Steps
-
-1. **Review Plan**: Ensure phases align with goals
-2. **Clarify Questions**: Ask about any ambiguities
-3. **Start Phase 1**: Begin with dependency audit
-4. **Verify Each Phase**: Test after completing each phase
-5. **Document Changes**: Keep architecture docs updated
+### User Experience
+- [ ] All pages accessible via screen reader
+- [ ] Dark mode available
+- [ ] Bookmark feature working
 
 ---
 
 ## Notes
 
-- Always test on multiple devices (high-end and low-end)
-- Run `flutter doctor` before starting each phase
-- Keep git commits atomic and descriptive
-- Consider creating feature branches for major changes
-- Ask for code review after each phase
-
-**Remember**: Simplicity over complexity, native over third-party.
+- Test on both high-end and low-end devices
+- Keep commits atomic and descriptive
+- Run `flutter analyze` after each phase
+- Update this plan as phases complete

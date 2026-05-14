@@ -1,6 +1,6 @@
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_twenty_four.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/text/elm_text_ders_twenty_four.dart';
 
 List<ElmModelNewOrder> elmList24NewOrder = [
   // PageOne
@@ -328,21 +328,21 @@ List<ElmModelNewOrder> elmList24NewOrder = [
   // PageEighteen
   ElmModelNewOrder(
     texts: [
-      ElmTextTwentyFour.elmTextTwentyFourNinteen_1,
+      ElmTextTwentyFour.elmTextTwentyFourNineteen_1,
     ],
     order: [
       EnOrder.texts,
     ],
   ),
 
-  // PageNinteen
+  // PageNineteen
   ElmModelNewOrder(
     texts: [
-      ElmTextTwentyFour.elmTextTwentyFourNinteen_1,
-      ElmTextTwentyFour.elmTextTwentyFourNinteen_2,
+      ElmTextTwentyFour.elmTextTwentyFourNineteen_1,
+      ElmTextTwentyFour.elmTextTwentyFourNineteen_2,
     ],
     ayahs: [
-      ElmTextTwentyFour.ayahHadithTwentyFourNinteen_1,
+      ElmTextTwentyFour.ayahHadithTwentyFourNineteen_1,
     ],
     order: [
       EnOrder.texts,

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:elm/core/data/static/imagelink/image_link.dart';
-import 'package:elm/core/data/static/routes_constant.dart';
-import 'package:elm/core/data/static/theme/app_color_constant.dart';
-import 'package:elm/cubit/elm_cubits/home_cubit.dart';
-import 'package:elm/helpers/extensions/navigation_helper.dart';
-import 'package:elm/helpers/handle_pop.dart';
-import 'package:elm/helpers/search/data_search.dart';
-import 'package:elm/view/widget/home/custom_drawer_listview.dart';
+import 'package:khatir/core/data/static/imagelink/image_link.dart';
+import 'package:khatir/core/data/static/routes_constant.dart';
+import 'package:khatir/core/data/static/theme/app_color_constant.dart';
+import 'package:khatir/cubit/elm_cubits/home_cubit.dart';
+import 'package:khatir/helpers/extensions/navigation_helper.dart';
+import 'package:khatir/helpers/handle_pop.dart';
+import 'package:khatir/helpers/search/data_search.dart';
+import 'package:khatir/view/widget/home/custom_drawer_listview.dart';
 
 import '../widget/custom_botton.dart';
 
@@ -354,6 +354,13 @@ class Home extends StatelessWidget {
                             customText: "(31) يا بني اركب معنا",
                             onPressed: () {
                               context.pushNamed(RoutesConstant.elm31);
+                            },
+                            icon: const Icon(Icons.menu_book),
+                          ),
+                          CustomButton(
+                            customText: "(32) الإحساس بالنذالة شيء لايطاق",
+                            onPressed: () {
+                              context.pushNamed(RoutesConstant.elm32);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),

@@ -1,6 +1,6 @@
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_twenty_one.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/text/elm_text_ders_twenty_one.dart';
 
 // TextDersSeventeen
 List<ElmModelNewOrder> elmList21NewOrder = [
@@ -381,7 +381,7 @@ List<ElmModelNewOrder> elmList21NewOrder = [
   // page 17
   ElmModelNewOrder(
     subtitles: [
-      ElmTextTwentyOne.subtitleTwentyOnSeventeen_1,
+      ElmTextTwentyOne.subtitleTwentyOneSeventeen_1,
     ],
     texts: [
       ElmTextTwentyOne.elmTextTwentyOneSeventeen_1,

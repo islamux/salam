@@ -1,6 +1,6 @@
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_thirty_one.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/text/elm_text_ders_thirty_one.dart';
 
 List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
   // Page 1
@@ -132,7 +132,7 @@ List<ElmModelNewOrder> elmList31NewOrder = <ElmModelNewOrder>[
     texts: [
       ElmTextDersThirtyOne.textThirtyOnePageNine_1,
       ElmTextDersThirtyOne.textThirtyOnePageNine_2,
-      ElmTextDersThirtyOne.textThirtyOnePageTen_1,
+      ElmTextDersThirtyOne.textThirtyOnePageNine_3,
     ],
     ayahs: [
       ElmTextDersThirtyOne.ayahHadithThirtyOnePageNine_1,

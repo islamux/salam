@@ -1,8 +1,8 @@
 //TextDersSixTeen
 
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/core/data/model/enum_order.dart';
-import 'package:elm/core/data/static/text/elm_text_ders_twenty_three.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/static/text/elm_text_ders_twenty_three.dart';
 
 List<ElmModelNewOrder> elmList23NewOrder = [
   // PageOne
@@ -481,6 +481,22 @@ List<ElmModelNewOrder> elmList23NewOrder = [
       EnOrder.titles,
       EnOrder.texts,
       EnOrder.texts,
+      EnOrder.texts,
+      EnOrder.texts,
+    ],
+  ),
+
+  // PageTwenty (from yodaber.md)
+  ElmModelNewOrder(
+    ayahs: [
+      ElmTextTwentyThree.ayahTwentyThreePageTwenty_1,
+    ],
+    texts: [
+      ElmTextTwentyThree.textTwentyThreePageTwenty_1,
+      ElmTextTwentyThree.textTwentyThreePageTwenty_2,
+    ],
+    order: [
+      EnOrder.ayahs,
       EnOrder.texts,
       EnOrder.texts,
     ],

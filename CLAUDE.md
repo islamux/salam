@@ -9,14 +9,13 @@ This is a Flutter application called **elm** - a Muslim devotional app (Arabic: 
 **Current Flutter Version**: 3.35.1
 **Dart Version**: 3.9.0
 **State Management**: Flutter BLoC
-**Current Branch**: `feat/text-to-json-migration` (migrating from Dart class-based data to JSON)
+**Current Branch**: `feat/project-improvements` (implementing improvement plan)
 
 ### Current Development Focus
-The project is actively undergoing a **text-to-JSON migration** (Phase 1-4 completed as of the latest commit). This involves:
-- Converting static text data from Dart class files to JSON format
-- Implementing JSON-based data loading with schema validation
-- Generated JSON data file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items across 29 lists)
-- Migration plan and documentation available in `/docs` directory
+The project is actively consolidating **elm_list** files to fix duplicate and split page entries:
+- elm_list_17: ✅ COMPLETE (21 pages, variables renamed to match slider)
+- elm_list_18: ✅ COMPLETE (40 pages, pages renumbered 1-40)
+- elm_list_1 to elm_list_16, elm_list_19 to elm_list_27: PENDING AUDIT
 
 ## Common Commands
 
@@ -43,14 +42,14 @@ flutter run --release
 
 ### Building
 ```bash
-# Build APK for Android
-flutter build apk --release
+# Build APK for Android (REQUIRED FLAG to bypass version warnings)
+flutter build apk --release --android-skip-build-dependency-validation
 
 # Build App Bundle for Android Play Store
-flutter build appbundle --release
+flutter build appbundle --release --android-skip-build-dependency-validation
 
 # Build for specific platform
-flutter build apk --release --platform=android-arm64
+flutter build apk --release --platform=android-arm64 --android-skip-build-dependency-validation
 
 # Build iOS (requires macOS)
 flutter build ios --release
@@ -98,15 +97,10 @@ lib/
 ├── core/                       # Core functionality
 │   ├── data/
 │   │   ├── model/
-│   │   │   ├── elm_model_new_order.dart    # Base data model with JSON serialization
+│   │   │   ├── elm_model_new_order.dart    # Base data model
 │   │   │   ├── enum_order.dart             # EnOrder enum for rendering sequence
-│   │   │   └── elm_lists/                  # 27 data files (elm_list_1_new_order.dart
-│   │   │                                     through elm_list_27_new_order.dart)
-│   │   ├── json/                          # JSON-based data (migration in progress)
-│   │   │   ├── data/
-│   │   │   │   └── elm_all_data.json      # 240KB JSON with 504 content items
-│   │   │   └── schemas/
-│   │   │       └── elm_data_schema.json   # JSON schema for validation
+│   │   │   └── elm_lists/                  # 34 data files (elm_list_1_new_order.dart
+│   │   │                                     through elm_list_32_new_order.dart + pre + final)
 │   │   └── static/
 │   │       ├── routes_constant.dart       # Route constants (all 27+ routes)
 │   │       ├── theme/                     # App themes and colors
@@ -117,7 +111,6 @@ lib/
 │   │   └── base_page_state.dart           # Base state definitions
 │   ├── elm_cubits/
 │   │   └── home_cubit.dart                # Home page BLoC
-│   ├── font_cubit.dart                    # Font settings management
 │   └── share/                             # Share functionality
 ├── view/                       # UI layer
 │   ├── pages/
@@ -136,11 +129,7 @@ lib/
 │   └── search/                            # Search utilities
 
 docs/                          # Project documentation
-├── json-migration/             # JSON migration documentation
-│   ├── conversion-report.md   # Migration results and statistics
-│   ├── data-inventory.md      # Complete file inventory
-│   ├── schema-design.md       # JSON schema documentation
-│   └── usage-analysis.md      # Data flow analysis
+├── consolidation-plan.md        # Elm lists consolidation plan (Phase 1-2 in progress)
 └── IMPROVEMENT_PLAN.md        # Overall project improvement plan
 ```
 
@@ -153,20 +142,15 @@ docs/                          # Project documentation
      - `PageController` for horizontal navigation
      - `searchContent()`: Searches across titles, subtitles, texts, ayahs, and footer
      - `customShareContent()`: Shares page content using share_plus
-   - `FontCubit` manages font settings (note: also managed in BasePageCubit)
    - Share functionality handled in `cubit/share/`
 
 2. **Data Models**: `/lib/core/data/model/`
-   - **ElmModelNewOrder**: Base data model with JSON serialization support
-     - Fields: `titles?`, `subtitles?`, `texts?`, `ayahs?`, `footer?`, `order` (required)
-     - `order`: List defining rendering sequence using `EnOrder` enum
-     - Supports `fromJson()`, `toJson()`, and `copyWith()` methods
+   - **ElmModelNewOrder**: Base data model
+      - Fields: `titles?`, `subtitles?`, `texts?`, `ayahs?`, `footer?`, `order` (required)
+      - `order`: List defining rendering sequence using `EnOrder` enum
+      - Supports `copyWith()` method
    - **EnOrder enum**: Defines rendering order (titles, subtitles, texts, ayahs, footer)
    - Individual data files: `elm_list_1_new_order.dart` through `elm_list_27_new_order.dart`
-   - **JSON Data Migration** (Phase 1-4 complete):
-     - Raw data in `core/data/static/text/` (ElmTextDers*.dart files)
-     - JSON file: `lib/core/data/json/data/elm_all_data.json` (240KB, 504 items)
-     - Schema: `lib/core/data/json/schemas/elm_data_schema.json`
 
 3. **Navigation**: Centralized in `app_routes.dart`
    - Uses `RoutesConstant` from `core/data/static/routes_constant.dart`
@@ -206,7 +190,6 @@ docs/                          # Project documentation
    - Static Dart files → ElmTextDers*.dart (raw text constants)
    - ElmList*.dart → List<ElmModelNewOrder> (data models)
    - Pages → Load ElmList data → Render via PageView
-   - **Migration in progress**: Dart files → JSON (elm_all_data.json)
 
 ## Testing
 
@@ -231,8 +214,6 @@ Located in `/assets/`:
 ## Important Files to Know
 
 ### Core Data Files
-- `lib/core/data/model/elm_model_new_order.dart:51-67`: `fromJson()` factory - JSON deserialization
-- `lib/core/data/model/elm_model_new_order.dart:83-92`: `toJson()` method - JSON serialization
 - `lib/cubit/base_cubit/base_page_cubit.dart:68-89`: `searchContent()` - Built-in search functionality
 - `lib/app_routes.dart:36-145`: Route generator - All 37 routes defined here
 
@@ -246,23 +227,12 @@ ElmModelNewOrder(
 )
 ```
 
-### Current Migration Status
-**Phases 1-4 Complete** (as of latest commit):
-- ✅ Phase 1: Data inventory and analysis
-- ✅ Phase 2: JSON schema design
-- ✅ Phase 3: Migration script development
-- ✅ Phase 4: JSON generation (240KB, 504 items)
-- 🔄 Phase 5: Data service layer implementation (pending)
-
-See `/docs/json-migration/` for detailed migration documentation.
-
 ## Development Guidelines
 
 From project rules and current implementation:
 - **Always create a phase-by-phase plan** before implementing changes
 - Follow clean architecture with separation of concerns
 - Use `BasePageCubit` for common page functionality (don't duplicate code)
-- **Font management**: Currently in both `FontCubit` and `BasePageCubit` - consider consolidation
 - **Search**: Use `BasePageCubit.searchContent()` for consistent search behavior
 - **Share**: Use `BasePageCubit.customShareContent()` for consistent sharing
 - Keep responses simple while respecting best practices
@@ -270,15 +240,19 @@ From project rules and current implementation:
 
 ## Current Status
 
-**Branch**: `feat/text-to-json-migration`
-**Latest Commit**: "Complete Phases 1-4 of JSON Migration - Dart to JSON Conversion"
+**Branch**: `feat/project-improvements` (implementing improvement plan)
 
-**Current Focus**:
-1. Complete Phase 5: Data service layer implementation
-2. Text coloring improvements (as mentioned in Arabic README)
-3. Font management consolidation (resolve FontCubit vs BasePageCubit duplication)
+**Phases Complete**:
+- Phase 1: Code cleanup - ✅
+- Phase 2: Testing infrastructure - ✅ (12 unit tests for BasePageCubit)
+
+**Known Issues**:
+- Gradle/SDK version warnings when building. Use:
+  ```bash
+  flutter build apk --debug --android-skip-build-dependency-validation
+  ```
 
 **App Status**:
-- ✅ Builds successfully (verified with `flutter build apk` and `flutter build linux`)
 - ✅ No analysis errors
-- ✅ Running on all platforms (Android, iOS, Web, Desktop)
+- ✅ 12 unit tests passing
+- ✅ Running on all platforms

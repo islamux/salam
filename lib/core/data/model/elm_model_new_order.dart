@@ -1,4 +1,4 @@
-import 'package:elm/core/data/model/enum_order.dart';
+import 'package:khatir/core/data/model/enum_order.dart';
 
 class ElmModelNewOrder {
   final List<String>? titles;

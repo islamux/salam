@@ -85,9 +85,8 @@ class ElmTextDersTherteen {
 
   static const String ayahHadithTherteenThree_2 = """
 
-مَّا یَفۡعَلُ ٱللَّهُ بِعَذَابِكُمۡ إِن شَكَرۡتُمۡ وَءَامَنتُمۡۚ 
-النساء 147 
-
+مَّا یَفۡعَلُ ٱللَّهُ بِعَذَابِكُمۡ إِن شَكَرۡتُمۡ وَءَامَنتُمۡۚ ۝١٤٧
+سورة النساء 
 """;
   static const String elmTextTherteenThree_2 = """
 الله ماذا يفعل بالمصائب التي ينزلها بكم ؟ لا معنى لها بالنسبة له لكنها معالجة
@@ -127,8 +126,8 @@ class ElmTextDersTherteen {
 
   static const String ayahHadithTherteenFour_2 = """
 
-مَنۡ عَمِلَ صَـٰلِحࣰا مِّن ذَكَرٍ أَوۡ أُنثَىٰ وَهُوَ مُؤۡمِنࣱ فَلَنُحۡیِیَنَّهُۥ حَیَوٰةࣰ طَیِّبَةࣰۖ *
-الحج 40 
+مَنۡ عَمِلَ صَـٰلِحࣰا مِّن ذَكَرٍ أَوۡ أُنثَىٰ وَهُوَ مُؤۡمِنࣱ فَلَنُحۡیِیَنَّهُۥ حَیَوٰةࣰ طَیِّبَةࣰۖ ۝٩٧
+سورة النحل 
 """;
 
   static const String subtitleTherteenFour_3 = """
@@ -153,8 +152,8 @@ class ElmTextDersTherteen {
 """;
 
   static const String ayahHadithTherteenFive_1 = """
-وَأَنَّ اللَّهَ مَعَ الْمُؤْمِنِينَ
-[ الأنفال: 19]
+وَأَنَّ ٱللَّهَ مَعَ ٱلۡمُؤۡمِنِینَ ۝١٩
+سورة الأنفال 
 """;
 
   static const String elmTextTherteenFive_2 = """
@@ -181,8 +180,8 @@ class ElmTextDersTherteen {
 """;
 
   static const String ayahHadithTherteenFive_4 = """
-إِنَّ ٱللَّهَ لَا یُغَیِّرُ مَا بِقَوۡمٍ حَتَّىٰ یُغَیِّرُوا۟ مَا بِأَنفُسِهِمۡۗ 
-الرعد 11 
+إِنَّ ٱللَّهَ لَا یُغَیِّرُ مَا بِقَوۡمٍ حَتَّىٰ یُغَیِّرُوا۟ مَا بِأَنفُسِهِمۡۗ ۝١١
+سورة الرعد 
 """;
 
 // page 6
@@ -207,8 +206,8 @@ class ElmTextDersTherteen {
 """;
 
   static const String ayahHadithTherteenSix_3 = """
- وَمَن یُؤۡمِنۢ بِٱللَّهِ یَهۡدِ قَلۡبَهُۥۚ 
-التغابن 11 
+ وَمَن یُؤۡمِنۢ بِٱللَّهِ یَهۡدِ قَلۡبَهُۥۚ ۝١١
+سورة التغابن 
 """;
 
   static const String elmTextTherteenSix_4 = """
@@ -223,9 +222,8 @@ class ElmTextDersTherteen {
 """;
 
   static const String ayahHadithTherteenSeven_1 = """
- وَمَن یُؤۡمِنۢ بِٱللَّهِ یَهۡدِ قَلۡبَهُۥۚ 
-التغابن 11 
-
+ وَمَن یُؤۡمِنۢ بِٱللَّهِ یَهۡدِ قَلۡبَهُۥۚ ۝١١
+سورة التغابن 
 """;
 
   static const String elmTextTherteenSeven_2 = """
@@ -279,8 +277,8 @@ class ElmTextDersTherteen {
 """;
   static const String ayahHadithTherteenTen_1 = """
 قال الله عز وجل 
-مَنۡ عَمِلَ صَـٰلِحࣰا مِّن ذَكَرٍ أَوۡ أُنثَىٰ وَهُوَ مُؤۡمِنࣱ فَلَنُحۡیِیَنَّهُۥ حَیَوٰةࣰ طَیِّبَةࣰۖ 
-الحج 97 
+مَنۡ عَمِلَ صَـٰلِحࣰا مِّن ذَكَرٍ أَوۡ أُنثَىٰ وَهُوَ مُؤۡمِنࣱ فَلَنُحۡیِیَنَّهُۥ حَیَوٰةࣰ طَیِّبَةࣰۖ ۝٩٧
+سورة النحل 
 """;
   static const String elmTextTherteenTen_2 = """
 هذا كلام رب العالمين ، فهذه الآيه ليست آية خلافية ، وليست آية معقدة تحتاج إلى مفسرين ، ومعاجم لغة ، لإنها آية واضحة ، وهي مفسرة بنفسها ، والقرآن بعض آياته متشابهه وأغلبه محكم ، لا تحتاج لمفسر
@@ -288,7 +286,7 @@ class ElmTextDersTherteen {
 
   static const String ayahHadithTherteenTen_2 = """
  وَمَاۤ أَصَـٰبَكُم مِّن مُّصِیبَةࣲ فَبِمَا كَسَبَتۡ أَیۡدِیكُمۡ وَیَعۡفُوا۟ عَن كَثِیرࣲ ۝٣٠ 
-النحل 97 
+سورة الشورى 
 """;
 
   static const String elmTextTherteenTen_3 = """

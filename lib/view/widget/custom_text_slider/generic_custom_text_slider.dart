@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:elm/core/data/model/elm_model_new_order.dart';
-import 'package:elm/cubit/base_cubit/base_page_cubit.dart';
-import 'package:elm/cubit/base_cubit/base_page_state.dart';
-import 'package:elm/view/widget/custom_text_slider/get_page_texts_order.dart';
-import 'package:elm/core/data/static/theme/app_color_constant.dart';
+import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
+import 'package:khatir/cubit/base_cubit/base_page_state.dart';
+import 'package:khatir/view/widget/custom_text_slider/get_page_texts_order.dart';
+import 'package:khatir/core/data/static/theme/app_color_constant.dart';
 
 class GenericCustomTextSlider extends StatelessWidget {
   final BasePageCubit cubit;
@@ -62,7 +62,7 @@ class GenericCustomTextSlider extends StatelessWidget {
                                 children: getPageTexts(i, dataList),
                                 // Corrected getPageTexts call
                                 style: TextStyle(
-                                  fontFamily: "AmiriQ",
+                                  fontFamily: "Amiri",
                                   fontSize: cubit.fontSize,
                                   color: Colors.black, // Corrected color
                                   // height: 1.8, // Removed height
@@ -85,7 +85,7 @@ class GenericCustomTextSlider extends StatelessWidget {
               child: Column(
                 children: [
                   Slider(
-                    value: (cubit.currentPageIndex ?? 0).toDouble(),
+                    value: cubit.currentPageIndex.toDouble(),
                     onChanged: (double value) => cubit.goToPage(value.toInt()),
                     min: 0,
                     max: dataList.isEmpty ? 0 : dataList.length.toDouble() - 1,
@@ -93,7 +93,7 @@ class GenericCustomTextSlider extends StatelessWidget {
                     inactiveColor: AppColor.grey, // Corrected inactiveColor
                   ),
                   Text(
-                    '${(cubit.currentPageIndex ?? 0) + 1} / ${dataList.length}',
+                    '${cubit.currentPageIndex + 1} / ${dataList.length}',
                     style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold), // Corrected style
