@@ -8,14 +8,238 @@
     "overall_progress": 14
   },
   "dashboard": {
-    "current_focus": "Quranic Font Unification & Tashkeel Correction",
-    "active_milestone": "MS-QF",
-    "next_priority": "P1",
+    "current_focus": "Data Files Standardization & Cleanup",
+    "active_milestone": "MS-9",
+    "next_priority": "P2",
     "blockers": "None",
     "health": "On Track"
   },
   "milestones": {
     "active": [
+      {
+        "id": "MS-9",
+        "title": "Data Files Standardization & Cleanup",
+        "domain": "data-quality",
+        "week": 19,
+        "phase": "3.5",
+        "planned_start": "2026-05-15",
+        "planned_end": "2026-05-17",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Data Quality",
+        "subtasks": [
+          {
+            "id": "MS-9.1",
+            "label": "Standardize class naming in 12 text files",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "ElmTextDebsSixteen → ElmTextDersSixteen",
+              "ElmTextFInal → ElmTextDersFinal",
+              "ElmTextTwenty/One/Two/.../Seven → ElmTextDersTwenty* (10 files)",
+              "ElmTextPre → ElmTextDersPre",
+              "All imports updated in elm_list files to match new class names",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-9.2",
+            "label": "Fix elm_lists naming/imports",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/core/data/model/elm_lists/"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "finalListNewOrder renamed to elmListFinalNewOrder",
+              "list_20 relative import changed to package:",
+              "lists 25-31 init style unified to plain =[",
+              "lists 19,25 typed generics removed",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-9.1"]
+          },
+          {
+            "id": "MS-9.3",
+            "label": "Fix all field name typos (10 total)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/core/data/static/text/",
+              "lib/core/data/model/elm_lists/"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "6 text file typos fixed (ayahHadith, elmText, titles → title, etc.)",
+              "4 list file references updated to match",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-9.1"]
+          },
+          {
+            "id": "MS-9.4",
+            "label": "Fix wrong header comments (5 list files + 4 more)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "lib/core/data/model/elm_lists/"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "lists 16,17,19,20,23 header comments reference correct numbers",
+              "lists 9,11,14,15 header comment typos fixed",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-9.5",
+            "label": "Clean dead code & dev artifacts",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/core/data/",
+              "lib/core/data/model/elm_lists/"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "copilot gpt4.1 and ...existing code... artifacts removed",
+              "Commented-out string-order remnants removed from pre, 20",
+              "Dead field in elm_text_ders_pre.dart removed",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-9.6",
+            "label": "Add missing String type annotations (84 fields)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "lib/core/data/static/text/elm_text_ders_final.dart",
+              "lib/core/data/static/text/elm_text_ders_twenty_one.dart",
+              "lib/core/data/static/text/elm_text_ders_twenty_two.dart",
+              "lib/core/data/static/text/elm_text_ders_twenty_five.dart",
+              "lib/core/data/static/text/elm_text_ders_twenty_seven.dart"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "All 84 fields across 5 files use explicit static const String",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-9.7",
+            "label": "Standardize page comment markers (all text files)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "lib/core/data/static/text/"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "All ~565 page markers unified to // page N format",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-9.8",
+            "label": "Fix formatting edge cases (lists)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "lib/core/data/model/elm_lists/"
+            ],
+            "reference_docs": [
+              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
+            ],
+            "acceptance_criteria": [
+              "Trailing comma added in list_1 order array",
+              "Inline constructors expanded in list_1 and list_4",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-9.9",
+            "label": "Verify build and analyze",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "flutter analyze passes with 0 issues",
+              "flutter test passes (all existing tests)",
+              "flutter build apk --release --android-skip-build-dependency-validation succeeds"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": [
+              "MS-9.1",
+              "MS-9.2",
+              "MS-9.3",
+              "MS-9.4",
+              "MS-9.5",
+              "MS-9.6",
+              "MS-9.7",
+              "MS-9.8"
+            ]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "MS-9 runs BEFORE MS-8 — fix data file naming first, then code quality",
+          "68 data files total: 34 elm_lists (11,216L) + 34 text files (11,012L)",
+          "~2,600 static const fields across text files, 565 ElmModelNewOrder entries across lists",
+          "All issues are cosmetic/style — zero functional bugs or analyzer errors exist",
+          "See docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md for full detail"
+        ]
+      },
       {
         "id": "MS-QF",
         "title": "Quranic Font Unification & Tashkeel Correction",
@@ -230,6 +454,317 @@
           "Reduce 34 near-identical page files (elm1-32 + pre + final) to a single reusable ElmContentPage widget",
           "Extract hardcoded Arabic strings to centralized AppStrings constants",
           "Move search logic from BasePageCubit to dedicated SearchCubit"
+        ]
+      },
+      {
+        "id": "MS-8",
+        "title": "Bug Fixes & Code Quality",
+        "domain": "code-quality",
+        "week": 19,
+        "phase": "3.5",
+        "planned_start": "2026-05-15",
+        "planned_end": "2026-05-17",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Code Quality",
+        "subtasks": [
+          {
+            "id": "MS-8.1",
+            "label": "Resolve 13 TODO/FIXME comments across codebase",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "All 13 TODO/FIXME/HACK comments either resolved or converted to proper tasks/issues",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.2",
+            "label": "Remove/consolidate dead helper files",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/helpers/string_helper.dart",
+              "lib/helpers/spacing.dart",
+              "lib/helpers/media_query_helper.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "string_helper.dart removed (functionality moved if still needed)",
+              "spacing.dart removed or integrated into theme",
+              "media_query_helper.dart removed or integrated",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.3",
+            "label": "Fix navigation helper redundancy",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/helpers/extensions/navigation_helper.dart",
+              "lib/cubit/elm_cubits/home_cubit.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "Navigation helper code consolidated into single extension",
+              "home_cubit navigation TODO resolved",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.4",
+            "label": "Re-enable temp-disabled search feature",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/view/pages/search_page.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "Search feature re-enabled in search_page.dart (line 25)",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.5",
+            "label": "Implement getShareText in HomeCubit",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/cubit/elm_cubits/home_cubit.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "HomeCubit.getShareText properly implemented (not just TODO stub)",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.6",
+            "label": "Move UI logic out of BasePageCubit",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "lib/cubit/base_cubit/base_page_cubit.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "UI-related logic moved from BasePageCubit to UI layer where appropriate",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.7",
+            "label": "Split large static text files (19 files >300 lines)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.8",
+            "label": "Split large elm list model files (17 files >300 lines)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.9",
+            "label": "Split home.dart into reusable widget components",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.10",
+            "label": "Verify build and analyze after all splits",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.11",
+            "label": "Remove 5 remaining dead/unreferenced files",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/core/data/static/links.dart",
+              "lib/view/pages/target_page.dart",
+              "lib/view/pages/result_page.dart",
+              "lib/view/pages/search_page.dart",
+              "lib/helpers/share_app.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "All 5 files deleted with no remaining imports referencing them",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-8.2"]
+          },
+          {
+            "id": "MS-8.12",
+            "label": "Remove unused dependencies from pubspec.yaml",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "pubspec.yaml"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "hex, intl, cupertino_icons, change_app_package_name removed",
+              "Flutter project still builds successfully",
+              "flutter pub get succeeds with no errors"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": []
+          },
+          {
+            "id": "MS-8.13",
+            "label": "Add unit tests for critical untested code",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "lib/cubit/elm_cubits/home_cubit.dart",
+              "lib/helpers/search/data_search.dart",
+              "lib/core/data/model/elm_model_new_order.dart",
+              "lib/cubit/share/get_page_text_for_sharing.dart"
+            ],
+            "reference_docs": [
+              "test/unit/base_page_cubit_test.dart"
+            ],
+            "acceptance_criteria": [
+              "HomeCubit unit tests created (including getShareText coverage)",
+              "DataSearch delegate unit tests created",
+              "ElmModelNewOrder data model unit tests created",
+              "getPageTextsForSharing unit tests created",
+              "All tests pass: flutter test"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-8.5"]
+          },
+          {
+            "id": "MS-8.14",
+            "label": "Fix links.dart circular self-reference bug",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/core/data/static/links.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "mailGoogle variable no longer self-references (uses correct URL value)",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-8.11"]
+          },
+          {
+            "id": "MS-8.15",
+            "label": "Clean up dead route constants",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/app_routes.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "aboutUs, resultPage, searchPage removed from RoutesConstant",
+              "Associated switch cases removed from route generator",
+              "Related page imports cleaned up",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-8.11"]
+          },
+          {
+            "id": "MS-8.16",
+            "label": "Fix typo + document unreachable SearchPage widget",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "lib/view/pages/search_page.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "Typo 'temprorly' fixed to 'temporarily' in search_page.dart:25",
+              "SearchPage widget confirmed as dead/left with removal comment or removed",
+              "flutter analyze passes with 0 issues"
+            ],
+            "constraints": [],
+            "execution_mode": "agent",
+            "depends_on": ["MS-8.11"]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "Absorbed MS-SPLIT (Split Large Files) tasks as MS-8.7 through MS-8.10",
+          "13 TODO/FIXME comments to resolve across the codebase",
+          "Deep-dive audit discovered 8 dead files, 3-5 unused deps, 1.2% test coverage, links.dart bug",
+          "All 8 dead files: string_helper.dart, spacing.dart, media_query_helper.dart (MS-8.2) + links.dart, target_page.dart, result_page.dart, search_page.dart, share_app.dart (MS-8.11)",
+          "MS-8.13 (tests) depends on MS-8.5 (getShareText fix) — test the fixed implementation",
+          "See docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md for full audit report"
         ]
       }
     ],
@@ -708,116 +1243,6 @@
           "MS-7.5 (Notifications) needs flutter_local_notifications added to pubspec.yaml",
           "MS-7.7 (TOC) benefits from MS-3 generic widget refactor"
         ]
-      },
-      {
-        "id": "MS-SPLIT",
-        "title": "Split Large Files",
-        "domain": "architecture",
-        "week": 0,
-        "phase": "3.5",
-        "planned_start": "2026-05-13",
-        "planned_end": "2026-05-16",
-        "actual_start": null,
-        "actual_end": null,
-        "drift_days": 0,
-        "is_key_milestone": false,
-        "key_milestone_label": null,
-        "subtasks": [
-          {
-            "id": "MS-SPLIT_001",
-            "label": "Split large static text files (19 files >300 lines)",
-            "status": "todo",
-            "assignee": null,
-            "blocked_by": null,
-            "blocked_reason": null,
-            "completed_at": null,
-            "completed_by": null,
-            "priority": "P2",
-            "notes": null,
-            "prompt": null,
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "agent_target": null,
-            "execution_mode": "agent",
-            "depends_on": [],
-            "last_run_id": null,
-            "builder_prompt": null
-          },
-          {
-            "id": "MS-SPLIT_002",
-            "label": "Split large elm list model files (17 files >300 lines)",
-            "status": "todo",
-            "assignee": null,
-            "blocked_by": null,
-            "blocked_reason": null,
-            "completed_at": null,
-            "completed_by": null,
-            "priority": "P2",
-            "notes": null,
-            "prompt": null,
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "agent_target": null,
-            "execution_mode": "agent",
-            "depends_on": [],
-            "last_run_id": null,
-            "builder_prompt": null
-          },
-          {
-            "id": "MS-SPLIT_003",
-            "label": "Split home.dart into reusable widget components",
-            "status": "todo",
-            "assignee": null,
-            "blocked_by": null,
-            "blocked_reason": null,
-            "completed_at": null,
-            "completed_by": null,
-            "priority": "P2",
-            "notes": null,
-            "prompt": null,
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "agent_target": null,
-            "execution_mode": "agent",
-            "depends_on": [],
-            "last_run_id": null,
-            "builder_prompt": null
-          },
-          {
-            "id": "MS-SPLIT_004",
-            "label": "Verify build and analyze after all splits",
-            "status": "todo",
-            "assignee": null,
-            "blocked_by": null,
-            "blocked_reason": null,
-            "completed_at": null,
-            "completed_by": null,
-            "priority": "P2",
-            "notes": null,
-            "prompt": null,
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "agent_target": null,
-            "execution_mode": "agent",
-            "depends_on": [],
-            "last_run_id": null,
-            "builder_prompt": null
-          }
-        ],
-        "dependencies": [],
-        "notes": [
-          "Static text worst offenders: elm_text_ders_twenty.dart (768L/52K), eighteen.dart (668L/52K), one.dart (628L/40K), twenty_one.dart (599L/44K), twenty_seven.dart (587L/48K), twenty_five.dart (554L/44K), twenty_three.dart (506L/52K)",
-          "Elm list worst offenders: elm_list_20_new_order.dart (750L), 18 (727L), 21 (608L), 27 (555L), 25 (552L), 1 (507L), 23 (504L)",
-          "home.dart is the only page file >300 lines (387L/20K) - extract widget components"
-        ]
       }
     ],
     "completed": [
@@ -1027,6 +1452,26 @@
       "date": "2026-05-12",
       "action": "Created milestone \"Split Large Files\"",
       "agent": "orchestrator"
+    },
+    {
+      "date": "2026-05-15",
+      "event": "ms8_created",
+      "action": "Created milestone \"Bug Fixes & Code Quality\" (MS-8) with 10 tasks: resolve TODOs, remove dead helpers, fix navigation redundancy, re-enable search, implement getShareText, move UI logic from cubit, split large text files, split elm lists, split home.dart, verify build. Absorbed MS-SPLIT tasks as MS-8.7-8.10. Branch: fix/bug-fixes-code-quality."
+    },
+    {
+      "date": "2026-05-15",
+      "event": "ms-split_absorbed",
+      "action": "Absorbed MS-SPLIT (Split Large Files) into MS-8. Tasks MS-SPLIT_001-004 renumbered as MS-8.7-MS-8.10. MS-SPLIT milestone removed from backlog."
+    },
+    {
+      "date": "2026-05-15",
+      "event": "ms8_deepdive",
+      "action": "Deep-dive audit completed. Discovered: 8 dead files (453 lines), 3-5 unused deps, 1.2% test coverage, links.dart circular reference bug, 3 dead route constants, HomeCubit.getShareText crash risk. Added 6 new tasks (MS-8.11 through MS-8.16) to MS-8. Plan doc: docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md."
+    },
+    {
+      "date": "2026-05-15",
+      "event": "ms9_created",
+      "action": "Created milestone \"Data Files Standardization & Cleanup\" (MS-9) with 9 tasks: standardize class naming, fix list naming/imports, fix field name typos, fix header comments, clean dead code, add type annotations, standardize page markers, fix formatting, verify build. Deep-dive audit of 68 data files completed (34 lists + 34 text files). Branch: fix/data-files-standardization. Plan doc: docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md. Order: MS-9 first, then MS-8."
     }
   ],
   "_schema_version": 1
