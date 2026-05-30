@@ -67,7 +67,7 @@ const typoMap = {
   'elmTextSeven_2': 'elmTextTwoSeven_2',
 };
 
-const outputDir = 'lib/core/data/model/elm_lists';
+const outputDir = 'lib/core/data/model/khatira_lists';
 
 // ============================================================
 // Field Extraction
@@ -87,10 +87,14 @@ FieldType inferFieldType(String name) {
       name.startsWith('elmtext') ||
       name.startsWith('text'))
     return FieldType.texts;
-  // elm without Text suffix (elm{Ders}{Page}_N) — only if first letter after 'elm' is uppercase
-  if (name.startsWith('elm') &&
-      name.length > 3 &&
-      name[3] == name[3].toUpperCase())
+  // elm/khatira without Text suffix (elm{Ders}{Page}_N, khatira{Ders}{Page}_N)
+  // — only if first letter after prefix is uppercase
+  if ((name.startsWith('elm') &&
+          name.length > 3 &&
+          name[3] == name[3].toUpperCase()) ||
+      (name.startsWith('khatira') &&
+          name.length > 7 &&
+          name[7] == name[7].toUpperCase()))
     return FieldType.texts;
   // ayah* patterns (including typos like ayaHadith, ayahaHadith)
   if (name.startsWith('ayahHadith') ||
@@ -108,6 +112,10 @@ List<ParsedField> extractFields(String source) {
   final fields = <ParsedField>[];
   final matches = fieldRegex.allMatches(source);
   for (final m in matches) {
+    // Skip commented-out fields
+    final lineStart = source.lastIndexOf('\n', m.start);
+    final linePrefix = source.substring(lineStart + 1, m.start);
+    if (linePrefix.trimLeft().startsWith('//')) continue;
     final rawName = m.group(1)!;
     // Fix FInal → Final in field names for type inference
     final name = rawName.replaceAll('FInal', 'Final');
@@ -376,6 +384,7 @@ String _pageComment(List<PageDelimiter> delimiters, int pageIndex,
 String generateElmList({
   required String className,
   required String fileName,
+  required String rawName,
   required List<List<ParsedField>> pages,
   required List<PageDelimiter> delimiters,
   required List<String> pageLabels,
@@ -398,7 +407,7 @@ String generateElmList({
   buf.writeln(
       "import 'package:khatir/core/data/model/enum_order.dart';");
   buf.writeln(
-      "import 'package:khatir/core/data/static/text/${prefix}_text_ders_$fileName.dart';");
+      "import 'package:khatir/core/data/static/text/${prefix}_text_ders_$rawName.dart';");
   buf.writeln();
 
   final varName = '${prefix}List${_toPascal(listName)}NewOrder';
@@ -448,9 +457,13 @@ String generateElmList({
       final fields = typeFieldMap[t]!;
       final classRef = _classRef(className);
       buf.write('  ${_toPascal(prefix)}ModelNewOrder(');
-      buf.write('${t.name}: [');
-      buf.write(fields.map((f) => '$classRef.${f.name}').join(', '));
-      buf.write('], order: [');
+      if (t == FieldType.footer) {
+        buf.write('${t.name}: $classRef.${fields.first.name}, order: [');
+      } else {
+        buf.write('${t.name}: [');
+        buf.write(fields.map((f) => '$classRef.${f.name}').join(', '));
+        buf.write('], order: [');
+      }
       for (final ft in fieldOrder) {
         buf.write('EnOrder.${ft.name}, ');
       }
@@ -462,11 +475,15 @@ String generateElmList({
       // Write type lists
       for (final t in orderedTypes) {
         final fields = typeFieldMap[t]!;
-        buf.writeln('    ${t.name}: [');
-        for (final f in fields) {
-          buf.writeln('      $classRef.${f.name},');
+        if (t == FieldType.footer) {
+          buf.writeln('    ${t.name}: $classRef.${fields.first.name},');
+        } else {
+          buf.writeln('    ${t.name}: [');
+          for (final f in fields) {
+            buf.writeln('      $classRef.${f.name},');
+          }
+          buf.writeln('    ],');
         }
-        buf.writeln('    ],');
       }
 
       // Write order array
@@ -505,6 +522,7 @@ String _classRef(String className) {
 class ParsedSource {
   final String className;
   final String fileName;
+  final String rawName;
   final List<ParsedField> fields;
   final List<PageDelimiter> delimiters;
   final List<List<ParsedField>> pages;
@@ -512,6 +530,7 @@ class ParsedSource {
   ParsedSource({
     required this.className,
     required this.fileName,
+    required this.rawName,
     required this.fields,
     required this.delimiters,
     required this.pages,
@@ -534,7 +553,7 @@ ParsedSource? processFile(String filePath, {bool verbose = false}) {
   // elm_text_ders_pre.dart → pre
   // elm_text_ders_one.dart → one → 1
   // elm_text_ders_final.dart → final
-  final nameMatch = RegExp(r'elm_text_ders_(.+)\.dart').firstMatch(filename);
+  final nameMatch = RegExp(r'(?:elm|khatira)_text_ders_(.+)\.dart').firstMatch(filename);
   if (nameMatch == null) {
     stderr.writeln('  ERROR: Cannot extract name from $filename');
     return null;
@@ -580,6 +599,7 @@ ParsedSource? processFile(String filePath, {bool verbose = false}) {
   return ParsedSource(
     className: className,
     fileName: fileName,
+    rawName: rawName,
     fields: fields,
     delimiters: delimiters,
     pages: pages,
@@ -636,6 +656,7 @@ void main(List<String> args) {
     final output = generateElmList(
       className: parsed.className,
       fileName: parsed.fileName,
+      rawName: parsed.rawName,
       pages: parsed.pages,
       delimiters: parsed.delimiters,
       pageLabels: parsed.pageLabels,

@@ -8,8 +8,8 @@
     "overall_progress": 6
   },
   "dashboard": {
-    "current_focus": "Khatira Generator & Rename",
-    "active_milestone": "MS-GEN-1",
+    "current_focus": "Commit rename branch",
+    "active_milestone": "MS-GEN-2",
     "next_priority": "P1",
     "blockers": "None",
     "health": "On Track"
@@ -928,8 +928,8 @@
           {
             "id": "MS-GEN-1.6",
             "label": "Commit generator tool",
-            "status": "in_progress",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "tool/generate_elm_lists.dart"
@@ -969,8 +969,8 @@
           {
             "id": "MS-GEN-2.0",
             "label": "Create branch refactor/rename-elm-to-khatira",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [],
             "reference_docs": [
@@ -986,8 +986,8 @@
           {
             "id": "MS-GEN-2.1",
             "label": "--rename-prefix khatira flag in generator",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "tool/generate_elm_lists.dart"
@@ -1005,8 +1005,8 @@
           {
             "id": "MS-GEN-2.2",
             "label": "Rename Static Text Files",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "lib/core/data/static/text/"
@@ -1028,8 +1028,8 @@
           {
             "id": "MS-GEN-2.3",
             "label": "Generate Renamed Elm List Files",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "lib/core/data/model/"
@@ -1050,8 +1050,8 @@
           {
             "id": "MS-GEN-2.4",
             "label": "Rename Cubit Files",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "lib/cubit/elm_cubits/"
@@ -1070,8 +1070,8 @@
           {
             "id": "MS-GEN-2.5",
             "label": "Update View Page Imports",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "lib/view/pages/"
@@ -1093,8 +1093,8 @@
           {
             "id": "MS-GEN-2.6",
             "label": "Rename Model (KhatiraModelNewOrder)",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "lib/core/data/model/elm_model_new_order.dart"
@@ -1114,8 +1114,8 @@
           {
             "id": "MS-GEN-2.7",
             "label": "flutter analyze",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [],
             "reference_docs": [],
@@ -1132,8 +1132,8 @@
           {
             "id": "MS-GEN-2.8",
             "label": "flutter test",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [
               "test/"

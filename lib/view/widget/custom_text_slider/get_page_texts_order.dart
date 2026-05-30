@@ -1,10 +1,10 @@
-import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
-  final elm = elmList[pageIndex];
+List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
+  final khatiraModel = khatiraList[pageIndex];
   final List<TextSpan> spans = [];
   // AppTheme Appthem = AppTheme();
 
@@ -14,46 +14,46 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   int ayahIndex = 0;
 
   // تكرار العناصر حسب الترتيب المطلوب في order مع التشكيل من عدم تكرارها
-  for (var orderItem in elm.order) {
+  for (var orderItem in khatiraModel.order) {
     switch (orderItem) {
       case EnOrder.titles:
-        if (elm.titles != null && titleIndex < elm.titles!.length) {
+        if (khatiraModel.titles != null && titleIndex < khatiraModel.titles!.length) {
           spans.add(TextSpan(
-              text: elm.titles![titleIndex],
+              text: khatiraModel.titles![titleIndex],
               style: AppTheme.customTextStyleTitle));
           titleIndex++;
         }
         break;
 
       case EnOrder.subtitles:
-        if (elm.subtitles != null && subtitleIndex < elm.subtitles!.length) {
+        if (khatiraModel.subtitles != null && subtitleIndex < khatiraModel.subtitles!.length) {
           spans.add(TextSpan(
-              text: elm.subtitles![subtitleIndex],
+              text: khatiraModel.subtitles![subtitleIndex],
               style: AppTheme.customTextStyleSubtitle));
           subtitleIndex++;
         }
         break;
 
       case EnOrder.texts:
-        if (elm.texts != null && textIndex < elm.texts!.length) {
-          spans.add(TextSpan(text: elm.texts![textIndex], style: null));
+        if (khatiraModel.texts != null && textIndex < khatiraModel.texts!.length) {
+          spans.add(TextSpan(text: khatiraModel.texts![textIndex], style: null));
           textIndex++;
         }
         break;
 
       case EnOrder.ayahs:
-        if (elm.ayahs != null && ayahIndex < elm.ayahs!.length) {
+        if (khatiraModel.ayahs != null && ayahIndex < khatiraModel.ayahs!.length) {
           spans.add(TextSpan(
-              text: elm.ayahs![ayahIndex],
+              text: khatiraModel.ayahs![ayahIndex],
               style: AppTheme.customTextStyleHadith));
           ayahIndex++;
         }
         break;
 
       case EnOrder.footer:
-        if (elm.footer != null) {
+        if (khatiraModel.footer != null) {
           spans.add(TextSpan(
-              text: elm.footer, style: AppTheme.customTextStyleFooter));
+              text: khatiraModel.footer, style: AppTheme.customTextStyleFooter));
         }
         break;
     }
@@ -62,13 +62,13 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
   return spans;
 }
 
-// import 'package:khatir/core/data/model/elm_model_new_order.dart';
+// import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 // import 'package:khatir/core/data/model/enum_order.dart';
 // import 'package:flutter/material.dart';
 // import 'package:khatir/core/data/static/theme/app_them.dart';
 
-// List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
-//   final elm = elmList[pageIndex];
+// List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
+//   final khatiraModel = khatiraList[pageIndex];
 //   final List<TextSpan> spans = [];
 //   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 //   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
@@ -77,39 +77,39 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 // //  TextStyle defaultStyle = AppTheme.defaultTextStyle();
 
 //   // تكرار العناصر حسب الترتيب الموجود في order
-//   for (var orderItem in elm.order) {
+//   for (var orderItem in khatiraModel.order) {
 //     switch (orderItem) {
 //       case EnOrder.titles:
-//         if (elm.titles != null) {
-//           for (var title in elm.titles!) {
+//         if (khatiraModel.titles != null) {
+//           for (var title in khatiraModel.titles!) {
 //             spans.add(TextSpan(text: title, style: titleStyle));
 //           }
 //         }
 //         break;
 //       case EnOrder.subtitles:
-//         if (elm.subtitles != null) {
-//           for (var subtitle in elm.subtitles!) {
+//         if (khatiraModel.subtitles != null) {
+//           for (var subtitle in khatiraModel.subtitles!) {
 //             spans.add(TextSpan(text: subtitle, style: subtitleStyle));
 //           }
 //         }
 //         break;
 //       case EnOrder.texts:
-//         if (elm.texts != null) {
-//           for (var text in elm.texts!) {
+//         if (khatiraModel.texts != null) {
+//           for (var text in khatiraModel.texts!) {
 //             spans.add(TextSpan(text: text, style: null));
 //           }
 //         }
 //         break;
 //       case EnOrder.ayahs:
-//         if (elm.ayahs != null) {
-//           for (var ayah in elm.ayahs!) {
+//         if (khatiraModel.ayahs != null) {
+//           for (var ayah in khatiraModel.ayahs!) {
 //             spans.add(TextSpan(text: ayah, style: ayahStyle));
 //           }
 //         }
 //         break;
 //       case EnOrder.footer:
-//         if (elm.footer != null) {
-//           spans.add(TextSpan(text: elm.footer, style: footerStyle));
+//         if (khatiraModel.footer != null) {
+//           spans.add(TextSpan(text: khatiraModel.footer, style: footerStyle));
 //         }
 //         break;
 //     }
@@ -117,18 +117,18 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 //   return spans;
 // }
 
-// import 'package:khatir/core/data/model/elm_model_new_order.dart';
+// import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 // import 'package:khatir/core/data/static/theme/app_them.dart';
 // import 'package:flutter/material.dart';
 
-// List<TextSpan> getPageTexts(int i, List<ElmModelNewOrder> elmList) {
+// List<TextSpan> getPageTexts(int i, List<KhatiraModelNewOrder> khatiraList) {
 //   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 //   TextStyle titleStyle = AppTheme.customTextStyleTitle();
 //   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
 
-//   ElmModelNewOrder elm = elmList[i];
+//   KhatiraModelNewOrder elm = khatiraList[i];
 //   List<TextSpan> textSpans = [];
-//   List<String> orderList = elm.order!.split(',');
+//   List<String> orderList = khatiraModel.order!.split(',');
 
 //   int ayahIndex = 0;
 //   int textIndex = 0;
@@ -141,51 +141,51 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 
 //     switch (item) {
 //       case 'titles':
-//         if (titleIndex < (elm.titles?.length ?? 0)) {
+//         if (titleIndex < (khatiraModel.titles?.length ?? 0)) {
 //           textSpans
-//               .add(TextSpan(text: elm.titles![titleIndex], style: titleStyle));
+//               .add(TextSpan(text: khatiraModel.titles![titleIndex], style: titleStyle));
 //           titleIndex++;
 //         } else {
 //           print(
-//               'خطأ: لا يوجد نص كافٍ في titles للصفحة $i. العدد المتاح: ${elm.titles?.length ?? 0}');
+//               'خطأ: لا يوجد نص كافٍ في titles للصفحة $i. العدد المتاح: ${khatiraModel.titles?.length ?? 0}');
 //         }
 //         break;
 
 //       case 'subtitles':
-//         if (subtitleIndex < (elm.subtitles?.length ?? 0)) {
+//         if (subtitleIndex < (khatiraModel.subtitles?.length ?? 0)) {
 //           textSpans.add(TextSpan(
-//               text: elm.subtitles![subtitleIndex], style: subtitleStyle));
+//               text: khatiraModel.subtitles![subtitleIndex], style: subtitleStyle));
 //           subtitleIndex++;
 //         } else {
 //           print(
-//               'خطأ: لا يوجد نص كافٍ في subtitles للصفحة $i. العدد المتاح: ${elm.subtitles?.length ?? 0}');
+//               'خطأ: لا يوجد نص كافٍ في subtitles للصفحة $i. العدد المتاح: ${khatiraModel.subtitles?.length ?? 0}');
 //         }
 //         break;
 
 //       case 'texts':
-//         if (textIndex < (elm.texts?.length ?? 0)) {
-//           textSpans.add(TextSpan(text: elm.texts![textIndex], style: null));
+//         if (textIndex < (khatiraModel.texts?.length ?? 0)) {
+//           textSpans.add(TextSpan(text: khatiraModel.texts![textIndex], style: null));
 //           textIndex++;
 //         } else {
 //           print(
-//               'خطأ: لا يوجد نص كافٍ في texts للصفحة $i. العدد المتاح: ${elm.texts?.length ?? 0}');
+//               'خطأ: لا يوجد نص كافٍ في texts للصفحة $i. العدد المتاح: ${khatiraModel.texts?.length ?? 0}');
 //         }
 //         break;
 
 //       case 'ayahs':
-//         if (ayahIndex < (elm.ayahs?.length ?? 0)) {
+//         if (ayahIndex < (khatiraModel.ayahs?.length ?? 0)) {
 //           textSpans
-//               .add(TextSpan(text: elm.ayahs![ayahIndex], style: ayahStyle));
+//               .add(TextSpan(text: khatiraModel.ayahs![ayahIndex], style: ayahStyle));
 //           ayahIndex++;
 //         } else {
 //           print(
-//               'خطأ: لا يوجد نص كافٍ في ayahs للصفحة $i. العدد المتاح: ${elm.ayahs?.length ?? 0}');
+//               'خطأ: لا يوجد نص كافٍ في ayahs للصفحة $i. العدد المتاح: ${khatiraModel.ayahs?.length ?? 0}');
 //         }
 //         break;
 
 //       case 'footer':
-//         if (elm.footer != null && elm.footer!.isNotEmpty) {
-//           textSpans.add(TextSpan(text: elm.footer, style: null));
+//         if (khatiraModel.footer != null && khatiraModel.footer!.isNotEmpty) {
+//           textSpans.add(TextSpan(text: khatiraModel.footer, style: null));
 //         } else {
 //           print('تحذير: لا يوجد نص في footer للصفحة $i');
 //         }
@@ -211,13 +211,13 @@ List<TextSpan> getPageTexts(int pageIndex, List<ElmModelNewOrder> elmList) {
 // import 'package:khatir/core/data/static/theme/app_them.dart';
 // import 'package:flutter/material.dart';
 
-// List<TextSpan> getPageOneTexts(int i, List<ElmModelNew> elmList) {
+// List<TextSpan> getPageOneTexts(int i, List<KhatiraModelNew> khatiraList) {
 //   TextStyle titleStyle = AppTheme.customTextStyleTitle();
 //   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
-//   ElmModelNew elm = elmList[i];
+//   KhatiraModelNew elm = khatiraList[i];
 //   return [
-//     TextSpan(text: elm.titles![0], style: titleStyle),
-//     TextSpan(text: elm.ayahs![0], style: ayahStyle),
-//     TextSpan(text: elm.texts![0]),
+//     TextSpan(text: khatiraModel.titles![0], style: titleStyle),
+//     TextSpan(text: khatiraModel.ayahs![0], style: ayahStyle),
+//     TextSpan(text: khatiraModel.texts![0]),
 //   ];
 // }

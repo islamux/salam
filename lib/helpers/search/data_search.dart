@@ -1,37 +1,37 @@
-import 'package:khatir/core/data/model/elm_lists/elm_list_10_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_11_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_12_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_13_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_14_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_15_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_16_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_17_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_18_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_19_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_1_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_20_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_21_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_22_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_23_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_24_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_25_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_26_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_27_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_28_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_29_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_2_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_30_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_31_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_3_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_4_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_5_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_6_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_7_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_8_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_9_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_final_new_order.dart';
-import 'package:khatir/core/data/model/elm_lists/elm_list_pre_new_order.dart';
-import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_10_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_11_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_12_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_13_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_14_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_15_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_16_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_17_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_18_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_19_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_1_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_20_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_21_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_22_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_23_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_24_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_25_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_26_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_27_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_28_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_29_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_2_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_30_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_31_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_3_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_4_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_5_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_6_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_7_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_8_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_9_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_final_new_order.dart';
+import 'package:khatir/core/data/model/khatira_lists/khatira_list_pre_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/core/data/static/routes_constant.dart';
 import 'package:khatir/helpers/search/remove_search_diacritics.dart';
@@ -39,7 +39,7 @@ import 'package:khatir/helpers/search/search_result.dart';
 import 'package:flutter/material.dart';
 
 class _ListConfig {
-  final List<ElmModelNewOrder> list;
+  final List<KhatiraModelNewOrder> list;
   final String listName;
   final String routeName;
 
@@ -50,77 +50,77 @@ class DataSearch extends SearchDelegate {
   List<SearchResult> _buildResultsWithPage() {
     final results = <SearchResult>[];
     final listConfigs = <_ListConfig>[
-      _ListConfig(elmListPreNewOrder, 'الدرس التمهيدي', RoutesConstant.elmPre),
-      _ListConfig(elmList1NewOrder, 'الدرس الأول', RoutesConstant.elm1),
-      _ListConfig(elmList2NewOrder, 'الدرس الثاني', RoutesConstant.elm2),
-      _ListConfig(elmList3NewOrder, 'الدرس الثالث', RoutesConstant.elm3),
-      _ListConfig(elmList4NewOrder, 'الدرس الرابع', RoutesConstant.elm4),
-      _ListConfig(elmList5NewOrder, 'الدرس الخامس', RoutesConstant.elm5),
-      _ListConfig(elmList6NewOrder, 'الدرس السادس', RoutesConstant.elm6),
-      _ListConfig(elmList7NewOrder, 'الدرس السابع', RoutesConstant.elm7),
-      _ListConfig(elmList8NewOrder, 'الدرس الثامن', RoutesConstant.elm8),
-      _ListConfig(elmList9NewOrder, 'الدرس التاسع', RoutesConstant.elm9),
-      _ListConfig(elmList10NewOrder, 'الدرس العاشر', RoutesConstant.elm10),
-      _ListConfig(elmList11NewOrder, 'الدرس الحادي عشر', RoutesConstant.elm11),
-      _ListConfig(elmList12NewOrder, 'الدرس الثاني عشر', RoutesConstant.elm12),
-      _ListConfig(elmList13NewOrder, 'الدرس الثالث عشر', RoutesConstant.elm13),
-      _ListConfig(elmList14NewOrder, 'الدرس الرابع عشر', RoutesConstant.elm14),
-      _ListConfig(elmList15NewOrder, 'الدرس الخامس عشر', RoutesConstant.elm15),
-      _ListConfig(elmList16NewOrder, 'الدرس السادس عشر', RoutesConstant.elm16),
-      _ListConfig(elmList17NewOrder, 'الدرس السابع عشر', RoutesConstant.elm17),
-      _ListConfig(elmList18NewOrder, 'الدرس الثامن عشر', RoutesConstant.elm18),
-      _ListConfig(elmList19NewOrder, 'الدرس التاسع عشر', RoutesConstant.elm19),
-      _ListConfig(elmList20NewOrder, 'الدرس العشرون', RoutesConstant.elm20),
+      _ListConfig(khatiraListPreNewOrder, 'الدرس التمهيدي', RoutesConstant.khatiraPre),
+      _ListConfig(khatiraList1NewOrder, 'الدرس الأول', RoutesConstant.khatira1),
+      _ListConfig(khatiraList2NewOrder, 'الدرس الثاني', RoutesConstant.khatira2),
+      _ListConfig(khatiraList3NewOrder, 'الدرس الثالث', RoutesConstant.khatira3),
+      _ListConfig(khatiraList4NewOrder, 'الدرس الرابع', RoutesConstant.khatira4),
+      _ListConfig(khatiraList5NewOrder, 'الدرس الخامس', RoutesConstant.khatira5),
+      _ListConfig(khatiraList6NewOrder, 'الدرس السادس', RoutesConstant.khatira6),
+      _ListConfig(khatiraList7NewOrder, 'الدرس السابع', RoutesConstant.khatira7),
+      _ListConfig(khatiraList8NewOrder, 'الدرس الثامن', RoutesConstant.khatira8),
+      _ListConfig(khatiraList9NewOrder, 'الدرس التاسع', RoutesConstant.khatira9),
+      _ListConfig(khatiraList10NewOrder, 'الدرس العاشر', RoutesConstant.khatira10),
+      _ListConfig(khatiraList11NewOrder, 'الدرس الحادي عشر', RoutesConstant.khatira11),
+      _ListConfig(khatiraList12NewOrder, 'الدرس الثاني عشر', RoutesConstant.khatira12),
+      _ListConfig(khatiraList13NewOrder, 'الدرس الثالث عشر', RoutesConstant.khatira13),
+      _ListConfig(khatiraList14NewOrder, 'الدرس الرابع عشر', RoutesConstant.khatira14),
+      _ListConfig(khatiraList15NewOrder, 'الدرس الخامس عشر', RoutesConstant.khatira15),
+      _ListConfig(khatiraList16NewOrder, 'الدرس السادس عشر', RoutesConstant.khatira16),
+      _ListConfig(khatiraList17NewOrder, 'الدرس السابع عشر', RoutesConstant.khatira17),
+      _ListConfig(khatiraList18NewOrder, 'الدرس الثامن عشر', RoutesConstant.khatira18),
+      _ListConfig(khatiraList19NewOrder, 'الدرس التاسع عشر', RoutesConstant.khatira19),
+      _ListConfig(khatiraList20NewOrder, 'الدرس العشرون', RoutesConstant.khatira20),
       _ListConfig(
-          elmList21NewOrder, 'الدرس الحادي والعشرون', RoutesConstant.elm21),
+          khatiraList21NewOrder, 'الدرس الحادي والعشرون', RoutesConstant.khatira21),
       _ListConfig(
-          elmList22NewOrder, 'الدرس الثاني والعشرون', RoutesConstant.elm22),
+          khatiraList22NewOrder, 'الدرس الثاني والعشرون', RoutesConstant.khatira22),
       _ListConfig(
-          elmList23NewOrder, 'الدرس الثالث والعشرون', RoutesConstant.elm23),
+          khatiraList23NewOrder, 'الدرس الثالث والعشرون', RoutesConstant.khatira23),
       _ListConfig(
-          elmList24NewOrder, 'الدرس الرابع والعشرون', RoutesConstant.elm24),
+          khatiraList24NewOrder, 'الدرس الرابع والعشرون', RoutesConstant.khatira24),
       _ListConfig(
-          elmList25NewOrder, 'الدرس الخامس والعشرون', RoutesConstant.elm25),
+          khatiraList25NewOrder, 'الدرس الخامس والعشرون', RoutesConstant.khatira25),
       _ListConfig(
-          elmList26NewOrder, 'الدرس السادس والعشرون', RoutesConstant.elm26),
+          khatiraList26NewOrder, 'الدرس السادس والعشرون', RoutesConstant.khatira26),
       _ListConfig(
-          elmList27NewOrder, 'الدرس السابع والعشرون', RoutesConstant.elm27),
+          khatiraList27NewOrder, 'الدرس السابع والعشرون', RoutesConstant.khatira27),
       _ListConfig(
-          elmList28NewOrder, 'الدرس الثامن والعشرون', RoutesConstant.elm28),
+          khatiraList28NewOrder, 'الدرس الثامن والعشرون', RoutesConstant.khatira28),
       _ListConfig(
-          elmList29NewOrder, 'الدرس التاسع والعشرون', RoutesConstant.elm29),
-      _ListConfig(elmList30NewOrder, 'الدرس الثلاثون', RoutesConstant.elm30),
+          khatiraList29NewOrder, 'الدرس التاسع والعشرون', RoutesConstant.khatira29),
+      _ListConfig(khatiraList30NewOrder, 'الدرس الثلاثون', RoutesConstant.khatira30),
       _ListConfig(
-          elmList31NewOrder, 'الدرس الحادي والثلاثون', RoutesConstant.elm31),
-      _ListConfig(finalListNewOrder, 'الدرس الأخير', RoutesConstant.elmFinal),
+          khatiraList31NewOrder, 'الدرس الحادي والثلاثون', RoutesConstant.khatira31),
+      _ListConfig(khatiraListFinalNewOrder, 'الدرس الأخير', RoutesConstant.khatiraFinal),
     ];
 
     for (var config in listConfigs) {
       for (int pageIndex = 0; pageIndex < config.list.length; pageIndex++) {
-        final elm = config.list[pageIndex];
-        for (var orderItem in elm.order) {
+        final khatiraModel = config.list[pageIndex];
+        for (var orderItem in khatiraModel.order) {
           List<String>? contentList;
           String fieldName = '';
 
           switch (orderItem) {
             case EnOrder.titles:
-              contentList = elm.titles;
+              contentList = khatiraModel.titles;
               fieldName = 'العنوان';
               break;
             case EnOrder.subtitles:
-              contentList = elm.subtitles;
+              contentList = khatiraModel.subtitles;
               fieldName = 'العنوان الفرعي';
               break;
             case EnOrder.texts:
-              contentList = elm.texts;
+              contentList = khatiraModel.texts;
               fieldName = 'النص';
               break;
             case EnOrder.ayahs:
-              contentList = elm.ayahs;
+              contentList = khatiraModel.ayahs;
               fieldName = 'الآية';
               break;
             case EnOrder.footer:
-              contentList = elm.footer != null ? [elm.footer!] : null;
+              contentList = khatiraModel.footer != null ? [khatiraModel.footer!] : null;
               fieldName = 'الهوامش';
               break;
           }

@@ -1,0 +1,3 @@
+Script started on 2026-05-30 08:58:18+03:00 [COMMAND="stdbuf -oL timeout 2 node packages/tui/dist/index.js 2>&1" <not executed on terminal>]
+
+Script done on 2026-05-30 08:58:30+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,4 +1,4 @@
-import 'package:khatir/cubit/elm_cubits/home_cubit.dart';
+import 'package:khatir/cubit/khatira_cubits/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,7 +12,7 @@ void main() {
   // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   // After splash screen, now you can run the app
-  runApp(const ElmApp());
+  runApp(const KhatiraApp());
 
   // Wait 2 seconds before removing the splash screen
   // Future.delayed(const Duration(seconds: 2), () {
@@ -20,8 +20,8 @@ void main() {
   // });
 }
 
-class ElmApp extends StatelessWidget {
-  const ElmApp({super.key});
+class KhatiraApp extends StatelessWidget {
+  const KhatiraApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class ElmApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Elm',
+        title: 'Khatira',
         theme: AppTheme.goldenTheme,
         initialRoute: RoutesConstant.home, // Set the initial route to Home
         onGenerateRoute: RouteApp.generateRoute, // Use the route generator
