@@ -5,12 +5,12 @@
     "target_date": "2026-06-15",
     "current_week": 19,
     "schedule_status": "on_track",
-    "overall_progress": 14
+    "overall_progress": 6
   },
   "dashboard": {
-    "current_focus": "Data Files Standardization & Cleanup",
-    "active_milestone": "MS-9",
-    "next_priority": "P2",
+    "current_focus": "Khatira Generator & Rename",
+    "active_milestone": "MS-GEN-1",
+    "next_priority": "P1",
     "blockers": "None",
     "health": "On Track"
   },
@@ -71,7 +71,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-9.1"]
+            "depends_on": [
+              "MS-9.1"
+            ]
           },
           {
             "id": "MS-9.3",
@@ -93,7 +95,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-9.1"]
+            "depends_on": [
+              "MS-9.1"
+            ]
           },
           {
             "id": "MS-9.4",
@@ -652,7 +656,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-8.2"]
+            "depends_on": [
+              "MS-8.2"
+            ]
           },
           {
             "id": "MS-8.12",
@@ -697,7 +703,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-8.5"]
+            "depends_on": [
+              "MS-8.5"
+            ]
           },
           {
             "id": "MS-8.14",
@@ -715,7 +723,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-8.11"]
+            "depends_on": [
+              "MS-8.11"
+            ]
           },
           {
             "id": "MS-8.15",
@@ -735,7 +745,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-8.11"]
+            "depends_on": [
+              "MS-8.11"
+            ]
           },
           {
             "id": "MS-8.16",
@@ -754,7 +766,9 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": ["MS-8.11"]
+            "depends_on": [
+              "MS-8.11"
+            ]
           }
         ],
         "dependencies": [],
@@ -765,6 +779,524 @@
           "All 8 dead files: string_helper.dart, spacing.dart, media_query_helper.dart (MS-8.2) + links.dart, target_page.dart, result_page.dart, search_page.dart, share_app.dart (MS-8.11)",
           "MS-8.13 (tests) depends on MS-8.5 (getShareText fix) — test the fixed implementation",
           "See docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md for full audit report"
+        ]
+      },
+      {
+        "id": "MS-GEN-1",
+        "title": "Generator Core — Static Text to Elm List Generator",
+        "domain": "tooling",
+        "week": 19,
+        "phase": "3.5",
+        "planned_start": "2026-05-30",
+        "planned_end": "2026-06-01",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Generator Tool",
+        "subtasks": [
+          {
+            "id": "MS-GEN-1.0",
+            "label": "Create branch feature/khatira-generator",
+            "status": "done",
+            "completed_at": "2026-05-30",
+            "priority": "P1",
+            "context_files": [],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Branch exists from current fix/data-files-standardization"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [],
+            "assignee": "orchestrator"
+          },
+          {
+            "id": "MS-GEN-1.1",
+            "label": "Parser — Field Extraction",
+            "status": "done",
+            "completed_at": "2026-05-30",
+            "priority": "P1",
+            "context_files": [
+              "lib/core/data/static/text/",
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "extractFields() correctly parses all 34 static text files",
+              "Field types correctly inferred from prefix naming",
+              "Known typos corrected via typoMap"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-1.0"
+            ]
+          },
+          {
+            "id": "MS-GEN-1.2",
+            "label": "Parser — Page Grouping",
+            "status": "done",
+            "completed_at": "2026-05-30",
+            "priority": "P1",
+            "context_files": [
+              "lib/core/data/static/text/",
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "groupByPage() handles all page delimiter variants",
+              "Fields correctly grouped into pages matching original structure"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-1.1"
+            ]
+          },
+          {
+            "id": "MS-GEN-1.3",
+            "label": "Output Writer",
+            "status": "done",
+            "completed_at": "2026-05-30",
+            "priority": "P1",
+            "context_files": [
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "generateElmList() produces valid ElmModelNewOrder Dart code",
+              "Order array matches field type sequence",
+              "Output from elm_text_ders_pre matches elm_list_pre_new_order"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-1.2"
+            ]
+          },
+          {
+            "id": "MS-GEN-1.4",
+            "label": "Main Loop — All 34 Files",
+            "status": "done",
+            "completed_at": "2026-05-30",
+            "priority": "P1",
+            "context_files": [
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "dart run tool/generate_elm_lists.dart processes all 34 files",
+              "--input, --dry-run, --verbose flags work correctly"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-1.3"
+            ]
+          },
+          {
+            "id": "MS-GEN-1.5",
+            "label": "Verify Against Originals",
+            "status": "done",
+            "completed_at": "2026-05-30",
+            "priority": "P1",
+            "context_files": [
+              "lib/core/data/model/elm_lists/"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Generated files match originals character-for-character (zero diff)",
+              "All 34 files verified"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-1.4"
+            ]
+          },
+          {
+            "id": "MS-GEN-1.6",
+            "label": "Commit generator tool",
+            "status": "in_progress",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "git commit with message feat(tool): add static text to elm list generator",
+              "Branch: feature/khatira-generator"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-1.5"
+            ]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "MS-GEN-1 is Phase 1 of the Khatira Generator — builds tool/generate_elm_lists.dart",
+          "Parser is tolerant of current file inconsistencies (typos, missing types, varied page markers)",
+          "Verification: diff generated output against originals — must match exactly",
+          "Plan doc: command-center/docs/plans/2026-05-30-khatira-generator.md"
+        ]
+      },
+      {
+        "id": "MS-GEN-2",
+        "title": "Rename elm → khatira across codebase",
+        "domain": "refactoring",
+        "week": 19,
+        "phase": "3.5",
+        "planned_start": "2026-06-01",
+        "planned_end": "2026-06-02",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Rename",
+        "subtasks": [
+          {
+            "id": "MS-GEN-2.0",
+            "label": "Create branch refactor/rename-elm-to-khatira",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Branch exists from main"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-2.1",
+            "label": "--rename-prefix khatira flag in generator",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Generator outputs khatira* naming when --rename-prefix is set"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-2.2",
+            "label": "Rename Static Text Files",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "lib/core/data/static/text/"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "34 files renamed elm_text_ders_* → khatira_text_ders_*",
+              "Class names: ElmTextDers* → KhatiraTextDers*",
+              "Field prefixes: elmText* → khatiraText*"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-2.1"
+            ]
+          },
+          {
+            "id": "MS-GEN-2.3",
+            "label": "Generate Renamed Elm List Files",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "lib/core/data/model/"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "34 files created in model/khatira_lists/",
+              "Old model/elm_lists/ deleted"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-2.2"
+            ]
+          },
+          {
+            "id": "MS-GEN-2.4",
+            "label": "Rename Cubit Files",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "lib/cubit/elm_cubits/"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Directory: elm_cubits/ → khatira_cubits/",
+              "35 files renamed, classes renamed"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-2.5",
+            "label": "Update View Page Imports",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "lib/view/pages/"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "All imports in view pages use khatira* paths and class names",
+              "flutter analyze passes with 0 errors"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-2.3",
+              "MS-GEN-2.4"
+            ]
+          },
+          {
+            "id": "MS-GEN-2.6",
+            "label": "Rename Model (KhatiraModelNewOrder)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "lib/core/data/model/elm_model_new_order.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "elm_model_new_order.dart → khatira_model_new_order.dart",
+              "ElmModelNewOrder → KhatiraModelNewOrder",
+              "All imports updated"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-2.7",
+            "label": "flutter analyze",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "flutter analyze passes with 0 errors"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-2.5",
+              "MS-GEN-2.6"
+            ]
+          },
+          {
+            "id": "MS-GEN-2.8",
+            "label": "flutter test",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [
+              "test/"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "flutter test passes — all tests pass after rename"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-2.7"
+            ]
+          },
+          {
+            "id": "MS-GEN-2.9",
+            "label": "Commit rename",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "git commit: refactor: rename elm prefix to khatira across codebase",
+              "Branch: refactor/rename-elm-to-khatira"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-2.8"
+            ]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "MS-GEN-2 runs AFTER MS-GEN-1 is complete and verified",
+          "Uses the generator's --rename-prefix khatira flag to automate most of the work",
+          "flutter analyze is the safety net — catch any missed references"
+        ]
+      },
+      {
+        "id": "MS-GEN-3",
+        "title": "Normalizer, Tests & Polish",
+        "domain": "tooling",
+        "week": 19,
+        "phase": "3.5",
+        "planned_start": "2026-06-02",
+        "planned_end": "2026-06-03",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Generator Polish",
+        "subtasks": [
+          {
+            "id": "MS-GEN-3.1",
+            "label": "--fix-text Mode (static text normalizer)",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "lib/core/data/static/text/",
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Normalizes class names (missing Ders, FInal typo)",
+              "Fixes field name typos from typoMap",
+              "Adds missing static const String annotations",
+              "Standardizes page markers to // page N",
+              "Removes dead code (commented-out fields, developer notes)"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-3.2",
+            "label": "Unit Tests for Generator",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P2",
+            "context_files": [
+              "test/tool/generate_elm_lists_test.dart",
+              "tool/generate_elm_lists.dart"
+            ],
+            "reference_docs": [
+              "command-center/docs/plans/2026-05-30-khatira-generator.md"
+            ],
+            "acceptance_criteria": [
+              "Tests for inferFieldType() — all 5 types",
+              "Tests for extractFields() — standard, missing types, typos",
+              "Tests for groupByPage() — each delimiter variant",
+              "Tests for generateElmList() — output format matches expected"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-3.3",
+            "label": "README & Documentation",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P3",
+            "context_files": [
+              "tool/README.md",
+              "AGENTS.md"
+            ],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "tool/README.md created with usage examples",
+              "AGENTS.md updated with generator command"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-3.4",
+            "label": "Final Verification",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "dart format . — clean",
+              "flutter analyze — zero errors",
+              "flutter test — all pass",
+              "dart run tool/generate_elm_lists.dart --dry-run — no errors"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-3.1",
+              "MS-GEN-3.2",
+              "MS-GEN-3.3"
+            ]
+          },
+          {
+            "id": "MS-GEN-3.5",
+            "label": "Commit polish",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": [],
+            "reference_docs": [],
+            "acceptance_criteria": [
+              "git commit: chore: add generator tests, normalizer, and docs"
+            ],
+            "constraints": [],
+            "execution_mode": "human",
+            "depends_on": [
+              "MS-GEN-3.4"
+            ]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "MS-GEN-3 can run in parallel with or after MS-GEN-2",
+          "Tests validate the generator independently of the rename",
+          "--fix-text makes the static text files consistent and clean"
         ]
       }
     ],
@@ -1415,6 +1947,18 @@
       ],
       "id": "log_1778613202368_eeg9wm",
       "timestamp": "2026-05-12T19:13:22.368Z"
+    },
+    {
+      "agent_id": "orchestrator",
+      "action": "start_task",
+      "target_type": "task",
+      "target_id": "MS-GEN-1.0",
+      "description": "Started task \"Create branch feature/khatira-generator\"",
+      "tags": [
+        "lifecycle"
+      ],
+      "id": "log_1780121247603_zq9ind",
+      "timestamp": "2026-05-30T06:07:27.603Z"
     }
   ],
   "history_log": [
@@ -1472,6 +2016,16 @@
       "date": "2026-05-15",
       "event": "ms9_created",
       "action": "Created milestone \"Data Files Standardization & Cleanup\" (MS-9) with 9 tasks: standardize class naming, fix list naming/imports, fix field name typos, fix header comments, clean dead code, add type annotations, standardize page markers, fix formatting, verify build. Deep-dive audit of 68 data files completed (34 lists + 34 text files). Branch: fix/data-files-standardization. Plan doc: docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md. Order: MS-9 first, then MS-8."
+    },
+    {
+      "date": "2026-05-30",
+      "event": "ms-gen-planned",
+      "action": "Created MS-GEN-1/2/3 (Khatira Generator & Rename). Instead of manual MS-9 cleanup, a standalone Dart script (tool/generate_elm_lists.dart) will parse static text files and auto-generate elm_list files. Phase 2 renames elm→khatira across 140+ files. Dashboard focus set to MS-GEN-1. Plan doc: command-center/docs/plans/2026-05-30-khatira-generator.md."
+    },
+    {
+      "date": "2026-05-30",
+      "event": "generator-built",
+      "action": "Built tool/generate_elm_lists.dart (669 lines). Fixed: page grouping with consecutive same-label delimiters, pre-first fields page handling, bare-number filtering (keep before first worded, discard after), word-based page numbers (page one, pageThree, etc.). Generator runs cleanly on all 34 files. 26 of 34 files match original page counts exactly; remaining 8 differ due to manual subdivisions in originals. Ready for commit and MS-GEN-2 rename."
     }
   ],
   "_schema_version": 1
