@@ -1,4 +1,4 @@
-import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 
 abstract class BasePageState {}
 
@@ -31,6 +31,6 @@ class PageShareFailure extends BasePageState {
 
 // الحالات الخاصة بالبحث والمشاركة
 class PageSearchResults extends BasePageState {
-  final List<ElmModelNewOrder> results;
+  final List<KhatiraModelNewOrder> results;
   PageSearchResults(this.results);
 }

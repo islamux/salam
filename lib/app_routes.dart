@@ -1,41 +1,41 @@
-import 'package:khatir/view/pages/elm26.dart';
-import 'package:khatir/view/pages/elm27.dart';
-import 'package:khatir/view/pages/elm28.dart';
-import 'package:khatir/view/pages/elm29.dart';
-import 'package:khatir/view/pages/elm30.dart';
-import 'package:khatir/view/pages/elm31.dart';
-import 'package:khatir/view/pages/elm32.dart';
+import 'package:khatir/view/pages/home.dart';
 import 'package:flutter/material.dart';
 
 import 'package:khatir/core/data/static/routes_constant.dart';
-import 'package:khatir/view/pages/elm1.dart';
-import 'package:khatir/view/pages/elm10.dart';
-import 'package:khatir/view/pages/elm11.dart';
-import 'package:khatir/view/pages/elm12.dart';
-import 'package:khatir/view/pages/elm13.dart';
-import 'package:khatir/view/pages/elm14.dart';
-import 'package:khatir/view/pages/elm15.dart';
-import 'package:khatir/view/pages/elm16.dart';
-import 'package:khatir/view/pages/elm17.dart';
-import 'package:khatir/view/pages/elm18.dart';
-import 'package:khatir/view/pages/elm19.dart';
-import 'package:khatir/view/pages/elm2.dart';
-import 'package:khatir/view/pages/elm20.dart';
-import 'package:khatir/view/pages/elm21.dart';
-import 'package:khatir/view/pages/elm22.dart';
-import 'package:khatir/view/pages/elm23.dart';
-import 'package:khatir/view/pages/elm24.dart';
-import 'package:khatir/view/pages/elm25.dart';
-import 'package:khatir/view/pages/elm3.dart';
-import 'package:khatir/view/pages/elm4.dart';
-import 'package:khatir/view/pages/elm5.dart';
-import 'package:khatir/view/pages/elm6.dart';
-import 'package:khatir/view/pages/elm7.dart';
-import 'package:khatir/view/pages/elm8.dart';
-import 'package:khatir/view/pages/elm9.dart';
-import 'package:khatir/view/pages/elm_final.dart';
-import 'package:khatir/view/pages/elmpre_page.dart';
-import 'package:khatir/view/pages/home.dart';
+import 'package:khatir/view/pages/khatira1.dart';
+import 'package:khatir/view/pages/khatira10.dart';
+import 'package:khatir/view/pages/khatira11.dart';
+import 'package:khatir/view/pages/khatira12.dart';
+import 'package:khatir/view/pages/khatira13.dart';
+import 'package:khatir/view/pages/khatira14.dart';
+import 'package:khatir/view/pages/khatira15.dart';
+import 'package:khatir/view/pages/khatira16.dart';
+import 'package:khatir/view/pages/khatira17.dart';
+import 'package:khatir/view/pages/khatira18.dart';
+import 'package:khatir/view/pages/khatira19.dart';
+import 'package:khatir/view/pages/khatira2.dart';
+import 'package:khatir/view/pages/khatira20.dart';
+import 'package:khatir/view/pages/khatira21.dart';
+import 'package:khatir/view/pages/khatira22.dart';
+import 'package:khatir/view/pages/khatira23.dart';
+import 'package:khatir/view/pages/khatira24.dart';
+import 'package:khatir/view/pages/khatira25.dart';
+import 'package:khatir/view/pages/khatira26.dart';
+import 'package:khatir/view/pages/khatira27.dart';
+import 'package:khatir/view/pages/khatira28.dart';
+import 'package:khatir/view/pages/khatira29.dart';
+import 'package:khatir/view/pages/khatira3.dart';
+import 'package:khatir/view/pages/khatira30.dart';
+import 'package:khatir/view/pages/khatira31.dart';
+import 'package:khatir/view/pages/khatira32.dart';
+import 'package:khatir/view/pages/khatira4.dart';
+import 'package:khatir/view/pages/khatira5.dart';
+import 'package:khatir/view/pages/khatira6.dart';
+import 'package:khatir/view/pages/khatira7.dart';
+import 'package:khatir/view/pages/khatira8.dart';
+import 'package:khatir/view/pages/khatira9.dart';
+import 'package:khatir/view/pages/khatira_final.dart';
+import 'package:khatir/view/pages/khatira_pre_page.dart';
 
 class RouteApp {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -43,143 +43,143 @@ class RouteApp {
       case RoutesConstant.home:
         return MaterialPageRoute(builder: (_) => const Home());
 
-      case RoutesConstant.elmPre:
+      case RoutesConstant.khatiraPre:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => ElmPrePage(initialPage: args));
+        return MaterialPageRoute(builder: (_) => KhatiraPrePage(initialPage: args));
 
-      case RoutesConstant.elm1:
+      case RoutesConstant.khatira1:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm1Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira1Page(initialPage: args));
 
-      case RoutesConstant.elm2:
+      case RoutesConstant.khatira2:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm2Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira2Page(initialPage: args));
 
-      case RoutesConstant.elm3:
+      case RoutesConstant.khatira3:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm3Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira3Page(initialPage: args));
 
-      case RoutesConstant.elm4:
+      case RoutesConstant.khatira4:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm4Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira4Page(initialPage: args));
 
-      case RoutesConstant.elm5:
+      case RoutesConstant.khatira5:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm5Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira5Page(initialPage: args));
 
-      case RoutesConstant.elm6:
+      case RoutesConstant.khatira6:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm6Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira6Page(initialPage: args));
 
-      case RoutesConstant.elm7:
+      case RoutesConstant.khatira7:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm7Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira7Page(initialPage: args));
 
-      case RoutesConstant.elm8:
+      case RoutesConstant.khatira8:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm8Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira8Page(initialPage: args));
 
-      case RoutesConstant.elm9:
+      case RoutesConstant.khatira9:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm9Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira9Page(initialPage: args));
 
-      case RoutesConstant.elm10:
+      case RoutesConstant.khatira10:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm10Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira10Page(initialPage: args));
 
-      case RoutesConstant.elm11:
+      case RoutesConstant.khatira11:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm11Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira11Page(initialPage: args));
 
-      case RoutesConstant.elm12:
+      case RoutesConstant.khatira12:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm12Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira12Page(initialPage: args));
 
-      case RoutesConstant.elm13:
+      case RoutesConstant.khatira13:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm13Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira13Page(initialPage: args));
 
-      case RoutesConstant.elm14:
+      case RoutesConstant.khatira14:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm14Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira14Page(initialPage: args));
 
-      case RoutesConstant.elm15:
+      case RoutesConstant.khatira15:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm15Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira15Page(initialPage: args));
 
-      case RoutesConstant.elm16:
+      case RoutesConstant.khatira16:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm16Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira16Page(initialPage: args));
 
-      case RoutesConstant.elm17:
+      case RoutesConstant.khatira17:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm17Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira17Page(initialPage: args));
 
-      case RoutesConstant.elm18:
-        final elm18Args = settings.arguments as int?;
+      case RoutesConstant.khatira18:
+        final khatira18Args = settings.arguments as int?;
         return MaterialPageRoute(
-            builder: (_) => Elm18Page(initialPage: elm18Args));
+            builder: (_) => Khatira18Page(initialPage: khatira18Args));
 
-      case RoutesConstant.elm19:
+      case RoutesConstant.khatira19:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm19Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira19Page(initialPage: args));
 
-      case RoutesConstant.elm20:
+      case RoutesConstant.khatira20:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm20Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira20Page(initialPage: args));
 
-      case RoutesConstant.elm21:
+      case RoutesConstant.khatira21:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm21Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira21Page(initialPage: args));
 
-      case RoutesConstant.elm22:
+      case RoutesConstant.khatira22:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm22Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira22Page(initialPage: args));
 
-      case RoutesConstant.elm23:
+      case RoutesConstant.khatira23:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm23Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira23Page(initialPage: args));
 
-      case RoutesConstant.elm24:
+      case RoutesConstant.khatira24:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm24Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira24Page(initialPage: args));
 
-      case RoutesConstant.elm25:
+      case RoutesConstant.khatira25:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm25Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira25Page(initialPage: args));
 
-      case RoutesConstant.elm26:
+      case RoutesConstant.khatira26:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm26Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira26Page(initialPage: args));
 
-      case RoutesConstant.elm27:
+      case RoutesConstant.khatira27:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm27Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira27Page(initialPage: args));
 
-      case RoutesConstant.elm28:
+      case RoutesConstant.khatira28:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm28Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira28Page(initialPage: args));
 
-      case RoutesConstant.elm29:
+      case RoutesConstant.khatira29:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm29Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira29Page(initialPage: args));
 
-      case RoutesConstant.elm30:
+      case RoutesConstant.khatira30:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm30Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira30Page(initialPage: args));
 
-      case RoutesConstant.elm31:
+      case RoutesConstant.khatira31:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm31Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira31Page(initialPage: args));
 
-      case RoutesConstant.elm32:
+      case RoutesConstant.khatira32:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Elm32Page(initialPage: args));
+        return MaterialPageRoute(builder: (_) => Khatira32Page(initialPage: args));
 
-      case RoutesConstant.elmFinal:
+      case RoutesConstant.khatiraFinal:
         final args = settings.arguments as int?;
         return MaterialPageRoute(
-            builder: (_) => ElmFinalPage(initialPage: args));
+            builder: (_) => KhatiraFinalPage(initialPage: args));
 
       default:
         return _errorRoute();

@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_interpolation_to_compose_strings
 
-import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -13,7 +13,7 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   int currentPageIndex = 0;
   PageController pageController = PageController();
   double fontSize = 21.0;
-  late List<ElmModelNewOrder> elmList; // قائمة العناصر للنماذج
+  late List<KhatiraModelNewOrder> khatiraList; // قائمة العناصر للنماذج
   BasePageCubit() : super(PageInitial());
 
   // Methods -- //todo : move it from logic to ui
@@ -54,9 +54,9 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
 
   // Share content function (reusable across all cubits)
   void customShareContent(
-      int currentPageIndex, List<ElmModelNewOrder> elmList) {
+      int currentPageIndex, List<KhatiraModelNewOrder> khatiraList) {
     try {
-      final List<Text> shareText = getShareText(currentPageIndex, elmList);
+      final List<Text> shareText = getShareText(currentPageIndex, khatiraList);
       final String joinedText = shareText
           .map((text) => text.data)
           .join('\n'); // Join text elements with newline separator
@@ -69,11 +69,11 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   }
 
   // share text
-  List<Text> getShareText(int currentPageIndex, List<ElmModelNewOrder> elmList);
+  List<Text> getShareText(int currentPageIndex, List<KhatiraModelNewOrder> khatiraList);
 
-//  البحث في محتوى `ElmModelNewOrder`
-  List<ElmModelNewOrder> searchContent(String query) {
-    final results = elmList.where((item) {
+//  البحث في محتوى `KhatiraModelNewOrder`
+  List<KhatiraModelNewOrder> searchContent(String query) {
+    final results = khatiraList.where((item) {
       bool containsInTitles =
           item.titles?.any((title) => title.contains(query)) ?? false;
       bool containsInSubtitles =

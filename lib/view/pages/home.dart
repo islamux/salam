@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:khatir/core/data/static/imagelink/image_link.dart';
 import 'package:khatir/core/data/static/routes_constant.dart';
 import 'package:khatir/core/data/static/theme/app_color_constant.dart';
-import 'package:khatir/cubit/elm_cubits/home_cubit.dart';
+import 'package:khatir/cubit/khatira_cubits/home_cubit.dart';
 import 'package:khatir/helpers/extensions/navigation_helper.dart';
 import 'package:khatir/helpers/handle_pop.dart';
 import 'package:khatir/helpers/search/data_search.dart';
@@ -110,7 +110,7 @@ class Home extends StatelessWidget {
                             customText: "خواطر متفرقة حول الدين والحياة",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElmPre(context);
-                              context.pushNamed(RoutesConstant.elmPre);
+                              context.pushNamed(RoutesConstant.khatiraPre);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -118,7 +118,7 @@ class Home extends StatelessWidget {
                             customText: "(1) عوامل تفكك وفشل الأسرة والقبيلة",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm1(context);
-                              context.pushNamed(RoutesConstant.elm1);
+                              context.pushNamed(RoutesConstant.khatira1);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -126,7 +126,7 @@ class Home extends StatelessWidget {
                             customText: "(2) العلم والمعرفة",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm2(context);
-                              context.pushNamed(RoutesConstant.elm2);
+                              context.pushNamed(RoutesConstant.khatira2);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -134,7 +134,7 @@ class Home extends StatelessWidget {
                             customText: "(3) العطاء ليس مقياس لحب الله للعبد",
                             onPressed: () {
                               //context.read<HomeCubit>().goToElm3(context);
-                              context.pushNamed(RoutesConstant.elm3);
+                              context.pushNamed(RoutesConstant.khatira3);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -142,7 +142,7 @@ class Home extends StatelessWidget {
                             customText: " (4) المحبة الإلهية",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm4(context);
-                              context.pushNamed(RoutesConstant.elm4);
+                              context.pushNamed(RoutesConstant.khatira4);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -150,7 +150,7 @@ class Home extends StatelessWidget {
                             customText: "  (5)   العدل",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm5(context);
-                              context.pushNamed(RoutesConstant.elm5);
+                              context.pushNamed(RoutesConstant.khatira5);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -158,7 +158,7 @@ class Home extends StatelessWidget {
                             customText: "  (6)   الشرك الخفي",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm6(context);
-                              context.pushNamed(RoutesConstant.elm6);
+                              context.pushNamed(RoutesConstant.khatira6);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -166,7 +166,7 @@ class Home extends StatelessWidget {
                             customText: "  (7)   التوكل على الله",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm7(context);
-                              context.pushNamed(RoutesConstant.elm7);
+                              context.pushNamed(RoutesConstant.khatira7);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -174,7 +174,7 @@ class Home extends StatelessWidget {
                             customText: " (8)   المعية الإلهية",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm8(context);
-                              context.pushNamed(RoutesConstant.elm8);
+                              context.pushNamed(RoutesConstant.khatira8);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -182,7 +182,7 @@ class Home extends StatelessWidget {
                             customText: "(9) فأما اليتيم فلا تقهر ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm9(context);
-                              context.pushNamed(RoutesConstant.elm9);
+                              context.pushNamed(RoutesConstant.khatira9);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -190,7 +190,7 @@ class Home extends StatelessWidget {
                             customText: " (10) والذين جاهدو فينا",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm10(context);
-                              context.pushNamed(RoutesConstant.elm10);
+                              context.pushNamed(RoutesConstant.khatira10);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -198,7 +198,7 @@ class Home extends StatelessWidget {
                             customText: " (11)   الرزق",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm11(context);
-                              context.pushNamed(RoutesConstant.elm11);
+                              context.pushNamed(RoutesConstant.khatira11);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -206,7 +206,7 @@ class Home extends StatelessWidget {
                             customText: "(12) وإنك لعلى خلق عظيم",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm12(context);
-                              context.pushNamed(RoutesConstant.elm12);
+                              context.pushNamed(RoutesConstant.khatira12);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -214,7 +214,7 @@ class Home extends StatelessWidget {
                             customText: "(13) مأ أصابكم من مصيبة ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm13(context);
-                              context.pushNamed(RoutesConstant.elm13);
+                              context.pushNamed(RoutesConstant.khatira13);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -222,7 +222,7 @@ class Home extends StatelessWidget {
                             customText: "(14)  الإسلام دين شامل",
                             onPressed: () {
                               //context.read<HomeCubit>().goToElm14(context);
-                              context.pushNamed(RoutesConstant.elm14);
+                              context.pushNamed(RoutesConstant.khatira14);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -230,7 +230,7 @@ class Home extends StatelessWidget {
                             customText: "(15) العزة لله  ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm15(context);
-                              context.pushNamed(RoutesConstant.elm15);
+                              context.pushNamed(RoutesConstant.khatira15);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -238,7 +238,7 @@ class Home extends StatelessWidget {
                             customText: "(16)  المرأة الصالحة  ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm16(context);
-                              context.pushNamed(RoutesConstant.elm16);
+                              context.pushNamed(RoutesConstant.khatira16);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -246,7 +246,7 @@ class Home extends StatelessWidget {
                             customText: " (17)   الدعاء",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm17(context);
-                              context.pushNamed(RoutesConstant.elm17);
+                              context.pushNamed(RoutesConstant.khatira17);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -254,7 +254,7 @@ class Home extends StatelessWidget {
                             customText: " (18)   مقتطفات",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm18(context);
-                              context.pushNamed(RoutesConstant.elm18);
+                              context.pushNamed(RoutesConstant.khatira18);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -262,7 +262,7 @@ class Home extends StatelessWidget {
                             customText: " (19)   أولياء الله",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm19(context);
-                              context.pushNamed(RoutesConstant.elm19);
+                              context.pushNamed(RoutesConstant.khatira19);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -270,7 +270,7 @@ class Home extends StatelessWidget {
                             customText: " (20)   التقوى",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm20(context);
-                              context.pushNamed(RoutesConstant.elm20);
+                              context.pushNamed(RoutesConstant.khatira20);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -278,7 +278,7 @@ class Home extends StatelessWidget {
                             customText: " (21)  الصبر ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm21(context);
-                              context.pushNamed(RoutesConstant.elm21);
+                              context.pushNamed(RoutesConstant.khatira21);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -286,7 +286,7 @@ class Home extends StatelessWidget {
                             customText: " (22)  الحمد ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm21(context);
-                              context.pushNamed(RoutesConstant.elm22);
+                              context.pushNamed(RoutesConstant.khatira22);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -294,7 +294,7 @@ class Home extends StatelessWidget {
                             customText: " (23)  يدبر الأمر ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm23(context);
-                              context.pushNamed(RoutesConstant.elm23);
+                              context.pushNamed(RoutesConstant.khatira23);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -302,7 +302,7 @@ class Home extends StatelessWidget {
                             customText: "(24) شكر النعمة أمان من زوالها",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm23(context);
-                              context.pushNamed(RoutesConstant.elm24);
+                              context.pushNamed(RoutesConstant.khatira24);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -310,7 +310,7 @@ class Home extends StatelessWidget {
                             customText: "(25) قد أفلح المؤمنون",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm23(context);
-                              context.pushNamed(RoutesConstant.elm25);
+                              context.pushNamed(RoutesConstant.khatira25);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -318,49 +318,49 @@ class Home extends StatelessWidget {
                             customText: "(26) الكبــــــــر ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm23(context);
-                              context.pushNamed(RoutesConstant.elm26);
+                              context.pushNamed(RoutesConstant.khatira26);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
                             customText: "(27) الأمر بالمعروف والنهي عن المنكر ",
                             onPressed: () {
-                              context.pushNamed(RoutesConstant.elm27);
+                              context.pushNamed(RoutesConstant.khatira27);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
                             customText: "(28) لا تخف إنك أنت الأعلى",
                             onPressed: () {
-                              context.pushNamed(RoutesConstant.elm28);
+                              context.pushNamed(RoutesConstant.khatira28);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
                             customText: "(29) الطيران في الجنة",
                             onPressed: () {
-                              context.pushNamed(RoutesConstant.elm29);
+                              context.pushNamed(RoutesConstant.khatira29);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
                             customText: "(30) ياليتني قدمت لحياتي",
                             onPressed: () {
-                              context.pushNamed(RoutesConstant.elm30);
+                              context.pushNamed(RoutesConstant.khatira30);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
                             customText: "(31) يا بني اركب معنا",
                             onPressed: () {
-                              context.pushNamed(RoutesConstant.elm31);
+                              context.pushNamed(RoutesConstant.khatira31);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
                           CustomButton(
                             customText: "(32) الإحساس بالنذالة شيء لايطاق",
                             onPressed: () {
-                              context.pushNamed(RoutesConstant.elm32);
+                              context.pushNamed(RoutesConstant.khatira32);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),
@@ -368,7 +368,7 @@ class Home extends StatelessWidget {
                             customText: " (خاتمة)  المصير المحتوم ",
                             onPressed: () {
                               // context.read<HomeCubit>().goToElm22(context);
-                              context.pushNamed(RoutesConstant.elmFinal);
+                              context.pushNamed(RoutesConstant.khatiraFinal);
                             },
                             icon: const Icon(Icons.menu_book),
                           ),

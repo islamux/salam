@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:khatir/core/data/model/elm_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
 import 'package:khatir/cubit/base_cubit/base_page_state.dart';
 import 'package:khatir/view/widget/custom_text_slider/get_page_texts_order.dart';
@@ -8,7 +8,7 @@ import 'package:khatir/core/data/static/theme/app_color_constant.dart';
 
 class GenericCustomTextSlider extends StatelessWidget {
   final BasePageCubit cubit;
-  final List<ElmModelNewOrder> dataList;
+  final List<KhatiraModelNewOrder> dataList;
   final String backgroundImagePath;
 
   const GenericCustomTextSlider({
