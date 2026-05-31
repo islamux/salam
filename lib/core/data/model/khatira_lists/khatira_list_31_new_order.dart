@@ -99,7 +99,11 @@ List<KhatiraModelNewOrder> khatiraList31NewOrder = [
     ],
   ),
   // 7
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyOne.textThirtyOnePageSeven_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyOne.textThirtyOnePageSeven_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 8
   KhatiraModelNewOrder(
     titles: [

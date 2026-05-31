@@ -16,28 +16,32 @@ List<Text> getPageTextsForSharing(
   for (var orderItem in khatiraModel.order) {
     switch (orderItem) {
       case EnOrder.titles:
-        if (khatiraModel.titles != null && titleIndex < khatiraModel.titles!.length) {
+        if (khatiraModel.titles != null &&
+            titleIndex < khatiraModel.titles!.length) {
           sharedTexts.add(Text(khatiraModel.titles![titleIndex]));
           titleIndex++;
         }
         break;
 
       case EnOrder.subtitles:
-        if (khatiraModel.subtitles != null && subtitleIndex < khatiraModel.subtitles!.length) {
+        if (khatiraModel.subtitles != null &&
+            subtitleIndex < khatiraModel.subtitles!.length) {
           sharedTexts.add(Text(khatiraModel.subtitles![subtitleIndex]));
           subtitleIndex++;
         }
         break;
 
       case EnOrder.texts:
-        if (khatiraModel.texts != null && textIndex < khatiraModel.texts!.length) {
+        if (khatiraModel.texts != null &&
+            textIndex < khatiraModel.texts!.length) {
           sharedTexts.add(Text(khatiraModel.texts![textIndex]));
           textIndex++;
         }
         break;
 
       case EnOrder.ayahs:
-        if (khatiraModel.ayahs != null && ayahIndex < khatiraModel.ayahs!.length) {
+        if (khatiraModel.ayahs != null &&
+            ayahIndex < khatiraModel.ayahs!.length) {
           sharedTexts.add(Text(khatiraModel.ayahs![ayahIndex]));
           ayahIndex++;
         }
@@ -53,4 +57,3 @@ List<Text> getPageTextsForSharing(
 
   return sharedTexts;
 }
-

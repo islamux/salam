@@ -15,7 +15,7 @@ class KhatiraTextDersTen {
 سورة العنكبوت 
 """;
 
-  static const String elmTextTenOne_2 = """
+  static const String khatiraTextTenOne_2 = """
 وقته، إمكاناته، ماله، صحته، مكانته، وجاهته، ذكائه، معلوماته، كل عضلاته، كل خبراته، علمه، وحرفته، كل شيئ بذله رخيصآ في سبيل الله، في سبيل معرفتنا، في سبيل طاعتنا، في سبيل التقرب إلينا، في سبيل نيل رضائنا
    """;
 
@@ -24,7 +24,7 @@ class KhatiraTextDersTen {
 سورة العنكبوت
 """;
 
-  static const String elmTextTenOne_3 = """
+  static const String khatiraTextTenOne_3 = """
 هؤلاء الله عز وجل يطمئنهم، لا بد من أن تصلو إلينا، لا بد من أن نعينكم على طاعتنا، لابد أن نعينكم على بلوغ رضائنا
 """;
 
@@ -34,7 +34,7 @@ class KhatiraTextDersTen {
 سورة العنكبوت 
 """;
 
-  static const String elmTextTenTwo_1 = """
+  static const String khatiraTextTenTwo_1 = """
 أبشروا، سبلنا هي السبل الموصلة إلينا، سبيل الطاعة، سبيل الرضوان، سبيل الجنه، سبيل السعاده، سبيل السلم، أن تكون في سلام مع الله، ومع الناس، سبيل الحمد، هذه السبل كلها لله، والسبل إلى الله كثيرة، سبيل لطاعته، سبيل لتقواه، سبيل لمرضاته، سبيل للفوز بجنته، سبيل لمحبةأنبيائه ورسله، سبيل لأن تسعد بقربه
 
 """;
@@ -50,7 +50,7 @@ class KhatiraTextDersTen {
 سورة العنكبوت 
 """;
 
-  static const String elmTextTenThree_1 = """
+  static const String khatiraTextTenThree_1 = """
 هذه معيه خاصه، وهذه المعيه الخاصه ثمنها ان تكون محسنآ مع من ؟ مع كل الخلق، بقولك محسن، بعملك محسن، بحرفتك محسن، بوظيفتك محسن، بتجارتك محسن، بصناعتك محسن، بكل شيئ تفعله، في بيتك محسن، مع جيرانك محسن، مع الخلق كلهم محسن معهم
    """;
 
@@ -60,7 +60,7 @@ class KhatiraTextDersTen {
 
 """;
 
-  static const String elmTextTenThree_2 = """
+  static const String khatiraTextTenThree_2 = """
 ومن السذاجه والغباء، وضيق العقل والحمق ان تظن ان معيةالله تنالها بلا ثمن أو بثمن بخس
  """;
 
@@ -71,7 +71,7 @@ class KhatiraTextDersTen {
  سورة المائدة 
 """;
 
-  static const String elmTextTenFour_1 = """
+  static const String khatiraTextTenFour_1 = """
 هذه معية الله عز وجل، فالإنسان لا يطمع بمعيةالله بلا ثمن أو بثمن بخس سخيف، الا إن سلعةالله غالية، وطلب الجنه من دون عمل ذنب من الذنوب
  """;
 
@@ -81,7 +81,7 @@ class KhatiraTextDersTen {
 سورة العنكبوت 
 """;
 
-  static const String elmTextTenFive_1 = """
+  static const String khatiraTextTenFive_1 = """
 هذه الأيه بشاره لكل محسن
 والله اللذي لا إله إلا هو، هذه الايه وحدها فيها بشاره كبيره لكل مؤمن، أيها المؤمن: مادام همك ان تعرفنا، مادام همك أن تطيعنا، مادام همك أن تتقرب إلينا، مادام همك أن تبذل كل شيئ من أجلنا، فأبشر، فإنك سوف تصل إلينا، وتهتدي إلى سعادتك وجنتك، ومعيةالله عز وجل ثمنها أن تكون محسنا
 """;
@@ -94,7 +94,7 @@ class KhatiraTextDersTen {
   """;
 
 // page 6
-  static const String elmTextTenSix_1 = """
+  static const String khatiraTextTenSix_1 = """
 يجب أن تكون محسنا، يجب أن يفتقدك الناس إذا غبت عنهم، إذا دخلت البيت يجب أن يكون عند اولادك عيد، لأنك محسن، فإذا كنت قاسيا عليهم، فإذا كنت بخيلا يتوخى الأولاد أن لا تكون بينهم، فكن محسنآ في عملك، في دائرتك، في متجرك، في مصنعك، في دكانك، في زراعتك، في أي شيء، محسن مع الوالدين، مع الزوجة، مع الأقارب، مع الجيران
 """;
 
@@ -105,7 +105,7 @@ class KhatiraTextDersTen {
 """;
 
   // page 7
-  static const String elmTextTenSeven_1 = """
+  static const String khatiraTextTenSeven_1 = """
 بذلوا كل جهدهم، كل طاقتهم، كل علمهم، كل خبرتهم، كل عضلاتهم، كل وقتهم، كل شبابهم فينا، من أجل معرفتنا وطاعتنا والتقرب إلينا
 """;
   static const String ayahHadithTenSeven_1 = """
@@ -113,7 +113,7 @@ class KhatiraTextDersTen {
 سورة العنكبوت 
 """;
 
-  static const String elmTextTenSeven_2 = """
+  static const String khatiraTextTenSeven_2 = """
 سبل السعادة والسلام، والأمن والراحة والرضوان، والفوز والنجاح والفلاح
 """;
 
@@ -123,7 +123,7 @@ class KhatiraTextDersTen {
 
 """;
 
-  static const String elmTextTenSeven_3 = """
+  static const String khatiraTextTenSeven_3 = """
 هذه الأية تكفي كل مؤمن، ولتكن في قلبه دائمآ، ولتكن في ذهنه دائما
  ---------------------
    """;

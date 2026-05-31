@@ -16,6 +16,21 @@ flutter analyze
 dart format .
 ```
 
+### Generator (list files from text sources)
+```bash
+# Regenerate all 34 list files (safe to re-run)
+dart run tool/generate_elm_lists.dart
+
+# Regenerate with khatira field prefix (post-rename)
+dart run tool/generate_elm_lists.dart --rename-prefix khatira
+
+# Fix text file field names in-place (elmText → khatiraText)
+dart run tool/generate_elm_lists.dart --fix-text
+
+# Unit tests (23 tests for generator functions)
+flutter test test/tool/generate_elm_lists_test.dart
+```
+
 ### Infrastructure
 ```bash
 # MCP server tests (150 tests)
@@ -51,8 +66,9 @@ ElmModelNewOrder(
 lib/
   main.dart                            - App entry (runApp ElmApp)
   app_routes.dart                      - Route generator
-  core/data/model/elm_lists/           - 34 ElmList data files (1-32 + pre + final)
-  core/data/model/elm_model_new_order.dart - Data model
+  core/data/static/text/khatira_text_ders_*.dart - 34 text source files (1-32 + pre + final)
+  core/data/model/khatira_lists/       - 34 generated list files (khatira_list_*_new_order.dart)
+  core/data/model/elm_model_new_order.dart - Data model (ElmModelNewOrder)
   core/data/model/enum_order.dart      - EnOrder enum
   cubit/base_cubit/                    - BasePageCubit (all 32+ pages extend this)
   cubit/elm_cubits/                    - 35 page cubits (32 + pre + final + home)

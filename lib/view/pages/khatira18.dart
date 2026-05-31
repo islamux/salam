@@ -54,7 +54,9 @@ class Khatira18Page extends StatelessWidget {
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  context.read<Khatira18Cubit>().resetCounter(); // Reset counter
+                  context
+                      .read<Khatira18Cubit>()
+                      .resetCounter(); // Reset counter
                   // Navigator.pushNamed(
                   //     context, RoutesConstant.home); // Navigate to home
 
@@ -85,13 +87,13 @@ class Khatira18Page extends StatelessWidget {
                   },
                   icon: const Icon(Icons.add),
                 ),
-                              IconButton(
+                IconButton(
                   onPressed: () {
                     showSearch(context: context, delegate: DataSearch());
                   },
                   icon: const Icon(Icons.search),
                 ),
-],
+              ],
             ),
             body: SafeArea(
               // Removed const

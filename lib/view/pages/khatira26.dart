@@ -54,7 +54,9 @@ class Khatira26Page extends StatelessWidget {
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  context.read<Khatira26Cubit>().resetCounter(); // Reset counter
+                  context
+                      .read<Khatira26Cubit>()
+                      .resetCounter(); // Reset counter
                   // Navigator.pushNamed(
                   //     context, RoutesConstant.home); // Navigate to home
 
@@ -85,19 +87,21 @@ class Khatira26Page extends StatelessWidget {
                   },
                   icon: const Icon(Icons.add),
                 ),
-                              IconButton(
+                IconButton(
                   onPressed: () {
                     showSearch(context: context, delegate: DataSearch());
                   },
                   icon: const Icon(Icons.search),
                 ),
-],
+              ],
             ),
-            body: SafeArea( // Removed const
+            body: SafeArea(
+              // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: GenericCustomTextSlider( // Changed
+                    child: GenericCustomTextSlider(
+                      // Changed
                       cubit: context.read<Khatira26Cubit>(),
                       dataList: khatiraList26NewOrder,
                       backgroundImagePath: ImageLink.image12,

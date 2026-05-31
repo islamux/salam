@@ -10,7 +10,7 @@ class KhatiraTextDersFive {
 
 """;
 
-  static const String elmTextFiveOne_1 = """
+  static const String khatiraTextFiveOne_1 = """
 في تاريخ العالم كل الحركات الباطلة تلاشت وأنهارت وأصبحت في مزبلة التاريخ أما الدين ففي نمو دائم هذا الدين الذي جاء به عليه الصلاة والسلام يتنامى كالطود الشامخ، بل انه كلما قاومته يزداد شموخاً لأنه دين الله وهذه معركة البشر اليوم بين الحق والباطل، بين وحي السماء وبين تنظيمات الأرض، بين من يعمل لآخرة أبدية سرمدية وبين من يعمل للدنيا
 """;
   static const String footerFiveOne = """
@@ -25,7 +25,7 @@ class KhatiraTextDersFive {
 الإسراء 
 """;
 
-  static const String elmTextFiveTwo_1 = """
+  static const String khatiraTextFiveTwo_1 = """
 علينا إقامة الحق فيما بيننا حتى نستحق ان ننتصر
 """;
   static const String ayahHadithFiveTwo_2 = """
@@ -34,8 +34,8 @@ class KhatiraTextDersFive {
 النساء 
 """;
 
-//page 3
-  static const String elmTextFiveThree_1 = """
+// page 3
+  static const String khatiraTextFiveThree_1 = """
 أنت على حق والذي أنزله هو الحق وهذا الكتاب الذي أنزل عليك هو الحق لذلك العالم كله الآن مع معركته  مع هذا الكتاب يكاد يكون الصراع في العالم كله بين الحق والباطل بين منهج الله وبين منهج البشر، بين الشهوة وبين الحقيقة، بين الدنيا وبين الآخرة
 """;
 
@@ -44,18 +44,18 @@ class KhatiraTextDersFive {
 النساء 
 """;
 
-  static const String elmTextFiveThree_2 = """
+  static const String khatiraTextFiveThree_2 = """
 دققوا ايها الاخوة لم يقل الله عز وجل لتحكم بين المؤمنين
 
 """;
 
 // page 4
-  static const String elmTextFiveFour_1 = """
+  static const String khatiraTextFiveFour_1 = """
 أي انت في أمور الحق ينبغي ألا تفرق بين مسلم وغير مسلم هذا منهج الله لبني البشر فإذا طبق بين الناس سعدوا في الدنيا فإن طبقوه تعبداً لله سعدوا في الدنيا والآخره، وقد تأتي جهات لاتؤمن بالله اصلاً فتأخذ منهج الله وتطبقه فتقطف ثماره يانعة في الدنيا بل إن هذا المنهج الذي بين أيدينا منهج موضوعي بمعنى أن الكافر لو طبقه لاتعبداً بل منفعة قطف ثماره، والدول القوية أحد اسباب قوتها أنها بدافع من عقلها تطبق أحكام هذا المنهج لمصالحها فإذا هي قوية، منهج موضوعي لو طبقه ملحد لقطف ثماره، العدل أن تعطي الإنسان حقه أن تصون له كرامته أن تهيىء له أسباب العيش إلى ماهنالك
 """;
 
 // page 5
-  static const String elmTextsFiveFive_1 = """
+  static const String khatiraTextsFiveFive_1 = """
 ما صرف الناس عن الدين إلا لأنهم فرقوا بين مسلم وغير مسلم
 """;
   static const String ayahHadithFiveFive_1 = """
@@ -64,29 +64,29 @@ class KhatiraTextDersFive {
 المائدة 
 """;
 
-  static const String elmTextsFiveFive_2 = """
+  static const String khatiraTextsFiveFive_2 = """
 من غش مطلقاً، ولو غششت كافراً، ولو غششت عابد صنم فلست من المسلمين
   """;
 
 // page 6
-  static const String elmTextFiveSix_1 = """
+  static const String khatiraTextFiveSix_1 = """
 حينما أرسل النبي عليه الصلاة والسلام عبدالله بن رواحة ليقيم تمر خيبر أراد اليهود أن يغروه بحلي نسائهم لعله يخفض التقييم فيفوز بربح وفير، فقال هذا الصحابي الجليل: جئتكم من عند أحب الخلق إلي من عند محمد بن عبدالله ولأنتم أبغض إلي من القردة والخنازير ومع ذلك لن أحيف عليكم، فقال اليهود: بهذا قامت السماوات والأرض وبهذا غلبتمونا، والآن والله الذي لاإله إلا هو  لا يمكن أن ننتصر على أعدائنا إلا إذا كنا على حق، إلا إذا كنا منصفين، إلا إذا أزلنا المظالم فيما بيننا
 
   """;
 
 // page 7
-  static const String elmTextFiveSeven_1 = """
+  static const String khatiraTextFiveSeven_1 = """
 مسلمون موحدون يتجهون إلى قبلة واحدة، يشهدون أنه لا إله إلا الله، ومعظمهم يأكل حقوق بعضهم البعض، فهذا الإنسان حينما يعتدي على أخيه الإنسان يسقط من عين الله، ولئِن يسقط الإنسان من السماء إلى الأرض أهون من أن يسقط من عين الله، حينما يهون أمر الله على المسلمين نهون على الله عز وجل 
 
   """;
   // page 8
-  static const String elmTextFiveEight_1 = """
+  static const String khatiraTextFiveEight_1 = """
 على كلٍ موضوع الحق، الله هو الحق، وهذا الدين دين الحق، والقرآن حق، والنبي حق، والأوامر حق، والنواهي حق، وحينما نعتدي على بعضنا بعضاً ينبغي ألا نطمع أن ينظر الله لنا، أو أن يرحمنا، والمظالم في بلاد المسلمين لاتعد ولاتحصى، أي الضعيف يُستَغل، ضعيف التفكير يُستَغل، ضعيف القوة يُستَغل، فإذا أردنا أن ننتصر يجب أن نقيم الحق فيما بيننا حتى نستحق أن ننتصر
 
   """;
 
   // page 9
-  static const String elmTextFiveNine_1 = """
+  static const String khatiraTextFiveNine_1 = """
 من أسباب هلاك الأمم الظلم، وإن الله ينصر الأمة العادلة الكافرة على الأمة المسلمة الظالمة
 معظم أسباب هلاك الأمم موجودة في المسلمين اليوم الأقوام السابقون كان الله عز وجل يهلك الأمة لمعصية واحدة، فإذا أجتمعت كل المعاصي في المسلمين فشيء طبيعي جداً أن يتخلى الله عنا، لايلتفت إلى دعوانا
 """;
@@ -97,7 +97,7 @@ class KhatiraTextDersFive {
  """;
 
 // page 10
-  static const String elmTextFiveTen_1 = """
+  static const String khatiraTextFiveTen_1 = """
 حتى نعمة الأمن قد نحرم منها بسبب الظلم
 """;
   static const String ayahHadithFiveTen_1 = """
@@ -107,7 +107,7 @@ class KhatiraTextDersFive {
 الأنعام 
 """;
 
-  static const String elmTextFiveTen_2 = """
+  static const String khatiraTextFiveTen_2 = """
 أما إذا ألبس المؤمن إيمانه بالظلم ليس آمناً، وليس ناجياً وسوف يعذب أشد العذاب
  """;
   static const String ayahHadithFiveTen_2 = """
@@ -117,7 +117,7 @@ class KhatiraTextDersFive {
 """;
 
 // page 11
-  static const String elmTextFiveEleven_1 = """
+  static const String khatiraTextFiveEleven_1 = """
 وكما قلنا سابقاً لايمكن أن نشم رائحة النصر إذا كان بعضنا يظلم بعضنا الآخر، كم من زوج يظلم زوجته؟ وكم من رب عمل يظلم عماله؟ وكم من صاحب أرض يظلم فلاحه؟ وكم من قوي يأكل الضعيف؟ وكم من غني يستغل الفقير؟ وكم؟ وكم؟ 
 حينما يظلم بعضنا بعضاً لايمكن أن نشم رائحة النصر لأجل ذلك كله حينما يفهم الناس الدين فهماً صحيحاً يستحقون نصر الله عز وجل
 قال بعض العلماء: والله ترك دانق من حرام خير من ثمانين حجة بعد حجة الإسلام هذا هو الدين، درء المفاسد مقدم على جلب المنافع، حينما يفهم الناس هذا الفهم يستحقون نصر الله عز وجل
@@ -133,7 +133,7 @@ class KhatiraTextDersFive {
 وَلَنُذِیقَنَّهُم مِّنَ ٱلۡعَذَابِ ٱلۡأَدۡنَىٰ دُونَ ٱلۡعَذَابِ ٱلۡأَكۡبَرِ لَعَلَّهُمۡ یَرۡجِعُونَ ۝٢١
  السجدة 
 """;
-  static const String elmTextFiveEleven_2 = """
+  static const String khatiraTextFiveEleven_2 = """
 والعذاب الادنى أي البلاء والمحن والمصائب في الدنيا قبل الاخرة وهناك من يظن أن مايحصل له إبتلاء من الله وأن الله يحبه 
 فيستمر في ظلمة لغيرة او حتى لنفسه في حين أن ذالك قد يكون تأديب أو عقاب من الله عز وجل
   """;
@@ -146,7 +146,7 @@ class KhatiraTextDersFive {
  ۞ إِنَّ ٱللَّهَ یَأۡمُرُ بِٱلۡعَدۡلِ وَٱلۡإِحۡسَـٰنِ 
 النحل 
 """;
-  static const String elmTextFiveTwelve_1 = """
+  static const String khatiraTextFiveTwelve_1 = """
 كما انك مأمور بالعدل فأنت مأمور بالإحسان، العدل: توزيع الأموال وفق النصيب المفروض، والإحسان 
 """;
   static const String ayahHadithFiveTwelve_2 = """
@@ -155,7 +155,7 @@ class KhatiraTextDersFive {
 النساء 
 """;
 
-  static const String elmTextFiveTwelve_2 = """
+  static const String khatiraTextFiveTwelve_2 = """
 العدل: قسري، والإحسان: طوعي، لكنك مأمور بالعدل والإحسان
 
 العدل نصيب مفروض فهو قسري أما الإحسان فهو طوعي، والف قضيه لاتستقيم على العدل، لكنها تستقيم على الإحسان

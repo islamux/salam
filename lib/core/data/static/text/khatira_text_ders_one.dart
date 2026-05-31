@@ -4,18 +4,18 @@ class KhatiraTextDersOne {
 عوامل تفكك وفشل الأسرة والقبيلة
 --------------------------
   """;
-  static const String elmTextOneOne_1 = """
+  static const String khatiraTextOneOne_1 = """
 هناك عدة عوامل واسباب لتحطيم وفشل بعض او معظم الاسر والقبائل بشكل عام وبعض أو معظم مالكي الاراضي بشكل خاص وبيعهم للارض بأبخس الاثمان وتماديهم لدرجة انهم يظلموا متعمدين او دون ان يشعروا مما يؤدي إلى كثرة المشاكل والثارات 
 
   """;
 
-  static const String elmTextOneOne_2 = """
+  static const String khatiraTextOneOne_2 = """
           (1)
 عدم فهم بعض أفراد المجتمع لأهمية دور العاقل أو الوكيل أو شيخ القبيلة وضرورة وجوده كرئيس مصغر للحكومة الاسرية يدير شؤونها وينظم اهدافها وضرورة احترامه وتقديره واحترام توجيهاته وتقدير مشاعره وكل جهود يبذلها لمصلحة الجميع
 
 """;
 
-  static const String elmTextOneOne_3 = """
+  static const String khatiraTextOneOne_3 = """
 وبالمقابل عدم فهم هذا العاقل او الوكيل او شيخ القبيلة لمسؤليته تجاه اسرته ومجتمعه وماذا يعني له شأن انه مقلد بعهد الله تعالى وميثاقه وأن عليه الرقابة الالهية المستمرة تجاه تصرفاته وخطواته 
 """;
 
@@ -29,7 +29,7 @@ class KhatiraTextDersOne {
  سورة الحجر 
 
   """;
-  static const String elmTextOneTwo_1 = """
+  static const String khatiraTextOneTwo_1 = """
           (2)
 القصور لدى البعض بأهمية مسألة العمل الجماعي والتعاوني والتكافل الاجتماعي وأهمية التوحد والاعتصام بحبل الله جميعاً وعدم التفرق الذي يذهب ريحكم.....الخ
 والتعاون على البر والتقوى
@@ -42,7 +42,7 @@ class KhatiraTextDersOne {
 
 """;
 
-  static const String elmTextOneThree_1 = """
+  static const String khatiraTextOneThree_1 = """
           (3)
 قلة الوعي لدى بعض الاسر بالمجتمع وعدم الاستشعار لدى معظم الناس لخطورة الشيطان ووساوسه وقد حذرنا الله 
   """;
@@ -54,13 +54,13 @@ class KhatiraTextDersOne {
 فاطر  
 """;
 // page 4
-  static const String elmTextOneFour_1 = """
+  static const String khatiraTextOneFour_1 = """
           (4)
 مرض العظمة والغرور وعدم الاعتراف بمنجزات الآخرين حتى وإن كانت­ عظيمة«يرونها بعين الاحتقار» ويستصغرونها وكأنها ليست بشيء ممكن ان يهدموا كل ماضيك الجميل مقابل موقف لم يعجبهم ينظرون للوجه المظلم ويتركون الوجه المشرق إن صح التعبير
 
   """;
 
-  static const String elmTextOneFour_2 = """
+  static const String khatiraTextOneFour_2 = """
           (5)
 الكبر والاستعلاء وهذا من عمل الشيطان 
   """;
@@ -75,7 +75,7 @@ class KhatiraTextDersOne {
 
 """;
 // page 5
-  static const String elmTextOneFive_1 = """
+  static const String khatiraTextOneFive_1 = """
           (6)
 مرض الأنانية اخطاء الآخرين كبيرة وعظيمة وأخطائهم صغيرة هذا إن اعترفوا بأنهم أخطأو
 
@@ -86,7 +86,7 @@ class KhatiraTextDersOne {
 
 """;
 
-  static const String elmTextOneFive_2 = """
+  static const String khatiraTextOneFive_2 = """
           (7)
 الشك والوهم التسرع في الحكم على الآخرين الأحكام الجائرة المبنية على سوء الظن والشك والوهم لأنهم لم يتدبروا
 قوله سبحانه وتعالى 
@@ -107,7 +107,7 @@ class KhatiraTextDersOne {
   """;
 
 // page 7
-  static const String elmTextOneSeven_1 = """
+  static const String khatiraTextOneSeven_1 = """
        (8)
     :بعض النساء 
   """;
@@ -120,12 +120,12 @@ class KhatiraTextDersOne {
 البقرة  
 """;
 
-  static const String elmTextOneSeven_2 = """
+  static const String khatiraTextOneSeven_2 = """
  الرجل يزيد عن المرأة بدرجة واحدة هي درجة القيادة درجة القرار فلابد من إنسان واحد يقول لا أو نعم، لأن الرجل بعد نظره كبير، وقراره حاسم، وإدراكه أعمق، ومعرفته بالحياة أدق، وخبرته بالمشكلات أعمق، فلابد من صاحب قرار والقرار هو هذه الدرجة، درجة القيادة
 
 """;
 // page 8
-  static const String elmTextOneEight_1 = """
+  static const String khatiraTextOneEight_1 = """
           (9)
 القيل والقال [والهمز واللمز]
  والكلام الذي يجرح مشاعر الآخرين والذي يسبب الجفاء والبعد والقِمر والتعنت وذلك لعدم تدبرهم لقوله سبحانه وتعالى
@@ -136,12 +136,12 @@ class KhatiraTextDersOne {
 الهمزة 
 """;
 
-  static const String elmTextOneEight_2 = """
+  static const String khatiraTextOneEight_2 = """
  والويل وادي في جهنم وبعضهم قالوا أن الويل الهلاك والشقاء والخسارة
   """;
 
 // page 9
-  static const String elmTextOneNine_1 = """
+  static const String khatiraTextOneNine_1 = """
           (11)
 الإسراف والتبذير وعدم الترتيب والإقتصاد في المعيشة
 """;
@@ -156,12 +156,12 @@ class KhatiraTextDersOne {
 إِنَّ ٱللَّهَ لَا یَهۡدِی مَنۡ هُوَ مُسۡرِفࣱ كَذَّابࣱ ۝٢٨ 
 غافر 
 """;
-  static const String elmTextOneNine_2 = """
+  static const String khatiraTextOneNine_2 = """
    وذلك مايجعل النفس طماعة وتتمادى على حق الغير
 """;
 
 // page 10
-  static const String elmTextOneTen_1 = """
+  static const String khatiraTextOneTen_1 = """
 (12)
 برود الهمة وضعف الإرادة للعمل أو المتاجرة وتوسيع مداخل الكسب الحلال وهذا يعود على الآباء الذين لم يربوا أولادهم على هذا الشيء منذ الصغر
 """;
@@ -178,7 +178,7 @@ class KhatiraTextDersOne {
   """;
 
 // page 11
-  static const String elmTextOneEleven_1 = """
+  static const String khatiraTextOneEleven_1 = """
           (13)
 الحسد وهو تمني زوال النعمة عن الغير دائماً ينظرون لما في يد الغير كثير ومافي أيديهم قليل ولايشكرون الله على ماأنعم عليهم حتى إذا كان مافي يد الغير
 خاص[فضل وكرم من الله] لأنهم ماتدبروا قوله سبحانه وتعالى
@@ -193,7 +193,7 @@ class KhatiraTextDersOne {
   """;
 
 // page 12
-  static const String elmTextOneTwelve_1 = """
+  static const String khatiraTextOneTwelve_1 = """
 (14)
 ضعف الإيمان [ايمان البعض شكلي] يظن البعض بأن الرزق يحتاج إلى دهاء وذكاء وحيلة ومكر وخداع وإذا لم يستخدم عقله سيضيع مستقبله أو مستقبل أبنائه
 """;
@@ -208,7 +208,7 @@ class KhatiraTextDersOne {
 الأنفال 
  """;
 
-  static const String elmTextOneTwelve_2 = """
+  static const String khatiraTextOneTwelve_2 = """
   ولم يثقوا بوعود الله في القرآن
  """;
 
@@ -232,13 +232,13 @@ class KhatiraTextDersOne {
   """;
 
   // page 13
-  static const String elmTextOneThirteen_1 = """
+  static const String khatiraTextOneThirteen_1 = """
           (15)
   قلة الاحترام، الصغير لايحترم الكبير
  
   """;
 
-  static const String elmTextOneThirteen_2 = """
+  static const String khatiraTextOneThirteen_2 = """
           (16)
 تدخل الأبناء والصغار بخلافات الآباء وعدم احترام مجالس الكبار وعدم توقير كبار السن 
 
@@ -252,11 +252,11 @@ class KhatiraTextDersOne {
  """;
 
   // page 14
-  static const String elmTextOneFourteen_1 = """
+  static const String khatiraTextOneFourteen_1 = """
           (17)
 التنافس والمباهاة والتفاخر بالمنازل والمأكل والملبس والسيارات ووسائل التواصل الاجتماعي [الهواتف النقالة والالكترونيات] لاأكثر ولا أقل
  """;
-  static const String elmTextOneFourteen_2 = """
+  static const String khatiraTextOneFourteen_2 = """
           (18)
 الاستعجال والمسابقة في بيع الأرض تحت شعار
 [بيع ولاتخلي اسمك يضيع] *
@@ -269,18 +269,18 @@ class KhatiraTextDersOne {
   """;
 
   // page 15
-  static const String elmTextOneFifteen_1 = """
+  static const String khatiraTextOneFifteen_1 = """
           (19)
 الشماتة [الشماتة أيضاً لها دور كبير لأن كل شيء يمكن تداركه بالاستغفار والتوبة إلا الشماتة لايمكن تداركها حتى وإن لم تنطق بكلمة يكفي بأن تحدث نفسك بأن فلان فاشل أو ضعيف أو سارق أو.. أو.. أو..] خاصة من يتشفى أو يفرح لمصيبة حصلت لأخيه وضع نفسه في خندق المنافقين دون أن يشعر
  """;
 
-  static const String elmTextOneFifteen_2 = """
+  static const String khatiraTextOneFifteen_2 = """
           (20)
 كل من أخطأ أو تعثر أو فشل أو عجز عن تحقيق طموحاته يجعل من الآخرين شماعة يعلق عليها أخطائه وفشله الذريع
 
 """;
 // page 16
-  static const String elmTextOneSixteen_1 = """
+  static const String khatiraTextOneSixteen_1 = """
           (21)
 عدم الاهتمام بالعلم وتوجيه الابناء التوجيه الصحيح وتشجيعهم على العلم والتعلم والمعرفة وتوعيتهم ولفت انتباههم لأهمية العلم وقيمة المتعلم في المجتمع 
 *
@@ -295,7 +295,7 @@ class KhatiraTextDersOne {
 """;
 
 // page 17
-  static const String elmTextOneSeventeen_1 = """
+  static const String khatiraTextOneSeventeen_1 = """
           (22)
 نبتة القات عندنا في اليمن وببعض الدول المجاورة والقنوات الفضائية وسهر الليل بعضهم يتأثر نفسياً بسبب سهر الليل ربنا سبحانه وتعالى يقول 
 
@@ -308,10 +308,9 @@ class KhatiraTextDersOne {
 """;
 
 // page 18
-  static const String elmTextOneEighteen_1 = """
+  static const String khatiraTextOneEighteen_1 = """
           (23)
 التسويف وعدم استغلال الوقت الاستغلال الصحيح تجاهلوا بأن أثمن شيء في حياة الإنسان هو الوقت [العمر] الله سبحانه وتعالى اقسم بمطلق الزمن
-
 
   """;
   static const String ayahHadithOneEighteen_1 = """
@@ -320,7 +319,7 @@ class KhatiraTextDersOne {
 العصر 
 
   """;
-  static const String elmTextOneEighteen_2 = """
+  static const String khatiraTextOneEighteen_2 = """
 وأقسم أيضاً بعمر النبي 
 """;
 
@@ -329,13 +328,13 @@ class KhatiraTextDersOne {
 الحجر 78 
 
   """;
-  static const String elmTextOneEighteen_3 = """
+  static const String khatiraTextOneEighteen_3 = """
 العمر الثمين الذي قضّاه كله لله والعظيم لايقسم إلا بعظيم والبعض أشغلوا أنفسهم بقضايا وأمور ليس لها أي فائدة ونسوا أن أخطر قضية في حياة الإنسان [الموت]
 
 """;
 
 // page 19
-  static const String elmTextOneNinteen_1 = """
+  static const String khatiraTextOneNinteen_1 = """
 وفي الأخير لا للتعميم لأن التعميم من العمى[عمى البصيرة] وإنما نقول نعم للتبعيض وكل هذه العوامل التي ذكرناها أنفاً لاتنطبق على الجميع وإنما تنطبق على البعض وكل من يرى في نفسه شيء من هذا سيجد نفسه بين السطور
 
 """;
@@ -345,15 +344,15 @@ class KhatiraTextDersOne {
 وقفه 
 ----
   """;
-  static const String elmTextOneTwenty_1 = """
+  static const String khatiraTextOneTwenty_1 = """
 رسولنا الكريم بين لنا سبيل التعاون وحذرنا من سبل التفرقه فكل ما من شأنه أن يقوي العلاقة بين المؤمنين امر النبي به، وكل ما من شأنه ان يبعد فيما بينهم نهى النبي عنه، فنهى عن الغيبه لأنها تمزق المجتمع، ونهى عن النميمة، ونهى عن السخرية، ونهى عن الغمز واللمز
 امرنا بأسباب الحب، ونهانا عن اسباب البغضاء
 وكل ما من شأنه ان يضعف العلاقة بين المؤمنين نهى النبي عنه
 """;
 // قبل الوققة او بعد الوقفة
 
-  // page 21
-  static const String elmTextOneTwentyOne_1 = """
+  // page 20
+  static const String khatiraTextOneTwentyOne_1 = """
 ▪️اللمز هو إشاعة العيوب والتعيير وكشف العورات 
 """;
   static const String ayahHadithOneTwentyOne_1 = """
@@ -361,7 +360,7 @@ class KhatiraTextDersOne {
           وَلَا تَلۡمِزُوٓا۟ أَنفُسَكُمۡ 
 
  """;
-  static const String elmTextOneTwentyOne_2 = """
+  static const String khatiraTextOneTwentyOne_2 = """
 ▪️دعوة الله عز وجل المؤمنين إلى أن يكونوا كالجسد الواحد 
   """;
   static const String ayahHadithOneTwentyOne_2 = """
@@ -370,20 +369,20 @@ class KhatiraTextDersOne {
 قال الله عز وجل 
           وَلَا تَأۡكُلُوٓا۟ أَمۡوَٰلَكُم بَيۡنَكُم بِٱلۡبَٰطِلِ 
 """;
-  static const String elmTextOneTwentyOne_3 = """
+  static const String khatiraTextOneTwentyOne_3 = """
 أي إن أكلت مال أخيك فكأنما أكلت مالك لأنه أخوك إن قوي فقوته لك، وإن أضعفته تضعف أنت معه، فإذا أكلت ماله فكأنما أكلت مالك 
 """;
   static const String ayahHadithOneTwentyOne_3 = """
           وَلَا تَلۡمِزُوٓا۟ أَنفُسَكُمۡ 
 """;
 
-  static const String elmTextOneTwentyOne_4 = """
+  static const String khatiraTextOneTwentyOne_4 = """
 يُقاس عليها 
 """;
   static const String ayahHadithOneTwentyOne_4 = """
           وَلَا تَقۡتُلُوٓا۟ أَنفُسَكُمۡ 
 """;
-  static const String elmTextOneTwentyOne_5 = """
+  static const String khatiraTextOneTwentyOne_5 = """
 أنت أخرجت عنصراً مؤمناً من المجتمع، فضعف المجتمع 
 ولا تلمزوا أنفسكم آية لها عدة معان 
 1__على الإنسان أن لا يكون طعاناً أو لعاناً أو منتقداً 
@@ -395,8 +394,8 @@ class KhatiraTextDersOne {
           وَلَا تَلۡمِزُوٓا۟ أَنفُسَكُمۡ 
           وَلَا تَأۡكُلُوٓا۟ أَمۡوَٰلَكُم بَيۡنَكُم بِٱلۡبَٰطِلِ 
 """;
-// page 22
-  static const String elmTextOneTwentyTwo_1 = """
+// page 21
+  static const String khatiraTextOneTwentyTwo_1 = """
 فالله سبحانه وتعالى عد المجتمع الإسلامي مجتمعاً واحداً، فإذا أضعفت أحد أفراده أضعفت المجتمع كله، وهذا معنى 
 2__على الإنسان ألا يفعل عملاً يلام عليه 
 والمعنى الثاني لا تفعل شيئاً تستحق أن تُعير به 
@@ -405,7 +404,7 @@ class KhatiraTextDersOne {
           وَلَا تَلۡمِزُوٓا۟ أَنفُسَكُمۡ 
 """;
 
-  static const String elmTextOneTwentyTwo_2 = """
+  static const String khatiraTextOneTwentyTwo_2 = """
 إياك أن تفعل شيئاً تدعو الناس به إلى ذمِك فلا تضع نفسك موضع التُهمة ثم تلوم الناس إذا أتهموك، وإياك وما يُعتذر منه، وأي عمل يصغرك تضطر أن تعتذر وأن تقول: لم أكن أعرف فسامحونا، ولا تؤاخذونا، فهذه الأعمال التي تحملك على أن تعتذر منها لا تليق بك 
 
 ▪️المؤمنون بمثابة الجسد الواحد 
@@ -415,7 +414,7 @@ class KhatiraTextDersOne {
           وَلَا تَلۡمِزُوٓا۟ أَنفُسَكُمۡ 
           """;
 
-  static const String elmTextOneTwentyTwo_3 = """
+  static const String khatiraTextOneTwentyTwo_3 = """
 لن تجد إنساناً يحتقر نفسه لكنه يحتقر أخاه، يطعن بأخيه، فإن طعنت بأخيك طعنت بنفسك 
 لم يقُل: ولا تلمزوا إخوانكم، ولكنه قال: هذا أخوك سمعته من سمعتك 
 
@@ -427,8 +426,8 @@ class KhatiraTextDersOne {
 وَتَعَاوَنُوا۟ عَلَى ٱلۡبِرِّ وَٱلتَّقۡوَىٰ وَلَا تَعَاوَنُوا۟ عَلَى ٱلۡإِثۡمِ وَٱلۡعُدۡوَٰنِ 
 """;
 
-// page 23
-  static const String elmTextOneTwentyThree_1 = """
+// page 22
+  static const String khatiraTextOneTwentyThree_1 = """
 ▪️السخرية علامة جهل وشرك وتجبر 
 
 ▪️الجاهل من يسخر من الإنسان الفقير المستضعف
@@ -449,15 +448,15 @@ class KhatiraTextDersOne {
 يَـٰوَيۡلَتَنَا مَالِ هَـٰذَا ٱلۡكِتَـٰبِ لَا يُغَادِرُ صَغِيرَةࣰ وَلَا كَبِيرَةً إِلَّآ أَحۡصَىٰهَا 
 """;
 
-  static const String elmTextOneTwentyThree_2 = """
+  static const String khatiraTextOneTwentyThree_2 = """
 الصغير الإبتسام، والكبير القهقهة، فلو أبتسمت لموقف من مؤمن أخطأ فيه، أو كنت متمكناً في علم من العلوم وسألك إنسان سؤالاً دل على جهله بهذا العلم فلا تسخر منه، بل علِمهُ، فهناك من تأخذه العزة بإختصاصه، فيسخر ويتهكم، لا، لا، الله عز وجل علمك وحجب عنه العلم والله قادر على أن يعكس الآية 
 
 ▪️المؤمن الحقيقي من ابتعد عن موضوع السخرية جملة وتفصيلا 
 موضوع السخرية جملة وتفصيلاً، بقضه وقضيضه لا يدخل في حياة المؤمن أبداً، ولا يسخر حتى ممن يعص الله عز وجل، بل يدعو له بالهدى والتوفيق 
 """;
 
-// page 24
-  static const String elmTextOneTwentyFour_1 = """
+// page 23
+  static const String khatiraTextOneTwentyFour_1 = """
 ▪️الكمال يقتضي إذا وقع أخ في ذنب وتاب منه فعليك أن تتجاهله تجاهلاً كاملاً 
 إخوة يوسف عليه السلام ماذا فعلوا بأخيهم؟ ألقوه في الجب لماذا؟ ليموت، أي أرادوا قتله، فلما دخلوا عليه قال: 
 """;
@@ -466,7 +465,7 @@ class KhatiraTextDersOne {
 وَقَدۡ أَحۡسَنَ بِیٓ إِذۡ أَخۡرَجَنِی مِنَ ٱلسِّجۡنِ 
 """;
 
-  static const String elmTextOneTwentyFour_2 = """
+  static const String khatiraTextOneTwentyFour_2 = """
 ولماذا لم يذكر الجب؟ الجب أخطر، والإنسان تكون حياته مضمونة في السجن، وغذاؤه موجود لكن تؤسر حريته، أما في الجب فموته محقق، لماذا يا أيها النبي الكريم لم تذكر موضوع الجب بل ذكرت موضوع السجن؟ 
 ياأبت هذا تأويل رؤياي من قبل قد جعلها ربي حقا وقد أحسن بي إذ أخرجني من السجن 
 إنه ماذكر الجب لئلا يذكر إخوته لكماله وأدبه الرفيع لم يقل: وقد أحسن بي إذ أخرجني من البئر 
@@ -477,8 +476,8 @@ class KhatiraTextDersOne {
 إِذۡ أَخۡرَجَنِی مِنَ ٱلسِّجۡنِ 
 """;
 
-// page 25
-  static const String elmTextOneTwentyFive_1 = """
+// page 24
+  static const String khatiraTextOneTwentyFive_1 = """
 ▪️المؤمن الحقيقي من كان أداة بناء في المجتمع لا معول هدم 
 إذا جلست مع إنسان فابحث عن نقاطه الإيجابية ولا تلتفت إلى عيوبه، وأثن عليها تنمُ، أما إذا تغافلت عن إيجابياته ونقبت في عيوبه فهذا موقف سلبي هدام، فلا تكن معول هدم في المجتمع ولكن كُن أداة بناء 
 
@@ -491,7 +490,7 @@ class KhatiraTextDersOne {
 
 """;
 
-  static const String elmTextOneTwentyFive_2 = """
+  static const String khatiraTextOneTwentyFive_2 = """
 ▪️الغيبة والنميمة أساس تمزق المجتمع 
 إن نظام العلاقات الإجتماعية إذا شاعت فيه الغيبة والنميمة تمزق المجتمع 
 
@@ -503,22 +502,22 @@ class KhatiraTextDersOne {
 
 """;
 
-// page 26
-  static const String elmTextOneTwentySix_1 = """
+// page 25
+  static const String khatiraTextOneTwentySix_1 = """
 ▪️الحكم على الآخرين يحتاج إلى دليل قطعي لا يرد 
 """;
   static const String ayahHadithOneTwentySix_1 = """
 یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوۤا۟ إِن جَاۤءَكُمۡ فَاسِقٌۢ بِنَبَإࣲ فَتَبَیَّنُوۤا۟ أَن تُصِیبُوا۟ قَوۡمَۢا بِجَهَـٰلَةࣲ فَتُصۡبِحُوا۟ عَلَىٰ مَا فَعَلۡتُمۡ نَـٰدِمِینَ 
 """;
 
-  static const String elmTextOneTwentySix_2 = """
+  static const String khatiraTextOneTwentySix_2 = """
 ▪️الغيبة، النميمة، وسؤ الظن، من الأسس الكبرى التي تفتت المجتمع
 """;
   static const String ayahHadithOneTwentySix_2 = """
            وَلَا یَغۡتَب بَّعۡضُكُم بَعۡضࣰا 
 """;
 
-  static const String elmTextOneTwentySix_3 = """
+  static const String khatiraTextOneTwentySix_3 = """
 ▪️المؤمن الصادق لا يبني مواقفه وتصرفاته إلا على حقيقة يقينية 
 الإنسان يعطي ويمنع، ويصل ويقطع، ويغضب ويرضى، هذه المواقف إذا بُنيت على ظن أو على وهم والطرفُ الآخرُ كان بريئاً تفتت المجتمع، فالمؤمن الصادق لا يبني مواقفه وتصرفاته، وصلته ومنعه، وعطاءه، ورضاه وغضبه إلا على حقيقةٍ يقينية 
 
@@ -537,8 +536,8 @@ class KhatiraTextDersOne {
 سأل النبي مرة أصحابه من المفلس؟ قالوا: من لا درهم له ولا متاع، قال: لا، المفلس من اتى بصلاة، وصيام، وصدقة، وقد ضرب هذا، وشتم هذا، وأكل مال هذا، فيأخذ هذا من حسناته، وهذا من حسناته، فإن فنيت حسناتُهُ طرحوا عليه سيئاتهم حتى يُطرحُ في النار(اخرجه مسلم والترمذي عن ابي هريرة)
 """;
 
-// page 27
-  static const String elmTextOneTwentySeven_1 = """
+// page 26
+  static const String khatiraTextOneTwentySeven_1 = """
 ▪️المؤمنون نصحة متوادون لا استعلاء بينهم 
 إستبداد بالرأي لا يوجد، واستعلاء، وتشنج، وسيطرة كلها لا توجد،
 """;
@@ -547,7 +546,7 @@ class KhatiraTextDersOne {
 قال: أنا؟ غير معقول والله لأن أقطع إرباً إرباً أهون من أن أكون أميراً على قوم فيهم أبو بكر، هل أكون أميراً؟ 
 قال له: امدد يدك لأبايعك، فقال سيدنا عمر: أنت أعقل مني، قال له: بل أنت أقوى مني، قال له قوتي مع فضلك وأنا بخدمتك 
 """;
-  static const String elmTextOneTwentySeven_2 = """
+  static const String khatiraTextOneTwentySeven_2 = """
 وهكذا المؤمنون 
 هذه صفة جماعة المؤمنين، إذا عز أخوك فهُن أنت، فأنت في خدمة أخوانك، فأنت جندي تعمل في خدمة الحق 
 
@@ -561,7 +560,7 @@ class KhatiraTextDersOne {
 قال: يارسول الله ليس بموقع 
 """;
 
-  static const String elmTextOneTwentySeven_3 = """
+  static const String khatiraTextOneTwentySeven_3 = """
 ماذا فعل النبي؟ هل غضب منه؟ لا 
 وهل أبعده؟ لا أبداً 
 بل قال له: 
@@ -571,13 +570,13 @@ class KhatiraTextDersOne {
           الرأي والمشورة 
 قال: يارسول الله ليس بموقع 
 """;
-  static const String elmTextOneTwentySeven_4 = """
+  static const String khatiraTextOneTwentySeven_4 = """
 لذلك أعطى النبي أمره للجيش أن يستقر في الموقع الذي أشار عليه الحُباب 
 لماذا شاء الله أن تقع هذه الحادثة؟ كان من الممكن أن يوحي الله لنبيه الموقع المناسب وحياً عن طريق جبريل، لأن جبريل جاءه في آلاف المرات بموضوعاتٍ أقل من هذا الموضوع، وكان من الممكن أن يلهمه المكان المناسب، لكن شاءت حكمة الله أن يكون هذا الأمر على ما كان ليقف النبي الموقف الكامل ممن نصحه، وليعلم النبي أصحابه، وأمته من بعده، والدعاة إلى الله من بعده، والأمراء المؤمنون بعضهم لبعض نصحة متوادون، أي إذا جاءك إنسان مخلص ناصح فأصغ إليه، واشكره وأعطه أذناً صاغية، تفهم نصيحته، فهذه صفات المؤمنين
 """;
 
-// page 28
-  static const String elmTextOneTwentyEight_1 = """
+// page 27
+  static const String khatiraTextOneTwentyEight_1 = """
 ▪️الإنسان يحجب عن رب العباد عندما يؤذي العباد وذلك أكبر عقاب من الله للإنسان 
 خدمة الخلق قربى إلى الرب وإيذاء الخلق بعد عن الله عز وجل، أنت حينما تؤذي عباد الله، حينما تبتز أموالهم، حينما تحتال عليهم، حينما تنتهك أعراضهم، حينما تلقي في قلوبهم الخوف، حينما تحمر وجوههم، حينما تسحقهم، حينما تبني ثروتك على إفقارهم، حينما تبني مجدك على أنقاضهم، حينما تبني عزك على إذلالهم، أنت عندئذٍ أخذت أكبر عقاب من الله وهو أن الله عز وجل حجبك عنه وطردك من رحمته، فكن عبد الله المظلوم إذا كان الطريق إلى الله سالكاً ولا تكن عبد الله الظالم إذا كان الطريق إلى الله مقطوعاً 
 
@@ -595,7 +594,7 @@ class KhatiraTextDersOne {
 الله سبحانه وتعالى يقول 
           فَقَـٰتِلُوا۟ ٱلَّتِی تَبۡغِی 
           """;
-  static const String elmTextOneTwentyEight_2 = """
+  static const String khatiraTextOneTwentyEight_2 = """
 هذه الآية ليست محصورة في القتال، الآية تشمل كل أنواع الخصومات، ولو أن الطرف الثالث وقف موقفاً مُنصفاً من نزاع بين مؤمنين، أو بين أطراف عدة من المؤمنين لحُسِمَ هذا الخصام ولعادت المياه إلى مجاريها، والتف المؤمنون وصاروا قوةً لا يُستهان بها، فما الذي ضعضع قوة المسلمين، وفرقهم وشتت شملهم؟ إنها هذه المنازعات فيما بينهم، وهذه الآية هي حل لهذه المشكلة 
 
 ▪️على الإنسان مقاطعة الباغي وزجره ليتقلص الظلم وينمو العدل 
@@ -604,15 +603,15 @@ class KhatiraTextDersOne {
   static const String ayahHadithOneTwentyEight_2 = """
            فَإِنۢ بَغَتۡ إِحۡدَىٰهُمَا 
            """;
-  static const String elmTextOneTwentyEight_3 = """
+  static const String khatiraTextOneTwentyEight_3 = """
 يجب أن تقاطع الباغي، وأن تزجره، وأن توقفه عند حدِه، فبهذه الطريقة يتقلص الظلم وتضيق دوائره، وينمو العدل وتتسع دوائره، ولذلك: 
 """;
   static const String ayahHadithOneTwentyEight_3 = """
 وَمَا كَانَ رَبُّكَ لِیُهۡلِكَ ٱلۡقُرَىٰ بِظُلۡمࣲ وَأَهۡلُهَا مُصۡلِحُونَ 
 """;
 
-// page 29
-  static const String elmTextOneTwentyNine_1 = """
+// page 28
+  static const String khatiraTextOneTwentyNine_1 = """
 ▪️طاعة الله عز وجل تزيل أسباب الخصومة بين المتخاصمين 
 لو أن كل مؤمن أقام الإسلام في بيته، وأقامه في عمله، والتزم كل حدود الله عز وجل لوجد نفسه مع أخيه المؤمن قلباً وقالباً، فالطاعة لله تجمع، والمعصية تفرق، ولو كل مؤمن أخذ ما له وترك ما ليس له لالتقى المؤمنون، ولو أن كل أبٍ عرف ما عليه وما له لعم الوئام بين هذه الأسرة، ولو أن كل أخٍ أخذ ما له وترك ما ليس له لتوافق الأخوة، فما الذي يسبب الخصومة بين الأشقاء؟ إنه عدم العدل بينهم، فلو أن الأب التزم العدل بين أولاده لما أوقع بينهم العداوة والبغضاء، ولائتلف الأولاد ولأحب بعضهم بعضاً، فالذي يزيل أصل الخصومة طاعة الله عز وجل، أن تأخذ ما لك وتدع ما ليس لك 
 

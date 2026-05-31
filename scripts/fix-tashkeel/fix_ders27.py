@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Fix 43 ayahHadith fields in elm_text_ders_twenty_seven.dart: Uthmani tashkeel."""
+"""Fix 43 ayahHadith fields in khatira_text_ders_twenty_seven.dart: Uthmani tashkeel."""
 
 import re, urllib.request, json
 
 BASE = '/media/islamux/Variety/Flutter_Projects/salam/lib/core/data/static/text/'
-f = BASE + 'elm_text_ders_twenty_seven.dart'
+f = BASE + 'khatira_text_ders_twenty_seven.dart'
 
 def replace_field(field_name, new_content):
     with open(f, 'r', encoding='utf-8') as fh:

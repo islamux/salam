@@ -4,25 +4,25 @@ class KhatiraTextDersTwelve {
 وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 -----------------
 """;
-  static const String elmTextTwelveOne_1 = """
+  static const String khatiraTextTwelveOne_1 = """
 أولاً ربنا جل جلاله هو ذات كاملة في أسمائه الحسنى وصفاته الفضلى فهو رحيم، كريم، عدل، غفور، قوي، عزيز، لطيف، فلا يستطيع مخلوق أن يتقرب إليه ويسعد بقربه إلا بالكمال، لذلك كان دين الله دين الكمال و دين الرحمة و دين العدل و دين المصلحة العامة و دين الإنصاف، فالله جل جلاله ذات كاملة، ولا يتقرب إليه المتقربون إلا بكمال هو وسيلتهم إليه، وأحكام الشريعة كلها عدل و رحمة و إنصاف و لطف، فكل قضية خرجت من العدل إلى الجور، ومن المصلحة إلى المفسدة، ومن الرحمة إلى القسوة فليست من الشريعة ولو أدخلت عليها ألف تأويل وتأويل، فلو قرأت الفقه في أبوابه كلها ودققت في كل مسائله، العامة والخاصة، الشخصية، والاجتماعية، والنفسية، والتعبدية، لوجدت أن كل هذه الأحكام ترشدك إلى الموقف الكامل، الموقف العدل، الموقف المنصف، الموقف الرحيم، الموقف اللطيف
   """;
 
 // page 2
-  static const String elmTextTwelveTwo_1 = """
+  static const String khatiraTextTwelveTwo_1 = """
  إذاً فمنهج الله عز وجل قائم على الخُلُق، والنبي عليه الصلاة والسلام لو لم يكن في أعلى درجة أخلاقية، لما قنعت أنت بهذا المنهج، فالمنهج بشكل نظري لايقنع إلا أن يجسد بسلوك، فلذلك كان للأنبياء مهمتان
 مهمة بيانية ومهمة قيادية، فالمهمة البيانية أن يبين لك ماتفعل ومالاتفعل، لكن مهمة القدوة هي أن يكون كاملاً
 
   """;
 
   // page 3
-  static const String elmTextTwelveThree_1 = """
+  static const String khatiraTextTwelveThree_1 = """
 لذالك يقول الله عز وجل
 """;
   static const String ayahHadithTwelveThree_1 = """
  ((وَإِنَّكَ))
 """;
-  static const String elmTextTwelveThree_2 = """
+  static const String khatiraTextTwelveThree_2 = """
 يامحمد   
       و ﴿إن ﴾ : حرف مشبه بالفعل يفيد التوكيد 
 """;
@@ -30,7 +30,7 @@ class KhatiraTextDersTwelve {
  لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 سورة القلم 
 """;
-  static const String elmTextTwelveThree_3 = """
+  static const String khatiraTextTwelveThree_3 = """
 يامحمد   
 و(اللام) لام التوكيد أيضاً، فاللام الواقعة في جواب إن هي لام التوكيد
  على : تفيد الاستعلاء
@@ -40,14 +40,14 @@ class KhatiraTextDersTwelve {
   static const String ayahHadithTwelveFour_1 = """
 وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 """;
-  static const String elmTextTwelveFour_1 = """
+  static const String khatiraTextTwelveFour_1 = """
 فكم تبلغ أخلاق النبي؟ فالعظيم يصف النبي بأنه ذو خلق عظيم، وقد كان للنبي عليه الصلاة والسلام صفات أخرى كان من الممكن أن يمدحه بها، فقد كان خطيباً من الطراز الأول، وكان القائد الأول وكان السياسي الأول، وكان أعلم العلماء وأنزه القضاة وأعظم المجتهدين وكان ذا ذاكرة قوية، فقد حَفِظ القرآن الكريم من دقته إلى دفته وقد كان يتلى عليه مرة واحدة، فكل الصفات التي يفتخر بها الناس كان عليه الصلاة والسلام قمة فيها، فلماذا أهملها الله كلها، وحينما أراد أن يمدحه قال
 """;
   static const String ayahHadithTwelveFour_2 = """
 وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 """;
 
-  static const String elmTextTwelveFour_2 = """
+  static const String khatiraTextTwelveFour_2 = """
 لأن الإيمان هو الخلق، والذي يفضلك في الخلق يفضلك في الإيمان
 """;
 
@@ -60,14 +60,14 @@ class KhatiraTextDersTwelve {
   static const String subtitleTwelveFive_1 = """
  :رحمته بالأطفال
  """;
-  static const String elmTextTwelveFive_1 = """
+  static const String khatiraTextTwelveFive_1 = """
 كان عليه الصلاة والسلام يصلي صلاة الفجر وكان يطيل القراءة فيها وهذا من السنة، فسمع بكاء طفل صغير ينادي أمه ببكائه فقرأ الإخلاص وسلم 
 """;
 
   static const String ayahHadithTwelveFive_1 = """
  قال:(سمعت طفلاً يبكي فرحمت أمه) *
 """;
-  static const String elmTextTwelveFive_2 = """
+  static const String khatiraTextTwelveFive_2 = """
 لقد كان النبي عليه الصلاة والسلام يلهوا مع الأطفال، فقال له أحدهم: تعال نلهوا،  حينما كان صغيراً دعي إلى اللهو،
  """;
   static const String ayahHadithTwelveFive_2 = """
@@ -86,14 +86,14 @@ class KhatiraTextDersTwelve {
   """;
 
 // page 6
-  static const String elmTextTwelveSix_1 = """
+  static const String khatiraTextTwelveSix_1 = """
 وحينما جائته رسالة الهدى وحمل أمانة التبليغ دعته زوجته السيدة خديجة لأخذ قسط من الراحة
 """;
   static const String ayahHadithTwelveSix_1 = """
 فقال لها:(أنقضى عهد النوم ياخديجة)  *
 """;
 
-  static const String elmTextTwelveSix_2 = """
+  static const String khatiraTextTwelveSix_2 = """
 إنه شعور بثقل الرسالة وبعظم هذه المسؤولية 
 لقد آذاه أهل مكة وأخرجوه منها، وأتمروا على قتله، ونكلوا بأصحابه وعذبوهم، وهجوه بأشعارهم، وناصبوه العداء عشرين عاماً، ولكنه لما فتح مكة وجد عشرة آلاف سيف تنتظر كلمة منه، وكان بإمكانه أن يلغي وجود كفار قريش جميعاً، لكنه
 """;
@@ -111,7 +111,7 @@ class KhatiraTextDersTwelve {
 """;
 
 // page 7
-  static const String elmTextTwelveSeven_1 = """
+  static const String khatiraTextTwelveSeven_1 = """
 وحينما ذهب مكة فاتحاً كادت ذؤابة عمامته تلامس عنق بعيره تواضعاً لله عز وجل
 
 وكان إذا دخل بيته بسامآ ضحاكا، وكان يقول
@@ -157,13 +157,13 @@ class KhatiraTextDersTwelve {
   """;
 
 // page 9
-  static const String elmTextTwelveNine_1 = """
+  static const String khatiraTextTwelveNine_1 = """
 أمتحن بالنصر فكان كاملآ ، وكان ذا خلق عظيم  وأمتحن بالقهر في الطائف فكان ذا خلق عظيم ، أمتحن بالفقر فكان ذا خلق عظيم ، أمتحن بإشاعة طارت في أرجاء المدينة بأن السيده عائشة وقعت في الفاحشة، فمن منا يتحمل هذا الخبر؟ تأخر الوحي اربعين يومآ فماذا فعل؟ كان صابرآ
 
 """;
 
 // page 10
-  static const String elmTextTwelveTen_1 = """
+  static const String khatiraTextTwelveTen_1 = """
 تفاضل المؤمنين بأخلاقهم
 المؤمنون يتفاضلون فيما بينهم بخلقهم من زاد عليك في الخلق زاد عليك في الإيمان ، والإيمان بلا خلق شيئ لا قيمة له على الاطلاق ، هو ثقافه، عادات، تقاليد، فلكلور
 الدين بلا خلق يفقد قيمته، لذلك ترى قلة قليلة من أصحاب رسول الله وصلت راياتهم إلى اطراف الدنيا ، وترى كثره كثيرة من المسلمين اكثر من ملياري مسلم ليست كلمتهم هي العليا ، وللكفار عليهم ألف سبيل وسبيل
@@ -171,7 +171,7 @@ class KhatiraTextDersTwelve {
   """;
 
 // page 11
-  static const String elmTextTwelveEleven_1 = """
+  static const String khatiraTextTwelveEleven_1 = """
 نحن الآن بحاجة إلى خلق عظيم ، لا إلى معلومات كثيرة وسلوك منحرف لا....فهذا الخلق هو الذي ينفعنا عند الله ، هو اللذي يكون سببآ لاستحقاقنا النصر من الله عز وجل
 """;
 
@@ -184,7 +184,7 @@ class KhatiraTextDersTwelve {
   static const String titleTwelveTwelve = """
 :تواضعه الشديد
 """;
-  static const String elmTextTwelveTwelve_1 = """
+  static const String khatiraTextTwelveTwelve_1 = """
 كان إذا دخل اعرابي على النبي صل الله عليه وسلم يقول: أيكم محمد ؟ ألم يكن له مقعد خاص؟ لا
 فقد كان يجلس مع أصحابه ، وكان عليه الصلاةوالسلام يجلس حيث ينتهي به المجلس
 
@@ -194,7 +194,7 @@ class KhatiraTextDersTwelve {
   static const String titleTwelveThirteen = """
 :قرائة السيره فرض عين
 """;
-  static const String elmTextTwelveThirteen_1 = """
+  static const String khatiraTextTwelveThirteen_1 = """
  إقرأوا سيرة النبي أيها الأخوة ، اقرؤها لأن قرائتها فرض عين ، هل تصدقون ذلك؟؟ إن قرائة سيرة النبي فرض عين طالبوني بالدليل إن شئتم ، الدليل: أن هناك قاعدة فقهية تقول: ما لا يتم الفرض إلا به فهو فرض ، فالصلاة فرض ، والوضؤ فرض ، لأن الصلاة لاتتم إلا به ، وما لا تتم السنة إلا به فهو سنة ، لكن الله جل جلاله حينما أمرنا
 """;
   static const String ayahHadithTwelveThirteen_1 = """
@@ -202,7 +202,7 @@ class KhatiraTextDersTwelve {
 سورة الأحزاب 
 """;
 
-  static const String elmTextTwelveThirteen_2 = """
+  static const String khatiraTextTwelveThirteen_2 = """
 فكيف يكون النبي أسوة حسنة لك؟ إن لم تعرف سيرته ، إن لم تعرف أخلاقه ، إن لم تعرف أخذه وعطائه، إن لم تعرف رحمته ، إن لم تعرف لطفه
   """;
 
@@ -216,7 +216,7 @@ class KhatiraTextDersTwelve {
 قال عليه الصلاة والسلام
     (( لا تحمرو الوجوه)) *
 """;
-  static const String elmTextTwelveFourteen_1 = """
+  static const String khatiraTextTwelveFourteen_1 = """
 لاتخجل إنسانآ ، وهذا من خلقه العظيم ، فيجب علينا أن نقرأ سيرة النبي كي نقلده ، لأن الله عز وجل لم يقبل دعوة محبته إلا بإتباع سنة النبي عليه الصلاة والسلام
 """;
   static const String ayahHadithTwelveFourteen_2 = """
@@ -233,20 +233,20 @@ class KhatiraTextDersTwelve {
   """;
 
   // page 15
-  static const String elmTextTwelveFifteen_1 = """
+  static const String khatiraTextTwelveFifteen_1 = """
 في بيته، في ثيابه، في طعامه، كان عليه الصلاة والسلام يأكل كما يأكل العبد، ويجلس كما يجلس العبد، قال
 """;
   static const String ayahHadithTwelveFifteen_1 = """
  لو دعيت إلى كراع بالغنيم لأجبت *
 """;
-  static const String elmTextTwelveFifteen_2 = """
+  static const String khatiraTextTwelveFifteen_2 = """
 لو دعي إلى مؤدم خارج المدينه للبى الدعوه، دخل مره إلى أحد أصحابه فقدم له خلآ وخبزآ 
 """;
   static const String ayahHadithTwelveFifteen_2 = """
  فقال عليه الصلاة والسلام 
      نعم الإدام الخل  **
 """;
-  static const String elmTextTwelveFifteen_3 = """
+  static const String khatiraTextTwelveFifteen_3 = """
 ماعاب طعامآ قط في حياته ولم يمدحه ، فهناك كثير من الأشخاص تحدث عن الطعام بطريقة تجعلك تشتهيه ، أما هو عليه الصلاة والسلام فما عاب طعامآ قط ولا مدحه ، ومارُئي مادآ رجليه قط بين اصحابة وهو سيد الخلق
 """;
   static const String footerTwelveFifteen = """
@@ -270,13 +270,13 @@ class KhatiraTextDersTwelve {
 وعده شخص فانتضره ثلاثة أيام ، فلما رآه قال 
          ياأخي لقد شققت علي *
 """;
-  static const String elmTextTwelveSixteen_1 = """
+  static const String khatiraTextTwelveSixteen_1 = """
 أتعبتني أما الآن فلو تأخر أحدهم عن الموعد ربع ساعة لقامت عليه الدنيا ولم تقعد ، أما النبي عليه الصلاة والسلام فتأخر الرجل عليه ثلاثة أيام مازاد عن أن قال
 """;
   static const String ayahHadithTwelveSixteen_2 = """
      لقد شققت علي ياأخي
 """;
-  static const String elmTextTwelveSixteen_2 = """
+  static const String khatiraTextTwelveSixteen_2 = """
 أما في بيته كان يركب الحسن والحسين على ظهره ويقول
  """;
   static const String ayahHadithTwelveSixteen_3 = """
@@ -287,7 +287,7 @@ class KhatiraTextDersTwelve {
 القلم 4 
 
 """;
-  static const String elmTextTwelveSixteen_3 = """
+  static const String khatiraTextTwelveSixteen_3 = """
 إقرؤوا سيرة النبي وقلدوه وأقتفوا أثرها ، واتبعوه كي نسعد في دنيانا وأخرانا
 """;
   static const String footerTwelveSixteen = """
@@ -337,18 +337,18 @@ class KhatiraTextDersTwelve {
  وَمَا كَانَ ٱللَّهُ لِیُعَذِّبَهُمۡ وَأَنتَ فِیهِمۡۚ ۝٣٣
 سورة الأنفال 
 """;
-  static const String elmTextTwelveEighteen_2 = """
+  static const String khatiraTextTwelveEighteen_2 = """
 لو انهم طبقو منهج رسول الله مستحيل أن يُعذبو
 
 لايمكن أن نُعذب ومنهج النبي مطبق في حياتنا ، في التفاصيل ، في البيع ، في الشراء ، في الحفلات ، في الفرح ، في الترح ، في السفر ، في الحضر ، في الإقامة ، في الدراسة ، في المعالجة ، في الطب  في الولائم
  """;
 
-// ...existing code...using copilot ai gpt4.1
+// using copilot ai gpt4.1
   // page 19
   static const String titleTwelveNineteen_1 = """
 ما مقياس الشخصية العظيمة في نظرك؟
 """;
-  static const String elmTextTwelveNineteen_1 = """
+  static const String khatiraTextTwelveNineteen_1 = """
 ماهي الشخصية الكبيرة في نظرك؟ العظيمة في نظرك؟
 التي تأتي الخواطر تلو الخواطر كي تقلدها، وكي تقفو أثرها، وكي تسير على منهجها؟
 إن هذه الشخصية إن كانت رسول الله فبخ بخ، فذلك محض الإيمان.
@@ -363,7 +363,7 @@ class KhatiraTextDersTwelve {
   static const String subtitleTwelveNineteen_1 = """
 الرسول أسوة في الصبر
 """;
-  static const String elmTextTwelveNineteen_2 = """
+  static const String khatiraTextTwelveNineteen_2 = """
 طبعاً النبي الكريم تحمل الشدائد، وجاهد في الله حق الجهاد، وأوذي وما أوذي أحدٌ مثله وصبر، وقد عُرضت عليه الدنيا بكل أنواعها، يزوجوه أجمل النساء، يجعلوه زعيماً لهم، يعطونه كل الأموال، قال: والله يا عم، لو وضعوا الشمس في يميني والقمر في شمالي على أن أترك هذا الأمر ما تركته حتى يظهره الله أو أهلك دونه.
 """;
 
@@ -374,7 +374,7 @@ class KhatiraTextDersTwelve {
   static const String subtitleTwelveNineteen_3 = """
 الرسول أسوة في الزواج الصالح والأب الناجح
 """;
-  static const String elmTextTwelveNineteen_3 = """
+  static const String khatiraTextTwelveNineteen_3 = """
 كان زوجاً ناجحاً، كان أباً ناجحاً، كان صديقاً ناجحاً، كان نبياً عظيماً، كان رحيماً، رؤفاً.
 """;
 
@@ -385,7 +385,7 @@ class KhatiraTextDersTwelve {
   static const String subtitleTwelveNineteen_5 = """
 المؤمن يُعرف من خلقه الحسن
 """;
-  static const String elmTextTwelveNineteen_4 = """
+  static const String khatiraTextTwelveNineteen_4 = """
 المؤمن في حركاته، وسكناته، في أخلاقه، في مواقفه، في تصرفاته، متميز، إياك أن يعرفك الناس من صلاتك فقط، يجب أن يعرفوك لا من صلاتك فقط، بل من تعاملك، من حديثك، من لهوك، لهو بريئ، من مزاحك، مزاح لطيف لا يحرج أحداً، من أقوالك، من أفعالك، من إتقان عملك، من حرفتك، من مهنتك، من جيرتك، يجب أن تُعرف لا من صلاتك أنك مسلم، يجب أن تعرف من معاملتك.
 """;
 // 23
@@ -396,7 +396,7 @@ class KhatiraTextDersTwelve {
 لَّقَدۡ كَانَ لَكُمۡ فِی رَسُولِ ٱللَّهِ أُسۡوَةٌ حَسَنَةࣱ ۝٢١
 سورة الأحزاب 
 """;
-  static const String elmTextTwelveNineteen_5 = """
+  static const String khatiraTextTwelveNineteen_5 = """
 متى يكون النبي عليه الصلاة والسلام أسوةٌ لك؟ متى يكون قدوةٌ لك؟ متى يكون مثلا أعلى لك؟ متى يبقى في ذهنك، في شعورك، في ضميرك؟ كلما أقدمت على عمل تتصوره، هكذا كان يفعل في البيت؟ هكذا كان يفعل في بيعه وشرائه؟ هكذا يعامل أصحابه؟ متى يكون النبي عليه الصلاة والسلام أسوةٌ لك؟
 لمن كان يرجو الله واليوم الآخر
 وذكر الله كثيراً
@@ -405,7 +405,7 @@ class KhatiraTextDersTwelve {
 یَـٰۤأَیُّهَا ٱلَّذِینَ ءَامَنُوا۟ ٱذۡكُرُوا۟ ٱللَّهَ ذِكۡرࣰا كَثِیرࣰا ۝٤١
 سورة الأحزاب 
 """;
-  static const String elmTextTwelveNineteen_6 = """
+  static const String khatiraTextTwelveNineteen_6 = """
 فالأمر لا ينصبُ على ذكر الله؛ بل على ذكر الله الكثير فمن كان يرجو الله واليوم الآخر، وذكر الله كثيراً، من لوازم هذا الرجاء الصادق، وهذا الذكر الكثير أن يكون النبي ملء سمعه وبصره؛ بأقواله، وأفعاله، وسنته، ورضاه وغضبه، بسلمه وحربه، بعطائه ومنعه، بمودته وجفوته، بعبادته، بصلاته، بصيامه، بحجه
 """;
 
@@ -416,7 +416,7 @@ class KhatiraTextDersTwelve {
 لَقَدۡ جَاۤءَكُمۡ رَسُولࣱ مِّنۡ أَنفُسِكُمۡ عَزِیزٌ عَلَیۡهِ مَا عَنِتُّمۡ حَرِیصٌ عَلَیۡكُم بِٱلۡمُؤۡمِنِینَ رَءُوفࣱ رَّحِیمࣱ ۝١٢٨
 سورة التوبة 
 """;
-  static const String elmTextTwelveNineteen_7 = """
+  static const String khatiraTextTwelveNineteen_7 = """
 أي إذا كان هذا المنهج يتعبكم فهذا شيئ يؤلمه، جاء لخيركم، جاء لسعادتكم، جاء لسلامتكم
 يؤلمه أن تتوهموا أن هذا الشرع فيه قيد عليكم، لا ، هذا قيد رحمة
 حريص عليكم بالمؤمنين رؤف رحيم
@@ -426,7 +426,7 @@ class KhatiraTextDersTwelve {
 فَبِمَا رَحۡمَةࣲ مِّنَ ٱللَّهِ لِنتَ لَهُمۡۖ ۝١٥٩
 سورة آل عمران 
 """;
-  static const String elmTextTwelveNineteen_8 = """
+  static const String khatiraTextTwelveNineteen_8 = """
 هذه الباء باء السبب، أي يا محمد بسبب رحمة أشتققتها من الله من خلال اتصالك بنا، يا محمد هذه الرحمة التي في قلبك، والتي اشتققتها منا بسبب اتصالك بنا كنت ليناً لهم، فلما كنت ليناً لهم التفوا حولك، الان لو كنت منقطعاً عنا، لامتلأ قلبك قسوة، وهذه القسوة تنعكس مع التعامل مع الناس غلظة وشدة، عندئذٍ ينفض الناس من حولك، وكأن هذه الآية قانون الإلتفاف والإنفضاض، يحتاجها الأب، تحتاجها الأم، يحتاجها المعلم، يحتاجها المرشد، أي إنسان على وجه الأرض يحتل منصباً قيادياً يحتاج هذه الآية
 """;
 
@@ -441,7 +441,7 @@ class KhatiraTextDersTwelve {
   static const String subtitleTwelveNineteen_9 = """
 لم يُخاطب النبي عليه الصلاة والسلام إلا بقوله يا أيها النبي، ويا أيها الرسول
 """;
-  static const String elmTextTwelveNineteen_9 = """
+  static const String khatiraTextTwelveNineteen_9 = """
 فهناك دلائل كبرى في كتاب الله تبين عظمة هذا النبي صلى الله عليه وسلم، وقد يسأل سائل: من أين جائت هذه العظمة؟ ومن أين جاء هذا الحِلمُ والمروءة والرحمة والحكمة والتواضع؟
 فالنبي صلى الله عليه وسلم والكمال الذي ظهر منه، وعقلهُ الراجح، وحلمُهُ الذي لا حُدود له، وشجاعتُه، ورأفتُهُ ورحمتُهُ، ورفقهُ بالحيوان، وعطفُهُ على الإنسان، ورجاحةُ تفكيره، كيف كان أباً ناجحاً، وقائداً ناجحاً، وسياسياً مُحنكاً، وأخاً كبيراً للمؤمنين، كيف جمع كل هذه الصفات من الرحمة إلى العِلم، إلى الحكمة والحلم والتواضع والفطنة والذكاء، إلى قوة الحدس، وإلى اشراق النفس، وإلى دِقةِ النظر ورجاحة الرأي، حتى أن الله سبحانه وتعالى وصفهُ وصفاً ينفردُ به، قال تعالى:
 """;
@@ -449,7 +449,7 @@ class KhatiraTextDersTwelve {
 وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِیمࣲ ۝٤
 سورة القلم 
 """;
-  static const String elmTextTwelveNineteen_10 = """
+  static const String khatiraTextTwelveNineteen_10 = """
 هذا الخُلُق العظيم وهذه النفسُ المُشرقة والعقلُ الراجح والصفات النامية إنما اشتقها النبي عليه الصلاة والسلام من الله سبحانه وتعالى عن طريق الاتصال به تعالى
 فكُل من يقرأ هذا الكلام إذا أراد الخلق الرفيع والمقام المحمود عند الله، وإذا أراد أن تكون له سعادته الأبدية، وأن يكون حليماً كريماً ومتواضعاً وجريئاً وصاحب مُروءة، حكيماً وذكياً وفطناً فالطريق أن يتصل بالله عز وجل
 """;

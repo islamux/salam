@@ -5,23 +5,25 @@ import 'package:khatir/core/data/static/text/khatira_text_ders_pre.dart';
 
 List<KhatiraModelNewOrder> khatiraListPreNewOrder = [
   // 1
+  KhatiraModelNewOrder(titles: [
+    KhatiraTextPre.titlePreOne
+  ], order: [
+    EnOrder.titles,
+  ]),
+  // 2
   KhatiraModelNewOrder(
-    titles: [
-      KhatiraTextPre.titlePreOne,
-    ],
     ayahs: [
       KhatiraTextPre.ayahHadithPreOne_1,
     ],
     texts: [
-      KhatiraTextPre.elmTextPreOne_1,
+      KhatiraTextPre.khatiraTextPreOne_1,
     ],
     order: [
-      EnOrder.titles,
       EnOrder.ayahs,
       EnOrder.texts,
     ],
   ),
-  // 2
+  // 3
   KhatiraModelNewOrder(
     titles: [
       KhatiraTextPre.titlePreTwo,
@@ -30,7 +32,7 @@ List<KhatiraModelNewOrder> khatiraListPreNewOrder = [
       KhatiraTextPre.subtitlePreTwo_1,
     ],
     texts: [
-      KhatiraTextPre.elmTextPreTwo_1,
+      KhatiraTextPre.khatiraTextPreTwo_1,
     ],
     order: [
       EnOrder.titles,
@@ -38,7 +40,7 @@ List<KhatiraModelNewOrder> khatiraListPreNewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 3
+  // 4
   KhatiraModelNewOrder(
     ayahs: [
       KhatiraTextPre.ayahHadithPreThree_1,
@@ -46,9 +48,9 @@ List<KhatiraModelNewOrder> khatiraListPreNewOrder = [
       KhatiraTextPre.ayahHadithPreThree_3,
     ],
     texts: [
-      KhatiraTextPre.elmTextPreThree_1,
-      KhatiraTextPre.elmTextPreThree_2,
-      KhatiraTextPre.elmTextPreThree_3,
+      KhatiraTextPre.khatiraTextPreThree_1,
+      KhatiraTextPre.khatiraTextPreThree_2,
+      KhatiraTextPre.khatiraTextPreThree_3,
     ],
     order: [
       EnOrder.ayahs,

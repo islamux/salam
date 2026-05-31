@@ -10,7 +10,7 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
       KhatiraTextDersEight.titleEightOne,
     ],
     texts: [
-      KhatiraTextDersEight.elmTextEightOne_1,
+      KhatiraTextDersEight.khatiraTextEightOne_1,
     ],
     ayahs: [
       KhatiraTextDersEight.ayahHadithOne_1,
@@ -24,8 +24,8 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
   // 2
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersEight.elmTextEightTwo_1,
-      KhatiraTextDersEight.elmTextEightTwo_2,
+      KhatiraTextDersEight.khatiraTextEightTwo_1,
+      KhatiraTextDersEight.khatiraTextEightTwo_2,
     ],
     ayahs: [
       KhatiraTextDersEight.ayahHadithTwo_1,
@@ -39,7 +39,7 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
   // 3
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersEight.elmTextEightThree_1,
+      KhatiraTextDersEight.khatiraTextEightThree_1,
     ],
     ayahs: [
       KhatiraTextDersEight.ayahHadithThree_1,
@@ -56,7 +56,7 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
       KhatiraTextDersEight.ayahHadithFour_2,
     ],
     texts: [
-      KhatiraTextDersEight.elmTextEightFour_1,
+      KhatiraTextDersEight.khatiraTextEightFour_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -67,7 +67,7 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
   // 5
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersEight.elmTextEightFive_1,
+      KhatiraTextDersEight.khatiraTextEightFive_1,
     ],
     ayahs: [
       KhatiraTextDersEight.ayahaHadithFive_1,
@@ -83,7 +83,7 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
       KhatiraTextDersEight.subtitleEightSix_1,
     ],
     texts: [
-      KhatiraTextDersEight.elmTextDersEightSix_1,
+      KhatiraTextDersEight.khatiraTextDersEightSix_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -93,7 +93,7 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
   // 7
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersEight.elmTextDersEigthtSeven_1,
+      KhatiraTextDersEight.khatiraTextDersEigthtSeven_1,
     ],
     footer: KhatiraTextDersEight.footerEightSeven_1,
     order: [
@@ -115,8 +115,8 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
       KhatiraTextDersEight.ayahHadithEightEight_2,
     ],
     texts: [
-      KhatiraTextDersEight.elmTextEightEight_1,
-      KhatiraTextDersEight.elmTextEightEight_2,
+      KhatiraTextDersEight.khatiraTextEightEight_1,
+      KhatiraTextDersEight.khatiraTextEightEight_2,
     ],
     order: [
       EnOrder.titles,
@@ -135,8 +135,8 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
       KhatiraTextDersEight.ayahHadithEightNine_2,
     ],
     texts: [
-      KhatiraTextDersEight.elmTextEightNine_1,
-      KhatiraTextDersEight.elmTextEightNine_2,
+      KhatiraTextDersEight.khatiraTextEightNine_1,
+      KhatiraTextDersEight.khatiraTextEightNine_2,
     ],
     order: [
       EnOrder.ayahs,
@@ -152,8 +152,8 @@ List<KhatiraModelNewOrder> khatiraList8NewOrder = [
       KhatiraTextDersEight.ayahHadithEightTen_2,
     ],
     texts: [
-      KhatiraTextDersEight.elmTextEightTen_1,
-      KhatiraTextDersEight.elmTextEightTen_2,
+      KhatiraTextDersEight.khatiraTextEightTen_1,
+      KhatiraTextDersEight.khatiraTextEightTen_2,
     ],
     order: [
       EnOrder.ayahs,

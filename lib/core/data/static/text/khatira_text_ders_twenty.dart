@@ -1,13 +1,13 @@
 class KhatiraTextTwenty {
-  //---- page 1
-  static const String elmTextTwentyOne_1 = """
+  // page 1
+  static const String khatiraTextTwentyOne_1 = """
 الذي لا شك فيه أن كلمة التقوى وردت في القرآن الكريم في أكثر من ثلاثمائة موضع ، والأحاديث الشهيرة والصحيحة تؤكد في مجملها أن التقوى جماع كل خير 
 """;
   static const String titleTwentyOne = """
 ماهي التقوى ؟ 
 """;
 
-  static const String elmTextTwentyOne_2 = """
+  static const String khatiraTextTwentyOne_2 = """
 فما هي التقوى ؟ الحقيقة أن التقوى مشتقة من فعل ثلاثي ، الفعل هو وقى ، والوقاية تكون من شيئ خطير ، فربنا سبحانه وتعالى يقول 
 """;
   static const String ayahHadithTwentyOne1 = """
@@ -19,7 +19,7 @@ class KhatiraTextTwenty {
 العبادة هي سبيل التقوى 
 """;
 
-  static const String elmTextTwentyOne_3 = """
+  static const String khatiraTextTwentyOne_3 = """
 معنى ذلك أن العبادة هي سبيل الوقاية ، فأنت إذا دعوت إلى الله يجب أن تعتمد على حاجات الإنسان الفطرية ، وما منا واحد إلا وهو في حاجةٍ ماسة جداً إلى أن ينجو من شقاء الدنيا وعذاب الآخرة ، ففي نفس كل منا ميل جامح وحاجة مُلحة إلى النجاة 
 
 والله سبحانه وتعالى يقول 
@@ -34,7 +34,7 @@ class KhatiraTextTwenty {
 في اللغة العربية هناك قاعدة  
 """;
 
-  static const String elmTextTwentyTwo_1 = """
+  static const String khatiraTextTwentyTwo_1 = """
 أن الفعل إذا حُذف المفعول به المتعلق به أطلق الفعل ، تتقون ماذا ؟ 
 تتقون كُل خطر ، كل مكروه ، كل منزلق ، كل شقاء ، كل عذاب ، كل ضيق ، كل قلق ، كل مصيبة 
 """;
@@ -44,7 +44,7 @@ class KhatiraTextTwenty {
 سورة البقرة
 """;
 
-  static const String elmTextTwentyTwo_2 = """
+  static const String khatiraTextTwentyTwo_2 = """
 إذاً لا سبيل إلى تحقيق النجاة ، ولا سبيل إلى تحقيق السلامة ، ولا سبيل إلى أن يبتعد الإنسان عن شقاء الدنيا وعذاب الآخرة إلا بطاعة الله عز وجل 
 لذلك فسر بعضهم التقوى بأنها إتقاء عذاب الله بطاعته 
 أي لا منجأ منك إلا إليك 
@@ -58,7 +58,7 @@ class KhatiraTextTwenty {
   static const String subtitleTwentyThree_1 = """
 الإنسان له بناء مؤسس على تقوى الله  
   """;
-  static const String elmTextTwentyThree_1 = """
+  static const String khatiraTextTwentyThree_1 = """
 نقطة ثانية ، الإنسان له بناء ، معنى البناء أنت لك منظومة قيم ، في الموضوع الفلاني لك موقف ، في علاقتك بالنساء لك موقف ، في علاقتك بكسب المال لك موقف ، في علاقتك بإنفاق المال لك موقف ، في علاقتك بالجوار لك موقف ، في علاقتك بالبيع والشراء لك موقف ، في علاقتك بالشهوة التي أودعها الله فيك لك موقف ، هذه المواقف تنبع من رؤية أو من قيم ، 
 فالله سبحانه وتعالى يقول 
 """;
@@ -66,23 +66,23 @@ class KhatiraTextTwenty {
 أَفَمَنۡ أَسَّسَ بُنۡيَـٰنَهُۥ
 """;
 //
-  static const String elmTextTwentyThree_2 = """
+  static const String khatiraTextTwentyThree_2 = """
 أنت لك بناء ، الأسرة لبنة ، العمل لبنة ، علاقتك بذاتك لبنة ، علاقتك بالخالق لبنة ، علاقتك بأهلك ؛ بالوالد ، بالوالدة ، بالإخوة ، بالأخوات ، بالأصهار ، كل موقف ، وكل حركة وكل سكنة تنبع من رؤية أو من قيمة ، 
 فالمؤمن أسس بنيانه على تقوى من الله ورضوان ، إذاً فالله سبحانه وتعالى لا بد من أن يحميه 
 
 """;
-// Page 4
+// page 4
   static const String subtitleTwentyFour_1 = """
 غير المؤمن بناءُه مؤسس على الشهوة والمصلحة
 """;
-  static const String elmTextTwentyFour_1 = """
+  static const String khatiraTextTwentyFour_1 = """
 غير المؤمن أسس بنيانه على الشهوة ، على المصلحة ، على انتهاز الفُرص ، على القنص ، على حب الذات ، على الأنانية ، هذا البناء المبني على غير تقوى الله عز وجل كأنه على شفا جرفٍ هار فانهار به في نار جهنم ، فكل إنسان له بناء ، إما أن يبني هذا البناء على تقوى الله ورضوان ، وإما أن يبني هذا البناء على شفا جرفٍ هار فانهار به في نار جهنم 
 """;
   static const String subtitleTwentyFour_2 = """
 في الكون إله واحد يستحق العبادة 
 
 """;
-  static const String elmTextTwentyFour_2 = """
+  static const String khatiraTextTwentyFour_2 = """
 الشيئ الثاني أن الإنسان حينما يفكر ، ففي هذا الكون العظيم حقيقة كبرى ، حقيقة وحيدة ، حقيقة ليس بعدها حقيقة هي الله سبحانه وتعالى ، فهل من جهة بالكون تستحق أن يخشى عذابها ، أو ان ترجو رحمتها غير الله ؟ 
 فهل في الكون جهة تستحق أن يرجى ماعندها ، وأن يخشى عقابها غير الله عز وجل ؟ 
  """;
@@ -90,7 +90,7 @@ class KhatiraTextTwenty {
 ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلۡحَیُّ ٱلۡقَیُّومُ
 """;
 // page 5
-  static const String elmTextTwentyFive_1 = """
+  static const String khatiraTextTwentyFive_1 = """
 أي قيام الشيئ بالله ، حياته بالله ، كن فيكون زُل فيزول 
 إذاً في الكون حقيقة وحيدة ليس بعدها حقيقة هي الله سبحانه وتعالى ، أيُعقل أن تخشى غير الله ؟ 
 أيعقل أن ترجو غير الله ؟ 
@@ -104,7 +104,7 @@ class KhatiraTextTwenty {
 أَفَغَیۡرَ ٱللَّهِ تَتَّقُونَ
 فَمَا لَكُمۡ كَیۡفَ تَحۡكُمُونَ
 """;
-  static const String elmTextTwentyFive_2 = """
+  static const String khatiraTextTwentyFive_2 = """
 كيف تفكرون ؟ كيف تتأملون ؟ 
 ربنا عز وجل طمأنك فقال على لسان أحد رسله 
 """;
@@ -112,41 +112,41 @@ class KhatiraTextTwenty {
 فَكِیدُونِی جَمِیعࣰا ثُمَّ لَا تُنظِرُونِ
 إِنِّی تَوَكَّلۡتُ عَلَى ٱللَّهِ رَبِّی وَرَبِّكُم ۚ مَّا مِن دَاۤبَّةٍ إِلَّا هُوَ ءَاخِذُۢ بِنَاصِیَتِهَاۤ
 """;
-  static const String elmTextTwentyFive_3 = """
+  static const String khatiraTextTwentyFive_3 = """
 قال لك 
 """;
 
   static const String ayahHadithTwentyFive_3 = """
 وَإِلَیۡهِ یُرۡجَعُ ٱلۡأَمۡرُ كُلُّهُۥ
 """;
-  static const String elmTextTwentyFive_4 = """
+  static const String khatiraTextTwentyFive_4 = """
 قال لك 
 """;
   static const String ayahHadithTwentyFive_4 = """
 مَا یَفۡتَحِ ٱللَّهُ لِلنَّاسِ مِن رَّحۡمَةࣲ فَلَا مُمۡسِكَ لَهَا
 """;
   // page 6
-  static const String elmTextTwentySix_1 = """
+  static const String khatiraTextTwentySix_1 = """
 قال لك 
 """;
   static const String ayahHadithTwentySix_1 = """
 أَلَا لَهُ ٱلۡخَلۡقُ وَٱلۡأَمۡرُ
 """;
 
-  static const String elmTextTwentySix_2 = """
+  static const String khatiraTextTwentySix_2 = """
 قال لك 
 """;
   static const String ayahHadithTwentySix_2 = """
 یَدُ ٱللَّهِ فَوۡقَ أَیۡدِیهِمۡ
 """;
-  static const String elmTextTwentySix_3 = """
+  static const String khatiraTextTwentySix_3 = """
 فإذا خشيت غير الله أو رجوت غير الله فلست متقياً 
 أي: لم تتق الله عز وجل 
 """;
   static const String ayahHadithTwentySix_3 = """
 أَفَغَیۡرَ ٱللَّهِ تَتَّقُونَ
 """;
-  static const String elmTextTwentySix_4 = """
+  static const String khatiraTextTwentySix_4 = """
 أنت في قبظته ، ولماذا عليك أن تتقي الله ؟ 
 لأن الله عليم بك ، وبكل مايحيط بك.. 
 """;
@@ -155,7 +155,7 @@ class KhatiraTextTwenty {
 وَٱتَّقُوا۟ ٱللَّهَ وَٱعۡلَمُوٓا۟ أَنَّ ٱللَّهَ مَعَ ٱلۡمُتَّقِینَ ۝١٩٤
 سورة البقرة
 """;
-  static const String elmTextTwentySeven_1 = """
+  static const String khatiraTextTwentySeven_1 = """
 إذا كان الإنسان مراقباً فإنه يخافُ هذا الذي يراقبه ، فربنا عزوجل رقابته عليك مستمرة 
 فما دامت رقابة الله عليك مستمرة ألا ينبغي أن تتقي الله ؟ 
 """;
@@ -169,7 +169,7 @@ class KhatiraTextTwenty {
 وَٱتَّقُوا۟ ٱللَّهَ وَٱعۡلَمُوٓا۟ أَنَّكُمۡ إِلَیۡهِ تُحۡشَرُونَ ۝٢٠٣
 سورة البقرة
 """;
-  static const String elmTextTwentySeven_2 = """
+  static const String khatiraTextTwentySeven_2 = """
 عليم بكل شيئ ، شديد العقاب ، سريع الحساب  
 إليه نُحشر  
 ألا تكفي هذه الدوافع كي تتقي الله عزوجل ؟ 
@@ -203,7 +203,7 @@ class KhatiraTextTwenty {
 وَٱتَّقُوا۟ ٱللَّهَ ۖ وَیُعَلِّمُكُمُ ٱللَّهُ ۝٢٨٢
 سورة البقرة
 """;
-  static const String elmTextTwentyNine_1 = """
+  static const String khatiraTextTwentyNine_1 = """
 نحن نشعر أننا في قبضة الله عز وجل ، كل أجهزتك ، كل احوالك ، ورأسُ مالك عقلك  
 نقطة دم صغيرة جداً إذا تجمدت في بعض شرايين المخ يففد الإنسان عقله دفعة واحدة 
  أو يفقد ذاكرته
@@ -230,7 +230,7 @@ class KhatiraTextTwenty {
 الله هو أهل التقوى  
 """;
 
-  static const String elmTextTwentyTen_1 = """
+  static const String khatiraTextTwentyTen_1 = """
 لكن هناك معنى دقيق جداً وهو أنك يجب أن تتقي ربك ، لا لأنك بقبضته فحسب ؛ بل لأنه أهل التقوى وأهل المغفرة 
 أي انه رحمن رحيم ، ذوالجلال والإكرام ، ذوالطول والإنعام ، يعلم السر وأخفى ، عفو كريم ، رحمن رحيم ، لطيف رؤوف  
 فأنت من جهة تتقي ربك لأنك في قبضته 
@@ -243,14 +243,14 @@ class KhatiraTextTwenty {
   static const String titleTwentyEleven = """
 الله يحب المتقين
 """;
-  static const String elmTextTwentyEleven_1 = """
+  static const String khatiraTextTwentyEleven_1 = """
 خلاصة هذه العلاقة أن ربنا عز وجل قال 
 """;
 
   static const String ayahHadithTwentyEleven_1 = """
 إِنَّ ٱللَّهَ یُحِبُّ ٱلۡمُتَّقِینَ
 """;
-  static const String elmTextTwentyEleven_2 = """
+  static const String khatiraTextTwentyEleven_2 = """
 فالتقوى منهم والعون والحب منه
 القضية واضحة كالشمس الله عزوجل يحب المتقين 
  أفلا يحب الإنسان أن يكون محبوباً عند الله عز وجل ؟ 
@@ -260,7 +260,7 @@ class KhatiraTextTwenty {
      فيسمع من في الكون أمر مُحِبنا 
 """;
 // page 12
-  static const String elmTextTwentyTwelve_1 = """
+  static const String khatiraTextTwentyTwelve_1 = """
 إذاً : إذا اتقيت الله سبحانه وتعالى أحبك الله ، وهل من مرتبة في الكون أرقى من مرتبة القرب من الله 
 الدنيا كلها مراتب 
  مراتب مالية، مراتب علمية، مراتب اجتماعية، ومراتب رياضية، يقول لك: معه وسام ذهبي، وهناك معه ميدالية برونزية، مراتب نفسية ومراتب جسمية، ومراتب دينية، ألا تعتقد معي أن أعظم مرتبة ينالها إنسان على وجه الأرض هي القرب من الله، وأن يحبه الله عزوجل؟ 
@@ -268,7 +268,7 @@ class KhatiraTextTwenty {
   static const String ayahHadithTwentyTwelve_1 = """
 إِنَّ ٱللَّهَ یُحِبُّ ٱلۡمُتَّقِینَ
 """;
-  static const String elmTextTwentyTwelve_2 = """
+  static const String khatiraTextTwentyTwelve_2 = """
 أتق الله أن تعصيه يحبك الله عز وجل
 اتق أن تسخطه يحبك
 اتق أن تخالف أمره
@@ -278,13 +278,13 @@ class KhatiraTextTwenty {
 """;
 
 // page 13
-  static const String elmTextTwentyThirteen_1 = """
+  static const String khatiraTextTwentyThirteen_1 = """
 لكن ألا تحب أن يكون الله معك؟ 
 """;
   static const String subtitleTwentyThirteen_1 = """
 معية الله بالحفظ ملازمة للمتقين 
 """;
-  static const String elmTextTwentyThirteen_2 = """
+  static const String khatiraTextTwentyThirteen_2 = """
 هل تدري أن معية الله نوعان
 معية عامة
 معية خاصة
@@ -294,7 +294,7 @@ class KhatiraTextTwenty {
   static const String ayahHadithTwentyThirteen_1 = """
 وَهُوَ مَعَكُمۡ أَیۡنَ مَا كُنتُمۡ
 """;
-  static const String elmTextTwenteThirteen_3 = """
+  static const String khatiraTextTwenteThirteen_3 = """
 ولكن المعية الخاصة معية الحفظ 
 معية الرعاية 
 معية النصر 
@@ -305,7 +305,7 @@ class KhatiraTextTwenty {
   static const String ayahHadithTwentyFourteen_1 = """
 إِنَّ ٱللَّهَ مَعَ ٱلۡمُتَّقِینَ
 """;
-  static const String elmTextTwentyFourteen_1 = """
+  static const String khatiraTextTwentyFourteen_1 = """
 ألا يتمنى الانسان أن يكون خالق الأكوان مدافعاً عنه؟ 
 ألا تتمنى أن يكون وليك هو الله عز وجل 
 الولي يخرجك من الظلمات إلى النور 
@@ -321,14 +321,14 @@ class KhatiraTextTwenty {
 وَٱللَّهُ وَلِیُّ ٱلۡمُتَّقِینَ
 """;
 // page 15
-  static const String elmTextTwentyFifteen_1 = """
+  static const String khatiraTextTwentyFifteen_1 = """
 وربنا عز وجل قال 
  """;
   static const String ayahHadithTwentyFifteen_1 = """
 أَمۡ نَجۡعَلُ ٱلۡمُتَّقِینَ كَٱلۡفُجَّارِ ۝٢٨
 سورة ص
 """;
-  static const String elmTextTwentyFifteen_2 = """
+  static const String khatiraTextTwentyFifteen_2 = """
 فمن السذاجة، ومن الغباء، ومن ضيق الأفق، ومن الجهل أن تتصور أن هذا الذي استقام على أمر الله، وتعرف إلى الله، وأمضى وقتاً في تعلم العلم، وكان منظبطاً، ضبط حواسه الخمس، ضبط مشاعره، ضبط كسبه، ضبط إنفاقه، وكان محسناً، أحسن إلى كل مخلوق 
 هذا المتقي الذي يتقي غضب الله، يتقي سخط الله، يتقي عذاب الله، أهذا المتقي أيعقل أن يعامل كالفاجر؟ كالعاصي؟ 
 كالذي يفعل المعاصي على قارعة الطريق؟ كالذي يتباهى بالمعصية؟ شيئ مستحيل 
@@ -339,7 +339,7 @@ class KhatiraTextTwenty {
   static const String titleTwentySixteen = """
 التقوى درجات ومستويات 
  """;
-  static const String elmTextTwentySixteen_2 = """
+  static const String khatiraTextTwentySixteen_2 = """
 لا ترضى إلا أن تكون إماماً، والتقوى درجات، التقوى مستويات كبيرة جداً
 في أدنى مستوياتها أن تتقي عذاب الله بطاعته، هذا الذي يغض بصره عن محارم الله يتقي الله 
 هذا الذي يخاف أن يأكل مالاً حراماً يتقي الله 
@@ -355,7 +355,7 @@ class KhatiraTextTwenty {
 
 """;
   // page 17
-  static const String elmTextTwentySeventeen_1 = """
+  static const String khatiraTextTwentySeventeen_1 = """
 أما المستوى الأعلى أن تجتهد في الإستقامة وأن تجتهد في البذل والتضحية حتى تنعقد الصلة مع الله عزوجل، إذا انعقدت هذه الصلة، فمن خلال هذه الصلة يتجلى الله على قلبك بنوره، عندئذ تصبح مستنير القلب 
 فإنها لا تعمى الأبصار ولكن تعمى القلوب التي في الصدور 
 عندئذ ترى في المعصية الوبال، والقطيعة، والدمار، والتأخر، والتدهور، والعقاب
@@ -368,7 +368,7 @@ class KhatiraTextTwenty {
 """;
 
 // page 18
-  static const String elmTextTwentyEighteen_1 = """
+  static const String khatiraTextTwentyEighteen_1 = """
 ياايها الذين امنو اتقو الله وآمنو برسوله يؤتكم كفلين من رحمته ويجعل لكم نوراً تمشون به 
 نور تمشي به في الناس، هذا الذي يأخذ ماليس له أعمى هذا الذي يُمتع عينه بما لا يحل له أعمى 
 هذا الذي يؤثر نفسه على إخوانه أعمى 
@@ -380,7 +380,7 @@ class KhatiraTextTwenty {
   static const String titleTwentyNineteen = """
 تزكية وتقييم الناس من شأن الله وحده 
  """;
-  static const String elmTextTwentyNineteen_1 = """
+  static const String khatiraTextTwentyNineteen_1 = """
 شيئ آخر وهو موضوع التزكية، موضوع تقييم الذات هذا من شأن الله عزوجل 
 مؤمنون كثيرون يخوضون فيما لا حق لهم أن يخوضوا فيه 
 تقييم الإنسان من شأن الله عزوجل 
@@ -393,14 +393,14 @@ class KhatiraTextTwenty {
  """;
 
 // page 20
-  static const String elmTextTwentyTwenty_1 = """
+  static const String khatiraTextTwentyTwenty_1 = """
 لذلك الأدب أن تحكم بالظاهر والله يتولى السرائر 
  """;
   static const String ayahHadithTwentyTwenty_1 = """
 وَكَفَىٰ بِرَبِّكَ بِذُنُوبِ عِبَادِهِۦ خَبِیرَۢا بَصِیرࣰا ۝١٧
 سورة الإسراء
 """;
-  static const String elmTextTwentyTwenty_2 = """
+  static const String khatiraTextTwentyTwenty_2 = """
 الأدب أن تمتنع عن إصدار الأحكام على الناس، تقول: هذا من شأن الله وليس من شأن البشر 
 لذلك قال ربنا عزوجل 
  """;
@@ -412,7 +412,7 @@ class KhatiraTextTwenty {
 التقوى خير زاد 
  """;
 
-  static const String elmTextTwentyTwenty_3 = """
+  static const String khatiraTextTwentyTwenty_3 = """
 الإنسان يتزوج، الإنسان يجمع الأموال، يقول: هذه الأموال تنفعني في خريف العمر
 الإنسان أحياناً يبني بناء شامخاً، يقول لك: أريد بيتاً فيه كل جيد وجديد، ينتقي أفضل الأثاث، ينتقي أفضل الكسوة، ينتقي أفضل الأجهزة، وقد يقتني أفضل سيارة، يقول لك: أريد شيئاً جيداً
 كله من نوع الزاد 
@@ -424,21 +424,21 @@ class KhatiraTextTwenty {
 سورة البقرة
 """;
 // page 21
-  static const String elmTextTwentyTwentyOne_1 = """
+  static const String khatiraTextTwentyTwentyOne_1 = """
 أي أن أعظم زاد تدخره أن تتقي الله، لا أن تعصي الله 
 من هنا سيدنا عمر كان إذا أصابته مصيبة قال
 """;
   static const String ayahHadithTwentyTwentyOne_1 = """
 الحمدلله ثلاثاً الحمدلله إذ لم تكن في ديني 
 """;
-  static const String elmTextTwentyTwentyOne_2 = """
+  static const String khatiraTextTwentyTwentyOne_2 = """
 هذه قاعدة، الدين سليم مالم تعصي الله عزوجل، مالم تقترب من حدوده، مالم تعتد على حدوده، مالم تخرق قواعد الاستقامة، مالم تسيئ إلى إنسان، مالم يكن في عنقك دين لأحد، أو ظلامة لأحد، فقد سلم دينك؟ 
 
  """;
   static const String subtitleTwentyTwentyOne_1 = """
 التقوى سبيل الأمن والعافية والرضا 
  """;
-  static const String elmTextTwentyTwentyOne_3 = """
+  static const String khatiraTextTwentyTwentyOne_3 = """
 دائماً وازن 
    من اصبح منكم آمناً في سربه 
 هذا أمن الإيمان، أنت مطمئن لعدالة الله، أنت مطمئن إلى أن الأمور كلها بيد الله، وأن الله رحمن رحيم، أنت مطمئن إلى أنه لا إله إلا الله، أنت مطمئن إلى أنه لا رافع ولا خافض، ولا معز ولا مذل، ولا معطي ولا مانع، ولا باسط ولا قابض إلا الله 
@@ -446,7 +446,7 @@ class KhatiraTextTwenty {
    ولسوف يعطيك ربك فترضى 
    """;
 // page 22
-  static const String elmTextTwentyTwentyTwo_1 = """
+  static const String khatiraTextTwentyTwentyTwo_1 = """
 إذا كنت كذلك فأنت في نعمة لاتعدلها نعمة على وجه الأرض، نعمة أمن الإيمان، وإذا ادعى أحد أن عنده أمناً بسبب الأموال الطائلة فهذا أمن مزيف، لأن الله عزوجل قد يعاجل هذا الإنسان بمصيبة لا قيمة للمال إطلاقاً في حلها، وإذا كان عند الإنسان أمن بحسب صحته الطيبة، وتدريباته ونشاطه، ونظام قاس جداً يتبعه، هذا أمن مزيف
 الأمن الحقيقي أن تكون بما في يدي الله أوثق منك مما في يديك، هذا أعلى درجة من درجات الأمن، لذلك 
 """;
@@ -455,7 +455,7 @@ class KhatiraTextTwenty {
 من أصبح منكم آمنا في سربه، معافى في جسده، عنده قوت يومه فكأنما حيزت له الدنيا 
 
 """;
-  static const String elmTextTwentyTwentyTwo_2 = """
+  static const String khatiraTextTwentyTwentyTwo_2 = """
 إذا كنت كذلك فقد ملكت الدنيا بكل حذافيرها 
 أمن الإيمان، وسلامة الأبدان، وشيئ تقتات به، وانتهى الأمر، لذلك فالمؤمن لو أصابته مصيبة، مادام دينه سليماً، مادامت صحته طيبه، مادمت أفعاله كريمة، فلا شيئ في الدنيا يضيره
   """;
@@ -464,33 +464,33 @@ class KhatiraTextTwenty {
   static const String subtitleTwentyTwentyThree_1 = """
 تقوى القلوب أفضل لباس المسلم 
   """;
-  static const String elmTextTwentyTwentyThree_1 = """
+  static const String khatiraTextTwentyTwentyThree_1 = """
 انظر إلى هذه المعاني الدقيقة، أحياناً تجد إنساناً قد أكرمه الله عز وجل بقوام جميل، بشكل وسيم، قد يكون ذا ذوق رفيع في ارتداء الثياب، له أذواق رفيعة جداً، قد يكون له ذوق عال جداً في أقتناء الأثاث، قد يختار سيارة جيدة، قد يعتني بها عناية بالغة، قد يُلبسُ أولاده أجمل الألبسة، قد يفرش بيته بأجمل الأثاث، ربنا عز وجل قال في كلمة 
   """;
   static const String ayahHadithTwentyTwentyThree_1 = """
 وَلِبَاسُ ٱلتَّقۡوَىٰ ذَٰلِكَ خَیۡرࣱ
 """;
 
-  static const String elmTextTwentyTwentyThree_2 = """
+  static const String khatiraTextTwentyTwentyThree_2 = """
 لباس التقوى ذلك خير، هذا الذي ينفعك بعد الموت، هذا الذي يستمر أثره إلى ما بعد الموت 
   """;
   static const String ayahHadithTwentyTwentyThree_2 = """
 وَلِبَاسُ ٱلتَّقۡوَىٰ ذَٰلِكَ خَیۡرࣱ
 """;
-  static const String elmTextTwentyTwentyThree_3 = """
+  static const String khatiraTextTwentyTwentyThree_3 = """
 المظهر لا قيمة له 
  """;
   static const String ayahHadithTwentyTwentyThree_3 = """
 إن الله لا ينظر إلى صوركم وأموالكم ولكن ينظر إلى قلوبكم وأعمالكم (من صحيح مسلم عن ابي هريرة) 
  """;
   // page 24
-  static const String elmTextTwentyTwentyFour_1 = """
+  static const String khatiraTextTwentyTwentyFour_1 = """
 القلب بيت الرب، ومنظرالله عز وجل، يقول الله عز وجل 
  """;
   static const String ayahHadithTwentyTwentyFour_1 = """
 عبدي طهرت منظر الخلق سنين، أفلا طهرت منظري ساعة؟ 
  """;
-  static const String elmTextTwentyTwentyFour_2 = """
+  static const String khatiraTextTwentyTwentyFour_2 = """
 ألا تستحيي من الله أن يطلع الله عليك فيرى في هذا القلب حقداً، أو حسداً، أو يرى فيه أنانية، أو حباً للذات؟ 
   
 ألا تستحيي من الله أن يطلع الله على قلبك فيراه ممتلئاً بحب الدنيا؟
@@ -506,7 +506,7 @@ class KhatiraTextTwenty {
   static const String subtitleTwentyTwentyFive_1 = """
 التقوى طريق الجنة 
  """;
-  static const String elmTextTwentyTwentyFive_2 = """
+  static const String khatiraTextTwentyTwentyFive_2 = """
 لكن عليك بتقوى الله دائماً، فكل شيئ له ثمن كل شيئ له ثمن، لو أن احداً طلب مثلاً قطعة أثاث فاخرة جداً من مستوى رفيع جداً، فهذا الطلب العالي يقابله ثمن غالٍ دائماً، الشيئ المتقن ثمنه غالٍ، والشيئ غير المتقن ثمنه رخيص، ولكن هل في الحياة كلها، هل في الحياة الدنيا والآخرة عطاءً يفوق عطاء الأخرة؟ مالا عين رأت، ولا أذن سمعت، ولا خطر على قلب بشر، هذه الآخرة الأبدية السرمدية حياة مافيها نغص، ولا فيها قلق، ولا فيها أحزان، ولا فيها منافسة، ولا فيها زوال، ولا فيها تدني 
 هذه الحياة فيها؟ ما لا عين رأت ولا أذن سمعت، ولا خطر على قلب بشر.. 
 فلا تعلم نفس ما أخفي لهم من قرة أعين 
@@ -518,7 +518,7 @@ class KhatiraTextTwenty {
 أَمۡ حَسِبۡتُمۡ أَن تَدۡخُلُوا۟ ٱلۡجَنَّةَ وَلَمَّا یَعۡلَمِ ٱللَّهُ ٱلَّذِینَ جَـٰهَدُوا۟ مِنكُمۡ وَیَعۡلَمَ ٱلصَّـٰبِرِینَ ۝١٤٢
 سورة آل عمران
 """;
-  static const String elmTextTwentyTwentySix_1 = """
+  static const String khatiraTextTwentyTwentySix_1 = """
 ألا فلتعلم أن سلعة الله غالية، وطريق الجنة ليست طريقاً محفوفة بالرياحين، إنها طريق محفوفة بالمكاره 
 """;
 
@@ -530,7 +530,7 @@ class KhatiraTextTwenty {
   static const String subtitleTwentyTwentySeven_1 = """
 آيات قرآنية متحدثة عن التقوى 
 """;
-  static const String elmTextTwentyTwentySeven_1 = """
+  static const String khatiraTextTwentyTwentySeven_1 = """
 الآية الأولى 
   """;
   static const String ayahHadithTwentyTwentySeven_1 = """
@@ -538,7 +538,7 @@ class KhatiraTextTwenty {
 سورة الليل
 """;
 
-  static const String elmTextTwentyTwentySeven_2 = """
+  static const String khatiraTextTwentyTwentySeven_2 = """
 الأتقى اسم تفضيل، فهناك في اللغة تقي وأتقى، وكريم وأكرم، أما الأتقى ماصفاته الأساسية؟ 
 قال 
   """;
@@ -546,7 +546,7 @@ class KhatiraTextTwenty {
 ٱلَّذِی یُؤۡتِی مَالَهُۥ یَتَزَكَّىٰ ۝١٨
 سورة الليل
 """;
-  static const String elmTextTwentyTwentySeven_3 = """
+  static const String khatiraTextTwentyTwentySeven_3 = """
 المال: الله عز وجل أكرمنا به ليكون وسيلة للتقرُب إليه، أحد الصحابة الكرام قال: حبذا المال أصون به عرضي، وأتقرب به إلى ربي 
 كلمات بليغات أصون به عرضي؛ أولادك، أهلك، أمك أبوك بحاجةٍ إليك، صنت بهذا المال عرضك، وتقربت به إلى ربك، فربنا عز وجل يصف الأتقى لا يصف التقي، قال 
   """;
@@ -556,21 +556,21 @@ class KhatiraTextTwenty {
 سورة الليل
 """;
   // page 28
-  static const String elmTextTwentyTwentyEight_1 = """
+  static const String khatiraTextTwentyTwentyEight_1 = """
 الآية الثانية 
    """;
   static const String ayahHadithTwentyTwentyEight_1 = """
 وَلَكُمۡ فِی ٱلۡقِصَاصِ حَیَوٰةࣱ یَـٰٓأُو۟لِی ٱلۡأَلۡبَـٰبِ لَعَلَّكُمۡ تَتَّقُونَ ۝١٧٩
 سورة البقرة
 """;
-  static const String elmTextTwentyTwentyEight_2 = """
+  static const String khatiraTextTwentyTwentyEight_2 = """
 الآية الثالثة 
   """;
   static const String ayahHadithTwentyTwentyEight_2 = """
 وَیُنَجِّی ٱللَّهُ ٱلَّذِینَ ٱتَّقَوۡا۟ بِمَفَازَتِهِمۡ لَا یَمَسُّهُمُ ٱلسُّوٓءُ وَلَا هُمۡ یَحۡزَنُونَ ۝٦١
 سورة الزمر
 """;
-  static const String elmTextTwentyTwentyEight_3 = """
+  static const String khatiraTextTwentyTwentyEight_3 = """
 لم يقل الله عزوجل: لا يصيبهم السوء؛ بل قال 
   """;
   static const String ayahHadithTwentyTwentyEight_3 = """
@@ -579,7 +579,7 @@ class KhatiraTextTwenty {
 
   // page 29
   // 0
-  static const String elmTextTwentyTwentyNine_1 = """
+  static const String khatiraTextTwentyTwentyNine_1 = """
 الآية الرابعة 
 """;
   static const String ayahHadithTwentyTwentyNine_1 = """
@@ -588,7 +588,7 @@ class KhatiraTextTwenty {
 سورة الذاريات
 """;
 // 1
-  static const String elmTextTwentyTwentyNine_2 = """
+  static const String khatiraTextTwentyTwentyNine_2 = """
 الآية الخامسة 
 """;
   static const String ayahHadithTwentyTwentyNine_2 = """
@@ -596,7 +596,7 @@ class KhatiraTextTwenty {
 سورة القمر
 """;
   // 2
-  static const String elmTextTwentyTwentyNine_3 = """
+  static const String khatiraTextTwentyTwentyNine_3 = """
 الآية السادسة 
 """;
   static const String ayahHadithTwentyTwentyNine_3 = """
@@ -604,7 +604,7 @@ class KhatiraTextTwenty {
 سورة الطور
 """;
 // 3
-  static const String elmTextTwentyTwentyNine_4 = """
+  static const String khatiraTextTwentyTwentyNine_4 = """
 الآية السابعة 
 """;
   static const String ayahHadithTwentyTwentyNine_4 = """
@@ -612,7 +612,7 @@ class KhatiraTextTwenty {
 سورة المرسلات
 """;
 // 4
-  static const String elmTextTwentyTwentyNine_5 = """
+  static const String khatiraTextTwentyTwentyNine_5 = """
 الآية الثامنة 
 """;
   static const String ayahHadithTwentyTwentyNine_5 = """
@@ -620,7 +620,7 @@ class KhatiraTextTwenty {
 سورة الذاريات
 """;
 // 5
-  static const String elmTextTwentyTwentyNine_6 = """
+  static const String khatiraTextTwentyTwentyNine_6 = """
 الآية التاسعة 
 """;
   static const String ayahHadithTwentyTwentyNine_6 = """
@@ -628,34 +628,34 @@ class KhatiraTextTwenty {
 سورة الطور
 """;
 // 6
-  static const String elmTextTwentyTwentyNine_7 = """
+  static const String khatiraTextTwentyTwentyNine_7 = """
 الآية الحادية عشرة 
 """;
   static const String ayahHadithTwentyTwentyNine_7 = """
 وَٱلۡعَـٰقِبَةُ لِلۡمُتَّقِینَ
 """;
 // 7
-  static const String elmTextTwentyTwentyNine_8 = """
+  static const String khatiraTextTwentyTwentyNine_8 = """
 الآية الثانية عشرة 
 """;
   static const String ayahHadithTwentyTwentyNine_8 = """
 وَٱلۡعَـٰقِبَةُ لِلتَّقۡوَىٰ
 """;
-  // page  30
-  static const String elmTextTwentyThirty_1 = """
+  // page 30
+  static const String khatiraTextTwentyThirty_1 = """
 أي أن في النهاية لا يسعد إلا المتقي، لا يفوز إلا المتقي، لا ينجو إلا المتقي، لا يُفلح إلا المتقي، لا ينجح إلا المتقي، لا يسعد إلا المتقي 
   """;
   static const String ayahHadithTwentyThirty_1 = """
 وَٱلۡعَـٰقِبَةُ لِلۡمُتَّقِینَ
 وَٱلۡعَـٰقِبَةُ لِلتَّقۡوَىٰ
 """;
-  static const String elmTextTwentyThirty_2 = """
+  static const String khatiraTextTwentyThirty_2 = """
 لكن من أجل أن تقطف ثمار التقوى يانعة ربنا عز وجل يقول 
    """;
   static const String ayahHadithTwentyThirty_2 = """
 خُذُوا۟ مَاۤ ءَاتَیۡنَـٰكُم بِقُوَّةࣲ
 """;
-  static const String elmTextTwentyThirty_3 = """
+  static const String khatiraTextTwentyThirty_3 = """
 بقوة، هناك أخذ بلين، ومسايرة، ومجاملة للآخرين، مواقفه دائماً ضبابية، دائماً متردد، دائماً مُرتاب، دائماً يُطيع الله ولكن على مضض، يخاف أن يعصيه، ولكن يرغب أن يعصيه، هذا الموقف المتردد الضبابي، موقف الأخذ والرد، موقف المتخاذل، موقف متردد، هذه المواقف ليست من صفات المؤمنين
   """;
 
@@ -664,20 +664,20 @@ class KhatiraTextTwenty {
 وَمَن یَتَّقِ ٱللَّهَ یَجۡعَل لَّهُۥ مَخۡرَجࣰا
 """;
 
-  static const String elmTextTwentyThirtyOne_1 = """
+  static const String khatiraTextTwentyThirtyOne_1 = """
 القرآن الكريم فيه شيئ رائع جداً، هذا الشيئ هو أن الآية وهي في سياقها لها معنى، فإذا نزعتها من سياقها وقرأتها وحدها فلها معنى آخر، وهذا من اعجاز القرآن، كل آية إن انتظمت مع أخواتها تؤدي معنى محدداً، أما حينما تنزع من سياقها فتؤدي معنى شمولياً كبيراً جداً 
  """;
   static const String ayahHadithTwentyThirtyOne_2 = """
 وَمَن یَتَّقِ ٱللَّهَ یَجۡعَل لَّهُۥ مَخۡرَجࣰا
 """;
-  static const String elmTextTwentyThirtyOne_2 = """
+  static const String khatiraTextTwentyThirtyOne_2 = """
 هذه الآية وردت في سورة الطلاق، معناها السياقي: أي ان من يتق الله في تطليق زوجته؛ يطلقها وفق السنة، يطلقها لعدتها، يطلقها في طهر مامسها فيه، يطلقها وهو اعتقد أن الله لعله يحدث بعد ذلك أمرا، يجعل الله له مخرجاً إلى الرجوع إليها، لو أنه ندم بإمكانه أن يُرجعها، لو أنه تأثر لفراقها بإمكانه أن يرجعها 
  """;
   static const String ayahHadithTwentyThirtyOne_3 = """
 وَمَن یَتَّقِ ٱللَّهَ یَجۡعَل لَّهُۥ مَخۡرَجࣰا
 """;
   // page 32
-  static const String elmTextTwentyThertyTwo_1 = """
+  static const String khatiraTextTwentyThertyTwo_1 = """
 لو نزعنا هذه الآية من سياقها يُكتب عليها مجلدات 
 إذا نُزعت من سياقها اصبحت قاعدة 
 من يتق الله في اختيار زوجته يجعل له مخرجاً من تطليقها
@@ -690,20 +690,20 @@ class KhatiraTextTwenty {
 
  """;
   // page 33
-  static const String elmTextTwentyThirtyThree_1 = """
+  static const String khatiraTextTwentyThirtyThree_1 = """
 هذه الآية يمكن أن تُطبق على مليون حالة، إذا نزعت من سياقها أصبحت قاعدة 
  """;
   static const String ayahHadithTwentyThirtyThree_1 = """
 وَمَن یَتَّقِ ٱللَّهَ یَجۡعَل لَّهُۥ مَخۡرَجࣰا
 """;
-  static const String elmTextTwentyThirtyThree_2 = """
+  static const String khatiraTextTwentyThirtyThree_2 = """
 والآية تشير بشكل أو بأخر إلى أنه قبل أن يخلق الله المخرج لم يكن هناك مخرجاً، يبدو أن الأمر مستعص، الأمر مغلق، الأمر لا يوجد فيه فرج 
   """;
 
   static const String subtitleTwentyThirtyThree_1 = """
 من يتق الله في الحرام يجعل الله له مخرجاً 
  """;
-  static const String elmTextTwentyThirtyThree_3 = """
+  static const String khatiraTextTwentyThirtyThree_3 = """
 أحياناً يضعك في ظرف كل أبواب الحلال مغلقة، وكل الأبواب المشروعة مغلقة، وكل الطرق الآمنة مغلقة، وكل الأسباب التي رسمها الله عز وجل مغلقة ثم يفتح الله لك باب الحرام، باب المعصية، باب النفاق، باب الكذب، ويمتحنك، المؤمن يقول: والله لن أعصي الله ما حييت، ولن أتساهل في منهج الله قيد أنملة 
  """;
   static const String subtitleTwentyThirtyThree_2 = """
@@ -712,14 +712,14 @@ class KhatiraTextTwenty {
   static const String ayahHadithTwentyThirtyThree_2 = """
 وَمَن یَتَّقِ ٱللَّهَ یَجۡعَل لَّهُۥ مَخۡرَجࣰا وَیَرۡزُقۡهُ مِنۡ حَیۡثُ لَا یَحۡتَسِبُ
 """;
-  static const String elmTextTwentyThirtyThree_4 = """
+  static const String khatiraTextTwentyThirtyThree_4 = """
 فهذه الآية دقيقة، أحياناً تعرض عليك الدنيا من طريق غير مشروع، قد يأتيك رزق وفير من معصية، من عمل مشبوه، من إنجاز عمل لا يرضي الله، من طريقة لا ترضي الله، هذا المال الوفير الذي يأتيك من هذا الطريق لا بركة فيه، وقد يذهب، ويُذهب معه صاحبه، لكنك إذا اتقيت الله عز وجل جاءك رزق وفير من حيث لا تحتسب 
   """;
   // page 34
   static const String ayahHadithTwentyThirtyFour_1 = """
 وَمَن یَتَّقِ ٱللَّهَ یَجۡعَل لَّهُۥ مَخۡرَجࣰا وَیَرۡزُقۡهُ مِنۡ حَیۡثُ لَا یَحۡتَسِبُ
 """;
-  static const String elmTextTwentyThirtyFour_1 = """
+  static const String khatiraTextTwentyThirtyFour_1 = """
 لكن لا تطالب الله بالوقت، الوقت له حكمته، أنت عليك أن تعبد الله، الآية دقيقة، وهذه نقطة مهمة جداً 
 
 لابد من ضيق ليظهر صدق الإنسان مع الله وبعد ذلك يأتي فرج الله: 
@@ -731,13 +731,13 @@ class KhatiraTextTwenty {
 یَـٰٓأَیُّهَا ٱلَّذِینَ ءَامَنُوٓا۟ إِنَّمَا ٱلۡمُشۡرِكُونَ نَجَسࣱ فَلَا یَقۡرَبُوا۟ ٱلۡمَسۡجِدَ ٱلۡحَرَامَ بَعۡدَ عَامِهِمۡ هَـٰذَا ۚ ۝٢٨
 سورة التوبة
 """;
-  static const String elmTextTwentyThirtyFour_2 = """
+  static const String khatiraTextTwentyThirtyFour_2 = """
 فهذه السياحة قديمة، حينما يأتي هؤلاء إلى المسجد الحرام يشترون الطعام والشراب، يسكنون في البيوت، ينفقون أموالاً كثيرة جداً، والأن تكاد تكون صناعة السياحة أروج صناعةٍ في كل البلاد، وتحقق أكبر دخل من العملات الصعبة، فربنا عز وجل قال 
  """;
   static const String ayahHadithTwentyThirtyFour_3 = """
 یَـٰٓأَیُّهَا ٱلَّذِینَ ءَامَنُوٓا۟ إِنَّمَا ٱلۡمُشۡرِكُونَ نَجَسࣱ
 """;
-  static const String elmTextTwentyThirtyFour_3 = """
+  static const String khatiraTextTwentyThirtyFour_3 = """
 ماقال: نجسون، قال 
     ( نجس ) 
 أي هم عين النجاسة 
@@ -745,17 +745,17 @@ class KhatiraTextTwenty {
 طبعاً من لوازم هذا المنع انخفاض الدخل، طبيعي، قال
 
  """;
-  // Page 35
+  // page 35
   static const String ayahHadithTwentyThirtyFive_1 = """
 وَإِنۡ خِفۡتُمۡ عَیۡلَةࣰ
 """;
-  static const String elmTextTwentyThirtyFive_1 = """
+  static const String khatiraTextTwentyThirtyFive_1 = """
 أي فقراً 
  """;
   static const String ayahHadithTwentyThirtyFive_2 = """
 فَسَوۡفَ یُغۡنِیكُمُ ٱللَّهُ مِن فَضۡلِهِۦۤ
 """;
-  static const String elmTextTwentyThirtyFive_2 = """
+  static const String khatiraTextTwentyThirtyFive_2 = """
 لكن لم يقل: يغنيكم، قال 
     ( فسوف ) 
 

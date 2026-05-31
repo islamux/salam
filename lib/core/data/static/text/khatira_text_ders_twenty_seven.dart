@@ -1,16 +1,16 @@
 class KhatiraTextTwentySeven {
-  // pageOne
+  // page 1
   static const String subtitleTwentySevenPageOne_1 = """
  الأمر بالمعروف والنهي عن المنكر الفريضة السادسة 
  """;
-  static const String elmTextTwentySevenPageOne_1 = """
+  static const String khatiraTextTwentySevenPageOne_1 = """
 الأمر بالمعروف والنهي عن المنكر يسميه بعض العلماء الفريضة السادسة
 إذا كانت شهادة لا إله إلا الله، وشهادة أن محمداً عليه الصلاة والسلام رسول الله، وأن الصلاة والزكاة، والحج، والصيام هي فرائض الإسلام، فالأمر بالمعروف والنهي عن المنكر فريضة سادسة، والدليل قال تعالى 
  """;
   static const String ayahHadithTwentySevenPageOne_1 = """
 وَلْتَكُن مِّنكُمْ أُمَّةٌۭ يَدْعُونَ إِلَى ٱلْخَيْرِ
 """;
-  static const String elmTextTwentySevenPageOne_2 = """
+  static const String khatiraTextTwentySevenPageOne_2 = """
 اللام لام الأمر، ولام الأمر إذا جائت مع الفعل المضارع انقلب الفعل المضارع إلى أمر، إذا قلت لشخص: لتأكل أو كل، فهما بمعنى واحد، فعل الأمر معروفة صيغتُه، أما إذا جاءت لام الأمر مع الفعل المُضارع انقلب إلى فعل أمر، فربنا عز وجل يقول 
 ولتكن منكم أمة يدعون إلى الخير ويأمرون بالمعروف وينهون عن المنكر وأولئك هم المفلحون 
 ولماذا أهلك الله بعض الأقوام إهلاك استئصال؟ 
@@ -20,9 +20,9 @@ class KhatiraTextTwentySeven {
 كَانُوا۟ لَا يَتَنَاهَوْنَ عَن مُّنكَرٍۢ فَعَلُوهُ
 """;
 
-// pageTwo
+// page 2
 // 1
-  static const String elmTextTwentySevenPageTwo_1 = """
+  static const String khatiraTextTwentySevenPageTwo_1 = """
 لأننا إذا تركنا الأمر بالمعروف والنهي عن المنكر قوي الباطل وانكمش الحق، إلى أن يتلاشى الحق، فالأمر بالمعروف والنهي عن المنكر ضمانٌ لاستمرار الحق لذلك في القرآن الكريم
   """;
   static const String ayahHadithTwentySevenPageTwo_1 = """
@@ -31,7 +31,7 @@ class KhatiraTextTwentySeven {
 إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ
 """;
   // 2
-  static const String elmTextTwentySevenPageTwo_2 = """
+  static const String khatiraTextTwentySevenPageTwo_2 = """
 أي أن الأمر بالمعروف والدعوة إلى الله توازي الإيمان، أنت مؤمن، إذاً ينبغي أن تدعو إلى الله، إذاً ينبغي أن تدعو إلى الله، أنت مؤمن ينبغي أن تأمر بالمعروف وتنهى عن المنكر، مؤمن سلبي مستحيل الوجود، لمجرد أن تؤمن لا تستطيع إلا أن تنشر الخير، إذا انطلقت إلى فعل الخير وإلى الأمر بالمعروف والنهي عن المنكر، فهذه علامة على أنك مؤمن بحق، أما إذا قلت:  أنا مؤمن:  ولكن لا دخل لي بالناس، فهذا ادعاء بأنك مؤمن 
 يروى أن الله سبحانه وتعالى أرسل الملائكة لإهلاك قريةٍ فقالت الملائكة: يارب إن فيها رجلاً صالحاً!! قال: به فابدؤوا عجيب لماذا؟ قال: لأنه كان إذا رأى المنكر لا يتمعر وجهه 
 ابنة أخيك تزورك، وترتدي ثياباً فاضحة وتسكت؟! هذا شأنها، أنا لا أحب أن اتدخل بشؤونها الخاصة 
@@ -41,7 +41,7 @@ class KhatiraTextTwentySeven {
 كَانُوا۟ لَا يَتَنَاهَوْنَ عَن مُّنكَرٍۢ فَعَلُوهُ
 """;
   // 3
-  static const String elmTextTwentySevenPageTwo_3 = """
+  static const String khatiraTextTwentySevenPageTwo_3 = """
 لذلك عدم الأمر بالمعروف، والتناهي عن المنكر أحد أسباب هلاك الإستئصال، يؤكد هذا المعنى أن الله سبحانه وتعالى يقول 
 """;
   static const String ayahHadithTwentySevenPageTwo_3 = """
@@ -49,19 +49,19 @@ class KhatiraTextTwentySeven {
 سورة هود
 """;
 // 4
-  static const String elmTextTwentySevenPageTwo_4 = """
+  static const String khatiraTextTwentySevenPageTwo_4 = """
 لم يقل: صالحون، بل قال 
           مصلحون 
 وشتان بين الصالحين وبين المُصلحين، الصالح لذاته، إنسان صالح، أما المصلح فينطلق لإصلاح غيره، يأمر بالمعروف وينهى عن المنكر 
 إذاً الحق لا يستمر إلا بالأمر بالمعروف والنهي عن المنكر، الحق لا يستمر إلا بالتواصي بالحق، فالإنسان بمجرد أن ينسحب من المجتمع، وأن يكون صالحاً لذاته؛ أن يصلي ويصوم، وألا يتكلم بكلمة لإصلاح ذات البين، أو لإصلاح المسلمين، أو لإصلاح المؤمنين، لا يغضب لوقوع المنكرات، ما الذي يحصل؟ تتسع دائرة المُنكر، وتنكمش دائرة الحق، أما بالأمر بالمعروف والنهي عن المنكر، ما الذي يحصل؟ تتسع دائرة الحق، وتنكمش دائرة الباطل 
    """;
 
-  // PageThree
+  // page 3
   // 1
   static const String subtitleTwentySevenPageThree_1 = """
 المعروف تعرفه الفطر السليمة ابتداءً من دون تعليم 
   """;
-  static const String elmTextTwentySevenPageThree_1 = """
+  static const String khatiraTextTwentySevenPageThree_1 = """
 ما المعروف؟ تسمية رائعة، الشيء التي تعرفه الفطر السليمة ابتداءً من دون تعليم، ائتِ بإنسان من الصحراء، قل له فلان أمه جائعة، اشترى طعاماً وأكله وحده، يقول لك: مجرم 
 
 تبدل القيم في آخر الزمان 
@@ -71,14 +71,14 @@ class KhatiraTextTwentySeven {
 كُنتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ
 """;
 // 2
-  static const String elmTextTwentySevenPageThree_2 = """
+  static const String khatiraTextTwentySevenPageThree_2 = """
 علية خيريتها 
 """;
   static const String ayahHadithTwentySevenPageThree_2 = """
 تَأْمُرُونَ بِٱلْمَعْرُوفِ وَتَنْهَوْنَ عَنِ ٱلْمُنكَرِ
 """;
 
-// PageFour
+// page 4
 // 1
   static const String subtitleTwentySevenPageFour_1 = """
 الصحابة صُعقوا 
@@ -86,18 +86,18 @@ class KhatiraTextTwentySeven {
   static const String ayahHadithTwentySevenPageFour_1 = """
 يارسول الله، وإن ذلك لكائن؟ قال: نعم، وأشدُ، كيف بكم إذا أمرتم بالمنكر، ونهيتُم عن المعروف؟ قالوا: يارسول الله وإن ذلك لكائن؟ قال: نعم، وأشدُ، كيف بكم إذا رأيتمُ المعروف منكرا والمنكر معروفا
 """;
-  static const String elmTextTwentySevenPageFour_1 = """
+  static const String khatiraTextTwentySevenPageFour_1 = """
 والله الآن هناك أعمال قبيحة، حقيرة، دنيئة، الناس يتباهون بها، أعمال البطولة، والجرأة، والشجاعة، والنجدة، والإنفاق، والبذل يُتهم أصحابها بأنهم مجانين لذلك مشكلة كبيرة جداً، تبدلت القيم 
 أي شيء تعرفه ابتداءً من دون تعليم، معروف، وأي شيء تنكره ابتداءً منكر، وقد يعرف هذا الحيوان، القطة إن خطفت قطعة لحم تأكلها بعيداً عنك تعرف ذنبها، أما إذا قدمت لها قطعة لحم تأكلها أمامك، تدرك أن أول عمل غلط، ينبغي أن تهرب، العمل الثاني صح، تأكلها أمامك 
 مثل آخر: طفل صغير وجد قلماً أعجبه فوضعه في جيبه، صاحب القلم رفع إصبعه ضاع قلمي، الأستاذ فتش الطلاب، عثر عليه بجيب هذا الطفل، يحس هذا الطفل بآلام لا توصف، لماذا تألم؟ هو مفطور فطرة، هذه الفطرة أنبأته أن عمله خطأ 
   """;
 
-// PageFive
+// page 5
 // 1
   static const String ayahHadithTwentySevenPageFive_1 = """
 كُنتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ تَأْمُرُونَ بِٱلْمَعْرُوفِ وَتَنْهَوْنَ عَنِ ٱلْمُنكَرِ
 """;
-  static const String elmTextTwentySevenPageFive_1 = """
+  static const String khatiraTextTwentySevenPageFive_1 = """
 لذلك هذه الأمة الإسلامية لا يمكن أن تكون خير أمة أخرجت للناس إلا إذا أمرت بالمعروف، ونهت عن المنكر، خيريتها أنها تأمر بالمعروف، وتنهى عن المنكر، فإذا لم تأمر بالمعروف، ولم تنه عن المنكر فقدت خيريتها، بل هي أمة كأي أمة خلقها الله، يؤكد هذا المعنى 
 وقالت اليهود والنصارى نحن أبناء الله واحباؤه قل فلم يعذبكم بذنوبكم بل أنتم بشر ممن خلق 
 من هؤلاء الشعوب التائهة، الأمة الإسلامية إن لم تقم بأمر الله، إن لم تأمر بالمعروف، إن لم تنه عن المنكر فهي أمة كبقية الأمم التي شردت عن الله عز وجل، وما من كلمة تصدق على واقع الأمة كهذه الكلمة: هان أمر الله عليها فهانوا على الله 
@@ -107,19 +107,19 @@ class KhatiraTextTwentySeven {
 أن تنكر المنكر بيدك إن استطعت، ثم بلسانك، ثم بقلبك 
   """;
 
-// PageSix
+// page 6
 // 1
   static const String subtitleTwentySevenPageSix_1 = """
 يجب أن تكون داعية 
 """;
-  static const String elmTextTwentySevenPageSix_1 = """
+  static const String khatiraTextTwentySevenPageSix_1 = """
           وانذر عشيرتك الأقربين 
 """;
 // 2
   static const String subtitleTwentySevenPageSix_2 = """
 الأقربون أولى بالمعروف 
 """;
-  static const String elmTextTwentySevenPageSix_2 = """
+  static const String khatiraTextTwentySevenPageSix_2 = """
 النبي عليه الصلاة والسلام أُمِرَ في هذه الآية أن ينذر عشيرته الأقربين، والأقربون أولى بالمعروف، الأقربون إليك أولى بتوجيهك، الأقربون أولى بعنايتك، الأقربون نسباً، والأقربون مكاناً، والأقربون في العمل، المؤمن يبدأ بمن حوله، يبدأ بأهله وأولاده، ويبدأ بإخوته، وأخواته، ويبدأ بعشيرته، ويبدأ بأبناء حيه، وبزُملائِهِ بالعمل ويبدأ بجيرانه، هكذا كان توجيه الله تعالى لنبيه صلى الله عليه وسلم، قال تعالى: 
 """;
   static const String ayahHadithTwentySevenPageSix_1 = """
@@ -127,12 +127,12 @@ class KhatiraTextTwentySeven {
 سورة الشعراء
 """;
 // 3
-  static const String elmTextTwentySevenPageSix_3 = """
+  static const String khatiraTextTwentySevenPageSix_3 = """
 ما من علاقة أوقع في النفس من علاقة الإيمان بين الأقارب، فإذا كان إخوانك وأخواتك مؤمنين، وكان أولادك على الطريق الصحيح فهذه سعادة ما بعدها سعادة، وهذا يُستنبط من قوله تعالى 
           وأنذر عشيرتك الأقربين
 """;
 
-  // PageSeven
+  // page 7
   // 1
   static const String subtitleTwentySevenPageSeven_1 = """
 التذكير بآلاء الله صنف من أصناف الدعوة إلى الله 
@@ -141,24 +141,24 @@ class KhatiraTextTwentySeven {
 فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ ۝٩
 سورة الأعلى
 """;
-  static const String elmTextTwentySevenPageSeven_1 = """
+  static const String khatiraTextTwentySevenPageSeven_1 = """
 أمر لسيدنا رسول الله صلى الله عليه وسلم، وينسحب بالتبعية على كل مؤمن فذكر، بماذا؟ بعظمة الله، وعدالته، وبيوم الحساب وبأوامره ونواهيه، وبالدعوة إلى العمل الصالح، وبحفظ الأمانة والعهد، طبعاً الفعل إذا حُذِفَ المفعول به أضمر! لو قال الله عز وجل: ذكر الناس بعظمتي لصار التذكير محدوداً، لكن فذكر بكل شيء! سواء عليك أعرفت الناس بالله أم ذكرتهم باليوم الآخر، أم حذرتهم من عذاب النار، أم حمستهم للعمل الصالح، أم وقيتهم من المعصية كُل هذا تذكير 
 """;
 // 2
   static const String subtitleTwentySevenPageSeven_2 = """
 التذكير بالبلاء أيضا صنف من أصناف الدعوة إلى الله 
 """;
-  static const String elmTextTwentySevenPageSeven_2 = """
+  static const String khatiraTextTwentySevenPageSeven_2 = """
 ذكرهم بالفيضانات والزلازل والأمراض النفسية والهم والحزن والقلق، وأنواع الأمراض؛ الأمراض الُمستعصية والمزعجة، الفقر والضيق والإهانة، وهناك عذاب عظيم وآخر مهين 
 قل هو القادر على أن يبعث عليكم عذاباً من فوقكم أو من تحت ارجلكم أو يلبسكم شيعاً ويذيق بعضكم بأس بعض انظر كيف نصرف الايات لعلهم يفقهون 
 """;
 
-// PageEight
+// page 8
 // 1
   static const String subtitleTwentySevenPageEight_1 = """
 من أساليب الدعوة التوجيه اللين اللطيف 
 """;
-  static const String elmTextTwentySevenPageEight_1 = """
+  static const String khatiraTextTwentySevenPageEight_1 = """
 لابد من الرفق في الدعوة
 """;
   static const String ayahHadithTwentySevenPageEight_1 = """
@@ -166,47 +166,47 @@ class KhatiraTextTwentySeven {
 فَقُولَا لَهُۥ قَوْلًۭا لَّيِّنًۭا لَّعَلَّهُۥ يَتَذَكَّرُ أَوْ يَخْشَىٰ
 """;
 // 2
-  static const String elmTextTwentySevenPageEight_2 = """
+  static const String khatiraTextTwentySevenPageEight_2 = """
 فرعون الذي قال 
 """;
   static const String ayahHadithTwentySevenPageEight_2 = """
 أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ
 """;
 // 3
-  static const String elmTextTwentySevenPageEight_3 = """
+  static const String khatiraTextTwentySevenPageEight_3 = """
 والذي قال 
 """;
   static const String ayahHadithTwentySevenPageEight_3 = """
 مَا عَلِمْتُ لَكُم مِّنْ إِلَٰهٍ غَيْرِى
 """;
 // 4
-  static const String elmTextTwentySevenPageEight_4 = """
+  static const String khatiraTextTwentySevenPageEight_4 = """
 والذي قال 
 """;
   static const String ayahHadithTwentySevenPageEight_4 = """
 أَلَيْسَ لِى مُلْكُ مِصْرَ
 """;
 // 5
-  static const String elmTextTwentySevenPageEight_5 = """
+  static const String khatiraTextTwentySevenPageEight_5 = """
 هذا هو نفسه دعاه الله إليه 
 """;
   static const String ayahHadithTwentySevenPageEight_5 = """
 فَقُولَا لَهُۥ قَوْلًۭا لَّيِّنًۭا
 """;
 // 6
-  static const String elmTextTwentySevenPageEight_6 = """
+  static const String khatiraTextTwentySevenPageEight_6 = """
 لذلك من أمر بمعروف فليكن أمره بمعروف، قال تعالى 
 """;
   static const String ayahHadithTwentySevenPageEight_6 = """
 وَلَوْ كُنتَ فَظًّا غَلِيظَ ٱلْقَلْبِ لَٱنفَضُّوا۟ مِنْ حَوْلِكَ ۖ فَٱعْفُ عَنْهُمْ وَٱسْتَغْفِرْ لَهُمْ وَشَاوِرْهُمْ فِى ٱلْأَمْرِ ۖ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى ٱللَّهِ
 """;
 
-// PageNine
+// page 9
 // 1
   static const String subtitleTwentySevenPageNine_1 = """
 المؤمن والداعية إلى الله حقيقة صفتُهما الإستقامة 
 """;
-  static const String elmTextTwentySevenPageNine_1 = """
+  static const String khatiraTextTwentySevenPageNine_1 = """
 لن يكون الإنسان مؤمناً إلا إذا استقام على أمر الله، ولن يكون داعية مخلصاً إلا إذا عمل صالحاً، أي جسد بسلوكه ما دعا إليه بلسانه
 قال بعض العلماء من تصدر للإرشاد فإن عليه اجتناب مايمنع من قبول كلامه، فالورع حسن، لكن في العلماء أحسن، هذا الذي تدعوه إلى الله يجب أن تكون قدوة له، يجب أن تكون سباقاً إلى الخير، يجب ألا يأخذ الناس عليك مأخذاً، يجب أن تصبر، ويجب أن تضحي، ويجب أن تبذل، ويجب أن تتواضع، ويجب أن ترحم من أجل أن يشرفك الله لأن تكون جندياً من جنود الحق، ما من حرفة أرقى في الأرض من أن تكون داعياً إلى الله عز وجل 
 """;
@@ -215,16 +215,16 @@ class KhatiraTextTwentySeven {
 سورة فصلت
 """;
   // 2
-  static const String elmTextTwentySevenPageNine_2 = """
+  static const String khatiraTextTwentySevenPageNine_2 = """
 كأن في هذه الآية إشارة إلى أن كل كلام لغو أو باطل، أو كل كلام يدعو إلى الرذيلة أو يدعو إلى إفساد ذات البين، أو أن كل كلام يدعو إلى عبادة غير الله عز وجل، أو إلى أن أي كلام يدعو إلى البعد عن دين الله عز وجل هو كلام باطل لا قيمة له، لكن الكلام الحسن هو أن تتعرف إلى الله عز وجل، وأن تدعو إليه 
   """;
 
-// PageTen
+// page 10
 // 1
   static const String subtitleTwentySevenPageTen_1 = """
 على الداعية أن يستوعب ثقافة عصره 
 """;
-  static const String elmTextTwentySevenPageTen_1 = """
+  static const String khatiraTextTwentySevenPageTen_1 = """
 وفي هذا العصر يحتاج الداعية إلى الله عز وجل أن يستوعب ثقافة العصر 
 """;
   static const String ayahHadithTwentySevenPageTen_1 = """
@@ -235,7 +235,7 @@ class KhatiraTextTwentySeven {
 وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ
 """;
 // 2
-  static const String elmTextTwentySevenPageTen_2 = """
+  static const String khatiraTextTwentySevenPageTen_2 = """
 هذه الآيات الكونية تستطيع أن تشرحها وهي باب واسع تدخل منه إلى الله سبحانه وتعالى 
 """;
   static const String subtitleTwentySevenPageTen_2 = """
@@ -243,17 +243,17 @@ class KhatiraTextTwentySeven {
 داعية من نوع خاص 
 """;
 // 3
-  static const String elmTextTwentySevenPageTen_3 = """
+  static const String khatiraTextTwentySevenPageTen_3 = """
 الدعوة بالصمت والسلوك 
 يمكن أن تكون أكبر داعيةٍ في الأرض وأنت ساكت، بدون أي كلمة، بمعاملتك، بمواقفك المُشرفة، بمواقفك الأخلاقية، بمواقفك المُنصفة، هذا هو الدين، إنسان يرفع الدين بنظر الناس إلى السماء، وإنسان يضعه في الوحل، وكلاهما يصلي، هذا في كذبه واحتياله وغشه جعل الدين في الوحل، وهو لا يدري، وهذا باستقامته وصدقه جعل الدين في السماء وهو لا يشعر 
 """;
 
-// PageEleven
+// page 11
 // 1
   static const String subtitleTwentySevenPageEleven_1 = """
 اكبر جريمة يرتكبها المسلم أن يُقصر أو يكذب أو يخلف الوعد 
 """;
-  static const String elmTextTwentySevenPageEleven_1 = """
+  static const String khatiraTextTwentySevenPageEleven_1 = """
 المسلم معروف أنه مُسلم، عند الناس، محسوب على المسلمين، هذا المسلم إذا أساء، إذا كذب، إذا احتال، إذا لم يصدُق، إذا غش الناس، إذا أخلف وعده، إذا لم ينجز عهده ماذا يقول الكافر؟ الدين باطل، الدين ليس له أصل، الدين خرافة، الدين أفيون الشعوب، الدين ضلالات، الدين غيبيات، الدين حالة ضعف للإنسان، لأن الكافر مارأى ذلك الإنسان العظيم، رأى إنساناً تافهاً، كاذباً، مُتناقضاً، دجالاً، فما الذي حمل الكافر على كفره؟ ما الذي ثبت كفره؟ سلوك هذا المسلم المُقصر، لذلك أكبر جريمةٍ يرتكبها المسلم أو المؤمن أن يُقصر، أو أن يكذب، أو أن يخلف الوعد، أو أن يحتال، او أن تكون له شخصية إزدواجية، لذلك يعطي الكافر حجة يتمسك بها، يقول لك الكافر: هذا هو الإسلام، هذا دجل 
 """;
   static const String subtitleTwentySevenPageEleven_2 = """
@@ -261,7 +261,7 @@ class KhatiraTextTwentySeven {
 الإسلام لا ينتشر بشيوع العبادات الشعائرية ولكنه ينتشر بالعبادات التعاملية 
 """;
 // 2
-  static const String elmTextTwentySevenPageEleven_2 = """
+  static const String khatiraTextTwentySevenPageEleven_2 = """
 فالصادق داعية، وإن لم ينطق بكلمة حق، والأمين داعية آخر، والعفيف داعية ثالث، لأن الله عز وجل حينما بعث النبي عليه الصلاة والسلام بعثه بمكارم الأخلاق، ففي الحديث عن أبي هريرة قال
 """;
   static const String ayahHadithTwentySevenPageEleven_1 = """
@@ -269,11 +269,11 @@ class KhatiraTextTwentySeven {
 إنما بُعثت لأتمم مكارم الأخلاق(احمدعن ابي هريرة)
 """;
 // 3
-  static const String elmTextTwentySevenPageEleven_3 = """
+  static const String khatiraTextTwentySevenPageEleven_3 = """
 الإسلام لا ينهض ولا يجلب أنظار الناس إليه إلا حينما يتمسك المسلمون بالقيم الأخلاقية، حينما يحدثون صدمة للطرف الآخر، ما هذا الورع؟ ما هذه الأمانة؟ ما هذا الصدق؟ ما هذا الإنصاف؟ عندها يدخل الناس في دين الله أفواجاً
 """;
 
-// PageTwelve
+// page 12
 // 1
   static const String subtitleTwentySevenPageTwelve_1 = """
 ️المعروف هو ما شرعه الله عز وجل من طاعات وأوامر، والمنكر ما نهى الله عنه
@@ -285,7 +285,7 @@ class KhatiraTextTwentySeven {
   static const String ayahHadithTwentySevenPageTwelve_1 = """
 كُنتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ
 """;
-  static const String elmTextTwentySevenPageTwelve_1 = """
+  static const String khatiraTextTwentySevenPageTwelve_1 = """
 من أدق معاني كلمة 
           كنتم 
 أي أن كلمة"كنتم" في هذه الآية تعني أصبحتم، أي عندما جاءتكم هذه الرسالة على رسول منكم من هذه الأمة العربية 
@@ -306,21 +306,21 @@ class KhatiraTextTwentySeven {
   static const String ayahHadithTwentySevenPageThirteen_1 = """
 كُنتُمْ خَيْرَ أُمَّةٍ أُخْرِجَتْ لِلنَّاسِ
 """;
-  static const String elmTextTwentySevenPageThirteen_1 = """
+  static const String khatiraTextTwentySevenPageThirteen_1 = """
 أي أنتم أيها العرب بهذه الرسالة التي نزلت عليكم، بهذا النبي الذي هو سيد الأنبياء والرسل، الذي بُعث فيكم أصبحتم خير أمة أخرجت للناس، أي جعلكم وسطاء بينه وبين خلقه 
 """;
 // 2
   static const String ayahHadithTwentySevenPageThirteen_2 = """
 وَكَذَٰلِكَ جَعَلْنَٰكُمْ أُمَّةًۭ وَسَطًۭا
 """;
-  static const String elmTextTwentySevenPageThirteen_2 = """
+  static const String khatiraTextTwentySevenPageThirteen_2 = """
 أي أنتم وسطاء، أي كما هديتكم كونوا هداة للخلق، وهذه أشرف مرتبة تنالها الأمة العربية، أن الله انزل كتابه بلسان عربي مبين، وجعل هذه الأمة وسطاً، أو وسطاء بين الله وبين خلقه 
 """;
 // 3
   static const String ayahHadithTwentySevenPageThirteen_3 = """
 وَتَوَاصَوْا۟ بِٱلْحَقِّ
 """;
-  static const String elmTextTwentySevenPageThirteen_3 = """
+  static const String khatiraTextTwentySevenPageThirteen_3 = """
 يجب ان ينطق لسانك بالحق ويدعوا إلى الحق وان لا يُحابي أحداً ولا ينافق ولا يداهن ولا يتملق، وأن لا يقول شيئاً لست قانعاً به ويجب أن لا يسكت على باطل، إلا الذين أمنوا وعملوا الصالحات وتواصو بالحق، يجب أن تكون صادقاً جريئاً وكلمة الحق لا تقطع رزقاً ولا تقرب أجلاً 
 
 ️حينما تخشى غير الله فهناك نقص في التوحيد 
@@ -329,14 +329,14 @@ class KhatiraTextTwentySeven {
   static const String ayahHadithTwentySevenPageThirteen_4 = """
 ٱلَّذِينَ يُبَلِّغُونَ رِسَٰلَٰتِ ٱللَّهِ وَيَخْشَوْنَهُۥ وَلَا يَخْشَوْنَ أَحَدًا إِلَّا ٱللَّهَ
 """;
-  static const String elmTextTwentySevenPageThirteen_4 = """
+  static const String khatiraTextTwentySevenPageThirteen_4 = """
 الذين يبلغون 
 معنى يبلغون أي مهمتهم التبليغ، وليس التشريع، وليست الإضافة 
 """;
 
-// PageFourteen
+// page 13
 // 1
-  static const String elmTextTwentySevenPageFourteen_1 = """
+  static const String khatiraTextTwentySevenPageFourteen_1 = """
 وكلمة رسالات جاءت جمعاً، أي هناك عقائد، وعبادات، ومعاملات، وآداب، وسنن، وأخبار؛ أخبار السابقين، وأخبار اللاحقين، وإيمان بالله، وبالرسل، وإيمان بالملائكة، وبالقدر خيره وشره، وبالصلاة، وأحكام الصلوات والصيام، والحج، والزكاة، واحكام البيوع، والطلاق، والزواج، وآداب الإسلام 
 """;
   static const String subtitleTwentySevenPageFourteen_1 = """
@@ -346,7 +346,7 @@ class KhatiraTextTwentySeven {
 ٱلَّذِينَ يُبَلِّغُونَ رِسَٰلَٰتِ ٱللَّهِ وَيَخْشَوْنَهُۥ وَلَا يَخْشَوْنَ أَحَدًا إِلَّا ٱللَّهَ
 """;
 // 2
-  static const String elmTextTwentySevenPageFourteen_2 = """
+  static const String khatiraTextTwentySevenPageFourteen_2 = """
 لمجرد أن تخشى غير الله ألغيت مهمتك، وسقطت دعوتك، وأصبحت على هامش الحياة، فإذا سكت عن الحق إرضاءً لغير الله، وإذا نطقت بالباطل إرضاءً لغير الله، فماذا بقي من إبلاغ رسالات الله؟ 
 """;
   static const String subtitleTwentySevenPageFourteen_2 = """
@@ -357,11 +357,11 @@ class KhatiraTextTwentySeven {
 أَلَمْ تَرَ كَيْفَ ضَرَبَ ٱللَّهُ مَثَلًۭا كَلِمَةًۭ طَيِّبَةًۭ
 """;
 // 3
-  static const String elmTextTwentySevenPageFourteen_3 = """
+  static const String khatiraTextTwentySevenPageFourteen_3 = """
 الكلمة الطيبة مضمونها طيب، وطيبها يأتي من أنها توافق عمل صاحبها، وموادها طيب، معناها طيب، تطابقها مع العمل طيب، نتاىجها طيبة، الكلمة الطيبة أن تتكلم كلاماً يقرب الناس من الله عز وجل، أي كلام يقرب الناس من الله، يزيدهم معرفة به، يزيدهم حباً به، يزيدهم إستقامة على أمره، يزيدهم بذلاً من أجله، يزيدهم إتصالاً به، اي كلام يؤدي إلى إقبال الناس على الله عز وجل هو ما تعنيه هذه الآية 
 """;
 
-// PageFifteen
+// page 14
 // 1
   static const String subtitleTwentySevenPageFifteen_1 = """
 ️من اساليب الدعوة التوجيه اللين اللطيف
@@ -371,7 +371,7 @@ class KhatiraTextTwentySeven {
 إِنَّا قَدْ أُوحِىَ إِلَيْنَآ أَنَّ ٱلْعَذَابَ عَلَىٰ مَن كَذَّبَ وَتَوَلَّىٰ ۝٤٨
 سورة طه
 """;
-  static const String elmTextTwentySevenPageFifteen_1 = """
+  static const String khatiraTextTwentySevenPageFifteen_1 = """
 هذا من التوجيه اللطيف، وهذا من القول اللين، لم يقل سيدنا موسى أن يافرعون سوف يعذبك الله عز وجل..لا
 فإذا أردت أن تنصح إنسان غارقاً في المعاصي فلا تقل له: أمامك مصائب، وأمامك عقوبات شديدة، بل قل: الله عز وجل يعاقب المنحرف، ويعاقب العاصي، ولا تتوجه إليه بالذات، بل بين له بعض القواعد، بعض السُنن، والقوانين في كتاب الله من دون أن تجعله هدفاً لموعظتك 
 """;
@@ -380,7 +380,7 @@ class KhatiraTextTwentySeven {
 
 ️ليس من الحكمة مواجهة الناس بأخطائهم 
 """;
-  static const String elmTextTwentySevenPageFifteen_2 = """
+  static const String khatiraTextTwentySevenPageFifteen_2 = """
 هذا الذي يواجه الناس بأخطائهم يقول له: أنت فاسق، أنت كافر، هذا اسلوب لا يرضاه الله عز وجل، لأنه من أمر بمعروف فليكن أمره بمعروف 
 قل له من يعص الله عز وجل فسوف يحاسبه في الدنيا والاخرة، استخدم ضمير الغائب، ولا تستخدم الضمير المخاطب 
 """;
@@ -388,11 +388,11 @@ class KhatiraTextTwentySeven {
 فَقُولَا لَهُۥ قَوْلًۭا لَّيِّنًۭا
 """;
 // 3
-  static const String elmTextTwentySevenPageFifteen_3 = """
+  static const String khatiraTextTwentySevenPageFifteen_3 = """
 قال بعض العلماء القول اللين أن تناديه بلقبه، أو بكنيته، أو بالاسم الذي يُحِبُه، هذا من القول اللين، فإذا كنت مع إنسان وترجوا منه الخير، فإذا ناديته بإسم يحبه، أو لقب علمي يحبه، أو رتبةٕ يحبُها، أو كنية يحبُها، فهذا من القول اللين 
 """;
 
-// PageSixteen
+// page 15
 // 1
   static const String subtitleTwentySevenPageSixteen_1 = """
 ️خذ العفو وأمر بالعرف 
@@ -402,21 +402,21 @@ class KhatiraTextTwentySeven {
 سورة الأعراف
 خُذِ ٱلْعَفْوَ
 """;
-  static const String elmTextTwentySevenPageSixteen_1 = """
+  static const String khatiraTextTwentySevenPageSixteen_1 = """
 ليكن منهجك مبسطاً، لا تعقيد فيه، لا إشكال، لا تناقض، لا مبالغة، لا تشدد، لا تساهل 
 """;
 // 2
   static const String ayahHadithTwentySevenPageSixteen_2 = """
 وَأْمُرْ بِٱلْعُرْفِ
 """;
-  static const String elmTextTwentySevenPageSixteen_2 = """
+  static const String khatiraTextTwentySevenPageSixteen_2 = """
 وائمر بهذا المنهج الذي يتطابق مع الفطرة، وائمر بتطبيق منهج الله، لأن النفوس تعرفه من دون تعليل، هذه فطرة 
 """;
 // 3
   static const String ayahHadithTwentySevenPageSixteen_3 = """
 وَأَعْرِضْ عَنِ ٱلْجَٰهِلِينَ
 """;
-  static const String elmTextTwentySevenPageSixteen_3 = """
+  static const String khatiraTextTwentySevenPageSixteen_3 = """
 الجاهل هنا لا يعني غير المتعلم، يعني الذي يملك فكرة أو تفسيراً لخلاف الواقع، الجاهل هو الذي يملك الآف المعلومات لكن كلها غلط، كلها بخلاف منهج الله عز وجل 
 """;
   static const String subtitleTwentySevenPageSixteen_2 = """
@@ -427,17 +427,17 @@ class KhatiraTextTwentySeven {
   static const String ayahHadithTwentySevenPageSixteen_4 = """
 ٱدْعُ إِلَىٰ سَبِيلِ رَبِّكَ بِٱلْحِكْمَةِ وَٱلْمَوْعِظَةِ ٱلْحَسَنَةِ ۖ وَجَٰدِلْهُم بِٱلَّتِى هِىَ أَحْسَنُ
 """;
-  static const String elmTextTwentySevenPageSixteen_4 = """
+  static const String khatiraTextTwentySevenPageSixteen_4 = """
 أي بالقول الحكيم، المسدد، الصحيح، القطعي، هذا معنى 
 ومعنى بالحكمة؛ يعني إختر الوقت المناسب، إنتق الوقت المناسب، اختر العبارة اللطيفة، اختر المكان المناسب، لا تكن قاسياً، لا تقل له كذاب، قل له أعتقد هذا الكلام غير صحيح، لا تعطه كل أخطائه، لا تقل له أنت غارق في المعاصي، أنت ليس فيك أمل، إلى جهنم، دفعة واحدة، لا، هذا ليس كلاماً حكيماً، أنت هدفك أن تحطمه؟ أم هدفك أن تهديه إلى الله عز وجل؟ خذ بيده، تلطف به
 """;
 
-// PageSeventeen
+// page 16
 // 1
   static const String subtitleTwentySevenPageSeventeen_1 = """
 حقيقة الدعوة بالموعظة الحسنة
 """;
-  static const String elmTextTwentySevenPageSeventeen_1 = """
+  static const String khatiraTextTwentySevenPageSeventeen_1 = """
 أحياناً يتعلم الواحد شيئاً من الدين، فيأتي إلى أهله؛ هذا عملك كفر يا أبي! هذا الجهاز حرام! وأنتم فسقة؛ ما هذا الكلام؟ أهكذا علموك؟ أن تهاجم أهلك؟ هذا ابوك له حق عليك، لا يأتي بالموعظة معك، بل يأتي بالإحسان! هذا لا يأتي بالعنف، أنت ابنه كنت صغيراً أمامه أتعلمه أنت؟ صل أمامه كن خاشعاً، تلطف معه، اخدمه، بره حتى يلين قلبه لك فيقول: والله انت أحسن مني يا بني، أما ان تقول له أنت لست ملتزماً، أنت مرتكب للمعاصي، لا يرجى منك خير فهذا خطأ شنيع
 """;
 // 2
@@ -445,7 +445,7 @@ class KhatiraTextTwentySeven {
 
 المجادلة بالتي هي أحسن 
 """;
-  static const String elmTextTwentySevenPageSeventeen_2 = """
+  static const String khatiraTextTwentySevenPageSeventeen_2 = """
 من غير مشاحنات، أنت تكلم برأيك فقط، اعرض الحق عرضاً جيداً، وانتهى الأمر، لا تكره الناس، ولا تقعد تناقشهم، لأن النقاش غير مجدٍ، إذا أردت أن تقنع الناس بشيء فاسلك اي طريق إلا المناقشة، فيها مشاحنة، وجرح كرامة، وهذا لا يصح 
 
 ️من لوازم إيمانك بالله انك تغار على الخلق وتحبهم وتهديهم إلى سواء السبيل 
@@ -457,9 +457,9 @@ class KhatiraTextTwentySeven {
 ️مجتمع الإيمان مجتمع التواصي والنُصح 
 """;
 
-// PageEighteen
+// page 17
 // 1
-  static const String elmTextTwentySevenPageEighteen_1 = """
+  static const String khatiraTextTwentySevenPageEighteen_1 = """
 الله عز وجل ذكر المنافقين والمنافقات في سورة التوبة آية رقم 67 ، وحدثنا عن أحوالهم ، وذكر الكفار 
 ثم يقول 
 """;
@@ -467,7 +467,7 @@ class KhatiraTextTwentySeven {
 وَٱلْمُؤْمِنُونَ وَٱلْمُؤْمِنَٰتُ بَعْضُهُمْ أَوْلِيَآءُ بَعْضٍۢ
 """;
 // 2
-  static const String elmTextTwentySevenPageEighteen_2 = """
+  static const String khatiraTextTwentySevenPageEighteen_2 = """
 لو رجعنا قليلاً إلى الآية السابعة والستين 
 """;
 
@@ -475,32 +475,32 @@ class KhatiraTextTwentySeven {
 ٱلْمُنَٰفِقُونَ وَٱلْمُنَٰفِقَٰتُ بَعْضُهُم مِّنۢ بَعْضٍۢ
 """;
 // 3
-  static const String elmTextTwentySevenPageEighteen_3 = """
+  static const String khatiraTextTwentySevenPageEighteen_3 = """
 ماالفرق بين 
 """;
   static const String ayahHadithTwentySevenPageEighteen_3 = """
 بَعْضُهُم مِّنۢ بَعْضٍۢ
 """;
 // 4
-  static const String elmTextTwentySevenPageEighteen_4 = """
+  static const String khatiraTextTwentySevenPageEighteen_4 = """
 و
 """;
   static const String ayahHadithTwentySevenPageEighteen_4 = """
 بَعْضُهُمْ أَوْلِيَآءُ بَعْضٍۢ
 """;
 // 5
-  static const String elmTextTwentySevenPageEighteen_5 = """
+  static const String khatiraTextTwentySevenPageEighteen_5 = """
 هم متشابهون، لكن المؤمنين
 """;
   static const String ayahHadithTwentySevenPageEighteen_5 = """
 بَعْضُهُمْ أَوْلِيَآءُ بَعْضٍۢ
 """;
 // 6
-  static const String elmTextTwentySevenPageEighteen_6 = """
+  static const String khatiraTextTwentySevenPageEighteen_6 = """
 المؤمن ينصح أخاه، إن رأى فيه خللاً يرشده إلى هذا الخلل، إن رأى ضعفاً في عبادته ينصحه بعبادته، فهناك تناصح مستمر، هذا التناصح يرقى بالمجتمع الإيماني
 """;
 
-// PageNineteen
+// page 18
 // 1
   static const String subtitleTwentySevenPageNineteen_1 = """
 ️للمؤمن مهمتان؛ مهمة التبليغ والتزكية 
@@ -510,21 +510,21 @@ class KhatiraTextTwentySeven {
 
 وَدَاعِيًا إِلَى ٱللَّهِ
 """;
-  static const String elmTextTwentySevenPageNineteen_1 = """
+  static const String khatiraTextTwentySevenPageNineteen_1 = """
 إلى معرفة الله، وإلى طاعته، وإلى التقرب إليه 
 """;
 // 2
   static const String ayahHadithTwentySevenPageNineteen_2 = """
 وَسِرَاجًۭا مُّنِيرًۭا
 """;
-  static const String elmTextTwentySevenPageNineteen_2 = """
+  static const String khatiraTextTwentySevenPageNineteen_2 = """
 أي بدعوته تتعرف إلى الله، وبصحبته يمتلئ قلبك من نور الله 
 """;
 // 3
   static const String ayahHadithTwentySevenPageNineteen_3 = """
 إِنَّ إِبْرَٰهِيمَ كَانَ أُمَّةًۭ
 """;
-  static const String elmTextTwentySevenPageNineteen_3 = """
+  static const String khatiraTextTwentySevenPageNineteen_3 = """
 أنت كم إنساناً دللتهم على الله؟ وكم إنساناً أخذت بيدهم إلى الله؟ وأقنعتهم بأحقية القرآن؟ وكم إنساناً أقنعته بالإستقامة على أمر الله؟ كم إنسان استطعت أن تجعله يسلك سبيل المؤمنين؟ هذا حجمك عند الله
 
 ️أسعد إنسان هو الذي إذا دعا إلى الله استجاب الناس له، وأمنوا بدعوته، فكان سبباً لهدايتهم، وهذا من إكرام الله له، فأعظم عمل هو من صنعة الأنبياء أن تكون سبباً في هداية الخلق، أن تكون سبباً في دلالة الخلق إلى الحق جل جلاله 
@@ -532,17 +532,17 @@ class KhatiraTextTwentySeven {
   static const String subtitleTwentySevenPageNineteen_2 = """
 ️المسلم الخاطئ المنحرف يقنع الكافر بكفره 
 """;
-  static const String elmTextTwentySevenPageNineteen_4 = """
+  static const String khatiraTextTwentySevenPageNineteen_4 = """
 حينما يرى الطرفُ الآخر مسلماً غير ملتزم، حينما يرى مسلماً لا يصدُق، حينما يرى مسلماً لا يفي بوعده، حينما يرى مسلماً لا يحقق عهده، حينما يرى مسلماً يحتال عليه، هذا المسلم المقصر الخاطئ المنحرف يقنع الطرف الآخر أنه على حق 
 """;
   static const subtitleTwentySevenPageNineteen_3 = """
 ️الناس يتعلمون بعيونهم لا بآذانهم
 """;
-  static const elmTextTwentySevenPageNineteen_5 = """
+  static const khatiraTextTwentySevenPageNineteen_5 = """
 والله الذي لا إله إلا هو موقف أخلاقي واحد أنفع من ألف محاضرة، موقف فيه عفة، موقف فيه صدق، موقف فيه أمانة، فهو أكبر مؤثر في جلب الناس إلى هذا الدين، ولكن مهما كنت فصيحاً ومتكلماً، ولم يكن عملك كما ينبغي نفر الناس منك 
 """;
 
-// PageTwenty
+// page 19
 // 1
   static const String subtitleTwentySevenPageTwenty_1 = """
 ️ما من شيئ يقنع الكافر بكفره كمسلم يقصر في تطبيق دينه 
@@ -556,7 +556,7 @@ class KhatiraTextTwentySeven {
   static const String ayahHadithTwentySevenPageTwenty_1 = """
 وَجَعَلْنَا مِنْهُمْ أَئِمَّةًۭ يَهْدُونَ بِأَمْرِنَا لَمَّا صَبَرُوا۟
 """;
-  static const String elmTextTwentySevenPageTwenty_1 = """
+  static const String khatiraTextTwentySevenPageTwenty_1 = """
 أن تهدي الناس هذا الهُدى ليس على مزاجك، وليس وفق رغبتك، ولا حسب رأيك، يجب أن تهدي الناس بأمر الله عز وجل وفق الأمر والنهي 
 أئمة جمع إمام، والإمام يجب أن يكون أمام أتباعه، يجب أن يكون في الأمام، أي أمامهم في تطبيق الأمر، وأمامهم في ترك النهي، وأمامهم في التقيُد بالحدود، وأمامهم في فعل الخيرات، وأمامهم في الأمر بالمعروف 
                لما صبروا 
@@ -568,7 +568,7 @@ class KhatiraTextTwentySeven {
   static const String subtitleTwentySevenPageTwentyOne_1 = """
 ️الحكمة من إقتران الصبر بالأمر بالمعروف والنهي عن المنكر 
 """;
-  static const String elmTextTwentySevenPageTwentyOne_1 = """
+  static const String khatiraTextTwentySevenPageTwentyOne_1 = """
 مادام الإنسان مخيراً، ومادام بين الحق والباطل معركة أبدية أزلية، قديمة قِدَم الإنسان، مستمرة إلى نهاية الدوران، فلا بد لمن يأمر بالمعروف وينهى عن المنكر من أن يُعارض، ومن أن توضع العقبات أمامه، لابد من أن يحارب، لا بد من أن يُتهم، لا بد من أن يُكاد له، لذلك 
 يابني أقم الصلاة وأمر بالمعروف وأنه عن المنكر واصبر على ما اصابك 
 لأنك إذا واجهت الصعاب، واجهت المشاق، كبُرت عند الله عز وجل، الشيئ الذي يأتيك بسهولة لا قيمة له، الله عز وجل لابد من أن يمتحنك، لا بد من أن يمتحن صدقك في طلب الحق، لابد من أن يمتحن مقدار ما تتحمل في سبيل الله 
@@ -578,7 +578,7 @@ class KhatiraTextTwentySeven {
 
 ️كيف يمكن أن نربط بين الآيات الثلاث؟ 
 """;
-  static const String elmTextTwentySevenPageTwentyOne_2 = """
+  static const String khatiraTextTwentySevenPageTwentyOne_2 = """
 ليس عليك هداهم ولكن الله يهدي من يشاء 
 إنك لا تهدي من أحببت ولكن الله يهدي من يشاء 
 وإنك لتهدي إلى صراط مستقيم 

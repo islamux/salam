@@ -35,7 +35,13 @@ List<KhatiraModelNewOrder> khatiraList29NewOrder = [
     ],
   ),
   // 3
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageThree_1, KhatiraTextDersTwentyNine.textTwentyNinePageThree_2], order: [EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageThree_1,
+    KhatiraTextDersTwentyNine.textTwentyNinePageThree_2
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
   // 4
   KhatiraModelNewOrder(
     texts: [
@@ -105,15 +111,39 @@ List<KhatiraModelNewOrder> khatiraList29NewOrder = [
     ],
   ),
   // 8
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageEight_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageEight_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 9
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageNine_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageNine_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 10
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageTen_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageTen_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 11
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageEleven_1, KhatiraTextDersTwentyNine.textTwentyNinePageEleven_2], order: [EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageEleven_1,
+    KhatiraTextDersTwentyNine.textTwentyNinePageEleven_2
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
   // 12
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageTwelve_1, KhatiraTextDersTwentyNine.textTwentyNinePageTwelve_2], order: [EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageTwelve_1,
+    KhatiraTextDersTwentyNine.textTwentyNinePageTwelve_2
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
   // 13
   KhatiraModelNewOrder(
     texts: [
@@ -164,7 +194,17 @@ List<KhatiraModelNewOrder> khatiraList29NewOrder = [
     ],
   ),
   // 16
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageSixteen_1, KhatiraTextDersTwentyNine.textTwentyNinePageSixteen_2], order: [EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageSixteen_1,
+    KhatiraTextDersTwentyNine.textTwentyNinePageSixteen_2
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
   // 17
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyNine.textTwentyNinePageSeventeen_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyNine.textTwentyNinePageSeventeen_1
+  ], order: [
+    EnOrder.texts,
+  ]),
 ];

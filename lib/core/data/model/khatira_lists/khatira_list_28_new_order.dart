@@ -5,7 +5,11 @@ import 'package:khatir/core/data/static/text/khatira_text_ders_twenty_eight.dart
 
 List<KhatiraModelNewOrder> khatiraList28NewOrder = [
   // 1
-  KhatiraModelNewOrder(titles: [KhatiraTextDersTwentyEight.titleTwentyEightShared], order: [EnOrder.titles, ]),
+  KhatiraModelNewOrder(titles: [
+    KhatiraTextDersTwentyEight.titleTwentyEightShared
+  ], order: [
+    EnOrder.titles,
+  ]),
   // 1
   KhatiraModelNewOrder(
     titles: [
@@ -92,7 +96,11 @@ List<KhatiraModelNewOrder> khatiraList28NewOrder = [
     ],
   ),
   // 6
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwentyEight.textTwentyEightPageSix_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwentyEight.textTwentyEightPageSix_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 7
   KhatiraModelNewOrder(
     texts: [

@@ -1,9 +1,9 @@
 class KhatiraTextNineteen {
-  //---- page 1
+  // page 1
   static const String titleNineteenOne = """
 معنى الولي
 """;
-  static const String elmTextNineteenOne_1 = """
+  static const String khatiraTextNineteenOne_1 = """
 ما معنى الولي لله ؟ أي أنه استسلم لله فتولى الله هدايته ، وتولى الله إرشاده ، وتولى الله إسعاده ، وتولى الله حفظه ، وتولى الله الأخذ بيده من خير إلى خير ، ولا ينتهي به المطاف إلا في الجنة ، واستسلم لله هذه هي حقيقة الإسلام ، أن تستسلم لله ، أن تفوض له ، أن تتوكل عليه ، إذا استسلمت له تولى الله شأنك  
 """;
   static const String ayahHadithNineteenOne_1 = """
@@ -16,7 +16,7 @@ class KhatiraTextNineteen {
 إحذر ولاية الشيطان  
 """;
 
-  static const String elmTextNineteenTwo_1 = """
+  static const String khatiraTextNineteenTwo_1 = """
 لا يزال الشيطان يتولى أولياءه ، ويغريهم بالمعاصي ، ويورطهم بالجرائم إلى أن يصعدوا سُلم المشنقة ، هذا من عمل الشيطان ، ولا يزال الله سبحانه وتعالى يتولى أولياءه بالحفظ ، والهداية وتنوير القلب ، والإرشاد ، والإسعاد حتى يأخذ بيدهم إلى الجنة ، فليس هناك حال ثالثة ، إما ان يكون الإنسان ولياً لله عز وجل وإما أن يكون ولياً للشيطان ، إذا استسلمت لله عز وجل تول الله إرشادك ، وحفظك ، وهدايتك وإسعادك  
 """;
   static const String ayahHadithNineteenTwo_1 = """
@@ -28,7 +28,7 @@ class KhatiraTextNineteen {
 تعريف الولي في الكتاب والسُنة  
 """;
 
-  static const String elmTextNineteenTwo_2 = """
+  static const String khatiraTextNineteenTwo_2 = """
 النبي عليه الصلاة والسلام يُعرف ولي الله فيقول 
  """;
 
@@ -38,7 +38,7 @@ class KhatiraTextNineteen {
 
 """;
 // page 3
-  static const String elmTextNineteenThree_1 = """
+  static const String khatiraTextNineteenThree_1 = """
 تقع عينك عليه فتذكر الله سبحانه وتعالى هذه علامة ..علامة أخرى
 كما قال عليه الصلاة والسلام  
 """;
@@ -47,12 +47,12 @@ class KhatiraTextNineteen {
  إن من عباد الله لأناساً ما هم بأنبياء ولا شُهداء ، يغبطهم الأنبياء والشهداء يوم القيامة بمكانتهم من الله تعالى 
   ( ابو داؤد عن عمر ) 
 """;
-  static const String elmTextNineteenThree_2 = """
+  static const String khatiraTextNineteenThree_2 = """
 هذا تعريف آخر 
 """;
 
 // page 4
-  static const String elmTextNineteenFour_1 = """
+  static const String khatiraTextNineteenFour_1 = """
 تعريف ثالث
   """;
   static const String ayahHadithNineteenFour_1 = """
@@ -61,7 +61,7 @@ class KhatiraTextNineteen {
 
 """;
 
-  static const String elmTextNineteenFour_2 = """
+  static const String khatiraTextNineteenFour_2 = """
 مقياس دقيق جداً ، إذا خاف الناس جميعاً لا يخافون  
 """;
   static const String ayahHadithNineteenFour_2 = """
@@ -72,7 +72,7 @@ class KhatiraTextNineteen {
 سورة المعارج
 """;
 
-  static const String elmTextNineteenFour_3 = """
+  static const String khatiraTextNineteenFour_3 = """
 المصلي لا يخاف ، ولا يحزن ، وقارئ القرآن لا يحزن ، لِمَ الحزن ؟ الله سبحانه وتعالى خالق السماوات والأرض ، الغني القوي ، العزيز ، الرحيم ، السميع ، المجيب ، وهو معك  
 """;
 
@@ -82,14 +82,14 @@ class KhatiraTextNineteen {
 ( إِنَّ ٱللَّهَ یُدَٰفِعُ عَنِ ٱلَّذِینَ ءَامَنُوا۟ ۗ )
 إِنَّ ٱلَّذِینَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ سَیَجۡعَلُ لَهُمُ ٱلرَّحۡمَـٰنُ وُدࣰّا
 """;
-  static const String elmTextNineteenFive_1 = """
+  static const String khatiraTextNineteenFive_1 = """
 لذلك قال عليه الصلاة والسلام  
 """;
   static const String ayahHadithNineteenFive_2 = """
       ( لا يحزن قارى القران ) 
 
 """;
-  static const String elmTextNineteenFive_2 = """
+  static const String khatiraTextNineteenFive_2 = """
 من علامات أولياء الله أنهم لا يخافون إذا خاف الناس ، ولا يحزنون إذا حزن الناس ، إذاً : ولي الله هو الرجل الذي استسلم لله عز وجل ، حينما استسلم لله عز وجل تول الله هدايته ، وإسعاده ، وحفظه ، ومايزال الله سبحانه وتعالى يأخذ بيد وليه حتى يدخله الجنة
 """;
   static const String ayahHadithNineteenFive_3 = """
@@ -97,7 +97,7 @@ class KhatiraTextNineteen {
 """;
 
 // page 6
-  static const String elmTextNineteenSix_1 = """
+  static const String khatiraTextNineteenSix_1 = """
 في الدنيا لا يخافون 
 من علامات المؤمن الصادق أن يقول لك : والله الذي لا اله الا هو إنني أسعد الناس ، على دخله المحدود ، وعلى بيته الصغير ، وعلى متاعبه الكثيرة ، لأنه سعد بالله عز وجل
 
@@ -110,48 +110,48 @@ class KhatiraTextNineteen {
 (( ماظنك يا أبا بكر بأثنين الله ثالثهما ؟ ))
 """;
 
-//page 7
-  static const String elmTextNineteenSeven_1 = """
+// page 7
+  static const String khatiraTextNineteenSeven_1 = """
 هذا هو الإيمان 
 """;
   static const String ayahHadithNineteenSeven_1 = """
 ( لَا خَوۡفٌ عَلَیۡهِمۡ وَلَا هُمۡ یَحۡزَنُونَ )
 """;
-  static const String elmTextNineteenSeven_2 = """
+  static const String khatiraTextNineteenSeven_2 = """
 من علامات الايمان الصادق أنك لا تخاف في الدنيا ، ولو لاح شبح الموت ، كأن تكون قد شعرت بألم في الصدر ، أو جاءت جلطة ، وكنت مؤمناً فمرحباً بلقاء الله ، لأن العبد المؤمن إذا مات استراح من عناء الدنيا 
 """;
   static const String ayahHadithNineteenSeven_2 = """
 ( أَلَاۤ إِنَّ أَوۡلِیَآءَ ٱللَّهِ لَا خَوۡفٌ عَلَیۡهِمۡ وَلَا هُمۡ یَحۡزَنُونَ )
 """;
-  static const String elmTextNineteenSeven_3 = """
+  static const String khatiraTextNineteenSeven_3 = """
 يجب أن تكون أنت من أولياء الله ، إذا اطعت الله طاعة تامة فأنت من أولياء الله الذين لا خوف عليهم ولا هم يحزنون 
  """;
   static const String ayahHadithNineteenSeven_3 = """
 ( ٱلَّذِینَ ءَامَنُوا۟ وَكَانُوا۟ یَتَّقُونَ )
 """;
-  static const String elmTextNineteenSeven_4 = """
+  static const String khatiraTextNineteenSeven_4 = """
 الولي آمن بالله وهو مستمر على تقواه إلى الممات  
 
 آمنو فعل ماض ، عرف الله عز وجل فآمن به ، لكن يتقون فعل مضارع ، والمضارع يفيد الاستمرار ، أي طوال حياته يتقي الله ، يتقي أن يعصيه ، هذه مرتبة ، يتقي أن ينقطع عنه هذه مرتبة أعلى ، يتقي أن يكون في قلبه سواه ، مرتبة ثالثة ، وعندنا صيام عامة الناس عن الطعام والشراب ، وصيام المؤمنين هو صيام الجوارح عن المعاصي ، وصيام الأتقياء وهو صيام القلب عما سوى الله ، فالولي يتقي أن يعصي الله ، ويتقي أن ينقطع عن الله ، ويتقي أن يكون في قلبه غير الله  
 """;
-// ------- page 8
+// page 8
   static const String ayahHadithNineteenEight_1 = """
 ( ٱلَّذِینَ ءَامَنُوا۟ وَكَانُوا۟ یَتَّقُونَ )
 """;
-  static const String elmTextNineteenEight_1 = """
+  static const String khatiraTextNineteenEight_1 = """
 بجهود مستمرة ، يبذلون جهوداً كبيرة لا تنقضي .. 
 """;
   static const String ayahHadithNineteenEight_2 = """
 ( تَتَجَافَىٰ جُنُوبُهُمۡ عَنِ ٱلۡمَضَاجِعِ )
 """;
-  static const String elmTextNineteenEight_2 = """
+  static const String khatiraTextNineteenEight_2 = """
 تنجافى أي لا يرتاح في نومه بحياته ، يخاف أن يفوته الصبح ، لا يرتاح العصر بنومه لأنه يخاف أن تفوته صلاة العصر ، إذا جلس وسهر ، وتكلموا في شؤن شتى ، وخاضو في الدنيا يشعر أن السهرة بلا طعم ، هذا كله كلام فارغ إذا لم يكن هناك ذكر لله عز وجل ، أي أنه إن ضيع ساعة من حياته لم يذكر الله فيها ، فحياته خسارة 
 
 فرق كبير جداً بين من كان الله وليه وبين من لا ولي له 
 """;
 
 // page 9
-  static const String elmTextNineteenNine_1 = """
+  static const String khatiraTextNineteenNine_1 = """
 ذلك بأن الله مولى الذين امنوا وان الكافرين لا مولى لهم 
 للتقريب، أب نموذجي بأعلى درجة من العلم والحكمة والقدرة والغنى والرحمة والعطف، وله ابن يرعى شؤونه كلها، يرعى صحته، يرعى دراسته، يرعى تربيته، يرعى أخلاقه، يرعى دينه، يخطط لمستقبله، يدفعه إلى أعلى مراتب التفوق، نقول: هذا الأب ولي لهذا الإبن، 
 لو تصورنا إبناً مات أبوه، وتزوجت أمه وأهمله المجتمع، فمن انحراف إلى آخر، ومن مخفر إلى مخفر، ومن سجن إلى سجن، يتعاطى المخدرات، ينغمس في بحر الرذيلة، نقول: فرق كبير جداً بين طفل له ولي كبير، أب حكيم، أب عالم، أب مقتدر، وبين طفل مات أبوه، وتزوجت أمه وشرد على أنظمة المجتمع، واستحق الضياع والسجن، هل هناك مايقارب هؤلاء مع هؤلاء؟ 
@@ -162,7 +162,7 @@ class KhatiraTextNineteen {
 
 """;
 // page 10
-  static const String elmTextNineteenTen_1 = """
+  static const String khatiraTextNineteenTen_1 = """
 الله تعالى حينما الزمك أن تجعل الله وليك أراد لك الولي المطلق الذي لا يعجزه شيئ: 
 لذلك بعيد جداً، ويكاد أن يكون مستحيلاً أن يقع المؤمن في ورطة كبيرة، لأن منهج الله يحرسه، لأن أمر الله ونهيه يحميه، لأن علمه أن الله موجود، وأنه يحاسب، وأنه يعاقب، وأن الله معه، ولا يتخلى عنه، هناك حقائق كثيرة جداً تحمي الإنسان من أن ينحرف، هؤلاء الذين يدمرون، هرلاء الذين يسحقون، هؤلاء الذين يفضحون، هؤلاء لم يتخذو الله ولياً لهم، ليس لهم مرجع إلا شهواتهم ومصالحهم ونزواتهم، لذلك يقعون في ورطة ما بعدها ورطة، الله عز وجل يقول 
 """;
@@ -170,7 +170,7 @@ class KhatiraTextNineteen {
 إِنَّمَا وَلِیُّكُمُ ٱللَّهُ
 """;
 
-  static const String elmTextNineteenTen_2 = """
+  static const String khatiraTextNineteenTen_2 = """
 لماذا لم يرد الله لنا أن نتخذ ولياً غيره؟ لأنه إذا كان وليك الإنسان فالإنسان بالأساس محدود، علمه محدود، قدراته محدودة، عواطفه محدوده، الإنسان محدود وضعيف، فقد يرشدك إلى شيئ فيه هلاك لك، لأن علمه محدود، قد يدلك على شيئ فيه إخفاق لك، لأن علمه محدود، وقد يكذب عليك، ويبين لك أنه وليك وهو في الحقيقة ليس وليك، ففيه إحتمال المحدودية، واحتمال الكذب، لماذا لم يرد الله أن يكون الإنسان وليك ولو كان كبيراً أو عظيماً؟ لأن الإنسان محدود 
 لم يرد الله لك أن يكون المرجع محدوداً ولا أن يكون منافقاً، لكن الله سبحانه وتعالى حينما الزمك أن تجعل الله وليك أراد لك الولي المطلق الذي لا يعجزه شيئ لا في الأرض ولا في السماء، أراد لك أن يكون الولي غنياً وقوياً ومهيمناً ومتصرفاً، أراد لك أن تقوى بقوته، وأن تغتني بغناه، وأن تكون حكيماً بحكمته، وأن تسعد بالقرب منه 
 """;
@@ -178,7 +178,7 @@ class KhatiraTextNineteen {
 إِنَّمَا وَلِیُّكُمُ ٱللَّهُ وَرَسُولُهُۥ
 """;
 
-  static const String elmTextNineteenTen_3 = """
+  static const String khatiraTextNineteenTen_3 = """
 الله سبحانه وتعالى أنزل الكتاب، والنبي عليه الصلاة والسلام بينه وفصله، فالسنه منهج تفصيلي، والقرآن منهج كلي، لذلك النبي عليه الصلاة والسلام باقواله وأفعاله وإقراره كان تفسيراً وتوضيحاً وبياناً لما في كتاب الله عزوجل فالنبي إذا أمرك بأمر ينبغي أن تأتمر 
 وما اتاكم الرسول فخذوه ومانهاكم عنه فانتهوا 
 إنما وليكم الله ورسوله والذين آمنوا 
@@ -187,7 +187,7 @@ class KhatiraTextNineteen {
   static const String ayahHadithNineteenEleven_1 = """
 وَٱلَّذِینَ ءَامَنُوا۟
 """;
-  static const String elmTextNineteenEleven_1 = """
+  static const String khatiraTextNineteenEleven_1 = """
 المؤمن نصوح، المؤمن ينصحك ولا يسكت على انحراف، المؤمن يرشدك، المؤمن يأمر بالمعروف وينهى عن المنكر، المؤمن يقدم لك العون، المؤمن يغار على مصيرك، الأصل أن الله ولينا، فرع من هذا الأصل أن النبي عليه الصلاة والسلام ولينا، فرع آخر من الفرع المؤمنون أولياؤنا، لذلك المؤمن يرجع إلى القرآن لأن الله وليه، يرجع إلى السنة لأن النبي عليه الصلاة والسلام وليه، يستشير المؤمنين لأن المؤمنين أولياؤه 
 
 مستحيل أن تكون من حزب الله وأن تُغلب 
@@ -196,7 +196,7 @@ class KhatiraTextNineteen {
 وَمَن یَتَوَلَّ ٱللَّهَ وَرَسُولَهُۥ وَٱلَّذِینَ ءَامَنُوا۟ فَإِنَّ حِزۡبَ ٱللَّهِ هُمُ ٱلۡغَـٰلِبُونَ ۝٥٦
 سورة المائدة
 """;
-  static const String elmTextNineteenEleven_2 = """
+  static const String khatiraTextNineteenEleven_2 = """
 مستحيل وألف ألف ألف مستحيل أن تكون من حزب الله وأن تُغلب، مستحيل أن تكون جندياً لله، وأن تُغلب 
 طبعاً 
 """;
@@ -205,7 +205,7 @@ class KhatiraTextNineteen {
 فَإِنَّ حِزۡبَ ٱللَّهِ هُمُ ٱلۡغَـٰلِبُونَ
 إِنَّا لَنَنصُرُ رُسُلَنَا وَٱلَّذِینَ ءَامَنُوا۟ فِی ٱلۡحَیَوٰةِ ٱلدُّنۡیَا
 """;
-  static const String elmTextNineteenTwelve_1 = """
+  static const String khatiraTextNineteenTwelve_1 = """
 هكذا حكم الله عزوجل: 
 """;
   static const String ayahHadithNineteenTwelve_2 = """
@@ -215,7 +215,7 @@ class KhatiraTextNineteen {
 
 وَلَن یَجۡعَلَ ٱللَّهُ لِلۡكَـٰفِرِینَ عَلَى ٱلۡمُؤۡمِنِینَ سَبِیلًا
 """;
-  static const String elmTextNineteenTwelve_2 = """
+  static const String khatiraTextNineteenTwelve_2 = """
 كُل هذا وعد الله عز وجل، وزوال الكون بأكمله أهون على الله من ألا يحقق وعوده للمؤمنين، فإن لم تحقق هذه الوعود فالخلل عندنا 
 """;
   static const String ayahHadithNineteenTwelve_3 = """
@@ -223,7 +223,7 @@ class KhatiraTextNineteen {
 """;
 // page 13
 // 1
-  static const String elmTextNineteenThirteen_1 = """
+  static const String khatiraTextNineteenThirteen_1 = """
 الله ولي المؤمنين
 """;
   static const String ayahHadithNineteenThreaten_1 = """
@@ -231,7 +231,7 @@ class KhatiraTextNineteen {
 """;
 
 // 2
-  static const String elmTextNineteenThirteen_2 = """
+  static const String khatiraTextNineteenThirteen_2 = """
 والله هذه كلمة رائعة، فالمؤمن يشعر أن الله وليه يدافع عنه، الله سبحانه وتعالى ينقله من منزلة الى منزلة، ويؤدبه، ويكرمه، ويفرحه، ويبكيه أحياناً، ويحرمه، ويعطيه، ويسوقه إلى عباده الصالحين، يجمعه مع أهل الحق، ويبعده عن مزالق السوء.. 
   """;
   static const String ayahHadithNineteenThirteen_2 = """
@@ -239,7 +239,7 @@ class KhatiraTextNineteen {
 """;
 
 // 3
-  static const String elmTextNineteenThirteen_3 = """
+  static const String khatiraTextNineteenThirteen_3 = """
 ربنا عز وجل ينقلك من وضع إلى وضع أحسن، ومن تفلت إلى تمسك، ومن شقاء إلى سعادة، ومن ضياع إلى وجدان، ومن نقمة إلى رضى، ويؤويك في بيت فيأتيك الدخل الحلال، ويجمعك مع أهل الحق، ويجمعك مع الصالحين، ويدخل على قلبك السرور 
 """;
   static const String ayahHadithNineteenThirteen_3 = """
@@ -250,14 +250,14 @@ class KhatiraTextNineteen {
 
 """;
 // 4
-  static const String elmTextNineteenThirteen_4 = """
+  static const String khatiraTextNineteenThirteen_4 = """
 الإنسان إذا كان في طاعة الله صار الله وليه، والحقيقة أن القضية سهلة جداً، لمجرد أن تستقيم على أمره تستحق أن يكون الله وليك، خرج الإنسان عن أمر الله عز وجل فكأنه جعل الشيطان وليه، هو عدو مضل مبين، فكل إنسان يعصي الله خرج من ولاية الله، وصار تحت ولاية الشيطان، هو وليُهم يخرجهم من النور إلى الظلمات، فالإنسان المؤمن إذا قرأ هذه الآية شعر أن الله وليه يدافع عنه، يأخذ بيده كلما عثر، كلما زلت قدمه يسوق له من الشدائد مايحمله على التوبة، يتوب عليه ليتوب، هذا معنى وليه فأنت لست سائباً، فالله عز وجل قال 
 """;
   static const String ayahHadithNineteenThirteen_4 = """
 أَفَحَسِبۡتُمۡ أَنَّمَا خَلَقۡنَـٰكُمۡ عَبَثࣰا وَأَنَّكُمۡ إِلَیۡنَا لَا تُرۡجَعُونَ ۝١١٥
 سورة المؤمنون
 """;
-  static const String elmTextNineteenThirteen_5 = """
+  static const String khatiraTextNineteenThirteen_5 = """
 بل أنت ضمن التربية 
 """;
 
@@ -266,14 +266,14 @@ class KhatiraTextNineteen {
   static const String ayahHadithNineteenFourteen_1 = """
 نَحۡنُ أَوۡلِیَآؤُكُمۡ فِی ٱلۡحَیَوٰةِ ٱلدُّنۡیَا وَفِی ٱلۡـَٔاخِرَةِ
 """;
-  static const String elmTextNineteenFourteen_1 = """
+  static const String khatiraTextNineteenFourteen_1 = """
 الله حريص على آخرتنا، وعلى دخولنا الجنة، ولذلك كل ماتراه أعيننا من مصائب في الدنيا، ومن نكبات، وأهوال لتسوق العباد إلى الله عزوجل 
 رجل قال عن بلد تُعاني ماتعاني من خصومها الصرب، قال: نحن لم نكن مسلمين من قبل، وكنا نأكل الخنزير، ونشرب الخمر، ونأتي الفواحش، ونفعل كل المعاصي، والآن صرنا مسلمين بهذا الضغط الشديد
 """;
   static const String ayahHadithNineteenFourteen_2 = """
 نَحۡنُ أَوۡلِیَآؤُكُمۡ فِی ٱلۡحَیَوٰةِ ٱلدُّنۡیَا وَفِی ٱلۡـَٔاخِرَةِ
 """;
-  static const String elmTextNineteenFourteen_2 = """
+  static const String khatiraTextNineteenFourteen_2 = """
 فحتى النكبات الكبيرة أحياناً نفهمها فهماً محدودا، فهذه الدولة فعلت كذا مع جارتها، فهناك فهم أعمق بكثير، قال الله عزوجل 
 وضرب الله مثلاً قرية كانت آمنة مطمئنة يأتيها رزقها رغداً من كل مكان فكفرت بأنعم الله فاذاقها الله لباس الجوع والخوف بما كانوا يصنعون 
 وحتى الأحداث الكبرى لها تفسير توحيدي رائع جداً 
@@ -284,7 +284,7 @@ class KhatiraTextNineteen {
 الدنيا لا معنى لها إلا أن تكون سبباً للآخرة 
 """;
 
-  static const String elmTextNineteenFifteen_1 = """
+  static const String khatiraTextNineteenFifteen_1 = """
 وبما أن الولاية تمتد للآخرة، وكان التأديب في الدنيا، ولو كانت في الدنيا فقط لكان الناس جميعهم في بحبوحة، وفي غنى، وليست هناك مشكلة، ولا مرض، ولا هم، ولا حزن، لكن لأن الله سبحانه وتعالى وليُنا في الدنيا والآخرة، والدنيا مطية للآخرة، ومزرعة لها، بل إن الدنيا لا معنى لها إلا أن تكون سبباً للآخرة، لأن يوم القيامة حينما يدخل أهل الجنة الجنة يقولون 
 وقالوا الحمدلله الذي صدقنا وعده وأورثنا الأرض نتبوأ من الجنة حيث نشاء 
 فلولا أن كنا في الأرض، وعرفنا ربنا فيها، واستقمنا على أمره، وفعلنا الصالحات لما كنا في الجنة الآن. 
@@ -293,13 +293,13 @@ class KhatiraTextNineteen {
   static const String ayahHadithNineteenFifteen_1 = """
 نَحۡنُ أَوۡلِیَآؤُكُمۡ
 """;
-  static const String elmTextNineteenFifteen_2 = """
+  static const String khatiraTextNineteenFifteen_2 = """
 أولياء أموركم.. 
 """;
   static const String ayahHadithNineteenFifteen_2 = """
 فِی ٱلۡحَیَوٰةِ ٱلدُّنۡیَا وَفِی ٱلۡـَٔاخِرَةِ
 """;
-  static const String elmTextNineteenFifteen_3 = """
+  static const String khatiraTextNineteenFifteen_3 = """
 فإذا جاءك من الله مايعجبك فهذا من نعم الله عليك، وإذا جائك من الله مالايعجبك فهذا من تربيته لك لتكون في الجنة؛ أعطاك مالاً للدنيا، أعطاك بيتاً للدنيا، أما إن سلب منك شيئاً وأنت غافل، فهذا الذي سلبه منك من أجل أن تصحو، من أجل أن تلتفت إلى آخرتك، وأن تفعل الخيرات، إذاً عندما تجمع الدنيا مع الآخرة تحل مشكلاتك، أما الدنيا فقط ففيها متاعب لا تعد ولا تحصى
 
 """;
@@ -311,7 +311,7 @@ class KhatiraTextNineteen {
 كن ولياً لله وخذ كل ميزات هذه المرتبة 
 
 """;
-  static const String elmTextNineteenSixteen_1 = """
+  static const String khatiraTextNineteenSixteen_1 = """
 كن ولياً لله وخذ كل ميزات هذه المرتبة، فحينما يعطى أحد الطلاب الشهادات العُليا فهو قد استحق كل امتيازات هذه الرُتبة العلمية، فكلمة ولياً لله، فهذه أعلى مرتبة
   """;
   static const String ayahHadithNineteenSixteen_1 = """
@@ -323,7 +323,7 @@ class KhatiraTextNineteen {
   """;
 
   // 2
-  static const String elmTextNineteenSixteen_2 = """
+  static const String khatiraTextNineteenSixteen_2 = """
   إذا كان الله معك فمن عليك؟ وإذا كان الله عليك فمن معك؟ لا يوجد معك أحد، يجب أن يشعر المؤمن إذا تلا هذه الآية بقشعريرة 
 
 من استقام على امر الله نقله الله من حال إلى حال 
@@ -333,14 +333,14 @@ class KhatiraTextNineteen {
 ذَٰلِكَ بِأَنَّ ٱللَّهَ مَوۡلَى ٱلَّذِینَ ءَامَنُوا۟
 """;
   // 3
-  static const String elmTextNineteenSixteen_3 = """
+  static const String khatiraTextNineteenSixteen_3 = """
 عليك أن تؤمن وأن تستقيم، والله بعدها وليك، فلا تخف، ولا تحزن، ولا تخشى أحداً، ولا تخشى إلا ذنبك 
   """;
   static const String ayahHadithNineteenSixteen_3 = """
 ذَٰلِكَ بِأَنَّ ٱللَّهَ مَوۡلَى ٱلَّذِینَ ءَامَنُوا۟
 """;
   // 4
-  static const String elmTextNineteenSixteen_4 = """
+  static const String khatiraTextNineteenSixteen_4 = """
 ينقلك من حال إلى حال، من منزلة إلى منزلة، من مقام إلى مقام، من توفيق إلى توفيق، من نصر إلى نصر، الله وليك، اجعل هذه الكلمة هدفاً وشعاراً لك: إذا كان الله معك فمن عليك؟ وإذا كان عليك فمن معك؟ يارب ماذا وجد من فقدك؟ وماذا فقد من وجدك؟
  حجم ولي الله لا ينبغي أن يزيد على حجم سيد الأولياء 
   """;
@@ -352,7 +352,7 @@ class KhatiraTextNineteen {
 قُل لَّآ أَمۡلِكُ لِنَفۡسِی نَفۡعࣰا وَلَا ضَرًّا إِلَّا مَا شَآءَ ٱللَّهُ ۚ وَلَوۡ كُنتُ أَعۡلَمُ ٱلۡغَیۡبَ لَٱسۡتَكۡثَرۡتُ مِنَ ٱلۡخَیۡرِ وَمَا مَسَّنِیَ ٱلسُّوٓءُ
 """;
   // 5
-  static const String elmTextNineteenSixteen_5 = """
+  static const String khatiraTextNineteenSixteen_5 = """
 إذاً لا حق لمن يدعي أنه ولي أياً كان أن يدعي أنه يملك النفع والضر، يقولون: الولي الفلاني نظر في فلان فاهتدى، هذه ليست لأحد، ولا لرسول الله، إقرأ قوله تعالى: 
   """;
   static const String ayahHadithNineteenSixteen_5 = """
@@ -370,20 +370,20 @@ class KhatiraTextNineteen {
 قُلۡ إِنِّیٓ أَخَافُ إِنۡ عَصَیۡتُ رَبِّی عَذَابَ یَوۡمٍ عَظِیمࣲ ۝١٥
 سورة الأنعام
 """;
-  static const String elmTextNineteenSeventeen_1 = """
+  static const String khatiraTextNineteenSeventeen_1 = """
 سيد الأولياء يخاف إن عصى الله عذاب يوم عظيم 
   """;
   // 2
   static const String subtitleNineteenSeventeen_2 = """
 الولي لا يعلم الغيب 
   """;
-  static const String elmTextNineteenSeventeen_2 = """
+  static const String khatiraTextNineteenSeventeen_2 = """
 سيد الأولياء لا يعلم الغيب 
   """;
   static const String ayahHadithNineteenSeventeen_2 = """
 قُل لَّآ أَقُولُ لَكُمۡ عِندِی خَزَاۤئِنُ ٱللَّهِ وَلَآ أَعۡلَمُ ٱلۡغَیۡبَ
 """;
-  static const String elmTextNineteenSeventeen_3 = """
+  static const String khatiraTextNineteenSeventeen_3 = """
 سيد الأولياء لا يملك لنفسه نفعاً ولا ظُراً، إذا كان سيد الأولياء لا يملك لنفسه نفعاً ولا ظراً، وإن كان سيد الأولياء لا يعلم الغيب، وإن كان سيد الأولياء يخاف إن عصى الله عذاب يوم عظيم، فهل يستطيع ولي على وجه الأرض أن يدعي خلاف ذلك؟ 
 هذا هو الحجم الحقيقي
 سُئل الإمام الجنيد رضي الله عنه: من ولي الله؟ أهو الذي يطير في الهواء؟ قال: لا، قالوا: أهو الذي يمشي على وجه الماء؟ قال: لا، فقالوا: من هو ولي الله إذاً؟ قال هو الذي تجده عند الحلال والحرام
@@ -397,7 +397,7 @@ class KhatiraTextNineteen {
 مفتاح باب الولاية الإلهية 
 -----------------
 """;
-  static const String elmTextNineteenSeventeen_4 = """
+  static const String khatiraTextNineteenSeventeen_4 = """
 قد يقول قائل كيف الوصول إلى الله؟ 
 كيف الوصول إلى درجة الولاية؟ 
 ماهي الطريقة؟ 

@@ -5,7 +5,7 @@ class KhatiraTextDersEleven {
 -----
 """;
 
-  static const String elmTextElevenOne_1 = """
+  static const String khatiraTextElevenOne_1 = """
 لو تتبعت الأسباب الكبرى التي تدفع الناس إلى المعصية، لوجدت أن من أبرزها خشية الفقر، وخشية نقصان الرزق ، مع أن الرزق بيد الله سبحانه وتعالى ، والله سبحانه وتعالى ربطه بالإستقامة، وقد يحرم العبد بعض الرزق بالمعصيه
 """;
 
@@ -22,7 +22,7 @@ class KhatiraTextDersEleven {
 وَلَوۡ أَنَّهُمۡ أَقَامُوا۟ ٱلتَّوۡرَىٰةَ وَٱلۡإِنجِیلَ وَمَاۤ أُنزِلَ إِلَیۡهِم مِّن رَّبِّهِمۡ لَأَكَلُوا۟ مِن فَوۡقِهِمۡ وَمِن تَحۡتِ أَرۡجُلِهِمۚ ۝٦٦
 سورة المائدة 
 """;
-  static const String elmTextElevenOne_2 = """
+  static const String khatiraTextElevenOne_2 = """
 ويقاس على ذلك لو ان المسلمين أقامو القرآن الكريم لأكلو من فوقهم ومن تحت أرجلهم
 وقد يحرم العبد بعض الرزق بالمعصيه
 """;
@@ -31,7 +31,7 @@ class KhatiraTextDersEleven {
   static const String titleElevenTwo = """
 :الرزق بيد الله سبحانه وتعالى
 """;
-  static const String elmTextElevenTwo_1 = """
+  static const String khatiraTextElevenTwo_1 = """
 من ابتغى أمرآ بمعصية كان أبعد مما رجا وأقرب مما اتقى  
 إياك أن تقول إن اطعت الله أخسر عملي ، فهذا كلام الجوهال ، وكلام مشرك ، وكلام من أُفُقه ضيق ، فهذا التوهم من الشيطان  
 """;
@@ -42,7 +42,7 @@ class KhatiraTextDersEleven {
 
    """;
 // page 3
-  static const String elmTextElevenThree_1 = """
+  static const String khatiraTextElevenThree_1 = """
 إياك ان تضن ان الرزق لن يأتي إلا بالرياء او نفاق او دهاء او سياسه او مكر او حيله او خداع  الرزق مضمون وموجود ومقسوم ، وكلمةالحق لا تقطع رزقا ولا تقرب اجلا
 
 الله سبحانه وتعالى تكفل برزق العباد والزم ذاته العليه الزام ذاتي برزق العباد
@@ -54,13 +54,13 @@ class KhatiraTextDersEleven {
 سورة هود 
 """;
 
-  static const String elmTextElevenThree_2 = """
+  static const String khatiraTextElevenThree_2 = """
 الدابة جائت نكره تنكير شمول لتشمل هذه الكلمه كل شيئ يدب على وجه الأرض
 
 """;
 
 // page 4
-  static const String elmTextElevenFour_1 = """
+  static const String khatiraTextElevenFour_1 = """
 وما من ,المن تفيد إستغراق افراد النوع 
 لو دخلت إلى فصل وقلت هؤلا الطلاب لهم عندي جائزه أي اللذين امامك
 اما إذا قلت ما من طالب في هذا الصف إلا وله عندي جائزه شملت الغائبين
@@ -71,7 +71,7 @@ class KhatiraTextDersEleven {
 """;
 
 // page 5
-  static const String elmTextElevenFive_1 = """
+  static const String khatiraTextElevenFive_1 = """
 الله جل جلاله يرزق النملة السوداء على الصخرة الصماء، في الليلة الظلماء ، ولو تبحرت في اسم الرزاق لوجدت العجب العجاب ، لو تبحرت في اسم الرزاق لوجدت الشيئ اللذي لا يوصف ، فكل مخلوق يصله رزقه بطريقة أو بأخرى ، فالله سبحانه وتعالى يرزق بسبب، وبدون سبب، بل وإنه يرزق بضد السبب
  
    """;
@@ -82,13 +82,13 @@ class KhatiraTextDersEleven {
   وَهُزِّیۤ إِلَیۡكِ بِجِذۡعِ ٱلنَّخۡلَةِ ۝٢٥
  سورة مريم 
 """;
-  static const String elmTextElevenSix_1 = """
+  static const String khatiraTextElevenSix_1 = """
 بعضهم قال إن هذا من باب الأخذ بالأسباب ، فكيف أن الرزق محتوم ، ومقسوم ، وموزون ، ومع ذلك فالله سبحانه وتعالى أمرنا بالسعي أي بالأخذ بالأسباب ، فما عليها إلا أن تهز هذا الجذع
 وبعضهم قال: إن الله سبحانه وتعالى ألان لها هذا الجذع ، فاهتز فسقطت التمرات امامها فأكلتها
  """;
 
-  //page 7
-  static const String elmTextElevenSeven_1 = """
+  // page 7
+  static const String khatiraTextElevenSeven_1 = """
 الآن من خلال حاجتك إلى الطعام والشراب تنطلق إلى العمل ، ومن خلال حاجتك إلى الزوجه تنطلق إلى الزواج ، ومن خلال حاجتك إلى تأكيد الذات تنطلق إلى اعمال تسعى إلى أن تكون لك نبراسا في المجتمع ، ومن أجل حاجتك إلى آلاف المواد تعيش في مجتمع ، كل هذا من أجل أن تُمتحن بالخير أو الشر ، وبالعطاء أو الحرمان ، وبالإحسان أو الإسائه ، وبالصدق أو الكذب ، وبالإخلاص أو الخيانة ، وبالإستقامة أو الانحراف ، بالكبر أو التواضع ، وبالإنصاف أو الجحود ، ومن خلال العمل ، ومن خلال الزواج ، ومن خلال تأكيد الذات ، ومن خلال بقائك في المجتمع تُمتحن أشد الامتحان
  """;
 
@@ -102,7 +102,7 @@ class KhatiraTextDersEleven {
 أَحَسِبَ ٱلنَّاسُ أَن یُتۡرَكُوۤا۟ أَن یَقُولُوۤا۟ ءَامَنَّا وَهُمۡ لَا یُفۡتَنُونَ ۝٢ 
 سورة العنكبوت 
 """;
-  static const String elmTextElevenEight_1 = """
+  static const String khatiraTextElevenEight_1 = """
 إذا انت في الحياة الدنيا مبتلى من أجل ان تعمل عملآ صالحآ يؤهلك لجنة عرضها السماوات والأرض ، فأنت مخلوق للجنة ، للجنة وحدها
   """;
 
@@ -113,13 +113,13 @@ class KhatiraTextDersEleven {
  سورة الذاريات 
 """;
 
-  static const String elmTextElevenNine_1 = """
+  static const String khatiraTextElevenNine_1 = """
 ليعرفوني فيُطيعوني فيسعدوا بقربي في الدنيا والآخرة ، وهذا هو الهدف
 """;
   static const String subtitleElevenNine = """
 :انواع الرزق
 """;
-  static const String elmTextElevenNine_2 = """
+  static const String khatiraTextElevenNine_2 = """
  نوع ميسور بلا ثمن -
 نوع ميسور بلا ثمن ، الهواء ، ولو كان الهواء بالثمن وبالقسائم ، وبالأحتكار لهلك الناس
 
@@ -134,14 +134,14 @@ class KhatiraTextDersEleven {
 :الفرق بين الرزق والكسب
 """;
 
-  static const String elmTextElevenTen_1 = """
+  static const String khatiraTextElevenTen_1 = """
 ماهو الفرق بين الرزق والكسب ؟ الرزق ماتنتفع به فقط فالطعام الذي أكلته ، والقميص الذي ترتديه ، والسرير الذي تنام عليه ، والطعام الذي تستهلكه ، هذا فقط وحده هو الرزق  
 
 وأما الكسب فقد يكون لك في الحساب مئات الألوف ، أو بضعة ملايين ، أو مئات الملايين ، أو عشرات مئات الملايين لكنها كسب وليس رزقآ ، فالكسب حجمك المالي أما الرزق فهو مستهلكاتك ، الكسب كله تُحاسب عليه ولا تنتفع به ، لكن الرزق تُحاسب عليه ، وتنتفع به  
    """;
 
 // page 11
-  static const String elmTextElevenEleven_1 = """
+  static const String khatiraTextElevenEleven_1 = """
 أما انتفاعك به فعلى ثلاثة أقسام ، قسم تستهلكه كالطعام والشراب ، وقسم يبلى كالثياب وقسم يبقى كالصدقات
 
 يقول إبن آدم مالي مالي مالي ، وليس لك من مالك إلا ما أكلت فأفنيت ، أو لبست فأبليت ، أو تصدقت فأبقيت ، وماسوى هذه الثلاثة ليست لك
@@ -152,7 +152,7 @@ class KhatiraTextDersEleven {
 قال رسول الله ﷺ: لا تزول قدما عبد يوم القيامة حتى يسأل عن عمره فيم أفناه؟ وعن علمه فيم فعل فيه؟ وعن ماله من أين اكتسبه؟ وفيم أنفقه؟ وعن جسمه فيم أبلاه؟
 """;
 
-  static const String elmTextElevenEleven_2 = """
+  static const String khatiraTextElevenEleven_2 = """
 الرزق أنواع كالطعام والشراب والزوجة والعلم
 """;
   static const String ayahHadithElevenEleven_2 = """
@@ -161,7 +161,7 @@ class KhatiraTextDersEleven {
 سورة البقرة 
 """;
 
-  static const String elmTextElevenEleven_3 = """
+  static const String khatiraTextElevenEleven_3 = """
 لما سُئل أحد العلماء الكبار عن حسنة الدنيا
  قال
 هي المرأه الصالحة ، فالمرأه الصالحه رزق ، والعلم رزق
@@ -178,7 +178,7 @@ class KhatiraTextDersEleven {
 -----
 """;
 
-  static const String elmTextElevenTwelve_1 = """
+  static const String khatiraTextElevenTwelve_1 = """
 الرزق أداة ابتلاء ، واداة ثواب ، وأداة عقاب فالإنسان يُمتحن بما أُعطي ، ويُمتحن بما حُرم 
 
 الغني مُمتحن بالغنى ، والفقير مُمتحن بالفقر
@@ -197,7 +197,7 @@ class KhatiraTextDersEleven {
  :الإيمان والتقوى 
 
 """;
-  static const String elmTextElevenTherteen_1 = """
+  static const String khatiraTextElevenTherteen_1 = """
 الرزق يزيد بالايمان والتقوى
 """;
   static const String ayahHadithElevenTherteen_1 = """
@@ -208,7 +208,7 @@ class KhatiraTextDersEleven {
   static const String subtitleElevenTherteen_2 = """
  :الإستقامة
  """;
-  static const String elmTextElevenTherteen_2 = """
+  static const String khatiraTextElevenTherteen_2 = """
  يزيد ايضا بالاستقامه 
 """;
   static const String ayahHadithElevenTherteen_2 = """
@@ -219,7 +219,7 @@ class KhatiraTextDersEleven {
   static const String subtitleElevenTherteen_3 = """
  :إلتزام احكام الشرع
  """;
-  static const String elmTextElevenTherteen_3 = """
+  static const String khatiraTextElevenTherteen_3 = """
  يزيد بالتزام أحكام الشرع
 """;
   static const String ayahHadithElevenTherteen_3 = """
@@ -232,7 +232,7 @@ class KhatiraTextDersEleven {
   static const String titleElevenFourteen = """
  :الإستغفار
  """;
-  static const String elmTextElevenFourteen_1 = """
+  static const String khatiraTextElevenFourteen_1 = """
   والرزق يزيد بالاستغفار
 """;
   static const String ayahHadithElevenFourteen_1 = """
@@ -242,13 +242,13 @@ class KhatiraTextDersEleven {
 وَیُمۡدِدۡكُم بِأَمۡوَ ٰلࣲ وَبَنِینَ وَیَجۡعَل لَّكُمۡ جَنَّـٰتࣲ وَیَجۡعَل لَّكُمۡ أَنۡهَـٰرࣰا ۝١٢ 
 النوح 10,11,12 
 """;
-  static const String elmTextElevenFourteen_2 = """
+  static const String khatiraTextElevenFourteen_2 = """
 يزيد بالاستقامه والايمان والطاعة ، ويزيد ايضا بالاستغفار
 """;
   static const String subtitleElevenFourteen_1 = """
  :إقامة الصلاة
 """;
-  static const String elmTextElevenFourteen_3 = """
+  static const String khatiraTextElevenFourteen_3 = """
 ويزيد الرزق بإقامةالصلاة
 """;
   static const String ayahHadithElevenFourteen_2 = """
@@ -257,7 +257,7 @@ class KhatiraTextDersEleven {
 طه 132 
 
 """;
-  static const String elmTextElevenFourteen_4 = """
+  static const String khatiraTextElevenFourteen_4 = """
 بيت تقام فيه الصلوات ، هذا بيت في الأعم الأغلب الله سبحانه وتعالى يرزُقهُ 
 
 """;
@@ -269,21 +269,21 @@ class KhatiraTextDersEleven {
   یَمۡحَقُ ٱللَّهُ ٱلرِّبَوٰا۟ وَیُرۡبِی ٱلصَّدَقَـٰتِۗ ۝٢٧٦
  سورة البقرة 
 """;
-  static const String elmTextElevenFifteen_1 = """
+  static const String khatiraTextElevenFifteen_1 = """
     الصدقة تزيد في الرزق  
 """;
   static const String ayahHadithElevenFifteen_2 = """
     قال عليه الصلاة والسلام ***
     استمطرو الرزق بالصدقة 
   """;
-  static const String elmTextElevenFifteen_2 = """
+  static const String khatiraTextElevenFifteen_2 = """
     اي إذا اردتم الرزق الوفير 
 الإنفاق بالحسابات المادية ينقص المال ، لكنه بالحسابات الربانية يُنميه يكثرُه ، لذلك مانقص مال من صدقه
 """;
   static const String subtitleElevenFifteen_1 = """
  الإتقان-
  """;
-  static const String elmTextElevenFifteen_3 = """
+  static const String khatiraTextElevenFifteen_3 = """
 شيئ أخر ، وهو أن الرزق يزيد بالإتقان ، فإتقان العمل جزء من الدين ، فالإتقان أحد اسباب نماء الرزق
 """;
 
@@ -307,7 +307,7 @@ class KhatiraTextDersEleven {
   static const String ayahHadithElevenSixteen_2 = """
 قَالَ رَسُولُ اللَّهِ ﷺ: مَنْ أَحَبَّ أَنْ يُبْسَطَ له فِي رِزْقِهِ، وأَنْ يُنْسَأَ لَهُ فِي أَثَرِهِ, فَلْيَصِلْ رَحِمَهُ
 """;
-  static const String elmTextElevenSixteen_3 = """
+  static const String khatiraTextElevenSixteen_3 = """
 قلة الرزق مع توافر شروط زيادة الرزق تُعزى إلى حكمة الله عز وجل
 """;
   static const String footerElevenSixteen = """
@@ -317,7 +317,7 @@ class KhatiraTextDersEleven {
  """;
 
 // page 17
-  static const String elmTextElevenSeventeen_1 = """
+  static const String khatiraTextElevenSeventeen_1 = """
 قد يقول قائل ؛ فلان مستقيم ، والإستقامة أحد أسباب زيادة الرزق ، وفلان متصدق ، ومستغفر ، ومتقن ، ويصل رحمه ، وذو أمانة ، ويصلي ، ويأمر أهله بالصلاة ، ومع كل هذه الشروط نجد رزقه قليلاً ، فما تفسير ذلك؟ 
 التفسير أنه إذا توافرت كل هذه الشروط ، ولم يكن الرزق وفيراً ، فهذه الحالة النادرة الخاصة تُعزى إلى حكمة الله تعالى ، وإن من عبادي من لا يُصلحُه إلا الفقر ، فإذا اغنيته أفسدتُ عليه دينه ، وإن الله ليحمي صفيه من الدنيا كما يحمي احدكم مريضه من الطعام ، وإن الله ليحمي عبده المؤمن من الدنيا ، كما يحمي الراعي الشفيق غنمه من مراتع الهلكة
  """;
@@ -331,7 +331,7 @@ class KhatiraTextDersEleven {
  یُؤۡتِی ٱلۡحِكۡمَةَ مَن یَشَاۤءُۚ وَمَن یُؤۡتَ ٱلۡحِكۡمَةَ فَقَدۡ أُوتِیَ خَیۡرࣰا كَثِیرࣰاۗ ۝٢٦٩
   سورة البقرة 
 """;
-  static const String elmTextElevenEighteen_1 = """
+  static const String khatiraTextElevenEighteen_1 = """
 فإذا آتاك الله الحكمة فعرفت الله سبحانه فقد أوتيت خيراً لا يعلمه إلا الله
   """;
 
@@ -339,13 +339,13 @@ class KhatiraTextDersEleven {
   static const String titleElevenNineteen = """
   الإعتقاد بأجل الموت وكتابة الرزق سبيل للعزة
 """;
-  static const String elmTextElevenNineteen = """
+  static const String khatiraTextElevenNineteen = """
 إذا أعتقدنا أن حياتنا بيد الله ، وموتنا بيد الله ، ورزقنا بيد الله ، رفعنا رؤوسنا ، وكُنا أعزة ، وقد قيل للإمام الحسن البصري : ما سر عزك يا إمام ؟ فقال: علمت أن رزقي لا يأخذه أحد فاطمأنت نفسي
   
   """;
 
 // page 20
-  static const String elmTextElevenTwenty_1 = """
+  static const String khatiraTextElevenTwenty_1 = """
 كُل إنسان له رزقه المحدد فليطمئن  
 أن كل إنسان له رزقه عند الله ، فهذه الشجرة كأن كُل تفاحة كتب عليها اسم آكلها ، كأن كل خوخة كُتب عليها اسم آكلها ، فواكه مسومة ، وانتقال هذا الطعام إليك باختيارك ، قد تأخذه شراءً ، وقد تأخذه هدية ، وقد تأخذه ضيافة ، وقد يأخذه بعض المنحرفين سرقة وتسولاً واغتصاباً ، وقد يأكله دناءة ، فانتقال هذا الطعام باختيارك
 

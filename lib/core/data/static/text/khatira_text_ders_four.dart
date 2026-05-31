@@ -5,7 +5,7 @@ class KhatiraTextDersFour {
 -----------
  """;
 
-  static const String elmTextFourOne_1 = """
+  static const String khatiraTextFourOne_1 = """
  أتريد أن يحبك الله؟ 
 افتح القرآن واقرأ الآيات في مواضع كثيرة ومتفرقة 
 """;
@@ -37,24 +37,24 @@ class KhatiraTextDersFour {
 """;
 
   // page 2
-  static const String elmTextFourTwo_1 = """
+  static const String khatiraTextFourTwo_1 = """
 إذا أردت أن يحبك الله كن تقياً، وكن مستقيماً، وكن صادقاً، وكن أخلاقياً، وكن متطهراً 
 التعامل مع الله تعامل واضح،
 هل أحببت الله واستقمت على أمره وأنتهيت عن ما نهى؟ حتى تستحق أن يحبك الله،
 """;
 
   // page 3
-  static const String elmTextFourThree_1 = """
+  static const String khatiraTextFourThree_1 = """
 وهل تطمح لأن يحبك الله؟ حتى تكون في عنايته الخاصة وحفظه ورعايته وتأييده ونصره، هل أقبلت عليه بعقلك وبكل مشاعرك وأحاسيسك؟ من خلال تفكرك في خلق السماوات والأرض ومن خلال طعامك وشرابك ومن خلال تفكرك في الإبل كيف خلقت، والسماء كيف رفعت، والجبال كيف نصبت، هل تفكرت في الفجر وليالٍ عشر وفي الشمس وضحاها؟ كي تعظم الله عز وجل ولكي يحملك تعظيمه على طاعته وحينما تطيعه وتقبل عليه يتجلى عليك وتذوق طعم القرب منه فتحبه ويحبك،
 """;
 
   // page 4
-  static const String elmTextFourFour_1 = """
+  static const String khatiraTextFourFour_1 = """
 وهل تقربت إلى الله من خلال إحسانك لخلقه؟ هل تعاملت مع خلقه برفق؟ وهل أحسنت لمن أساء إليك؟ هل وصلت من قطعك؟ هل أعطيت كل ذي حق حقه؟ هل تواضعت لله وخلعت عنك رداء العجب والكبر والاستعلاء؟ هل أنت من المقسطين؟ هل أنت من الكاظمين الغيظ العافين عن الناس؟ هل أنت من المحسنين؟
 """;
 
   // page 5
-  static const String elmTextFourFive_1 = """
+  static const String khatiraTextFourFive_1 = """
 هل تعاملت مع عباد الله بأخلاق؟ أو تعاملت بقسوة وغِلظة وكِبر واستكبار وتعنت؟!
 """;
   static const String ayahHadithFourFive_1 = """
@@ -63,26 +63,26 @@ class KhatiraTextDersFour {
 """;
 
   // page 6
-  static const String elmTextFourSix_1 = """
+  static const String khatiraTextFourSix_1 = """
 هل يا ترى تفكرت في قوله سبحانه وتعالى 
 """;
   static const String ayahHadithFourSix_1 = """
 يُحِبُّهُمْ وَيُحِبُّونَهُۥٓ
 المائدة
 """;
-  static const String elmTextFourSix_2 = """
+  static const String khatiraTextFourSix_2 = """
 هل تدبرت قوله سبحانه وتعالى 
 """;
   static const String ayahHadithFourSix_2 = """
 وَٱلَّذِینَ ءَامَنُوۤا۟ أَشَدُّ حُبࣰّا لِّلَّهِ
 البقرة
 """;
-  static const String elmTextFourSix_3 = """
+  static const String khatiraTextFourSix_3 = """
 هل أنت منهم حتى تستحق أن يحبك الله ويتجلى عليك؟
 """;
 
   // page 7
-  static const String elmTextFourSeven_1 = """
+  static const String khatiraTextFourSeven_1 = """
 بالمقابل أيضاً انظر من الذي لايحبه الله افتح المصحف واقرأ الآيات في مواضع كثيرة ومتفرقة
 """;
   static const String ayahHadithFourSeven_1 = """
@@ -128,7 +128,7 @@ class KhatiraTextDersFour {
 """;
 
   // page 8
-  static const String elmTextFourEight_1 = """
+  static const String khatiraTextFourEight_1 = """
 أخيراً
 أعظم الحب الذي يكون من الله فإن أحبك الله أسعدك ونصرك وأجاب دعائك وأزال همك وأزاح غمك وألقى في قلوب الخلق حبك 
 """;
@@ -140,7 +140,7 @@ class KhatiraTextDersFour {
 
   // page 9
   //1
-  static const String elmTextFourNine_1 = """
+  static const String khatiraTextFourNine_1 = """
 معنى وألقيت عليك محبة مني 
 المعنى الأول: من أوجه تفسيرات هذه الآية أن الله أحبه وحببه إلى خلقه، لذلك إذا أحبك الله، فمن لوازم محبة الله عز وجل أن الخلق كلهم يحبُونك، فإذا أحبك الخلق فهذه علامة محبة الله لك..
 """;
@@ -153,7 +153,7 @@ class KhatiraTextDersFour {
 يارب من أحبُ الناس إليك حتى أحبه بحبك؟ فقال: ياداود أحب الناس إلي تقي القلب، نقي اليدين، لا يمشي إلى أحدٍ بسوء، أحبني، وأحب من أحبني، وحببني إلى خلقي(ورد في الأثر) 
 """;
 // 2
-  static const String elmTextFourNine_2 = """
+  static const String khatiraTextFourNine_2 = """
 فدور العبد الصالح مع ربه أنه يحب الله، ويحبُ أحبابه، ويُحبب الخلق إليه، اذا أحبك الله عز وجل حبب الناس إليك، وإذا أحببته أنت يجب أن تحبه، وأن تحب من يحبه، وأن تحبب الناس إليه.
 .فقال: أحب الناس إلي تقي القلب، نقي اليدين، لا يمشي إلى أحدٍ بسوء، أحبني، وأحب من أحبني، وحببني إلى خلقي، فقال داود: يارب إنك تعلم أني أحبُك، وأحب من يحبك، فكيف أحببك إلى خلقك؟ قال: ذكرهم بآلائي، ونعمائي، وبلائي(ورد في الأثر) 
 
@@ -167,21 +167,21 @@ class KhatiraTextDersFour {
 المعنى الثاني
 """;
 // 3
-  static const String elmTextFourNine_3 = """
+  static const String khatiraTextFourNine_3 = """
 قال بعض المفسرين
 """;
   static const String ayahHadithFourNine_4 = """
 وألقيت عليك محبة مني
 """;
 // 4
-  static const String elmTextFourNine_4 = """
+  static const String khatiraTextFourNine_4 = """
 أي رَحِمتَكَ فأحبك الناس، فإذا تجلى الله على قلب الإنسان بالرحمات انصرفت قلوب الناس إليه، لأن قلبه يصبح مهبطاً لتجلي الله عز وجل، وعندئذٕ تهفو القلوب إلى هذا القلب المتصل، فلو أن الإنسان أتيح له أن يلتقي بنبي عظيم فلا توصف مقدار السعادة التي تتأتى من مجرد اللقاء، ولو لم ينطق بكلمة، إن هذه النفوس العظيمة التي أقبلت على الله عز وجل، وأستنارت بنوره فكانت مهبطاً لتجليات الله عز وجل، فإذا كان هناك لقاءٌ، أو اتصالٌ، أو محبة، أو محاككة بينك وبين قلب المتصل سَرَت هذه الصلة إلى قلبك، لذلك 
 """;
   static const String ayahHadithFourNine_5 = """
 وألقيت عليك محبة مني
 """;
 //5
-  static const String elmTextFourNine_5 = """
+  static const String khatiraTextFourNine_5 = """
 من معانيها أنني أحببتك، وجعلت الخلق كلهم يحبونك 
 """;
 
@@ -189,21 +189,21 @@ class KhatiraTextDersFour {
 المعنى الثالث
 """;
 // 6
-  static const String elmTextFourNine_6 = """
+  static const String khatiraTextFourNine_6 = """
 أنني تجليت على قلبك فهفت القلوب إليك، ولذلك يقال: إن النبي عليه الصلاة والسلام كان أصحابه لا يطيقون فراقه أبداً، كان بعض أصحابه يخدمه، فلما حان وقت الانصراف بقي على عتبة داره لشدة أنسه، وسعادته بهذا القُرب..
 """;
   static const String ayahHadithFourNine_6 = """
 وألقيت عليك محبة مني
 """;
 // 7
-  static const String elmTextFourNine_7 = """
+  static const String khatiraTextFourNine_7 = """
 أي أحببتك، وجعلت الخلق يحبُك..
 """;
   static const String ayahHadithFourNine_7 = """
 وألقيت عليك محبة مني
 """;
 // 8
-  static const String elmTextFourNine_8 = """
+  static const String khatiraTextFourNine_8 = """
 أي تجليت على قلبك فهفت القلوب إليك 
 """;
 
@@ -211,7 +211,7 @@ class KhatiraTextDersFour {
 المعنى الرابع 
  """;
   // 9
-  static const String elmTextFourNine_9 = """
+  static const String khatiraTextFourNine_9 = """
   شيء آخر–أي معنى آخر– أحياناً يلقي الله عز وجل على إنسان محبته فيُحبه الناس وهكذا قال بعض المفسرين، أي أنه ألقى عليه مسحة من جمال أخاذ، فلما رأته أمرأة فرعون أحبته، وقالت: لا تقتلوه، عسى أن ينفعنا، فلما رآه فرعون قبل أن ينجو هذا الغلام من القتل، أي أنه ألقى عليه مسحة من جمال 
 والمرأة التي تُخطبُ، ويتزوجها زوجها، ويكرمها، ويجعلها في موضع تكريمه ورعايته، ويسكنها في بيتٍ مريح، ويأتيها بالطعام، والشراب، واللباس، أياها أن تظن أن هذا ضروريٌ لها، لولا أن الله عز وجل ألقى عليها مسحة لما خطبها أحد، فالفضل لله عز وجل، لو تعلم المرأة أن الذي جعل الناس يُقبلون على خطبتها هو الله عز وجل، لأنه جعلها كاملة مرضية في أعينهم، ولو لم تكن كذلك لما أقدم أحدٌ على خطبتها، إذاً هذه محبة الله أيظاً
 آتى الله الإنسان عقلاً، وآتاه حواس تامة فبجله الناس، وعظموه، واحترموه مثلاً، فهذا فضل الله عز وجل، ولو أن في العقل خللاً لما أقبل أحدٌ عليك، ولنفر الناس منك، إذاً إذا أقبل الناس عليك فهذا من فضل الله عز وجل، وعلامة المؤمن أنه يرى فضل الله عليه دائماً 
@@ -219,14 +219,14 @@ class KhatiraTextDersFour {
 
   // page 10
   // 1
-  static const String elmTextFourTen_1 = """
+  static const String khatiraTextFourTen_1 = """
 إن الذين آمنوا وعملوا الصالحات سيجعل لهم الرحمن ودا 
 """;
   static const String subtitleFourTen_1 = """
 مودة الله للمؤمنين
 """;
 // 2
-  static const String elmTextFourTen_2 = """
+  static const String khatiraTextFourTen_2 = """
 والله الذي لا إله إلا هو لو لم يكن في كتاب الله من إكرام للمؤمن إلا هذه الآية لكفت..
 """;
   static const String ayahHadithFourTen_1 = """
@@ -236,7 +236,7 @@ class KhatiraTextDersFour {
 المعنى الأول للمودة
 """;
 // 3
-  static const String elmTextFourTen_3 = """
+  static const String khatiraTextFourTen_3 = """
 قال العلماء: المعنى الأول أن الله سبحانه وتعالى يُلقي في قلب الناس جميعاً محبة المؤمن
 ينادى له في الكون أنا نحبه
 فيسمع من في الكون أمر مُحِبنا 
@@ -249,7 +249,7 @@ class KhatiraTextDersFour {
 إن الذين أمنوا وعملوا الصالحات سيجعل لهم الرحمن ودا 
 """;
 // 4
-  static const String elmTextFourTen_4 = """
+  static const String khatiraTextFourTen_4 = """
 أي أن هذه المودة بين الله وبين المؤمنين أثمن ما في الوجود، يا محمد، جبريل عليه السلام جاء سيدنا محمد قال له
 """;
   static const String ayahHadithFourTen_3 = """
@@ -257,7 +257,7 @@ class KhatiraTextDersFour {
 إن الذين امنوا وعملوا الصالحات سيجعل لهم الرحمن ودا 
 """;
 // 5
-  static const String elmTextFourTen_5 = """
+  static const String khatiraTextFourTen_5 = """
 إذاً: فالمودة مطلقة؛ إما أنها بينك وبين الناس، وإما أنها بينك وبين الله سبحانه وتعالى، فالله عز وجل يجعل قلوب الناس تهفو إليك، يحبونك ويعجبون لهذه المحبة، لأن الله عز وجل تجلى عليك، فجعل القلوب تهفوا إليك، أنت كمؤمن هكذا يحبك الناس، ومن علامة صدق إيمانك محبة الناس لك، ومن علامة النفاق بُغض الناس لك، علامة الإخلاص محبة الناس، ألسنة الخلق أقلام الحق،
 """;
   static const String ayahHadithFourTen_4 = """
@@ -268,14 +268,14 @@ class KhatiraTextDersFour {
 المعنى الثاني للمودة
 """;
 // 6
-  static const String elmTextFourTen_6 = """
+  static const String khatiraTextFourTen_6 = """
 وأما المعنى الثاني فالمودة بينك وبين الله، ففي الحديث القدسي:
 """;
   static const String ayahHadithFourTen_5 = """
 وجبت محبتي للمتحابين فيَ، والمتجالسين فيَ، والمتبادلين فيَ، والمتزاورين فيَ، والمتحابون في جلالي على منابر من نور يغبطهم عليها النبيون يوم القيامة(احمد)
 """;
 // 7
-  static const String elmTextFourTen_7 = """
+  static const String khatiraTextFourTen_7 = """
 وخلاصة المعنى الثاني أن الذي ترغبه وتحبه فإن الله سبحانه وتعالى سيؤتيك إياه..
 """;
   static const String ayahHadithFourTen_6 = """
@@ -287,13 +287,13 @@ class KhatiraTextDersFour {
 المعنى الثالث للمودة:
 """;
 // 8
-  static const String elmTextFourTen_8 = """
+  static const String khatiraTextFourTen_8 = """
 والمعنى الثالث: هو إذا كنت في طاعة الله، وعبدته حق العبادة يدنيك منه، إنك إذاً في مقعد صدقٍ عند مليك مقتدر، إذاً يدافع الله عنك، تشعر بهذه المودة..
 وهو الغفور الودود ذو العرش المجيد فعال لما يريد
 """;
 
   // page 11
-  static const String elmTextFourEleven_1 = """
+  static const String khatiraTextFourEleven_1 = """
 ️علاقة المؤمن مع الله علاقة حب
 ▪️علاقة المؤمن مع الله علاقة حب، لأن الحب أساسه العطاء، منحك نعمة الوجود، أنت موجود، من أوجدك؟ منحك نعمة الوجود
 أمدك بكل ماتحتاج؛ أمدك بالهواء، أمدك بالماء، أمدك بزوجة، بأولاد، ببيت، بحرفة تكتسب منها رزقك، أعطاك ذاكرة، أعطاك قوة، أعطاك قلباً، رئتين، دسامات، كليتين، أجهزة كلها كاملة، فالمؤمن يحب الله عز وجل، منحه نعمة الوجود، نعمة الإيجاد، ونعمة الإمداد، ونعمة الهدى والرشاد
@@ -311,7 +311,7 @@ class KhatiraTextDersFour {
 أجمل ماقيل في حب الله
 ---------------------
 """;
-  static const String elmTextFourTwelve_1 = """
+  static const String khatiraTextFourTwelve_1 = """
 فليتك تحلوا والحياة مريرةً
     وليتك ترضى والأنام غضاب
 
@@ -326,7 +326,7 @@ class KhatiraTextDersFour {
 """;
 
   // page 13
-  static const String elmTextFourThirteen_1 = """
+  static const String khatiraTextFourThirteen_1 = """
 وقيل
 
 أطع امرنا نرفع لأجلك حجبنا 

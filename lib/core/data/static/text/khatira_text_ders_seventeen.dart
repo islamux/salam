@@ -1,6 +1,6 @@
 class KhatiraTextDersSeventeen {
-  //---- page 1
-  static const String elmTextSeventeenOne_1 = """
+  // page 1
+  static const String khatiraTextSeventeenOne_1 = """
 سيدنا موسى عليه السلام عندما قال 
 """;
 
@@ -12,7 +12,7 @@ class KhatiraTextDersSeventeen {
 قَدۡ أُجِیبَت دَّعۡوَتُكُمَا ۝٨٩
 سورة يونس
 """;
-  static const String elmTextSeventeenOne_2 = """
+  static const String khatiraTextSeventeenOne_2 = """
 من الداعي ؟ الداعي سيدنا موسى
 لماذا قال الله عز وجل؟
 """;
@@ -21,17 +21,17 @@ class KhatiraTextDersSeventeen {
 قَدۡ أُجِیبَت دَّعۡوَتُكُمَا ۝٨٩
 سورة يونس
 """;
-  static const String elmTextSeventeenOne_3 = """
+  static const String khatiraTextSeventeenOne_3 = """
 لأن سيدنا هارون كان معه ، فلما دعا سيدنا موسى عليه السلام قال هارون : آمين ، والتأمين دعاء ، التأمين على دعاء الداعي دُعاء
 
   """;
 
-//-- page 2
+// page 2
   static const String ayahHadithSeventeenTwo_1 = """
 قَالَ قَدۡ أُجِیبَت دَّعۡوَتُكُمَا فَٱسۡتَقِیمَا وَلَا تَتَّبِعَاۤنِّ سَبِیلَ ٱلَّذِینَ لَا یَعۡلَمُونَ ۝٨٩
 سورة يونس
 """;
-  static const String elmTextSeventeenTwo_1 = """
+  static const String khatiraTextSeventeenTwo_1 = """
 ١- لا تستعجلو إجابة الدعاء
 لكل شيئ أوان ، وتلبية الدعاء مرهونة بمشيئة الله ، فمن تعجل الشيئ قبل أوانه عوقب بحرمانه ، لكن اطلب من الله واستسلم
   """;
@@ -42,7 +42,7 @@ class KhatiraTextDersSeventeen {
   static const String subtitleSeventeenTwo_1 = """
 :المعنى الأول
 """;
-  static const String elmTextSeventeenTwo_2 = """
+  static const String khatiraTextSeventeenTwo_2 = """
 بعضهم حمل هذه الأية على الثبات على الاستقامة ، هما مستقيمان ، ما معنى قولك لطالب مجتهد: اجتهد ؟ أي داوم على اجتهادك ، استمر على اجتهادك ،  اثبت على اجتهادك
    
   """;
@@ -55,7 +55,7 @@ class KhatiraTextDersSeventeen {
   static const String subtitleSeventeenThree_1 = """
 :المعنى الثاني
 """;
-  static const String elmTextSeventeenThree_1 = """
+  static const String khatiraTextSeventeenThree_1 = """
 تابعا نُصح فرعون ، المعنى الأول: اثبتا على تلك الاستقامة ، المعنى الثاني: تابعا نصح فرعون
 
 """;
@@ -63,12 +63,12 @@ class KhatiraTextDersSeventeen {
 وَلَا تَتَّبِعَاۤنِّ سَبِیلَ ٱلَّذِینَ لَا یَعۡلَمُونَ ۝٨٩
 سورة يونس
 """;
-  static const String elmTextSeventeenThree_2 = """
+  static const String khatiraTextSeventeenThree_2 = """
 هؤلاء الذين لا يعلمون يستعجلون قضاء الله وقدره ، والإيمان بالقدر يُذهب الهم والحزن ، ولكل شيئ أوان ، لكل شيئ قدر ، الأمور بمواقيتها ، فالإنسان يجب ألا يتجاوز حدوده في تعيين وقت الإجابة ، ادع الله ثم اترك الأمر لله سبحانه
   """;
-/////
-// page 4
-  static const String elmTextSeventeenFour_1 = """
+
+  /// page 4
+  static const String khatiraTextSeventeenFour_1 = """
 قد يقول قائل لماذا ادعي ورزقي مقسوم مكفول من قبل ان اولد؟
 
 الله سبحانه وتعالى امرنا بالدعاء
@@ -77,7 +77,7 @@ class KhatiraTextDersSeventeen {
 ٱدۡعُونِیٓ أَسۡتَجِبۡ لَكُمۡ ۚ إِنَّ ٱلَّذِینَ یَسۡتَكۡبِرُونَ عَنۡ عِبَادَتِی سَیَدۡخُلُونَ جَهَنَّمَ دَاخِرِینَ ۝٦٠
 سورة غافر
 """;
-  static const String elmTextSeventeenFour_2 = """
+  static const String khatiraTextSeventeenFour_2 = """
  الدعاء هو العبادة
 لم يقُل عن دعائي ، قال 
      ( عن عبادتي ) 
@@ -87,12 +87,12 @@ class KhatiraTextDersSeventeen {
  الدعاء اعتراف بضعف العبد وافتقاره إلى ربه 
 """;
 
-//---- page 5
-  static const String elmTextSeventeenFive_1 = """
+// page 5
+  static const String khatiraTextSeventeenFive_1 = """
 الإنسان حينما يدعو الله سبحانه وتعالى ، يعترف بضعفه وبقوة الله ، يعترف بفقره ، وبغنى الله عز وجل ، يعترف بجهله وبعلم الله 
 فإذا عرف الإنسان نفسه ، وعرف افتقاره إلى الله ، وعرف ضعفه ، وعرف قوة الله ، ورحمته ، وعلمه ، وحكمته ، وغناه ، وقدرته ، فقد عبد الله عز وجل ، أي انه تلبس بالعبودية ، هذه هي العبادة
 """;
-  static const String elmTextSeventeenFive_2 = """
+  static const String khatiraTextSeventeenFive_2 = """
 أبرز مظاهر العبادة الدعاء ، الصلاة عبادة ، الصوم عبادة ، الحج عبادة ، غض البصر عبادة ، ضبط اللسان عبادة ، أن تقيم بيعك وفق الشرع أنت عابد لله ، ألا تكذب ، وأن تصدق فهذه عبادة
 لكن هناك عبادات شعائرية ؛ صلاة وصوم وحج وهناك عبادات تعاملية ؛ صدق وأمانة ، واستقامة  وبيع حلال ، وكسب حلال ، وإنفاق حلال ، وغض بصر....إلخ
 
@@ -100,12 +100,12 @@ class KhatiraTextDersSeventeen {
 إنك بالصلاة تتصل بالله في اليوم خمس مرات ، وبالصيام تتصل بالله في العام شهراً ، بالحج تتصل بالله في عمرك شهراً ، لكنك بالدعاء تتصل بالله عند كل حركةٍ وسكنة
 """;
 
-// -- page 6
-  static const String elmTextSeventeenSix_1 = """
+// page 6
+  static const String khatiraTextSeventeenSix_1 = """
 أحد ابرز العبادات الدعاء ، وكلما اكثرت من الدعاء كنت أقرب إلى الله عز وجل
  
  """;
-  static const String elmTextSeventeenSix_2 = """
+  static const String khatiraTextSeventeenSix_2 = """
 وفي الحديث
 """;
   static const String ayahHadithSeventeenSix_1 = """
@@ -116,28 +116,28 @@ class KhatiraTextDersSeventeen {
 ( والدعاء مخ العبادة) *
 """;
 
-  static const String elmTextSeventeenSix_3 = """
+  static const String khatiraTextSeventeenSix_3 = """
 لماذا كان الدعاء عبادة؟ 
 لإن الإنسان بفطرته لا يدعو جهة لا يؤمن بوجودها 
 أنت لا تدعو جهة لا تؤمن بوجودها ، وأنت لا تدعو جهة لا تسمعك ، وأنت لا تدعو جهة ليست قادرة على تحقيق ماتطلب منها ، وأنت لا تدعو جهة تسمعك وقادرة ، ولكنها لا تريد أن ترحمك 
 لمجرد أن تدعو الله عز وجل حكمآ أنت مؤمن بوجوده ، ومؤمن بأنه يسمعك ، ومؤمن بأنه قادر على أن يلبيك ، ومؤمن بأنه يحب أن يلبيك ، خلقك ليرحمك
 """;
 
-// -- page 7
-  static const String elmTextSeventeenSeven_1 = """
+// page 7
+  static const String khatiraTextSeventeenSeven_1 = """
 لذلك يقول الله عز وجل 
 """;
   static const String ayahHadithSeventeenSeven_1 = """
 قُلۡ مَا یَعۡبَؤُا۟ بِكُمۡ رَبِّی لَوۡلَا دُعَاۤؤُكُمۡ ۖ ۝٧٧
 سورة الفرقان
 """;
-  static const String elmTextSeventeenSeven_2 = """
+  static const String khatiraTextSeventeenSeven_2 = """
 لكن هناك تمهيد لابد منه ، أراد الله عز وجل لحكمة بالغة بالغة ، بالغة أن يكون الإنسان ضعيفا
 """;
   static const String ayahHadithSeventeenSeven_2 = """
 ( وَخُلِقَ ٱلۡإِنسَـٰنُ ضَعِیفࣰا )
 """;
-  static const String elmTextSeventeenSeven_3 = """
+  static const String khatiraTextSeventeenSeven_3 = """
 هذا ضعف في أصل خلقه
 والإنسان كما قال تعالى 
 """;
@@ -149,8 +149,8 @@ class KhatiraTextDersSeventeen {
 سورة المعارج
 """;
 
-// -- page 8
-  static const String elmTextSeventeenEight_1 = """
+// page 8
+  static const String khatiraTextSeventeenEight_1 = """
 لماذا خلقه الله هلوعاً، جزوعاً ، منوعاً ، ضعيفاً ؟ لإنه لو خلقه قوياً لاستغنى بقوته عن الله عز وجل ، فشقي بإستغنائه 
 خلقه ضعيفاً ليفتقر بضعفه فيسعد بإفتقاره ، خلقنا ضعفاء ، وساق لنا بعض المصائب كي نتعرف إليه ، ونتصل به ، ونسعد بقربه ، ونذوق طعم القرب منه
 """;
@@ -167,19 +167,19 @@ class KhatiraTextDersSeventeen {
 علة الدعاء الإتصال بالله
 -----------------
 """;
-  static const String elmTextSeventeenNine_1 = """
+  static const String khatiraTextSeventeenNine_1 = """
 هذه النقطة دقيقة جداً  علة الدعاء أن تتصل به ، هناك نخبة من البشر يتصلون بالله عز وجل من دون مشكلة ، من دون مصيبة ، من دون ابتلاء ، هؤلا الأنبياء والمرسلون ، وكبار العلماء ، الصديقون ، الصحابة الكرام لكن عامة المسلمين يحتاجون إلى بواعث ، إلى دوافع ، إلى محفزات
 أحياناً يضعف الإنسان أمام مشكلة ، ليس له إلا الله ، يدعو الله عز وجل فيستجيب له ، فتزداد عقيدته بالله ، يدعو الله فيستجيب له ، ويذوق طعم القرب منه ، فيلزم هذا الباب ، فكم من مشكلة سببت قرباً منه ، كم من مشكله سببت أن الإنسان بعد أن يعرف الله يزهد فيما سواه
 """;
   static const String ayahHadithSeventeenNine_1 = """
 ( وَخُلِقَ ٱلۡإِنسَـٰنُ ضَعِیفࣰا )
 """;
-  static const String elmTextSeventeenNine_2 = """
+  static const String khatiraTextSeventeenNine_2 = """
 هذا الضعف في أصل ضعفه ، لمصلحته ليلتجأ إلى ربه
 """;
 
 // page 10
-  static const String elmTextSeventeenTen_1 = """
+  static const String khatiraTextSeventeenTen_1 = """
 القصد من الدعاء الحقيقي أن تتصل بالله ، وأن تذوق طعم القرب منه ، وأن ترى ألوهيته ، الأمر كله بيده
 
 الدعاء يقوي العقيده 
@@ -198,7 +198,7 @@ class KhatiraTextDersSeventeen {
 قَالَ كَلَّاۤ ۖ إِنَّ مَعِیَ رَبِّی سَیَهۡدِینِ ۝٦٢
 سورة الشعراء
 """;
-  static const String elmTextSeventeenTen_2 = """
+  static const String khatiraTextSeventeenTen_2 = """
 ما من مؤمن صادق إلا وله مع الله خبرة في هذا الموضوع يدعوه من كل جوارحه يسأله فيستجيب الله له ليعرفه أنه استمع إلى دعائه ، وأجابه ، وهو بيده كل شيئ ، هذه هي حكمة الدعاء أن تعرف أن الله معك ، حاضر ، ناظر ، سميع ، قريب ، مجيب وحينما يستجيب لك من أجل أن تحبه من أجل أن تثق به من أجل أن تكون معه من أجل أن تخافه وحده ولا تخاف من دونه أحداً 
  """;
 
@@ -206,7 +206,7 @@ class KhatiraTextDersSeventeen {
   static const String subtitleSeventeenEleven_1 = """
 الله سبحانه وتعالى يحب الملحين في الدعاء
 """;
-  static const String elmTextSeventeenEleven_1 = """
+  static const String khatiraTextSeventeenEleven_1 = """
 الله بيده كل شيء، وبالدعاء أنت أقوى إنسان، وليس بينك وبين الله حجاب، يارب، يقول لك: لبيك يا عبدي، اسأله كل حاجاتك، اسأله شسع نعلك إذا انقطع، اسأله ملح الطعام، هكذا ورد الدعاء.
 """;
   static const String ayahHadithSeventeenEleven_1 = """
@@ -214,7 +214,7 @@ class KhatiraTextDersSeventeen {
 إن الله يحب الملحين في الدعاء [رواه الحكيم ابن عدي في الكامل، والبيهقي في شعب الإيمان عن عائشة]
 """;
   // page 12
-  static const String elmTextSeventeenTwelve_1 = """
+  static const String khatiraTextSeventeenTwelve_1 = """
 الله يحب أن تطلب، تترجاه، تعيد وتكرر، تلح كثيراً بالسجود بقيام الليل، أما أمام الناس كن عزيزاً، شرف المؤمن قيامه بالليل وعزه استغناؤه عن الناس، البطولة أن تعتز أمام الناس، وأن تمرغ جبهتك بين يدي الله عز وجل، ادخل لغرفتك وابكِ وأغلق الباب واسجد وقل: يارب ليس لي سواك، هذه إفعلها، على قدر ما تستطيع.
 تذلل لله، لأن التذلل إلى الله عز، أما مع الناس كن عزيزاً
 """;
@@ -223,7 +223,7 @@ class KhatiraTextDersSeventeen {
   static const String subtitleSeventeenThirteen_1 = """
 إجابة الله دعاء العبد بعد استجابة العبد لربه
 """;
-  static const String elmTextSeventeenThirteen_1 = """
+  static const String khatiraTextSeventeenThirteen_1 = """
 إذا آمن العباد بربهم واستجابوا له بطاعته ثم سألوه فلا بد من أن يجيبهم، إلا إن كانت الإجابة ليست في صالحهم، عندئذٍ يدخر الله لهم ثواباً في الآخرة..
 """;
   static const String ayahHadithSeventeenThirteen_1 = """
@@ -235,17 +235,17 @@ class KhatiraTextDersSeventeen {
   static const String subtitleSeventeenFourteen_1 = """
 ما هدف الدعاء؟
 """;
-  static const String elmTextSeventeenFourteen_1 = """
+  static const String khatiraTextSeventeenFourteen_1 = """
 سؤال دقيق: الأب الرحيم إذا رأى ابنه بحاجةٍ ماسة إلى شيء، هل ينتظر الأب من ابنه أن يدعوه، أم أنه يلبي حاجته قبل الدعاء؟ الله سبحانه وتعالى رحيم، وسميع وبصير، ويعلم السر، وأخفى فلماذا يطلب منا أن ندعوه؟ من هنا يستنبط أن هدف الدعاء ليس قضاء الحاجة، ولكن هدف الدعاء هو انعقاد الصلة مع الله عز وجل. قد يجعلك الله سبحانه وتعالى مفتقراً إلى الحاجة من أجل أن تدعوه، فإذا دعوته واتصلت به، وسعدت بقربه لبى حاجتك.
 لقد جعل الله الحاجة وسيلة لاتصالك، الأصل في الدعاء ليس قضاء الحاجة ولكن الاتصال بالله عز وجل
 """;
 
   // page 15
-  // page 15
+  // page 16
   static const String subtitleSeventeenFifteen_1 = """
 أعجز الناس من عجز عن دعاء الله
 """;
-  static const String elmTextSeventeenFifteen_1 = """
+  static const String khatiraTextSeventeenFifteen_1 = """
 فما أمرنا أن ندعوه إلا ليستجيب لنا، من هو أعجز الناس على الإطلاق؟ هو إنسان عجز عن أن يدعو الله، هل يكلفك الدعاء إلا أن تقول كلمات، وقد تقولها في قلبك؟
 """;
   static const String ayahHadithSeventeenFifteen_1 = """
@@ -253,29 +253,29 @@ class KhatiraTextDersSeventeen {
 سورة مريم
 """;
 
-  // page 16
-  static const String elmTextSeventeenSixteen_1 = """
+  // page 17
+  static const String khatiraTextSeventeenSixteen_1 = """
 وما من مؤمن دعا ربه إلا أكرمه بطريقة أو بأخرى، قُم في جوف الليل قبيل صلاة الفجر وادع الله
 """;
   static const String ayahHadithSeventeenSixteen_1 = """
 إن الله ينزل إلى السماء الدنيا حين يبقى ثلث الليل الآخر فيقول: هل من مستغفر فأغفر له؟ هل من سائل حاجة فأعطيه؟ (بما معناه)
 """;
 
-  // page 17
+  // page 18
   static const String subtitleSeventeenSeventeen_1 = """
 ما أمرنا الله أن ندعوه إلا ليستجيب لنا
 """;
-  static const String elmTextSeventeenSeventeen_1 = """
+  static const String khatiraTextSeventeenSeventeen_1 = """
 فنادته الملائكة وهو قائم يصلي في المحراب أن الله يبشرك بيحيى.
 دعا بصدق، وفضيلة العلامة الدكتور محمد راتب النابلسي في كتابه الشهير كتاب تفسير القرآن الكريم يقول: والله لو أن أحدكم يطمح إلى شيء بعيد المنال، وكأنه الحلم، وكان صادقاً في طلبه لحققه الله له لأن الله عز وجل ما أمرنا أن ندعوه إلا ليستجيب لنا.
 رجل كبير في السن، امرأته عاقر، نادى ربه نداء خفياً، فاستجاب الله له، ولمَ لا يستجيب لك؟ إله زكريا إلهنا، ورب زكريا ربنا، ونحن في أي مكان، وفي أي زمان نعبد الله عز وجل، فكل شخص له طلب عند الله، ليسأل الله حاجته كلها، ليسأله صادقاً، ليسأله مخلصاً.
 """;
 
-  // page 18
+  // page 19
   static const String subtitleSeventeenEighteen_1 = """
 من أسباب دعاء الله عز وجل
 """;
-  static const String elmTextSeventeenEighteen_1 = """
+  static const String khatiraTextSeventeenEighteen_1 = """
 أولاً: لأن الإنسان لا يدعو إلا من يؤمن بوجوده، وهل يمكن لك أن تدخل إلى بيت فارغ لا يوجد فيه إنسان وتخاطب واحداً موهوماً؟ إنه غير معقول، أنت لا تدعو إلا إنساناً مؤمناً بوجوده.
 ثانياً: وأنت لا تدعو إنساناً لا يسمع، بل تدعو إنساناً أمامك تراه رأي العين وهو مستمع إليك، فإذا كان لا يسمع فإنك لا تدعوه.
 ثالثاً: وإنسان موجود ويسمعك، لا تدعو عدوك، بل تدعو من يحبك.
@@ -286,12 +286,12 @@ class KhatiraTextDersSeventeen {
 سورة الفرقان
 """;
 
-  // page 19
-  static const String elmTextSeventeenNineteen_1 = """
+  // page 20
+  static const String khatiraTextSeventeenNineteen_1 = """
 أي أن الله عز وجل يعبأ بنا إذا دعونا، ويحبنا، ويكرمنا إذا دعوناه ويستجيب لنا، وينصرنا، وينقذنا، ويحمينا، ويوفقنا إذا دعوناه
 """;
 
-  // page 20
+  // page 21
   static const String subtitleSeventeenTwenty_1 = """
 الدعاء سبب قوة الإنسان وغناه
 """;
@@ -299,7 +299,7 @@ class KhatiraTextDersSeventeen {
 فَدَعَا رَبَّهُۥۤ أَنِّی مَغۡلُوبࣱ فَٱنتَصِرۡ ۝١٠
 سورة القمر
 """;
-  static const String elmTextSeventeenTwenty_1 = """
+  static const String khatiraTextSeventeenTwenty_1 = """
 أنت بالدعاء تصبح أقوى الناس، لأن الله أقوى من كل قوي، وأنت بالدعاء تصبح أغنى الناس لأن الله أغنى من كل غني، فالدعاء ملخص الدين كله، وأصل الدعاء من أرقى أنواع العبادة.
 أي أن تكون مع الله بالدعاء، وإذا قال الله عز وجل
 """;
@@ -307,15 +307,15 @@ class KhatiraTextDersSeventeen {
 ٱلَّذِینَ هُمۡ عَلَىٰ صَلَاتِهِمۡ دَاۤئِمُونَ ۝٢٣
 سورة المعارج
 """;
-  static const String elmTextSeventeenTwenty_2 = """
+  static const String khatiraTextSeventeenTwenty_2 = """
 أي يدعون الله دائماً في كل أحوالهم
 """;
 
-  // page 21
+  // page 22
   static const String subtitleSeventeenTwentyOne_1 = """
 الدعاء في أي لحظة وبأي لغة دعاء مقبول
 """;
-  static const String elmTextSeventeenTwentyOne_1 = """
+  static const String khatiraTextSeventeenTwentyOne_1 = """
 الشيء الدقيق أن الإنسان بالدعاء يقفز قفزة نوعية في معرفته بالله، وفي محبته له، وإذا أردت أن تحدث الله فادعوه، وإذا أردت أن يحدثك الله عز وجل فاقرأ كلامه، فهل هناك أمتع من أن تناجي الله عز وجل؟ ولذلك احفظ أدعية النبي عليه الصلاة والسلام، أدعية جامعة مانعة محكمة، واجعل كتاب دعاء في جيبك، لكي تدعو الله في كل لحظة، وإن كان بأي لغة، وبأي طريقة، وبأي أسلوب فالدعاء مقبول
 """;
 }

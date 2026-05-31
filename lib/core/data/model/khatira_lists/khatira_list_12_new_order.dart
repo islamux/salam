@@ -10,7 +10,7 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.ayahHadithTwelveOne_1,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveOne_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveOne_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -18,13 +18,17 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
     ],
   ),
   // 2
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwelve.elmTextTwelveTwo_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwelve.khatiraTextTwelveTwo_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 3
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveThree_1,
-      KhatiraTextDersTwelve.elmTextTwelveThree_2,
-      KhatiraTextDersTwelve.elmTextTwelveThree_3,
+      KhatiraTextDersTwelve.khatiraTextTwelveThree_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveThree_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveThree_3,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveThree_1,
@@ -45,8 +49,8 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.ayahHadithTwelveFour_2,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveFour_1,
-      KhatiraTextDersTwelve.elmTextTwelveFour_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveFour_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveFour_2,
     ],
     order: [
       EnOrder.ayahs,
@@ -64,8 +68,8 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.subtitleTwelveFive_1,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveFive_1,
-      KhatiraTextDersTwelve.elmTextTwelveFive_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveFive_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveFive_2,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveFive_1,
@@ -85,8 +89,8 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
   // 6
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveSix_1,
-      KhatiraTextDersTwelve.elmTextTwelveSix_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveSix_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveSix_2,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveSix_1,
@@ -104,7 +108,7 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
   // 7
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveSeven_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveSeven_1,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveSeven_1,
@@ -132,13 +136,21 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
     ],
   ),
   // 9
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwelve.elmTextTwelveNine_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwelve.khatiraTextTwelveNine_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 10
-  KhatiraModelNewOrder(texts: [KhatiraTextDersTwelve.elmTextTwelveTen_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersTwelve.khatiraTextTwelveTen_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 11
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveEleven_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveEleven_1,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveEleven_1,
@@ -154,7 +166,7 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.titleTwelveTwelve,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveTwelve_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveTwelve_1,
     ],
     order: [
       EnOrder.titles,
@@ -167,8 +179,8 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.titleTwelveThirteen,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveThirteen_1,
-      KhatiraTextDersTwelve.elmTextTwelveThirteen_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveThirteen_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveThirteen_2,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveThirteen_1,
@@ -190,7 +202,7 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.ayahHadithTwelveFourteen_2,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveFourteen_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveFourteen_1,
     ],
     footer: KhatiraTextDersTwelve.footerTwelveFourteen,
     order: [
@@ -204,9 +216,9 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
   // 15
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveFifteen_1,
-      KhatiraTextDersTwelve.elmTextTwelveFifteen_2,
-      KhatiraTextDersTwelve.elmTextTwelveFifteen_3,
+      KhatiraTextDersTwelve.khatiraTextTwelveFifteen_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveFifteen_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveFifteen_3,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveFifteen_1,
@@ -234,9 +246,9 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.ayahHadithTwelveSixteen_4,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveSixteen_1,
-      KhatiraTextDersTwelve.elmTextTwelveSixteen_2,
-      KhatiraTextDersTwelve.elmTextTwelveSixteen_3,
+      KhatiraTextDersTwelve.khatiraTextTwelveSixteen_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveSixteen_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveSixteen_3,
     ],
     footer: KhatiraTextDersTwelve.footerTwelveSixteen,
     order: [
@@ -280,7 +292,7 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
   KhatiraModelNewOrder(
     texts: [
       KhatiraTextDersTwelve.elmTwelveEighteen_1,
-      KhatiraTextDersTwelve.elmTextTwelveEighteen_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveEighteen_2,
     ],
     ayahs: [
       KhatiraTextDersTwelve.ayahHadithTwelveEighteen_1,
@@ -297,16 +309,16 @@ List<KhatiraModelNewOrder> khatiraList12NewOrder = [
       KhatiraTextDersTwelve.titleTwelveNineteen_1,
     ],
     texts: [
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_1,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_2,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_3,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_4,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_5,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_6,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_7,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_8,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_9,
-      KhatiraTextDersTwelve.elmTextTwelveNineteen_10,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_1,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_2,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_3,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_4,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_5,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_6,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_7,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_8,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_9,
+      KhatiraTextDersTwelve.khatiraTextTwelveNineteen_10,
     ],
     subtitles: [
       KhatiraTextDersTwelve.subtitleTwelveNineteen_1,

@@ -48,7 +48,7 @@ class KhatiraFinalPage extends StatelessWidget {
               centerTitle: true,
               leading: GestureDetector(
                 onTap: () {
-                  context.read<KhatiraFinalCubit>().resetCounter(); 
+                  context.read<KhatiraFinalCubit>().resetCounter();
                   context.pushNamed(RoutesConstant.home);
                 },
                 child: const Icon(Icons.arrow_back),
@@ -56,39 +56,37 @@ class KhatiraFinalPage extends StatelessWidget {
               actions: [
                 IconButton(
                   onPressed: () {
-                    context
-                        .read<KhatiraFinalCubit>()
-                        .decreaseFontSize(); 
+                    context.read<KhatiraFinalCubit>().decreaseFontSize();
                   },
                   icon: const Icon(Icons.remove),
                 ),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("الخط"), 
+                    Text("الخط"),
                   ],
                 ),
                 IconButton(
                   onPressed: () {
-                    context
-                        .read<KhatiraFinalCubit>()
-                        .increaseFontSize(); 
+                    context.read<KhatiraFinalCubit>().increaseFontSize();
                   },
                   icon: const Icon(Icons.add),
                 ),
-                              IconButton(
+                IconButton(
                   onPressed: () {
                     showSearch(context: context, delegate: DataSearch());
                   },
                   icon: const Icon(Icons.search),
                 ),
-],
+              ],
             ),
-            body: SafeArea( // Removed const
+            body: SafeArea(
+              // Removed const
               child: Column(
                 children: [
                   Expanded(
-                    child: GenericCustomTextSlider( // Changed
+                    child: GenericCustomTextSlider(
+                      // Changed
                       cubit: context.read<KhatiraFinalCubit>(),
                       dataList: khatiraListFinalNewOrder,
                       backgroundImagePath: ImageLink.image12,

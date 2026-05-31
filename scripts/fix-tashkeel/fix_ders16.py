@@ -18,7 +18,7 @@ def replace_field(filepath, field_name, new_content):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(new_text)
 
-f16 = BASE + 'elm_text_ders_sixteen.dart'
+f16 = BASE + 'khatira_text_ders_sixteen.dart'
 
 print("=== Ders 16 ===")
 

@@ -45,75 +45,93 @@ class RouteApp {
 
       case RoutesConstant.khatiraPre:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => KhatiraPrePage(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => KhatiraPrePage(initialPage: args));
 
       case RoutesConstant.khatira1:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira1Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira1Page(initialPage: args));
 
       case RoutesConstant.khatira2:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira2Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira2Page(initialPage: args));
 
       case RoutesConstant.khatira3:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira3Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira3Page(initialPage: args));
 
       case RoutesConstant.khatira4:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira4Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira4Page(initialPage: args));
 
       case RoutesConstant.khatira5:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira5Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira5Page(initialPage: args));
 
       case RoutesConstant.khatira6:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira6Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira6Page(initialPage: args));
 
       case RoutesConstant.khatira7:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira7Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira7Page(initialPage: args));
 
       case RoutesConstant.khatira8:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira8Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira8Page(initialPage: args));
 
       case RoutesConstant.khatira9:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira9Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira9Page(initialPage: args));
 
       case RoutesConstant.khatira10:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira10Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira10Page(initialPage: args));
 
       case RoutesConstant.khatira11:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira11Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira11Page(initialPage: args));
 
       case RoutesConstant.khatira12:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira12Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira12Page(initialPage: args));
 
       case RoutesConstant.khatira13:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira13Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira13Page(initialPage: args));
 
       case RoutesConstant.khatira14:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira14Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira14Page(initialPage: args));
 
       case RoutesConstant.khatira15:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira15Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira15Page(initialPage: args));
 
       case RoutesConstant.khatira16:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira16Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira16Page(initialPage: args));
 
       case RoutesConstant.khatira17:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira17Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira17Page(initialPage: args));
 
       case RoutesConstant.khatira18:
         final khatira18Args = settings.arguments as int?;
@@ -122,59 +140,73 @@ class RouteApp {
 
       case RoutesConstant.khatira19:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira19Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira19Page(initialPage: args));
 
       case RoutesConstant.khatira20:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira20Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira20Page(initialPage: args));
 
       case RoutesConstant.khatira21:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira21Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira21Page(initialPage: args));
 
       case RoutesConstant.khatira22:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira22Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira22Page(initialPage: args));
 
       case RoutesConstant.khatira23:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira23Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira23Page(initialPage: args));
 
       case RoutesConstant.khatira24:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira24Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira24Page(initialPage: args));
 
       case RoutesConstant.khatira25:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira25Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira25Page(initialPage: args));
 
       case RoutesConstant.khatira26:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira26Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira26Page(initialPage: args));
 
       case RoutesConstant.khatira27:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira27Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira27Page(initialPage: args));
 
       case RoutesConstant.khatira28:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira28Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira28Page(initialPage: args));
 
       case RoutesConstant.khatira29:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira29Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira29Page(initialPage: args));
 
       case RoutesConstant.khatira30:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira30Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira30Page(initialPage: args));
 
       case RoutesConstant.khatira31:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira31Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira31Page(initialPage: args));
 
       case RoutesConstant.khatira32:
         final args = settings.arguments as int?;
-        return MaterialPageRoute(builder: (_) => Khatira32Page(initialPage: args));
+        return MaterialPageRoute(
+            builder: (_) => Khatira32Page(initialPage: args));
 
       case RoutesConstant.khatiraFinal:
         final args = settings.arguments as int?;

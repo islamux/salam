@@ -85,8 +85,7 @@ FieldType inferFieldType(String name) {
       name.startsWith('elmTex') ||
       name.startsWith('elmtText') ||
       name.startsWith('elmtext') ||
-      name.startsWith('text'))
-    return FieldType.texts;
+      name.startsWith('text')) return FieldType.texts;
   // elm/khatira without Text suffix (elm{Ders}{Page}_N, khatira{Ders}{Page}_N)
   // — only if first letter after prefix is uppercase
   if ((name.startsWith('elm') &&
@@ -94,16 +93,14 @@ FieldType inferFieldType(String name) {
           name[3] == name[3].toUpperCase()) ||
       (name.startsWith('khatira') &&
           name.length > 7 &&
-          name[7] == name[7].toUpperCase()))
-    return FieldType.texts;
+          name[7] == name[7].toUpperCase())) return FieldType.texts;
   // ayah* patterns (including typos like ayaHadith, ayahaHadith)
   if (name.startsWith('ayahHadith') ||
       name.startsWith('ayahHdith') ||
       name.startsWith('ayaHadith') ||
       name.startsWith('ayahaHadith') ||
       name.startsWith('ayah') ||
-      name.startsWith('aya'))
-    return FieldType.ayahs;
+      name.startsWith('aya')) return FieldType.ayahs;
   if (name.startsWith('footer')) return FieldType.footer;
   throw ArgumentError('Unknown field type: $name');
 }
@@ -145,7 +142,8 @@ final pageDelimiter = RegExp(
 class PageDelimiter {
   final int offset;
   final String label;
-  final bool isWorded; // true if has word prefix (page/Page/Two/etc.), false if bare number
+  final bool
+      isWorded; // true if has word prefix (page/Page/Two/etc.), false if bare number
   PageDelimiter(this.offset, this.label, {this.isWorded = false});
 }
 
@@ -226,7 +224,8 @@ List<PageDelimiter> parseDelimiters(String source, {bool verbose = false}) {
     final isWorded = wordedDelimiter.hasMatch(matchText);
     final label = extractDelimiterLabel(matchText);
     if (verbose) {
-      stderr.writeln('  Delimiter at $absOffset: "$matchText" → "$label" (${isWorded ? 'worded' : 'bare'})');
+      stderr.writeln(
+          '  Delimiter at $absOffset: "$matchText" → "$label" (${isWorded ? 'worded' : 'bare'})');
     }
     delimiters.add(PageDelimiter(absOffset, label, isWorded: isWorded));
     pos += m.end;
@@ -355,7 +354,8 @@ String _toPascal(String s) {
 }
 
 String _fieldList(List<ParsedField> fieldsOfType) {
-  return fieldsOfType.map((f) => 'ElmTextDers${_refix(f.name)}.${f.name}')
+  return fieldsOfType
+      .map((f) => 'ElmTextDers${_refix(f.name)}.${f.name}')
       .join(',\n      ');
 }
 
@@ -368,8 +368,8 @@ String _refix(String name) {
   return ''; // placeholder — handled by per-page class context
 }
 
-String _pageComment(List<PageDelimiter> delimiters, int pageIndex,
-    String? pageLabel) {
+String _pageComment(
+    List<PageDelimiter> delimiters, int pageIndex, String? pageLabel) {
   if (pageLabel != null && pageLabel.isNotEmpty) {
     // Check if it's a section-based name
     if (RegExp(r'^(Two|One|two|three|four|five|six|seven|eight|nine|ten)')
@@ -404,8 +404,7 @@ String generateElmList({
   }
   buf.writeln(
       "import 'package:khatir/core/data/model/${prefix}_model_new_order.dart';");
-  buf.writeln(
-      "import 'package:khatir/core/data/model/enum_order.dart';");
+  buf.writeln("import 'package:khatir/core/data/model/enum_order.dart';");
   buf.writeln(
       "import 'package:khatir/core/data/static/text/${prefix}_text_ders_$rawName.dart';");
   buf.writeln();
@@ -441,7 +440,8 @@ String generateElmList({
     final fieldOrder = buildFieldOrder(pageFields);
 
     // Write page comment
-    if (RegExp(r'^(Two|One|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|therteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|twoTen)')
+    if (RegExp(
+            r'^(Two|One|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|therteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|twoTen)')
         .hasMatch(label)) {
       buf.writeln('  // $label');
     } else if (RegExp(r'^\d+$').hasMatch(label)) {
@@ -451,7 +451,8 @@ String generateElmList({
     }
 
     // Write ElmModelNewOrder
-    if (orderedTypes.length == 1 && typeFieldMap[orderedTypes.first]!.length <= 3) {
+    if (orderedTypes.length == 1 &&
+        typeFieldMap[orderedTypes.first]!.length <= 3) {
       // Single-line format for simple pages
       final t = orderedTypes.first;
       final fields = typeFieldMap[t]!;
@@ -553,7 +554,8 @@ ParsedSource? processFile(String filePath, {bool verbose = false}) {
   // elm_text_ders_pre.dart → pre
   // elm_text_ders_one.dart → one → 1
   // elm_text_ders_final.dart → final
-  final nameMatch = RegExp(r'(?:elm|khatira)_text_ders_(.+)\.dart').firstMatch(filename);
+  final nameMatch =
+      RegExp(r'(?:elm|khatira)_text_ders_(.+)\.dart').firstMatch(filename);
   if (nameMatch == null) {
     stderr.writeln('  ERROR: Cannot extract name from $filename');
     return null;
@@ -608,6 +610,99 @@ ParsedSource? processFile(String filePath, {bool verbose = false}) {
 }
 
 // ============================================================
+// Text File Fixer (--fix-text mode)
+// ============================================================
+
+void fixTextFiles(List<FileSystemEntity> textFiles,
+    {bool dryRun = false, bool verbose = false}) {
+  for (final file in textFiles) {
+    final filePath = file.path;
+    final filename = filePath.split('/').last;
+    var source = File(filePath).readAsStringSync();
+
+    if (verbose) stderr.writeln('Fixing: $filename');
+
+    // 1. Fix class name (safeguard)
+    source = source.replaceAllMapped(
+      RegExp(r'class\s+Elm(\w+)\s*\{'),
+      (m) => 'class Khatira${m.group(1)} {',
+    );
+
+    // 2. Rename elmText → khatiraText in all field names
+    source = source.replaceAll('elmText', 'khatiraText');
+
+    // 3. Fix FInal → Final in field names and class refs
+    source = source.replaceAll('FInal', 'Final');
+
+    // 4. Add static const String to fields that lack explicit type
+    source = source.replaceAllMapped(
+      RegExp(r'^(\s*)const\s+(\w+)\s*=\s*"""', multiLine: true),
+      (m) => '${m.group(1)}static const String ${m.group(2)} = """',
+    );
+
+    // 5. Standardize page markers to // page N
+    // Collect all matches with their positions using simple lists
+    final starts = <int>[];
+    final ends = <int>[];
+    final texts = <String>[];
+    var searchPos = 0;
+    while (searchPos < source.length) {
+      final m = pageDelimiter.firstMatch(source.substring(searchPos));
+      if (m == null) break;
+      starts.add(searchPos + m.start);
+      ends.add(searchPos + m.end);
+      texts.add(m.group(0)!);
+      searchPos += m.end;
+    }
+
+    // Filter: bare numbers after first worded are sub-references
+    final firstWordedIdx = () {
+      for (var i = 0; i < texts.length; i++) {
+        if (wordedDelimiter.hasMatch(texts[i])) return i;
+      }
+      return -1;
+    }();
+
+    final keepIdx = <int>{};
+    if (firstWordedIdx >= 0) {
+      for (var i = 0; i < firstWordedIdx; i++) keepIdx.add(i);
+      for (var i = firstWordedIdx; i < texts.length; i++) {
+        if (wordedDelimiter.hasMatch(texts[i])) keepIdx.add(i);
+      }
+    } else {
+      for (var i = 0; i < texts.length; i++) keepIdx.add(i);
+    }
+
+    // Replace from last to first to preserve positions
+    // Count backwards since we're iterating from end to start
+    final sortedIdxs = keepIdx.toList()..sort();
+    var pageNum = sortedIdxs.length;
+    for (var i = sortedIdxs.length - 1; i >= 0; i--) {
+      final idx = sortedIdxs[i];
+      final replacement = '// page $pageNum';
+      source =
+          '${source.substring(0, starts[idx])}$replacement${source.substring(ends[idx])}';
+      pageNum--;
+    }
+
+    // 6. Remove dev artifacts
+    source = source.replaceAll(RegExp(r'//\s*copilot.*$', multiLine: true), '');
+    source = source.replaceAll('...existing code...', '');
+    source = source.replaceAll(RegExp(r'\n{3,}'), '\n\n');
+
+    if (verbose) {
+      stderr.writeln('  Done: $filename');
+    }
+
+    if (!dryRun) {
+      File(filePath).writeAsStringSync(source);
+    } else {
+      stderr.writeln('  Dry-run: $filename (dry-run, not written)');
+    }
+  }
+}
+
+// ============================================================
 // Main
 // ============================================================
 
@@ -631,8 +726,26 @@ void main(List<String> args) {
 
   final dryRun = args.contains('--dry-run');
   final verbose = args.contains('--verbose');
+  final fixText = args.contains('--fix-text');
   final renameToKhatira = args.contains('--rename-prefix') &&
       args[args.indexOf('--rename-prefix') + 1] == 'khatira';
+
+  // --fix-text mode: normalize text files (rename fields, fix typos, standardize markers)
+  if (fixText) {
+    if (verbose) {
+      stderr.writeln('FIX-TEXT mode');
+      stderr.writeln('Found ${textFiles.length} text files');
+      stderr.writeln('Dry run: $dryRun');
+    }
+    fixTextFiles(textFiles, dryRun: dryRun, verbose: verbose);
+    if (dryRun) {
+      stderr.writeln(
+          '\nDry-run complete. ${textFiles.length} files would be fixed.');
+    } else {
+      stderr.writeln('\nDone. ${textFiles.length} text files fixed.');
+    }
+    return;
+  }
 
   if (verbose) {
     stderr.writeln('Found ${textFiles.length} text files');
@@ -664,8 +777,7 @@ void main(List<String> args) {
     );
 
     final prefix = renameToKhatira ? 'khatira' : 'elm';
-    final outputFilename =
-        '${prefix}_list_${parsed.fileName}_new_order.dart';
+    final outputFilename = '${prefix}_list_${parsed.fileName}_new_order.dart';
     final outputPath = '$scratchDir/$outputDir/$outputFilename';
 
     if (dryRun) {
@@ -676,15 +788,14 @@ void main(List<String> args) {
       print('  ---');
     } else {
       File(outputPath).writeAsStringSync(output);
-      stderr.writeln(
-          '  Wrote: $outputFilename (${parsed.pages.length} pages)');
+      stderr.writeln('  Wrote: $outputFilename (${parsed.pages.length} pages)');
     }
   }
 
   if (dryRun) {
     stderr.writeln('\nDry-run complete. ${textFiles.length} files processed.');
   } else {
-    stderr.writeln(
-        '\nDone. ${textFiles.length} files generated in $outputDir/');
+    stderr
+        .writeln('\nDone. ${textFiles.length} files generated in $outputDir/');
   }
 }

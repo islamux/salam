@@ -11,8 +11,8 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
     ],
     texts: [
       KhatiraTextDersTen.elmTexTenOne_1,
-      KhatiraTextDersTen.elmTextTenOne_2,
-      KhatiraTextDersTen.elmTextTenOne_3,
+      KhatiraTextDersTen.khatiraTextTenOne_2,
+      KhatiraTextDersTen.khatiraTextTenOne_3,
     ],
     ayahs: [
       KhatiraTextDersTen.ayahHadithTenOne_1,
@@ -33,7 +33,7 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
       KhatiraTextDersTen.ayahHadithTenTwo_1,
     ],
     texts: [
-      KhatiraTextDersTen.elmTextTenTwo_1,
+      KhatiraTextDersTen.khatiraTextTenTwo_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -50,8 +50,8 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
       KhatiraTextDersTen.ayahHadithTenThree_2,
     ],
     texts: [
-      KhatiraTextDersTen.elmTextTenThree_1,
-      KhatiraTextDersTen.elmTextTenThree_2,
+      KhatiraTextDersTen.khatiraTextTenThree_1,
+      KhatiraTextDersTen.khatiraTextTenThree_2,
     ],
     order: [
       EnOrder.titles,
@@ -67,7 +67,7 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
       KhatiraTextDersTen.ayahHadithTenFour_1,
     ],
     texts: [
-      KhatiraTextDersTen.elmTextTenFour_1,
+      KhatiraTextDersTen.khatiraTextTenFour_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -81,7 +81,7 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
       KhatiraTextDersTen.ayahHadithTenFive_2,
     ],
     texts: [
-      KhatiraTextDersTen.elmTextTenFive_1,
+      KhatiraTextDersTen.khatiraTextTenFive_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -92,7 +92,7 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
   // 6
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTen.elmTextTenSix_1,
+      KhatiraTextDersTen.khatiraTextTenSix_1,
     ],
     ayahs: [
       KhatiraTextDersTen.ayahHadithTenSix_1,
@@ -105,9 +105,9 @@ List<KhatiraModelNewOrder> khatiraList10NewOrder = [
   // 7
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersTen.elmTextTenSeven_1,
-      KhatiraTextDersTen.elmTextTenSeven_2,
-      KhatiraTextDersTen.elmTextTenSeven_3,
+      KhatiraTextDersTen.khatiraTextTenSeven_1,
+      KhatiraTextDersTen.khatiraTextTenSeven_2,
+      KhatiraTextDersTen.khatiraTextTenSeven_3,
     ],
     ayahs: [
       KhatiraTextDersTen.ayahHadithTenSeven_1,
