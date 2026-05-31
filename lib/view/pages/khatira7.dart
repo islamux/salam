@@ -80,20 +80,22 @@ class Khatira7Page extends StatelessWidget {
                   },
                   icon: const Icon(Icons.add),
                 ),
-                              IconButton(
+                IconButton(
                   onPressed: () {
                     showSearch(context: context, delegate: DataSearch());
                   },
                   icon: const Icon(Icons.search),
                 ),
-],
+              ],
             ),
             body: SafeArea(
-              child: GestureDetector( // GestureDetector can likely be removed if not needed for other purposes
+              child: GestureDetector(
+                // GestureDetector can likely be removed if not needed for other purposes
                 onTap: () {
                   Feedback.forTap(context);
                 },
-                child: GenericCustomTextSlider( // Changed
+                child: GenericCustomTextSlider(
+                  // Changed
                   cubit: context.read<Khatira7Cubit>(),
                   dataList: khatiraList7NewOrder,
                   backgroundImagePath: ImageLink.image12,

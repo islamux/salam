@@ -6,7 +6,7 @@ import urllib.request
 import json
 
 BASE = '/media/islamux/Variety/Flutter_Projects/salam/lib/core/data/static/text/'
-f = BASE + 'elm_text_ders_twenty_six.dart'
+f = BASE + 'khatira_text_ders_twenty_six.dart'
 
 def fetch_uthmani(surah, ayah):
     url = f'http://api.alquran.cloud/v1/ayah/{surah}:{ayah}/quran-uthmani'

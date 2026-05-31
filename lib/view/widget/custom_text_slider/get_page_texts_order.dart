@@ -3,7 +3,8 @@ import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/core/data/static/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
-List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
+List<TextSpan> getPageTexts(
+    int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
   final khatiraModel = khatiraList[pageIndex];
   final List<TextSpan> spans = [];
   // AppTheme Appthem = AppTheme();
@@ -17,7 +18,8 @@ List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraLis
   for (var orderItem in khatiraModel.order) {
     switch (orderItem) {
       case EnOrder.titles:
-        if (khatiraModel.titles != null && titleIndex < khatiraModel.titles!.length) {
+        if (khatiraModel.titles != null &&
+            titleIndex < khatiraModel.titles!.length) {
           spans.add(TextSpan(
               text: khatiraModel.titles![titleIndex],
               style: AppTheme.customTextStyleTitle));
@@ -26,7 +28,8 @@ List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraLis
         break;
 
       case EnOrder.subtitles:
-        if (khatiraModel.subtitles != null && subtitleIndex < khatiraModel.subtitles!.length) {
+        if (khatiraModel.subtitles != null &&
+            subtitleIndex < khatiraModel.subtitles!.length) {
           spans.add(TextSpan(
               text: khatiraModel.subtitles![subtitleIndex],
               style: AppTheme.customTextStyleSubtitle));
@@ -35,14 +38,17 @@ List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraLis
         break;
 
       case EnOrder.texts:
-        if (khatiraModel.texts != null && textIndex < khatiraModel.texts!.length) {
-          spans.add(TextSpan(text: khatiraModel.texts![textIndex], style: null));
+        if (khatiraModel.texts != null &&
+            textIndex < khatiraModel.texts!.length) {
+          spans
+              .add(TextSpan(text: khatiraModel.texts![textIndex], style: null));
           textIndex++;
         }
         break;
 
       case EnOrder.ayahs:
-        if (khatiraModel.ayahs != null && ayahIndex < khatiraModel.ayahs!.length) {
+        if (khatiraModel.ayahs != null &&
+            ayahIndex < khatiraModel.ayahs!.length) {
           spans.add(TextSpan(
               text: khatiraModel.ayahs![ayahIndex],
               style: AppTheme.customTextStyleHadith));
@@ -53,7 +59,8 @@ List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraLis
       case EnOrder.footer:
         if (khatiraModel.footer != null) {
           spans.add(TextSpan(
-              text: khatiraModel.footer, style: AppTheme.customTextStyleFooter));
+              text: khatiraModel.footer,
+              style: AppTheme.customTextStyleFooter));
         }
         break;
     }

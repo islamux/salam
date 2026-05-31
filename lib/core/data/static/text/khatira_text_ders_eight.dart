@@ -5,7 +5,7 @@ class KhatiraTextDersEight {
  -----------
 """;
 
-  static const String elmTextEightOne_1 = """
+  static const String khatiraTextEightOne_1 = """
 الشعور أن الله معك شعور لا يقدر بثمن
 
 طبعا الله مع كل إنسان، هذه عامه لا ميزه فيها للإنسان 
@@ -18,7 +18,7 @@ class KhatiraTextDersEight {
 """;
 
   // page 2
-  static const String elmTextEightTwo_1 = """
+  static const String khatiraTextEightTwo_1 = """
 أما المعيه الخاصه 
 """;
 
@@ -39,14 +39,14 @@ class KhatiraTextDersEight {
 سورة العنكبوت
 """;
 
-  static const String elmTextEightTwo_2 = """
+  static const String khatiraTextEightTwo_2 = """
 هذه معيه خاصه  معية الحفظ  معية التوفيق  معية العطف  والرعايه  والنصر  والتأييد
 
 فالبطل هو اللذي يجتهد ليستحق أن يكون الله معه
 """;
 
   // page 3
-  static const String elmTextEightThree_1 = """
+  static const String khatiraTextEightThree_1 = """
 العوام يقولون: خاطرك ، الله معك
 ٌ
 هذه العباده كلمة( الله معك ) ليست قليله
@@ -64,7 +64,7 @@ class KhatiraTextDersEight {
   فَإِذَا خِفۡتِ عَلَیۡهِ 
 """;
 
-  static const String elmTextEightFour_1 = """
+  static const String khatiraTextEightFour_1 = """
 إذا خفت: أي ساورك خوف وقلق عليه فألقيه في اليم
 
 رسولنا الكريم وهو مختبئ في الغار ماذا قال لصاحبه
@@ -76,7 +76,7 @@ class KhatiraTextDersEight {
 """;
 
   // page 5
-  static const String elmTextEightFive_1 = """
+  static const String khatiraTextEightFive_1 = """
 ماذا اراد كفار قريش ؟ ارادو قتل النبي صلى الله عليه وسلم  أخرجوه  قاتلوه  حاربوه  فلما شاهدهم النبي صلى الله عليه وسلم
 :قال
 """;
@@ -93,16 +93,15 @@ class KhatiraTextDersEight {
 خلاصة الخلاصه
 -----------
  """;
-  static const String elmTextDersEightSix_1 = """
+  static const String khatiraTextDersEightSix_1 = """
  عندما تكون مستقيما تصيبك العنايه الإلهيه
 
 البطوله أن تكون على المنهج ، لإنك إن لم تكن على المنهج الصحيح فإن أقرب الناس إليك يقضي عليك ، أقرب الناس إليك يتنكر لك ، لإن كل من حولك بيد الله عز وجل ، فلذلك الإنسان العاقل لا ينجيه من الله إلا أن يكون مع الله
 
-
   """;
 
   // page 7
-  static const String elmTextDersEigthtSeven_1 = """
+  static const String khatiraTextDersEigthtSeven_1 = """
 لاينجيه من الله إلا أن يكون وقافا عند أمر الله  أما ذكاؤه ، حيلته ، خبرته ، قوته ، جمعه ، هذا كله لا قيمة له عند الله عز وجل ، لإنه يؤتى الحذر من مأمنه ،  *وعلى نفسها جنت براقش ، وإذا اراد الله إنفاذ أمر أخذ من كل ذي لب لبه ، فإذا أراد الله أن يكرمك ألقى حبك في قلوبهم ، وإذا أراد أن يؤدبك ألقى البغض والشك في قلوبهم ، فإذا هم يتنكرون لك
 فإذا كنت بطلا فكن مع القوي ، والله هو القوي ، الله أبدي سرمدي قوي فكن معه ليكن معك
 
@@ -125,7 +124,7 @@ class KhatiraTextDersEight {
    قُلۡنَا يَٰنَارُ كُونِى بَرۡدًۭا وَسَلَٰمًا عَلَىٰٓ إِبۡرَٰهِيمَ ۝٦٩
 سورة الأنبياء
 """;
-  static const String elmTextEightEight_1 = """
+  static const String khatiraTextEightEight_1 = """
 أية قصه في القرآن الكريم ليست مقصوده لذاتها بل مطلوبة للعبرة التي يمكن أن تُستنبط منها لأن هذه العبرة يمكن أن تُطبق في حياتنا 
 
 """;
@@ -135,7 +134,7 @@ class KhatiraTextDersEight {
   static const String subtitleEightEight_2 = """
 معية الله للمؤمن في الشدة
 """;
-  static const String elmTextEightEight_2 = """
+  static const String khatiraTextEightEight_2 = """
 بشكل أو بأخر يمكن أن يواجه المؤمن صعوبة ، مشكلة ، خطراً ، شبح مصيبة ، أن يواجه مؤامرة مثلاً ، كيداً ، فالله جل جلاله يُبطل الكيد ، ويزيل الخطر ، ويصرف المرض ، هذه كرامة المؤمن على الله عز وجل ، لكن خرق العادات إذا جرى مع الانبياء فهو معجزة ، وإذا جرى مع المؤمنين فهو كرامة ، وهذا الذي عبر عنه الله جل جلاله في بعض الآيات الكريمة
  إذ يقول
 """;
@@ -143,13 +142,13 @@ class KhatiraTextDersEight {
   static const String ayahHadithEightNine_1 = """
   ( وَذَكِّرۡهُم بِأَيَّىٰمِ ٱللَّهِ ۝٥ ) 
 """;
-  static const String elmTextEightNine_1 = """
+  static const String khatiraTextEightNine_1 = """
 يوم دعوته وقد احكمت حلقاتُ المصيبة ، فاستجاب لك ، وفرج عنك 
 """;
   static const String ayahHadithEightNine_2 = """
   ( وَمَن يَتَّقِ ٱللَّهَ يَجۡعَل لَّهُۥ مَخۡرَجࣰا ۝٢ ) 
 """;
-  static const String elmTextEightNine_2 = """
+  static const String khatiraTextEightNine_2 = """
 كلمة " مخرج " تعني أن الأمور مغلقة ، الحلقة محكمة ، الأبواب مُغلقة ، السُبُل مسدودة ، الطرق موصدة ، كلمة: " يجعل له مخرجا " ، أي بعد إذ لم يكن هناك مخرج ، الحلقات محكمة ، الطرق كلها مسدودة ، فلذلك هذه القصة ليست مقصودة لذاتها ؛ بل يجب أن نستنبط منها أن الله سبحانه وتعالى ينجي المؤمنين 
 
 فيما يشبهها قصة سيدنا يونس عليه وعلى نبينا افضل الصلاة والسلام حينما كان في بطن الحوت ، في ظلمات ثلاث 
@@ -160,13 +159,13 @@ class KhatiraTextDersEight {
    فَنَادَىٰ فِى ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ ۝٨٧فَٱسۡتَجَبۡنَا لَهُۥ وَنَجَّيۡنَٰهُ مِنَ ٱلۡغَمِّ ۝٨٨
 سورة الأنبياء
 """;
-  static const String elmTextEightTen_1 = """
+  static const String khatiraTextEightTen_1 = """
 الآن ربنا عز وجل أراد من هذه القصة أن يجعلها قانوناً ، قال  
 """;
   static const String ayahHadithEightTen_2 = """
   ( وَكَذَٰلِكَ نُۨجِى ٱلۡمُؤۡمِنِينَ ۝٨٨ ) 
 """;
-  static const String elmTextEightTen_2 = """
+  static const String khatiraTextEightTen_2 = """
 وكذلك كلما ضاقت بك الأمور ، كلما استحكمت حلقات المصائب ، كلما رأيت الطرق مسدودة ، كلما رأيت المعابر موصدة ، كلما رأيت أن الأمر ضاق ، لعل الله جل جلاله يخرق لك العادات ، وينجيك من عدوك ، ومما يحاك لك ، وأنت لا تدري 
 
 إذاً : كن مع الله تر الله معك ، أخلص له تشعر انه معك ؛ معك بالتأييد ، ومعك بالنصر ، ومعك بالتوفيق ، ومعك بالحفظ 

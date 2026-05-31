@@ -72,7 +72,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 4
+  // 3
   KhatiraModelNewOrder(
     texts: [
       KhatiraTextTwentyThree.textTwentyThreePageFour_1,
@@ -95,7 +95,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 5
+  // 4
   KhatiraModelNewOrder(
     subtitles: [
       KhatiraTextTwentyThree.subtitleTwentyThreePageFive_1,
@@ -114,7 +114,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 6
+  // 5
   KhatiraModelNewOrder(
     ayahs: [
       KhatiraTextTwentyThree.ayahHadithTwentyThreePageSix_1,
@@ -133,7 +133,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 7
+  // 6
   KhatiraModelNewOrder(
     texts: [
       KhatiraTextTwentyThree.textTwentyThreePageSeven_1,
@@ -170,7 +170,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.ayahs,
     ],
   ),
-  // 8
+  // 7
   KhatiraModelNewOrder(
     texts: [
       KhatiraTextTwentyThree.textTwentyThreePageEight_1,
@@ -189,7 +189,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 9
+  // 8
   KhatiraModelNewOrder(
     ayahs: [
       KhatiraTextTwentyThree.ayahHadithTwentyThreePageNine_1,
@@ -210,7 +210,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 10
+  // 9
   KhatiraModelNewOrder(
     ayahs: [
       KhatiraTextTwentyThree.ayahHadithTwentyThreePageTen_1,
@@ -229,7 +229,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.ayahs,
     ],
   ),
-  // 11
+  // 10
   KhatiraModelNewOrder(
     titles: [
       KhatiraTextTwentyThree.titleTwentyThreePageEleven_1,
@@ -256,7 +256,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 12
+  // 11
   KhatiraModelNewOrder(
     titles: [
       KhatiraTextTwentyThree.titleTwentyThreePageTwelve_1,
@@ -316,7 +316,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 15
+  // 13
   KhatiraModelNewOrder(
     titles: [
       KhatiraTextTwentyThree.titleTwentyThreePageFifteen_1,
@@ -413,7 +413,7 @@ List<KhatiraModelNewOrder> khatiraList23NewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 20
+  // 18
   KhatiraModelNewOrder(
     ayahs: [
       KhatiraTextTwentyThree.ayahTwentyThreePageTwenty_1,

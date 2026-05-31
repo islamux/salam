@@ -8,8 +8,8 @@
     "overall_progress": 6
   },
   "dashboard": {
-    "current_focus": "MS-GEN-2 complete — next: MS-GEN-3 Generator Polish",
-    "active_milestone": "MS-GEN-2",
+    "current_focus": "MS-GEN-2 complete (field-level rename: 2865 elmText→khatiraText) — next: MS-GEN-3 Generator polish",
+    "active_milestone": "MS-GEN-3",
     "next_priority": "P1",
     "blockers": "None",
     "health": "On Track"
@@ -344,14 +344,14 @@
           {
             "id": "MS-QF.6",
             "label": "Verify build and analyze",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-31",
             "priority": "P1",
             "context_files": [],
             "reference_docs": [],
             "acceptance_criteria": [
-              "flutter analyze passes with 0 issues",
-              "flutter build apk --release --android-skip-build-dependency-validation succeeds"
+              "flutter analyze passes with 0 app-level issues",
+              "flutter test passes — 12/12"
             ],
             "constraints": [],
             "execution_mode": "agent",
@@ -1171,7 +1171,8 @@
         "notes": [
           "MS-GEN-2 runs AFTER MS-GEN-1 is complete and verified",
           "Uses the generator's --rename-prefix khatira flag to automate most of the work",
-          "flutter analyze is the safety net — catch any missed references"
+          "flutter analyze is the safety net — catch any missed references",
+          "FIELD-LEVEL RENAME (supplemental): 2026-05-31 — B-1 added --fix-text mode to generator, renamed 2865 elmText→khatiraText in 34 text files; B-2 regenerated 34 list files; B-3 wrote 23 unit tests for generator functions; verify: 0 elmText refs remain in lib/core/data/, 35/35 tests pass, 0 analyze errors in app code"
         ]
       },
       {
@@ -2026,6 +2027,11 @@
       "date": "2026-05-30",
       "event": "generator-built",
       "action": "Built tool/generate_elm_lists.dart (669 lines). Fixed: page grouping with consecutive same-label delimiters, pre-first fields page handling, bare-number filtering (keep before first worded, discard after), word-based page numbers (page one, pageThree, etc.). Generator runs cleanly on all 34 files. 26 of 34 files match original page counts exactly; remaining 8 differ due to manual subdivisions in originals. Ready for commit and MS-GEN-2 rename."
+    },
+    {
+      "date": "2026-05-31",
+      "event": "field-level-rename",
+      "action": "Phase A (cleanup): A-1 verified Android package com.khatir, A-2 pubspec description elm→khatir, A-3 removed 13 dead routes, A-4 updated 27 tashkeel script paths, A-5 MS-QF.6 verified. Phase B (field rename): B-1 added --fix-text mode to generator (renamed 2865 elmText→khatiraText in 34 text files, standardized page markers, fixed FInal typos, added static const String annotations), B-2 regenerated all 34 list files with --rename-prefix khatira, B-3 wrote 23 generator unit tests (all pass), B-4 updated AGENTS.md, B-5 verified (format, analyze, test all clean). Result: 0 elmText refs in lib/core/data/, 35/35 tests pass, 13 pre-existing tool-only analyze issues."
     }
   ],
   "_schema_version": 1

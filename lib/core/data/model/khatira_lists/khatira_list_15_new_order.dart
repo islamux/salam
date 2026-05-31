@@ -13,7 +13,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.ayahHadithFifteenOne_1,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenOne_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenOne_1,
     ],
     order: [
       EnOrder.titles,
@@ -24,7 +24,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
   // 2
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenTwo_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenTwo_1,
     ],
     ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenTwo_1,
@@ -39,8 +39,8 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
   // 3
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenThree_1,
-      KhatiraTextDersFifteen.elmTextFifteenThree_2,
+      KhatiraTextDersFifteen.khatiraTextFifteenThree_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenThree_2,
     ],
     ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenThree_1,
@@ -58,7 +58,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.ayahHadithFifteenFour_2,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenFour_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenFour_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -72,7 +72,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.titleFifteenFive,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenFive_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenFive_1,
     ],
     ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenFive_1,
@@ -86,7 +86,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
   // 6
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenSix_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenSix_1,
     ],
     ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenSix_1,
@@ -99,15 +99,19 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
     ],
   ),
   // 7
-  KhatiraModelNewOrder(texts: [KhatiraTextDersFifteen.elmTextFifteenSeven_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersFifteen.khatiraTextFifteenSeven_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 8
   KhatiraModelNewOrder(
     titles: [
       KhatiraTextDersFifteen.titleFifteenEight,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenEight_1,
-      KhatiraTextDersFifteen.elmTextFifteenEight_2,
+      KhatiraTextDersFifteen.khatiraTextFifteenEight_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenEight_2,
     ],
     ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenEight_1,
@@ -125,7 +129,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.titleFifteenNine,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenNine_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenNine_1,
     ],
     order: [
       EnOrder.titles,
@@ -138,7 +142,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.ayahHadithFifteenTen_1,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenTen_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenTen_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -148,7 +152,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
   // 11
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenEleven_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenEleven_1,
     ],
     ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenEleven_1,
@@ -164,8 +168,8 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.titleFifteenTwelve,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenTwelve_1,
-      KhatiraTextDersFifteen.elmTextFifteenTwelve_2,
+      KhatiraTextDersFifteen.khatiraTextFifteenTwelve_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenTwelve_2,
     ],
     subtitles: [
       KhatiraTextDersFifteen.subtitleFifteenTwelve_1,
@@ -183,7 +187,7 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.titleFifteenThirteen_1,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenThirteen_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenThirteen_1,
     ],
     order: [
       EnOrder.titles,
@@ -198,9 +202,30 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
       KhatiraTextDersFifteen.ayahHadithFifteenFifteen_2,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenFourteen_1,
-      KhatiraTextDersFifteen.elmTextFifteenFifteen_1,
-      KhatiraTextDersFifteen.elmTextFifteenFifteen_2,
+      KhatiraTextDersFifteen.khatiraTextFifteenFourteen_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenFifteen_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenFifteen_2,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  // 15
+  KhatiraModelNewOrder(
+    ayahs: [
+      KhatiraTextDersFifteen.ayahHadithFifteenSixteen_1,
+      KhatiraTextDersFifteen.ayahHadithFifteenSixteen_2,
+      KhatiraTextDersFifteen.ayahHadithFifteenSixteen_3,
+    ],
+    texts: [
+      KhatiraTextDersFifteen.khatiraTextFifteenSixteen_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenSixteen_2,
+      KhatiraTextDersFifteen.khatiraTextFifteenSixteen_3,
     ],
     order: [
       EnOrder.ayahs,
@@ -214,31 +239,10 @@ List<KhatiraModelNewOrder> khatiraList15NewOrder = [
   // 16
   KhatiraModelNewOrder(
     ayahs: [
-      KhatiraTextDersFifteen.ayahHadithFifteenSixteen_1,
-      KhatiraTextDersFifteen.ayahHadithFifteenSixteen_2,
-      KhatiraTextDersFifteen.ayahHadithFifteenSixteen_3,
-    ],
-    texts: [
-      KhatiraTextDersFifteen.elmTextFifteenSixteen_1,
-      KhatiraTextDersFifteen.elmTextFifteenSixteen_2,
-      KhatiraTextDersFifteen.elmTextFifteenSixteen_3,
-    ],
-    order: [
-      EnOrder.ayahs,
-      EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.texts,
-    ],
-  ),
-  // 17
-  KhatiraModelNewOrder(
-    ayahs: [
       KhatiraTextDersFifteen.ayahHadithFifteenSeventeen_1,
     ],
     texts: [
-      KhatiraTextDersFifteen.elmTextFifteenSeventeen_1,
+      KhatiraTextDersFifteen.khatiraTextFifteenSeventeen_1,
     ],
     order: [
       EnOrder.ayahs,

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fix 40 ayahHadith fields in elm_text_ders_twenty_six.dart: Uthmani tashkeel."""
+"""Fix 40 ayahHadith fields in khatira_text_ders_twenty_six.dart: Uthmani tashkeel."""
 
 import re
 import urllib.request
@@ -37,7 +37,7 @@ SU = {
     40: 'غافر', 49: 'الحجرات', 59: 'الحشر', 79: 'النازعات',
 }
 
-f = BASE + 'elm_text_ders_twenty_six.dart'
+f = BASE + 'khatira_text_ders_twenty_six.dart'
 
 print("=== Fetching ayat from API ===")
 NEEDED = [

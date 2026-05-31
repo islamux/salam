@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fix 34 ayahHadith fields in elm_text_ders_twenty_four.dart: Uthmani tashkeel."""
+"""Fix 34 ayahHadith fields in khatira_text_ders_twenty_four.dart: Uthmani tashkeel."""
 
 import re
 
@@ -18,7 +18,7 @@ def replace_field(filepath, field_name, new_content):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(new_text)
 
-f = BASE + 'elm_text_ders_twenty_four.dart'
+f = BASE + 'khatira_text_ders_twenty_four.dart'
 
 print("=== Ders 24 ===")
 

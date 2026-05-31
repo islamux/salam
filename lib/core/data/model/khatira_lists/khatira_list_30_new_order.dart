@@ -20,7 +20,15 @@ List<KhatiraModelNewOrder> khatiraList30NewOrder = [
     ],
   ),
   // 2
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirty.textThirtyPageTwo_1, KhatiraTextDersThirty.textThirtyPageTwo_2, KhatiraTextDersThirty.textThirtyPageTwo_3], order: [EnOrder.texts, EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirty.textThirtyPageTwo_1,
+    KhatiraTextDersThirty.textThirtyPageTwo_2,
+    KhatiraTextDersThirty.textThirtyPageTwo_3
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
   // 3
   KhatiraModelNewOrder(
     texts: [
@@ -35,7 +43,19 @@ List<KhatiraModelNewOrder> khatiraList30NewOrder = [
     ],
   ),
   // 4
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirty.textThirtyPageFour_1, KhatiraTextDersThirty.textThirtyPageFour_2], order: [EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirty.textThirtyPageFour_1,
+    KhatiraTextDersThirty.textThirtyPageFour_2
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
   // 5
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirty.textThirtyPageFive_1, KhatiraTextDersThirty.textThirtyPageFive_2], order: [EnOrder.texts, EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirty.textThirtyPageFive_1,
+    KhatiraTextDersThirty.textThirtyPageFive_2
+  ], order: [
+    EnOrder.texts,
+    EnOrder.texts,
+  ]),
 ];

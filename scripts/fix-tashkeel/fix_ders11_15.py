@@ -20,7 +20,7 @@ def replace_field(filepath, field_name, new_content):
 
 # ===== DERS 11 =====
 print("=== Ders 11 ===")
-f11 = BASE + 'elm_text_ders_eleven.dart'
+f11 = BASE + 'khatira_text_ders_eleven.dart'
 
 # ayahHadithElevenOne_1: 3 verses - add ۝ to v1 (7:96) and v3 (5:66)
 replace_field(f11, 'ayahHadithElevenOne_1', """\
@@ -107,7 +107,7 @@ replace_field(f11, 'ayahHadithElevenEighteen_1', """\
 
 # ===== DERS 12 =====
 print("\n=== Ders 12 ===")
-f12 = BASE + 'elm_text_ders_twelve.dart'
+f12 = BASE + 'khatira_text_ders_twelve.dart'
 
 # ayahHadithTwelveOne_1: 68:4 partial - add ۝
 replace_field(f12, 'ayahHadithTwelveOne_1', """\
@@ -211,7 +211,7 @@ replace_field(f12, 'ayahHadithTwelveNineteen_6', """\
 
 # ===== DERS 13 =====
 print("\n=== Ders 13 ===")
-f13 = BASE + 'elm_text_ders_therteen.dart'
+f13 = BASE + 'khatira_text_ders_therteen.dart'
 
 # TherteenThree_2: 4:147 - add ۝
 replace_field(f13, 'ayahHadithTherteenThree_2', """\
@@ -267,7 +267,7 @@ replace_field(f13, 'ayahHadithTherteenTen_2', """\
 
 # ===== DERS 14 =====
 print("\n=== Ders 14 ===")
-f14 = BASE + 'elm_text_ders_fourteen.dart'
+f14 = BASE + 'khatira_text_ders_fourteen.dart'
 
 # FourteenThree_1: 2:25 partial - add ۝
 replace_field(f14, 'ayahHadithFourteenThree_1', """\
@@ -302,7 +302,7 @@ replace_field(f14, 'ayahHadithFourteenTen_3', """\
 
 # ===== DERS 15 =====
 print("\n=== Ders 15 ===")
-f15 = BASE + 'elm_text_ders_fifteen.dart'
+f15 = BASE + 'khatira_text_ders_fifteen.dart'
 
 # FifteenOne_1: 35:10 - add ۝
 replace_field(f15, 'ayahHadithFifteenOne_1', """\

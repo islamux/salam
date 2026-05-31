@@ -8,8 +8,8 @@ Fix ayahHadith fields in ders 8 and 9:
 
 import re
 
-DERS8 = '/media/islamux/Variety/Flutter_Projects/salam/lib/core/data/static/text/elm_text_ders_eight.dart'
-DERS9 = '/media/islamux/Variety/Flutter_Projects/salam/lib/core/data/static/text/elm_text_ders_nine.dart'
+DERS8 = '/media/islamux/Variety/Flutter_Projects/salam/lib/core/data/static/text/khatira_text_ders_eight.dart'
+DERS9 = '/media/islamux/Variety/Flutter_Projects/salam/lib/core/data/static/text/khatira_text_ders_nine.dart'
 
 
 def replace_field_content(filepath, field_name, new_content):

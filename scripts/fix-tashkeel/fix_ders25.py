@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fix 54 ayahHadith fields in elm_text_ders_twenty_five.dart: Uthmani tashkeel."""
+"""Fix 54 ayahHadith fields in khatira_text_ders_twenty_five.dart: Uthmani tashkeel."""
 
 import re
 
@@ -23,7 +23,7 @@ def replace_field(filepath, field_name, new_content):
         f.write(new_text)
 
 
-f = BASE + 'elm_text_ders_twenty_five.dart'
+f = BASE + 'khatira_text_ders_twenty_five.dart'
 
 print("=== Page One ===")
 # Hadith: اللهم لا عيش إلا عيش الآخرة + متفق عليه عن أنس

@@ -7,7 +7,8 @@ import 'package:flutter/material.dart';
 
 class TestPageCubit extends BasePageCubit {
   @override
-  List<Text> getShareText(int currentPageIndex, List<KhatiraModelNewOrder> elmList) {
+  List<Text> getShareText(
+      int currentPageIndex, List<KhatiraModelNewOrder> elmList) {
     return [Text('Test share text for page $currentPageIndex')];
   }
 
@@ -21,7 +22,7 @@ void main() {
 
     setUp(() {
       cubit = TestPageCubit();
-      
+
       testData = [
         KhatiraModelNewOrder(
           titles: ['Test Title 1', 'Test Title 2'],
@@ -37,7 +38,7 @@ void main() {
           order: [EnOrder.titles, EnOrder.texts],
         ),
       ];
-      
+
       cubit.khatiraList = testData;
     });
 

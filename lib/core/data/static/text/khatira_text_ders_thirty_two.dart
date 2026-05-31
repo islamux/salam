@@ -1,5 +1,5 @@
 class KhatiraTextDersThirtyTwo {
-  // page 1 
+  // page 1
   static const String titleThirtyTwoOne = """
 الاحساس بالنذالة شيء لا يطاق
 """;
@@ -10,7 +10,7 @@ class KhatiraTextDersThirtyTwo {
 {إنما أشكو بثي وحزني إلى الله وأعلم من الله ما لا تعلمون}
 """;
 
-  // page 2 
+  // page 2
   static const String textThirtyTwoTwo = """
 وقبل نهاية القصة
 """;
@@ -18,7 +18,7 @@ class KhatiraTextDersThirtyTwo {
 {فلما جاء البشير القاه على وجهه فارتد بصيرا قال ألم أقل لكم إني أعلم من الله ما لا تعلمون}
 """;
 
-  // page 3 
+  // page 3
   static const String textThirtyTwoThree = """
 بكى قلبي قبل عيني التي ذرفت دموعها لتسطر على خدي اعذب عبارات الحب والحزن والخجل من الله سبحانه وتعالي في آن واحد
 """;
@@ -38,17 +38,17 @@ class KhatiraTextDersThirtyTwo {
 ما ابكاني هو ان خيره الينا نازل وشرنا اليه صاعد
 """;
 
-  // page 7 
+  // page 7
   static const String textThirtyTwoSeven = """
 بكيت ولسان حالي يقول سبحانك ربي ما اعظمك سبحانك ربي ما اكرمك سبحانك ربي ما اعدلك سبحانك ربي ما ارحمك سبحانك ربي ما الطفك وما ارأفك
 """;
 
-  // page 8  
+  // page 8
   static const String textThirtyTwoEight = """
 سبحانك ماعبدناك حق عبادتك سبحانك ما قدرناك حق قدرك سبحانك ما شكرناك حق شكرك
 """;
 
-  // page 9 
+  // page 9
   static const String textThirtyTwoNine = """
 سبحانك ربنا والسماوات يوم القيامة مطويات بيمينك لا اله الا انت سبحانك إني كنت من الظالمين
 """;

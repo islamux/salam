@@ -10,8 +10,8 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageOne_1,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageOne_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageOne_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageOne_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageOne_2,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageOne_1,
@@ -34,8 +34,8 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageTwo_1,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTwo_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTwo_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTwo_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTwo_2,
     ],
     order: [
       EnOrder.ayahs,
@@ -53,11 +53,11 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageThree_2,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageThree_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageThree_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageThree_3,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageThree_4,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageThree_5,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageThree_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageThree_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageThree_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageThree_4,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageThree_5,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageThree_1,
@@ -87,9 +87,9 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageFour_1,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFour_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFour_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFour_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFour_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFour_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFour_3,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageFour_1,
@@ -117,10 +117,10 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageFive_5,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFive_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFive_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFive_3,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFive_4,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFive_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFive_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFive_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFive_4,
     ],
     order: [
       EnOrder.subtitles,
@@ -144,10 +144,10 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageSix_4,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSix_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSix_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSix_3,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSix_4,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSix_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSix_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSix_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSix_4,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageSix_1,
@@ -182,7 +182,7 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageSeven_2,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSeven_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSeven_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -201,8 +201,8 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageEight_2,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEight_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEight_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEight_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEight_2,
     ],
     order: [
       EnOrder.subtitles,
@@ -215,9 +215,9 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
   // 9
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageNine_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageNine_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageNine_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageNine_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageNine_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageNine_3,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageNine_1,
@@ -241,8 +241,8 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageTen_2,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTen_2,
     ],
     order: [
       EnOrder.subtitles,
@@ -258,9 +258,9 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageEleven_1,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEleven_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEleven_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEleven_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEleven_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEleven_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEleven_3,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageEleven_1,
@@ -282,8 +282,8 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageTwelve_2,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTwelve_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTwelve_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTwelve_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTwelve_2,
     ],
     order: [
       EnOrder.subtitles,
@@ -295,12 +295,12 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
   // 13
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTherteen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTherteen_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTherteen_3,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTherteen_4,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTherteen_5,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageTherteen_6,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTherteen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTherteen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTherteen_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTherteen_4,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTherteen_5,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageTherteen_6,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageTherteen_1,
@@ -329,11 +329,11 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageFourteen_1,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFourteen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFourteen_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFourteen_3,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFourteen_4,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFourteen_5,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFourteen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFourteen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFourteen_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFourteen_4,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFourteen_5,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageFourteen_1,
@@ -360,11 +360,11 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.subtitleTwentyFivePageFifteen_3,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFifteen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFifteen_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFifteen_3,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFifteen_4,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageFifteen_5,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFifteen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFifteen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFifteen_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFifteen_4,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageFifteen_5,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageFifteen_1,
@@ -394,7 +394,7 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageSixteen_2,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSixteen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSixteen_1,
     ],
     order: [
       EnOrder.ayahs,
@@ -410,9 +410,9 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageSeventeen_3,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSeventeen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSeventeen_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageSeventeen_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSeventeen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSeventeen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageSeventeen_3,
     ],
     subtitles: [
       KhatiraTextTwentyFive.subtitleTwentyFivePageSeventeen_1,
@@ -432,9 +432,9 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
   // 18
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEighteen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEighteen_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageEighteen_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEighteen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEighteen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageEighteen_3,
     ],
     ayahs: [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageEighteen_1,
@@ -457,9 +457,9 @@ List<KhatiraModelNewOrder> khatiraList25NewOrder = [
       KhatiraTextTwentyFive.ayahHadithTwentyFivePageNineteen_4,
     ],
     texts: [
-      KhatiraTextTwentyFive.elmTextTwentyFivePageNineteen_1,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageNineteen_2,
-      KhatiraTextTwentyFive.elmTextTwentyFivePageNineteen_3,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageNineteen_1,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageNineteen_2,
+      KhatiraTextTwentyFive.khatiraTextTwentyFivePageNineteen_3,
     ],
     order: [
       EnOrder.ayahs,

@@ -4,7 +4,7 @@ class KhatiraTextDersTwentyEight {
 لاااا تخف
 """;
 
-  // Page 1
+  // page 1
   static const String titleTwentyEightPageOne_1 = """
 لا تخف إنك انت الأعلى
 """;
@@ -20,7 +20,7 @@ class KhatiraTextDersTwentyEight {
 طه (68)
 """;
 
-  // Page 2
+  // page 2
   static const String textTwentyEightPageTwo_1 = """
 لطالما وأنك قد خلعت نعليك (رميت الدنيا وراء ظهرك) وشمرت عن ساعديك وامتثلت أمر الله
 """;
@@ -35,7 +35,7 @@ class KhatiraTextDersTwentyEight {
 طه (14)
 """;
 
-  // Page 3
+  // page 3
   static const String textTwentyEightPageThree_1 = """
 لطالما لسان حالك يقول وعجلت إليك ربي لترضى فلا تخف لأن ربك قد قالها من قبل
 """;
@@ -50,7 +50,7 @@ class KhatiraTextDersTwentyEight {
 القصص (31)
 """;
 
-  // Page 4
+  // page 4
   static const String textTwentyEightPageFour_1 = """
 وارفع يديك إلى السماء واخشع واخضع وأضرع فمن قال
 """;
@@ -65,7 +65,7 @@ class KhatiraTextDersTwentyEight {
 طه (36)
 """;
 
-  // Page 5
+  // page 5
   static const String textTwentyEightPageFive_1 = """
 لا تخف أن يفرط عليك أحد أو أن يطغى فربك هو رب موسى وهارون ولن يعجزه كل من هو على شاكلة فرعون وهو القائل
 """;
@@ -77,7 +77,7 @@ class KhatiraTextDersTwentyEight {
 طه (46)
 """;
 
-  // Page 6 
+  // page 6
   static const String textTwentyEightPageSix_1 = """
 عندما يكون يقينك كلا إن معي ربي سيهدين فلا تخاف دركا ولا تخشى
 """;
@@ -100,7 +100,7 @@ class KhatiraTextDersTwentyEight {
 يونس (103)
 """;
 
-  // Page  8)
+  // page 8)
   static const String textTwentyEightPageEight_1 = """
 ما عليك إلا أن تثق بربك العظيم وأن تصبر فربك العظيم القائل
 """;
@@ -122,7 +122,7 @@ class KhatiraTextDersTwentyEight {
 الطور (48)
 """;
 
-  // Page  9)
+  // page 9)
   static const String textTwentyEightPageNine_1 = """
 لا تخف وما يجب عليك هو أن تأخذ الكتاب بقوة وأن يقشعر جلدك لأحسن الحديث ثم يلين قلبك
 
@@ -138,7 +138,7 @@ class KhatiraTextDersTwentyEight {
 ال عمران (139)
 """;
 
-  // Page  10)
+  // page 10)
   static const String textTwentyEightPageTen_1 = """
 واعلم يقينا بأن
 """;
@@ -153,7 +153,7 @@ class KhatiraTextDersTwentyEight {
 الحج (38)
 """;
 
-  // Page  11)
+  // page 11)
   static const String titleTwentyEightPageEleven_1 = """
 لا تخف
 """;

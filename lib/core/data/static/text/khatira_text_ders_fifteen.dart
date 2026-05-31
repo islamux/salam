@@ -1,5 +1,5 @@
 class KhatiraTextDersFifteen {
-  // Page 1
+  // page 1
   static const String titleFifteenOne = """
   العزة لله 
   -------
@@ -10,7 +10,7 @@ class KhatiraTextDersFifteen {
 سورة فاطر 
 """;
 
-  static const String elmTextFifteenOne_1 = """
+  static const String khatiraTextFifteenOne_1 = """
 أنت كمؤمن يجب أن لا تعتز بغير الله
 لا تعتز بمسؤل في الدولة أو شيخ قبيلة أو حزب أو جماعة يجب أن يكون إعتزازك بالله الواحد القهار المهيمن القوي العزيز الجبار
 
@@ -25,7 +25,7 @@ class KhatiraTextDersFifteen {
   """;
 
 // page 2
-  static const String elmTextFifteenTwo_1 = """
+  static const String khatiraTextFifteenTwo_1 = """
 يجبر كل احد ولا يجبره أحد
 الإنسان بفطرته يحب دائماً أن يكون مع القوي ، فالمؤمن أحد اسباب قوته أنه معتز بالقوي
 المؤمن أحد اسباب قوته أن كل من حوله ومن فوقه ومن تحته بيد الله وأنه مع الله
@@ -48,7 +48,7 @@ class KhatiraTextDersFifteen {
 """;
 
 // page 3
-  static const String elmTextFifteenThree_1 = """
+  static const String khatiraTextFifteenThree_1 = """
 من كان مع الله العزيز كان عزيزاً
 كن مع القوي العزيز تكُن عزيزاً وتنجُ من كل هم وآلم
 
@@ -62,7 +62,7 @@ class KhatiraTextDersFifteen {
  فَلَمَّا جَاۤءَ أَمۡرُنَا نَجَّیۡنَا صَـٰلِحࣰا وَٱلَّذِینَ ءَامَنُوا۟ مَعَهُۥ بِرَحۡمَةࣲ مِّنَّا وَمِنۡ خِزۡیِ یَوۡمِئِذٍۚ إِنَّ رَبَّكَ هُوَ ٱلۡقَوِیُّ ٱلۡعَزِیزُ ۝٦٦ 
 هود 66 
 """;
-  static const String elmTextFifteenThree_2 = """
+  static const String khatiraTextFifteenThree_2 = """
 القوي الذي لا يُدان بقوته ، والعزيز اللذي لا يُنال جانبه
 
   """;
@@ -73,7 +73,7 @@ class KhatiraTextDersFifteen {
 
 """;
 
-  static const String elmTextFifteenFour_1 = """
+  static const String khatiraTextFifteenFour_1 = """
 الإنسان أحياناً يحصل مركزاً معيناً ، أو دخلاً معيناً ، أو تجارة معينة ، أو شأناً معيناً ، أو مكانة معينة ، ربما خاف على هذه المكانة ، هذا المركز ؛ فهو يرفض الحق حفاظاً على مركزه ، هناك عوامل كثيرة يرفضها ، وهناك أشخاص كثيرون يرفضون الدين ، لا كراهية في الدين ، لا لأنهم لم يقتنعوا به ، هم مقتنعون به ، ولكن يتوهمون لضعف إيمانهم أنهم إذا تدينوا ، أو إذا آمنوا ، أو إذا صلوا ، أو إذا تابوا ، أو إذا انضبطوا يخسرون مكانتهم أو مناصبهم ، أو دنياهم العريضة ، أو دخلهم الكبير ،أو مكانتهم في الأرض فهذا الوهم الخطير 
 :ربنا عز وجل بدده في هذه الآية قال
 """;
@@ -86,7 +86,7 @@ class KhatiraTextDersFifteen {
   static const String titleFifteenFive = """
 :العزة لا تُنال إلا من الله
 """;
-  static const String elmTextFifteenFive_1 = """
+  static const String khatiraTextFifteenFive_1 = """
 لا يمكن لما سوى الله أن يمنحك العزة  أية جهة سوى الله  أي إنسان  أي عظيم  أي غني  أي قوي  أية جهة على وجه الأرض لا يُمكن أن تمنحك العزة إلا الله 
 
 كفار قريش لماذا كفروا بمحمد صلى الله عليه وسلم ؟ 
@@ -99,7 +99,7 @@ class KhatiraTextDersFifteen {
 """;
 
 // page 6
-  static const String elmTextFifteenSix_1 = """
+  static const String khatiraTextFifteenSix_1 = """
 لماذا كفروا به إذاً حفاظاً على مكانتهم، حفاظاً على زعامتهم، حفاظاً على تجارتهم ، حفاظاً على انصراف الناس لهم  ماالذي حصل فيما بعد 
 هل بقيت لهم هذه المكانة ؟ 
 هل بقيت لهم هذه العزة ؟ 
@@ -119,7 +119,7 @@ class KhatiraTextDersFifteen {
 
   """;
 // page 7
-  static const String elmTextFifteenSeven_1 = """
+  static const String khatiraTextFifteenSeven_1 = """
 التاريخ بين أيدينا ، ماالذي حصل ؟ هؤلاء الذين قاوموا الدعوة ، وكفروا بها ، وكذبوا بها ، وسفهوا النبي الكريم وأصحابه حفاظاً على مكانتهم ، حفاظاً على وجاهتهم ، حفاظاً على تجارتهم ، ماالذي حصل ؟ خسروا بلدهم وشأنهم ألم يقف أبو سفيان في باب عمر بن الخطاب ساعات طويلة فلم يؤذن له ؟ 
 وصهيب وبلال يدخلان بلا استئذان ، فلما دخل عليه ، قال: زعيم قريش يقف ببابك ساعات طويلة ، ولا تأذن لي وهذان يدخلان متى يشاءان ، قال له: أنت مثلهما! من أنت أمامهما؟
 
@@ -128,14 +128,14 @@ class KhatiraTextDersFifteen {
   static const String titleFifteenEight = """
  :طاعة الله سبيل العزة
 """;
-  static const String elmTextFifteenEight_1 = """
+  static const String khatiraTextFifteenEight_1 = """
 إذا توهم الإنسان أنه بمعصية الله قد يرتفع ، وإذا توهم الإنسان أنه بترك الدين يملك عزة وكرامة فهذا هو عين الجهل هذا كلام واضح كالشمس
 """;
   static const String ayahHadithFifteenEight_1 = """
  مَن كَانَ یُرِیدُ ٱلۡعِزَّةَ فَلِلَّهِ ٱلۡعِزَّةُ جَمِیعًاۚ ۝١٠
 سورة فاطر 
 """;
-  static const String elmTextFifteenEight_2 = """
+  static const String khatiraTextFifteenEight_2 = """
 :وقد قيل
 من التمس رضا الله عنه بسخط الناس رضي الله عنه ، وأرضى عنه الناس ، ومن التمس رضا الناس بسخط الله ، سخط الله عليه وأسخط عليه الناس
 
@@ -144,7 +144,7 @@ class KhatiraTextDersFifteen {
   static const String titleFifteenNine = """
 :لا يملك العزة مخلوق
 """;
-  static const String elmTextFifteenNine_1 = """
+  static const String khatiraTextFifteenNine_1 = """
 لم يقل: فلله العزة ، هناك كلمة أساسية ، وهي جميعا ، العزة كلها من الله ، وما من مخلوق في الأرض يملك هذه العزة ، لا تجد جهة إذا مشيت معها تعطيك عزة ، الأمور بخواتيمها ، الأمور بما تستقر عليه ، طبعاً الله عز وجل جعل امتحانات كثيرة ، جهات أرضية كثيرة تمنحك العزة الظاهرة ، ولكن بعد حين يتخلون عنك ، فلذلك الإنسان الذي مع الحق ، موقفه قوي جداً ، موقعه قوي
 أما مع الباطل فهو عرضة لانهيار سريع
 
@@ -153,12 +153,12 @@ class KhatiraTextDersFifteen {
   static const String ayahHadithFifteenTen_1 = """
   فَلِلَّهِ ٱلۡعِزَّةُ جَمِیعًاۚ 
 """;
-  static const String elmTextFifteenTen_1 = """
+  static const String khatiraTextFifteenTen_1 = """
 إذا آمنت بالله كُنت عزيزاً ، وإذا استقمت على أمره كنت عزيزاً ، وإذا عملت الصالحات أحبك الناس فعظموك ، فكنت عزيزاً وإذا اتصلت بالله ، فذقت حلاوة القرب ، استغنيت عن مديح الناس لك، فكنت عزيزاً ، إذا كان عند الإنسان خواء روحي ، عنده جفاف روحي ، أحب أنه يسعد بالناس ، والاستئناس بالناس من علامات الإفلاس ، لما يصير للإنسان صلة بالله عز وجل يستغني بها عن الناس ، يستغني بها عن سقطاتهم ، عن اللقاء بهم لقاء ساذجاً ، وسخيفاً ، لقاءاته كلها تكون مثمرة
 
 """;
 // page 11
-  static const String elmTextFifteenEleven_1 = """
+  static const String khatiraTextFifteenEleven_1 = """
 حينما تؤمن فأنت عزيز ، وحدت ، لا تخاف في الله لومة لائم ، لا تنافق ، لا تكذب ، لا تدلس ، لا تتملق ، لا تخنع ، لا تخضع لما استقمت فما عليك مأخذ ، رافع الرأس دائماً ، قد تكون فقيراً وتحمل الحاجة بيدك ، وأنت رافع رأسك ، وقد تكون في أعلى درجات الغنى ، لكن الدخل مشبوه ، فأنت ذليل إذاً : الإيمان بالله ، الاستقامة على أمره ، والعمل الصالح والاتصال بالله عز وجل ، تُكسب الإنسان عزة
 """;
   static const String ayahHadithFifteenEleven_1 = """
@@ -170,13 +170,13 @@ class KhatiraTextDersFifteen {
   static const String titleFifteenTwelve = """
  :كل شيئ في الكون ملك لله
  """;
-  static const String elmTextFifteenTwelve_1 = """
+  static const String khatiraTextFifteenTwelve_1 = """
 الله جل جلاله ملكه ملك تام  يملك الشيئ خلقاً ، ويملكه تصرفاً ، ويملكه مصيراً
 """;
   static const String subtitleFifteenTwelve_1 = """
  :صحتك ملك لله
  """;
-  static const String elmTextFifteenTwelve_2 = """
+  static const String khatiraTextFifteenTwelve_2 = """
 أي شيئ تتمتع به فهو ملك الله عز وجل لك بيت ، عقلك ، أي عضو تتمتع به ملك الله ، أي جهاز تتمتع به ملك الله ، أية خبره تملكها هي ملك لله ، العلم ، الخبرة ، النسب ، الحسب ، الوسامه ، الذكاء ، الحكمة ، الصحة
 
 """;
@@ -185,7 +185,7 @@ class KhatiraTextDersFifteen {
   static const String titleFifteenThirteen_1 = """
  :مكانتك بيد الله
  """;
-  static const String elmTextFifteenThirteen_1 = """
+  static const String khatiraTextFifteenThirteen_1 = """
 مكانتك في المجتمع ملك لله عز وجل
 إن كنت تملك مكانة فهي ملك الله ، ملكك إياها  إن كنت تملك محبة الناس ، فمحبة الناس بالهام الله عز وجل
 عندك زوجة الله ملكك إياها عندك أولاد ابرار الله ملكك إياهم ، تتمتع بصحة طيبة ، الله ملكك إياها
@@ -202,7 +202,7 @@ class KhatiraTextDersFifteen {
  تُؤۡتِی ٱلۡمُلۡكَ مَن تَشَاۤءُ وَتَنزِعُ ٱلۡمُلۡكَ مِمَّن تَشَاۤءُ ۝٢٦
  سورة آل عمران 
 """;
-  static const String elmTextFifteenFourteen_1 = """
+  static const String khatiraTextFifteenFourteen_1 = """
 فهذا المعنى : إنك إن تمتعت بقوة ، أو إن تمتعت بصحة ، أو إن تمتعت بعقل ، أو إن تمتعت بذكاء ، أو إن تمتعت بخبرة ، أو إن تمتعت بأهل ، أو إن تمتعت بأولاد ، أو إن تمتعت ببيت ، كله من الله ، فكلما تعمقت في الإيمان وجدت أن الله هو كل شيئ ، وأن الله منحك كل شيئ ، وأن الله قادر على أن يسلبك كل شيئ
 
 ربما منعك فأعطاك ، وربما أعطاك فمنعك ، والله عز وجل حكيم ، إذا نزع منك الملك ثم كشفت لك حكمة نزع هذا الملك فينبغي أن تذوب محبة لله ، إن اعطاك الملك فلحكمة ، وإن نزع منك الملك فلحكمة ، قد تكون عقوبة ، والعقوبة نوع من التربية ، وقد تكون وقاية ، والوقاية نوع من التربية ، وقد تكون ابتلاء  والابتلاء رفع درجات ، على كلٍ يجب ان تعتقد أن كل شيئ فعله الله هو محض حكمة ومحض فضل
@@ -214,7 +214,7 @@ class KhatiraTextDersFifteen {
  وَتُعِزُّ مَن تَشَاۤءُ وَتُذِلُّ مَن تَشَاۤءُۖ ۝٢٦
  سورة آل عمران 
 """;
-  static const String elmTextFifteenFifteen_1 = """
+  static const String khatiraTextFifteenFifteen_1 = """
 فهذه الدنيا كل حال يزول ، قد تصيب عزاً ، وقد يذل الإنسان ، هذا يحي البرمكي كان الرجل الأول في الدولة العباسية ، إذا هو في السجن يُعذب ، فقال لبعض من حوله " لعل دعوة مظلوم أصابتنا ، ونحن عنه غافلون"
 
 وفرعون كان له ملك مصر
@@ -223,16 +223,16 @@ class KhatiraTextDersFifteen {
   فَقَالَ أَنَا۠ رَبُّكُمُ ٱلۡأَعۡلَىٰ ۝٢٤
 
 """;
-  static const String elmTextFifteenFifteen_2 = """
+  static const String khatiraTextFifteenFifteen_2 = """
 تورط ، وتبع سيدنا موسى في البحر ، ثم أدركه الغرق ، ولولا أن الموج لفظه إلى الشاطئ لتوهم أتباعه أنه صعد إلى السماء ، فإمعاناً في إذلاله قذفه الموج إلى الشاطئ  
   """;
 
-// page 16
+// page 15
   static const String ayahHadithFifteenSixteen_1 = """
 قُلِ ٱللَّهُمَّ مَـٰلِكَ ٱلۡمُلۡكِ تُؤۡتِی ٱلۡمُلۡكَ مَن تَشَاۤءُ وَتَنزِعُ ٱلۡمُلۡكَ مِمَّن تَشَاۤءُ وَتُعِزُّ مَن تَشَاۤءُ وَتُذِلُّ مَن تَشَاۤءُۖ ۝٢٦
  سورة آل عمران 
 """;
-  static const String elmTextFifteenSixteen_1 = """
+  static const String khatiraTextFifteenSixteen_1 = """
 :أجمل مافي الأية ، بحسب السياق
 """;
   static const String ayahHadithFifteenSixteen_2 = """
@@ -241,7 +241,7 @@ class KhatiraTextDersFifteen {
 ( وتعز من تشاء) 
 ( وتذل من تشاء) 
 """;
-  static const String elmTextFifteenSixteen_2 = """
+  static const String khatiraTextFifteenSixteen_2 = """
 الإذلال شر بمفهوم الأرض كان ينبغي بحسب السياق أن تكون الآية
  بيدك الخير والشر  
 :لكن الله عز وجل قال
@@ -249,17 +249,17 @@ class KhatiraTextDersFifteen {
   static const String ayahHadithFifteenSixteen_3 = """
   ( بيدك الخير ) 
 """;
-  static const String elmTextFifteenSixteen_3 = """
+  static const String khatiraTextFifteenSixteen_3 = """
 ماذا يستنبط ؟ يستنبط أن إيتاء الملك خير ، وان نزع الملك خير ، وأن الإعزاز خير ، وأن الإذلال خير
   """;
 
-// page 17
+// page 16
   static const String ayahHadithFifteenSeventeen_1 = """
  سُبۡحَـٰنَ رَبِّكَ رَبِّ ٱلۡعِزَّةِ عَمَّا یَصِفُونَ ۝١٨٠ 
 الصافات 180 
 
 """;
-  static const String elmTextFifteenSeventeen_1 = """
+  static const String khatiraTextFifteenSeventeen_1 = """
 عزة معنوية ، وعزة مادية ، هو رب العزة ، هو صاحب العزة ، فإذا أردت العزة فكن معه ، إن اردت العزة فلذ بحماه ، إن اردت العزة فاستعذ به
 
 إجعل لربك كُل عزك يستقر ويثبت

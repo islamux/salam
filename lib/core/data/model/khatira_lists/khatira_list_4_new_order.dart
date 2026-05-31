@@ -10,7 +10,7 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
       KhatiraTextDersFour.titleFourOne,
     ],
     texts: [
-      KhatiraTextDersFour.elmTextFourOne_1,
+      KhatiraTextDersFour.khatiraTextFourOne_1,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourOne_1,
@@ -22,15 +22,27 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
     ],
   ),
   // 2
-  KhatiraModelNewOrder(texts: [KhatiraTextDersFour.elmTextFourTwo_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersFour.khatiraTextFourTwo_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 3
-  KhatiraModelNewOrder(texts: [KhatiraTextDersFour.elmTextFourThree_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersFour.khatiraTextFourThree_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 4
-  KhatiraModelNewOrder(texts: [KhatiraTextDersFour.elmTextFourFour_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersFour.khatiraTextFourFour_1
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 5
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourFive_1,
+      KhatiraTextDersFour.khatiraTextFourFive_1,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourFive_1,
@@ -43,9 +55,9 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
   // 6
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourSix_1,
-      KhatiraTextDersFour.elmTextFourSix_2,
-      KhatiraTextDersFour.elmTextFourSix_3,
+      KhatiraTextDersFour.khatiraTextFourSix_1,
+      KhatiraTextDersFour.khatiraTextFourSix_2,
+      KhatiraTextDersFour.khatiraTextFourSix_3,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourSix_1,
@@ -62,7 +74,7 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
   // 7
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourSeven_1,
+      KhatiraTextDersFour.khatiraTextFourSeven_1,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourSeven_1,
@@ -75,7 +87,7 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
   // 8
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourEight_1,
+      KhatiraTextDersFour.khatiraTextFourEight_1,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourEight_1,
@@ -88,15 +100,15 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
   // 9
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourNine_1,
-      KhatiraTextDersFour.elmTextFourNine_2,
-      KhatiraTextDersFour.elmTextFourNine_3,
-      KhatiraTextDersFour.elmTextFourNine_4,
-      KhatiraTextDersFour.elmTextFourNine_5,
-      KhatiraTextDersFour.elmTextFourNine_6,
-      KhatiraTextDersFour.elmTextFourNine_7,
-      KhatiraTextDersFour.elmTextFourNine_8,
-      KhatiraTextDersFour.elmTextFourNine_9,
+      KhatiraTextDersFour.khatiraTextFourNine_1,
+      KhatiraTextDersFour.khatiraTextFourNine_2,
+      KhatiraTextDersFour.khatiraTextFourNine_3,
+      KhatiraTextDersFour.khatiraTextFourNine_4,
+      KhatiraTextDersFour.khatiraTextFourNine_5,
+      KhatiraTextDersFour.khatiraTextFourNine_6,
+      KhatiraTextDersFour.khatiraTextFourNine_7,
+      KhatiraTextDersFour.khatiraTextFourNine_8,
+      KhatiraTextDersFour.khatiraTextFourNine_9,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourNine_1,
@@ -137,14 +149,14 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
   // 10
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourTen_1,
-      KhatiraTextDersFour.elmTextFourTen_2,
-      KhatiraTextDersFour.elmTextFourTen_3,
-      KhatiraTextDersFour.elmTextFourTen_4,
-      KhatiraTextDersFour.elmTextFourTen_5,
-      KhatiraTextDersFour.elmTextFourTen_6,
-      KhatiraTextDersFour.elmTextFourTen_7,
-      KhatiraTextDersFour.elmTextFourTen_8,
+      KhatiraTextDersFour.khatiraTextFourTen_1,
+      KhatiraTextDersFour.khatiraTextFourTen_2,
+      KhatiraTextDersFour.khatiraTextFourTen_3,
+      KhatiraTextDersFour.khatiraTextFourTen_4,
+      KhatiraTextDersFour.khatiraTextFourTen_5,
+      KhatiraTextDersFour.khatiraTextFourTen_6,
+      KhatiraTextDersFour.khatiraTextFourTen_7,
+      KhatiraTextDersFour.khatiraTextFourTen_8,
     ],
     subtitles: [
       KhatiraTextDersFour.subtitleFourTen_1,
@@ -186,7 +198,7 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
   // 11
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextDersFour.elmTextFourEleven_1,
+      KhatiraTextDersFour.khatiraTextFourEleven_1,
     ],
     ayahs: [
       KhatiraTextDersFour.ayahHadithFourEleven_1,
@@ -202,7 +214,7 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
       KhatiraTextDersFour.subtitleFourTwelve_1,
     ],
     texts: [
-      KhatiraTextDersFour.elmTextFourTwelve_1,
+      KhatiraTextDersFour.khatiraTextFourTwelve_1,
     ],
     order: [
       EnOrder.subtitles,
@@ -210,5 +222,9 @@ List<KhatiraModelNewOrder> khatiraList4NewOrder = [
     ],
   ),
   // 13
-  KhatiraModelNewOrder(texts: [KhatiraTextDersFour.elmTextFourThirteen_1], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersFour.khatiraTextFourThirteen_1
+  ], order: [
+    EnOrder.texts,
+  ]),
 ];

@@ -13,7 +13,7 @@ class KhatiraTextDersThree {
 أَحَسِبَ ٱلنَّاسُ أَن یُتۡرَكُوۤا۟ أَن یَقُولُوۤا۟ ءَامَنَّا وَهُمۡ لَا یُفۡتَنُونَ ۝٢
 العنكبوت 
 """;
-  static const String elmTextThreeOne_2 = """
+  static const String khatiraTextThreeOne_2 = """
 ولأنهم  لايعرفون بأن الله وزع الحظوظ في الدنيا توزيع ابتلاء وفي الآخرة توزيع جزاء
 """;
   static const String ayahHadithThreeOne_2 = """
@@ -24,7 +24,7 @@ class KhatiraTextDersThree {
 """;
 
   /*----------- page 2 ------------ */
-  static const String elmTextThreeTwo_1 = """
+  static const String khatiraTextThreeTwo_1 = """
 الناس في الدنيا متفاوتون الصحة درجات، والشكل درجات، والقوة درجات، والمكانة الاجتماعية درجات، والذكاء درجات، والدخل درجات، وهكذا تقتضي الحكمة الإلهية أن يكون الناس درجات لاكن هذه الدرجات مؤقتة وقد يكون الفقير عند الله عز وجل أعظم  من أعلى مرتبة في الارض
 
 هناك تفضيل في الصحة وفي المال وفي الجمال وفي الذكاء وفي القوة وفي المكانة وفي كل شيء؛ الحياة مراتب لاكن هذه المراتب الدنيوية مؤقتة وتنتهي بالموت الله سبحانه وتعالى يمتحن كل إنسان ليرى صدقه من كذبه
@@ -36,7 +36,7 @@ class KhatiraTextDersThree {
 القصص 
  """;
 
-  static const String elmTextThreeTwo_2 = """
+  static const String khatiraTextThreeTwo_2 = """
 وكما قلنا سابقاً أن المال والملك ليس مقياس لحب الله فلقد أعطى قارون المال وهو لايحبه، وأعطى فرعون الملك وهو لايحبه أعطى الأنبياء العلم والحكمة وهو يحبهم فانظر عطائك من أي نوع؛ هناك من يملك الرقاب وهناك من يملك القلوب الأنبياء ��كمالهم ملكوا القلوب والأقوياء بقوتهم ملكوا الرقاب والأنبياء لهم أتباع والأقوياء لهم أتباع
 """;
 /* -------- page 3 -----------*/
@@ -52,49 +52,49 @@ class KhatiraTextDersThree {
 
 """;
 
-  static const String elmTextThreeThree_1 = """
+  static const String khatiraTextThreeThree_1 = """
 تأكلون التراث أي الإرث فالمنازعات الآن بين الأسر والعداوات والمحاكمات والقضاء مثقل بمشكلات  الإرث كل طرف يحب أن يأخذ كل الإرث وحده وأن يحرم الباقين ولايرضى المرء أن يأخذ ماله يريد أن يأخذ ماله ومال غيره وعلامة المؤمن أنه يكتفي بماله بما قسم له الله
 
 وأخيراً وليس آخراً عزيزي القارئ إذا أردت أن تعرف من هم الذين يحبهم الله انظر في درسنا القادم
 """;
-// page 4
+// page 1
   static const String titleThreeFour = """
 وففة 
 ----
 """;
 
-  static const String elmTextThreeFour_1 = """
+  static const String khatiraTextThreeFour_1 = """
 يجب أن تعلم علم اليقين أن الدنيا لا يمكن أن تكون مقياساً، لا إذا أعطاك الله إياها مقياس، ولا إذا منعها عنك مقياس، عرض حاضر يأكل منه البر والفاجر، والآخرة وعد صادق يحكم فيه ملك عادل، أعطاها لأعدائه، لم يرض أن تكون عطاءً لأوليائه
   """;
 
-  // page 5
+  // page 2
   static const String ayahHadithThreeFive_1 = """
 ( لو كانت الدنيا تعدل عند الله جناح بعوضة ما سقى كافراً منها شربة ماء ) 
 ( فأما الإنسان إذا ماابتلاه ربه فأكرمه ونعمه فيقول ربي اكرمن وأما إذا ما ابتلاه فقدر عليه رزقه فيقول ربي اهانن ) 
 """;
 
-  static const String elmTextThreeFive_1 = """
+  static const String khatiraTextThreeFive_1 = """
 الله قال: كلا، ردع ونفي، أي ياعبادي ليس عطائي إكراماً، ولا منعي إهانة، إن عطائي إبتلاء وحرماني دواء، هكذا ينبغي أن نفهم 
   """;
 
   static const String ayahHadithThreeFive_2 = """
 إن من عبادي من لا يصلح له إلا الغنى فإذا أفقرته أفسدت عليه دينه، وإن من عبادي من لا يصلح له إلا الفقر، فإذا أغنيته أفسدت عليه دينه 
   """;
-  static const String elmTextThreeFive_2 = """
+  static const String khatiraTextThreeFive_2 = """
 هناك حكمة إذا كُشفت رضيت بالواقع، لو كُشف الغطاء لاخترتم الواقع
 """;
 
-// page 6
+// page 3
   static const String ayahHadithThreeSix_1 = """
 ( قل أن ربي يبسط الرزق لمن يشاء ويقدر ) 
 """;
-  static const String elmTextThreeSix_1 = """
+  static const String khatiraTextThreeSix_1 = """
 أي يعطي بحكمة
 """;
   static const String ayahHadithThreeSix_2 = """
 ( ولكن أكثر الناس لا يعلمون ) 
 """;
-  static const String elmTextThreeSix_2 = """
+  static const String khatiraTextThreeSix_2 = """
 إن هذه الدنيا ليست عطاءً، ربما أعطاك فمنعه، ورُبما منعك فأعطاك، أحياناً الإنسان يسترسل بالمعاصي فربنا يؤدبه تأديباً شديداً، يحرمه من كُل الدنيا فيتوب إلى الله، هذا الحرمان عطاء، أعطاه الآخرة، أعطاه الجنة، ضيق عليك في الدنيا، حرمك إياها، فتبت إلى الله عز وجل، وأقبلت عليه فاستحققت دخول الجنة حرمك الدنيا وأعطاك الجنة وربما أعطاك الدنيا كما تشتهي، فأطغاك المال، وجعلك من أهل النار لا سمح الله ولا قدر إذاً هذا ليس عطاء، الأمور بخواتيمها، الأمور بنهاياتها الأمور عند الموت، الأمور بعد الموت
 هذا ماقاله سيدنا علي كرم الله وجهه 
   قال 
@@ -102,30 +102,30 @@ class KhatiraTextDersThree {
 
 """;
 
-// page 7
+// page 4
   static const String subtitleThreeSeven_1 = """
 الجمال في الدنيا موزع توزيع ابتلاء
 """;
-  static const String elmTextThreeSeven_1 = """
+  static const String khatiraTextThreeSeven_1 = """
 قد تجد امرأة صالحة مؤمنة تقية نقية طاهرة عفيفة بوضع جمالي دون الوسط، وقد تكون هذه المرأة في الجنة في أعلى عليين، هذه نقطة مهمة جداً.
 """;
 
-// page 8
+// page 5
   static const String subtitleThreeEight_1 = """
 توزيع الحظوظ في الدنيا ابتلاء وفي الآخرة جزاء
 """;
-  static const String elmTextThreeEight_1 = """
+  static const String khatiraTextThreeEight_1 = """
 أن الله سبحانه وتعالى وزع الحظوظ في الدنيا توزيع ابتلاء والدنيا مؤقتة وسوف توزع هذه الحظوظ في الآخرة توزيع جزاء، دقق في قوله تعالى:
 """;
   static const String ayahHadithThreeEight_1 = """
 انظر كيف فضلنا بعضهم على بعض
 """;
 
-// page 9
+// page 6
   static const String subtitleThreeNine_1 = """
 تفاوت الوظائف والمراتب في الدنيا
 """;
-  static const String elmTextThreeNine_1 = """
+  static const String khatiraTextThreeNine_1 = """
 إنسان يعمل أستاذ في الجامعة وإنسان يعمل أستاذاً في التعليم الإبتدائي في قرية، مسافة كبيرة جداً بين الوظيفتين، إنسان يعمل رئيس أركان الجيش وجندي في خدمةٍ إلزاميةٍ في مكان صعب باردٍ موحش، طبيب جراح وممرض ناشئ مثلاً، مدير مؤسسة وبواب، ورئيس غرفة تجارية وبائع متجول.
 """;
   static const String ayahHadithThreeNine_1 = """
@@ -135,46 +135,46 @@ class KhatiraTextDersThree {
 وللآخرة أكبر درجات وأكبر تفضيلا
 """;
 
-// page 10
+// page 7
   static const String subtitleThreeTen_1 = """
 السكينة رزق خاص للمؤمنين
 """;
-  static const String elmTextThreeTen_1 = """
+  static const String khatiraTextThreeTen_1 = """
 إن الله يعطي الصحة والذكاء والمال والجمال لكثيرين من خلقه ولكنه يعطي السكينة بقدر لأصفيائه المؤمنين.
 """;
 
-// page 11
+// page 8
   static const String subtitleThreeEleven_1 = """
 الدنيا العاجلة لمن أرادها بقدر
 """;
-  static const String elmTextThreeEleven_1 = """
+  static const String khatiraTextThreeEleven_1 = """
 من أراد الدنيا العاجلة الفانية أخذ منها بقدر ما كُتب له.
 إذا أردت الدنيا أعطيناك إياها، فأنت مخير، فاختر ما شئت، ولو أنك اخترت الدنيا العاجلة على الآخرة الباقية لأعطيناك الدنيا.
 """;
   static const String ayahHadithThreeEleven_1 = """
 من كان يريد العاجلة عجلنا له فيها ما نشاء
 """;
-  static const String elmTextThreeEleven_2 = """
+  static const String khatiraTextThreeEleven_2 = """
 ما نشاء، أي: بالقدر الذي نشاء، قد نعطيه المال، ونسلبه راحة البال، وقد نعطيه راحة البال، ونسلبه المال، وقد نجعل زواجه سعيداً، ولكنه لا ينجب الأولاد، قد نجعل أولاده أبراراً، ونسلبه شيئاً آخر.
 ما نشاء، أي: بالقدر الذي نشاء وفق حكمة بالغة وعلم وخبرة.
 """;
 
-// page 12
+// page 9
   static const String subtitleThreeTwelve_1 = """
 الملك الحقيقي هو ملك النفس
 """;
   static const String ayahHadithThreeTwelve_1 = """
 رب قد آتيتني من الملك
 """;
-  static const String elmTextThreeTwelve_1 = """
+  static const String khatiraTextThreeTwelve_1 = """
 من أدق معاني هذه الآية أن الملك ليس من ملك القصر الجميل، وليس من جمع المال الوفير، الملك من ملك نفسه عند الشهوة فضبطها وحملها على طاعة الله
 """;
 
-// page 13
+// page 10
   static const String subtitleThreeThirteen_1 = """
 الحظوظ في الدنيا ابتلاء والنجاح في امتحان الله
 """;
-  static const String elmTextThreeThirteen_1 = """
+  static const String khatiraTextThreeThirteen_1 = """
 الحظوظ في الدنيا موزعة توزيع ابتلاء والعبرة أن تنجح في مادة امتحانك مع الله.
 مادة امتحانك مع الله ما أنت فيه من إيجابيات ومن حظوظ مُنحت إياها أو حُرمت منها، الغني له امتحان مع الله، والفقير له امتحان، القوي له امتحان، والضعيف له امتحان، الصحيح له امتحان، والمريض له امتحان
 """;

@@ -69,7 +69,8 @@ abstract class BasePageCubit extends Cubit<BasePageState> {
   }
 
   // share text
-  List<Text> getShareText(int currentPageIndex, List<KhatiraModelNewOrder> khatiraList);
+  List<Text> getShareText(
+      int currentPageIndex, List<KhatiraModelNewOrder> khatiraList);
 
 //  البحث في محتوى `KhatiraModelNewOrder`
   List<KhatiraModelNewOrder> searchContent(String query) {

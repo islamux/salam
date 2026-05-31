@@ -35,7 +35,11 @@ List<KhatiraModelNewOrder> khatiraList32NewOrder = [
     ],
   ),
   // 3
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyTwo.textThirtyTwoThree], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyTwo.textThirtyTwoThree
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 4
   KhatiraModelNewOrder(
     texts: [
@@ -50,13 +54,33 @@ List<KhatiraModelNewOrder> khatiraList32NewOrder = [
     ],
   ),
   // 5
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyTwo.textThirtyTwoFive], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyTwo.textThirtyTwoFive
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 6
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyTwo.textThirtyTwoSix], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyTwo.textThirtyTwoSix
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 7
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyTwo.textThirtyTwoSeven], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyTwo.textThirtyTwoSeven
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 8
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyTwo.textThirtyTwoEight], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyTwo.textThirtyTwoEight
+  ], order: [
+    EnOrder.texts,
+  ]),
   // 9
-  KhatiraModelNewOrder(texts: [KhatiraTextDersThirtyTwo.textThirtyTwoNine], order: [EnOrder.texts, ]),
+  KhatiraModelNewOrder(texts: [
+    KhatiraTextDersThirtyTwo.textThirtyTwoNine
+  ], order: [
+    EnOrder.texts,
+  ]),
 ];

@@ -7,76 +7,76 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
   // 1
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextFinal.textFInalPageOne_1,
-      KhatiraTextFinal.textFInalPageOne_2,
+      KhatiraTextFinal.textFinalPageOne_1,
+      KhatiraTextFinal.textFinalPageOne_2,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahFInalPageOne_1,
+      KhatiraTextFinal.ayahFinalPageOne_1,
     ],
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
+    ],
+  ),
+  // 1
+  KhatiraModelNewOrder(
+    ayahs: [
+      KhatiraTextFinal.ayahHadithFinalPageTwo_1,
+      KhatiraTextFinal.ayahHadithFinalPageTwo_2,
+      KhatiraTextFinal.ayahHadithFinalPageTwo_3,
+    ],
+    texts: [
+      KhatiraTextFinal.textFinalPageTwo_1,
+      KhatiraTextFinal.textFinalPageTwo_2,
+    ],
+    subtitles: [
+      KhatiraTextFinal.subtitleFinalPageTwo_1,
+      KhatiraTextFinal.subtitleFinalPageTwo_2,
+    ],
+    order: [
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.subtitles,
+      EnOrder.texts,
+      EnOrder.subtitles,
+      EnOrder.ayahs,
     ],
   ),
   // 2
   KhatiraModelNewOrder(
-    ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageTwo_1,
-      KhatiraTextFinal.ayahHadithFInalPageTwo_2,
-      KhatiraTextFinal.ayahHadithFInalPageTwo_3,
-    ],
     texts: [
-      KhatiraTextFinal.textFInalPageTwo_1,
-      KhatiraTextFinal.textFInalPageTwo_2,
+      KhatiraTextFinal.textFinalPageThree_1,
+      KhatiraTextFinal.textFinalPageThree_2,
+      KhatiraTextFinal.textFinalPageThree_3,
+    ],
+    ayahs: [
+      KhatiraTextFinal.ayahHadithFinalPageThree_1,
     ],
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageTwo_1,
-      KhatiraTextFinal.subtitleFInalPageTwo_2,
+      KhatiraTextFinal.subtitleFinalPageThree_1,
     ],
     order: [
-      EnOrder.ayahs,
       EnOrder.texts,
       EnOrder.ayahs,
-      EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.subtitles,
-      EnOrder.ayahs,
+      EnOrder.texts,
     ],
   ),
   // 3
   KhatiraModelNewOrder(
-    texts: [
-      KhatiraTextFinal.textFInalPageThree_1,
-      KhatiraTextFinal.textFInalPageThree_2,
-      KhatiraTextFinal.textFInalPageThree_3,
-    ],
-    ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageThree_1,
-    ],
-    subtitles: [
-      KhatiraTextFinal.subtitleFInalPageThree_1,
-    ],
-    order: [
-      EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.texts,
-      EnOrder.subtitles,
-      EnOrder.texts,
-    ],
-  ),
-  // 4
-  KhatiraModelNewOrder(
     titles: [
-      KhatiraTextFinal.titleFInalPageFour_1,
+      KhatiraTextFinal.titleFinalPageFour_1,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageFour_1,
-      KhatiraTextFinal.ayahHadithFInalPageFour_2,
+      KhatiraTextFinal.ayahHadithFinalPageFour_1,
+      KhatiraTextFinal.ayahHadithFinalPageFour_2,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageFour_1,
-      KhatiraTextFinal.textFInalPageFour_2,
+      KhatiraTextFinal.textFinalPageFour_1,
+      KhatiraTextFinal.textFinalPageFour_2,
     ],
     order: [
       EnOrder.titles,
@@ -86,15 +86,15 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
       EnOrder.texts,
     ],
   ),
-  // 5
+  // 4
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextFinal.textFInalPageFive_1,
-      KhatiraTextFinal.textFInalPageFive_2,
+      KhatiraTextFinal.textFinalPageFive_1,
+      KhatiraTextFinal.textFinalPageFive_2,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageFive_1,
-      KhatiraTextFinal.ayahHadithFInalPageFive_2,
+      KhatiraTextFinal.ayahHadithFinalPageFive_1,
+      KhatiraTextFinal.ayahHadithFinalPageFive_2,
     ],
     order: [
       EnOrder.texts,
@@ -103,23 +103,40 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
       EnOrder.ayahs,
     ],
   ),
-  // 6
+  // 5
   KhatiraModelNewOrder(
     texts: [
-      KhatiraTextFinal.textFInalPageSix_1,
-      KhatiraTextFinal.textFInalPageSix_2,
-      KhatiraTextFinal.textFInalPageSix_3,
-      KhatiraTextFinal.textFInalPageSix_4,
+      KhatiraTextFinal.textFinalPageSix_1,
+      KhatiraTextFinal.textFinalPageSix_2,
+      KhatiraTextFinal.textFinalPageSix_3,
+      KhatiraTextFinal.textFinalPageSix_4,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageSix_1,
-      KhatiraTextFinal.ayahHadithFInalPageSix_2,
-      KhatiraTextFinal.ayahHadithFInalPageSix_3,
+      KhatiraTextFinal.ayahHadithFinalPageSix_1,
+      KhatiraTextFinal.ayahHadithFinalPageSix_2,
+      KhatiraTextFinal.ayahHadithFinalPageSix_3,
     ],
     order: [
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+    ],
+  ),
+  // 6
+  KhatiraModelNewOrder(
+    ayahs: [
+      KhatiraTextFinal.ayahHadithFinalPageSeven_1,
+      KhatiraTextFinal.ayahHadithFinalPageSeven_2,
+    ],
+    texts: [
+      KhatiraTextFinal.textFinalPageSeven_1,
+      KhatiraTextFinal.textFinalPageSeven_2,
+    ],
+    order: [
       EnOrder.ayahs,
       EnOrder.texts,
       EnOrder.ayahs,
@@ -129,45 +146,62 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
   // 7
   KhatiraModelNewOrder(
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageSeven_1,
-      KhatiraTextFinal.ayahHadithFInalPageSeven_2,
+      KhatiraTextFinal.ayahHadithFinalPageEight_1,
+      KhatiraTextFinal.ayahHadithFinalPageEight_2,
+      KhatiraTextFinal.ayahHadithFinalPageEight_3,
+      KhatiraTextFinal.ayahHadithFinalPageEight_4,
+      KhatiraTextFinal.ayahHadithFinalPageEight_5,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageSeven_1,
-      KhatiraTextFinal.textFInalPageSeven_2,
+      KhatiraTextFinal.textFinalPageEight_1,
+      KhatiraTextFinal.textFinalPageEight_2,
+      KhatiraTextFinal.textFinalPageEight_3,
+      KhatiraTextFinal.textFinalPageEight_4,
+      KhatiraTextFinal.textFinalPageEight_5,
+      KhatiraTextFinal.textFinalPageEight_6,
+      KhatiraTextFinal.textFinalPageEight_7,
+    ],
+    subtitles: [
+      KhatiraTextFinal.subtitleFinalPageEight_1,
+      KhatiraTextFinal.subtitleFinalPageEight_2,
     ],
     order: [
       EnOrder.ayahs,
       EnOrder.texts,
+      EnOrder.subtitles,
+      EnOrder.texts,
       EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.ayahs,
+      EnOrder.texts,
+      EnOrder.subtitles,
       EnOrder.texts,
     ],
   ),
   // 8
   KhatiraModelNewOrder(
-    ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageEight_1,
-      KhatiraTextFinal.ayahHadithFInalPageEight_2,
-      KhatiraTextFinal.ayahHadithFInalPageEight_3,
-      KhatiraTextFinal.ayahHadithFInalPageEight_4,
-      KhatiraTextFinal.ayahHadithFInalPageEight_5,
+    subtitles: [
+      KhatiraTextFinal.subtitleFinalPageNine_1,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageEight_1,
-      KhatiraTextFinal.textFInalPageEight_2,
-      KhatiraTextFinal.textFInalPageEight_3,
-      KhatiraTextFinal.textFInalPageEight_4,
-      KhatiraTextFinal.textFInalPageEight_5,
-      KhatiraTextFinal.textFInalPageEight_6,
-      KhatiraTextFinal.textFInalPageEight_7,
+      KhatiraTextFinal.textFinalPageNine_1,
+      KhatiraTextFinal.textFinalPageNine_2,
+      KhatiraTextFinal.textFinalPageNine_3,
+      KhatiraTextFinal.textFinalPageNine_4,
+      KhatiraTextFinal.textFinalPageNine_5,
     ],
-    subtitles: [
-      KhatiraTextFinal.subtitleFInalPageEight_1,
-      KhatiraTextFinal.subtitleFInalPageEight_2,
+    ayahs: [
+      KhatiraTextFinal.ayahHadithFinalPageNine_1,
+      KhatiraTextFinal.ayahHadithFinalPageNine_2,
+      KhatiraTextFinal.ayahHadithFinalPageNine_3,
+      KhatiraTextFinal.ayahHadithFinalPageNine_4,
+      KhatiraTextFinal.ayahHadithFinalPageNine_5,
     ],
     order: [
-      EnOrder.ayahs,
-      EnOrder.texts,
       EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
@@ -178,37 +212,30 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
-      EnOrder.subtitles,
-      EnOrder.texts,
+      EnOrder.ayahs,
     ],
   ),
   // 9
   KhatiraModelNewOrder(
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageNine_1,
+      KhatiraTextFinal.subtitleFinalPageTen_1,
+      KhatiraTextFinal.subtitleFinalPageTen_2,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageNine_1,
-      KhatiraTextFinal.textFInalPageNine_2,
-      KhatiraTextFinal.textFInalPageNine_3,
-      KhatiraTextFinal.textFInalPageNine_4,
-      KhatiraTextFinal.textFInalPageNine_5,
+      KhatiraTextFinal.textFinalPageTen_1,
+      KhatiraTextFinal.textFinalPageTen_2,
+      KhatiraTextFinal.textFinalPageTen_3,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageNine_1,
-      KhatiraTextFinal.ayahHadithFInalPageNine_2,
-      KhatiraTextFinal.ayahHadithFInalPageNine_3,
-      KhatiraTextFinal.ayahHadithFInalPageNine_4,
-      KhatiraTextFinal.ayahHadithFInalPageNine_5,
+      KhatiraTextFinal.ayahHadithFinalPageTen_1,
+      KhatiraTextFinal.ayahHadithFinalPageTen_2,
+      KhatiraTextFinal.ayahHdithFinalPageTen_3,
     ],
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
-      EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.texts,
-      EnOrder.ayahs,
+      EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
@@ -218,24 +245,22 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
   // 10
   KhatiraModelNewOrder(
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageTen_1,
-      KhatiraTextFinal.subtitleFInalPageTen_2,
+      KhatiraTextFinal.subtitleFinalPageEleven_1,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageTen_1,
-      KhatiraTextFinal.textFInalPageTen_2,
-      KhatiraTextFinal.textFInalPageTen_3,
+      KhatiraTextFinal.textFinalPageEleven_1,
+      KhatiraTextFinal.textFinalPageEleven_2,
+      KhatiraTextFinal.textFinalPageEleven_3,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageTen_1,
-      KhatiraTextFinal.ayahHadithFInalPageTen_2,
-      KhatiraTextFinal.ayahHdithFInalPageTen_3,
+      KhatiraTextFinal.ayahHadithFinalPageEleven_1,
+      KhatiraTextFinal.ayahHadithFinalPageEleven_2,
+      KhatiraTextFinal.ayahHadithFinalPageEleven_3,
     ],
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
-      EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
@@ -245,79 +270,73 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
   // 11
   KhatiraModelNewOrder(
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageEleven_1,
+      KhatiraTextFinal.subtitleFinalPageTwelve_1,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageEleven_1,
-      KhatiraTextFinal.textFInalPageEleven_2,
-      KhatiraTextFinal.textFInalPageEleven_3,
+      KhatiraTextFinal.textFinalPageTwelve_1,
+      KhatiraTextFinal.textFinalPageTwelve_2,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageEleven_1,
-      KhatiraTextFinal.ayahHadithFInalPageEleven_2,
-      KhatiraTextFinal.ayahHadithFInalPageEleven_3,
+      KhatiraTextFinal.ayahHadithFinalPageTwelve_1,
     ],
     order: [
       EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.texts,
-      EnOrder.ayahs,
     ],
   ),
   // 12
   KhatiraModelNewOrder(
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageTwelve_1,
-    ],
-    texts: [
-      KhatiraTextFinal.textFInalPageTwelve_1,
-      KhatiraTextFinal.textFInalPageTwelve_2,
+      KhatiraTextFinal.subtitleFinalPageThirteen_1,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageTwelve_1,
+      KhatiraTextFinal.ayahHadithFinalPageThirteen_1,
+    ],
+    texts: [
+      KhatiraTextFinal.textFinalPageThirteen_1,
     ],
     order: [
       EnOrder.subtitles,
-      EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
     ],
   ),
   // 13
   KhatiraModelNewOrder(
-    subtitles: [
-      KhatiraTextFinal.subtitleFInalPageThirteen_1,
-    ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageThirteen_1,
+      KhatiraTextFinal.ayahHadithFinalPageFourteen_1,
+      KhatiraTextFinal.ayahHadithFinalPageFourteen_4,
+    ],
+    subtitles: [
+      KhatiraTextFinal.subtitleFinalPageFourteen_2,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageThirteen_1,
+      KhatiraTextFinal.textFinalPageFourteen_3,
+      KhatiraTextFinal.textFinalPageFourteen_5,
     ],
     order: [
+      EnOrder.ayahs,
       EnOrder.subtitles,
+      EnOrder.texts,
       EnOrder.ayahs,
       EnOrder.texts,
     ],
   ),
   // 14
   KhatiraModelNewOrder(
-    ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageFourteen_1,
-      KhatiraTextFinal.ayahHadithFInalPageFourteen_4,
-    ],
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageFourteen_2,
+      KhatiraTextFinal.subtitleFinalPageFifteen_1,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageFourteen_3,
-      KhatiraTextFinal.textFInalPageFourteen_5,
+      KhatiraTextFinal.textFinalPageFifteen_1,
+      KhatiraTextFinal.textFinalPageFifteen_2,
+    ],
+    ayahs: [
+      KhatiraTextFinal.ayahHadithFinalPageFifteen_1,
     ],
     order: [
-      EnOrder.ayahs,
       EnOrder.subtitles,
       EnOrder.texts,
       EnOrder.ayahs,
@@ -327,35 +346,16 @@ List<KhatiraModelNewOrder> khatiraListFinalNewOrder = [
   // 15
   KhatiraModelNewOrder(
     subtitles: [
-      KhatiraTextFinal.subtitleFInalPageFifteen_1,
-    ],
-    texts: [
-      KhatiraTextFinal.textFInalPageFifteen_1,
-      KhatiraTextFinal.textFInalPageFifteen_2,
+      KhatiraTextFinal.subtitleFinalPageSixteen_1,
+      KhatiraTextFinal.subtitleFinalPageSixteen_2,
     ],
     ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageFifteen_1,
-    ],
-    order: [
-      EnOrder.subtitles,
-      EnOrder.texts,
-      EnOrder.ayahs,
-      EnOrder.texts,
-    ],
-  ),
-  // 16
-  KhatiraModelNewOrder(
-    subtitles: [
-      KhatiraTextFinal.subtitleFInalPageSixteen_1,
-      KhatiraTextFinal.subtitleFInalPageSixteen_2,
-    ],
-    ayahs: [
-      KhatiraTextFinal.ayahHadithFInalPageSixteen_1,
-      KhatiraTextFinal.ayahHadithFInalPageSixteen_2,
+      KhatiraTextFinal.ayahHadithFinalPageSixteen_1,
+      KhatiraTextFinal.ayahHadithFinalPageSixteen_2,
     ],
     texts: [
-      KhatiraTextFinal.textFInalPageSixteen_1,
-      KhatiraTextFinal.textFInalPageSixteen_2,
+      KhatiraTextFinal.textFinalPageSixteen_1,
+      KhatiraTextFinal.textFinalPageSixteen_2,
     ],
     order: [
       EnOrder.subtitles,

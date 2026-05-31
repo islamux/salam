@@ -50,49 +50,71 @@ class DataSearch extends SearchDelegate {
   List<SearchResult> _buildResultsWithPage() {
     final results = <SearchResult>[];
     final listConfigs = <_ListConfig>[
-      _ListConfig(khatiraListPreNewOrder, 'الدرس التمهيدي', RoutesConstant.khatiraPre),
+      _ListConfig(
+          khatiraListPreNewOrder, 'الدرس التمهيدي', RoutesConstant.khatiraPre),
       _ListConfig(khatiraList1NewOrder, 'الدرس الأول', RoutesConstant.khatira1),
-      _ListConfig(khatiraList2NewOrder, 'الدرس الثاني', RoutesConstant.khatira2),
-      _ListConfig(khatiraList3NewOrder, 'الدرس الثالث', RoutesConstant.khatira3),
-      _ListConfig(khatiraList4NewOrder, 'الدرس الرابع', RoutesConstant.khatira4),
-      _ListConfig(khatiraList5NewOrder, 'الدرس الخامس', RoutesConstant.khatira5),
-      _ListConfig(khatiraList6NewOrder, 'الدرس السادس', RoutesConstant.khatira6),
-      _ListConfig(khatiraList7NewOrder, 'الدرس السابع', RoutesConstant.khatira7),
-      _ListConfig(khatiraList8NewOrder, 'الدرس الثامن', RoutesConstant.khatira8),
-      _ListConfig(khatiraList9NewOrder, 'الدرس التاسع', RoutesConstant.khatira9),
-      _ListConfig(khatiraList10NewOrder, 'الدرس العاشر', RoutesConstant.khatira10),
-      _ListConfig(khatiraList11NewOrder, 'الدرس الحادي عشر', RoutesConstant.khatira11),
-      _ListConfig(khatiraList12NewOrder, 'الدرس الثاني عشر', RoutesConstant.khatira12),
-      _ListConfig(khatiraList13NewOrder, 'الدرس الثالث عشر', RoutesConstant.khatira13),
-      _ListConfig(khatiraList14NewOrder, 'الدرس الرابع عشر', RoutesConstant.khatira14),
-      _ListConfig(khatiraList15NewOrder, 'الدرس الخامس عشر', RoutesConstant.khatira15),
-      _ListConfig(khatiraList16NewOrder, 'الدرس السادس عشر', RoutesConstant.khatira16),
-      _ListConfig(khatiraList17NewOrder, 'الدرس السابع عشر', RoutesConstant.khatira17),
-      _ListConfig(khatiraList18NewOrder, 'الدرس الثامن عشر', RoutesConstant.khatira18),
-      _ListConfig(khatiraList19NewOrder, 'الدرس التاسع عشر', RoutesConstant.khatira19),
-      _ListConfig(khatiraList20NewOrder, 'الدرس العشرون', RoutesConstant.khatira20),
       _ListConfig(
-          khatiraList21NewOrder, 'الدرس الحادي والعشرون', RoutesConstant.khatira21),
+          khatiraList2NewOrder, 'الدرس الثاني', RoutesConstant.khatira2),
       _ListConfig(
-          khatiraList22NewOrder, 'الدرس الثاني والعشرون', RoutesConstant.khatira22),
+          khatiraList3NewOrder, 'الدرس الثالث', RoutesConstant.khatira3),
       _ListConfig(
-          khatiraList23NewOrder, 'الدرس الثالث والعشرون', RoutesConstant.khatira23),
+          khatiraList4NewOrder, 'الدرس الرابع', RoutesConstant.khatira4),
       _ListConfig(
-          khatiraList24NewOrder, 'الدرس الرابع والعشرون', RoutesConstant.khatira24),
+          khatiraList5NewOrder, 'الدرس الخامس', RoutesConstant.khatira5),
       _ListConfig(
-          khatiraList25NewOrder, 'الدرس الخامس والعشرون', RoutesConstant.khatira25),
+          khatiraList6NewOrder, 'الدرس السادس', RoutesConstant.khatira6),
       _ListConfig(
-          khatiraList26NewOrder, 'الدرس السادس والعشرون', RoutesConstant.khatira26),
+          khatiraList7NewOrder, 'الدرس السابع', RoutesConstant.khatira7),
       _ListConfig(
-          khatiraList27NewOrder, 'الدرس السابع والعشرون', RoutesConstant.khatira27),
+          khatiraList8NewOrder, 'الدرس الثامن', RoutesConstant.khatira8),
       _ListConfig(
-          khatiraList28NewOrder, 'الدرس الثامن والعشرون', RoutesConstant.khatira28),
+          khatiraList9NewOrder, 'الدرس التاسع', RoutesConstant.khatira9),
       _ListConfig(
-          khatiraList29NewOrder, 'الدرس التاسع والعشرون', RoutesConstant.khatira29),
-      _ListConfig(khatiraList30NewOrder, 'الدرس الثلاثون', RoutesConstant.khatira30),
+          khatiraList10NewOrder, 'الدرس العاشر', RoutesConstant.khatira10),
       _ListConfig(
-          khatiraList31NewOrder, 'الدرس الحادي والثلاثون', RoutesConstant.khatira31),
-      _ListConfig(khatiraListFinalNewOrder, 'الدرس الأخير', RoutesConstant.khatiraFinal),
+          khatiraList11NewOrder, 'الدرس الحادي عشر', RoutesConstant.khatira11),
+      _ListConfig(
+          khatiraList12NewOrder, 'الدرس الثاني عشر', RoutesConstant.khatira12),
+      _ListConfig(
+          khatiraList13NewOrder, 'الدرس الثالث عشر', RoutesConstant.khatira13),
+      _ListConfig(
+          khatiraList14NewOrder, 'الدرس الرابع عشر', RoutesConstant.khatira14),
+      _ListConfig(
+          khatiraList15NewOrder, 'الدرس الخامس عشر', RoutesConstant.khatira15),
+      _ListConfig(
+          khatiraList16NewOrder, 'الدرس السادس عشر', RoutesConstant.khatira16),
+      _ListConfig(
+          khatiraList17NewOrder, 'الدرس السابع عشر', RoutesConstant.khatira17),
+      _ListConfig(
+          khatiraList18NewOrder, 'الدرس الثامن عشر', RoutesConstant.khatira18),
+      _ListConfig(
+          khatiraList19NewOrder, 'الدرس التاسع عشر', RoutesConstant.khatira19),
+      _ListConfig(
+          khatiraList20NewOrder, 'الدرس العشرون', RoutesConstant.khatira20),
+      _ListConfig(khatiraList21NewOrder, 'الدرس الحادي والعشرون',
+          RoutesConstant.khatira21),
+      _ListConfig(khatiraList22NewOrder, 'الدرس الثاني والعشرون',
+          RoutesConstant.khatira22),
+      _ListConfig(khatiraList23NewOrder, 'الدرس الثالث والعشرون',
+          RoutesConstant.khatira23),
+      _ListConfig(khatiraList24NewOrder, 'الدرس الرابع والعشرون',
+          RoutesConstant.khatira24),
+      _ListConfig(khatiraList25NewOrder, 'الدرس الخامس والعشرون',
+          RoutesConstant.khatira25),
+      _ListConfig(khatiraList26NewOrder, 'الدرس السادس والعشرون',
+          RoutesConstant.khatira26),
+      _ListConfig(khatiraList27NewOrder, 'الدرس السابع والعشرون',
+          RoutesConstant.khatira27),
+      _ListConfig(khatiraList28NewOrder, 'الدرس الثامن والعشرون',
+          RoutesConstant.khatira28),
+      _ListConfig(khatiraList29NewOrder, 'الدرس التاسع والعشرون',
+          RoutesConstant.khatira29),
+      _ListConfig(
+          khatiraList30NewOrder, 'الدرس الثلاثون', RoutesConstant.khatira30),
+      _ListConfig(khatiraList31NewOrder, 'الدرس الحادي والثلاثون',
+          RoutesConstant.khatira31),
+      _ListConfig(khatiraListFinalNewOrder, 'الدرس الأخير',
+          RoutesConstant.khatiraFinal),
     ];
 
     for (var config in listConfigs) {
@@ -120,7 +142,8 @@ class DataSearch extends SearchDelegate {
               fieldName = 'الآية';
               break;
             case EnOrder.footer:
-              contentList = khatiraModel.footer != null ? [khatiraModel.footer!] : null;
+              contentList =
+                  khatiraModel.footer != null ? [khatiraModel.footer!] : null;
               fieldName = 'الهوامش';
               break;
           }
