@@ -8,7 +8,7 @@
     "overall_progress": 6
   },
   "dashboard": {
-    "current_focus": "Commit rename branch",
+    "current_focus": "MS-GEN-2 complete — next: MS-GEN-3 Generator Polish",
     "active_milestone": "MS-GEN-2",
     "next_priority": "P1",
     "blockers": "None",
@@ -1151,8 +1151,8 @@
           {
             "id": "MS-GEN-2.9",
             "label": "Commit rename",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-30",
             "priority": "P1",
             "context_files": [],
             "reference_docs": [],
