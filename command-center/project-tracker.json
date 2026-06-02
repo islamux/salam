@@ -5,389 +5,100 @@
     "target_date": "2026-06-15",
     "current_week": 19,
     "schedule_status": "on_track",
-    "overall_progress": 6
+    "overall_progress": 43,
+    "overall_progress_note": "Recomputed 2026-06-02 from subtasks[].status after Phase 1 audit integration. Previous value 6 was stale."
   },
   "dashboard": {
-    "current_focus": "MS-9 all 9 tasks done (auto-resolved by generator work). Next: MS-3 Architecture Refactoring",
+    "current_focus": "Phase 1 — MS-3 Architecture Refactor (with MS-3.5 ContentCubit consolidation, MS-AR Feature-First, MS-DA Repository)",
+    "active_phase": 1,
     "active_milestone": "MS-3",
     "next_priority": "P1",
     "blockers": "None",
-    "health": "On Track"
+    "health": "On Track",
+    "audit_scores": {
+      "architecture":     { "current": 6.5, "target": 9.0, "gap": 2.5 },
+      "maintainability":  { "current": 6.0, "target": 9.0, "gap": 3.0 },
+      "scalability":      { "current": 5.0, "target": 9.0, "gap": 4.0 },
+      "ui_ux":            { "current": 5.5, "target": 9.0, "gap": 3.5 },
+      "performance":      { "current": 7.0, "target": 9.0, "gap": 2.0 },
+      "testing":          { "current": 4.0, "target": 9.0, "gap": 5.0 },
+      "accessibility":    { "current": 3.0, "target": 8.5, "gap": 5.5 },
+      "play_readiness":   { "current": 4.0, "target": 9.0, "gap": 5.0 }
+    },
+    "audit_source": "ReleasAudit.md (2026-06-02)",
+    "audit_target_overall": 8.75
   },
+  "phases": [
+    {
+      "id": "P1",
+      "title": "Architecture Refactor",
+      "week": 19,
+      "goal": "Reduce duplication, fix cubit explosion, add data layer abstraction, feature-first folders",
+      "milestones": ["MS-3", "MS-8", "MS-GEN-3", "MS-GEN-4", "MS-AR", "MS-DA"],
+      "audit_alignment": "Audit §1, §2, §3, §4, §10, §14"
+    },
+    {
+      "id": "P2",
+      "title": "Reader Experience",
+      "week": 20,
+      "goal": "Make reading delightful: dark/sepia mode, font controls, distraction-free, theming",
+      "milestones": ["MS-5", "MS-RX", "MS-TH"],
+      "audit_alignment": "Audit §5, §7, §10",
+      "depends_on": ["P1"]
+    },
+    {
+      "id": "P3",
+      "title": "Search & Productivity",
+      "week": 20,
+      "goal": "Powerful search (categories, history), notes, table of contents, copy/share",
+      "milestones": ["MS-SX", "MS-7"],
+      "audit_alignment": "Audit §6, §7",
+      "depends_on": ["P1", "P2"]
+    },
+    {
+      "id": "P4",
+      "title": "Quality & Testing",
+      "week": 21,
+      "goal": "Test coverage (unit + widget + golden + integration), accessibility, pubspec audit",
+      "milestones": ["MS-QT", "MS-A11y", "MS-PUB"],
+      "audit_alignment": "Audit §9, §11, §14",
+      "depends_on": ["P1"]
+    },
+    {
+      "id": "P5",
+      "title": "Release Preparation",
+      "week": 21,
+      "goal": "Google Play ready: privacy, about, signing, R8, AAB, store assets, performance",
+      "milestones": ["MS-6", "MS-REL", "MS-PP", "MS-4"],
+      "audit_alignment": "Audit §8, §12, §13",
+      "depends_on": ["P1", "P2", "P3", "P4"]
+    }
+  ],
   "milestones": {
     "active": [
-      {
-        "id": "MS-9",
-        "title": "Data Files Standardization & Cleanup",
-        "domain": "data-quality",
-        "week": 19,
-        "phase": "3.5",
-        "planned_start": "2026-05-15",
-        "planned_end": "2026-05-17",
-        "drift_days": 0,
-        "is_key_milestone": true,
-        "key_milestone_label": "Data Quality",
-        "subtasks": [
-          {
-            "id": "MS-9.1",
-            "label": "Standardize class naming in 12 text files",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "ElmTextDebsSixteen → ElmTextDersSixteen",
-              "ElmTextFInal → ElmTextDersFinal",
-              "ElmTextTwenty/One/Two/.../Seven → ElmTextDersTwenty* (10 files)",
-              "ElmTextPre → ElmTextDersPre",
-              "All imports updated in elm_list files to match new class names",
-              "flutter analyze passes with 0 issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.2",
-            "label": "Fix elm_lists naming/imports",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P2",
-            "context_files": [
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "finalListNewOrder renamed to elmListFinalNewOrder",
-              "list_20 relative import changed to package:",
-              "lists 25-31 init style unified to plain =[",
-              "lists 19,25 typed generics removed",
-              "flutter analyze passes with 0 issues — ⚠️ superseded by generator regeneration (all files rewritten from scratch)"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": [
-              "MS-9.1"
-            ]
-          },
-          {
-            "id": "MS-9.3",
-            "label": "Fix all field name typos (10 total)",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P2",
-            "context_files": [
-              "lib/core/data/static/text/",
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "6 text file typos fixed (ayahHadith, elmText, titles → title, etc.)",
-              "4 list file references updated to match",
-              "flutter analyze passes with 0 issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": [
-              "MS-9.1"
-            ]
-          },
-          {
-            "id": "MS-9.4",
-            "label": "Fix wrong header comments (5 list files + 4 more)",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P3",
-            "context_files": [
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "lists 16,17,19,20,23 header comments reference correct numbers",
-              "lists 9,11,14,15 header comment typos fixed",
-              "flutter analyze passes with 0 issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.5",
-            "label": "Clean dead code & dev artifacts",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [
-              "lib/core/data/",
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "copilot gpt4.1 and ...existing code... artifacts removed",
-              "Commented-out string-order remnants removed from pre, 20",
-              "Dead field in elm_text_ders_pre.dart removed",
-              "flutter analyze passes with 0 issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.6",
-            "label": "Add missing String type annotations (84 fields)",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P3",
-            "context_files": [
-              "lib/core/data/static/text/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "All 84 fields across 5 files use explicit static const String — ⚠️ auto-fixed by --fix-text mode (B-1 Step 4)",
-              "flutter analyze passes with 0 app-level issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.7",
-            "label": "Standardize page comment markers (all text files)",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P3",
-            "context_files": [
-              "lib/core/data/static/text/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "All ~565 page markers unified to // page N format — ⚠️ auto-fixed by --fix-text mode (B-1 Step 5)",
-              "flutter analyze passes with 0 app-level issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.8",
-            "label": "Fix formatting edge cases (lists)",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P3",
-            "context_files": [
-              "lib/core/data/model/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "dart format lib/core/data/ passes (0 changed) — auto-fixed by B-5",
-              "flutter analyze passes with 0 app-level issues"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.9",
-            "label": "Verify build and analyze",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "flutter analyze passes with 0 issues",
-              "flutter test passes (all existing tests)",
-              "flutter build apk --release --android-skip-build-dependency-validation succeeds"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": [
-              "MS-9.1",
-              "MS-9.2",
-              "MS-9.3",
-              "MS-9.4",
-              "MS-9.5",
-              "MS-9.6",
-              "MS-9.7",
-              "MS-9.8"
-            ]
-          }
-        ],
-        "dependencies": [],
-        "notes": [
-          "MS-9 COMPLETED 2026-05-31 — All 9 subtasks auto-resolved by Phase B (generator work)",
-          "Original 68 data files (34 elm_lists + 34 text files) completely regenerated by tool/generate_elm_lists.dart",
-          "~2,600 static const fields across text files, 565 KhatiraModelNewOrder entries across lists",
-          "--fix-text mode (B-1) automated: class naming, field typos, type annotations, page markers, dev artifact cleanup",
-          "Generator regeneration (B-2) automated: list naming, imports, header comments, formatting",
-          "See docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md for original plan (all criteria met or superseded)"
-        ]
-      },
-      {
-        "id": "MS-QF",
-        "title": "Quranic Font Unification & Tashkeel Correction",
-        "domain": "content-quality",
-        "week": 19,
-        "phase": "3.5",
-        "planned_start": "2026-05-11",
-        "planned_end": "2026-05-14",
-        "drift_days": 0,
-        "is_key_milestone": true,
-        "key_milestone_label": "Quran Accuracy",
-        "subtasks": [
-          {
-            "id": "MS-QF.1",
-            "label": "Fix font infrastructure - AmiriQ mismatch + ayah style",
-            "status": "done",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "fontFamily 'AmiriQ' changed to 'Amiri' in generic_custom_text_slider.dart",
-              "fontFamily 'Amiri' added to customTextStyleHadith in app_them.dart",
-              "flutter analyze passes"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-QF.2",
-            "label": "Tashkeel Batch 1 - ders 1-10",
-            "status": "done",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "All ayahHadith strings in ders 1-10 verified/corrected from Tanzil.net",
-              "Ayah numbers standardized to ۝ format",
-              "Surah names standardized to consistent Arabic",
-              "No order arrays or non-ayah content changed",
-              "Prefix text (قال تعالى etc.) kept as-is"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-QF.3",
-            "label": "Tashkeel Batch 2 - ders 11-20",
-            "status": "done",
-            "completed_at": null,
-            "priority": "P1",
-            "notes": "Ders 11-15 committed 19be5c6, ders 16-20 added in this session",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "All ayahHadith strings in ders 11-20 verified/corrected from Tanzil.net",
-              "Same formatting rules as MS-QF.2"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-QF.4",
-            "label": "Tashkeel Batch 3 - ders 21-32",
-            "status": "done",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "All ayahHadith strings in ders 21-32 verified/corrected from Tanzil.net",
-              "Same formatting rules as MS-QF.2"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-QF.5",
-            "label": "Tashkeel Batch 4 - pre + final",
-            "status": "done",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "All ayahHadith strings in pre + final verified/corrected from Tanzil.net",
-              "Same formatting rules as MS-QF.2"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-QF.6",
-            "label": "Verify build and analyze",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "flutter analyze passes with 0 app-level issues",
-              "flutter test passes — 12/12"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          }
-        ],
-        "dependencies": [],
-        "notes": [
-          "Fix AmiriQ font mismatch, add explicit Amiri font to ayah style",
-          "Correct all 766 ayahHadith strings with proper tashkeel from Tanzil.net",
-          "Standardize ayah numbering to ۝ format",
-          "Standardize surah name format",
-          "DO NOT change order arrays or non-ayah content",
-          "DO NOT standardize prefix text (قال تعالى etc.) - keep as-is",
-          "Previous attempt: commit d1bcb86 (only added ayahs.md, no .dart changes)"
-        ]
-      },
       {
         "id": "MS-3",
         "title": "Architecture Refactoring",
         "domain": "architecture",
+        "phase": "P1",
         "week": 19,
-        "phase": "3",
         "planned_start": "2026-05-11",
-        "planned_end": "2026-05-15",
+        "planned_end": "2026-06-10",
         "drift_days": 0,
         "is_key_milestone": true,
         "key_milestone_label": "Core Architecture",
         "subtasks": [
           {
             "id": "MS-3.1",
-            "label": "Create ElmContentPage generic widget",
+            "label": "Create ContentPage generic widget",
             "status": "todo",
             "completed_at": null,
             "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
+            "context_files": ["lib/view/pages/"],
+            "reference_docs": ["ReleasAudit.md §1"],
             "acceptance_criteria": [
-              "ElmContentPage is a StatelessWidget accepting cubit, dataList, backgroundImagePath",
-              "Replaces all duplicated layout logic from elm1-32 + pre/final pages"
+              "ContentPage is a StatelessWidget accepting (cubit, dataList, backgroundImagePath)",
+              "Replaces all duplicated layout logic from khatira1-32 + pre + final pages"
             ],
             "constraints": [],
             "execution_mode": "agent",
@@ -395,22 +106,20 @@
           },
           {
             "id": "MS-3.2",
-            "label": "Refactor 34 page files to use ElmContentPage",
+            "label": "Refactor 34 page files to use ContentPage",
             "status": "todo",
             "completed_at": null,
             "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
+            "context_files": ["lib/view/pages/"],
+            "reference_docs": ["ReleasAudit.md §1"],
             "acceptance_criteria": [
-              "elm1-32.dart, elmpre_page.dart, elm_final.dart all delegate to ElmContentPage",
+              "khatira1-32, khatira_pre_page, khatira_final_page all delegate to ContentPage",
               "Total page code reduced from ~3,700 to ~300 lines",
               "flutter analyze passes with 0 issues"
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": [
-              "MS-3.1"
-            ]
+            "depends_on": ["MS-3.1"]
           },
           {
             "id": "MS-3.3",
@@ -418,8 +127,8 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
+            "context_files": ["lib/core/data/static/strings/"],
+            "reference_docs": ["ReleasAudit.md §10"],
             "acceptance_criteria": [
               "AppStrings class created at lib/core/data/static/strings/app_strings.dart",
               "All hardcoded Arabic UI strings referenced from AppStrings",
@@ -435,8 +144,8 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
+            "context_files": ["lib/cubit/base_cubit/", "lib/cubit/search_cubit.dart"],
+            "reference_docs": ["ReleasAudit.md §3, §6"],
             "acceptance_criteria": [
               "SearchCubit created at lib/cubit/search_cubit.dart",
               "searchContent moved from BasePageCubit to SearchCubit",
@@ -444,26 +153,45 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": [
-              "MS-3.1"
-            ]
+            "depends_on": ["MS-3.1"]
+          },
+          {
+            "id": "MS-3.5",
+            "label": "Consolidate 35 cubits into single ContentCubit + Repository",
+            "status": "todo",
+            "completed_at": null,
+            "priority": "P1",
+            "context_files": ["lib/cubit/khatira_cubits/", "lib/core/data/repository/"],
+            "reference_docs": ["ReleasAudit.md §3, §4"],
+            "acceptance_criteria": [
+              "ContentCubit designed: loadPage(int), nextPage(), previousPage(), search(query)",
+              "KhatiraRepository abstract class created",
+              "35 chapter cubits (Khatira1Cubit..Khatira32Cubit + Pre + Final) deleted",
+              "All 34 pages use ContentCubit(int chapterId)",
+              "BasePageCubit logic moved into ContentCubit",
+              "flutter analyze + flutter test pass"
+            ],
+            "constraints": ["Depends on MS-AR (feature-first folders) being partially in place", "Depends on MS-DA.1 (Repository interface)"],
+            "execution_mode": "agent",
+            "depends_on": ["MS-3.2", "MS-DA.1"]
           }
         ],
         "dependencies": [],
         "notes": [
-          "Reduce 34 near-identical page files (elm1-32 + pre + final) to a single reusable ElmContentPage widget",
-          "Extract hardcoded Arabic strings to centralized AppStrings constants",
-          "Move search logic from BasePageCubit to dedicated SearchCubit"
+          "Reduce 34 near-identical page files to a single reusable ContentPage widget",
+          "Collapse 35 chapter-specific cubits into 1 ContentCubit (audit §3)",
+          "Pair with MS-DA Repository abstraction for testable data access",
+          "MS-3.5 added 2026-06-02 per audit recommendation"
         ]
       },
       {
         "id": "MS-8",
         "title": "Bug Fixes & Code Quality",
         "domain": "code-quality",
+        "phase": "P1",
         "week": 19,
-        "phase": "3.5",
         "planned_start": "2026-05-15",
-        "planned_end": "2026-05-17",
+        "planned_end": "2026-06-15",
         "drift_days": 0,
         "is_key_milestone": true,
         "key_milestone_label": "Code Quality",
@@ -477,7 +205,7 @@
             "context_files": [],
             "reference_docs": [],
             "acceptance_criteria": [
-              "All 13 TODO/FIXME/HACK comments either resolved or converted to proper tasks/issues",
+              "All 13 TODO/FIXME/HACK comments either resolved or converted to proper tasks",
               "flutter analyze passes with 0 issues"
             ],
             "constraints": [],
@@ -490,11 +218,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [
-              "lib/helpers/string_helper.dart",
-              "lib/helpers/spacing.dart",
-              "lib/helpers/media_query_helper.dart"
-            ],
+            "context_files": ["lib/helpers/string_helper.dart", "lib/helpers/spacing.dart", "lib/helpers/media_query_helper.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "string_helper.dart removed (functionality moved if still needed)",
@@ -512,10 +236,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [
-              "lib/helpers/extensions/navigation_helper.dart",
-              "lib/cubit/elm_cubits/home_cubit.dart"
-            ],
+            "context_files": ["lib/helpers/extensions/navigation_helper.dart", "lib/cubit/khatira_cubits/home_cubit.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "Navigation helper code consolidated into single extension",
@@ -532,9 +253,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [
-              "lib/view/pages/search_page.dart"
-            ],
+            "context_files": ["lib/view/pages/search_page.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "Search feature re-enabled in search_page.dart (line 25)",
@@ -550,9 +269,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [
-              "lib/cubit/elm_cubits/home_cubit.dart"
-            ],
+            "context_files": ["lib/cubit/khatira_cubits/home_cubit.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "HomeCubit.getShareText properly implemented (not just TODO stub)",
@@ -568,9 +285,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P3",
-            "context_files": [
-              "lib/cubit/base_cubit/base_page_cubit.dart"
-            ],
+            "context_files": ["lib/cubit/base_cubit/base_page_cubit.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "UI-related logic moved from BasePageCubit to UI layer where appropriate",
@@ -586,22 +301,22 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [],
+            "context_files": ["lib/core/data/static/text/"],
             "reference_docs": [],
-            "acceptance_criteria": [],
+            "acceptance_criteria": ["Each static text file <300 lines", "Regenerate via tool/generate_elm_lists.dart"],
             "constraints": [],
             "execution_mode": "agent",
             "depends_on": []
           },
           {
             "id": "MS-8.8",
-            "label": "Split large elm list model files (17 files >300 lines)",
+            "label": "Split large khatira list model files (17 files >300 lines)",
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [],
+            "context_files": ["lib/core/data/model/khatira_lists/"],
             "reference_docs": [],
-            "acceptance_criteria": [],
+            "acceptance_criteria": ["Each list file <300 lines", "Update generator to support splits"],
             "constraints": [],
             "execution_mode": "agent",
             "depends_on": []
@@ -612,9 +327,9 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [],
+            "context_files": ["lib/view/pages/home.dart"],
             "reference_docs": [],
-            "acceptance_criteria": [],
+            "acceptance_criteria": ["home.dart <200 lines", "Extract widget components into lib/view/widgets/home/"],
             "constraints": [],
             "execution_mode": "agent",
             "depends_on": []
@@ -627,10 +342,10 @@
             "priority": "P2",
             "context_files": [],
             "reference_docs": [],
-            "acceptance_criteria": [],
+            "acceptance_criteria": ["flutter analyze passes", "flutter test passes"],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": []
+            "depends_on": ["MS-8.7", "MS-8.8", "MS-8.9"]
           },
           {
             "id": "MS-8.11",
@@ -638,59 +353,12 @@
             "status": "done",
             "completed_at": "2026-05-31",
             "priority": "P2",
-            "context_files": [
-              "lib/core/data/static/text/",
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
+            "context_files": ["lib/core/data/static/text/", "lib/core/data/model/khatira_lists/"],
+            "reference_docs": ["docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"],
             "acceptance_criteria": [
               "6 text file typos handled by --fix-text mode (typoMap-based)",
               "4 list file references regenerated to match",
-              "flutter analyze passes with 0 issues — ⚠️ auto-fixed by --fix-text + regeneration"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": [
-              "MS-9.1"
-            ]
-          },
-          {
-            "id": "MS-9.4",
-            "label": "Fix wrong header comments (5 list files + 4 more)",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P3",
-            "context_files": [
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md"
-            ],
-            "acceptance_criteria": [
-              "lists 16,17,19,20,23 header comments reference correct numbers",
-              "lists 9,11,14,15 header comment typos fixed",
-              "flutter analyze passes with 0 issues — ⚠️ auto-fixed by generator regeneration (all 34 files rewritten)"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-9.5",
-            "label": "Clean dead code & dev artifacts",
-            "status": "done",
-            "completed_at": "2026-05-31",
-            "priority": "P2",
-            "context_files": [
-              "pubspec.yaml"
-            ],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "hex, intl, cupertino_icons, change_app_package_name removed",
-              "Flutter project still builds successfully",
-              "flutter pub get succeeds with no errors"
+              "flutter analyze passes with 0 issues"
             ],
             "constraints": [],
             "execution_mode": "agent",
@@ -698,31 +366,27 @@
           },
           {
             "id": "MS-8.13",
-            "label": "Add unit tests for critical untested code",
+            "label": "Add unit tests for critical untested code (expanded → see MS-QT)",
             "status": "todo",
             "completed_at": null,
             "priority": "P1",
             "context_files": [
-              "lib/cubit/elm_cubits/home_cubit.dart",
+              "lib/cubit/khatira_cubits/home_cubit.dart",
               "lib/helpers/search/data_search.dart",
-              "lib/core/data/model/elm_model_new_order.dart",
+              "lib/core/data/model/khatira_model_new_order.dart",
               "lib/cubit/share/get_page_text_for_sharing.dart"
             ],
-            "reference_docs": [
-              "test/unit/base_page_cubit_test.dart"
-            ],
+            "reference_docs": ["test/unit/base_page_cubit_test.dart"],
             "acceptance_criteria": [
               "HomeCubit unit tests created (including getShareText coverage)",
               "DataSearch delegate unit tests created",
-              "ElmModelNewOrder data model unit tests created",
+              "KhatiraModelNewOrder data model unit tests created",
               "getPageTextsForSharing unit tests created",
               "All tests pass: flutter test"
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": [
-              "MS-8.5"
-            ]
+            "depends_on": ["MS-8.5"]
           },
           {
             "id": "MS-8.14",
@@ -730,9 +394,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [
-              "lib/core/data/static/links.dart"
-            ],
+            "context_files": ["lib/core/data/static/links.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "mailGoogle variable no longer self-references (uses correct URL value)",
@@ -740,9 +402,7 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": [
-              "MS-8.11"
-            ]
+            "depends_on": []
           },
           {
             "id": "MS-8.15",
@@ -750,9 +410,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P2",
-            "context_files": [
-              "lib/app_routes.dart"
-            ],
+            "context_files": ["lib/app_routes.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "aboutUs, resultPage, searchPage removed from RoutesConstant",
@@ -762,9 +420,7 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": [
-              "MS-8.11"
-            ]
+            "depends_on": []
           },
           {
             "id": "MS-8.16",
@@ -772,9 +428,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P3",
-            "context_files": [
-              "lib/view/pages/search_page.dart"
-            ],
+            "context_files": ["lib/view/pages/search_page.dart"],
             "reference_docs": [],
             "acceptance_criteria": [
               "Typo 'temprorly' fixed to 'temporarily' in search_page.dart:25",
@@ -783,9 +437,7 @@
             ],
             "constraints": [],
             "execution_mode": "agent",
-            "depends_on": [
-              "MS-8.11"
-            ]
+            "depends_on": []
           }
         ],
         "dependencies": [],
@@ -795,411 +447,18 @@
           "Deep-dive audit discovered 8 dead files, 3-5 unused deps, 1.2% test coverage, links.dart bug",
           "All 8 dead files: string_helper.dart, spacing.dart, media_query_helper.dart (MS-8.2) + links.dart, target_page.dart, result_page.dart, search_page.dart, share_app.dart (MS-8.11)",
           "MS-8.13 (tests) depends on MS-8.5 (getShareText fix) — test the fixed implementation",
+          "MS-9.4 and MS-9.5 were duplicated inside MS-8 — removed 2026-06-02 (see completed[])",
           "See docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md for full audit report"
-        ]
-      },
-      {
-        "id": "MS-GEN-1",
-        "title": "Generator Core — Static Text to Elm List Generator",
-        "domain": "tooling",
-        "week": 19,
-        "phase": "3.5",
-        "planned_start": "2026-05-30",
-        "planned_end": "2026-06-01",
-        "drift_days": 0,
-        "is_key_milestone": true,
-        "key_milestone_label": "Generator Tool",
-        "subtasks": [
-          {
-            "id": "MS-GEN-1.0",
-            "label": "Create branch feature/khatira-generator",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "Branch exists from current fix/data-files-standardization"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [],
-            "assignee": "orchestrator"
-          },
-          {
-            "id": "MS-GEN-1.1",
-            "label": "Parser — Field Extraction",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/static/text/",
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "extractFields() correctly parses all 34 static text files",
-              "Field types correctly inferred from prefix naming",
-              "Known typos corrected via typoMap"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-1.0"
-            ]
-          },
-          {
-            "id": "MS-GEN-1.2",
-            "label": "Parser — Page Grouping",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/static/text/",
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "groupByPage() handles all page delimiter variants",
-              "Fields correctly grouped into pages matching original structure"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-1.1"
-            ]
-          },
-          {
-            "id": "MS-GEN-1.3",
-            "label": "Output Writer",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "generateElmList() produces valid ElmModelNewOrder Dart code",
-              "Order array matches field type sequence",
-              "Output from elm_text_ders_pre matches elm_list_pre_new_order"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-1.2"
-            ]
-          },
-          {
-            "id": "MS-GEN-1.4",
-            "label": "Main Loop — All 34 Files",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "dart run tool/generate_elm_lists.dart processes all 34 files",
-              "--input, --dry-run, --verbose flags work correctly"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-1.3"
-            ]
-          },
-          {
-            "id": "MS-GEN-1.5",
-            "label": "Verify Against Originals",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/model/elm_lists/"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "Generated files match originals character-for-character (zero diff)",
-              "All 34 files verified"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-1.4"
-            ]
-          },
-          {
-            "id": "MS-GEN-1.6",
-            "label": "Commit generator tool",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "git commit with message feat(tool): add static text to elm list generator",
-              "Branch: feature/khatira-generator"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-1.5"
-            ]
-          }
-        ],
-        "dependencies": [],
-        "notes": [
-          "MS-GEN-1 is Phase 1 of the Khatira Generator — builds tool/generate_elm_lists.dart",
-          "Parser is tolerant of current file inconsistencies (typos, missing types, varied page markers)",
-          "Verification: diff generated output against originals — must match exactly",
-          "Plan doc: command-center/docs/plans/2026-05-30-khatira-generator.md"
-        ]
-      },
-      {
-        "id": "MS-GEN-2",
-        "title": "Rename elm → khatira across codebase",
-        "domain": "refactoring",
-        "week": 19,
-        "phase": "3.5",
-        "planned_start": "2026-06-01",
-        "planned_end": "2026-06-02",
-        "drift_days": 0,
-        "is_key_milestone": true,
-        "key_milestone_label": "Rename",
-        "subtasks": [
-          {
-            "id": "MS-GEN-2.0",
-            "label": "Create branch refactor/rename-elm-to-khatira",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "Branch exists from main"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-GEN-2.1",
-            "label": "--rename-prefix khatira flag in generator",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "Generator outputs khatira* naming when --rename-prefix is set"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-GEN-2.2",
-            "label": "Rename Static Text Files",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/static/text/"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "34 files renamed elm_text_ders_* → khatira_text_ders_*",
-              "Class names: ElmTextDers* → KhatiraTextDers*",
-              "Field prefixes: elmText* → khatiraText*"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-2.1"
-            ]
-          },
-          {
-            "id": "MS-GEN-2.3",
-            "label": "Generate Renamed Elm List Files",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/model/"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "34 files created in model/khatira_lists/",
-              "Old model/elm_lists/ deleted"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-2.2"
-            ]
-          },
-          {
-            "id": "MS-GEN-2.4",
-            "label": "Rename Cubit Files",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/cubit/elm_cubits/"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "Directory: elm_cubits/ → khatira_cubits/",
-              "35 files renamed, classes renamed"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-GEN-2.5",
-            "label": "Update View Page Imports",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/view/pages/"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "All imports in view pages use khatira* paths and class names",
-              "flutter analyze passes with 0 errors"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-2.3",
-              "MS-GEN-2.4"
-            ]
-          },
-          {
-            "id": "MS-GEN-2.6",
-            "label": "Rename Model (KhatiraModelNewOrder)",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/model/elm_model_new_order.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
-            "acceptance_criteria": [
-              "elm_model_new_order.dart → khatira_model_new_order.dart",
-              "ElmModelNewOrder → KhatiraModelNewOrder",
-              "All imports updated"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-GEN-2.7",
-            "label": "flutter analyze",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "flutter analyze passes with 0 errors"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-2.5",
-              "MS-GEN-2.6"
-            ]
-          },
-          {
-            "id": "MS-GEN-2.8",
-            "label": "flutter test",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [
-              "test/"
-            ],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "flutter test passes — all tests pass after rename"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-2.7"
-            ]
-          },
-          {
-            "id": "MS-GEN-2.9",
-            "label": "Commit rename",
-            "status": "done",
-            "completed_at": "2026-05-30",
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "git commit: refactor: rename elm prefix to khatira across codebase",
-              "Branch: refactor/rename-elm-to-khatira"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-2.8"
-            ]
-          }
-        ],
-        "dependencies": [],
-        "notes": [
-          "MS-GEN-2 runs AFTER MS-GEN-1 is complete and verified",
-          "Uses the generator's --rename-prefix khatira flag to automate most of the work",
-          "flutter analyze is the safety net — catch any missed references",
-          "FIELD-LEVEL RENAME (supplemental): 2026-05-31 — B-1 added --fix-text mode to generator, renamed 2865 elmText→khatiraText in 34 text files; B-2 regenerated 34 list files; B-3 wrote 23 unit tests for generator functions; verify: 0 elmText refs remain in lib/core/data/, 35/35 tests pass, 0 analyze errors in app code"
         ]
       },
       {
         "id": "MS-GEN-3",
         "title": "Normalizer, Tests & Polish",
         "domain": "tooling",
+        "phase": "P1",
         "week": 19,
-        "phase": "3.5",
         "planned_start": "2026-06-02",
-        "planned_end": "2026-06-03",
+        "planned_end": "2026-06-04",
         "drift_days": 0,
         "is_key_milestone": true,
         "key_milestone_label": "Generator Polish",
@@ -1207,22 +466,18 @@
           {
             "id": "MS-GEN-3.1",
             "label": "--fix-text Mode (static text normalizer)",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-31",
             "priority": "P2",
-            "context_files": [
-              "lib/core/data/static/text/",
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
+            "context_files": ["lib/core/data/static/text/", "tool/generate_elm_lists.dart"],
+            "reference_docs": ["command-center/docs/plans/2026-05-30-khatira-generator.md"],
             "acceptance_criteria": [
-              "Normalizes class names (missing Ders, FInal typo)",
-              "Fixes field name typos from typoMap",
-              "Adds missing static const String annotations",
-              "Standardizes page markers to // page N",
-              "Removes dead code (commented-out fields, developer notes)"
+              "Normalizes class names (missing Ders, FInal typo) ✓",
+              "Fixes field name typos from typoMap ✓",
+              "Adds missing static const String annotations ✓",
+              "Standardizes page markers to // page N ✓",
+              "Removes dead code (commented-out fields, developer notes) ✓",
+              "⚠️ Auto-completed during MS-GEN-2 field-level rename (B-1, 2026-05-31)"
             ],
             "constraints": [],
             "execution_mode": "human",
@@ -1231,21 +486,18 @@
           {
             "id": "MS-GEN-3.2",
             "label": "Unit Tests for Generator",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-05-31",
             "priority": "P2",
-            "context_files": [
-              "test/tool/generate_elm_lists_test.dart",
-              "tool/generate_elm_lists.dart"
-            ],
-            "reference_docs": [
-              "command-center/docs/plans/2026-05-30-khatira-generator.md"
-            ],
+            "context_files": ["test/tool/generate_elm_lists_test.dart", "tool/generate_elm_lists.dart"],
+            "reference_docs": ["command-center/docs/plans/2026-05-30-khatira-generator.md"],
             "acceptance_criteria": [
-              "Tests for inferFieldType() — all 5 types",
-              "Tests for extractFields() — standard, missing types, typos",
-              "Tests for groupByPage() — each delimiter variant",
-              "Tests for generateElmList() — output format matches expected"
+              "Tests for inferFieldType() — all 5 types ✓",
+              "Tests for extractFields() — standard, missing types, typos ✓",
+              "Tests for groupByPage() — each delimiter variant ✓",
+              "Tests for generateElmList() — output format matches expected ✓",
+              "23 tests passing",
+              "⚠️ Auto-completed during MS-GEN-2 field-level rename (B-3, 2026-05-31)"
             ],
             "constraints": [],
             "execution_mode": "human",
@@ -1257,10 +509,7 @@
             "status": "todo",
             "completed_at": null,
             "priority": "P3",
-            "context_files": [
-              "tool/README.md",
-              "AGENTS.md"
-            ],
+            "context_files": ["tool/README.md", "AGENTS.md"],
             "reference_docs": [],
             "acceptance_criteria": [
               "tool/README.md created with usage examples",
@@ -1286,11 +535,7 @@
             ],
             "constraints": [],
             "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-3.1",
-              "MS-GEN-3.2",
-              "MS-GEN-3.3"
-            ]
+            "depends_on": ["MS-GEN-3.1", "MS-GEN-3.2", "MS-GEN-3.3"]
           },
           {
             "id": "MS-GEN-3.5",
@@ -1300,498 +545,602 @@
             "priority": "P1",
             "context_files": [],
             "reference_docs": [],
-            "acceptance_criteria": [
-              "git commit: chore: add generator tests, normalizer, and docs"
-            ],
+            "acceptance_criteria": ["git commit: chore: add generator tests, normalizer, and docs"],
             "constraints": [],
             "execution_mode": "human",
-            "depends_on": [
-              "MS-GEN-3.4"
-            ]
+            "depends_on": ["MS-GEN-3.4"]
           }
         ],
         "dependencies": [],
         "notes": [
-          "MS-GEN-3 can run in parallel with or after MS-GEN-2",
-          "Tests validate the generator independently of the rename",
-          "--fix-text makes the static text files consistent and clean"
+          "MS-GEN-3.1 and 3.2 auto-completed during MS-GEN-2 field-level rename (B-1 + B-3)",
+          "Remaining: MS-GEN-3.3 (docs), 3.4 (final verify), 3.5 (commit)",
+          "Tests validate the generator independently of the rename"
+        ]
+      },
+      {
+        "id": "MS-GEN-4",
+        "title": "Strip NewOrder suffix from model, lists, and generator",
+        "domain": "refactoring",
+        "phase": "P1",
+        "week": 19,
+        "planned_start": "2026-06-01",
+        "planned_end": "2026-06-03",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Naming Cleanup",
+        "subtasks": [
+          {
+            "id": "MS-GEN-4.1",
+            "label": "Update generator output paths & variable naming",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["tool/generate_elm_lists.dart"],
+            "acceptance_criteria": [
+              "Output filename uses _order.dart instead of _new_order.dart",
+              "Generated variables use List*Order instead of List*NewOrder"
+            ],
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-4.2",
+            "label": "Rename model file + class",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/core/data/model/khatira_model_new_order.dart"],
+            "acceptance_criteria": [
+              "File renamed to khatira_model_order.dart",
+              "Class KhatiraModelNewOrder renamed to KhatiraModelOrder",
+              "All imports updated"
+            ],
+            "depends_on": []
+          },
+          {
+            "id": "MS-GEN-4.3",
+            "label": "Regenerate all 34 list files with updated generator",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/core/data/model/khatira_lists/"],
+            "acceptance_criteria": [
+              "dart run tool/generate_elm_lists.dart --rename-prefix khatira produces _order.dart files",
+              "All 34 files use KhatiraModelOrder class"
+            ],
+            "depends_on": ["MS-GEN-4.1", "MS-GEN-4.2"]
+          },
+          {
+            "id": "MS-GEN-4.4",
+            "label": "Update all consumer files (pages + search + others)",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/view/pages/", "lib/helpers/search/data_search.dart"],
+            "acceptance_criteria": [
+              "34 page files updated with new imports and variable names",
+              "data_search.dart updated with new imports and variable names",
+              "Any other consumers updated"
+            ],
+            "depends_on": ["MS-GEN-4.2", "MS-GEN-4.3"]
+          },
+          {
+            "id": "MS-GEN-4.5",
+            "label": "Verify — analyze, test, format",
+            "status": "todo",
+            "priority": "P1",
+            "acceptance_criteria": [
+              "flutter analyze passes with 0 errors",
+              "flutter test passes (all tests)",
+              "dart format . — clean"
+            ],
+            "depends_on": ["MS-GEN-4.4"]
+          }
+        ],
+        "dependencies": ["MS-GEN-2"],
+        "notes": [
+          "Completes the naming cleanup: elm → khatira (MS-GEN-2) was done, now NewOrder → Order",
+          "Generator update ensures future regeneration also produces clean names",
+          "MS-GEN-4.3 regeneration via --rename-prefix khatira automates 34 file renames"
+        ]
+      },
+      {
+        "id": "MS-AR",
+        "title": "Feature-First Folder Migration (NEW — audit §2)",
+        "domain": "architecture",
+        "phase": "P1",
+        "week": 20,
+        "planned_start": "2026-06-05",
+        "planned_end": "2026-06-12",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Feature Architecture",
+        "is_new": true,
+        "source": "ReleasAudit.md §2",
+        "subtasks": [
+          {
+            "id": "MS-AR.1",
+            "label": "Migration plan: feature-first folder map",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/"],
+            "reference_docs": ["ReleasAudit.md §2"],
+            "acceptance_criteria": [
+              "Document target structure: lib/features/{home,khatira,search,bookmarks,settings}/{presentation,cubit,models,repository}/",
+              "lib/core/ holds shared: theme, routing, constants, services, widgets",
+              "Migration order decided: leaves first (home, settings), then features with cubits (khatira, search, bookmarks)"
+            ],
+            "depends_on": []
+          },
+          {
+            "id": "MS-AR.2",
+            "label": "Create new folder skeleton",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/features/", "lib/core/"],
+            "reference_docs": ["ReleasAudit.md §2"],
+            "acceptance_criteria": [
+              "lib/features/{home,khatira,search,bookmarks,settings}/ created with empty subfolders",
+              "lib/core/{theme,routing,constants,services,widgets}/ scaffolded",
+              "Shared widgets identified for extraction (e.g., custom_text_slider)"
+            ],
+            "depends_on": ["MS-AR.1"]
+          },
+          {
+            "id": "MS-AR.3",
+            "label": "Migrate home feature",
+            "status": "todo",
+            "priority": "P2",
+            "context_files": ["lib/view/pages/home.dart", "lib/cubit/khatira_cubits/home_cubit.dart"],
+            "reference_docs": ["ReleasAudit.md §2"],
+            "acceptance_criteria": [
+              "home.dart moved to lib/features/home/presentation/",
+              "home_cubit.dart moved to lib/features/home/cubit/",
+              "All imports updated",
+              "flutter analyze passes"
+            ],
+            "depends_on": ["MS-AR.2"]
+          },
+          {
+            "id": "MS-AR.4",
+            "label": "Migrate khatira feature (34 pages + cubits)",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/view/pages/khatira*.dart", "lib/cubit/khatira_cubits/"],
+            "reference_docs": ["ReleasAudit.md §2"],
+            "acceptance_criteria": [
+              "34 khatira page files moved to lib/features/khatira/presentation/",
+              "khatira_cubits/ moved to lib/features/khatira/cubit/",
+              "khatira_lists/ moved to lib/features/khatira/data/",
+              "khatira_text_ders_*.dart moved to lib/features/khatira/data/static/",
+              "All imports updated",
+              "flutter analyze passes"
+            ],
+            "depends_on": ["MS-AR.2"]
+          },
+          {
+            "id": "MS-AR.5",
+            "label": "Update routes and verify build",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/app_routes.dart"],
+            "reference_docs": ["ReleasAudit.md §2"],
+            "acceptance_criteria": [
+              "app_routes.dart updated to new feature paths",
+              "flutter analyze passes with 0 issues",
+              "flutter test passes",
+              "flutter build apk --release succeeds"
+            ],
+            "depends_on": ["MS-AR.3", "MS-AR.4"]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §2",
+          "Goal: move from technical-layer (lib/cubit/, lib/view/) to feature-first (lib/features/khatira/, lib/features/search/, etc.)",
+          "Must be partially in place before MS-3.5 (ContentCubit consolidation) can finish cleanly"
+        ]
+      },
+      {
+        "id": "MS-DA",
+        "title": "Data Layer — Repository Pattern (NEW — audit §4)",
+        "domain": "architecture",
+        "phase": "P1",
+        "week": 20,
+        "planned_start": "2026-06-08",
+        "planned_end": "2026-06-18",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Data Layer",
+        "is_new": true,
+        "source": "ReleasAudit.md §4",
+        "subtasks": [
+          {
+            "id": "MS-DA.1",
+            "label": "Define KhatiraRepository abstract interface",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/core/data/repository/"],
+            "reference_docs": ["ReleasAudit.md §4"],
+            "acceptance_criteria": [
+              "abstract class KhatiraRepository created",
+              "Methods: Future<List<Khatira>> getAll(), Future<Khatira> getById(int id), Future<List<SearchResult>> search(String query)",
+              "Khatira domain model defined (vs current KhatiraModelNewOrder which is data-layer)"
+            ],
+            "depends_on": []
+          },
+          {
+            "id": "MS-DA.2",
+            "label": "JSON conversion script (static text → JSON assets)",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["tool/", "assets/khatira/"],
+            "reference_docs": ["ReleasAudit.md §4 Option A"],
+            "acceptance_criteria": [
+              "Tool generates assets/khatira/khatira_{1-32,pre,final}.json from static text",
+              "JSON schema matches Khatira domain model",
+              "Pub asset bundle configured in pubspec.yaml"
+            ],
+            "depends_on": ["MS-DA.1"]
+          },
+          {
+            "id": "MS-DA.3",
+            "label": "Implement StaticKhatiraRepository (reads JSON)",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/core/data/repository/static_khatira_repository.dart"],
+            "reference_docs": ["ReleasAudit.md §4"],
+            "acceptance_criteria": [
+              "Implements KhatiraRepository",
+              "Loads JSON from rootBundle on first call (cached)",
+              "getAll(), getById(), search() all work",
+              "Search supports title/subtitle/text/ayah/chapter filters"
+            ],
+            "depends_on": ["MS-DA.1", "MS-DA.2"]
+          },
+          {
+            "id": "MS-DA.4",
+            "label": "Wire ContentCubit to repository",
+            "status": "todo",
+            "priority": "P1",
+            "context_files": ["lib/cubit/"],
+            "reference_docs": ["ReleasAudit.md §4"],
+            "acceptance_criteria": [
+              "ContentCubit takes KhatiraRepository via DI",
+              "BasePageCubit's hardcoded list references removed",
+              "Repository returned as stream/state to UI"
+            ],
+            "depends_on": ["MS-DA.3", "MS-3.5"]
+          },
+          {
+            "id": "MS-DA.5",
+            "label": "Deprecate static list files",
+            "status": "todo",
+            "priority": "P2",
+            "context_files": ["lib/core/data/model/khatira_lists/"],
+            "reference_docs": ["ReleasAudit.md §4"],
+            "acceptance_criteria": [
+              "tool/generate_elm_lists.dart supports --json output mode",
+              "khatira_lists/ files removed or kept as build cache (gitignored)",
+              "flutter analyze + test pass"
+            ],
+            "depends_on": ["MS-DA.4"]
+          }
+        ],
+        "dependencies": [],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §4",
+          "Per audit: use Option A (JSON Assets) for now — best balance of static-content benefits + testability",
+          "Repository pattern enables future migration to SQLite/Hive without cubit changes",
+          "MS-DA.1 (interface) is a hard dependency for MS-3.5 (ContentCubit)"
         ]
       }
     ],
     "backlog": [
       {
-        "id": "MS-4",
-        "title": "Performance & Caching",
-        "domain": "performance",
-        "week": 20,
-        "phase": "4",
-        "planned_start": "2026-05-18",
-        "planned_end": "2026-05-19",
-        "drift_days": 0,
-        "is_key_milestone": false,
-        "subtasks": [
-          {
-            "id": "MS-4.1",
-            "label": "Precache background images on app start",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "precacheImage called for all background images in main.dart",
-              "No visible image loading delay on page transitions"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-4.2",
-            "label": "Implement lazy loading for Elm lists",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Load Elm list data on-demand instead of all 27+ lists at startup",
-              "Loading states shown while data loads",
-              "Memory usage reduced from baseline"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-4.3",
-            "label": "Optimize PageView configuration",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "keepPage: true set on PageController",
-              "pageSnapping configured for smooth UX"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          }
-        ],
-        "dependencies": [],
-        "notes": [
-          "Profile with DevTools before/after to measure improvement",
-          "Target: app launch < 2s, memory < 100MB, smooth 60fps"
-        ]
-      },
-      {
         "id": "MS-5",
-        "title": "New Features",
+        "title": "New Features (Core)",
         "domain": "features",
+        "phase": "P2",
         "week": 20,
-        "phase": "5",
-        "planned_start": "2026-05-19",
-        "planned_end": "2026-05-21",
+        "planned_start": "2026-06-10",
+        "planned_end": "2026-06-18",
         "drift_days": 0,
         "is_key_milestone": true,
         "key_milestone_label": "User Features",
         "subtasks": [
-          {
-            "id": "MS-5.1",
-            "label": "Create Bookmarking System",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "BookmarkCubit created for state management",
-              "Bookmarks stored via shared_preferences",
-              "Bookmark toggle icon on each page",
-              "Bookmarks list view accessible from home"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-5.2",
-            "label": "Implement Reading History",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Last read page tracked per section",
-              "Continue Reading section on home screen",
-              "Data persisted in shared_preferences"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-5.3",
-            "label": "Implement Dark Mode",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P3",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "ThemeCubit created for theme state",
-              "Dark theme colors defined",
-              "Theme toggle in settings page",
-              "Preference persisted"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-5.4",
-            "label": "Add Last Position Restore",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P3",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Scroll position saved when leaving page",
-              "Position restored when returning",
-              "Uses shared_preferences"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          }
+          {"id": "MS-5.1", "label": "Create Bookmarking System", "status": "todo", "priority": "P2", "context_files": [], "reference_docs": ["ReleasAudit.md §7"], "acceptance_criteria": ["BookmarkCubit created for state management", "Bookmarks stored via shared_preferences", "Bookmark toggle icon on each page", "Bookmarks list view accessible from home"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-5.2", "label": "Implement Reading History", "status": "todo", "priority": "P2", "context_files": [], "reference_docs": ["ReleasAudit.md §7"], "acceptance_criteria": ["Last read page tracked per section", "Continue Reading section on home screen", "Data persisted in shared_preferences"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-5.3", "label": "Implement Dark Mode", "status": "todo", "priority": "P3", "context_files": [], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["ThemeCubit created for theme state", "Dark theme colors defined", "Theme toggle in settings page", "Preference persisted"], "constraints": ["Consider deferring to MS-TH (centralized theme)"], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-5.4", "label": "Add Last Position Restore", "status": "todo", "priority": "P3", "context_files": [], "reference_docs": ["ReleasAudit.md §7"], "acceptance_criteria": ["Scroll position saved when leaving page", "Position restored when returning", "Uses shared_preferences"], "constraints": [], "execution_mode": "agent", "depends_on": []}
         ],
-        "dependencies": [],
+        "dependencies": ["P1"],
+        "notes": ["All features should persist state using shared_preferences", "Test on both high-end and low-end devices"]
+      },
+      {
+        "id": "MS-RX",
+        "title": "Reader Experience Enhancements (NEW — audit §5)",
+        "domain": "ui-ux",
+        "phase": "P2",
+        "week": 20,
+        "planned_start": "2026-06-15",
+        "planned_end": "2026-06-25",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Reading Experience",
+        "is_new": true,
+        "source": "ReleasAudit.md §5",
+        "subtasks": [
+          {"id": "MS-RX.1", "label": "Named font sizes (Small / Medium / Large / XL)", "status": "todo", "priority": "P2", "context_files": ["lib/cubit/base_cubit/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["Replace raw 21–37 number range with 4 named sizes", "Settings UI uses labels not numbers", "Persisted in shared_preferences"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-RX.2", "label": "Sepia mode (warm background for long reading)", "status": "todo", "priority": "P3", "context_files": ["lib/core/theme/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["Sepia theme palette defined in AppTheme", "Toggle in settings (alongside dark mode)", "All text widgets respect theme"], "constraints": ["Builds on MS-TH"], "execution_mode": "agent", "depends_on": ["MS-TH"]},
+          {"id": "MS-RX.3", "label": "Line height control (1.3 / 1.5 / 1.7 / 2.0)", "status": "todo", "priority": "P3", "context_files": ["lib/view/widgets/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["Settings exposes 4 line-height presets", "ContentPage applies selected height to text widgets", "Persisted"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-RX.4", "label": "Font picker (Amiri / Cairo / Noto Naskh Arabic)", "status": "todo", "priority": "P2", "context_files": ["pubspec.yaml", "lib/core/theme/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["3 Arabic fonts available in settings", "Fonts loaded via pubspec", "Body text uses selected font", "Persisted"], "constraints": ["⚠️ MS-7.9 had similar scope — merged here"], "execution_mode": "agent", "depends_on": ["MS-TH"]},
+          {"id": "MS-RX.5", "label": "Distraction-free reading mode", "status": "todo", "priority": "P2", "context_files": ["lib/view/pages/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["Toggle hides AppBar + bottom controls + extra buttons", "Tap center to toggle on/off", "Works in conjunction with theme"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-RX.6", "label": "Reading progress indicator (Chapter X of 34 / %)", "status": "todo", "priority": "P2", "context_files": ["lib/view/pages/", "lib/view/widgets/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["Show 'Chapter X of 34' in AppBar", "Show 'Reading Progress: NN%' bar in home or reader", "Progress = currentPageIndex / totalPages"], "constraints": [], "execution_mode": "agent", "depends_on": []}
+        ],
+        "dependencies": ["P1", "MS-TH"],
         "notes": [
-          "All features should persist state using shared_preferences",
-          "Test on both high-end and low-end devices"
+          "NEW 2026-06-02 — added from ReleasAudit.md §5",
+          "Reading is the primary use case; these features turn it from functional to delightful"
         ]
       },
       {
-        "id": "MS-6",
-        "title": "Polish & Release",
-        "domain": "release",
-        "week": 21,
-        "phase": "6",
-        "planned_start": "2026-05-26",
-        "planned_end": "2026-05-27",
+        "id": "MS-TH",
+        "title": "AppTheme Centralization (NEW — audit §10)",
+        "domain": "architecture",
+        "phase": "P2",
+        "week": 20,
+        "planned_start": "2026-06-15",
+        "planned_end": "2026-06-18",
         "drift_days": 0,
         "is_key_milestone": true,
-        "key_milestone_label": "Release",
+        "key_milestone_label": "Theme System",
+        "is_new": true,
+        "source": "ReleasAudit.md §10",
         "subtasks": [
-          {
-            "id": "MS-6.1",
-            "label": "Add Accessibility (Semantics + tooltips)",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Semantics widgets added for screen reader support",
-              "Meaningful tooltip properties on interactive elements",
-              "Test with TalkBack"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-6.2",
-            "label": "Add Global Error Handling",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Global error handler catches unhandled exceptions",
-              "User-friendly error messages displayed",
-              "Retry mechanisms for recoverable failures"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-6.3",
-            "label": "Update Documentation",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "README.md updated with current project state",
-              "Architecture decisions documented",
-              "Key code sections documented"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-6.4",
-            "label": "Version Preparation",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "pubspec.yaml version bumped",
-              "CHANGELOG updated with release notes"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-6.5",
-            "label": "Upload to Google Play",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "App icon and feature graphic created",
-              "Screenshots prepared",
-              "APK built and uploaded to Play Console",
-              "App listing complete and submitted for review"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-6.6",
-            "label": "Distribute to Alternative App Stores",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "APK uploaded to Aptoide",
-              "APK uploaded to Amazon Appstore",
-              "APK uploaded to Samsung Galaxy Store",
-              "GitHub release created for direct APK download"
-            ],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          }
+          {"id": "MS-TH.1", "label": "Create AppTheme class (light theme)", "status": "todo", "priority": "P1", "context_files": ["lib/core/theme/"], "reference_docs": ["ReleasAudit.md §10"], "acceptance_criteria": ["AppTheme class at lib/core/theme/app_theme.dart", "Light theme palette extracted from current app_them.dart", "Text themes centralized"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-TH.2", "label": "Add dark + sepia palettes", "status": "todo", "priority": "P1", "context_files": ["lib/core/theme/"], "reference_docs": ["ReleasAudit.md §5"], "acceptance_criteria": ["AppTheme.dark() returns dark palette", "AppTheme.sepia() returns sepia palette", "All 3 share typography and component themes"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-TH.1"]},
+          {"id": "MS-TH.3", "label": "Centralize text styles (hadith, ayah, body)", "status": "todo", "priority": "P1", "context_files": ["lib/core/theme/"], "reference_docs": ["ReleasAudit.md §10"], "acceptance_criteria": ["All text styles (hadith, ayah, body, title) live in AppTheme", "Old app_them.dart text styles deleted", "Custom text widgets reference AppTheme.styles.*"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-TH.1"]},
+          {"id": "MS-TH.4", "label": "Integrate AppTheme with MaterialApp (ThemeMode)", "status": "todo", "priority": "P1", "context_files": ["lib/main.dart"], "reference_docs": ["ReleasAudit.md §10"], "acceptance_criteria": ["MaterialApp uses AppTheme.light/dark/sepia", "ThemeMode read from ThemeCubit", "Live theme switching works without restart"], "constraints": ["Pairs with MS-5.3 Dark Mode"], "execution_mode": "agent", "depends_on": ["MS-TH.2"]}
         ],
-        "dependencies": [
-          "MS-3",
-          "MS-4",
-          "MS-5"
-        ],
+        "dependencies": ["P1"],
         "notes": [
-          "Final verification: flutter analyze, flutter test --coverage, flutter build apk --release",
-          "Upload to Google Play + alternative stores (Aptoide, Amazon, etc.)"
+          "NEW 2026-06-02 — added from ReleasAudit.md §10",
+          "Pairs with MS-3.3 (AppStrings) for full theming/i18n foundation",
+          "Dark + Sepia palettes unblock MS-5.3, MS-RX.2, MS-RX.4"
+        ]
+      },
+      {
+        "id": "MS-SX",
+        "title": "Search UX Overhaul (NEW — audit §6)",
+        "domain": "ui-ux",
+        "phase": "P3",
+        "week": 20,
+        "planned_start": "2026-06-18",
+        "planned_end": "2026-06-25",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Search",
+        "is_new": true,
+        "source": "ReleasAudit.md §6",
+        "subtasks": [
+          {"id": "MS-SX.1", "label": "Search categories (title/subtitle/content/verse/chapter)", "status": "todo", "priority": "P2", "context_files": ["lib/features/search/"], "reference_docs": ["ReleasAudit.md §6"], "acceptance_criteria": ["Search bar has category chips/dropdown", "Each category restricts search to its field", "Results show which category matched"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-3.4"]},
+          {"id": "MS-SX.2", "label": "Recent searches (5 most recent)", "status": "todo", "priority": "P2", "context_files": ["lib/features/search/"], "reference_docs": ["ReleasAudit.md §6"], "acceptance_criteria": ["Last 5 searches saved to shared_preferences", "Shown as tappable chips when search bar empty"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-SX.3", "label": "Persistent search history (10 last)", "status": "todo", "priority": "P2", "context_files": ["lib/features/search/"], "reference_docs": ["ReleasAudit.md §6"], "acceptance_criteria": ["10 most recent searches persisted", "User can clear history", "Accessible from search page (separate from chips)"], "constraints": ["⚠️ MS-7.4 had similar scope — merged here"], "execution_mode": "agent", "depends_on": ["MS-SX.2"]},
+          {"id": "MS-SX.4", "label": "Bottom-sheet search UX (vs dedicated page)", "status": "todo", "priority": "P2", "context_files": ["lib/features/search/"], "reference_docs": ["ReleasAudit.md §6"], "acceptance_criteria": ["Search opens as modal bottom sheet", "Full-screen option available", "Results inline, no navigation away from current page"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-SX.5", "label": "Wire SearchCubit (from MS-3.4) to repository", "status": "todo", "priority": "P1", "context_files": ["lib/cubit/search_cubit.dart"], "reference_docs": ["ReleasAudit.md §3, §6"], "acceptance_criteria": ["SearchCubit takes KhatiraRepository via DI", "Uses repository.search() with category filters", "Returns typed SearchResult objects"], "constraints": ["Depends on MS-DA.3"], "execution_mode": "agent", "depends_on": ["MS-DA.3"]}
+        ],
+        "dependencies": ["P1", "P2"],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §6",
+          "Merges with MS-7.4 (search history) to avoid duplication",
+          "SearchCubit lives in MS-3.4; this milestone owns its UX layer"
         ]
       },
       {
         "id": "MS-7",
         "title": "Extra Features",
         "domain": "features",
+        "phase": "P3",
         "week": 21,
-        "phase": "5",
-        "planned_start": "2026-05-21",
-        "planned_end": "2026-05-26",
+        "planned_start": "2026-06-20",
+        "planned_end": "2026-07-05",
         "drift_days": 0,
         "is_key_milestone": true,
         "key_milestone_label": "Extra Features",
         "subtasks": [
-          {
-            "id": "MS-7.7",
-            "label": "Table of Contents — visual grid of 34 chapters with progress dots",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P1",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Grid/tile view shows all 34 chapters with titles + progress indicators",
-              "Tapping a tile navigates directly to that chapter",
-              "Replaces or augments current flat list navigation"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.1",
-            "label": "Random Khatirah — daily dose button showing random content inline",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Shuffle button on home page picks random content from all 34 chapters",
-              "Content displays inline without navigating to a new page"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.3",
-            "label": "Copy Text — make content SelectableText for copying",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "All content text widgets use SelectableText",
-              "Users can long-press to copy any selection to clipboard"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.2",
-            "label": "Personal Notes — long-press paragraph to add, view from Notes list",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Long-press on paragraph shows 'Add note' option",
-              "Notes saved per-page in shared_preferences",
-              "Notes list view accessible from home screen"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.4",
-            "label": "Search History — save last 10 searches as tappable chips",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Last 10 search queries stored in shared_preferences",
-              "Recent searches shown as tappable chips on search page"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.9",
-            "label": "Font Style Picker — multiple Arabic fonts for reading body",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "2-3 Arabic font options available (e.g. traditional, modern Naskh)",
-              "Font choice persisted in shared_preferences",
-              "Font picker accessible from settings or app bar"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.5",
-            "label": "Daily Notification — push random khatirah at user-set time",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Add flutter_local_notifications dependency",
-              "User can set notification time in settings",
-              "Random content notification fires daily at chosen time"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.10",
-            "label": "Export Bookmarks — save bookmarked content as .txt file",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "Export button in bookmarks list view",
-              "Saves bookmarked content as .txt file",
-              "Uses share_plus to share/export the file"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": [
-              "MS-5.1"
-            ]
-          },
-          {
-            "id": "MS-7.6",
-            "label": "Reading Goals — daily page goal + streak counter",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P3",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "User can set daily pages goal (settings)",
-              "Streak counter tracks consecutive days meeting goal",
-              "Progress shown on home screen"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          },
-          {
-            "id": "MS-7.8",
-            "label": "Multi-language UI — English/Arabic toggle using intl package",
-            "status": "todo",
-            "completed_at": null,
-            "priority": "P3",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [
-              "English locale added alongside existing Arabic",
-              "Settings toggle switches UI language",
-              "Content text stays Arabic regardless of UI language"
-            ],
-            "constraints": [],
-            "execution_mode": "agent",
-            "depends_on": []
-          }
+          {"id": "MS-7.7", "label": "Table of Contents — visual grid of 34 chapters", "status": "todo", "priority": "P1", "context_files": ["lib/features/home/"], "reference_docs": [], "acceptance_criteria": ["Grid/tile view shows all 34 chapters with titles + progress indicators", "Tapping a tile navigates directly to that chapter", "Replaces or augments current flat list navigation"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-7.1", "label": "Random Khatirah — daily dose button", "status": "todo", "priority": "P2", "context_files": ["lib/features/home/"], "reference_docs": [], "acceptance_criteria": ["Shuffle button on home page picks random content from all 34 chapters", "Content displays inline without navigating to a new page"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-7.3", "label": "Copy Text — SelectableText for all content", "status": "todo", "priority": "P2", "context_files": ["lib/view/widgets/"], "reference_docs": [], "acceptance_criteria": ["All content text widgets use SelectableText", "Users can long-press to copy any selection to clipboard"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-7.2", "label": "Personal Notes — long-press paragraph", "status": "todo", "priority": "P2", "context_files": ["lib/features/notes/"], "reference_docs": [], "acceptance_criteria": ["Long-press on paragraph shows 'Add note' option", "Notes saved per-page in shared_preferences", "Notes list view accessible from home screen"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-7.5", "label": "Daily Notification — push random khatirah", "status": "todo", "priority": "P2", "context_files": ["pubspec.yaml"], "reference_docs": [], "acceptance_criteria": ["Add flutter_local_notifications dependency", "User can set notification time in settings", "Random content notification fires daily at chosen time"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-7.10", "label": "Export Bookmarks — save as .txt file", "status": "todo", "priority": "P2", "context_files": ["lib/features/bookmarks/"], "reference_docs": [], "acceptance_criteria": ["Export button in bookmarks list view", "Saves bookmarked content as .txt file", "Uses share_plus to share/export the file"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-5.1"]},
+          {"id": "MS-7.6", "label": "Reading Goals — daily page goal + streak counter", "status": "todo", "priority": "P3", "context_files": ["lib/features/settings/"], "reference_docs": [], "acceptance_criteria": ["User can set daily pages goal (settings)", "Streak counter tracks consecutive days meeting goal", "Progress shown on home screen"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-7.8", "label": "Multi-language UI — English/Arabic toggle", "status": "todo", "priority": "P3", "context_files": ["pubspec.yaml"], "reference_docs": [], "acceptance_criteria": ["English locale added alongside existing Arabic", "Settings toggle switches UI language", "Content text stays Arabic regardless of UI language"], "constraints": ["⚠️ MS-PUB removed intl previously; will need to re-add"], "execution_mode": "agent", "depends_on": []}
         ],
-        "dependencies": [
-          "MS-5"
-        ],
+        "dependencies": ["P2"],
         "notes": [
-          "Ship after MS-5 core features are done",
-          "All features use shared_preferences for persistence where applicable",
-          "MS-7.8 (Multi-language) leverages existing intl dependency",
+          "Ship after P2 core features are done",
+          "MS-7.4 (Search History) and MS-7.9 (Font Picker) merged into MS-SX.3 and MS-RX.4 respectively to avoid duplication",
           "MS-7.5 (Notifications) needs flutter_local_notifications added to pubspec.yaml",
           "MS-7.7 (TOC) benefits from MS-3 generic widget refactor"
+        ]
+      },
+      {
+        "id": "MS-QT",
+        "title": "Widget, Golden & Integration Tests (NEW — audit §11)",
+        "domain": "quality",
+        "phase": "P4",
+        "week": 21,
+        "planned_start": "2026-06-25",
+        "planned_end": "2026-07-10",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Test Coverage",
+        "is_new": true,
+        "source": "ReleasAudit.md §11",
+        "subtasks": [
+          {"id": "MS-QT.1", "label": "Widget tests (Home, Reader, Search, Bookmarks)", "status": "todo", "priority": "P1", "context_files": ["test/widget/"], "reference_docs": ["ReleasAudit.md §11"], "acceptance_criteria": ["Home screen widget test (renders list, navigates to chapter)", "Reader screen widget test (page changes, font size buttons)", "Search widget test (results render correctly)", "Bookmarks widget test (list renders from prefs)"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-QT.2", "label": "Golden tests for visual regression", "status": "todo", "priority": "P2", "context_files": ["test/golden/"], "reference_docs": ["ReleasAudit.md §11"], "acceptance_criteria": ["Reader page golden (light + dark + sepia)", "Bookmarks list golden", "Home page golden", "CI fails on visual diff > threshold"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-QT.3", "label": "Integration tests for critical user flows", "status": "todo", "priority": "P2", "context_files": ["test/integration/"], "reference_docs": ["ReleasAudit.md §11"], "acceptance_criteria": ["Flow: open app → open chapter → search → bookmark → resume", "Verified on real device or integration_test environment", "All steps pass in CI"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-QT.4", "label": "Repository unit tests (with mock + real JSON)", "status": "todo", "priority": "P1", "context_files": ["test/unit/"], "reference_docs": ["ReleasAudit.md §11"], "acceptance_criteria": ["StaticKhatiraRepository tests (loads JSON, getById, search)", "MockKhatiraRepository tests for cubit unit tests", "Edge cases: missing chapter, empty query, malformed JSON"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-DA.3"]}
+        ],
+        "dependencies": ["P1"],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §11",
+          "Pairs with MS-8.13 (unit tests) for full test pyramid",
+          "Target: 70%+ unit, 50%+ widget, key flows integration"
+        ]
+      },
+      {
+        "id": "MS-A11y",
+        "title": "Accessibility Audit (NEW — audit §9)",
+        "domain": "quality",
+        "phase": "P4",
+        "week": 21,
+        "planned_start": "2026-06-28",
+        "planned_end": "2026-07-08",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Accessibility",
+        "is_new": true,
+        "source": "ReleasAudit.md §9",
+        "subtasks": [
+          {"id": "MS-A11y.1", "label": "Add Semantics widgets throughout", "status": "todo", "priority": "P1", "context_files": ["lib/view/"], "reference_docs": ["ReleasAudit.md §9"], "acceptance_criteria": ["All interactive elements wrapped in Semantics", "Meaningful labels on buttons/icons", "Reading content has semantic structure (titles, paragraphs)"], "constraints": ["Partially overlaps with MS-6.1"], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-A11y.2", "label": "Arabic screen reader labels (TalkBack)", "status": "todo", "priority": "P1", "context_files": ["lib/view/"], "reference_docs": ["ReleasAudit.md §9"], "acceptance_criteria": ["All Semantics labels are in Arabic (RTL-aware)", "Tested with TalkBack on Android", "Reader pages announce chapter + page number"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-A11y.1"]},
+          {"id": "MS-A11y.3", "label": "Dynamic font scaling (respect system settings)", "status": "todo", "priority": "P1", "context_files": ["lib/view/"], "reference_docs": ["ReleasAudit.md §9"], "acceptance_criteria": ["Text widgets respect MediaQuery.textScaler", "Layouts don't break at 200% text scale", "User font picker multiplies with system scale (or replaces it)"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-A11y.4", "label": "WCAG color contrast validation", "status": "todo", "priority": "P1", "context_files": ["lib/core/theme/"], "reference_docs": ["ReleasAudit.md §9"], "acceptance_criteria": ["All text/background pairs ≥ 4.5:1 (AA)", "UI components ≥ 3:1 contrast", "Validated in light, dark, sepia themes"], "constraints": ["Validates MS-TH output"], "execution_mode": "agent", "depends_on": ["MS-TH"]},
+          {"id": "MS-A11y.5", "label": "TalkBack/VoiceOver manual test pass", "status": "todo", "priority": "P2", "context_files": [], "reference_docs": ["ReleasAudit.md §9"], "acceptance_criteria": ["All critical user flows usable with TalkBack/VoiceOver", "Issues logged in MS-8 or new tasks", "Test report attached to milestone"], "constraints": [], "execution_mode": "human", "depends_on": ["MS-A11y.1", "MS-A11y.2"]}
+        ],
+        "dependencies": ["P1"],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §9",
+          "Religious-text app must be accessible to diverse users including visually impaired",
+          "Reading experience should not break at large text scales (low vision users)"
+        ]
+      },
+      {
+        "id": "MS-PUB",
+        "title": "Pubspec & SDK Audit (NEW — audit §14)",
+        "domain": "quality",
+        "phase": "P4",
+        "week": 21,
+        "planned_start": "2026-07-01",
+        "planned_end": "2026-07-08",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Dependencies",
+        "is_new": true,
+        "source": "ReleasAudit.md §14",
+        "subtasks": [
+          {"id": "MS-PUB.1", "label": "Audit all dependencies (runtime vs dev)", "status": "todo", "priority": "P1", "context_files": ["pubspec.yaml"], "reference_docs": ["ReleasAudit.md §14"], "acceptance_criteria": ["flutter_launcher_icons → dev_dependencies", "change_app_package_name → dev_dependencies (if re-added)", "Any other tooling-only deps identified", "Build size reduced"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-PUB.2", "label": "Remove unused dependencies", "status": "todo", "priority": "P1", "context_files": ["pubspec.yaml"], "reference_docs": ["ReleasAudit.md §14"], "acceptance_criteria": ["Grep lib/ for each dep's import", "Deps with 0 imports removed", "flutter pub get succeeds", "flutter analyze passes"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-PUB.3", "label": "Dart SDK upgrade plan", "status": "todo", "priority": "P1", "context_files": ["pubspec.yaml"], "reference_docs": ["ReleasAudit.md §14"], "acceptance_criteria": ["Current SDK constraints documented", "Target: latest stable Dart 3.x + Flutter 3.x", "Compatibility audit for all deps", "Upgrade branch created (if non-trivial)"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-PUB.4", "label": "Verify build after all pubspec changes", "status": "todo", "priority": "P1", "context_files": [], "reference_docs": [], "acceptance_criteria": ["flutter pub get — no errors", "flutter analyze — 0 errors", "flutter test — all pass", "flutter build apk --release — success"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-PUB.1", "MS-PUB.2", "MS-PUB.3"]}
+        ],
+        "dependencies": ["P1"],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §14",
+          "MS-9.5 already removed hex/intl/cupertino_icons/change_app_package_name — verify what remains",
+          "Dart SDK upgrade is a separate effort (could be a separate branch/milestone)"
+        ]
+      },
+      {
+        "id": "MS-6",
+        "title": "Polish & Release",
+        "domain": "release",
+        "phase": "P5",
+        "week": 21,
+        "planned_start": "2026-07-05",
+        "planned_end": "2026-07-20",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Release",
+        "subtasks": [
+          {"id": "MS-6.1", "label": "Accessibility (moved to MS-A11y)", "status": "todo", "priority": "P2", "context_files": [], "reference_docs": ["ReleasAudit.md §9"], "acceptance_criteria": ["Tracked in MS-A11y milestone"], "constraints": ["DEPRECATED → see MS-A11y"], "execution_mode": "agent", "depends_on": ["MS-A11y"]},
+          {"id": "MS-6.2", "label": "Add Global Error Handling", "status": "todo", "priority": "P2", "context_files": ["lib/main.dart"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["FlutterError.onError configured", "Global exception handler catches unhandled", "User-friendly error UI shown", "Retry mechanisms for recoverable failures"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-6.3", "label": "Update Documentation", "status": "todo", "priority": "P2", "context_files": ["README.md", "AGENTS.md"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["README.md updated with current project state", "Architecture decisions documented", "Key code sections documented"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-6.4", "label": "Version Preparation", "status": "todo", "priority": "P1", "context_files": ["pubspec.yaml", "CHANGELOG.md"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["pubspec.yaml version bumped", "CHANGELOG updated with release notes"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-6.5", "label": "Upload to Google Play", "status": "todo", "priority": "P1", "context_files": [], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["App icon and feature graphic created (see MS-PP)", "Screenshots prepared (see MS-REL)", "APK built and uploaded to Play Console", "App listing complete and submitted for review"], "constraints": ["Depends on MS-REL + MS-PP"], "execution_mode": "human", "depends_on": ["MS-REL", "MS-PP"]},
+          {"id": "MS-6.6", "label": "Distribute to Alternative App Stores", "status": "todo", "priority": "P2", "context_files": [], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["APK uploaded to Aptoide", "APK uploaded to Amazon Appstore", "APK uploaded to Samsung Galaxy Store", "GitHub release created for direct APK download"], "constraints": [], "execution_mode": "human", "depends_on": ["MS-6.5"]}
+        ],
+        "dependencies": ["P1", "P2", "P3", "P4"],
+        "notes": [
+          "Final verification: flutter analyze, flutter test --coverage, flutter build apk --release",
+          "MS-6.1 (Accessibility) absorbed by MS-A11y — kept for traceability"
+        ]
+      },
+      {
+        "id": "MS-REL",
+        "title": "Android Release Hardening (NEW — audit §13)",
+        "domain": "release",
+        "phase": "P5",
+        "week": 21,
+        "planned_start": "2026-07-05",
+        "planned_end": "2026-07-12",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "Android Release",
+        "is_new": true,
+        "source": "ReleasAudit.md §13",
+        "subtasks": [
+          {"id": "MS-REL.1", "label": "Configure app signing (keystore + key.properties)", "status": "todo", "priority": "P1", "context_files": ["android/app/", "android/key.properties"], "reference_docs": ["ReleasAudit.md §13"], "acceptance_criteria": ["Release keystore generated and stored securely", "key.properties configured (gitignored)", "build.gradle reads signing from key.properties", "Release APK signed correctly"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-REL.2", "label": "Configure ProGuard / R8", "status": "todo", "priority": "P1", "context_files": ["android/app/build.gradle", "android/app/proguard-rules.pro"], "reference_docs": ["ReleasAudit.md §13"], "acceptance_criteria": ["minifyEnabled true for release", "shrinkResources true", "ProGuard rules cover flutter_bloc, share_plus, etc.", "APK builds without errors", "App functions identically after minification"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-REL.3", "label": "App Bundle (AAB) release build", "status": "todo", "priority": "P1", "context_files": [], "reference_docs": ["ReleasAudit.md §13"], "acceptance_criteria": ["flutter build appbundle --release succeeds", "AAB uploaded to Play Console internal test", "Verified on Play Store pre-launch report"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-REL.1", "MS-REL.2"]},
+          {"id": "MS-REL.4", "label": "App bundle size optimization", "status": "todo", "priority": "P2", "context_files": ["pubspec.yaml", "lib/"], "reference_docs": ["ReleasAudit.md §13"], "acceptance_criteria": ["APK/AAB size measured and recorded", "Multi-ABI splits if applicable", "Unnecessary assets removed", "Target: <30MB download size"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-REL.3"]},
+          {"id": "MS-REL.5", "label": "Play Store assets (screenshots, feature graphic)", "status": "todo", "priority": "P1", "context_files": ["store_assets/"], "reference_docs": ["ReleasAudit.md §13"], "acceptance_criteria": ["Phone screenshots (4-8) for all 34 chapter previews + home", "Tablet screenshots (2-4)", "Feature graphic 1024×500", "App description (short + long)", "All in /store_assets/ ready for Play Console upload"], "constraints": [], "execution_mode": "human", "depends_on": []}
+        ],
+        "dependencies": ["P1", "P4"],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §13",
+          "Signing config MUST be done by human (keystore security)",
+          "AAB is required by Play Store since Aug 2021 — verify this is configured"
+        ]
+      },
+      {
+        "id": "MS-PP",
+        "title": "Privacy, About, Splash, Icon, Crashlytics (NEW — audit §12)",
+        "domain": "release",
+        "phase": "P5",
+        "week": 21,
+        "planned_start": "2026-07-05",
+        "planned_end": "2026-07-15",
+        "drift_days": 0,
+        "is_key_milestone": true,
+        "key_milestone_label": "App Presentation",
+        "is_new": true,
+        "source": "ReleasAudit.md §12",
+        "subtasks": [
+          {"id": "MS-PP.1", "label": "Privacy Policy (URL + in-app reference)", "status": "todo", "priority": "P1", "context_files": ["docs/PRIVACY_POLICY.md", "lib/core/data/static/links.dart"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["Privacy policy hosted at public URL", "About screen links to it", "Play Console data safety form completed", "States: 100% offline, no data collection, no account"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-PP.2", "label": "About screen (version, build, dev, contact)", "status": "todo", "priority": "P2", "context_files": ["lib/features/settings/about_page.dart"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["About page accessible from settings", "Shows: app version, build number, developer info, contact email, privacy policy link, OSS licenses"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-PP.3", "label": "App icon redesign (professional branding)", "status": "todo", "priority": "P2", "context_files": ["assets/icon/"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["Icon designed (mosque/Arabic calligraphy theme)", "All required sizes generated (mipmap-*)", "Adaptive icon for Android 8+", "Tested at 48px, 72px, 192px"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-PP.4", "label": "Splash screen", "status": "todo", "priority": "P2", "context_files": ["android/app/src/main/res/drawable/"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["Branded splash (icon on solid background)", "flutter_native_splash configured in pubspec", "No white flash on cold start"], "constraints": [], "execution_mode": "agent", "depends_on": ["MS-PP.3"]},
+          {"id": "MS-PP.5", "label": "Crashlytics integration", "status": "todo", "priority": "P1", "context_files": ["pubspec.yaml", "lib/main.dart"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["firebase_crashlytics added to pubspec", "Firebase project created (if not exists)", "Crashlytics initialized in main()", "Test crash appears in Firebase console", "Opt-in / opt-out toggle in settings (GDPR-friendly)"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-PP.6", "label": "Offline guarantee statement", "status": "todo", "priority": "P2", "context_files": ["README.md", "lib/features/settings/about_page.dart"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["Clear statement: 100% offline, no account, no data collection, no analytics", "Visible in About page and Play Store description"], "constraints": [], "execution_mode": "human", "depends_on": []},
+          {"id": "MS-PP.7", "label": "Analytics (optional, opt-in only)", "status": "todo", "priority": "P3", "context_files": ["lib/features/settings/"], "reference_docs": ["ReleasAudit.md §12"], "acceptance_criteria": ["Decision: SKIP analytics by default (privacy-first)", "If added: opt-in only, no PII, configurable in settings"], "constraints": ["⚠️ Recommend skipping — religious-content app, users expect privacy"], "execution_mode": "human", "depends_on": []}
+        ],
+        "dependencies": ["P1", "P4"],
+        "notes": [
+          "NEW 2026-06-02 — added from ReleasAudit.md §12",
+          "Privacy policy MUST be human-written (legal document)",
+          "Icon design and crashlytics firebase setup need human action"
+        ]
+      },
+      {
+        "id": "MS-4",
+        "title": "Performance & Caching",
+        "domain": "performance",
+        "phase": "P5",
+        "week": 20,
+        "planned_start": "2026-06-15",
+        "planned_end": "2026-06-22",
+        "drift_days": 0,
+        "is_key_milestone": false,
+        "subtasks": [
+          {"id": "MS-4.1", "label": "Precache background images on app start", "status": "todo", "priority": "P2", "context_files": ["lib/main.dart"], "reference_docs": ["ReleasAudit.md §8"], "acceptance_criteria": ["precacheImage called for all background images in main.dart", "No visible image loading delay on page transitions"], "constraints": [], "execution_mode": "agent", "depends_on": []},
+          {"id": "MS-4.2", "label": "Implement lazy loading for khatira lists", "status": "todo", "priority": "P2", "context_files": ["lib/features/khatira/data/"], "reference_docs": ["ReleasAudit.md §8"], "acceptance_criteria": ["Load khatira data on-demand (via MS-DA repository)", "Loading states shown while data loads", "Memory usage reduced from baseline"], "constraints": ["Tied to MS-DA"], "execution_mode": "agent", "depends_on": ["MS-DA.3"]},
+          {"id": "MS-4.3", "label": "Optimize PageView configuration", "status": "todo", "priority": "P2", "context_files": ["lib/view/widgets/"], "reference_docs": ["ReleasAudit.md §8"], "acceptance_criteria": ["keepPage: true set on PageController", "pageSnapping configured for smooth UX", "BlocSelector used to reduce rebuilds", "RepaintBoundary around heavy content"], "constraints": [], "execution_mode": "agent", "depends_on": []}
+        ],
+        "dependencies": ["P1"],
+        "notes": [
+          "Profile with DevTools before/after to measure improvement",
+          "Target: app launch < 2s, memory < 100MB, smooth 60fps"
         ]
       }
     ],
@@ -1802,254 +1151,85 @@
         "completed_at": "2026-04-30",
         "summary": "Removed dead code, consolidated fontSize into BasePageCubit, cleaned untracked files, updated docs",
         "domain": "code-quality",
-        "phase": "1",
-        "subtasks": [
-          {
-            "id": "MS-1.1",
-            "label": "Remove dead code",
-            "status": "done",
-            "done": false,
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-1.2",
-            "label": "Consolidate font size management",
-            "status": "done",
-            "done": false,
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-1.3",
-            "label": "Clean up untracked files",
-            "status": "done",
-            "done": false,
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          },
-          {
-            "id": "MS-1.4",
-            "label": "Update documentation",
-            "status": "done",
-            "done": false,
-            "completed_at": null,
-            "priority": "P2",
-            "context_files": [],
-            "reference_docs": [],
-            "acceptance_criteria": [],
-            "constraints": [],
-            "execution_mode": "human",
-            "depends_on": []
-          }
-        ]
+        "phase": "P1-equivalent"
+      },
+      {
+        "id": "MS-9",
+        "title": "Data Files Standardization & Cleanup",
+        "completed_at": "2026-05-31",
+        "summary": "All 9 subtasks auto-resolved by Phase B (generator work). 68 data files (34 lists + 34 text) regenerated. ~2,600 static const fields, 565 KhatiraModelNewOrder entries. --fix-text mode + generator regeneration automated class naming, field typos, type annotations, page markers, dev artifact cleanup.",
+        "domain": "data-quality",
+        "phase": "P1-equivalent"
+      },
+      {
+        "id": "MS-QF",
+        "title": "Quranic Font Unification & Tashkeel Correction",
+        "completed_at": "2026-05-31",
+        "summary": "Fixed AmiriQ font mismatch, corrected all 766 ayahHadith strings with proper tashkeel from Tanzil.net, standardized ayah numbering to ۝ format, standardized surah name format.",
+        "domain": "content-quality",
+        "phase": "P1-equivalent"
+      },
+      {
+        "id": "MS-GEN-1",
+        "title": "Generator Core — Static Text to Elm List Generator",
+        "completed_at": "2026-05-30",
+        "summary": "Built tool/generate_elm_lists.dart (669 lines). Parser, page grouping, output writer, main loop, verification against originals, commit. All 34 generated files match originals.",
+        "domain": "tooling",
+        "phase": "P1-equivalent"
+      },
+      {
+        "id": "MS-GEN-2",
+        "title": "Rename elm → khatira across codebase",
+        "completed_at": "2026-05-30",
+        "summary": "Renamed 34 static text files, generated renamed list files, renamed cubit files, updated view page imports, renamed model to KhatiraModelNewOrder. flutter analyze clean. 23 generator unit tests pass. Field-level rename (B-1 + B-2 + B-3) renamed 2865 elmText→khatiraText in 34 text files.",
+        "domain": "refactoring",
+        "phase": "P1-equivalent"
       }
     ]
   },
   "agents": [],
   "agent_log": [
+    {"agent_id": "orchestrator", "action": "create_milestone", "target_type": "milestone", "target_id": "MS-SPLIT", "description": "Created milestone \"Split Large Files\" in backlog", "tags": ["milestone"], "id": "log_1778613185453_azqgdd", "timestamp": "2026-05-12T19:13:05.454Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_task", "target_type": "task", "target_id": "MS-SPLIT_001", "description": "Added task \"Split large static text files (19 files >300 lines)\" to milestone \"Split Large Files\"", "tags": ["milestone", "task"], "id": "log_1778613192136_iqsvbf", "timestamp": "2026-05-12T19:13:12.136Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_task", "target_type": "task", "target_id": "MS-SPLIT_002", "description": "Added task \"Split large elm list model files (17 files >300 lines)\" to milestone \"Split Large Files\"", "tags": ["milestone", "task"], "id": "log_1778613193369_xj8dea", "timestamp": "2026-05-12T19:13:13.369Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_task", "target_type": "task", "target_id": "MS-SPLIT_003", "description": "Added task \"Split home.dart into reusable widget components\" to milestone \"Split Large Files\"", "tags": ["milestone", "task"], "id": "log_1778613194395_g4t2e1", "timestamp": "2026-05-12T19:13:14.395Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_task", "target_type": "task", "target_id": "MS-SPLIT_004", "description": "Added task \"Verify build and analyze after all splits\" to milestone \"Split Large Files\"", "tags": ["milestone", "task"], "id": "log_1778613195320_dp0cv8", "timestamp": "2026-05-12T19:13:15.320Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_note", "target_type": "milestone", "target_id": "MS-SPLIT", "description": "Added note to milestone \"Split Large Files\": Static text worst offenders: elm_text_ders_twenty.dart (768L/52K), eighteen.dart (668L/52K), one.dart (628L/40K), twenty_one.dart (599L/44K), twenty_seven.dart (587L/48K), twenty_five.dart (554L/44K), twenty_three.dart (506L/52K)", "tags": ["milestone"], "id": "log_1778613200254_4lfonn", "timestamp": "2026-05-12T19:13:20.254Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_note", "target_type": "milestone", "target_id": "MS-SPLIT", "description": "Added note to milestone \"Split Large Files\": Elm list worst offenders: elm_list_20_new_order.dart (750L), 18 (727L), 21 (608L), 27 (555L), 25 (552L), 1 (507L), 23 (504L)", "tags": ["milestone"], "id": "log_1778613201318_m15uh2", "timestamp": "2026-05-12T19:13:21.318Z"},
+    {"agent_id": "orchestrator", "action": "add_milestone_note", "target_type": "milestone", "target_id": "MS-SPLIT", "description": "Added note to milestone \"Split Large Files\": home.dart is the only page file >300 lines (387L/20K) - extract widget components", "tags": ["milestone"], "id": "log_1778613202368_eeg9wm", "timestamp": "2026-05-12T19:13:22.368Z"},
+    {"agent_id": "orchestrator", "action": "start_task", "target_type": "task", "target_id": "MS-GEN-1.0", "description": "Started task \"Create branch feature/khatira-generator\"", "tags": ["lifecycle"], "id": "log_1780121247603_zq9ind", "timestamp": "2026-05-30T06:07:27.603Z"},
     {
       "agent_id": "orchestrator",
-      "action": "create_milestone",
-      "target_type": "milestone",
-      "target_id": "MS-SPLIT",
-      "description": "Created milestone \"Split Large Files\" in backlog",
-      "tags": [
-        "milestone"
-      ],
-      "id": "log_1778613185453_azqgdd",
-      "timestamp": "2026-05-12T19:13:05.454Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_task",
-      "target_type": "task",
-      "target_id": "MS-SPLIT_001",
-      "description": "Added task \"Split large static text files (19 files >300 lines)\" to milestone \"Split Large Files\"",
-      "tags": [
-        "milestone",
-        "task"
-      ],
-      "id": "log_1778613192136_iqsvbf",
-      "timestamp": "2026-05-12T19:13:12.136Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_task",
-      "target_type": "task",
-      "target_id": "MS-SPLIT_002",
-      "description": "Added task \"Split large elm list model files (17 files >300 lines)\" to milestone \"Split Large Files\"",
-      "tags": [
-        "milestone",
-        "task"
-      ],
-      "id": "log_1778613193369_xj8dea",
-      "timestamp": "2026-05-12T19:13:13.369Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_task",
-      "target_type": "task",
-      "target_id": "MS-SPLIT_003",
-      "description": "Added task \"Split home.dart into reusable widget components\" to milestone \"Split Large Files\"",
-      "tags": [
-        "milestone",
-        "task"
-      ],
-      "id": "log_1778613194395_g4t2e1",
-      "timestamp": "2026-05-12T19:13:14.395Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_task",
-      "target_type": "task",
-      "target_id": "MS-SPLIT_004",
-      "description": "Added task \"Verify build and analyze after all splits\" to milestone \"Split Large Files\"",
-      "tags": [
-        "milestone",
-        "task"
-      ],
-      "id": "log_1778613195320_dp0cv8",
-      "timestamp": "2026-05-12T19:13:15.320Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_note",
-      "target_type": "milestone",
-      "target_id": "MS-SPLIT",
-      "description": "Added note to milestone \"Split Large Files\": Static text worst offenders: elm_text_ders_twenty.dart (768L/52K), eighteen.dart (668L/52K), one.dart (628L/40K), twenty_one.dart (599L/44K), twenty_seven.dart (587L/48K), twenty_five.dart (554L/44K), twenty_three.dart (506L/52K)",
-      "tags": [
-        "milestone"
-      ],
-      "id": "log_1778613200254_4lfonn",
-      "timestamp": "2026-05-12T19:13:20.254Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_note",
-      "target_type": "milestone",
-      "target_id": "MS-SPLIT",
-      "description": "Added note to milestone \"Split Large Files\": Elm list worst offenders: elm_list_20_new_order.dart (750L), 18 (727L), 21 (608L), 27 (555L), 25 (552L), 1 (507L), 23 (504L)",
-      "tags": [
-        "milestone"
-      ],
-      "id": "log_1778613201318_m15uh2",
-      "timestamp": "2026-05-12T19:13:21.318Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "add_milestone_note",
-      "target_type": "milestone",
-      "target_id": "MS-SPLIT",
-      "description": "Added note to milestone \"Split Large Files\": home.dart is the only page file >300 lines (387L/20K) - extract widget components",
-      "tags": [
-        "milestone"
-      ],
-      "id": "log_1778613202368_eeg9wm",
-      "timestamp": "2026-05-12T19:13:22.368Z"
-    },
-    {
-      "agent_id": "orchestrator",
-      "action": "start_task",
-      "target_type": "task",
-      "target_id": "MS-GEN-1.0",
-      "description": "Started task \"Create branch feature/khatira-generator\"",
-      "tags": [
-        "lifecycle"
-      ],
-      "id": "log_1780121247603_zq9ind",
-      "timestamp": "2026-05-30T06:07:27.603Z"
+      "action": "tracker_rebuild",
+      "target_type": "tracker",
+      "target_id": "project-tracker.json",
+      "description": "MAJOR REBUILD 2026-06-02 — applied ReleaseAudit (ReleasAudit.md) integration. Added 5 Phase containers (P1-P5), audit_scores dashboard field, 12 NEW audit-closing milestones (MS-AR, MS-DA, MS-3.5, MS-RX, MS-TH, MS-SX, MS-QT, MS-A11y, MS-PUB, MS-REL, MS-PP + MS-3.5). Moved 5 completed milestones to completed[] (MS-9, MS-QF, MS-GEN-1, MS-GEN-2 + existing MS-1). Cleaned MS-8 (removed duplicate MS-9.4/MS-9.5). Marked MS-GEN-3.1/3.2 as done (auto-completed in MS-GEN-2 field-rename). Fixed overall_progress 6→43. Preserved all 9 agent_log entries and 13 history_log entries. Backup at project-tracker.backup-2026-06-02.json",
+      "tags": ["rebuild", "audit-integration"],
+      "id": "log_1780456800000_rebuild01",
+      "timestamp": "2026-06-02T08:40:00.000Z"
     }
   ],
   "history_log": [
+    {"date": "2026-05-11", "event": "tracker_initialized", "action": "Initialized project-tracker.json with Phases 3-6 from IMPROVEMENT_PLAN.md. Phase 1 (Code Cleanup) recorded as completed. Phase 2 (Testing) partially done — test file exists for BasePageCubit but data model, widget, and CI tests still missing."},
+    {"date": "2026-05-11", "event": "ms7_added", "action": "Added MS-7 (Extra Features) backlog milestone with 10 tasks: Table of Contents, Random Khatirah, Copy Text, Personal Notes, Search History, Font Style Picker, Daily Notification, Export Bookmarks, Reading Goals, Multi-language UI."},
+    {"date": "2026-05-11", "event": "ms-qf_planned", "action": "Planned MS-QF (Quranic Font Unification & Tashkeel Correction) - 6 subtasks: font fix + 4 tashkeel batches + verification. Branch: fix/unified-quran-font-tashkeel. Plan doc: docs/QURAN_FONT_TASHKEEL_PLAN.md. Font: Amiri (fix AmiriQ mismatch). Source: Tanzil.net Uthmanic script. Rules: keep prefix text as-is, standardize ayah numbering to ۝ format, standardize surah names, do not change order arrays."},
+    {"date": "2026-05-12", "event": "ms-qf.4_started", "action": "Started MS-QF.4 (ders 21-32). Ders 21 completed (45 ayahHadith fields fixed). Running automated fix script via alquran.cloud API using Uthmani script. Remaining: ders 22-32 + pre + final."},
+    {"date": "2026-05-12", "event": "ms-qf_batch_small", "action": "Completed ders 29 (1 field) and ders 31 (3 fields). Skipped ders 28+32 (no ayahHadith fields). Skipped ders 30 (field is non-ayah phrase). MS-QF.5 changed to in_progress. Next: pre (4 fields), then final (16 fields), then ders 24-27."},
+    {"date": "2026-05-12", "event": "ms-qf.5_pre_done", "action": "Completed pre (4 ayahHadith fields). All pass flutter analyze. Next: final (16 fields), then ders 24-27."},
+    {"date": "2026-05-12", "action": "Created milestone \"Split Large Files\"", "agent": "orchestrator"},
+    {"date": "2026-05-15", "event": "ms8_created", "action": "Created milestone \"Bug Fixes & Code Quality\" (MS-8) with 10 tasks: resolve TODOs, remove dead helpers, fix navigation redundancy, re-enable search, implement getShareText, move UI logic from cubit, split large text files, split elm lists, split home.dart, verify build. Absorbed MS-SPLIT tasks as MS-8.7-8.10. Branch: fix/bug-fixes-code-quality."},
+    {"date": "2026-05-15", "event": "ms-split_absorbed", "action": "Absorbed MS-SPLIT (Split Large Files) into MS-8. Tasks MS-SPLIT_001-004 renumbered as MS-8.7-MS-8.10. MS-SPLIT milestone removed from backlog."},
+    {"date": "2026-05-15", "event": "ms8_deepdive", "action": "Deep-dive audit completed. Discovered: 8 dead files (453 lines), 3-5 unused deps, 1.2% test coverage, links.dart circular reference bug, 3 dead route constants, HomeCubit.getShareText crash risk. Added 6 new tasks (MS-8.11 through MS-8.16) to MS-8. Plan doc: docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md."},
+    {"date": "2026-05-15", "event": "ms9_created", "action": "Created milestone \"Data Files Standardization & Cleanup\" (MS-9) with 9 tasks: standardize class naming, fix list naming/imports, fix field name typos, fix header comments, clean dead code, add type annotations, standardize page markers, fix formatting, verify build. Deep-dive audit of 68 data files completed (34 lists + 34 text files). Branch: fix/data-files-standardization. Plan doc: docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md. Order: MS-9 first, then MS-8."},
+    {"date": "2026-05-30", "event": "ms-gen-planned", "action": "Created MS-GEN-1/2/3 (Khatira Generator & Rename). Instead of manual MS-9 cleanup, a standalone Dart script (tool/generate_elm_lists.dart) will parse static text files and auto-generate elm_list files. Phase 2 renames elm→khatira across 140+ files. Dashboard focus set to MS-GEN-1. Plan doc: command-center/docs/plans/2026-05-30-khatira-generator.md."},
+    {"date": "2026-05-30", "event": "generator-built", "action": "Built tool/generate_elm_lists.dart (669 lines). Fixed: page grouping with consecutive same-label delimiters, pre-first fields page handling, bare-number filtering (keep before first worded, discard after), word-based page numbers (page one, pageThree, etc.). Generator runs cleanly on all 34 files. 26 of 34 files match original page counts exactly; remaining 8 differ due to manual subdivisions in originals. Ready for commit and MS-GEN-2 rename."},
+    {"date": "2026-05-31", "event": "field-level-rename", "action": "Phase A (cleanup): A-1 verified Android package com.khatir, A-2 pubspec description elm→khatir, A-3 removed 13 dead routes, A-4 updated 27 tashkeel script paths, A-5 MS-QF.6 verified. Phase B (field rename): B-1 added --fix-text mode to generator (renamed 2865 elmText→khatiraText in 34 text files, standardized page markers, fixed FInal typos, added static const String annotations), B-2 regenerated all 34 list files with --rename-prefix khatira, B-3 wrote 23 generator unit tests (all pass), B-4 updated AGENTS.md, B-5 verified (format, analyze, test all clean). Result: 0 elmText refs in lib/core/data/, 35/35 tests pass, 13 pre-existing tool-only analyze issues."},
     {
-      "date": "2026-05-11",
-      "event": "tracker_initialized",
-      "action": "Initialized project-tracker.json with Phases 3-6 from IMPROVEMENT_PLAN.md. Phase 1 (Code Cleanup) recorded as completed. Phase 2 (Testing) partially done — test file exists for BasePageCubit but data model, widget, and CI tests still missing."
-    },
-    {
-      "date": "2026-05-11",
-      "event": "ms7_added",
-      "action": "Added MS-7 (Extra Features) backlog milestone with 10 tasks: Table of Contents, Random Khatirah, Copy Text, Personal Notes, Search History, Font Style Picker, Daily Notification, Export Bookmarks, Reading Goals, Multi-language UI."
-    },
-    {
-      "date": "2026-05-11",
-      "event": "ms-qf_planned",
-      "action": "Planned MS-QF (Quranic Font Unification & Tashkeel Correction) - 6 subtasks: font fix + 4 tashkeel batches + verification. Branch: fix/unified-quran-font-tashkeel. Plan doc: docs/QURAN_FONT_TASHKEEL_PLAN.md. Font: Amiri (fix AmiriQ mismatch). Source: Tanzil.net Uthmanic script. Rules: keep prefix text as-is, standardize ayah numbering to ۝ format, standardize surah names, do not change order arrays."
-    },
-    {
-      "date": "2026-05-12",
-      "event": "ms-qf.4_started",
-      "action": "Started MS-QF.4 (ders 21-32). Ders 21 completed (45 ayahHadith fields fixed). Running automated fix script via alquran.cloud API using Uthmani script. Remaining: ders 22-32 + pre + final."
-    },
-    {
-      "date": "2026-05-12",
-      "event": "ms-qf_batch_small",
-      "action": "Completed ders 29 (1 field) and ders 31 (3 fields). Skipped ders 28+32 (no ayahHadith fields). Skipped ders 30 (field is non-ayah phrase). MS-QF.5 changed to in_progress. Next: pre (4 fields), then final (16 fields), then ders 24-27."
-    },
-    {
-      "date": "2026-05-12",
-      "event": "ms-qf.5_pre_done",
-      "action": "Completed pre (4 ayahHadith fields). All pass flutter analyze. Next: final (16 fields), then ders 24-27."
-    },
-    {
-      "date": "2026-05-12",
-      "action": "Created milestone \"Split Large Files\"",
-      "agent": "orchestrator"
-    },
-    {
-      "date": "2026-05-15",
-      "event": "ms8_created",
-      "action": "Created milestone \"Bug Fixes & Code Quality\" (MS-8) with 10 tasks: resolve TODOs, remove dead helpers, fix navigation redundancy, re-enable search, implement getShareText, move UI logic from cubit, split large text files, split elm lists, split home.dart, verify build. Absorbed MS-SPLIT tasks as MS-8.7-8.10. Branch: fix/bug-fixes-code-quality."
-    },
-    {
-      "date": "2026-05-15",
-      "event": "ms-split_absorbed",
-      "action": "Absorbed MS-SPLIT (Split Large Files) into MS-8. Tasks MS-SPLIT_001-004 renumbered as MS-8.7-MS-8.10. MS-SPLIT milestone removed from backlog."
-    },
-    {
-      "date": "2026-05-15",
-      "event": "ms8_deepdive",
-      "action": "Deep-dive audit completed. Discovered: 8 dead files (453 lines), 3-5 unused deps, 1.2% test coverage, links.dart circular reference bug, 3 dead route constants, HomeCubit.getShareText crash risk. Added 6 new tasks (MS-8.11 through MS-8.16) to MS-8. Plan doc: docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md."
-    },
-    {
-      "date": "2026-05-15",
-      "event": "ms9_created",
-      "action": "Created milestone \"Data Files Standardization & Cleanup\" (MS-9) with 9 tasks: standardize class naming, fix list naming/imports, fix field name typos, fix header comments, clean dead code, add type annotations, standardize page markers, fix formatting, verify build. Deep-dive audit of 68 data files completed (34 lists + 34 text files). Branch: fix/data-files-standardization. Plan doc: docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md. Order: MS-9 first, then MS-8."
-    },
-    {
-      "date": "2026-05-30",
-      "event": "ms-gen-planned",
-      "action": "Created MS-GEN-1/2/3 (Khatira Generator & Rename). Instead of manual MS-9 cleanup, a standalone Dart script (tool/generate_elm_lists.dart) will parse static text files and auto-generate elm_list files. Phase 2 renames elm→khatira across 140+ files. Dashboard focus set to MS-GEN-1. Plan doc: command-center/docs/plans/2026-05-30-khatira-generator.md."
-    },
-    {
-      "date": "2026-05-30",
-      "event": "generator-built",
-      "action": "Built tool/generate_elm_lists.dart (669 lines). Fixed: page grouping with consecutive same-label delimiters, pre-first fields page handling, bare-number filtering (keep before first worded, discard after), word-based page numbers (page one, pageThree, etc.). Generator runs cleanly on all 34 files. 26 of 34 files match original page counts exactly; remaining 8 differ due to manual subdivisions in originals. Ready for commit and MS-GEN-2 rename."
-    },
-    {
-      "date": "2026-05-31",
-      "event": "field-level-rename",
-      "action": "Phase A (cleanup): A-1 verified Android package com.khatir, A-2 pubspec description elm→khatir, A-3 removed 13 dead routes, A-4 updated 27 tashkeel script paths, A-5 MS-QF.6 verified. Phase B (field rename): B-1 added --fix-text mode to generator (renamed 2865 elmText→khatiraText in 34 text files, standardized page markers, fixed FInal typos, added static const String annotations), B-2 regenerated all 34 list files with --rename-prefix khatira, B-3 wrote 23 generator unit tests (all pass), B-4 updated AGENTS.md, B-5 verified (format, analyze, test all clean). Result: 0 elmText refs in lib/core/data/, 35/35 tests pass, 13 pre-existing tool-only analyze issues."
+      "date": "2026-06-02",
+      "event": "release_audit_integration",
+      "action": "MAJOR TRACKER REBUILD — Applied ReleaseAudit (ReleasAudit.md) integration. Added 5 Phase containers (P1-P5) aligned with audit roadmap. Added dashboard.audit_scores field (8 dimensions, current vs target 8.75/10). Added 12 NEW milestones closing audit gaps: MS-AR (Feature-First folders), MS-DA (Repository pattern), MS-3.5 (ContentCubit consolidation), MS-RX (Reader Experience), MS-TH (AppTheme), MS-SX (Search UX), MS-QT (Widget/Golden/Integration tests), MS-A11y (Accessibility), MS-PUB (Pubspec/SDK audit), MS-REL (Android Release hardening), MS-PP (Privacy/About/Splash/Icon/Crashlytics). Moved 5 milestones to completed[] (MS-1, MS-9, MS-QF, MS-GEN-1, MS-GEN-2). Cleaned MS-8 (removed duplicate MS-9.4/MS-9.5 entries). Marked MS-GEN-3.1/3.2 as done (auto-completed in MS-GEN-2 B-1/B-3). Merged MS-7.4 (Search History) into MS-SX.3, MS-7.9 (Font Picker) into MS-RX.4. Updated overall_progress 6→43. Review file: RELEASE_AUDIT_INTEGRATION_PLAN.md. Backup: project-tracker.backup-2026-06-02.json"
     }
   ],
-  "_schema_version": 1
+  "_schema_version": 2,
+  "_schema_version_note": "Bumped to 2 on 2026-06-02 for release audit integration. Added: dashboard.audit_scores, phases container, is_new/source fields on milestones, completed[] array (was tracked inline), overall_progress recomputed."
 }
