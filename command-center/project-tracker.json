@@ -6,7 +6,7 @@
     "current_week": 19,
     "schedule_status": "on_track",
     "overall_progress": 45,
-    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-GEN-4 all done, MS-8 8/14"
+    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-GEN-4 all done, MS-8 9/14"
   },
   "dashboard": {
     "current_focus": "Phase 1 — MS-DA.5 deprecate list files, MS-GEN-4 strip NewOrder suffix, MS-8 remaining bug fixes",
@@ -358,15 +358,16 @@
           {
             "id": "MS-8.4",
             "label": "Re-enable temp-disabled search feature",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
-              "lib/view/pages/search_page.dart"
+              "lib/features/home/presentation/home.dart"
             ],
             "reference_docs": [],
             "acceptance_criteria": [
-              "Search feature re-enabled in search_page.dart (line 25)",
+              "Search feature re-enabled — DataSearch delegate called from home page",
+              "Removed redundant commented-out showSearch line",
               "flutter analyze passes with 0 issues"
             ],
             "constraints": [],
