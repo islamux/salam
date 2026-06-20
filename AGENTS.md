@@ -203,7 +203,7 @@ Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `g
 |---|---|---|
 | Format | `dart format .` | clean (0 changed) |
 | Analyze | `flutter analyze` | 0 app-level errors |
-| Unit tests | `flutter test` | all pass |
+| Unit tests | `flutter test` | 58 pass (model 14 + sharing 7 + cubit 7 + search 6 + base 24) |
 | Generator | `dart run tool/generate_elm_lists.dart` | runs without error |
 | Release build | `flutter build apk --release --android-skip-build-dependency-validation` | success |
 

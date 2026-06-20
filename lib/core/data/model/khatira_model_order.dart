@@ -44,16 +44,33 @@ class KhatiraModelOrder {
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
     return other is KhatiraModelOrder &&
-        other.titles == titles &&
-        other.subtitles == subtitles &&
-        other.texts == texts &&
-        other.ayahs == ayahs &&
+        _listEquals(other.titles, titles) &&
+        _listEquals(other.subtitles, subtitles) &&
+        _listEquals(other.texts, texts) &&
+        _listEquals(other.ayahs, ayahs) &&
         other.footer == footer &&
-        other.order == order;
+        _listEquals(other.order, order);
   }
 
   @override
   int get hashCode {
-    return Object.hash(titles, subtitles, texts, ayahs, footer, order);
+    return Object.hash(
+      Object.hashAll(titles ?? const []),
+      Object.hashAll(subtitles ?? const []),
+      Object.hashAll(texts ?? const []),
+      Object.hashAll(ayahs ?? const []),
+      footer,
+      Object.hashAll(order),
+    );
+  }
+
+  static bool _listEquals<T>(List<T>? a, List<T>? b) {
+    if (a == null && b == null) return true;
+    if (a == null || b == null) return false;
+    if (a.length != b.length) return false;
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] != b[i]) return false;
+    }
+    return true;
   }
 }
