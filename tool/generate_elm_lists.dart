@@ -67,7 +67,7 @@ const typoMap = {
   'elmTextSeven_2': 'elmTextTwoSeven_2',
 };
 
-const outputDir = 'lib/core/data/model/khatira_lists';
+const outputDir = 'lib/features/khatira/data/lists';
 
 // ============================================================
 // Field Extraction
@@ -406,7 +406,7 @@ String generateElmList({
       "import 'package:khatir/core/data/model/${prefix}_model_new_order.dart';");
   buf.writeln("import 'package:khatir/core/data/model/enum_order.dart';");
   buf.writeln(
-      "import 'package:khatir/core/data/static/text/${prefix}_text_ders_$rawName.dart';");
+      "import 'package:khatir/features/khatira/data/static/text/${prefix}_text_ders_$rawName.dart';");
   buf.writeln();
 
   final varName = '${prefix}List${_toPascal(listName)}NewOrder';
@@ -710,7 +710,8 @@ void main(List<String> args) {
   final scratchDir = Directory.current.path;
 
   // Find static text directory
-  final textDir = Directory('$scratchDir/lib/core/data/static/text');
+  final textDir =
+      Directory('$scratchDir/lib/features/khatira/data/static/text');
   if (!textDir.existsSync()) {
     stderr.writeln('Error: static text directory not found at $textDir');
     stderr.writeln('Run from project root (where lib/ is).');

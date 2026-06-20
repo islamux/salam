@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
-import 'package:khatir/cubit/base_cubit/base_page_state.dart';
+import 'package:khatir/core/cubit/base_page_cubit.dart';
+import 'package:khatir/core/cubit/base_page_state.dart';
 
 void main() {
   group('BasePageCubit', () {

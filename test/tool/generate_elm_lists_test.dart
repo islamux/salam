@@ -268,7 +268,7 @@ static const String khatiraTextTwoOne_1 = """Text""";
       expect(
           output,
           contains(
-              "import 'package:khatir/core/data/static/text/khatira_text_ders_pre.dart'"));
+              "import 'package:khatir/features/khatira/data/static/text/khatira_text_ders_pre.dart'"));
     });
 
     test('includes order array in output', () {

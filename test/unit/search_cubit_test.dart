@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
-import 'package:khatir/cubit/search_cubit/search_cubit.dart';
-import 'package:khatir/cubit/search_cubit/search_state.dart';
+import 'package:khatir/features/search/cubit/search_cubit.dart';
+import 'package:khatir/features/search/cubit/search_state.dart';
 
 void main() {
   group('SearchCubit', () {

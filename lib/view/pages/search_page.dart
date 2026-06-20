@@ -1,6 +1,6 @@
 import 'package:khatir/core/data/static/strings/app_strings.dart';
-import 'package:khatir/cubit/search_cubit/search_cubit.dart';
-import 'package:khatir/cubit/search_cubit/search_state.dart';
+import 'package:khatir/features/search/cubit/search_cubit.dart';
+import 'package:khatir/features/search/cubit/search_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

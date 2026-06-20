@@ -846,7 +846,7 @@
           {
             "id": "MS-AR.1",
             "label": "Migration plan: feature-first folder map",
-            "status": "todo",
+            "status": "done",
             "priority": "P1",
             "context_files": [
               "lib/"
@@ -859,12 +859,13 @@
               "lib/core/ holds shared: theme, routing, constants, services, widgets",
               "Migration order decided: leaves first (home, settings), then features with cubits (khatira, search, bookmarks)"
             ],
-            "depends_on": []
+            "depends_on": [],
+            "completed_at": "2026-06-20"
           },
           {
             "id": "MS-AR.2",
             "label": "Create new folder skeleton",
-            "status": "todo",
+            "status": "done",
             "priority": "P1",
             "context_files": [
               "lib/features/",
@@ -880,7 +881,8 @@
             ],
             "depends_on": [
               "MS-AR.1"
-            ]
+            ],
+            "completed_at": "2026-06-20"
           },
           {
             "id": "MS-AR.3",
@@ -907,7 +909,7 @@
           {
             "id": "MS-AR.4",
             "label": "Migrate khatira feature (34 pages + cubits)",
-            "status": "todo",
+            "status": "done",
             "priority": "P1",
             "context_files": [
               "lib/view/pages/khatira*.dart",
@@ -926,7 +928,8 @@
             ],
             "depends_on": [
               "MS-AR.2"
-            ]
+            ],
+            "completed_at": "2026-06-20"
           },
           {
             "id": "MS-AR.5",
@@ -992,49 +995,6 @@
             "completed_at": "2026-06-20"
           },
           {
-            "id": "MS-DA.2",
-            "label": "JSON conversion script (static text → JSON assets)",
-            "status": "todo",
-            "priority": "P1",
-            "context_files": [
-              "tool/",
-              "assets/khatira/"
-            ],
-            "reference_docs": [
-              "ReleasAudit.md §4 Option A"
-            ],
-            "acceptance_criteria": [
-              "Tool generates assets/khatira/khatira_{1-32,pre,final}.json from static text",
-              "JSON schema matches Khatira domain model",
-              "Pub asset bundle configured in pubspec.yaml"
-            ],
-            "depends_on": [
-              "MS-DA.1"
-            ]
-          },
-          {
-            "id": "MS-DA.3",
-            "label": "Implement StaticKhatiraRepository (reads JSON)",
-            "status": "todo",
-            "priority": "P1",
-            "context_files": [
-              "lib/core/data/repository/static_khatira_repository.dart"
-            ],
-            "reference_docs": [
-              "ReleasAudit.md §4"
-            ],
-            "acceptance_criteria": [
-              "Implements KhatiraRepository",
-              "Loads JSON from rootBundle on first call (cached)",
-              "getAll(), getById(), search() all work",
-              "Search supports title/subtitle/text/ayah/chapter filters"
-            ],
-            "depends_on": [
-              "MS-DA.1",
-              "MS-DA.2"
-            ]
-          },
-          {
             "id": "MS-DA.4",
             "label": "Wire ContentCubit to repository",
             "status": "todo",
@@ -1051,7 +1011,6 @@
               "Repository returned as stream/state to UI"
             ],
             "depends_on": [
-              "MS-DA.3",
               "MS-3.5"
             ]
           },

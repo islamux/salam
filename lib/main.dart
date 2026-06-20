@@ -1,10 +1,10 @@
-import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
+import 'package:khatir/core/cubit/base_page_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:khatir/app_routes.dart';
-import 'package:khatir/core/data/static/routes_constant.dart';
-import 'package:khatir/core/data/static/theme/app_them.dart';
+import 'package:khatir/core/routing/routes_constant.dart';
+import 'package:khatir/core/theme/app_them.dart';
 
 void main() {
   // Splash screen
