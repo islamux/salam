@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:khatir/core/data/static/imagelink/image_link.dart';
 import 'package:khatir/core/routing/routes_constant.dart';
@@ -18,6 +17,12 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget btn(String text, String route) => CustomButton(
+          customText: text,
+          onPressed: () => context.pushNamed(route),
+          icon: const Icon(Icons.menu_book),
+        );
+
     return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPost, result) =>
@@ -105,272 +110,78 @@ class Home extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        CustomButton(
-                          customText: "خواطر متفرقة حول الدين والحياة",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElmPre(context);
-                            context.pushNamed(RoutesConstant.khatiraPre);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(1) عوامل تفكك وفشل الأسرة والقبيلة",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm1(context);
-                            context.pushNamed(RoutesConstant.khatira1);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(2) العلم والمعرفة",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm2(context);
-                            context.pushNamed(RoutesConstant.khatira2);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(3) العطاء ليس مقياس لحب الله للعبد",
-                          onPressed: () {
-                            //context.read<HomeCubit>().goToElm3(context);
-                            context.pushNamed(RoutesConstant.khatira3);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (4) المحبة الإلهية",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm4(context);
-                            context.pushNamed(RoutesConstant.khatira4);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "  (5)   العدل",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm5(context);
-                            context.pushNamed(RoutesConstant.khatira5);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "  (6)   الشرك الخفي",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm6(context);
-                            context.pushNamed(RoutesConstant.khatira6);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "  (7)   التوكل على الله",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm7(context);
-                            context.pushNamed(RoutesConstant.khatira7);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (8)   المعية الإلهية",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm8(context);
-                            context.pushNamed(RoutesConstant.khatira8);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(9) فأما اليتيم فلا تقهر ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm9(context);
-                            context.pushNamed(RoutesConstant.khatira9);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (10) والذين جاهدو فينا",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm10(context);
-                            context.pushNamed(RoutesConstant.khatira10);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (11)   الرزق",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm11(context);
-                            context.pushNamed(RoutesConstant.khatira11);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(12) وإنك لعلى خلق عظيم",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm12(context);
-                            context.pushNamed(RoutesConstant.khatira12);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(13) مأ أصابكم من مصيبة ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm13(context);
-                            context.pushNamed(RoutesConstant.khatira13);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(14)  الإسلام دين شامل",
-                          onPressed: () {
-                            //context.read<HomeCubit>().goToElm14(context);
-                            context.pushNamed(RoutesConstant.khatira14);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(15) العزة لله  ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm15(context);
-                            context.pushNamed(RoutesConstant.khatira15);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(16)  المرأة الصالحة  ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm16(context);
-                            context.pushNamed(RoutesConstant.khatira16);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (17)   الدعاء",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm17(context);
-                            context.pushNamed(RoutesConstant.khatira17);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (18)   مقتطفات",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm18(context);
-                            context.pushNamed(RoutesConstant.khatira18);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (19)   أولياء الله",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm19(context);
-                            context.pushNamed(RoutesConstant.khatira19);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (20)   التقوى",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm20(context);
-                            context.pushNamed(RoutesConstant.khatira20);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (21)  الصبر ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm21(context);
-                            context.pushNamed(RoutesConstant.khatira21);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (22)  الحمد ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm21(context);
-                            context.pushNamed(RoutesConstant.khatira22);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (23)  يدبر الأمر ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm23(context);
-                            context.pushNamed(RoutesConstant.khatira23);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(24) شكر النعمة أمان من زوالها",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm23(context);
-                            context.pushNamed(RoutesConstant.khatira24);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(25) قد أفلح المؤمنون",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm23(context);
-                            context.pushNamed(RoutesConstant.khatira25);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(26) الكبــــــــر ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm23(context);
-                            context.pushNamed(RoutesConstant.khatira26);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(27) الأمر بالمعروف والنهي عن المنكر ",
-                          onPressed: () {
-                            context.pushNamed(RoutesConstant.khatira27);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(28) لا تخف إنك أنت الأعلى",
-                          onPressed: () {
-                            context.pushNamed(RoutesConstant.khatira28);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(29) الطيران في الجنة",
-                          onPressed: () {
-                            context.pushNamed(RoutesConstant.khatira29);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(30) ياليتني قدمت لحياتي",
-                          onPressed: () {
-                            context.pushNamed(RoutesConstant.khatira30);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(31) يا بني اركب معنا",
-                          onPressed: () {
-                            context.pushNamed(RoutesConstant.khatira31);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: "(32) الإحساس بالنذالة شيء لايطاق",
-                          onPressed: () {
-                            context.pushNamed(RoutesConstant.khatira32);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
-                        CustomButton(
-                          customText: " (خاتمة)  المصير المحتوم ",
-                          onPressed: () {
-                            // context.read<HomeCubit>().goToElm22(context);
-                            context.pushNamed(RoutesConstant.khatiraFinal);
-                          },
-                          icon: const Icon(Icons.menu_book),
-                        ),
+                        btn('خواطر متفرقة حول الدين والحياة',
+                            RoutesConstant.khatiraPre),
+                        btn(
+                            '(1) عوامل تفكك وفشل الأسرة والقبيلة',
+                            RoutesConstant.khatira1),
+                        btn('(2) العلم والمعرفة',
+                            RoutesConstant.khatira2),
+                        btn(
+                            '(3) العطاء ليس مقياس لحب الله للعبد',
+                            RoutesConstant.khatira3),
+                        btn(' (4) المحبة الإلهية',
+                            RoutesConstant.khatira4),
+                        btn('  (5)   العدل',
+                            RoutesConstant.khatira5),
+                        btn('  (6)   الشرك الخفي',
+                            RoutesConstant.khatira6),
+                        btn('  (7)   التوكل على الله',
+                            RoutesConstant.khatira7),
+                        btn(' (8)   المعية الإلهية',
+                            RoutesConstant.khatira8),
+                        btn('(9) فأما اليتيم فلا تقهر ',
+                            RoutesConstant.khatira9),
+                        btn(' (10) والذين جاهدو فينا',
+                            RoutesConstant.khatira10),
+                        btn(' (11)   الرزق',
+                            RoutesConstant.khatira11),
+                        btn('(12) وإنك لعلى خلق عظيم',
+                            RoutesConstant.khatira12),
+                        btn('(13) مأ أصابكم من مصيبة ',
+                            RoutesConstant.khatira13),
+                        btn('(14)  الإسلام دين شامل',
+                            RoutesConstant.khatira14),
+                        btn('(15) العزة لله  ',
+                            RoutesConstant.khatira15),
+                        btn('(16)  المرأة الصالحة  ',
+                            RoutesConstant.khatira16),
+                        btn(' (17)   الدعاء',
+                            RoutesConstant.khatira17),
+                        btn(' (18)   مقتطفات',
+                            RoutesConstant.khatira18),
+                        btn(' (19)   أولياء الله',
+                            RoutesConstant.khatira19),
+                        btn(' (20)   التقوى',
+                            RoutesConstant.khatira20),
+                        btn(' (21)  الصبر ',
+                            RoutesConstant.khatira21),
+                        btn(' (22)  الحمد ',
+                            RoutesConstant.khatira22),
+                        btn(' (23)  يدبر الأمر ',
+                            RoutesConstant.khatira23),
+                        btn('(24) شكر النعمة أمان من زوالها',
+                            RoutesConstant.khatira24),
+                        btn('(25) قد أفلح المؤمنون',
+                            RoutesConstant.khatira25),
+                        btn('(26) الكبــــــــر ',
+                            RoutesConstant.khatira26),
+                        btn(
+                            '(27) الأمر بالمعروف والنهي عن المنكر ',
+                            RoutesConstant.khatira27),
+                        btn('(28) لا تخف إنك أنت الأعلى',
+                            RoutesConstant.khatira28),
+                        btn('(29) الطيران في الجنة',
+                            RoutesConstant.khatira29),
+                        btn('(30) ياليتني قدمت لحياتي',
+                            RoutesConstant.khatira30),
+                        btn('(31) يا بني اركب معنا',
+                            RoutesConstant.khatira31),
+                        btn(
+                            '(32) الإحساس بالنذالة شيء لايطاق',
+                            RoutesConstant.khatira32),
+                        btn(' (خاتمة)  المصير المحتوم ',
+                            RoutesConstant.khatiraFinal),
                       ],
                     ),
                   ),

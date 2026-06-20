@@ -11,10 +11,10 @@
 | **Stack** | Flutter / Dart, Bloc, SharePlus, ScreenUtil |
 | **Package** | `com.khatir` (Android) |
 | **Domain** | Islamic khatira (sermons/lessons) — 32 ders + pre + final = 34 chapters |
-| **Data flow** | Static text files → generator → list models → `StaticKhatiraRepository` → cubit → pages |
-| **Current focus (P1)** | **MS-DA.5** deprecate list files, **MS-GEN-4** strip NewOrder suffix, **MS-8** remaining bug fixes |
-| **Overall progress** | 5 milestones done · MS-3/6/6 · MS-DA/4/5 · MS-AR/3/5 · MS-GEN-4/5/5 · MS-8/4/14 |
-| **Health** | On Track · Drift: 0 days · Target: 2026-06-15 |
+| **Data flow** | Static text files → generator → `KhatiraModelOrder` lists → `StaticKhatiraRepository` → `BasePageCubit` → `KhatiraContentPage` |
+| **Current focus** | **MS-8** remaining bug fixes (11/14 done) |
+| **Overall progress** | 45% — MS-3 ✅ · MS-AR ✅ · MS-GEN-4 ✅ · MS-DA 4/5 · MS-8 11/14 |
+| **Health** | On Track · Drift: 0 days |
 
 ---
 
@@ -39,17 +39,14 @@ flutter build appbundle --release --android-skip-build-dependency-validation
 
 ### Test / Analyze / Format
 ```bash
-flutter test                  # all tests
-flutter analyze               # must be 0 app-level errors
+flutter test                  # 58 tests
+flutter analyze               # 0 app-level errors
 dart format .                 # check formatting
 ```
 
 ### Generator (`tool/generate_elm_lists.dart`)
 ```bash
 # Regenerate all 34 list files from text sources
-dart run tool/generate_elm_lists.dart
-
-# With khatira field prefix (post-rename, current default)
 dart run tool/generate_elm_lists.dart --rename-prefix khatira
 
 # Normalize text files in-place (class names, typos, types, page markers, dead code)
@@ -78,7 +75,7 @@ cc approve-task <id>          # operator only
 ## 4. Architecture & Conventions
 
 ### State Management
-All content pages extend **`BasePageCubit`** (`lib/cubit/base_cubit/`):
+All content pages use **`BasePageCubit`** (`lib/core/cubit/base_cubit/`):
 - `fontSize` (21.0–37.0, step 2.0)
 - `currentPageIndex` / pagination
 - `searchContent(query)` — searches titles, subtitles, texts, ayahs, footer
@@ -86,21 +83,22 @@ All content pages extend **`BasePageCubit`** (`lib/cubit/base_cubit/`):
 
 ### Data Model
 ```dart
-// lib/core/data/model/khatira_model_new_order.dart
-KhatiraModelNewOrder(
+// lib/core/data/model/khatira_model_order.dart
+KhatiraModelOrder(
   titles: [...], subtitles: [...], texts: [...], ayahs: [...], footer: '...',
   order: [EnOrder.titles, EnOrder.subtitles, EnOrder.texts, EnOrder.ayahs, EnOrder.footer],
 )
 ```
+Equality uses `_listEquals` (deep comparison) — not identity-based list `==`.
 
 ### Repository Pattern
 ```dart
 // lib/core/data/repository/khatira_repository.dart
 abstract class KhatiraRepository {
-  Future<List<KhatiraModelNewOrder>> getAll();
-  Future<List<KhatiraModelNewOrder>> getById(int id);
-  Future<List<KhatiraModelNewOrder>> getChapter(int chapterId);
-  Future<List<KhatiraModelNewOrder>> search(String query);
+  Future<List<KhatiraModelOrder>> getAll();
+  Future<List<KhatiraModelOrder>> getById(int id);
+  Future<List<KhatiraModelOrder>> getChapter(int chapterId);
+  Future<List<KhatiraModelOrder>> search(String query);
 }
 
 // lib/core/data/repository/static_khatira_repository.dart
@@ -129,71 +127,94 @@ Share.share(...);
 
 ```
 lib/
-  main.dart                                       - Entry: runApp(ElmApp())
-  app_routes.dart                                 - Route generator
+  main.dart                                   - Entry: RepositoryProvider + MaterialApp
+  app.dart                                    - App shell
   core/
+    cubit/base_cubit/
+      base_page_cubit.dart                    - Sole content cubit
+      base_page_state.dart                    - PageDataLoading / PageDataLoaded
     data/
-      static/text/khatira_text_ders_*.dart        - 34 text sources (1-32 + pre + final)
       model/
-        khatira_model_new_order.dart              - Data model: KhatiraModelNewOrder
-        enum_order.dart                           - EnOrder enum
-        khatira_lists/                            - 34 generated list files
-          khatira_list_1_new_order.dart
-          ... (34 total)
-  cubit/
-    base_cubit/                                   - BasePageCubit (all pages extend this)
-    khatira_cubits/                               - 35 page cubits (32 + pre + final + home)
-      home_cubit.dart
-      khatira_1_cubit.dart ... khatira_32_cubit.dart
-      khatira_pre_cubit.dart
-      khatira_final_cubit.dart
-    share/get_page_text_for_sharing.dart
-  helpers/share_app.dart
-  view/pages/
-    home.dart
-    khatira1.dart ... khatira32.dart              - 34 content pages
-    khatira_pre_page.dart
-    khatira_final_page.dart
-
+        khatira_model_order.dart              - Data model (KhatiraModelOrder)
+        enum_order.dart                       - EnOrder enum
+        khatira_lists/                        - 34 generated list files (_order.dart)
+      repository/
+        khatira_repository.dart               - Abstract interface
+        static_khatira_repository.dart        - Concrete impl
+      static/
+        strings/app_strings.dart              - Centralized Arabic UI strings
+        text/khatira_text_ders_*.dart         - 34 text sources (1-32 + pre + final)
+    routing/
+      routes_constant.dart                    - 35 route constants
+      app_routes.dart                         - Route generator
+    services/
+      navigation_helper.dart                  - context.pushNamed extension
+      handle_pop.dart                         - PopScope handler
+      get_page_text_for_sharing.dart          - Sharing text builder
+    theme/
+      app_color_constant.dart
+    widgets/
+      custom_botton.dart                      - Reusable button widget
+  features/
+    khatira/presentation/
+      khatira_content_page.dart               - Generic content page widget
+      khatira1.dart ... khatira32.dart        - Chapter pages (each ~8 lines)
+      khatira_pre_page.dart
+      khatira_final_page.dart
+    home/presentation/
+      home.dart                               - Home page (197 lines)
+      custom_drawer_listview.dart
+    search/presentation/
+      cubit/search_cubit.dart                 - SearchCubit + SearchState
+      data_search.dart                        - DataSearch (SearchDelegate)
 tool/
-  generate_elm_lists.dart                         - Codegen (parses text → lists)
+  generate_elm_lists.dart                     - Codegen (parses text → lists)
 test/
-  tool/generate_elm_lists_test.dart               - 23 generator tests
-  unit/base_page_cubit_test.dart                  - BasePageCubit tests
-
-command-center/                                   - MCP + TUI project tracker
-  project-tracker.json                            - SINGLE SOURCE OF TRUTH
-  AGENTS.md                                       - Tracker runbook
+  tool/generate_elm_lists_test.dart           - 23 generator tests
+  unit/
+    base_page_cubit_test.dart                 - 7 cubit tests
+    khatira_model_order_test.dart             - 14 model tests
+    get_page_text_for_sharing_test.dart       - 7 sharing tests
+    search_cubit_test.dart                    - 6 search tests
+command-center/                               - MCP + TUI project tracker
+  project-tracker.json                        - SINGLE SOURCE OF TRUTH
+  AGENTS.md                                   - Tracker runbook
 ```
 
 ### Naming Conventions (enforced)
-- **Files**: `khatira_*` (text, lists, cubits, pages) — `home_*` is the only exception
-- **Classes**: `Khatira*` (e.g. `KhatiraModelNewOrder`, `KhatiraTextDersOne`)
-- **Variables**: `khatiraText*`, `khatiraList*NewOrder`
+- **Files**: `khatira_*` (text, lists, pages) — `home_*` is the only exception
+- **Classes**: `Khatira*` (e.g. `KhatiraModelOrder`, `KhatiraTextDersOne`)
+- **Variables**: `khatiraText*`, `khatiraList*Order` (no `NewOrder` suffix)
 - **Static text fields**: must use `static const String` annotations
 
 ---
 
-## 6. Active Milestones & Priorities
+## 6. Milestones & Priorities
 
-### 🔴 P1 — MS-3 Architecture Refactoring (NEXT FOCUS)
-- `MS-3.1` Create `ElmContentPage` generic widget
-- `MS-3.2` Refactor 34 pages to use it (3,700 → ~300 lines)
-- `MS-3.4` Extract `SearchCubit` (depends on 3.1)
-- `MS-3.3` Extract Arabic strings to `AppStrings`
+### ✅ Completed
+| Milestone | Summary |
+|-----------|---------|
+| **MS-3** | Architecture refactoring: `KhatiraContentPage`, `AppStrings`, `SearchCubit`, cubit consolidation |
+| **MS-AR** | Feature-first migration: `features/khatira/`, `features/home/`, `features/search/` |
+| **MS-GEN-4** | Stripped `NewOrder` suffix from model + lists + generator |
+| **MS-DA.1** | `KhatiraRepository` abstract interface + `StaticKhatiraRepository` |
+| **MS-DA.4** | Wired `BasePageCubit` to repository (constructor injection, eager loading) |
 
-### 🟡 P2 — MS-8 Bug Fixes & Code Quality
-Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `getShareText` stub, `links.dart` circular ref, dead route constants, `SearchPage` typo, file splits.
-
-### 🟢 Tooling
-- `MS-GEN-3` — Generator normalizer, tests, README polish (some already done in MS-GEN-2)
-- `MS-GEN-4` — Strip `NewOrder` suffix from model + lists + generator
+### 🟡 P2 — MS-8 Remaining (3 tasks)
+| ID | Task | Status |
+|----|------|--------|
+| MS-8.6 | Move UI logic out of `BasePageCubit` | todo (P3) |
+| MS-8.7 | Split large static text files (19 >300 lines) | todo |
+| MS-8.8 | Split large list model files (17 >300 lines) | todo |
+| MS-8.10 | Verify build after all splits (blocked by 8.7+8.8) | blocked |
+| MS-8.12 | Remove unused deps from `pubspec.yaml` | todo |
 
 ### ⏳ Backlog
-- `MS-4` Performance (precache, lazy load, PageView)
-- `MS-5` Core features (bookmarks, reading history, dark mode, last position)
-- `MS-6` Release (depends on 3, 4, 5)
-- `MS-7` Extra features (depends on 5)
+- **MS-DA.5** — Deprecate static list files (depends on MS-DA.4)
+- **MS-4** — Performance (precache, lazy load, PageView)
+- **MS-5** — Core features (bookmarks, reading history, dark mode, last position)
+- **MS-6** — Release
+- **MS-7** — Extra features
 
 ---
 
@@ -215,19 +236,17 @@ Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `g
 - Run `flutter analyze` and `flutter test` before claiming any task done
 - Update `project-tracker.json` after completing any subtask
 - Use `SharePlus.instance.share(ShareParams(...))` for sharing
-- Use `KhatiraModelNewOrder` (not `ElmModelNewOrder`)
+- Use `KhatiraModelOrder` (not `KhatiraModelNewOrder` or `ElmModelNewOrder`)
 - Re-run the generator after editing text files
 - Reference plans in `docs/` and `command-center/docs/plans/`
 
 ### DO NOT
 - Edit generated files in `lib/core/data/model/khatira_lists/` by hand — regenerate instead
 - Use `Share.share(...)` — deprecated
-- Use `khatira_cubits/` content models with `ElmModelNewOrder` — renamed
+- Use `NewOrder` suffix anywhere — stripped in MS-GEN-4
 - Skip `--android-skip-build-dependency-validation` on builds
 - Add comments to code files unless asked
 - Commit without running gates (analyze + test)
-- Skip `--android-skip-build-dependency-validation` on builds
-- Add comments to code files unless asked
 - Trust the tracker's `overall_progress` field — it is stale; recompute from `subtasks[].status`
 
 ---
@@ -236,7 +255,7 @@ Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `g
 
 - Gradle/SDK version warnings are normal — the `--android-skip-build-dependency-validation` flag is required
 - First build after Gradle upgrade takes longer (downloading)
-- 13 pre-existing tool-only analyze issues in `tool/` are known and acceptable
+- 14 pre-existing tool-only analyze issues in `tool/` + `test/` are known and acceptable
 
 ---
 
@@ -245,10 +264,12 @@ Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `g
 - `docs/IMPROVEMENT_PLAN.md` — Master roadmap
 - `docs/MS-8_BUG_FIXES_CODE_QUALITY_PLAN.md` — MS-8 audit
 - `docs/MS-9_DATA_FILES_STANDARDIZATION_PLAN.md` — MS-9 plan
+- `docs/PROJECT_BLUEPRINT.md` — Architecture overview
+- `docs/architecture-refactoring-status.md` — Architecture refactoring summary
+- `docs/SEARCH_FUNCTIONALITY.md` — Search implementation
 - `command-center/docs/plans/2026-05-30-khatira-generator.md` — Generator plan
 - `command-center/AGENTS.md` — Tracker runbook (CLI, agent personas)
 - `command-center/docs/ai-rules.md` — 5-phase AI protocol
-- `PROJECT_STATUS_REVIEW.md` — Latest milestone analysis
 
 ---
 
@@ -263,7 +284,8 @@ Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `g
 **Types**: `feat`, `fix`, `refactor`, `chore`, `docs`, `test`, `tool`  
 **Examples**:
 - `feat(tool): add --fix-text normalizer mode`
-- `refactor(pages): extract ElmContentPage widget`
-- `fix(links): resolve mailGoogle circular reference`
+- `refactor(pages): extract KhatiraContentPage widget`
+- `fix(model): use _listEquals for deep list comparison`
+- `docs: update AGENTS.md and README for current state`
 
 Good commit messages get auto-added to the personal wiki — be specific.

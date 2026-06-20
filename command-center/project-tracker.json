@@ -449,8 +449,8 @@
           {
             "id": "MS-8.9",
             "label": "Split home.dart into reusable widget components",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/view/pages/home.dart"
