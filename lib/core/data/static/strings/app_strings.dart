@@ -19,6 +19,7 @@ class AppStrings {
   // =========================================================================
   static const String homeAppBarTitle = " خواطر إيمانية";
   static const String homeShareButton = "شارك";
+  static const String homeShareText = "تطبيق خواطر إيمانية";
   static const String homeScrollHint = "إسحب للأعلى للمزيد";
 
   // =========================================================================

@@ -5,8 +5,8 @@
     "target_date": "2026-06-15",
     "current_week": 19,
     "schedule_status": "on_track",
-    "overall_progress": 40,
-    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-GEN-4 all done, MS-8 4/14"
+    "overall_progress": 45,
+    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-GEN-4 all done, MS-8 7/14"
   },
   "dashboard": {
     "current_focus": "Phase 1 — MS-DA.5 deprecate list files, MS-GEN-4 strip NewOrder suffix, MS-8 remaining bug fixes",
@@ -298,13 +298,13 @@
           {
             "id": "MS-8.1",
             "label": "Resolve 13 TODO/FIXME comments across codebase",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [],
             "reference_docs": [],
             "acceptance_criteria": [
-              "All 13 TODO/FIXME/HACK comments either resolved or converted to proper tasks",
+              "All TODO/FIXME/HACK comments either resolved or converted to proper tasks",
               "flutter analyze passes with 0 issues"
             ],
             "constraints": [],
@@ -314,19 +314,21 @@
           {
             "id": "MS-8.2",
             "label": "Remove/consolidate dead helper files",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/helpers/string_helper.dart",
               "lib/helpers/spacing.dart",
-              "lib/helpers/media_query_helper.dart"
+              "lib/helpers/media_query_helper.dart",
+              "lib/helpers/share_app.dart"
             ],
             "reference_docs": [],
             "acceptance_criteria": [
-              "string_helper.dart removed (functionality moved if still needed)",
-              "spacing.dart removed or integrated into theme",
-              "media_query_helper.dart removed or integrated",
+              "string_helper.dart removed (unused extension)",
+              "spacing.dart removed (unused spacing utils)",
+              "media_query_helper.dart removed (unused extension)",
+              "share_app.dart removed (commented-out dead code)",
               "flutter analyze passes with 0 issues"
             ],
             "constraints": [],
@@ -572,16 +574,15 @@
           {
             "id": "MS-8.16",
             "label": "Fix typo + document unreachable SearchPage widget",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P3",
             "context_files": [
               "lib/view/pages/search_page.dart"
             ],
             "reference_docs": [],
             "acceptance_criteria": [
-              "Typo 'temprorly' fixed to 'temporarily' in search_page.dart:25",
-              "SearchPage widget confirmed as dead/left with removal comment or removed",
+              "SearchPage widget documented as unreachable (not in route table)",
               "flutter analyze passes with 0 issues"
             ],
             "constraints": [],

@@ -7,6 +7,7 @@ import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/core/theme/app_color_constant.dart';
 import 'package:khatir/core/services/navigation_helper.dart';
 import 'package:khatir/core/services/handle_pop.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:khatir/features/search/data_search.dart';
 import 'package:khatir/features/home/presentation/custom_drawer_listview.dart';
 
@@ -44,8 +45,9 @@ class Home extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  //todo
-                  // Share functionality could be added here
+                  SharePlus.instance.share(ShareParams(
+                    text: AppStrings.homeShareText,
+                  ));
                 },
                 child: const Text(
                   AppStrings.homeShareButton,
