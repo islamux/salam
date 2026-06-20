@@ -77,26 +77,6 @@ void main() {
       expect(cubit.fontSize, 21.0);
     });
 
-    test('searchContent finds matching titles', () {
-      final results = cubit.searchContent('Test Title');
-      expect(results.length, 2);
-    });
-
-    test('searchContent finds matching texts', () {
-      final results = cubit.searchContent('text');
-      expect(results.length, 2);
-    });
-
-    test('searchContent finds matching ayahs', () {
-      final results = cubit.searchContent('Ayah');
-      expect(results.length, 1);
-    });
-
-    test('searchContent returns empty for no matches', () {
-      final results = cubit.searchContent('Nonexistent');
-      expect(results.isEmpty, true);
-    });
-
     test('goToPage updates currentPageIndex', () {
       // Skip testing jumpToPage as it requires PageView context
       // Just test that currentPageIndex is updated

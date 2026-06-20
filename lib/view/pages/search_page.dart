@@ -1,6 +1,6 @@
 import 'package:khatir/core/data/static/strings/app_strings.dart';
-import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
-import 'package:khatir/cubit/base_cubit/base_page_state.dart';
+import 'package:khatir/cubit/search_cubit/search_cubit.dart';
+import 'package:khatir/cubit/search_cubit/search_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -9,7 +9,18 @@ class SearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController searchController = TextEditingController();
+    return BlocProvider(
+      create: (_) => SearchCubit(),
+      child: _SearchPageBody(),
+    );
+  }
+}
+
+class _SearchPageBody extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final searchController = TextEditingController();
+    final cubit = context.read<SearchCubit>();
 
     return Scaffold(
       appBar: AppBar(
@@ -22,8 +33,8 @@ class SearchPage extends StatelessWidget {
               controller: searchController,
               onSubmitted: (query) {
                 if (query.isNotEmpty) {
-                  context.read<BasePageCubit>().searchContent(query);
-                  // todo disable temprorly
+                  // todo: pass the correct data list when search is re-enabled
+                  cubit.searchContent(query, []);
                 }
               },
               decoration: InputDecoration(
@@ -40,9 +51,9 @@ class SearchPage extends StatelessWidget {
           ),
         ),
       ),
-      body: BlocBuilder<BasePageCubit, BasePageState>(
+      body: BlocBuilder<SearchCubit, SearchState>(
         builder: (context, state) {
-          if (state is PageSearchResults) {
+          if (state is SearchResults) {
             final searchResults = state.results;
 
             if (searchResults.isEmpty) {
