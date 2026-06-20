@@ -395,8 +395,8 @@
           {
             "id": "MS-8.6",
             "label": "Move UI logic out of BasePageCubit",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P3",
             "context_files": [
               "lib/cubit/base_cubit/base_page_cubit.dart"

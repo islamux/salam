@@ -7,9 +7,11 @@ import 'package:khatir/core/cubit/base_page_cubit.dart';
 import 'package:khatir/core/cubit/base_page_state.dart';
 import 'package:khatir/core/data/repository/khatira_repository.dart';
 import 'package:khatir/core/services/navigation_helper.dart';
+import 'package:khatir/core/services/get_page_text_for_sharing.dart';
 import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/features/search/data_search.dart';
 import 'package:khatir/core/widgets/custom_text_slider/generic_custom_text_slider.dart';
+import 'package:share_plus/share_plus.dart';
 
 class KhatiraContentPage extends StatelessWidget {
   final int chapterId;
@@ -32,14 +34,10 @@ class KhatiraContentPage extends StatelessWidget {
     final repository = context.read<KhatiraRepository>();
     return BlocProvider<BasePageCubit>(
       create: (context) {
-        final cubit = BasePageCubit(
+        return BasePageCubit(
           repository: repository,
           chapterId: chapterId,
         );
-        if (initialPage != null && initialPage! > 0) {
-          cubit.goToPageAfterBuild(initialPage!);
-        }
-        return cubit;
       },
       child: Builder(
         builder: (context) {
@@ -65,7 +63,11 @@ class KhatiraContentPage extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () {
-                          cubit.customShareContent(cubit.currentPageIndex);
+                          final shareText = getPageTextsForSharing(
+                              cubit.currentPageIndex, cubit.data);
+                          final joinedText =
+                              shareText.map((text) => text.data).join('\n');
+                          SharePlus.instance.share(ShareParams(text: joinedText));
                         },
                         icon: const Icon(Icons.share),
                       ),
@@ -113,6 +115,7 @@ class KhatiraContentPage extends StatelessWidget {
                           cubit: cubit,
                           dataList: cubit.data,
                           backgroundImagePath: backgroundImagePath,
+                          initialPage: initialPage,
                         ),
                       ),
                     ],

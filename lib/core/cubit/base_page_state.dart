@@ -19,16 +19,6 @@ class PageUpdated extends BasePageState {
   PageUpdated({required this.updatedCounter});
 }
 
-class PageShareSuccess extends BasePageState {
-  late final String message;
-  PageShareSuccess({this.message = "Content shared successfully!"});
-}
-
-class PageShareFailure extends BasePageState {
-  late final String errorMessage;
-  PageShareFailure({required this.errorMessage});
-}
-
 class PageDataLoaded extends BasePageState {
   final List<KhatiraModelOrder> data;
   PageDataLoaded({required this.data});
