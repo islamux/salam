@@ -374,8 +374,8 @@
           {
             "id": "MS-8.5",
             "label": "Implement getShareText in HomeCubit",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/cubit/khatira_cubits/home_cubit.dart"
