@@ -222,8 +222,8 @@
           {
             "id": "MS-3.4",
             "label": "Separate search logic into SearchCubit",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/cubit/base_cubit/",
