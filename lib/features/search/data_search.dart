@@ -1,37 +1,37 @@
-import 'package:khatir/features/khatira/data/lists/khatira_list_10_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_11_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_12_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_13_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_14_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_15_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_16_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_17_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_18_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_19_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_1_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_20_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_21_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_22_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_23_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_24_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_25_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_26_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_27_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_28_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_29_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_2_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_30_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_31_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_3_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_4_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_5_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_6_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_7_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_8_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_9_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_final_new_order.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_pre_new_order.dart';
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_10_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_11_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_12_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_13_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_14_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_15_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_16_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_17_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_18_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_19_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_1_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_20_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_21_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_22_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_23_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_24_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_25_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_26_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_27_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_28_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_29_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_2_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_30_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_31_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_3_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_4_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_5_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_6_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_7_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_8_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_9_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_final_order.dart';
+import 'package:khatir/features/khatira/data/lists/khatira_list_pre_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/core/routing/routes_constant.dart';
 import 'package:khatir/core/data/static/strings/app_strings.dart';
@@ -40,7 +40,7 @@ import 'package:khatir/features/search/search_result.dart';
 import 'package:flutter/material.dart';
 
 class _ListConfig {
-  final List<KhatiraModelNewOrder> list;
+  final List<KhatiraModelOrder> list;
   final String listName;
   final String routeName;
 
@@ -51,71 +51,71 @@ class DataSearch extends SearchDelegate {
   List<SearchResult> _buildResultsWithPage() {
     final results = <SearchResult>[];
     final listConfigs = <_ListConfig>[
-      _ListConfig(khatiraListPreNewOrder, AppStrings.lessonPre,
-          RoutesConstant.khatiraPre),
       _ListConfig(
-          khatiraList1NewOrder, AppStrings.lesson1, RoutesConstant.khatira1),
+          khatiraListPreOrder, AppStrings.lessonPre, RoutesConstant.khatiraPre),
       _ListConfig(
-          khatiraList2NewOrder, AppStrings.lesson2, RoutesConstant.khatira2),
+          khatiraList1Order, AppStrings.lesson1, RoutesConstant.khatira1),
       _ListConfig(
-          khatiraList3NewOrder, AppStrings.lesson3, RoutesConstant.khatira3),
+          khatiraList2Order, AppStrings.lesson2, RoutesConstant.khatira2),
       _ListConfig(
-          khatiraList4NewOrder, AppStrings.lesson4, RoutesConstant.khatira4),
+          khatiraList3Order, AppStrings.lesson3, RoutesConstant.khatira3),
       _ListConfig(
-          khatiraList5NewOrder, AppStrings.lesson5, RoutesConstant.khatira5),
+          khatiraList4Order, AppStrings.lesson4, RoutesConstant.khatira4),
       _ListConfig(
-          khatiraList6NewOrder, AppStrings.lesson6, RoutesConstant.khatira6),
+          khatiraList5Order, AppStrings.lesson5, RoutesConstant.khatira5),
       _ListConfig(
-          khatiraList7NewOrder, AppStrings.lesson7, RoutesConstant.khatira7),
+          khatiraList6Order, AppStrings.lesson6, RoutesConstant.khatira6),
       _ListConfig(
-          khatiraList8NewOrder, AppStrings.lesson8, RoutesConstant.khatira8),
+          khatiraList7Order, AppStrings.lesson7, RoutesConstant.khatira7),
       _ListConfig(
-          khatiraList9NewOrder, AppStrings.lesson9, RoutesConstant.khatira9),
+          khatiraList8Order, AppStrings.lesson8, RoutesConstant.khatira8),
       _ListConfig(
-          khatiraList10NewOrder, AppStrings.lesson10, RoutesConstant.khatira10),
+          khatiraList9Order, AppStrings.lesson9, RoutesConstant.khatira9),
       _ListConfig(
-          khatiraList11NewOrder, AppStrings.lesson11, RoutesConstant.khatira11),
+          khatiraList10Order, AppStrings.lesson10, RoutesConstant.khatira10),
       _ListConfig(
-          khatiraList12NewOrder, AppStrings.lesson12, RoutesConstant.khatira12),
+          khatiraList11Order, AppStrings.lesson11, RoutesConstant.khatira11),
       _ListConfig(
-          khatiraList13NewOrder, AppStrings.lesson13, RoutesConstant.khatira13),
+          khatiraList12Order, AppStrings.lesson12, RoutesConstant.khatira12),
       _ListConfig(
-          khatiraList14NewOrder, AppStrings.lesson14, RoutesConstant.khatira14),
+          khatiraList13Order, AppStrings.lesson13, RoutesConstant.khatira13),
       _ListConfig(
-          khatiraList15NewOrder, AppStrings.lesson15, RoutesConstant.khatira15),
+          khatiraList14Order, AppStrings.lesson14, RoutesConstant.khatira14),
       _ListConfig(
-          khatiraList16NewOrder, AppStrings.lesson16, RoutesConstant.khatira16),
+          khatiraList15Order, AppStrings.lesson15, RoutesConstant.khatira15),
       _ListConfig(
-          khatiraList17NewOrder, AppStrings.lesson17, RoutesConstant.khatira17),
+          khatiraList16Order, AppStrings.lesson16, RoutesConstant.khatira16),
       _ListConfig(
-          khatiraList18NewOrder, AppStrings.lesson18, RoutesConstant.khatira18),
+          khatiraList17Order, AppStrings.lesson17, RoutesConstant.khatira17),
       _ListConfig(
-          khatiraList19NewOrder, AppStrings.lesson19, RoutesConstant.khatira19),
+          khatiraList18Order, AppStrings.lesson18, RoutesConstant.khatira18),
       _ListConfig(
-          khatiraList20NewOrder, AppStrings.lesson20, RoutesConstant.khatira20),
+          khatiraList19Order, AppStrings.lesson19, RoutesConstant.khatira19),
       _ListConfig(
-          khatiraList21NewOrder, AppStrings.lesson21, RoutesConstant.khatira21),
+          khatiraList20Order, AppStrings.lesson20, RoutesConstant.khatira20),
       _ListConfig(
-          khatiraList22NewOrder, AppStrings.lesson22, RoutesConstant.khatira22),
+          khatiraList21Order, AppStrings.lesson21, RoutesConstant.khatira21),
       _ListConfig(
-          khatiraList23NewOrder, AppStrings.lesson23, RoutesConstant.khatira23),
+          khatiraList22Order, AppStrings.lesson22, RoutesConstant.khatira22),
       _ListConfig(
-          khatiraList24NewOrder, AppStrings.lesson24, RoutesConstant.khatira24),
+          khatiraList23Order, AppStrings.lesson23, RoutesConstant.khatira23),
       _ListConfig(
-          khatiraList25NewOrder, AppStrings.lesson25, RoutesConstant.khatira25),
+          khatiraList24Order, AppStrings.lesson24, RoutesConstant.khatira24),
       _ListConfig(
-          khatiraList26NewOrder, AppStrings.lesson26, RoutesConstant.khatira26),
+          khatiraList25Order, AppStrings.lesson25, RoutesConstant.khatira25),
       _ListConfig(
-          khatiraList27NewOrder, AppStrings.lesson27, RoutesConstant.khatira27),
+          khatiraList26Order, AppStrings.lesson26, RoutesConstant.khatira26),
       _ListConfig(
-          khatiraList28NewOrder, AppStrings.lesson28, RoutesConstant.khatira28),
+          khatiraList27Order, AppStrings.lesson27, RoutesConstant.khatira27),
       _ListConfig(
-          khatiraList29NewOrder, AppStrings.lesson29, RoutesConstant.khatira29),
+          khatiraList28Order, AppStrings.lesson28, RoutesConstant.khatira28),
       _ListConfig(
-          khatiraList30NewOrder, AppStrings.lesson30, RoutesConstant.khatira30),
+          khatiraList29Order, AppStrings.lesson29, RoutesConstant.khatira29),
       _ListConfig(
-          khatiraList31NewOrder, AppStrings.lesson31, RoutesConstant.khatira31),
-      _ListConfig(khatiraListFinalNewOrder, AppStrings.lessonFinal,
+          khatiraList30Order, AppStrings.lesson30, RoutesConstant.khatira30),
+      _ListConfig(
+          khatiraList31Order, AppStrings.lesson31, RoutesConstant.khatira31),
+      _ListConfig(khatiraListFinalOrder, AppStrings.lessonFinal,
           RoutesConstant.khatiraFinal),
     ];
 

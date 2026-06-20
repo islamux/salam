@@ -13,7 +13,7 @@
 | **Domain** | Islamic khatira (sermons/lessons) — 32 ders + pre + final = 34 chapters |
 | **Data flow** | Static text files → generator → list models → `StaticKhatiraRepository` → cubit → pages |
 | **Current focus (P1)** | **MS-DA.5** deprecate list files, **MS-GEN-4** strip NewOrder suffix, **MS-8** remaining bug fixes |
-| **Overall progress** | 5 milestones done · MS-3/6/6 · MS-DA/4/5 · MS-AR/3/5 · MS-8/4/14 |
+| **Overall progress** | 5 milestones done · MS-3/6/6 · MS-DA/4/5 · MS-AR/3/5 · MS-GEN-4/5/5 · MS-8/4/14 |
 | **Health** | On Track · Drift: 0 days · Target: 2026-06-15 |
 
 ---

@@ -246,8 +246,8 @@ static const String khatiraTextTwoOne_1 = """Text""";
         renameToKhatira: true,
       );
 
-      expect(output, contains('khatiraList1NewOrder'));
-      expect(output, contains('KhatiraModelNewOrder'));
+      expect(output, contains('khatiraList1Order'));
+      expect(output, contains('KhatiraModelOrder'));
       expect(output, contains('KhatiraTextDersOne'));
     });
 
@@ -264,7 +264,7 @@ static const String khatiraTextTwoOne_1 = """Text""";
       expect(
           output,
           contains(
-              "import 'package:khatir/core/data/model/khatira_model_new_order.dart'"));
+              "import 'package:khatir/core/data/model/khatira_model_order.dart'"));
       expect(
           output,
           contains(

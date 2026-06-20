@@ -5,8 +5,8 @@
     "target_date": "2026-06-15",
     "current_week": 19,
     "schedule_status": "on_track",
-    "overall_progress": 35,
-    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-8 4/14"
+    "overall_progress": 40,
+    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-GEN-4 all done, MS-8 4/14"
   },
   "dashboard": {
     "current_focus": "Phase 1 — MS-DA.5 deprecate list files, MS-GEN-4 strip NewOrder suffix, MS-8 remaining bug fixes",
@@ -743,7 +743,8 @@
           {
             "id": "MS-GEN-4.1",
             "label": "Update generator output paths & variable naming",
-            "status": "todo",
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "context_files": [
               "tool/generate_elm_lists.dart"
@@ -757,7 +758,8 @@
           {
             "id": "MS-GEN-4.2",
             "label": "Rename model file + class",
-            "status": "todo",
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "context_files": [
               "lib/core/data/model/khatira_model_new_order.dart"
@@ -772,10 +774,11 @@
           {
             "id": "MS-GEN-4.3",
             "label": "Regenerate all 34 list files with updated generator",
-            "status": "todo",
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "context_files": [
-              "lib/core/data/model/khatira_lists/"
+              "lib/features/khatira/data/lists/"
             ],
             "acceptance_criteria": [
               "dart run tool/generate_elm_lists.dart --rename-prefix khatira produces _order.dart files",
@@ -789,16 +792,16 @@
           {
             "id": "MS-GEN-4.4",
             "label": "Update all consumer files (pages + search + others)",
-            "status": "todo",
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "context_files": [
-              "lib/view/pages/",
-              "lib/helpers/search/data_search.dart"
+              "lib/",
+              "test/"
             ],
             "acceptance_criteria": [
-              "34 page files updated with new imports and variable names",
-              "data_search.dart updated with new imports and variable names",
-              "Any other consumers updated"
+              "All imports and references updated across lib/ and test/",
+              "Zero remaining NewOrder references"
             ],
             "depends_on": [
               "MS-GEN-4.2",
@@ -808,7 +811,8 @@
           {
             "id": "MS-GEN-4.5",
             "label": "Verify — analyze, test, format",
-            "status": "todo",
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "acceptance_criteria": [
               "flutter analyze passes with 0 errors",

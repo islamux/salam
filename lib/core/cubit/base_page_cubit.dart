@@ -1,4 +1,4 @@
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 import 'package:khatir/core/data/repository/khatira_repository.dart';
 import 'package:khatir/core/services/get_page_text_for_sharing.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ class BasePageCubit extends Cubit<BasePageState> {
   int currentPageIndex = 0;
   PageController pageController = PageController();
   double fontSize = 21.0;
-  List<KhatiraModelNewOrder> _data = [];
+  List<KhatiraModelOrder> _data = [];
 
   BasePageCubit({
     required KhatiraRepository repository,
@@ -24,7 +24,7 @@ class BasePageCubit extends Cubit<BasePageState> {
     _loadChapter();
   }
 
-  List<KhatiraModelNewOrder> get data => _data;
+  List<KhatiraModelOrder> get data => _data;
 
   void _loadChapter() {
     emit(PageDataLoading());

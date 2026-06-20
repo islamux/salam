@@ -1,10 +1,10 @@
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/core/theme/app_them.dart';
 import 'package:flutter/material.dart';
 
 List<TextSpan> getPageTexts(
-    int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
+    int pageIndex, List<KhatiraModelOrder> khatiraList) {
   final khatiraModel = khatiraList[pageIndex];
   final List<TextSpan> spans = [];
   // AppTheme Appthem = AppTheme();
@@ -69,12 +69,12 @@ List<TextSpan> getPageTexts(
   return spans;
 }
 
-// import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+// import 'package:khatir/core/data/model/khatira_model_order.dart';
 // import 'package:khatir/core/data/model/enum_order.dart';
 // import 'package:flutter/material.dart';
 // import 'package:khatir/core/theme/app_them.dart';
 
-// List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
+// List<TextSpan> getPageTexts(int pageIndex, List<KhatiraModelOrder> khatiraList) {
 //   final khatiraModel = khatiraList[pageIndex];
 //   final List<TextSpan> spans = [];
 //   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
@@ -124,16 +124,16 @@ List<TextSpan> getPageTexts(
 //   return spans;
 // }
 
-// import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+// import 'package:khatir/core/data/model/khatira_model_order.dart';
 // import 'package:khatir/core/theme/app_them.dart';
 // import 'package:flutter/material.dart';
 
-// List<TextSpan> getPageTexts(int i, List<KhatiraModelNewOrder> khatiraList) {
+// List<TextSpan> getPageTexts(int i, List<KhatiraModelOrder> khatiraList) {
 //   TextStyle ayahStyle = AppTheme.customTextStyleHadith();
 //   TextStyle titleStyle = AppTheme.customTextStyleTitle();
 //   TextStyle subtitleStyle = AppTheme.customTextStyleSubtitle();
 
-//   KhatiraModelNewOrder elm = khatiraList[i];
+//   KhatiraModelOrder elm = khatiraList[i];
 //   List<TextSpan> textSpans = [];
 //   List<String> orderList = khatiraModel.order!.split(',');
 

@@ -403,14 +403,14 @@ String generateElmList({
     buf.writeln('// TextDers$listName');
   }
   buf.writeln(
-      "import 'package:khatir/core/data/model/${prefix}_model_new_order.dart';");
+      "import 'package:khatir/core/data/model/${prefix}_model_order.dart';");
   buf.writeln("import 'package:khatir/core/data/model/enum_order.dart';");
   buf.writeln(
       "import 'package:khatir/features/khatira/data/static/text/${prefix}_text_ders_$rawName.dart';");
   buf.writeln();
 
-  final varName = '${prefix}List${_toPascal(listName)}NewOrder';
-  buf.writeln('List<${_toPascal(prefix)}ModelNewOrder> $varName = [');
+  final varName = '${prefix}List${_toPascal(listName)}Order';
+  buf.writeln('List<${_toPascal(prefix)}ModelOrder> $varName = [');
 
   for (var i = 0; i < pages.length; i++) {
     final pageFields = pages[i];
@@ -450,14 +450,14 @@ String generateElmList({
       buf.writeln('  // ${i + 1}');
     }
 
-    // Write ElmModelNewOrder
+    // Write model entry
     if (orderedTypes.length == 1 &&
         typeFieldMap[orderedTypes.first]!.length <= 3) {
       // Single-line format for simple pages
       final t = orderedTypes.first;
       final fields = typeFieldMap[t]!;
       final classRef = _classRef(className);
-      buf.write('  ${_toPascal(prefix)}ModelNewOrder(');
+      buf.write('  ${_toPascal(prefix)}ModelOrder(');
       if (t == FieldType.footer) {
         buf.write('${t.name}: $classRef.${fields.first.name}, order: [');
       } else {
@@ -470,7 +470,7 @@ String generateElmList({
       }
       buf.writeln(']),');
     } else {
-      buf.writeln('  ${_toPascal(prefix)}ModelNewOrder(');
+      buf.writeln('  ${_toPascal(prefix)}ModelOrder(');
       final classRef = _classRef(className);
 
       // Write type lists
@@ -778,7 +778,7 @@ void main(List<String> args) {
     );
 
     final prefix = renameToKhatira ? 'khatira' : 'elm';
-    final outputFilename = '${prefix}_list_${parsed.fileName}_new_order.dart';
+    final outputFilename = '${prefix}_list_${parsed.fileName}_order.dart';
     final outputPath = '$scratchDir/$outputDir/$outputFilename';
 
     if (dryRun) {
