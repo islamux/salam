@@ -1,45 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
-import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
 import 'package:khatir/cubit/base_cubit/base_page_state.dart';
-import 'package:flutter/material.dart';
-
-class TestPageCubit extends BasePageCubit {
-  @override
-  List<Text> getShareText(
-      int currentPageIndex, List<KhatiraModelNewOrder> elmList) {
-    return [Text('Test share text for page $currentPageIndex')];
-  }
-
-  TestPageCubit() : super();
-}
 
 void main() {
   group('BasePageCubit', () {
-    late TestPageCubit cubit;
-    late List<KhatiraModelNewOrder> testData;
+    late BasePageCubit cubit;
 
     setUp(() {
-      cubit = TestPageCubit();
-
-      testData = [
-        KhatiraModelNewOrder(
-          titles: ['Test Title 1', 'Test Title 2'],
-          subtitles: ['Test Subtitle 1'],
-          texts: ['Test text 1', 'Test text 2', 'Test text 3'],
-          ayahs: ['Test Ayah 1', 'Test Ayah 2'],
-          footer: 'Test Footer',
-          order: [EnOrder.titles, EnOrder.texts, EnOrder.ayahs],
-        ),
-        KhatiraModelNewOrder(
-          titles: ['Test Title 2'],
-          texts: ['Another text'],
-          order: [EnOrder.titles, EnOrder.texts],
-        ),
-      ];
-
-      cubit.khatiraList = testData;
+      cubit = BasePageCubit();
     });
 
     test('initial state is PageInitial', () {

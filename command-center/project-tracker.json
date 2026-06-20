@@ -246,8 +246,8 @@
           {
             "id": "MS-3.5",
             "label": "Consolidate 35 cubits into single ContentCubit + Repository",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "context_files": [
               "lib/cubit/khatira_cubits/",

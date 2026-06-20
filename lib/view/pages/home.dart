@@ -5,7 +5,7 @@ import 'package:khatir/core/data/static/imagelink/image_link.dart';
 import 'package:khatir/core/data/static/routes_constant.dart';
 import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/core/data/static/theme/app_color_constant.dart';
-import 'package:khatir/cubit/khatira_cubits/home_cubit.dart';
+import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
 import 'package:khatir/helpers/extensions/navigation_helper.dart';
 import 'package:khatir/helpers/handle_pop.dart';
 import 'package:khatir/helpers/search/data_search.dart';
@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeCubit(), // Provide HomeCubit
+      create: (context) => BasePageCubit(),
       child: PopScope(
         canPop: false,
         onPopInvokedWithResult: (didPost, result) =>

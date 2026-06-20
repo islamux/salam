@@ -10,40 +10,27 @@ import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/helpers/search/data_search.dart';
 import 'package:khatir/view/widget/custom_text_slider/generic_custom_text_slider.dart';
 
-class KhatiraContentPage<C extends BasePageCubit> extends StatelessWidget {
-  // Fun Create cubit (controller) & Recives BuildContext to read arguments if needed
-  final C Function(BuildContext context) createCubit;
-
-  // dataList
+class KhatiraContentPage extends StatelessWidget {
   final List<KhatiraModelNewOrder> dataList;
-
-  // Title in AppBar
   final String title;
-
-  // TODO Fix Later make it as the all pages :
-  // If true , title is styled with golden color(pre, final pages)
   final bool useGoldenTitle;
-
-  // Optional initial page
   final int? initialPage;
-
-  // Background image path
   final String backgroundImagePath;
 
-  const KhatiraContentPage(
-      {super.key,
-      required this.createCubit,
-      required this.dataList,
-      required this.title,
-      this.useGoldenTitle = false,
-      this.initialPage,
-      this.backgroundImagePath = ImageLink.image12});
+  const KhatiraContentPage({
+    super.key,
+    required this.dataList,
+    required this.title,
+    this.useGoldenTitle = false,
+    this.initialPage,
+    this.backgroundImagePath = ImageLink.image12,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<C>(
+    return BlocProvider<BasePageCubit>(
       create: (context) {
-        final cubit = createCubit(context);
+        final cubit = BasePageCubit();
         if (initialPage != null && initialPage! > 0) {
           cubit.goToPageAfterBuild(initialPage!);
         }
@@ -51,7 +38,7 @@ class KhatiraContentPage<C extends BasePageCubit> extends StatelessWidget {
       },
       child: Builder(
         builder: (context) {
-          final cubit = context.read<C>();
+          final cubit = context.read<BasePageCubit>();
           return Scaffold(
             appBar: AppBar(
               backgroundColor: AppColor.black,

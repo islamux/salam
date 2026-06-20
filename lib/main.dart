@@ -1,4 +1,4 @@
-import 'package:khatir/cubit/khatira_cubits/home_cubit.dart';
+import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -27,7 +27,7 @@ class KhatiraApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => HomeCubit()),
+        BlocProvider(create: (_) => BasePageCubit()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

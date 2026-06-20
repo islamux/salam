@@ -57,12 +57,40 @@ void main() {
 
     test('has correct mapping for all 34 lesson names', () {
       final lessons = [
-        'pre', 'final', 'one', 'two', 'three', 'four', 'five', 'six',
-        'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'therteen',
-        'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
-        'twenty', 'twenty_one', 'twenty_two', 'twenty_three', 'twenty_four',
-        'twenty_five', 'twenty_six', 'twenty_seven', 'twenty_eight',
-        'twenty_nine', 'thirty', 'thirty_one', 'thirty_two'
+        'pre',
+        'final',
+        'one',
+        'two',
+        'three',
+        'four',
+        'five',
+        'six',
+        'seven',
+        'eight',
+        'nine',
+        'ten',
+        'eleven',
+        'twelve',
+        'therteen',
+        'fourteen',
+        'fifteen',
+        'sixteen',
+        'seventeen',
+        'eighteen',
+        'nineteen',
+        'twenty',
+        'twenty_one',
+        'twenty_two',
+        'twenty_three',
+        'twenty_four',
+        'twenty_five',
+        'twenty_six',
+        'twenty_seven',
+        'twenty_eight',
+        'twenty_nine',
+        'thirty',
+        'thirty_one',
+        'thirty_two'
       ];
       for (final lesson in lessons) {
         expect(wordToNum, contains(lesson));
@@ -233,8 +261,14 @@ static const String khatiraTextTwoOne_1 = """Text""";
         pageLabels: [],
         renameToKhatira: true,
       );
-      expect(output, contains("import 'package:khatir/core/data/model/khatira_model_new_order.dart'"));
-      expect(output, contains("import 'package:khatir/core/data/static/text/khatira_text_ders_pre.dart'"));
+      expect(
+          output,
+          contains(
+              "import 'package:khatir/core/data/model/khatira_model_new_order.dart'"));
+      expect(
+          output,
+          contains(
+              "import 'package:khatir/core/data/static/text/khatira_text_ders_pre.dart'"));
     });
 
     test('includes order array in output', () {
