@@ -1,6 +1,5 @@
-// ignore_for_file: prefer_interpolation_to_compose_strings
-
 import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/repository/khatira_repository.dart';
 import 'package:khatir/core/services/get_page_text_for_sharing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -10,12 +9,31 @@ import 'package:share_plus/share_plus.dart';
 import 'package:khatir/core/cubit/base_page_state.dart';
 
 class BasePageCubit extends Cubit<BasePageState> {
+  final KhatiraRepository _repository;
+  final int chapterId;
   int currentPageIndex = 0;
   PageController pageController = PageController();
   double fontSize = 21.0;
-  BasePageCubit() : super(PageInitial());
+  List<KhatiraModelNewOrder> _data = [];
 
-  // Methods -- //todo : move it from logic to ui
+  BasePageCubit({
+    required KhatiraRepository repository,
+    required this.chapterId,
+  })  : _repository = repository,
+        super(PageDataLoading()) {
+    _loadChapter();
+  }
+
+  List<KhatiraModelNewOrder> get data => _data;
+
+  void _loadChapter() {
+    emit(PageDataLoading());
+    _repository.getChapter(chapterId).then((chapterData) {
+      _data = chapterData;
+      emit(PageDataLoaded(data: chapterData));
+    });
+  }
+
   void resetCounter() {
     emit(PageUpdated(updatedCounter: 0));
   }
@@ -51,11 +69,10 @@ class BasePageCubit extends Cubit<BasePageState> {
     });
   }
 
-  void customShareContent(
-      int currentPageIndex, List<KhatiraModelNewOrder> khatiraList) {
+  void customShareContent(int currentPageIndex) {
     try {
       final List<Text> shareText =
-          getPageTextsForSharing(currentPageIndex, khatiraList);
+          getPageTextsForSharing(currentPageIndex, _data);
       final String joinedText = shareText.map((text) => text.data).join('\n');
 
       SharePlus.instance.share(ShareParams(text: joinedText));

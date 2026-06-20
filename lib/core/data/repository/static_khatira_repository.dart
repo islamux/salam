@@ -84,6 +84,12 @@ class StaticKhatiraRepository implements KhatiraRepository {
   }
 
   @override
+  Future<List<KhatiraModelNewOrder>> getChapter(int chapterId) async {
+    if (chapterId < 0 || chapterId >= _chapters.length) return [];
+    return _chapters[chapterId];
+  }
+
+  @override
   Future<List<KhatiraModelNewOrder>> search(String query) async {
     final all = await getAll();
     return all.where((item) {

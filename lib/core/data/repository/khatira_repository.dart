@@ -5,5 +5,7 @@ abstract class KhatiraRepository {
 
   Future<KhatiraModelNewOrder?> getById(int id);
 
+  Future<List<KhatiraModelNewOrder>> getChapter(int chapterId);
+
   Future<List<KhatiraModelNewOrder>> search(String query);
 }

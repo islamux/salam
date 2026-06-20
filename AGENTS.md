@@ -11,9 +11,9 @@
 | **Stack** | Flutter / Dart, Bloc, SharePlus, ScreenUtil |
 | **Package** | `com.khatir` (Android) |
 | **Domain** | Islamic khatira (sermons/lessons) — 32 ders + pre + final = 34 chapters |
-| **Data flow** | Static text files → generator → list models → pages |
-| **Current focus (P1)** | **MS-3** Architecture Refactoring |
-| **Overall progress** | 5 milestones done (MS-1, MS-9, MS-QF, MS-GEN-1, MS-GEN-2) |
+| **Data flow** | Static text files → generator → list models → `StaticKhatiraRepository` → cubit → pages |
+| **Current focus (P1)** | **MS-DA.5** deprecate list files, **MS-GEN-4** strip NewOrder suffix, **MS-8** remaining bug fixes |
+| **Overall progress** | 5 milestones done · MS-3/6/6 · MS-DA/4/5 · MS-AR/3/5 · MS-8/4/14 |
 | **Health** | On Track · Drift: 0 days · Target: 2026-06-15 |
 
 ---
@@ -92,6 +92,25 @@ KhatiraModelNewOrder(
   order: [EnOrder.titles, EnOrder.subtitles, EnOrder.texts, EnOrder.ayahs, EnOrder.footer],
 )
 ```
+
+### Repository Pattern
+```dart
+// lib/core/data/repository/khatira_repository.dart
+abstract class KhatiraRepository {
+  Future<List<KhatiraModelNewOrder>> getAll();
+  Future<List<KhatiraModelNewOrder>> getById(int id);
+  Future<List<KhatiraModelNewOrder>> getChapter(int chapterId);
+  Future<List<KhatiraModelNewOrder>> search(String query);
+}
+
+// lib/core/data/repository/static_khatira_repository.dart
+class StaticKhatiraRepository extends KhatiraRepository {
+  // Wraps all 34 static list files in a single _chapters list
+  // Provided via RepositoryProvider in main.dart
+}
+```
+
+`BasePageCubit` takes `KhatiraRepository` + `int chapterId` via constructor, loads eagerly in `_loadChapter()`, emits `PageDataLoading` → `PageDataLoaded`.
 
 ### Sharing
 ```dart
@@ -204,6 +223,8 @@ Resolve: 13 TODO/FIXME, dead helpers, navigation redundancy, disabled search, `g
 - Edit generated files in `lib/core/data/model/khatira_lists/` by hand — regenerate instead
 - Use `Share.share(...)` — deprecated
 - Use `khatira_cubits/` content models with `ElmModelNewOrder` — renamed
+- Skip `--android-skip-build-dependency-validation` on builds
+- Add comments to code files unless asked
 - Commit without running gates (analyze + test)
 - Skip `--android-skip-build-dependency-validation` on builds
 - Add comments to code files unless asked

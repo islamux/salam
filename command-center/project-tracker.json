@@ -5,11 +5,11 @@
     "target_date": "2026-06-15",
     "current_week": 19,
     "schedule_status": "on_track",
-    "overall_progress": 26,
-    "overall_progress_note": "Weighted: 5 completed milestones + active/backlog subtask progress"
+    "overall_progress": 35,
+    "overall_progress_note": "Weighted: 5 completed milestones + MS-3 all done, MS-DA 4/5, MS-AR 3/5, MS-8 4/14"
   },
   "dashboard": {
-    "current_focus": "Phase 1 — MS-3 Architecture Refactor (with MS-3.5 ContentCubit consolidation, MS-AR Feature-First, MS-DA Repository)",
+    "current_focus": "Phase 1 — MS-DA.5 deprecate list files, MS-GEN-4 strip NewOrder suffix, MS-8 remaining bug fixes",
     "active_phase": 1,
     "active_milestone": "MS-3",
     "next_priority": "P1",
@@ -997,10 +997,13 @@
           {
             "id": "MS-DA.4",
             "label": "Wire ContentCubit to repository",
-            "status": "todo",
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P1",
             "context_files": [
-              "lib/cubit/"
+              "lib/core/cubit/",
+              "lib/main.dart",
+              "lib/features/khatira/presentation/"
             ],
             "reference_docs": [
               "ReleasAudit.md §4"

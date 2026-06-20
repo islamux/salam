@@ -1,3 +1,5 @@
+import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+
 abstract class BasePageState {}
 
 class PageInitial extends BasePageState {}
@@ -26,3 +28,10 @@ class PageShareFailure extends BasePageState {
   late final String errorMessage;
   PageShareFailure({required this.errorMessage});
 }
+
+class PageDataLoaded extends BasePageState {
+  final List<KhatiraModelNewOrder> data;
+  PageDataLoaded({required this.data});
+}
+
+class PageDataLoading extends BasePageState {}
