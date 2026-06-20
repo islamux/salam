@@ -975,7 +975,7 @@
           {
             "id": "MS-DA.1",
             "label": "Define KhatiraRepository abstract interface",
-            "status": "todo",
+            "status": "done",
             "priority": "P1",
             "context_files": [
               "lib/core/data/repository/"
@@ -988,7 +988,8 @@
               "Methods: Future<List<Khatira>> getAll(), Future<Khatira> getById(int id), Future<List<SearchResult>> search(String query)",
               "Khatira domain model defined (vs current KhatiraModelNewOrder which is data-layer)"
             ],
-            "depends_on": []
+            "depends_on": [],
+            "completed_at": "2026-06-20"
           },
           {
             "id": "MS-DA.2",
