@@ -1,23 +1,14 @@
-import 'package:khatir/core/cubit/base_page_cubit.dart';
+import 'package:khatir/core/data/repository/static_khatira_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:khatir/app_routes.dart';
+import 'package:khatir/core/data/repository/khatira_repository.dart';
 import 'package:khatir/core/routing/routes_constant.dart';
 import 'package:khatir/core/theme/app_them.dart';
 
 void main() {
-  // Splash screen
-  // WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-  // FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
-  // After splash screen, now you can run the app
   runApp(const KhatiraApp());
-
-  // Wait 2 seconds before removing the splash screen
-  // Future.delayed(const Duration(seconds: 2), () {
-  //   FlutterNativeSplash.remove();
-  // });
 }
 
 class KhatiraApp extends StatelessWidget {
@@ -25,10 +16,8 @@ class KhatiraApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => BasePageCubit()),
-      ],
+    return RepositoryProvider<KhatiraRepository>(
+      create: (_) => StaticKhatiraRepository(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Khatira',

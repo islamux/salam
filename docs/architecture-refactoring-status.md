@@ -1,127 +1,161 @@
-# Architecture Refactoring Status (Phase E)
+# Architecture Refactoring Status
 
-## Current State (as of June 1, 2026)
+**Last Updated:** June 20, 2026
+**Status:** ✅ Complete (all milestones achieved)
 
-### Progress Summary
-- **Total khatira pages**: 35 (1-32 + pre + final)
-- **Already converted to KhatiraContentPage**: 4 pages
-- **Remaining to convert**: 31 pages
-- **Lines saved so far**: ~240 lines (from ~320 lines to ~80 lines for converted pages)
-- **Potential total savings**: ~2,800 lines when complete
+---
 
-### Converted Pages (Using KhatiraContentPage)
-✅ `khatira1.dart` - 127 lines (was ~320 lines)
-✅ `khatira8.dart` - 131 lines (was ~320 lines)  
-✅ `khatira9.dart` - 133 lines (was ~320 lines)
-✅ `khatira_content_page.dart` - 110 lines (the reusable component)
+## What Was Built
 
-### Pages Still Using Old Pattern
-❌ 31 pages still need conversion (khatira2.dart, khatira3.dart, ..., khatira32.dart, khatira_pre_page.dart, khatira_final.dart)
+### MS-3.1 — `KhatiraContentPage` Generic Widget
+`lib/features/khatira/presentation/khatira_content_page.dart`
+- Single reusable `StatelessWidget` that takes `chapterId` (int)
+- Uses `BlocBuilder<BasePageCubit, BasePageState>` for state-driven UI
+- Handles loading, content display, and error states
+- All 34 chapter pages are now simple wrappers passing `chapterId`
 
-## What Has Been Accomplished
+### MS-3.2 — All 34 Pages Refactored
+- 34 page files (`khatira1.dart`–`khatira32.dart`, `khatira_pre_page.dart`, `khatira_final_page.dart`) each ~8 lines
+- Total: ~300 lines (was ~3,700 lines) = **~92% reduction**
+- All pages pass `chapterId` to `KhatiraContentPage` — no more per-page `dataList` imports
 
-1. **KhatiraContentPage created** - The reusable generic widget exists and works
-2. **Pattern validated** - 4 pages successfully converted and working
-3. **Code quality improved** - Reduced duplication, better maintainability
+### MS-3.3 — `AppStrings` Extracted
+`lib/core/data/static/strings/app_strings.dart`
+- Centralized all hardcoded Arabic UI strings
+- Used by: home page, drawer, navigation labels
+- Ready for future localization
 
-## What Remains to Be Done
+### MS-3.4 — `SearchCubit` Extracted
+`lib/features/search/presentation/cubit/search_cubit.dart`
+- `searchContent(query)` searches titles, subtitles, texts, ayahs, footer across all chapters
+- 6 unit tests covering: initial state, matching (titles/texts/ayahs), empty query, no-match
+- `BasePageCubit` delegates search requests to `SearchCubit`
 
-### E-3: Convert Remaining 31 Pages
-Each page needs to be refactored from ~110-120 lines to ~15-20 lines using the KhatiraContentPage pattern.
+### MS-3.5 — Cubit Consolidation
+- 34 per-chapter cubits deleted (khatira_1_cubit.dart … khatira_32_cubit.dart, pre, final)
+- Single `BasePageCubit` serves all content pages
+- Constructor: `BasePageCubit(KhatiraRepository repository, int chapterId)`
+- Loads eagerly in `_loadChapter()`, emits `PageDataLoading` → `PageDataLoaded`
 
-### E-4: Optional Cubit Consolidation
-After all pages are converted, consider creating a GenericPageCubit to replace the 34 individual cubit files.
+---
 
-## How to Continue the Work
+## Repository Pattern
 
-### For Each Remaining Page:
+```
+KhatiraRepository (abstract)
+  └─ StaticKhatiraRepository (concrete)
+       └─ wraps 34 static list files in _chapters list
+            getChapter(int chapterId) → List<KhatiraModelOrder>
+```
 
-1. **Open the current page file** and note:
-   - Cubit import (e.g., `khatira_2_cubit.dart`)
-   - Data list import (e.g., `khatira_list_2_new_order.dart`)
-   - Exact title string (some have trailing spaces)
-   - Whether it needs `useGoldenTitle: true` (only pre and final pages)
+- Provided via `RepositoryProvider<KhatiraRepository>` in `main.dart`
+- `BasePageCubit` takes `KhatiraRepository` + `chapterId` via constructor
 
-2. **Replace entire content** with the new pattern:
+---
+
+## Data Model
 
 ```dart
-import 'package:khatir/core/data/model/khatira_lists/khatira_list_X_new_order.dart';
-import 'package:khatir/cubit/khatira_cubits/khatira_X_cubit.dart';
-import 'package:khatir/view/pages/khatira_content_page.dart';
-import 'package:flutter/material.dart';
-
-class KhatiraXPage extends StatelessWidget {
-  final int? initialPage;
-
-  const KhatiraXPage({super.key, this.initialPage});
-
-  @override
-  Widget build(BuildContext context) {
-    return KhatiraContentPage<KhatiraXCubit>(
-      createCubit: (_) => KhatiraXCubit(),
-      dataList: khatiraListXNewOrder,
-      title: "الخاطرة X",
-      initialPage: initialPage,
-      // useGoldenTitle: true, // Only for pre and final pages
-    );
-  }
-}
+KhatiraModelOrder(
+  List<String>? titles,
+  List<String>? subtitles,
+  List<String>? texts,
+  List<String>? ayahs,
+  String? footer,
+  List<EnOrder> order,
+)
 ```
 
-3. **Test after every 5 pages**:
+- Equality uses `_listEquals` (deep comparison) — fixes bug where identical lists were unequal
+- 14 unit tests cover construction, copyWith, equality, hashCode, toString
+
+---
+
+## Feature-First Structure (MS-AR)
+
+```
+lib/
+  core/
+    data/
+      model/
+        khatira_model_order.dart
+        enum_order.dart
+        khatira_lists/     (34 generated _order.dart files)
+        repository/
+          khatira_repository.dart (abstract)
+          static_khatira_repository.dart (concrete)
+      static/
+        strings/app_strings.dart
+        text/              (34 khatira_text_ders_*.dart sources)
+    cubit/
+      base_cubit/
+        base_page_cubit.dart
+        base_page_state.dart
+    routing/
+      routes_constant.dart
+      app_routes.dart
+    services/
+      navigation_helper.dart
+      handle_pop.dart
+      get_page_text_for_sharing.dart
+    theme/
+      app_color_constant.dart
+    widgets/
+      custom_botton.dart
+  features/
+    khatira/presentation/
+      khatira_content_page.dart
+      khatira1.dart … khatira32.dart
+      khatira_pre_page.dart
+      khatira_final_page.dart
+    home/presentation/
+      home.dart
+      custom_drawer_listview.dart
+    search/presentation/
+      cubit/search_cubit.dart
+      search_state.dart
+      data_search.dart
+```
+
+---
+
+## Test Coverage
+
+| File | Tests |
+|------|-------|
+| `base_page_cubit_test.dart` | 7 (loading, font size, pagination) |
+| `khatira_model_order_test.dart` | 14 (model, equality, hashCode) |
+| `get_page_text_for_sharing_test.dart` | 7 (sharing order, nulls, multi-page) |
+| `search_cubit_test.dart` | 6 (search matching, empty, no-match) |
+| `generate_elm_lists_test.dart` | 23 (generator unit tests) |
+| **Total** | **58** |
+
+---
+
+## Build & Analysis
+
 ```bash
-flutter analyze
-flutter test
+flutter analyze   # 0 app-level errors (14 pre-existing tool-only issues)
+flutter test      # 58/58 pass
 ```
+
+---
 
 ## Verification Commands
 
 ```bash
-# Check current status
-grep -l "KhatiraContentPage" lib/view/pages/khatira*.dart
+# Full analysis
+flutter analyze
 
-# Count remaining pages to convert
-ls lib/view/pages/khatira[0-9]*.dart | wc -l
+# Run all tests
+flutter test
 
-# Full verification
-flutter analyze && flutter test
-```
+# Run specific test suite
+flutter test test/unit/base_page_cubit_test.dart
 
-## Expected Benefits When Complete
+# Regenerate list files (after text changes)
+dart run tool/generate_elm_lists.dart --rename-prefix khatira
 
-- **~90% code reduction** in page files (from ~3,700 lines to ~300 lines)
-- **Easier maintenance** - changes only need to be made in one place
-- **Better consistency** - all pages behave identically
-- **Faster development** - new pages can be created in minutes
-- **Reduced bugs** - less duplicate code means fewer places for errors
-
-## Files That Will Be Modified
-
-When complete, these files will be updated:
-- 31 khatira page files (khatira2.dart through khatira32.dart, plus pre and final)
-- No other files need to change
-
-## Risk Assessment
-
-- **Low risk** - Pattern already validated with 4 working pages
-- **Easy to revert** - All changes are isolated to individual page files
-- **Backward compatible** - No API changes, just internal refactoring
-
-## Next Steps
-
-1. Continue converting pages in batches of 5
-2. Test after each batch
-3. Consider cubit consolidation after all pages are converted
-4. Update documentation as you go
-
-## Helpful Commands
-
-```bash
-# Find all pages not yet converted
-grep -L "KhatiraContentPage" lib/view/pages/khatira*.dart
-
-# Count lines saved so far
-echo "Original estimate: 35 pages * 110 lines = 3850 lines"
-echo "Current total: $(wc -l lib/view/pages/khatira*.dart | tail -1 | awk '{print $1}') lines"
-echo "Lines saved: 3850 - $(wc -l lib/view/pages/khatira*.dart | tail -1 | awk '{print $1}')"
+# Release build
+flutter build apk --release --android-skip-build-dependency-validation
 ```

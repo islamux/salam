@@ -1,9 +1,11 @@
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 
 abstract class KhatiraRepository {
-  Future<List<KhatiraModelNewOrder>> getAll();
+  Future<List<KhatiraModelOrder>> getAll();
 
-  Future<KhatiraModelNewOrder?> getById(int id);
+  Future<KhatiraModelOrder?> getById(int id);
 
-  Future<List<KhatiraModelNewOrder>> search(String query);
+  Future<List<KhatiraModelOrder>> getChapter(int chapterId);
+
+  Future<List<KhatiraModelOrder>> search(String query);
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:khatir/features/khatira/data/lists/khatira_list_16_new_order.dart';
 import 'package:khatir/features/khatira/presentation/khatira_content_page.dart';
 import 'package:khatir/core/data/static/strings/app_strings.dart';
 
@@ -11,7 +10,7 @@ class Khatira16Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return KhatiraContentPage(
-      dataList: khatiraList16NewOrder,
+      chapterId: 16,
       title: AppStrings.khatiraTitle(16),
       initialPage: initialPage,
     );

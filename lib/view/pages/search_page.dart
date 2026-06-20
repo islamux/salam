@@ -33,7 +33,7 @@ class _SearchPageBody extends StatelessWidget {
               controller: searchController,
               onSubmitted: (query) {
                 if (query.isNotEmpty) {
-                  // todo: pass the correct data list when search is re-enabled
+                  // Page is not in route table — needs data injection to function
                   cubit.searchContent(query, []);
                 }
               },

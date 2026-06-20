@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 
 List<Text> getPageTextsForSharing(
-    int pageIndex, List<KhatiraModelNewOrder> khatiraList) {
+    int pageIndex, List<KhatiraModelOrder> khatiraList) {
   final khatiraModel = khatiraList[pageIndex];
   final List<Text> sharedTexts = [];
 

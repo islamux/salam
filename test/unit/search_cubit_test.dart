@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/features/search/cubit/search_cubit.dart';
 import 'package:khatir/features/search/cubit/search_state.dart';
@@ -7,12 +7,12 @@ import 'package:khatir/features/search/cubit/search_state.dart';
 void main() {
   group('SearchCubit', () {
     late SearchCubit cubit;
-    late List<KhatiraModelNewOrder> testData;
+    late List<KhatiraModelOrder> testData;
 
     setUp(() {
       cubit = SearchCubit();
       testData = [
-        KhatiraModelNewOrder(
+        KhatiraModelOrder(
           titles: ['Test Title 1', 'Test Title 2'],
           subtitles: ['Test Subtitle 1'],
           texts: ['Test text 1', 'Test text 2', 'Test text 3'],
@@ -20,7 +20,7 @@ void main() {
           footer: 'Test Footer',
           order: [EnOrder.titles, EnOrder.texts, EnOrder.ayahs],
         ),
-        KhatiraModelNewOrder(
+        KhatiraModelOrder(
           titles: ['Test Title 2'],
           texts: ['Another text'],
           order: [EnOrder.titles, EnOrder.texts],

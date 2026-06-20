@@ -1,17 +1,20 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:khatir/core/cubit/base_page_cubit.dart';
 import 'package:khatir/core/cubit/base_page_state.dart';
+import 'package:khatir/core/data/repository/static_khatira_repository.dart';
+import 'package:khatir/core/data/repository/khatira_repository.dart';
 
 void main() {
   group('BasePageCubit', () {
     late BasePageCubit cubit;
 
     setUp(() {
-      cubit = BasePageCubit();
+      final repo = StaticKhatiraRepository() as KhatiraRepository;
+      cubit = BasePageCubit(repository: repo, chapterId: 1);
     });
 
-    test('initial state is PageInitial', () {
-      expect(cubit.state, isA<PageInitial>());
+    test('state is PageDataLoaded after construction', () {
+      expect(cubit.state, isA<PageDataLoaded>());
     });
 
     test('initial currentPageIndex is 0', () {
@@ -46,8 +49,6 @@ void main() {
     });
 
     test('goToPage updates currentPageIndex', () {
-      // Skip testing jumpToPage as it requires PageView context
-      // Just test that currentPageIndex is updated
       cubit.currentPageIndex = 1;
       expect(cubit.currentPageIndex, 1);
     });

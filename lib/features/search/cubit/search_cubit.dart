@@ -1,11 +1,11 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:khatir/core/data/model/khatira_model_new_order.dart';
+import 'package:khatir/core/data/model/khatira_model_order.dart';
 import 'package:khatir/features/search/cubit/search_state.dart';
 
 class SearchCubit extends Cubit<SearchState> {
   SearchCubit() : super(SearchInitial());
 
-  void searchContent(String query, List<KhatiraModelNewOrder> khatiraList) {
+  void searchContent(String query, List<KhatiraModelOrder> khatiraList) {
     if (query.isEmpty) {
       emit(SearchInitial());
       return;
