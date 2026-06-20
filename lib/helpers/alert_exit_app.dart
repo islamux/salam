@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/view/widget/custom_botton.dart';
 import 'package:flutter/material.dart';
 
@@ -9,19 +10,18 @@ Future<bool> alertExitApp(BuildContext context) async {
           return Directionality(
             textDirection: TextDirection.rtl,
             child: AlertDialog(
-              title: const Text("! تنبيه"),
-              content: const Text("هل تريد الخروج من التطبيق؟"),
+              title: const Text(AppStrings.alertTitle),
+              content: const Text(AppStrings.alertExitMessage),
               backgroundColor: const Color.fromRGBO(255, 224, 130, 1),
               actions: [
                 CustomButton(
-                  customText: "نعم",
-                  onPressed: () => exit(0), // إغلاق التطبيق
+                  customText: AppStrings.alertYes,
+                  onPressed: () => exit(0),
                   icon: const Icon(Icons.exit_to_app),
                 ),
                 CustomButton(
-                  customText: "لا",
-                  onPressed: () =>
-                      Navigator.of(context).pop(false), // إلغاء الخروج
+                  customText: AppStrings.alertNo,
+                  onPressed: () => Navigator.of(context).pop(false),
                   icon: const Icon(Icons.cancel),
                 ),
               ],

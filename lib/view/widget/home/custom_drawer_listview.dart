@@ -1,3 +1,4 @@
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/core/data/static/theme/app_them.dart';
 import 'package:khatir/helpers/call_us_via_whatsup.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class CustomDrawerListView extends StatelessWidget {
         ListTile(
           leading: const Icon(Icons.call_outlined),
           title: Text(
-            'تواصل معنا ',
+            AppStrings.drawerContactUs,
             style: AppTheme.goldenTheme.textTheme.titleMedium,
           ),
           onTap: () => callUsViaWhatsUp(),
@@ -23,7 +24,7 @@ class CustomDrawerListView extends StatelessWidget {
         ListTile(
             leading: const Icon(Icons.android_outlined),
             title: Text(
-              ' شارك التطبيق عبر وسائل التواصل',
+              AppStrings.drawerShareApp,
               style: AppTheme.goldenTheme.textTheme.titleMedium,
             ),
             onTap:

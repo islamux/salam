@@ -34,6 +34,7 @@ import 'package:khatir/core/data/model/khatira_lists/khatira_list_pre_new_order.
 import 'package:khatir/core/data/model/khatira_model_new_order.dart';
 import 'package:khatir/core/data/model/enum_order.dart';
 import 'package:khatir/core/data/static/routes_constant.dart';
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/helpers/search/remove_search_diacritics.dart';
 import 'package:khatir/helpers/search/search_result.dart';
 import 'package:flutter/material.dart';
@@ -50,70 +51,71 @@ class DataSearch extends SearchDelegate {
   List<SearchResult> _buildResultsWithPage() {
     final results = <SearchResult>[];
     final listConfigs = <_ListConfig>[
+      _ListConfig(khatiraListPreNewOrder, AppStrings.lessonPre,
+          RoutesConstant.khatiraPre),
       _ListConfig(
-          khatiraListPreNewOrder, 'الدرس التمهيدي', RoutesConstant.khatiraPre),
-      _ListConfig(khatiraList1NewOrder, 'الدرس الأول', RoutesConstant.khatira1),
+          khatiraList1NewOrder, AppStrings.lesson1, RoutesConstant.khatira1),
       _ListConfig(
-          khatiraList2NewOrder, 'الدرس الثاني', RoutesConstant.khatira2),
+          khatiraList2NewOrder, AppStrings.lesson2, RoutesConstant.khatira2),
       _ListConfig(
-          khatiraList3NewOrder, 'الدرس الثالث', RoutesConstant.khatira3),
+          khatiraList3NewOrder, AppStrings.lesson3, RoutesConstant.khatira3),
       _ListConfig(
-          khatiraList4NewOrder, 'الدرس الرابع', RoutesConstant.khatira4),
+          khatiraList4NewOrder, AppStrings.lesson4, RoutesConstant.khatira4),
       _ListConfig(
-          khatiraList5NewOrder, 'الدرس الخامس', RoutesConstant.khatira5),
+          khatiraList5NewOrder, AppStrings.lesson5, RoutesConstant.khatira5),
       _ListConfig(
-          khatiraList6NewOrder, 'الدرس السادس', RoutesConstant.khatira6),
+          khatiraList6NewOrder, AppStrings.lesson6, RoutesConstant.khatira6),
       _ListConfig(
-          khatiraList7NewOrder, 'الدرس السابع', RoutesConstant.khatira7),
+          khatiraList7NewOrder, AppStrings.lesson7, RoutesConstant.khatira7),
       _ListConfig(
-          khatiraList8NewOrder, 'الدرس الثامن', RoutesConstant.khatira8),
+          khatiraList8NewOrder, AppStrings.lesson8, RoutesConstant.khatira8),
       _ListConfig(
-          khatiraList9NewOrder, 'الدرس التاسع', RoutesConstant.khatira9),
+          khatiraList9NewOrder, AppStrings.lesson9, RoutesConstant.khatira9),
       _ListConfig(
-          khatiraList10NewOrder, 'الدرس العاشر', RoutesConstant.khatira10),
+          khatiraList10NewOrder, AppStrings.lesson10, RoutesConstant.khatira10),
       _ListConfig(
-          khatiraList11NewOrder, 'الدرس الحادي عشر', RoutesConstant.khatira11),
+          khatiraList11NewOrder, AppStrings.lesson11, RoutesConstant.khatira11),
       _ListConfig(
-          khatiraList12NewOrder, 'الدرس الثاني عشر', RoutesConstant.khatira12),
+          khatiraList12NewOrder, AppStrings.lesson12, RoutesConstant.khatira12),
       _ListConfig(
-          khatiraList13NewOrder, 'الدرس الثالث عشر', RoutesConstant.khatira13),
+          khatiraList13NewOrder, AppStrings.lesson13, RoutesConstant.khatira13),
       _ListConfig(
-          khatiraList14NewOrder, 'الدرس الرابع عشر', RoutesConstant.khatira14),
+          khatiraList14NewOrder, AppStrings.lesson14, RoutesConstant.khatira14),
       _ListConfig(
-          khatiraList15NewOrder, 'الدرس الخامس عشر', RoutesConstant.khatira15),
+          khatiraList15NewOrder, AppStrings.lesson15, RoutesConstant.khatira15),
       _ListConfig(
-          khatiraList16NewOrder, 'الدرس السادس عشر', RoutesConstant.khatira16),
+          khatiraList16NewOrder, AppStrings.lesson16, RoutesConstant.khatira16),
       _ListConfig(
-          khatiraList17NewOrder, 'الدرس السابع عشر', RoutesConstant.khatira17),
+          khatiraList17NewOrder, AppStrings.lesson17, RoutesConstant.khatira17),
       _ListConfig(
-          khatiraList18NewOrder, 'الدرس الثامن عشر', RoutesConstant.khatira18),
+          khatiraList18NewOrder, AppStrings.lesson18, RoutesConstant.khatira18),
       _ListConfig(
-          khatiraList19NewOrder, 'الدرس التاسع عشر', RoutesConstant.khatira19),
+          khatiraList19NewOrder, AppStrings.lesson19, RoutesConstant.khatira19),
       _ListConfig(
-          khatiraList20NewOrder, 'الدرس العشرون', RoutesConstant.khatira20),
-      _ListConfig(khatiraList21NewOrder, 'الدرس الحادي والعشرون',
-          RoutesConstant.khatira21),
-      _ListConfig(khatiraList22NewOrder, 'الدرس الثاني والعشرون',
-          RoutesConstant.khatira22),
-      _ListConfig(khatiraList23NewOrder, 'الدرس الثالث والعشرون',
-          RoutesConstant.khatira23),
-      _ListConfig(khatiraList24NewOrder, 'الدرس الرابع والعشرون',
-          RoutesConstant.khatira24),
-      _ListConfig(khatiraList25NewOrder, 'الدرس الخامس والعشرون',
-          RoutesConstant.khatira25),
-      _ListConfig(khatiraList26NewOrder, 'الدرس السادس والعشرون',
-          RoutesConstant.khatira26),
-      _ListConfig(khatiraList27NewOrder, 'الدرس السابع والعشرون',
-          RoutesConstant.khatira27),
-      _ListConfig(khatiraList28NewOrder, 'الدرس الثامن والعشرون',
-          RoutesConstant.khatira28),
-      _ListConfig(khatiraList29NewOrder, 'الدرس التاسع والعشرون',
-          RoutesConstant.khatira29),
+          khatiraList20NewOrder, AppStrings.lesson20, RoutesConstant.khatira20),
       _ListConfig(
-          khatiraList30NewOrder, 'الدرس الثلاثون', RoutesConstant.khatira30),
-      _ListConfig(khatiraList31NewOrder, 'الدرس الحادي والثلاثون',
-          RoutesConstant.khatira31),
-      _ListConfig(khatiraListFinalNewOrder, 'الدرس الأخير',
+          khatiraList21NewOrder, AppStrings.lesson21, RoutesConstant.khatira21),
+      _ListConfig(
+          khatiraList22NewOrder, AppStrings.lesson22, RoutesConstant.khatira22),
+      _ListConfig(
+          khatiraList23NewOrder, AppStrings.lesson23, RoutesConstant.khatira23),
+      _ListConfig(
+          khatiraList24NewOrder, AppStrings.lesson24, RoutesConstant.khatira24),
+      _ListConfig(
+          khatiraList25NewOrder, AppStrings.lesson25, RoutesConstant.khatira25),
+      _ListConfig(
+          khatiraList26NewOrder, AppStrings.lesson26, RoutesConstant.khatira26),
+      _ListConfig(
+          khatiraList27NewOrder, AppStrings.lesson27, RoutesConstant.khatira27),
+      _ListConfig(
+          khatiraList28NewOrder, AppStrings.lesson28, RoutesConstant.khatira28),
+      _ListConfig(
+          khatiraList29NewOrder, AppStrings.lesson29, RoutesConstant.khatira29),
+      _ListConfig(
+          khatiraList30NewOrder, AppStrings.lesson30, RoutesConstant.khatira30),
+      _ListConfig(
+          khatiraList31NewOrder, AppStrings.lesson31, RoutesConstant.khatira31),
+      _ListConfig(khatiraListFinalNewOrder, AppStrings.lessonFinal,
           RoutesConstant.khatiraFinal),
     ];
 
@@ -127,24 +129,24 @@ class DataSearch extends SearchDelegate {
           switch (orderItem) {
             case EnOrder.titles:
               contentList = khatiraModel.titles;
-              fieldName = 'العنوان';
+              fieldName = AppStrings.fieldTitle;
               break;
             case EnOrder.subtitles:
               contentList = khatiraModel.subtitles;
-              fieldName = 'العنوان الفرعي';
+              fieldName = AppStrings.fieldSubtitle;
               break;
             case EnOrder.texts:
               contentList = khatiraModel.texts;
-              fieldName = 'النص';
+              fieldName = AppStrings.fieldText;
               break;
             case EnOrder.ayahs:
               contentList = khatiraModel.ayahs;
-              fieldName = 'الآية';
+              fieldName = AppStrings.fieldAyah;
               break;
             case EnOrder.footer:
               contentList =
                   khatiraModel.footer != null ? [khatiraModel.footer!] : null;
-              fieldName = 'الهوامش';
+              fieldName = AppStrings.fieldFooter;
               break;
           }
 
@@ -170,7 +172,7 @@ class DataSearch extends SearchDelegate {
   }
 
   @override
-  String get searchFieldLabel => "ابحث";
+  String get searchFieldLabel => AppStrings.searchFieldLabel;
 
   @override
   TextStyle get searchFieldStyle => const TextStyle(fontSize: 17);
@@ -202,7 +204,7 @@ class DataSearch extends SearchDelegate {
     final results = _buildResultsWithPage();
 
     if (results.isEmpty) {
-      return const Center(child: Text("لم يتم العثور على نتائج"));
+      return const Center(child: Text(AppStrings.searchNoResultsFound));
     }
 
     return ListView.builder(
@@ -235,6 +237,6 @@ class DataSearch extends SearchDelegate {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    return const Center(child: Text("ابحث عن المحتوى المطلوب"));
+    return const Center(child: Text(AppStrings.searchPrompt));
   }
 }

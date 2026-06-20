@@ -1,6 +1,6 @@
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:flutter/material.dart';
 
-// صفحة جديدة لعرض تفاصيل البحث
 class ResultPage extends StatelessWidget {
   final String result;
 
@@ -10,7 +10,7 @@ class ResultPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('تفاصيل النتيجة'),
+        title: const Text(AppStrings.resultDetail),
       ),
       body: Center(
         child: Text(

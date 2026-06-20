@@ -1,3 +1,4 @@
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/cubit/base_cubit/base_page_cubit.dart';
 import 'package:khatir/cubit/base_cubit/base_page_state.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class SearchPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Search Page"),
+        title: const Text(AppStrings.searchPrompt),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(48.0),
           child: Padding(
@@ -26,7 +27,7 @@ class SearchPage extends StatelessWidget {
                 }
               },
               decoration: InputDecoration(
-                hintText: 'ابحث هنا...',
+                hintText: AppStrings.searchHint,
                 prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8.0),
@@ -45,7 +46,7 @@ class SearchPage extends StatelessWidget {
             final searchResults = state.results;
 
             if (searchResults.isEmpty) {
-              return const Center(child: Text("لا توجد نتائج مطابقة."));
+              return const Center(child: Text(AppStrings.searchNoResults));
             }
 
             return ListView.builder(
@@ -68,7 +69,7 @@ class SearchPage extends StatelessWidget {
               },
             );
           } else {
-            return const Center(child: Text("يرجى إدخال استعلام للبحث."));
+            return const Center(child: Text(AppStrings.searchEnterQuery));
           }
         },
       ),

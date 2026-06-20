@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:khatir/core/data/static/imagelink/image_link.dart';
 import 'package:khatir/core/data/static/routes_constant.dart';
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 import 'package:khatir/core/data/static/theme/app_color_constant.dart';
 import 'package:khatir/cubit/khatira_cubits/home_cubit.dart';
 import 'package:khatir/helpers/extensions/navigation_helper.dart';
@@ -30,7 +31,7 @@ class Home extends StatelessWidget {
               backgroundColor: AppColor.black,
               foregroundColor: AppColor.amber,
               title: const Text(
-                " خواطر إيمانية",
+                AppStrings.homeAppBarTitle,
                 style: TextStyle(
                   fontSize: 21,
                 ),
@@ -50,7 +51,7 @@ class Home extends StatelessWidget {
                     // Share functionality could be added here
                   },
                   child: const Text(
-                    "شارك",
+                    AppStrings.homeShareButton,
                     style: TextStyle(
                       color: AppColor.primaryColorGolden,
                       fontSize: 22,
@@ -89,7 +90,7 @@ class Home extends StatelessWidget {
                         size: 36,
                       ),
                       Text(
-                        "إسحب للأعلى للمزيد",
+                        AppStrings.homeScrollHint,
                         style: TextStyle(
                           color: AppColor.primaryColorGolden,
                           fontSize: 18,

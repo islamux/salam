@@ -5,8 +5,8 @@
     "target_date": "2026-06-15",
     "current_week": 19,
     "schedule_status": "on_track",
-    "overall_progress": 43,
-    "overall_progress_note": "Recomputed 2026-06-02 from subtasks[].status after Phase 1 audit integration. Previous value 6 was stale."
+    "overall_progress": 26,
+    "overall_progress_note": "Weighted: 5 completed milestones + active/backlog subtask progress"
   },
   "dashboard": {
     "current_focus": "Phase 1 — MS-3 Architecture Refactor (with MS-3.5 ContentCubit consolidation, MS-AR Feature-First, MS-DA Repository)",
@@ -201,8 +201,8 @@
           {
             "id": "MS-3.3",
             "label": "Extract Arabic strings to AppStrings constants",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/core/data/static/strings/"

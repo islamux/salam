@@ -1,3 +1,5 @@
+import 'package:khatir/core/data/static/strings/app_strings.dart';
+
 class SearchResult {
   final String listName;
   final int pageIndex;
@@ -13,5 +15,5 @@ class SearchResult {
     required this.fieldName,
   });
 
-  String get displayTitle => 'صفحة $pageIndex - $listName';
+  String get displayTitle => AppStrings.searchDisplayTitle(pageIndex, listName);
 }

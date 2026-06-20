@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:khatir/core/data/model/khatira_lists/khatira_list_pre_new_order.dart';
 import 'package:khatir/cubit/khatira_cubits/khatira_pre_cubit.dart';
 import 'package:khatir/view/pages/khatira_content_page.dart';
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 
 class KhatiraPrePage extends StatelessWidget {
   final int? initialPage;
@@ -13,7 +14,7 @@ class KhatiraPrePage extends StatelessWidget {
     return KhatiraContentPage<KhatiraPreCubit>(
       createCubit: (_) => KhatiraPreCubit(),
       dataList: khatiraListPreNewOrder,
-      title: "  المقدمة  ",
+      title: AppStrings.preTitle,
       useGoldenTitle: true,
       initialPage: initialPage,
     );

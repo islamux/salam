@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:khatir/core/data/model/khatira_lists/khatira_list_31_new_order.dart';
 import 'package:khatir/cubit/khatira_cubits/khatira_31_cubit.dart';
 import 'package:khatir/view/pages/khatira_content_page.dart';
+import 'package:khatir/core/data/static/strings/app_strings.dart';
 
 class Khatira31Page extends StatelessWidget {
   final int? initialPage;
@@ -13,7 +14,7 @@ class Khatira31Page extends StatelessWidget {
     return KhatiraContentPage<Khatira31Cubit>(
       createCubit: (_) => Khatira31Cubit(),
       dataList: khatiraList31NewOrder,
-      title: "الخاطرة 31",
+      title: AppStrings.khatiraTitle(31),
       initialPage: initialPage,
     );
   }
