@@ -1,4 +1,4 @@
 class Links {
   static const String mailServer = '@gmail.com';
-  static String mailGoogle = 'fathi$mailGoogle';
+  static const String mailGoogle = 'fathi@gmail.com';
 }
