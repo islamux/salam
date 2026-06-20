@@ -534,8 +534,8 @@
           {
             "id": "MS-8.14",
             "label": "Fix links.dart circular self-reference bug",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/core/data/static/links.dart"
@@ -552,8 +552,8 @@
           {
             "id": "MS-8.15",
             "label": "Clean up dead route constants",
-            "status": "todo",
-            "completed_at": null,
+            "status": "done",
+            "completed_at": "2026-06-20",
             "priority": "P2",
             "context_files": [
               "lib/app_routes.dart"
