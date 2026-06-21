@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:collection';
 
@@ -703,6 +704,150 @@ void fixTextFiles(List<FileSystemEntity> textFiles,
 }
 
 // ============================================================
+// JSON Export (for Kotlin/Android port)
+// ============================================================
+
+const chapterTitles = {
+  'pre': 'المقدمة',
+  '1': 'الخاطرة 1',
+  '2': 'الخاطرة 2',
+  '3': 'الخاطرة 3',
+  '4': 'الخاطرة 4',
+  '5': 'الخاطرة 5',
+  '6': 'الخاطرة 6',
+  '7': 'الخاطرة 7',
+  '8': 'الخاطرة 8',
+  '9': 'الخاطرة 9',
+  '10': 'الخاطرة 10',
+  '11': 'الخاطرة 11',
+  '12': 'الخاطرة 12',
+  '13': 'الخاطرة 13',
+  '14': 'الخاطرة 14',
+  '15': 'الخاطرة 15',
+  '16': 'الخاطرة 16',
+  '17': 'الخاطرة 17',
+  '18': 'الخاطرة 18',
+  '19': 'الخاطرة 19',
+  '20': 'الخاطرة 20',
+  '21': 'الخاطرة 21',
+  '22': 'الخاطرة 22',
+  '23': 'الخاطرة 23',
+  '24': 'الخاطرة 24',
+  '25': 'الخاطرة 25',
+  '26': 'الخاطرة 26',
+  '27': 'الخاطرة 27',
+  '28': 'الخاطرة 28',
+  '29': 'الخاطرة 29',
+  '30': 'الخاطرة 30',
+  '31': 'الخاطرة 31',
+  '32': 'الخاطرة 32',
+  'final': 'الخاتمة',
+};
+
+const chapterOrder = [
+  'pre', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
+  '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+  '21', '22', '23', '24', '25', '26', '27', '28', '29', '30',
+  '31', '32', 'final',
+];
+
+String generateJsonOutput(List<File> textFiles) {
+  final chapterPages = <String, List<Map<String, dynamic>>>{};
+  final chapterTitlesMap = <String, String>{};
+
+  for (final file in textFiles) {
+    final filename = file.path.split('/').last;
+    final nameMatch =
+        RegExp(r'(?:elm|khatira)_text_ders_(.+)\.dart').firstMatch(filename);
+    if (nameMatch == null) continue;
+
+    final rawName = nameMatch.group(1)!;
+    final chapterId = wordToNum[rawName] ?? rawName;
+
+    final parsed = processFile(file.path);
+    if (parsed == null) continue;
+
+    chapterPages.putIfAbsent(chapterId, () => []);
+    chapterTitlesMap[chapterId] = chapterTitles[chapterId] ?? chapterId;
+
+    for (var i = 0; i < parsed.pages.length; i++) {
+      final pageFields = parsed.pages[i];
+
+      // Sort fields by their offset in the source file to preserve original order
+      pageFields.sort((a, b) => a.offset.compareTo(b.offset));
+
+      final titles = <String>[];
+      final subtitles = <String>[];
+      final texts = <String>[];
+      final ayahs = <String>[];
+      String? footer;
+      final order = <String>[];
+
+      for (final f in pageFields) {
+        final typeName = f.type.name; // titles, subtitles, texts, ayahs, footer
+        switch (f.type) {
+          case FieldType.titles:
+            if (!order.contains(typeName)) order.add(typeName);
+            titles.add(f.value);
+            break;
+          case FieldType.subtitles:
+            if (!order.contains(typeName)) order.add(typeName);
+            subtitles.add(f.value);
+            break;
+          case FieldType.texts:
+            if (!order.contains(typeName)) order.add(typeName);
+            texts.add(f.value);
+            break;
+          case FieldType.ayahs:
+            if (!order.contains(typeName)) order.add(typeName);
+            ayahs.add(f.value);
+            break;
+          case FieldType.footer:
+            if (!order.contains(typeName)) order.add(typeName);
+            footer = f.value;
+            break;
+        }
+      }
+
+      final pageJson = <String, dynamic>{
+        'index': i,
+      };
+      if (titles.isNotEmpty) pageJson['titles'] = titles;
+      if (subtitles.isNotEmpty) pageJson['subtitles'] = subtitles;
+      if (texts.isNotEmpty) pageJson['texts'] = texts;
+      if (ayahs.isNotEmpty) pageJson['ayahs'] = ayahs;
+      if (footer != null) pageJson['footer'] = footer;
+      pageJson['order'] = order;
+
+      chapterPages[chapterId]!.add(pageJson);
+    }
+  }
+
+  // Build chapters in canonical order
+  final chaptersJson = <Map<String, dynamic>>[];
+  for (var ord = 0; ord < chapterOrder.length; ord++) {
+    final chId = chapterOrder[ord];
+    final pages = chapterPages[chId];
+    if (pages == null || pages.isEmpty) continue;
+
+    chaptersJson.add({
+      'id': chId,
+      'order_index': ord,
+      'title': chapterTitlesMap[chId] ?? chId,
+      'pages': pages,
+    });
+  }
+
+  final output = {
+    'version': 1,
+    'generated_at': DateTime.now().toIso8601String(),
+    'chapters': chaptersJson,
+  };
+
+  return const JsonEncoder.withIndent('  ').convert(output);
+}
+
+// ============================================================
 // Main
 // ============================================================
 
@@ -728,8 +873,24 @@ void main(List<String> args) {
   final dryRun = args.contains('--dry-run');
   final verbose = args.contains('--verbose');
   final fixText = args.contains('--fix-text');
+  final jsonMode = args.contains('--json');
   final renameToKhatira = args.contains('--rename-prefix') &&
       args[args.indexOf('--rename-prefix') + 1] == 'khatira';
+
+  // --json mode: export all content as a single JSON file
+  if (jsonMode) {
+    final jsonOutput = generateJsonOutput(textFiles);
+    final jsonDir = Directory('$scratchDir/lib/features/khatira/data/static');
+    jsonDir.createSync(recursive: true);
+    final jsonPath = '${jsonDir.path}/khatira_content.json';
+    if (!dryRun) {
+      File(jsonPath).writeAsStringSync(jsonOutput);
+      stderr.writeln('Wrote: ${jsonPath.replaceFirst('$scratchDir/', '')}');
+    } else {
+      stderr.writeln('Would write: khatira_content.json (${jsonOutput.length} chars)');
+    }
+    return;
+  }
 
   // --fix-text mode: normalize text files (rename fields, fix typos, standardize markers)
   if (fixText) {
